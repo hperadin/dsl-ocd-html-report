@@ -24,8 +24,8 @@
                <td>PrimarySingleString</td>
                <td>139</td>
                <td>0</td>
-               <td>12</td>
-               <td>5.055</td>
+               <td>13</td>
+               <td>25.415</td>
             </tr>
          </table>
       </div>
@@ -46,13 +46,11 @@
                </td>
                <td>Failed</td>
                <td>
-                  <code>java.util.concurrent.ExecutionException: com.dslplatform.client.exceptions.HttpUnexpectedCodeException:
-                     Can't deserialize AggregatePrimaryString.A1A0St. Error: Invalid char found: f. Example:
-                     &#xD;
-                     
+                  <code>java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused:
+                     connect
                   </code>
                </td>
-               <td>1.392</td>
+               <td>3.235</td>
             </tr>
             <tr class="danger">
                <td>
@@ -62,13 +60,11 @@
                </td>
                <td>Failed</td>
                <td>
-                  <code>java.util.concurrent.ExecutionException: com.dslplatform.client.exceptions.HttpUnexpectedCodeException:
-                     Can't deserialize AggregatePrimaryString.A1A0St. Error: Invalid char found: f. Example:
-                     &#xD;
-                     
+                  <code>java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused:
+                     connect
                   </code>
                </td>
-               <td>0.01</td>
+               <td>3.027</td>
             </tr>
             <tr class="danger">
                <td>
@@ -78,13 +74,25 @@
                </td>
                <td>Failed</td>
                <td>
-                  <code>java.util.concurrent.ExecutionException: com.dslplatform.client.exceptions.HttpUnexpectedCodeException:
-                     Can't deserialize AggregatePrimaryString.A1A0St. Error: Invalid char found: f. Example:
-                     &#xD;
-                     
+                  <code>java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused:
+                     connect
                   </code>
                </td>
-               <td>0.075</td>
+               <td>3.015</td>
+            </tr>
+            <tr class="danger">
+               <td>
+                  <a href="&#xA;        ../../../../com/dslplatform/ocd/aggregates/AggregateWithOneArrayOfNullableStringsPropertyAsPrimaryKeyTest/testP1A0StNonDefault2PropertyValueInAggregateAfterActiveRecordPersist.html&#xA;    ">testP1A0StNonDefault2PropertyValueInAggregateAfterActiveRecordPersist</a>
+                  <br></br>
+                  <a target="_blank" href="PrimarySingleString_stacktrace.html#testP1A0StNonDefault2PropertyValueInAggregateAfterActiveRecordPersist">(view stacktrace)</a>
+               </td>
+               <td>Failed</td>
+               <td>
+                  <code>java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused:
+                     connect
+                  </code>
+               </td>
+               <td>3.007</td>
             </tr>
             <tr class="danger">
                <td>
@@ -94,13 +102,15 @@
                </td>
                <td>Failed</td>
                <td>
-                  <code>java.util.concurrent.ExecutionException: com.dslplatform.client.exceptions.HttpUnexpectedCodeException:
-                     Can't deserialize AggregatePrimaryString.A1A1St. Error: Invalid char found: f. Example:
-                     &#xD;
-                     
+                  <code>java.util.concurrent.ExecutionException: java.io.IOException: ERROR: 22P02: malformed
+                     array literal: "{"","\""","Quote:+\"",+Solidus+/,+Backslash:+\\\,+Aphos:+',+Brackets:+[]+()+{}","	
+                     &#xD;+!\""#$%&amp;'()*+,-./0123456789:;&lt;=&gt;?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\\]^_`abcdefghijklmnopqrstuvwxyz{|}~&#x7f;&#x80;&#x81;&#x82;&#x83;&#x84;&#x85;&#x86;&#x87;&#x88;&#x89;&#x8a;&#x8b;&#x8c;&#x8d;&#x8e;&#x8f;&#x90;&#x91;&#x92;&#x93;&#x94;&#x95;&#x96;&#x97;&#x98;&#x99;&#x9a;&#x9b;&#x9c;&#x9d;&#x9e;&#x9f;&#xa0;&#xa1;&#xa2;&#xa3;&#xa4;&#xa5;&#xa6;&#xa7;&#xa8;&#xa9;&#xaa;&#xab;&#xac;&#xad;&#xae;&#xaf;&#xb0;&#xb1;&#xb2;&#xb3;&#xb4;&#xb5;&#xb6;&#xb7;&#xb8;&#xb9;&#xba;&#xbb;&#xbc;&#xbd;&#xbe;&#xbf;&#xc0;&#xc1;&#xc2;&#xc3;&#xc4;&#xc5;&#xc6;&#xc7;&#xc8;&#xc9;&#xca;&#xcb;&#xcc;&#xcd;&#xce;&#xcf;&#xd0;&#xd1;&#xd2;&#xd3;&#xd4;&#xd5;&#xd6;&#xd7;&#xd8;&#xd9;&#xda;&#xdb;&#xdc;&#xdd;&#xde;&#xdf;&#xe0;&#xe1;&#xe2;&#xe3;&#xe4;&#xe5;&#xe6;&#xe7;&#xe8;&#xe9;&#xea;&#xeb;&#xec;&#xed;&#xee;&#xef;&#xf0;&#xf1;&#xf2;&#xf3;&#xf4;&#xf5;&#xf6;&#xf7;&#xf8;&#xf9;&#xfa;&#xfb;&#xfc;&#xfd;&#xfe;&#xff;&#x100;"}"&#xD;
+                     SQL: SELECT r FROM "AggregatePrimaryString"."A1A1St_entity" r WHERE r."p1A1St" IN
+                     ('{"","\""","Quote:+\"",+Solidus+/,+Backslash:+\\\,+Aphos:+'',+Brackets:+[]+()+{}","	
+                     &#xD;+!\""#$%
                   </code>
                </td>
-               <td>0.141</td>
+               <td>0.417</td>
             </tr>
             <tr class="danger">
                <td>
@@ -110,13 +120,15 @@
                </td>
                <td>Failed</td>
                <td>
-                  <code>java.util.concurrent.ExecutionException: com.dslplatform.client.exceptions.HttpUnexpectedCodeException:
-                     Can't deserialize AggregatePrimaryString.A1A1St. Error: Invalid char found: f. Example:
-                     &#xD;
-                     
+                  <code>java.util.concurrent.ExecutionException: java.io.IOException: ERROR: 22P02: malformed
+                     array literal: "{"	
+                     &#xD;+!\""#$%&amp;'()*+,-./0123456789:;&lt;=&gt;?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\\]^_`abcdefghijklmnopqrstuvwxyz{|}~&#x7f;&#x80;&#x81;&#x82;&#x83;&#x84;&#x85;&#x86;&#x87;&#x88;&#x89;&#x8a;&#x8b;&#x8c;&#x8d;&#x8e;&#x8f;&#x90;&#x91;&#x92;&#x93;&#x94;&#x95;&#x96;&#x97;&#x98;&#x99;&#x9a;&#x9b;&#x9c;&#x9d;&#x9e;&#x9f;&#xa0;&#xa1;&#xa2;&#xa3;&#xa4;&#xa5;&#xa6;&#xa7;&#xa8;&#xa9;&#xaa;&#xab;&#xac;&#xad;&#xae;&#xaf;&#xb0;&#xb1;&#xb2;&#xb3;&#xb4;&#xb5;&#xb6;&#xb7;&#xb8;&#xb9;&#xba;&#xbb;&#xbc;&#xbd;&#xbe;&#xbf;&#xc0;&#xc1;&#xc2;&#xc3;&#xc4;&#xc5;&#xc6;&#xc7;&#xc8;&#xc9;&#xca;&#xcb;&#xcc;&#xcd;&#xce;&#xcf;&#xd0;&#xd1;&#xd2;&#xd3;&#xd4;&#xd5;&#xd6;&#xd7;&#xd8;&#xd9;&#xda;&#xdb;&#xdc;&#xdd;&#xde;&#xdf;&#xe0;&#xe1;&#xe2;&#xe3;&#xe4;&#xe5;&#xe6;&#xe7;&#xe8;&#xe9;&#xea;&#xeb;&#xec;&#xed;&#xee;&#xef;&#xf0;&#xf1;&#xf2;&#xf3;&#xf4;&#xf5;&#xf6;&#xf7;&#xf8;&#xf9;&#xfa;&#xfb;&#xfc;&#xfd;&#xfe;&#xff;&#x100;"}"&#xD;
+                     SQL: SELECT r FROM "AggregatePrimaryString"."A1A1St_entity" r WHERE r."p1A1St" IN
+                     ('{"	
+                     &#xD;+!\""#$%&amp;''()*+,-./0123456789:;&lt;=&gt;?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\\]^_`abcdefghijklmnopqr
                   </code>
                </td>
-               <td>0.009</td>
+               <td>0.185</td>
             </tr>
             <tr class="danger">
                <td>
@@ -126,13 +138,15 @@
                </td>
                <td>Failed</td>
                <td>
-                  <code>java.util.concurrent.ExecutionException: com.dslplatform.client.exceptions.HttpUnexpectedCodeException:
-                     Can't deserialize AggregatePrimaryString.A1L0St. Error: Invalid char found: f. Example:
-                     &#xD;
-                     
+                  <code>java.util.concurrent.ExecutionException: java.io.IOException: ERROR: 22P02: malformed
+                     array literal: "{NULL,"","\""","Quote:+\"",+Solidus+/,+Backslash:+\\\,+Aphos:+',+Brackets:+[]+()+{}","	
+                     &#xD;+!\""#$%&amp;'()*+,-./0123456789:;&lt;=&gt;?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\\]^_`abcdefghijklmnopqrstuvwxyz{|}~&#x7f;&#x80;&#x81;&#x82;&#x83;&#x84;&#x85;&#x86;&#x87;&#x88;&#x89;&#x8a;&#x8b;&#x8c;&#x8d;&#x8e;&#x8f;&#x90;&#x91;&#x92;&#x93;&#x94;&#x95;&#x96;&#x97;&#x98;&#x99;&#x9a;&#x9b;&#x9c;&#x9d;&#x9e;&#x9f;&#xa0;&#xa1;&#xa2;&#xa3;&#xa4;&#xa5;&#xa6;&#xa7;&#xa8;&#xa9;&#xaa;&#xab;&#xac;&#xad;&#xae;&#xaf;&#xb0;&#xb1;&#xb2;&#xb3;&#xb4;&#xb5;&#xb6;&#xb7;&#xb8;&#xb9;&#xba;&#xbb;&#xbc;&#xbd;&#xbe;&#xbf;&#xc0;&#xc1;&#xc2;&#xc3;&#xc4;&#xc5;&#xc6;&#xc7;&#xc8;&#xc9;&#xca;&#xcb;&#xcc;&#xcd;&#xce;&#xcf;&#xd0;&#xd1;&#xd2;&#xd3;&#xd4;&#xd5;&#xd6;&#xd7;&#xd8;&#xd9;&#xda;&#xdb;&#xdc;&#xdd;&#xde;&#xdf;&#xe0;&#xe1;&#xe2;&#xe3;&#xe4;&#xe5;&#xe6;&#xe7;&#xe8;&#xe9;&#xea;&#xeb;&#xec;&#xed;&#xee;&#xef;&#xf0;&#xf1;&#xf2;&#xf3;&#xf4;&#xf5;&#xf6;&#xf7;&#xf8;&#xf9;&#xfa;&#xfb;&#xfc;&#xfd;&#xfe;&#xff;&#x100;"}"&#xD;
+                     SQL: SELECT r FROM "AggregatePrimaryString"."A1L0St_entity" r WHERE r."p1L0St" IN
+                     ('{NULL,"","\""","Quote:+\"",+Solidus+/,+Backslash:+\\\,+Aphos:+'',+Brackets:+[]+()+{}","	
+                     &#xD;+!\
                   </code>
                </td>
-               <td>0.145</td>
+               <td>0.278</td>
             </tr>
             <tr class="danger">
                <td>
@@ -142,13 +156,15 @@
                </td>
                <td>Failed</td>
                <td>
-                  <code>java.util.concurrent.ExecutionException: com.dslplatform.client.exceptions.HttpUnexpectedCodeException:
-                     Can't deserialize AggregatePrimaryString.A1L0St. Error: Invalid char found: f. Example:
-                     &#xD;
-                     
+                  <code>java.util.concurrent.ExecutionException: java.io.IOException: ERROR: 22P02: malformed
+                     array literal: "{"","\""","Quote:+\"",+Solidus+/,+Backslash:+\\\,+Aphos:+',+Brackets:+[]+()+{}","	
+                     &#xD;+!\""#$%&amp;'()*+,-./0123456789:;&lt;=&gt;?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\\]^_`abcdefghijklmnopqrstuvwxyz{|}~&#x7f;&#x80;&#x81;&#x82;&#x83;&#x84;&#x85;&#x86;&#x87;&#x88;&#x89;&#x8a;&#x8b;&#x8c;&#x8d;&#x8e;&#x8f;&#x90;&#x91;&#x92;&#x93;&#x94;&#x95;&#x96;&#x97;&#x98;&#x99;&#x9a;&#x9b;&#x9c;&#x9d;&#x9e;&#x9f;&#xa0;&#xa1;&#xa2;&#xa3;&#xa4;&#xa5;&#xa6;&#xa7;&#xa8;&#xa9;&#xaa;&#xab;&#xac;&#xad;&#xae;&#xaf;&#xb0;&#xb1;&#xb2;&#xb3;&#xb4;&#xb5;&#xb6;&#xb7;&#xb8;&#xb9;&#xba;&#xbb;&#xbc;&#xbd;&#xbe;&#xbf;&#xc0;&#xc1;&#xc2;&#xc3;&#xc4;&#xc5;&#xc6;&#xc7;&#xc8;&#xc9;&#xca;&#xcb;&#xcc;&#xcd;&#xce;&#xcf;&#xd0;&#xd1;&#xd2;&#xd3;&#xd4;&#xd5;&#xd6;&#xd7;&#xd8;&#xd9;&#xda;&#xdb;&#xdc;&#xdd;&#xde;&#xdf;&#xe0;&#xe1;&#xe2;&#xe3;&#xe4;&#xe5;&#xe6;&#xe7;&#xe8;&#xe9;&#xea;&#xeb;&#xec;&#xed;&#xee;&#xef;&#xf0;&#xf1;&#xf2;&#xf3;&#xf4;&#xf5;&#xf6;&#xf7;&#xf8;&#xf9;&#xfa;&#xfb;&#xfc;&#xfd;&#xfe;&#xff;&#x100;"}"&#xD;
+                     SQL: SELECT r FROM "AggregatePrimaryString"."A1L0St_entity" r WHERE r."p1L0St" IN
+                     ('{"","\""","Quote:+\"",+Solidus+/,+Backslash:+\\\,+Aphos:+'',+Brackets:+[]+()+{}","	
+                     &#xD;+!\""#$%
                   </code>
                </td>
-               <td>0.014</td>
+               <td>0.428</td>
             </tr>
             <tr class="danger">
                <td>
@@ -158,13 +174,15 @@
                </td>
                <td>Failed</td>
                <td>
-                  <code>java.util.concurrent.ExecutionException: com.dslplatform.client.exceptions.HttpUnexpectedCodeException:
-                     Can't deserialize AggregatePrimaryString.A1L0St. Error: Invalid char found: f. Example:
-                     &#xD;
-                     
+                  <code>java.util.concurrent.ExecutionException: java.io.IOException: ERROR: 22P02: malformed
+                     array literal: "{"	
+                     &#xD;+!\""#$%&amp;'()*+,-./0123456789:;&lt;=&gt;?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\\]^_`abcdefghijklmnopqrstuvwxyz{|}~&#x7f;&#x80;&#x81;&#x82;&#x83;&#x84;&#x85;&#x86;&#x87;&#x88;&#x89;&#x8a;&#x8b;&#x8c;&#x8d;&#x8e;&#x8f;&#x90;&#x91;&#x92;&#x93;&#x94;&#x95;&#x96;&#x97;&#x98;&#x99;&#x9a;&#x9b;&#x9c;&#x9d;&#x9e;&#x9f;&#xa0;&#xa1;&#xa2;&#xa3;&#xa4;&#xa5;&#xa6;&#xa7;&#xa8;&#xa9;&#xaa;&#xab;&#xac;&#xad;&#xae;&#xaf;&#xb0;&#xb1;&#xb2;&#xb3;&#xb4;&#xb5;&#xb6;&#xb7;&#xb8;&#xb9;&#xba;&#xbb;&#xbc;&#xbd;&#xbe;&#xbf;&#xc0;&#xc1;&#xc2;&#xc3;&#xc4;&#xc5;&#xc6;&#xc7;&#xc8;&#xc9;&#xca;&#xcb;&#xcc;&#xcd;&#xce;&#xcf;&#xd0;&#xd1;&#xd2;&#xd3;&#xd4;&#xd5;&#xd6;&#xd7;&#xd8;&#xd9;&#xda;&#xdb;&#xdc;&#xdd;&#xde;&#xdf;&#xe0;&#xe1;&#xe2;&#xe3;&#xe4;&#xe5;&#xe6;&#xe7;&#xe8;&#xe9;&#xea;&#xeb;&#xec;&#xed;&#xee;&#xef;&#xf0;&#xf1;&#xf2;&#xf3;&#xf4;&#xf5;&#xf6;&#xf7;&#xf8;&#xf9;&#xfa;&#xfb;&#xfc;&#xfd;&#xfe;&#xff;&#x100;"}"&#xD;
+                     SQL: SELECT r FROM "AggregatePrimaryString"."A1L0St_entity" r WHERE r."p1L0St" IN
+                     ('{"	
+                     &#xD;+!\""#$%&amp;''()*+,-./0123456789:;&lt;=&gt;?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\\]^_`abcdefghijklmnopqr
                   </code>
                </td>
-               <td>0.078</td>
+               <td>0.487</td>
             </tr>
             <tr class="danger">
                <td>
@@ -174,13 +192,15 @@
                </td>
                <td>Failed</td>
                <td>
-                  <code>java.util.concurrent.ExecutionException: com.dslplatform.client.exceptions.HttpUnexpectedCodeException:
-                     Can't deserialize AggregatePrimaryString.A1L1St. Error: Invalid char found: f. Example:
-                     &#xD;
-                     
+                  <code>java.util.concurrent.ExecutionException: java.io.IOException: ERROR: 22P02: malformed
+                     array literal: "{"","\""","Quote:+\"",+Solidus+/,+Backslash:+\\\,+Aphos:+',+Brackets:+[]+()+{}","	
+                     &#xD;+!\""#$%&amp;'()*+,-./0123456789:;&lt;=&gt;?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\\]^_`abcdefghijklmnopqrstuvwxyz{|}~&#x7f;&#x80;&#x81;&#x82;&#x83;&#x84;&#x85;&#x86;&#x87;&#x88;&#x89;&#x8a;&#x8b;&#x8c;&#x8d;&#x8e;&#x8f;&#x90;&#x91;&#x92;&#x93;&#x94;&#x95;&#x96;&#x97;&#x98;&#x99;&#x9a;&#x9b;&#x9c;&#x9d;&#x9e;&#x9f;&#xa0;&#xa1;&#xa2;&#xa3;&#xa4;&#xa5;&#xa6;&#xa7;&#xa8;&#xa9;&#xaa;&#xab;&#xac;&#xad;&#xae;&#xaf;&#xb0;&#xb1;&#xb2;&#xb3;&#xb4;&#xb5;&#xb6;&#xb7;&#xb8;&#xb9;&#xba;&#xbb;&#xbc;&#xbd;&#xbe;&#xbf;&#xc0;&#xc1;&#xc2;&#xc3;&#xc4;&#xc5;&#xc6;&#xc7;&#xc8;&#xc9;&#xca;&#xcb;&#xcc;&#xcd;&#xce;&#xcf;&#xd0;&#xd1;&#xd2;&#xd3;&#xd4;&#xd5;&#xd6;&#xd7;&#xd8;&#xd9;&#xda;&#xdb;&#xdc;&#xdd;&#xde;&#xdf;&#xe0;&#xe1;&#xe2;&#xe3;&#xe4;&#xe5;&#xe6;&#xe7;&#xe8;&#xe9;&#xea;&#xeb;&#xec;&#xed;&#xee;&#xef;&#xf0;&#xf1;&#xf2;&#xf3;&#xf4;&#xf5;&#xf6;&#xf7;&#xf8;&#xf9;&#xfa;&#xfb;&#xfc;&#xfd;&#xfe;&#xff;&#x100;"}"&#xD;
+                     SQL: SELECT r FROM "AggregatePrimaryString"."A1L1St_entity" r WHERE r."p1L1St" IN
+                     ('{"","\""","Quote:+\"",+Solidus+/,+Backslash:+\\\,+Aphos:+'',+Brackets:+[]+()+{}","	
+                     &#xD;+!\""#$%
                   </code>
                </td>
-               <td>0.211</td>
+               <td>0.239</td>
             </tr>
             <tr class="danger">
                <td>
@@ -190,13 +210,15 @@
                </td>
                <td>Failed</td>
                <td>
-                  <code>java.util.concurrent.ExecutionException: com.dslplatform.client.exceptions.HttpUnexpectedCodeException:
-                     Can't deserialize AggregatePrimaryString.A1L1St. Error: Invalid char found: f. Example:
-                     &#xD;
-                     
+                  <code>java.util.concurrent.ExecutionException: java.io.IOException: ERROR: 22P02: malformed
+                     array literal: "{"	
+                     &#xD;+!\""#$%&amp;'()*+,-./0123456789:;&lt;=&gt;?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\\]^_`abcdefghijklmnopqrstuvwxyz{|}~&#x7f;&#x80;&#x81;&#x82;&#x83;&#x84;&#x85;&#x86;&#x87;&#x88;&#x89;&#x8a;&#x8b;&#x8c;&#x8d;&#x8e;&#x8f;&#x90;&#x91;&#x92;&#x93;&#x94;&#x95;&#x96;&#x97;&#x98;&#x99;&#x9a;&#x9b;&#x9c;&#x9d;&#x9e;&#x9f;&#xa0;&#xa1;&#xa2;&#xa3;&#xa4;&#xa5;&#xa6;&#xa7;&#xa8;&#xa9;&#xaa;&#xab;&#xac;&#xad;&#xae;&#xaf;&#xb0;&#xb1;&#xb2;&#xb3;&#xb4;&#xb5;&#xb6;&#xb7;&#xb8;&#xb9;&#xba;&#xbb;&#xbc;&#xbd;&#xbe;&#xbf;&#xc0;&#xc1;&#xc2;&#xc3;&#xc4;&#xc5;&#xc6;&#xc7;&#xc8;&#xc9;&#xca;&#xcb;&#xcc;&#xcd;&#xce;&#xcf;&#xd0;&#xd1;&#xd2;&#xd3;&#xd4;&#xd5;&#xd6;&#xd7;&#xd8;&#xd9;&#xda;&#xdb;&#xdc;&#xdd;&#xde;&#xdf;&#xe0;&#xe1;&#xe2;&#xe3;&#xe4;&#xe5;&#xe6;&#xe7;&#xe8;&#xe9;&#xea;&#xeb;&#xec;&#xed;&#xee;&#xef;&#xf0;&#xf1;&#xf2;&#xf3;&#xf4;&#xf5;&#xf6;&#xf7;&#xf8;&#xf9;&#xfa;&#xfb;&#xfc;&#xfd;&#xfe;&#xff;&#x100;"}"&#xD;
+                     SQL: SELECT r FROM "AggregatePrimaryString"."A1L1St_entity" r WHERE r."p1L1St" IN
+                     ('{"	
+                     &#xD;+!\""#$%&amp;''()*+,-./0123456789:;&lt;=&gt;?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\\]^_`abcdefghijklmnopqr
                   </code>
                </td>
-               <td>0.016</td>
+               <td>0.154</td>
             </tr>
             <tr class="danger">
                <td>
@@ -207,12 +229,11 @@
                <td>Failed</td>
                <td>
                   <code>java.util.concurrent.ExecutionException: com.dslplatform.client.exceptions.HttpUnexpectedCodeException:
-                     Can't deserialize AggregatePrimaryString.A1St. Error: Invalid char found: f. Example:
-                     &#xD;
-                     
+                     Can't find AggregatePrimaryString.A1St with Uri: 	
+                     &#xD;+!"#$%&amp;'()*+,-./0123456789:;&lt;=&gt;?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~&#x7f;&#x80;&#x81;&#x82;&#x83;&#x84;&#x85;&#x86;&#x87;&#x88;&#x89;&#x8a;&#x8b;&#x8c;&#x8d;&#x8e;&#x8f;&#x90;&#x91;&#x92;&#x93;&#x94;&#x95;&#x96;&#x97;&#x98;&#x99;&#x9a;&#x9b;&#x9c;&#x9d;&#x9e;&#x9f;&#xa0;&#xa1;&#xa2;&#xa3;&#xa4;&#xa5;&#xa6;&#xa7;&#xa8;&#xa9;&#xaa;&#xab;&#xac;&#xad;&#xae;&#xaf;&#xb0;&#xb1;&#xb2;&#xb3;&#xb4;&#xb5;&#xb6;&#xb7;&#xb8;&#xb9;&#xba;&#xbb;&#xbc;&#xbd;&#xbe;&#xbf;&#xc0;&#xc1;&#xc2;&#xc3;&#xc4;&#xc5;&#xc6;&#xc7;&#xc8;&#xc9;&#xca;&#xcb;&#xcc;&#xcd;&#xce;&#xcf;&#xd0;&#xd1;&#xd2;&#xd3;&#xd4;&#xd5;&#xd6;&#xd7;&#xd8;&#xd9;&#xda;&#xdb;&#xdc;&#xdd;&#xde;&#xdf;&#xe0;&#xe1;&#xe2;&#xe3;&#xe4;&#xe5;&#xe6;&#xe7;&#xe8;&#xe9;&#xea;&#xeb;&#xec;&#xed;&#xee;&#xef;&#xf0;&#xf1;&#xf2;&#xf3;&#xf4;&#xf5;&#xf6;&#xf7;&#xf8;&#xf9;&#xfa;&#xfb;&#xfc;&#xfd;&#xfe;&#xff;&#x100;.
                   </code>
                </td>
-               <td>0.144</td>
+               <td>0.1</td>
             </tr>
             <tr class="danger">
                <td>
@@ -226,7 +247,7 @@
                      Can't find AggregatePrimaryString.A1St with Uri: Quote:+",+Solidus+/,+Backslash:+\,+Aphos:+',+Brackets:+[]+()+{}.
                   </code>
                </td>
-               <td>0.033</td>
+               <td>0.126</td>
             </tr>
          </table>
       </div>
@@ -249,7 +270,7 @@
                <td>
                   <code></code>
                </td>
-               <td>0.191</td>
+               <td>0.26</td>
             </tr>
             <tr class="">
                <td>
@@ -285,7 +306,7 @@
                <td>
                   <code></code>
                </td>
-               <td>0.0</td>
+               <td>0.001</td>
             </tr>
             <tr class="">
                <td>
@@ -297,19 +318,7 @@
                <td>
                   <code></code>
                </td>
-               <td>0.002</td>
-            </tr>
-            <tr class="">
-               <td>
-                  <a href="&#xA;        ../../../../com/dslplatform/ocd/aggregates/AggregateWithOneArrayOfNullableStringsPropertyAsPrimaryKeyTest/testP1A0StNonDefault2PropertyValueInAggregateAfterActiveRecordPersist.html&#xA;    ">testP1A0StNonDefault2PropertyValueInAggregateAfterActiveRecordPersist</a>
-                  <br></br>
-                  <a target="_blank" href="PrimarySingleString_stacktrace.html#testP1A0StNonDefault2PropertyValueInAggregateAfterActiveRecordPersist">(view stacktrace)</a>
-               </td>
-               <td>Success</td>
-               <td>
-                  <code></code>
-               </td>
-               <td>0.172</td>
+               <td>0.001</td>
             </tr>
             <tr class="">
                <td>
@@ -321,7 +330,7 @@
                <td>
                   <code></code>
                </td>
-               <td>0.065</td>
+               <td>5.506</td>
             </tr>
             <tr class="">
                <td>
@@ -333,7 +342,7 @@
                <td>
                   <code></code>
                </td>
-               <td>0.001</td>
+               <td>0.0</td>
             </tr>
             <tr class="">
                <td>
@@ -369,7 +378,7 @@
                <td>
                   <code></code>
                </td>
-               <td>0.136</td>
+               <td>0.107</td>
             </tr>
             <tr class="">
                <td>
@@ -405,7 +414,7 @@
                <td>
                   <code></code>
                </td>
-               <td>0.001</td>
+               <td>0.0</td>
             </tr>
             <tr class="">
                <td>
@@ -525,7 +534,7 @@
                <td>
                   <code></code>
                </td>
-               <td>0.001</td>
+               <td>0.0</td>
             </tr>
             <tr class="">
                <td>
@@ -561,7 +570,7 @@
                <td>
                   <code></code>
                </td>
-               <td>0.0</td>
+               <td>0.001</td>
             </tr>
             <tr class="">
                <td>
@@ -573,7 +582,7 @@
                <td>
                   <code></code>
                </td>
-               <td>0.001</td>
+               <td>0.0</td>
             </tr>
             <tr class="">
                <td>
@@ -585,7 +594,7 @@
                <td>
                   <code></code>
                </td>
-               <td>0.006</td>
+               <td>0.004</td>
             </tr>
             <tr class="">
                <td>
@@ -597,7 +606,7 @@
                <td>
                   <code></code>
                </td>
-               <td>0.002</td>
+               <td>0.0</td>
             </tr>
             <tr class="">
                <td>
@@ -621,7 +630,7 @@
                <td>
                   <code></code>
                </td>
-               <td>0.001</td>
+               <td>0.002</td>
             </tr>
             <tr class="">
                <td>
@@ -669,7 +678,7 @@
                <td>
                   <code></code>
                </td>
-               <td>0.0</td>
+               <td>0.001</td>
             </tr>
             <tr class="">
                <td>
@@ -681,7 +690,7 @@
                <td>
                   <code></code>
                </td>
-               <td>0.0</td>
+               <td>0.001</td>
             </tr>
             <tr class="">
                <td>
@@ -693,7 +702,7 @@
                <td>
                   <code></code>
                </td>
-               <td>0.001</td>
+               <td>0.0</td>
             </tr>
             <tr class="">
                <td>
@@ -753,7 +762,7 @@
                <td>
                   <code></code>
                </td>
-               <td>0.1</td>
+               <td>0.159</td>
             </tr>
             <tr class="">
                <td>
@@ -777,7 +786,7 @@
                <td>
                   <code></code>
                </td>
-               <td>0.077</td>
+               <td>0.069</td>
             </tr>
             <tr class="">
                <td>
@@ -837,7 +846,7 @@
                <td>
                   <code></code>
                </td>
-               <td>0.164</td>
+               <td>0.188</td>
             </tr>
             <tr class="">
                <td>
@@ -849,7 +858,7 @@
                <td>
                   <code></code>
                </td>
-               <td>0.004</td>
+               <td>0.002</td>
             </tr>
             <tr class="">
                <td>
@@ -861,7 +870,7 @@
                <td>
                   <code></code>
                </td>
-               <td>0.001</td>
+               <td>0.0</td>
             </tr>
             <tr class="">
                <td>
@@ -885,7 +894,7 @@
                <td>
                   <code></code>
                </td>
-               <td>0.001</td>
+               <td>0.0</td>
             </tr>
             <tr class="">
                <td>
@@ -897,7 +906,7 @@
                <td>
                   <code></code>
                </td>
-               <td>0.0</td>
+               <td>0.001</td>
             </tr>
             <tr class="">
                <td>
@@ -909,7 +918,7 @@
                <td>
                   <code></code>
                </td>
-               <td>0.001</td>
+               <td>0.0</td>
             </tr>
             <tr class="">
                <td>
@@ -921,7 +930,7 @@
                <td>
                   <code></code>
                </td>
-               <td>0.002</td>
+               <td>0.014</td>
             </tr>
             <tr class="">
                <td>
@@ -969,7 +978,7 @@
                <td>
                   <code></code>
                </td>
-               <td>0.0</td>
+               <td>0.002</td>
             </tr>
             <tr class="">
                <td>
@@ -993,7 +1002,7 @@
                <td>
                   <code></code>
                </td>
-               <td>0.001</td>
+               <td>0.0</td>
             </tr>
             <tr class="">
                <td>
@@ -1065,7 +1074,7 @@
                <td>
                   <code></code>
                </td>
-               <td>0.095</td>
+               <td>0.293</td>
             </tr>
             <tr class="">
                <td>
@@ -1077,7 +1086,7 @@
                <td>
                   <code></code>
                </td>
-               <td>0.053</td>
+               <td>0.064</td>
             </tr>
             <tr class="">
                <td>
@@ -1137,7 +1146,7 @@
                <td>
                   <code></code>
                </td>
-               <td>0.001</td>
+               <td>0.0</td>
             </tr>
             <tr class="">
                <td>
@@ -1149,7 +1158,7 @@
                <td>
                   <code></code>
                </td>
-               <td>0.03</td>
+               <td>0.0</td>
             </tr>
             <tr class="">
                <td>
@@ -1161,7 +1170,7 @@
                <td>
                   <code></code>
                </td>
-               <td>0.0</td>
+               <td>0.001</td>
             </tr>
             <tr class="">
                <td>
@@ -1185,7 +1194,7 @@
                <td>
                   <code></code>
                </td>
-               <td>0.004</td>
+               <td>0.001</td>
             </tr>
             <tr class="">
                <td>
@@ -1197,7 +1206,7 @@
                <td>
                   <code></code>
                </td>
-               <td>0.015</td>
+               <td>0.012</td>
             </tr>
             <tr class="">
                <td>
@@ -1233,7 +1242,7 @@
                <td>
                   <code></code>
                </td>
-               <td>0.001</td>
+               <td>0.0</td>
             </tr>
             <tr class="">
                <td>
@@ -1245,7 +1254,7 @@
                <td>
                   <code></code>
                </td>
-               <td>0.079</td>
+               <td>0.154</td>
             </tr>
             <tr class="">
                <td>
@@ -1269,7 +1278,7 @@
                <td>
                   <code></code>
                </td>
-               <td>0.001</td>
+               <td>0.007</td>
             </tr>
             <tr class="">
                <td>
@@ -1341,7 +1350,7 @@
                <td>
                   <code></code>
                </td>
-               <td>0.139</td>
+               <td>0.075</td>
             </tr>
             <tr class="">
                <td>
@@ -1413,7 +1422,7 @@
                <td>
                   <code></code>
                </td>
-               <td>0.003</td>
+               <td>0.018</td>
             </tr>
             <tr class="">
                <td>
@@ -1437,7 +1446,7 @@
                <td>
                   <code></code>
                </td>
-               <td>0.001</td>
+               <td>0.0</td>
             </tr>
             <tr class="">
                <td>
@@ -1449,7 +1458,7 @@
                <td>
                   <code></code>
                </td>
-               <td>0.0</td>
+               <td>0.001</td>
             </tr>
             <tr class="">
                <td>
@@ -1473,7 +1482,7 @@
                <td>
                   <code></code>
                </td>
-               <td>0.001</td>
+               <td>0.002</td>
             </tr>
             <tr class="">
                <td>
@@ -1497,7 +1506,7 @@
                <td>
                   <code></code>
                </td>
-               <td>0.244</td>
+               <td>0.213</td>
             </tr>
             <tr class="">
                <td>
@@ -1533,7 +1542,7 @@
                <td>
                   <code></code>
                </td>
-               <td>0.001</td>
+               <td>0.0</td>
             </tr>
             <tr class="">
                <td>
@@ -1545,7 +1554,7 @@
                <td>
                   <code></code>
                </td>
-               <td>0.0</td>
+               <td>0.001</td>
             </tr>
             <tr class="">
                <td>
@@ -1569,7 +1578,7 @@
                <td>
                   <code></code>
                </td>
-               <td>0.438</td>
+               <td>0.083</td>
             </tr>
             <tr class="">
                <td>
@@ -1581,7 +1590,7 @@
                <td>
                   <code></code>
                </td>
-               <td>0.001</td>
+               <td>0.0</td>
             </tr>
             <tr class="">
                <td>
@@ -1605,7 +1614,7 @@
                <td>
                   <code></code>
                </td>
-               <td>0.0</td>
+               <td>0.001</td>
             </tr>
             <tr class="">
                <td>
@@ -1629,7 +1638,7 @@
                <td>
                   <code></code>
                </td>
-               <td>0.0</td>
+               <td>0.002</td>
             </tr>
             <tr class="">
                <td>
@@ -1641,7 +1650,7 @@
                <td>
                   <code></code>
                </td>
-               <td>0.001</td>
+               <td>0.0</td>
             </tr>
             <tr class="">
                <td>
@@ -1677,7 +1686,7 @@
                <td>
                   <code></code>
                </td>
-               <td>0.0</td>
+               <td>0.001</td>
             </tr>
             <tr class="">
                <td>
@@ -1701,7 +1710,7 @@
                <td>
                   <code></code>
                </td>
-               <td>0.0</td>
+               <td>0.001</td>
             </tr>
             <tr class="">
                <td>
@@ -1749,7 +1758,7 @@
                <td>
                   <code></code>
                </td>
-               <td>0.0</td>
+               <td>0.001</td>
             </tr>
             <tr class="">
                <td>
