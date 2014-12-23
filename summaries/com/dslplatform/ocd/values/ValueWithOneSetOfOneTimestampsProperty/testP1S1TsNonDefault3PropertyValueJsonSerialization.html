@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="US-ASCII"?><html xmlns:lxslt="http://xml.apache.org/xslt" xmlns:stringutils="xalan://org.apache.tools.ant.util.StringUtils">
+   <head>
+      <title>Test case summary</title>
+      <link rel="stylesheet" href="../../../../../../css/bootstrap.min.css"></link>
+      <script src="../../../../../../js/jquery.min.js"></script>
+      <script src="../../../../../../js/bootstrap.min.js"></script>
+   </head>
+   <body>
+      <div id="testDetails" class="container">
+         <h1>testP1S1TsNonDefault3PropertyValueJsonSerialization</h1>
+         <h2>
+            <a target="_blank" href="&#xA;      ../../../../../com/dslplatform/ocd/test/ValueSingleTimestamp_stacktrace.html#testP1S1TsNonDefault3PropertyValueJsonSerialization">
+               (view stacktrace)
+               
+            </a>
+         </h2>
+         <table class="table table-striped" style="width: 1500px">
+            <tr>
+               <td>Name:</td>
+               <td>Status:</td>
+               <td>Time:</td>
+            </tr>
+            <tr>
+               <td>testP1S1TsNonDefault3PropertyValueJsonSerialization</td>
+               <td>Failed</td>
+               <td>0.003</td>
+            </tr>
+         </table>
+         <h2>Errors:</h2>
+         <table class="table" style="width: 1500px">
+            <tr>
+               <td>Type:</td>
+               <td>java.lang.AssertionError</td>
+            </tr>
+            <tr>
+               <td>Message:</td>
+               <td>
+                  <code>expected:&lt;V1S1Ts([1970-01-01T01:00:00.000+01:00, 2038-02-13T00:45:30.647+01:00, 2014-12-23T17:21:47.763+01:00,
+                     0001-01-01T00:00:00.000+01:22])&gt; but was:&lt;V1S1Ts([2038-02-13T00:45:30.647+01:00, 2014-12-23T17:21:47.763+01:00,
+                     1970-01-01T01:00:00.000+01:00, 0001-01-01T00:00:00.000+01:22])&gt;
+                  </code>
+               </td>
+            </tr>
+            <tr>
+               <td>Text:</td>
+               <td>
+                  <code>java.lang.AssertionError: expected:<V1S1Ts([1970-01-01T01:00:00.000+01:00, 2038-02-13T00:45:30.647+01:00, 2014-12-23T17:21:47.763+01:00, 0001-01-01T00:00:00.000+01:22])> but was:<V1S1Ts([2038-02-13T00:45:30.647+01:00, 2014-12-23T17:21:47.763+01:00, 1970-01-01T01:00:00.000+01:00, 0001-01-01T00:00:00.000+01:22])>
+                     <br></br>	at com.dslplatform.ocd.values.ValueWithOneSetOfOneTimestampsProperty.testP1S1TsNonDefault3PropertyValueJsonSerialization(Unknown Source)
+                     <br></br>
+                  </code>
+               </td>
+            </tr>
+         </table>
+      </div>
+   </body>
+</html>

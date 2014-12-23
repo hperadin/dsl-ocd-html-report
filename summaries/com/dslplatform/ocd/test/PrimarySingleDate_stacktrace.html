@@ -1,0 +1,824 @@
+<?xml version="1.0" encoding="US-ASCII"?><html xmlns:lxslt="http://xml.apache.org/xslt" xmlns:stringutils="xalan://org.apache.tools.ant.util.StringUtils">
+   <head></head>
+   <body><a id="testP1A0DaNonDefault4PropertyInAggregateJsonSerialization"/><h2>testP1A0DaNonDefault4PropertyInAggregateJsonSerialization</h2>
+      <br></br><a id="testNonExistenceOfURIPropertySetter"/><h2>testNonExistenceOfURIPropertySetter</h2>
+      <br></br><a id="testP1A0DaNonDefault5PropertyInAggregateJsonSerialization"/><h2>testP1A0DaNonDefault5PropertyInAggregateJsonSerialization</h2>
+      <br></br><a id="testP1A0DaPropertyFieldPrivateVisibility"/><h2>testP1A0DaPropertyFieldPrivateVisibility</h2>
+      <br></br><a id="testP1A0DaPropertyFieldModifiers"/><h2>testP1A0DaPropertyFieldModifiers</h2>
+      <br></br><a id="testP1A0DaPropertyFieldClass"/><h2>testP1A0DaPropertyFieldClass</h2>
+      <br></br><a id="testP1A0DaDefaultPropertyInAggregateJsonSerialization"/><h2>testP1A0DaDefaultPropertyInAggregateJsonSerialization</h2>
+      <br></br><a id="testP1A0DaPropertyGetterPublicVisibility"/><h2>testP1A0DaPropertyGetterPublicVisibility</h2>
+      <br></br><a id="testP1A0DaPropertySetterClass"/><h2>testP1A0DaPropertySetterClass</h2>
+      <br></br><a id="testP1A0DaPropertyGetterClass"/><h2>testP1A0DaPropertyGetterClass</h2>
+      <br></br><a id="testP1A0DaPropertyGetterModifiers"/><h2>testP1A0DaPropertyGetterModifiers</h2>
+      <br></br><a id="testURIPropertyFieldClass"/><h2>testURIPropertyFieldClass</h2>
+      <br></br><a id="testURIPropertyFieldPrivateVisibility"/><h2>testURIPropertyFieldPrivateVisibility</h2>
+      <br></br><a id="testP1A0DaPropertySetterModifiers"/><h2>testP1A0DaPropertySetterModifiers</h2>
+      <br></br><a id="testP1A0DaPropertySetterPublicVisibility"/><h2>testP1A0DaPropertySetterPublicVisibility</h2>
+      <br></br><a id="testURIPropertyFieldModifiers"/><h2>testURIPropertyFieldModifiers</h2>
+      <br></br><a id="testURIPropertyGetterPublicVisibility"/><h2>testURIPropertyGetterPublicVisibility</h2>
+      <br></br><a id="testP1A0DaNonDefault1PropertyInAggregateJsonSerialization"/><h2>testP1A0DaNonDefault1PropertyInAggregateJsonSerialization</h2>
+      <br></br><a id="testP1A0DaNonDefault5PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1A0DaNonDefault5PropertyValueInAggregateAfterActiveRecordPersist</h2>
+      <br></br>2014-12-23 16:39:37,811 [HttpClient.java:179] Sending request [GET]: Domain.svc/search/AggregatePrimaryDate.A1A0Da?limit=2147483647&offset=0
+      <br></br>2014-12-23 16:39:37,817 [HttpClient.java:370] GET http://localhost:2033/Domain.svc/search/AggregatePrimaryDate.A1A0Da?limit=2147483647&offset=0
+      <br></br>2014-12-23 16:39:37,817 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 16:39:37,818 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 16:39:38,480 [HttpClient.java:197] Received response [200, 26 bytes] in 675 ms
+      <br></br>2014-12-23 16:39:38,480 [HttpClient.java:200] Received response body: [{"URI":"{}","p1A0Da":[]}]
+      <br></br>2014-12-23 16:39:38,502 [HttpClient.java:190] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 74 bytes
+      <br></br>2014-12-23 16:39:38,502 [HttpClient.java:370] POST http://localhost:2033/RestApplication.svc/PersistAggregateRoot
+      <br></br>2014-12-23 16:39:38,502 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 16:39:38,502 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 16:39:38,503 [HttpClient.java:383] Adding payload: {"RootName":"AggregatePrimaryDate.A1A0Da","ToDelete":"[{\"URI\":\"{}\"}]"}
+      <br></br>2014-12-23 16:39:39,169 [HttpClient.java:197] Received response [200, 2 bytes] in 678 ms
+      <br></br>2014-12-23 16:39:39,170 [HttpClient.java:200] Received response body: []
+      <br></br>2014-12-23 16:39:39,174 [HttpClient.java:190] Sending request [POST]: Crud.svc/AggregatePrimaryDate.A1A0Da, content size: 114 bytes
+      <br></br>2014-12-23 16:39:39,174 [HttpClient.java:370] POST http://localhost:2033/Crud.svc/AggregatePrimaryDate.A1A0Da
+      <br></br>2014-12-23 16:39:39,174 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 16:39:39,174 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 16:39:39,174 [HttpClient.java:383] Adding payload: {"URI":"1681508987","p1A0Da":[null,"2014-12-23","0001-02-03","0001-01-01","1970-01-01","2038-02-13","9999-12-31"]}
+      <br></br>2014-12-23 16:39:39,289 [HttpClient.java:197] Received response [201, 176 bytes] in 116 ms
+      <br></br>2014-12-23 16:39:39,289 [HttpClient.java:200] Received response body: {"URI":"{NULL,2014-12-23,0001-02-03,0001-01-01,1970-01-01,2038-02-13,9999-12-31}","p1A0Da":[null,"2014-12-23","0001-02-03","0001-01-01","1970-01-01","2038-02-13","9999-12-31"]}
+      <br></br>2014-12-23 16:39:39,291 [HttpClient.java:179] Sending request [GET]: Crud.svc/AggregatePrimaryDate.A1A0Da?uri=%7BNULL%2C2014-12-23%2C0001-02-03%2C0001-01-01%2C1970-01-01%2C2038-02-13%2C9999-12-31%7D
+      <br></br>2014-12-23 16:39:39,291 [HttpClient.java:370] GET http://localhost:2033/Crud.svc/AggregatePrimaryDate.A1A0Da?uri=%7BNULL%2C2014-12-23%2C0001-02-03%2C0001-01-01%2C1970-01-01%2C2038-02-13%2C9999-12-31%7D
+      <br></br>2014-12-23 16:39:39,292 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 16:39:39,292 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 16:39:39,325 [HttpClient.java:197] Received response [200, 176 bytes] in 34 ms
+      <br></br>2014-12-23 16:39:39,325 [HttpClient.java:200] Received response body: {"URI":"{NULL,2014-12-23,0001-02-03,0001-01-01,1970-01-01,2038-02-13,9999-12-31}","p1A0Da":[null,"2014-12-23","0001-02-03","0001-01-01","1970-01-01","2038-02-13","9999-12-31"]}
+      <br></br><a id="testP1A0DaNonDefault4PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1A0DaNonDefault4PropertyValueInAggregateAfterActiveRecordPersist</h2>
+      <br></br>2014-12-23 16:39:39,327 [HttpClient.java:179] Sending request [GET]: Domain.svc/search/AggregatePrimaryDate.A1A0Da?limit=2147483647&offset=0
+      <br></br>2014-12-23 16:39:39,327 [HttpClient.java:370] GET http://localhost:2033/Domain.svc/search/AggregatePrimaryDate.A1A0Da?limit=2147483647&offset=0
+      <br></br>2014-12-23 16:39:39,328 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 16:39:39,328 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 16:39:39,332 [HttpClient.java:197] Received response [200, 178 bytes] in 5 ms
+      <br></br>2014-12-23 16:39:39,333 [HttpClient.java:200] Received response body: [{"URI":"{NULL,2014-12-23,0001-02-03,0001-01-01,1970-01-01,2038-02-13,9999-12-31}","p1A0Da":[null,"2014-12-23","0001-02-03","0001-01-01","1970-01-01","2038-02-13","9999-12-31"]}]
+      <br></br>2014-12-23 16:39:39,333 [HttpClient.java:190] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 252 bytes
+      <br></br>2014-12-23 16:39:39,333 [HttpClient.java:370] POST http://localhost:2033/RestApplication.svc/PersistAggregateRoot
+      <br></br>2014-12-23 16:39:39,333 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 16:39:39,333 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 16:39:39,333 [HttpClient.java:383] Adding payload: {"RootName":"AggregatePrimaryDate.A1A0Da","ToDelete":"[{\"URI\":\"{NULL,2014-12-23,0001-02-03,0001-01-01,1970-01-01,2038-02-13,9999-12-31}\",\"p1A0Da\":[null,\"2014-12-23\",\"0001-02-03\",\"0001-01-01\",\"1970-01-01\",\"2038-02-13\",\"9999-12-31\"]}]"}
+      <br></br>2014-12-23 16:39:39,355 [HttpClient.java:197] Received response [200, 2 bytes] in 22 ms
+      <br></br>2014-12-23 16:39:39,355 [HttpClient.java:200] Received response body: []
+      <br></br>2014-12-23 16:39:39,355 [HttpClient.java:190] Sending request [POST]: Crud.svc/AggregatePrimaryDate.A1A0Da, content size: 109 bytes
+      <br></br>2014-12-23 16:39:39,355 [HttpClient.java:370] POST http://localhost:2033/Crud.svc/AggregatePrimaryDate.A1A0Da
+      <br></br>2014-12-23 16:39:39,355 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 16:39:39,356 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 16:39:39,356 [HttpClient.java:383] Adding payload: {"URI":"1092453616","p1A0Da":["2014-12-23","0001-02-03","0001-01-01","1970-01-01","2038-02-13","9999-12-31"]}
+      <br></br>2014-12-23 16:39:39,369 [HttpClient.java:197] Received response [201, 166 bytes] in 14 ms
+      <br></br>2014-12-23 16:39:39,369 [HttpClient.java:200] Received response body: {"URI":"{2014-12-23,0001-02-03,0001-01-01,1970-01-01,2038-02-13,9999-12-31}","p1A0Da":["2014-12-23","0001-02-03","0001-01-01","1970-01-01","2038-02-13","9999-12-31"]}
+      <br></br>2014-12-23 16:39:39,370 [HttpClient.java:179] Sending request [GET]: Crud.svc/AggregatePrimaryDate.A1A0Da?uri=%7B2014-12-23%2C0001-02-03%2C0001-01-01%2C1970-01-01%2C2038-02-13%2C9999-12-31%7D
+      <br></br>2014-12-23 16:39:39,377 [HttpClient.java:370] GET http://localhost:2033/Crud.svc/AggregatePrimaryDate.A1A0Da?uri=%7B2014-12-23%2C0001-02-03%2C0001-01-01%2C1970-01-01%2C2038-02-13%2C9999-12-31%7D
+      <br></br>2014-12-23 16:39:39,377 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 16:39:39,377 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 16:39:39,385 [HttpClient.java:197] Received response [200, 166 bytes] in 15 ms
+      <br></br>2014-12-23 16:39:39,385 [HttpClient.java:200] Received response body: {"URI":"{2014-12-23,0001-02-03,0001-01-01,1970-01-01,2038-02-13,9999-12-31}","p1A0Da":["2014-12-23","0001-02-03","0001-01-01","1970-01-01","2038-02-13","9999-12-31"]}
+      <br></br><a id="testP1A0DaPropertyFieldDefaultValue"/><h2>testP1A0DaPropertyFieldDefaultValue</h2>
+      <br></br><a id="testP1A0DaNonDefault3PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1A0DaNonDefault3PropertyValueInAggregateAfterActiveRecordPersist</h2>
+      <br></br>2014-12-23 16:39:39,388 [HttpClient.java:179] Sending request [GET]: Domain.svc/search/AggregatePrimaryDate.A1A0Da?limit=2147483647&offset=0
+      <br></br>2014-12-23 16:39:39,388 [HttpClient.java:370] GET http://localhost:2033/Domain.svc/search/AggregatePrimaryDate.A1A0Da?limit=2147483647&offset=0
+      <br></br>2014-12-23 16:39:39,388 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 16:39:39,388 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 16:39:39,391 [HttpClient.java:197] Received response [200, 168 bytes] in 3 ms
+      <br></br>2014-12-23 16:39:39,391 [HttpClient.java:200] Received response body: [{"URI":"{2014-12-23,0001-02-03,0001-01-01,1970-01-01,2038-02-13,9999-12-31}","p1A0Da":["2014-12-23","0001-02-03","0001-01-01","1970-01-01","2038-02-13","9999-12-31"]}]
+      <br></br>2014-12-23 16:39:39,391 [HttpClient.java:190] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 242 bytes
+      <br></br>2014-12-23 16:39:39,391 [HttpClient.java:370] POST http://localhost:2033/RestApplication.svc/PersistAggregateRoot
+      <br></br>2014-12-23 16:39:39,396 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 16:39:39,396 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 16:39:39,396 [HttpClient.java:383] Adding payload: {"RootName":"AggregatePrimaryDate.A1A0Da","ToDelete":"[{\"URI\":\"{2014-12-23,0001-02-03,0001-01-01,1970-01-01,2038-02-13,9999-12-31}\",\"p1A0Da\":[\"2014-12-23\",\"0001-02-03\",\"0001-01-01\",\"1970-01-01\",\"2038-02-13\",\"9999-12-31\"]}]"}
+      <br></br>2014-12-23 16:39:39,411 [HttpClient.java:197] Received response [200, 2 bytes] in 20 ms
+      <br></br>2014-12-23 16:39:39,411 [HttpClient.java:200] Received response body: []
+      <br></br>2014-12-23 16:39:39,412 [HttpClient.java:190] Sending request [POST]: Crud.svc/AggregatePrimaryDate.A1A0Da, content size: 43 bytes
+      <br></br>2014-12-23 16:39:39,412 [HttpClient.java:370] POST http://localhost:2033/Crud.svc/AggregatePrimaryDate.A1A0Da
+      <br></br>2014-12-23 16:39:39,412 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 16:39:39,412 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 16:39:39,412 [HttpClient.java:383] Adding payload: {"URI":"211847563","p1A0Da":["9999-12-31"]}
+      <br></br>2014-12-23 16:39:39,463 [HttpClient.java:197] Received response [201, 46 bytes] in 52 ms
+      <br></br>2014-12-23 16:39:39,465 [HttpClient.java:200] Received response body: {"URI":"{9999-12-31}","p1A0Da":["9999-12-31"]}
+      <br></br>2014-12-23 16:39:39,465 [HttpClient.java:179] Sending request [GET]: Crud.svc/AggregatePrimaryDate.A1A0Da?uri=%7B9999-12-31%7D
+      <br></br>2014-12-23 16:39:39,465 [HttpClient.java:370] GET http://localhost:2033/Crud.svc/AggregatePrimaryDate.A1A0Da?uri=%7B9999-12-31%7D
+      <br></br>2014-12-23 16:39:39,465 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 16:39:39,466 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 16:39:39,475 [HttpClient.java:197] Received response [200, 46 bytes] in 10 ms
+      <br></br>2014-12-23 16:39:39,475 [HttpClient.java:200] Received response body: {"URI":"{9999-12-31}","p1A0Da":["9999-12-31"]}
+      <br></br><a id="testP1A0DaNonDefault2PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1A0DaNonDefault2PropertyValueInAggregateAfterActiveRecordPersist</h2>
+      <br></br>2014-12-23 16:39:39,478 [HttpClient.java:179] Sending request [GET]: Domain.svc/search/AggregatePrimaryDate.A1A0Da?limit=2147483647&offset=0
+      <br></br>2014-12-23 16:39:39,478 [HttpClient.java:370] GET http://localhost:2033/Domain.svc/search/AggregatePrimaryDate.A1A0Da?limit=2147483647&offset=0
+      <br></br>2014-12-23 16:39:39,478 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 16:39:39,478 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 16:39:39,495 [HttpClient.java:197] Received response [200, 48 bytes] in 17 ms
+      <br></br>2014-12-23 16:39:39,496 [HttpClient.java:200] Received response body: [{"URI":"{9999-12-31}","p1A0Da":["9999-12-31"]}]
+      <br></br>2014-12-23 16:39:39,496 [HttpClient.java:190] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 112 bytes
+      <br></br>2014-12-23 16:39:39,496 [HttpClient.java:370] POST http://localhost:2033/RestApplication.svc/PersistAggregateRoot
+      <br></br>2014-12-23 16:39:39,496 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 16:39:39,496 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 16:39:39,496 [HttpClient.java:383] Adding payload: {"RootName":"AggregatePrimaryDate.A1A0Da","ToDelete":"[{\"URI\":\"{9999-12-31}\",\"p1A0Da\":[\"9999-12-31\"]}]"}
+      <br></br>2014-12-23 16:39:39,550 [HttpClient.java:197] Received response [200, 2 bytes] in 54 ms
+      <br></br>2014-12-23 16:39:39,551 [HttpClient.java:200] Received response body: []
+      <br></br>2014-12-23 16:39:39,552 [HttpClient.java:190] Sending request [POST]: Crud.svc/AggregatePrimaryDate.A1A0Da, content size: 44 bytes
+      <br></br>2014-12-23 16:39:39,553 [HttpClient.java:370] POST http://localhost:2033/Crud.svc/AggregatePrimaryDate.A1A0Da
+      <br></br>2014-12-23 16:39:39,553 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 16:39:39,553 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 16:39:39,553 [HttpClient.java:383] Adding payload: {"URI":"1847995714","p1A0Da":["2014-12-23"]}
+      <br></br>2014-12-23 16:39:39,566 [HttpClient.java:197] Received response [201, 46 bytes] in 14 ms
+      <br></br>2014-12-23 16:39:39,567 [HttpClient.java:200] Received response body: {"URI":"{2014-12-23}","p1A0Da":["2014-12-23"]}
+      <br></br>2014-12-23 16:39:39,568 [HttpClient.java:179] Sending request [GET]: Crud.svc/AggregatePrimaryDate.A1A0Da?uri=%7B2014-12-23%7D
+      <br></br>2014-12-23 16:39:39,568 [HttpClient.java:370] GET http://localhost:2033/Crud.svc/AggregatePrimaryDate.A1A0Da?uri=%7B2014-12-23%7D
+      <br></br>2014-12-23 16:39:39,569 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 16:39:39,569 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 16:39:39,580 [HttpClient.java:197] Received response [200, 46 bytes] in 12 ms
+      <br></br>2014-12-23 16:39:39,580 [HttpClient.java:200] Received response body: {"URI":"{2014-12-23}","p1A0Da":["2014-12-23"]}
+      <br></br><a id="testP1A0DaNonDefault1PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1A0DaNonDefault1PropertyValueInAggregateAfterActiveRecordPersist</h2>
+      <br></br>2014-12-23 16:39:39,584 [HttpClient.java:179] Sending request [GET]: Domain.svc/search/AggregatePrimaryDate.A1A0Da?limit=2147483647&offset=0
+      <br></br>2014-12-23 16:39:39,584 [HttpClient.java:370] GET http://localhost:2033/Domain.svc/search/AggregatePrimaryDate.A1A0Da?limit=2147483647&offset=0
+      <br></br>2014-12-23 16:39:39,585 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 16:39:39,585 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 16:39:39,591 [HttpClient.java:197] Received response [200, 48 bytes] in 8 ms
+      <br></br>2014-12-23 16:39:39,591 [HttpClient.java:200] Received response body: [{"URI":"{2014-12-23}","p1A0Da":["2014-12-23"]}]
+      <br></br>2014-12-23 16:39:39,592 [HttpClient.java:190] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 112 bytes
+      <br></br>2014-12-23 16:39:39,592 [HttpClient.java:370] POST http://localhost:2033/RestApplication.svc/PersistAggregateRoot
+      <br></br>2014-12-23 16:39:39,592 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 16:39:39,592 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 16:39:39,592 [HttpClient.java:383] Adding payload: {"RootName":"AggregatePrimaryDate.A1A0Da","ToDelete":"[{\"URI\":\"{2014-12-23}\",\"p1A0Da\":[\"2014-12-23\"]}]"}
+      <br></br>2014-12-23 16:39:39,608 [HttpClient.java:197] Received response [200, 2 bytes] in 16 ms
+      <br></br>2014-12-23 16:39:39,609 [HttpClient.java:200] Received response body: []
+      <br></br>2014-12-23 16:39:39,609 [HttpClient.java:190] Sending request [POST]: Crud.svc/AggregatePrimaryDate.A1A0Da, content size: 34 bytes
+      <br></br>2014-12-23 16:39:39,609 [HttpClient.java:370] POST http://localhost:2033/Crud.svc/AggregatePrimaryDate.A1A0Da
+      <br></br>2014-12-23 16:39:39,609 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 16:39:39,610 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 16:39:39,610 [HttpClient.java:383] Adding payload: {"URI":"43097546","p1A0Da":[null]}
+      <br></br>2014-12-23 16:39:39,624 [HttpClient.java:197] Received response [201, 32 bytes] in 15 ms
+      <br></br>2014-12-23 16:39:39,624 [HttpClient.java:200] Received response body: {"URI":"{NULL}","p1A0Da":[null]}
+      <br></br>2014-12-23 16:39:39,626 [HttpClient.java:179] Sending request [GET]: Crud.svc/AggregatePrimaryDate.A1A0Da?uri=%7BNULL%7D
+      <br></br>2014-12-23 16:39:39,626 [HttpClient.java:370] GET http://localhost:2033/Crud.svc/AggregatePrimaryDate.A1A0Da?uri=%7BNULL%7D
+      <br></br>2014-12-23 16:39:39,626 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 16:39:39,626 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 16:39:39,632 [HttpClient.java:197] Received response [200, 32 bytes] in 7 ms
+      <br></br>2014-12-23 16:39:39,632 [HttpClient.java:200] Received response body: {"URI":"{NULL}","p1A0Da":[null]}
+      <br></br><a id="testURIPropertyGetterClass"/><h2>testURIPropertyGetterClass</h2>
+      <br></br><a id="testP1A0DaNonDefault2PropertyInAggregateJsonSerialization"/><h2>testP1A0DaNonDefault2PropertyInAggregateJsonSerialization</h2>
+      <br></br><a id="testP1A0DaNonDefault3PropertyInAggregateJsonSerialization"/><h2>testP1A0DaNonDefault3PropertyInAggregateJsonSerialization</h2>
+      <br></br><a id="testURIPropertyGetterModifiers"/><h2>testURIPropertyGetterModifiers</h2>
+      <br></br><a id="testP1A0DaDefaultPropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1A0DaDefaultPropertyValueInAggregateAfterActiveRecordPersist</h2>
+      <br></br>2014-12-23 16:39:39,648 [HttpClient.java:179] Sending request [GET]: Domain.svc/search/AggregatePrimaryDate.A1A0Da?limit=2147483647&offset=0
+      <br></br>2014-12-23 16:39:39,648 [HttpClient.java:370] GET http://localhost:2033/Domain.svc/search/AggregatePrimaryDate.A1A0Da?limit=2147483647&offset=0
+      <br></br>2014-12-23 16:39:39,648 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 16:39:39,648 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 16:39:39,654 [HttpClient.java:197] Received response [200, 34 bytes] in 6 ms
+      <br></br>2014-12-23 16:39:39,654 [HttpClient.java:200] Received response body: [{"URI":"{NULL}","p1A0Da":[null]}]
+      <br></br>2014-12-23 16:39:39,655 [HttpClient.java:190] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 96 bytes
+      <br></br>2014-12-23 16:39:39,655 [HttpClient.java:370] POST http://localhost:2033/RestApplication.svc/PersistAggregateRoot
+      <br></br>2014-12-23 16:39:39,656 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 16:39:39,656 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 16:39:39,656 [HttpClient.java:383] Adding payload: {"RootName":"AggregatePrimaryDate.A1A0Da","ToDelete":"[{\"URI\":\"{NULL}\",\"p1A0Da\":[null]}]"}
+      <br></br>2014-12-23 16:39:39,665 [HttpClient.java:197] Received response [200, 2 bytes] in 10 ms
+      <br></br>2014-12-23 16:39:39,666 [HttpClient.java:200] Received response body: []
+      <br></br>2014-12-23 16:39:39,666 [HttpClient.java:190] Sending request [POST]: Crud.svc/AggregatePrimaryDate.A1A0Da, content size: 20 bytes
+      <br></br>2014-12-23 16:39:39,666 [HttpClient.java:370] POST http://localhost:2033/Crud.svc/AggregatePrimaryDate.A1A0Da
+      <br></br>2014-12-23 16:39:39,666 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 16:39:39,666 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 16:39:39,666 [HttpClient.java:383] Adding payload: {"URI":"2122469300"}
+      <br></br>2014-12-23 16:39:39,674 [HttpClient.java:197] Received response [201, 24 bytes] in 8 ms
+      <br></br>2014-12-23 16:39:39,674 [HttpClient.java:200] Received response body: {"URI":"{}","p1A0Da":[]}
+      <br></br>2014-12-23 16:39:39,675 [HttpClient.java:179] Sending request [GET]: Crud.svc/AggregatePrimaryDate.A1A0Da?uri=%7B%7D
+      <br></br>2014-12-23 16:39:39,696 [HttpClient.java:370] GET http://localhost:2033/Crud.svc/AggregatePrimaryDate.A1A0Da?uri=%7B%7D
+      <br></br>2014-12-23 16:39:39,696 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 16:39:39,696 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 16:39:39,709 [HttpClient.java:197] Received response [200, 24 bytes] in 35 ms
+      <br></br>2014-12-23 16:39:39,710 [HttpClient.java:200] Received response body: {"URI":"{}","p1A0Da":[]}
+      <br></br><a id="testP1A1DaPropertySetterPublicVisibility"/><h2>testP1A1DaPropertySetterPublicVisibility</h2>
+      <br></br><a id="testNonExistenceOfURIPropertySetter"/><h2>testNonExistenceOfURIPropertySetter</h2>
+      <br></br><a id="testP1A1DaPropertyFieldClass"/><h2>testP1A1DaPropertyFieldClass</h2>
+      <br></br><a id="testP1A1DaPropertyGetterModifiers"/><h2>testP1A1DaPropertyGetterModifiers</h2>
+      <br></br><a id="testURIPropertyFieldClass"/><h2>testURIPropertyFieldClass</h2>
+      <br></br><a id="testP1A1DaNonDefault3PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1A1DaNonDefault3PropertyValueInAggregateAfterActiveRecordPersist</h2>
+      <br></br>2014-12-23 16:39:39,740 [HttpClient.java:179] Sending request [GET]: Domain.svc/search/AggregatePrimaryDate.A1A1Da?limit=2147483647&offset=0
+      <br></br>2014-12-23 16:39:39,740 [HttpClient.java:370] GET http://localhost:2033/Domain.svc/search/AggregatePrimaryDate.A1A1Da?limit=2147483647&offset=0
+      <br></br>2014-12-23 16:39:39,740 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 16:39:39,740 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 16:39:39,790 [HttpClient.java:197] Received response [200, 26 bytes] in 52 ms
+      <br></br>2014-12-23 16:39:39,791 [HttpClient.java:200] Received response body: [{"URI":"{}","p1A1Da":[]}]
+      <br></br>2014-12-23 16:39:39,812 [HttpClient.java:190] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 74 bytes
+      <br></br>2014-12-23 16:39:39,813 [HttpClient.java:370] POST http://localhost:2033/RestApplication.svc/PersistAggregateRoot
+      <br></br>2014-12-23 16:39:39,813 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 16:39:39,813 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 16:39:39,813 [HttpClient.java:383] Adding payload: {"RootName":"AggregatePrimaryDate.A1A1Da","ToDelete":"[{\"URI\":\"{}\"}]"}
+      <br></br>2014-12-23 16:39:40,055 [HttpClient.java:197] Received response [200, 2 bytes] in 247 ms
+      <br></br>2014-12-23 16:39:40,055 [HttpClient.java:200] Received response body: []
+      <br></br>2014-12-23 16:39:40,060 [HttpClient.java:190] Sending request [POST]: Crud.svc/AggregatePrimaryDate.A1A1Da, content size: 109 bytes
+      <br></br>2014-12-23 16:39:40,061 [HttpClient.java:370] POST http://localhost:2033/Crud.svc/AggregatePrimaryDate.A1A1Da
+      <br></br>2014-12-23 16:39:40,061 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 16:39:40,061 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 16:39:40,061 [HttpClient.java:383] Adding payload: {"URI":"1941275984","p1A1Da":["2014-12-23","0001-02-03","0001-01-01","1970-01-01","2038-02-13","9999-12-31"]}
+      <br></br>2014-12-23 16:39:40,103 [HttpClient.java:197] Received response [201, 166 bytes] in 43 ms
+      <br></br>2014-12-23 16:39:40,103 [HttpClient.java:200] Received response body: {"URI":"{2014-12-23,0001-02-03,0001-01-01,1970-01-01,2038-02-13,9999-12-31}","p1A1Da":["2014-12-23","0001-02-03","0001-01-01","1970-01-01","2038-02-13","9999-12-31"]}
+      <br></br>2014-12-23 16:39:40,104 [HttpClient.java:179] Sending request [GET]: Crud.svc/AggregatePrimaryDate.A1A1Da?uri=%7B2014-12-23%2C0001-02-03%2C0001-01-01%2C1970-01-01%2C2038-02-13%2C9999-12-31%7D
+      <br></br>2014-12-23 16:39:40,105 [HttpClient.java:370] GET http://localhost:2033/Crud.svc/AggregatePrimaryDate.A1A1Da?uri=%7B2014-12-23%2C0001-02-03%2C0001-01-01%2C1970-01-01%2C2038-02-13%2C9999-12-31%7D
+      <br></br>2014-12-23 16:39:40,105 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 16:39:40,105 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 16:39:40,113 [HttpClient.java:197] Received response [200, 166 bytes] in 9 ms
+      <br></br>2014-12-23 16:39:40,113 [HttpClient.java:200] Received response body: {"URI":"{2014-12-23,0001-02-03,0001-01-01,1970-01-01,2038-02-13,9999-12-31}","p1A1Da":["2014-12-23","0001-02-03","0001-01-01","1970-01-01","2038-02-13","9999-12-31"]}
+      <br></br><a id="testP1A1DaNonDefault2PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1A1DaNonDefault2PropertyValueInAggregateAfterActiveRecordPersist</h2>
+      <br></br>2014-12-23 16:39:40,117 [HttpClient.java:179] Sending request [GET]: Domain.svc/search/AggregatePrimaryDate.A1A1Da?limit=2147483647&offset=0
+      <br></br>2014-12-23 16:39:40,117 [HttpClient.java:370] GET http://localhost:2033/Domain.svc/search/AggregatePrimaryDate.A1A1Da?limit=2147483647&offset=0
+      <br></br>2014-12-23 16:39:40,117 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 16:39:40,117 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 16:39:40,126 [HttpClient.java:197] Received response [200, 168 bytes] in 9 ms
+      <br></br>2014-12-23 16:39:40,127 [HttpClient.java:200] Received response body: [{"URI":"{2014-12-23,0001-02-03,0001-01-01,1970-01-01,2038-02-13,9999-12-31}","p1A1Da":["2014-12-23","0001-02-03","0001-01-01","1970-01-01","2038-02-13","9999-12-31"]}]
+      <br></br>2014-12-23 16:39:40,128 [HttpClient.java:190] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 242 bytes
+      <br></br>2014-12-23 16:39:40,128 [HttpClient.java:370] POST http://localhost:2033/RestApplication.svc/PersistAggregateRoot
+      <br></br>2014-12-23 16:39:40,128 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 16:39:40,128 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 16:39:40,128 [HttpClient.java:383] Adding payload: {"RootName":"AggregatePrimaryDate.A1A1Da","ToDelete":"[{\"URI\":\"{2014-12-23,0001-02-03,0001-01-01,1970-01-01,2038-02-13,9999-12-31}\",\"p1A1Da\":[\"2014-12-23\",\"0001-02-03\",\"0001-01-01\",\"1970-01-01\",\"2038-02-13\",\"9999-12-31\"]}]"}
+      <br></br>2014-12-23 16:39:40,145 [HttpClient.java:197] Received response [200, 2 bytes] in 17 ms
+      <br></br>2014-12-23 16:39:40,145 [HttpClient.java:200] Received response body: []
+      <br></br>2014-12-23 16:39:40,146 [HttpClient.java:190] Sending request [POST]: Crud.svc/AggregatePrimaryDate.A1A1Da, content size: 44 bytes
+      <br></br>2014-12-23 16:39:40,146 [HttpClient.java:370] POST http://localhost:2033/Crud.svc/AggregatePrimaryDate.A1A1Da
+      <br></br>2014-12-23 16:39:40,147 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 16:39:40,147 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 16:39:40,148 [HttpClient.java:383] Adding payload: {"URI":"2027365454","p1A1Da":["9999-12-31"]}
+      <br></br>2014-12-23 16:39:40,161 [HttpClient.java:197] Received response [201, 46 bytes] in 16 ms
+      <br></br>2014-12-23 16:39:40,161 [HttpClient.java:200] Received response body: {"URI":"{9999-12-31}","p1A1Da":["9999-12-31"]}
+      <br></br>2014-12-23 16:39:40,163 [HttpClient.java:179] Sending request [GET]: Crud.svc/AggregatePrimaryDate.A1A1Da?uri=%7B9999-12-31%7D
+      <br></br>2014-12-23 16:39:40,163 [HttpClient.java:370] GET http://localhost:2033/Crud.svc/AggregatePrimaryDate.A1A1Da?uri=%7B9999-12-31%7D
+      <br></br>2014-12-23 16:39:40,164 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 16:39:40,164 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 16:39:40,167 [HttpClient.java:197] Received response [200, 46 bytes] in 4 ms
+      <br></br>2014-12-23 16:39:40,167 [HttpClient.java:200] Received response body: {"URI":"{9999-12-31}","p1A1Da":["9999-12-31"]}
+      <br></br><a id="testP1A1DaNonDefault1PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1A1DaNonDefault1PropertyValueInAggregateAfterActiveRecordPersist</h2>
+      <br></br>2014-12-23 16:39:40,170 [HttpClient.java:179] Sending request [GET]: Domain.svc/search/AggregatePrimaryDate.A1A1Da?limit=2147483647&offset=0
+      <br></br>2014-12-23 16:39:40,170 [HttpClient.java:370] GET http://localhost:2033/Domain.svc/search/AggregatePrimaryDate.A1A1Da?limit=2147483647&offset=0
+      <br></br>2014-12-23 16:39:40,170 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 16:39:40,170 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 16:39:40,173 [HttpClient.java:197] Received response [200, 48 bytes] in 4 ms
+      <br></br>2014-12-23 16:39:40,174 [HttpClient.java:200] Received response body: [{"URI":"{9999-12-31}","p1A1Da":["9999-12-31"]}]
+      <br></br>2014-12-23 16:39:40,175 [HttpClient.java:190] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 112 bytes
+      <br></br>2014-12-23 16:39:40,175 [HttpClient.java:370] POST http://localhost:2033/RestApplication.svc/PersistAggregateRoot
+      <br></br>2014-12-23 16:39:40,175 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 16:39:40,175 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 16:39:40,175 [HttpClient.java:383] Adding payload: {"RootName":"AggregatePrimaryDate.A1A1Da","ToDelete":"[{\"URI\":\"{9999-12-31}\",\"p1A1Da\":[\"9999-12-31\"]}]"}
+      <br></br>2014-12-23 16:39:40,186 [HttpClient.java:197] Received response [200, 2 bytes] in 11 ms
+      <br></br>2014-12-23 16:39:40,186 [HttpClient.java:200] Received response body: []
+      <br></br>2014-12-23 16:39:40,187 [HttpClient.java:190] Sending request [POST]: Crud.svc/AggregatePrimaryDate.A1A1Da, content size: 44 bytes
+      <br></br>2014-12-23 16:39:40,225 [HttpClient.java:370] POST http://localhost:2033/Crud.svc/AggregatePrimaryDate.A1A1Da
+      <br></br>2014-12-23 16:39:40,225 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 16:39:40,226 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 16:39:40,226 [HttpClient.java:383] Adding payload: {"URI":"1239153997","p1A1Da":["2014-12-23"]}
+      <br></br>2014-12-23 16:39:40,251 [HttpClient.java:197] Received response [201, 46 bytes] in 65 ms
+      <br></br>2014-12-23 16:39:40,251 [HttpClient.java:200] Received response body: {"URI":"{2014-12-23}","p1A1Da":["2014-12-23"]}
+      <br></br>2014-12-23 16:39:40,252 [HttpClient.java:179] Sending request [GET]: Crud.svc/AggregatePrimaryDate.A1A1Da?uri=%7B2014-12-23%7D
+      <br></br>2014-12-23 16:39:40,252 [HttpClient.java:370] GET http://localhost:2033/Crud.svc/AggregatePrimaryDate.A1A1Da?uri=%7B2014-12-23%7D
+      <br></br>2014-12-23 16:39:40,252 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 16:39:40,252 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 16:39:40,254 [HttpClient.java:197] Received response [200, 46 bytes] in 2 ms
+      <br></br>2014-12-23 16:39:40,255 [HttpClient.java:200] Received response body: {"URI":"{2014-12-23}","p1A1Da":["2014-12-23"]}
+      <br></br><a id="testURIPropertyFieldPrivateVisibility"/><h2>testURIPropertyFieldPrivateVisibility</h2>
+      <br></br><a id="testP1A1DaDefaultPropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1A1DaDefaultPropertyValueInAggregateAfterActiveRecordPersist</h2>
+      <br></br>2014-12-23 16:39:40,256 [HttpClient.java:179] Sending request [GET]: Domain.svc/search/AggregatePrimaryDate.A1A1Da?limit=2147483647&offset=0
+      <br></br>2014-12-23 16:39:40,256 [HttpClient.java:370] GET http://localhost:2033/Domain.svc/search/AggregatePrimaryDate.A1A1Da?limit=2147483647&offset=0
+      <br></br>2014-12-23 16:39:40,256 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 16:39:40,256 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 16:39:40,278 [HttpClient.java:197] Received response [200, 48 bytes] in 22 ms
+      <br></br>2014-12-23 16:39:40,278 [HttpClient.java:200] Received response body: [{"URI":"{2014-12-23}","p1A1Da":["2014-12-23"]}]
+      <br></br>2014-12-23 16:39:40,279 [HttpClient.java:190] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 112 bytes
+      <br></br>2014-12-23 16:39:40,279 [HttpClient.java:370] POST http://localhost:2033/RestApplication.svc/PersistAggregateRoot
+      <br></br>2014-12-23 16:39:40,279 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 16:39:40,279 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 16:39:40,279 [HttpClient.java:383] Adding payload: {"RootName":"AggregatePrimaryDate.A1A1Da","ToDelete":"[{\"URI\":\"{2014-12-23}\",\"p1A1Da\":[\"2014-12-23\"]}]"}
+      <br></br>2014-12-23 16:39:40,295 [HttpClient.java:197] Received response [200, 2 bytes] in 16 ms
+      <br></br>2014-12-23 16:39:40,295 [HttpClient.java:200] Received response body: []
+      <br></br>2014-12-23 16:39:40,297 [HttpClient.java:190] Sending request [POST]: Crud.svc/AggregatePrimaryDate.A1A1Da, content size: 19 bytes
+      <br></br>2014-12-23 16:39:40,297 [HttpClient.java:370] POST http://localhost:2033/Crud.svc/AggregatePrimaryDate.A1A1Da
+      <br></br>2014-12-23 16:39:40,297 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 16:39:40,298 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 16:39:40,298 [HttpClient.java:383] Adding payload: {"URI":"327380096"}
+      <br></br>2014-12-23 16:39:40,308 [HttpClient.java:197] Received response [201, 24 bytes] in 11 ms
+      <br></br>2014-12-23 16:39:40,308 [HttpClient.java:200] Received response body: {"URI":"{}","p1A1Da":[]}
+      <br></br>2014-12-23 16:39:40,309 [HttpClient.java:179] Sending request [GET]: Crud.svc/AggregatePrimaryDate.A1A1Da?uri=%7B%7D
+      <br></br>2014-12-23 16:39:40,309 [HttpClient.java:370] GET http://localhost:2033/Crud.svc/AggregatePrimaryDate.A1A1Da?uri=%7B%7D
+      <br></br>2014-12-23 16:39:40,309 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 16:39:40,310 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 16:39:40,317 [HttpClient.java:197] Received response [200, 24 bytes] in 9 ms
+      <br></br>2014-12-23 16:39:40,317 [HttpClient.java:200] Received response body: {"URI":"{}","p1A1Da":[]}
+      <br></br><a id="testP1A1DaPropertySetterModifiers"/><h2>testP1A1DaPropertySetterModifiers</h2>
+      <br></br><a id="testP1A1DaPropertyFieldPrivateVisibility"/><h2>testP1A1DaPropertyFieldPrivateVisibility</h2>
+      <br></br><a id="testP1A1DaPropertyFieldModifiers"/><h2>testP1A1DaPropertyFieldModifiers</h2>
+      <br></br><a id="testURIPropertyFieldModifiers"/><h2>testURIPropertyFieldModifiers</h2>
+      <br></br><a id="testURIPropertyGetterPublicVisibility"/><h2>testURIPropertyGetterPublicVisibility</h2>
+      <br></br><a id="testP1A1DaNonDefault1PropertyInAggregateJsonSerialization"/><h2>testP1A1DaNonDefault1PropertyInAggregateJsonSerialization</h2>
+      <br></br><a id="testP1A1DaPropertyGetterPublicVisibility"/><h2>testP1A1DaPropertyGetterPublicVisibility</h2>
+      <br></br><a id="testP1A1DaPropertyFieldDefaultValue"/><h2>testP1A1DaPropertyFieldDefaultValue</h2>
+      <br></br><a id="testP1A1DaNonDefault2PropertyInAggregateJsonSerialization"/><h2>testP1A1DaNonDefault2PropertyInAggregateJsonSerialization</h2>
+      <br></br><a id="testP1A1DaPropertySetterClass"/><h2>testP1A1DaPropertySetterClass</h2>
+      <br></br><a id="testP1A1DaPropertyGetterClass"/><h2>testP1A1DaPropertyGetterClass</h2>
+      <br></br><a id="testURIPropertyGetterClass"/><h2>testURIPropertyGetterClass</h2>
+      <br></br><a id="testP1A1DaNonDefault3PropertyInAggregateJsonSerialization"/><h2>testP1A1DaNonDefault3PropertyInAggregateJsonSerialization</h2>
+      <br></br><a id="testP1A1DaDefaultPropertyInAggregateJsonSerialization"/><h2>testP1A1DaDefaultPropertyInAggregateJsonSerialization</h2>
+      <br></br><a id="testURIPropertyGetterModifiers"/><h2>testURIPropertyGetterModifiers</h2>
+      <br></br><a id="testP1DaPropertyFieldDefaultValue"/><h2>testP1DaPropertyFieldDefaultValue</h2>
+      <br></br><a id="testNonExistenceOfURIPropertySetter"/><h2>testNonExistenceOfURIPropertySetter</h2>
+      <br></br><a id="testP1DaNonDefault1PropertyInAggregateJsonSerialization"/><h2>testP1DaNonDefault1PropertyInAggregateJsonSerialization</h2>
+      <br></br><a id="testP1DaNonDefault2PropertyInAggregateJsonSerialization"/><h2>testP1DaNonDefault2PropertyInAggregateJsonSerialization</h2>
+      <br></br><a id="testP1DaNonDefault3PropertyInAggregateJsonSerialization"/><h2>testP1DaNonDefault3PropertyInAggregateJsonSerialization</h2>
+      <br></br><a id="testP1DaPropertyFieldModifiers"/><h2>testP1DaPropertyFieldModifiers</h2>
+      <br></br><a id="testP1DaNonDefault4PropertyInAggregateJsonSerialization"/><h2>testP1DaNonDefault4PropertyInAggregateJsonSerialization</h2>
+      <br></br><a id="testURIPropertyFieldClass"/><h2>testURIPropertyFieldClass</h2>
+      <br></br><a id="testP1DaNonDefault5PropertyInAggregateJsonSerialization"/><h2>testP1DaNonDefault5PropertyInAggregateJsonSerialization</h2>
+      <br></br><a id="testP1DaPropertyFieldPrivateVisibility"/><h2>testP1DaPropertyFieldPrivateVisibility</h2>
+      <br></br><a id="testP1DaPropertyFieldClass"/><h2>testP1DaPropertyFieldClass</h2>
+      <br></br><a id="testURIPropertyFieldPrivateVisibility"/><h2>testURIPropertyFieldPrivateVisibility</h2>
+      <br></br><a id="testP1DaPropertySetterClass"/><h2>testP1DaPropertySetterClass</h2>
+      <br></br><a id="testP1DaPropertyGetterClass"/><h2>testP1DaPropertyGetterClass</h2>
+      <br></br><a id="testP1DaPropertyGetterPublicVisibility"/><h2>testP1DaPropertyGetterPublicVisibility</h2>
+      <br></br><a id="testP1DaPropertyGetterModifiers"/><h2>testP1DaPropertyGetterModifiers</h2>
+      <br></br><a id="testURIPropertyFieldModifiers"/><h2>testURIPropertyFieldModifiers</h2>
+      <br></br><a id="testURIPropertyGetterPublicVisibility"/><h2>testURIPropertyGetterPublicVisibility</h2>
+      <br></br><a id="testP1DaDefaultPropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1DaDefaultPropertyValueInAggregateAfterActiveRecordPersist</h2>
+      <br></br>2014-12-23 16:39:40,390 [HttpClient.java:179] Sending request [GET]: Domain.svc/search/AggregatePrimaryDate.A1Da?limit=2147483647&offset=0
+      <br></br>2014-12-23 16:39:40,390 [HttpClient.java:370] GET http://localhost:2033/Domain.svc/search/AggregatePrimaryDate.A1Da?limit=2147483647&offset=0
+      <br></br>2014-12-23 16:39:40,391 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 16:39:40,391 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 16:39:40,449 [HttpClient.java:197] Received response [200, 42 bytes] in 70 ms
+      <br></br>2014-12-23 16:39:40,450 [HttpClient.java:200] Received response body: [{"URI":"0001-02-03","p1Da":"0001-02-03"}]
+      <br></br>2014-12-23 16:39:40,456 [HttpClient.java:190] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 104 bytes
+      <br></br>2014-12-23 16:39:40,456 [HttpClient.java:370] POST http://localhost:2033/RestApplication.svc/PersistAggregateRoot
+      <br></br>2014-12-23 16:39:40,457 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 16:39:40,457 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 16:39:40,457 [HttpClient.java:383] Adding payload: {"RootName":"AggregatePrimaryDate.A1Da","ToDelete":"[{\"URI\":\"0001-02-03\",\"p1Da\":\"0001-02-03\"}]"}
+      <br></br>2014-12-23 16:39:40,498 [HttpClient.java:197] Received response [200, 2 bytes] in 44 ms
+      <br></br>2014-12-23 16:39:40,499 [HttpClient.java:200] Received response body: []
+      <br></br>2014-12-23 16:39:40,501 [HttpClient.java:190] Sending request [POST]: Crud.svc/AggregatePrimaryDate.A1Da, content size: 40 bytes
+      <br></br>2014-12-23 16:39:40,501 [HttpClient.java:370] POST http://localhost:2033/Crud.svc/AggregatePrimaryDate.A1Da
+      <br></br>2014-12-23 16:39:40,501 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 16:39:40,501 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 16:39:40,501 [HttpClient.java:383] Adding payload: {"URI":"1483366281","p1Da":"2014-12-23"}
+      <br></br>2014-12-23 16:39:40,556 [HttpClient.java:197] Received response [201, 40 bytes] in 55 ms
+      <br></br>2014-12-23 16:39:40,556 [HttpClient.java:200] Received response body: {"URI":"2014-12-23","p1Da":"2014-12-23"}
+      <br></br>2014-12-23 16:39:40,557 [HttpClient.java:179] Sending request [GET]: Crud.svc/AggregatePrimaryDate.A1Da?uri=2014-12-23
+      <br></br>2014-12-23 16:39:40,557 [HttpClient.java:370] GET http://localhost:2033/Crud.svc/AggregatePrimaryDate.A1Da?uri=2014-12-23
+      <br></br>2014-12-23 16:39:40,558 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 16:39:40,558 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 16:39:40,566 [HttpClient.java:197] Received response [200, 40 bytes] in 9 ms
+      <br></br>2014-12-23 16:39:40,567 [HttpClient.java:200] Received response body: {"URI":"2014-12-23","p1Da":"2014-12-23"}
+      <br></br><a id="testURIPropertyGetterClass"/><h2>testURIPropertyGetterClass</h2>
+      <br></br><a id="testP1DaPropertySetterModifiers"/><h2>testP1DaPropertySetterModifiers</h2>
+      <br></br><a id="testP1DaDefaultPropertyInAggregateJsonSerialization"/><h2>testP1DaDefaultPropertyInAggregateJsonSerialization</h2>
+      <br></br><a id="testP1DaPropertySetterPublicVisibility"/><h2>testP1DaPropertySetterPublicVisibility</h2>
+      <br></br><a id="testURIPropertyGetterModifiers"/><h2>testURIPropertyGetterModifiers</h2>
+      <br></br><a id="testP1DaNonDefault5PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1DaNonDefault5PropertyValueInAggregateAfterActiveRecordPersist</h2>
+      <br></br>2014-12-23 16:39:40,572 [HttpClient.java:179] Sending request [GET]: Domain.svc/search/AggregatePrimaryDate.A1Da?limit=2147483647&offset=0
+      <br></br>2014-12-23 16:39:40,572 [HttpClient.java:370] GET http://localhost:2033/Domain.svc/search/AggregatePrimaryDate.A1Da?limit=2147483647&offset=0
+      <br></br>2014-12-23 16:39:40,572 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 16:39:40,572 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 16:39:40,578 [HttpClient.java:197] Received response [200, 42 bytes] in 6 ms
+      <br></br>2014-12-23 16:39:40,578 [HttpClient.java:200] Received response body: [{"URI":"2014-12-23","p1Da":"2014-12-23"}]
+      <br></br>2014-12-23 16:39:40,579 [HttpClient.java:190] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 104 bytes
+      <br></br>2014-12-23 16:39:40,579 [HttpClient.java:370] POST http://localhost:2033/RestApplication.svc/PersistAggregateRoot
+      <br></br>2014-12-23 16:39:40,579 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 16:39:40,579 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 16:39:40,579 [HttpClient.java:383] Adding payload: {"RootName":"AggregatePrimaryDate.A1Da","ToDelete":"[{\"URI\":\"2014-12-23\",\"p1Da\":\"2014-12-23\"}]"}
+      <br></br>2014-12-23 16:39:40,587 [HttpClient.java:197] Received response [200, 2 bytes] in 8 ms
+      <br></br>2014-12-23 16:39:40,587 [HttpClient.java:200] Received response body: []
+      <br></br>2014-12-23 16:39:40,588 [HttpClient.java:190] Sending request [POST]: Crud.svc/AggregatePrimaryDate.A1Da, content size: 39 bytes
+      <br></br>2014-12-23 16:39:40,588 [HttpClient.java:370] POST http://localhost:2033/Crud.svc/AggregatePrimaryDate.A1Da
+      <br></br>2014-12-23 16:39:40,588 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 16:39:40,588 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 16:39:40,588 [HttpClient.java:383] Adding payload: {"URI":"779700308","p1Da":"9999-12-31"}
+      <br></br>2014-12-23 16:39:40,605 [HttpClient.java:197] Received response [201, 40 bytes] in 17 ms
+      <br></br>2014-12-23 16:39:40,605 [HttpClient.java:200] Received response body: {"URI":"9999-12-31","p1Da":"9999-12-31"}
+      <br></br>2014-12-23 16:39:40,605 [HttpClient.java:179] Sending request [GET]: Crud.svc/AggregatePrimaryDate.A1Da?uri=9999-12-31
+      <br></br>2014-12-23 16:39:40,606 [HttpClient.java:370] GET http://localhost:2033/Crud.svc/AggregatePrimaryDate.A1Da?uri=9999-12-31
+      <br></br>2014-12-23 16:39:40,606 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 16:39:40,607 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 16:39:40,609 [HttpClient.java:197] Received response [200, 40 bytes] in 4 ms
+      <br></br>2014-12-23 16:39:40,609 [HttpClient.java:200] Received response body: {"URI":"9999-12-31","p1Da":"9999-12-31"}
+      <br></br><a id="testP1DaNonDefault4PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1DaNonDefault4PropertyValueInAggregateAfterActiveRecordPersist</h2>
+      <br></br>2014-12-23 16:39:40,611 [HttpClient.java:179] Sending request [GET]: Domain.svc/search/AggregatePrimaryDate.A1Da?limit=2147483647&offset=0
+      <br></br>2014-12-23 16:39:40,611 [HttpClient.java:370] GET http://localhost:2033/Domain.svc/search/AggregatePrimaryDate.A1Da?limit=2147483647&offset=0
+      <br></br>2014-12-23 16:39:40,611 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 16:39:40,611 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 16:39:40,614 [HttpClient.java:197] Received response [200, 42 bytes] in 3 ms
+      <br></br>2014-12-23 16:39:40,614 [HttpClient.java:200] Received response body: [{"URI":"9999-12-31","p1Da":"9999-12-31"}]
+      <br></br>2014-12-23 16:39:40,615 [HttpClient.java:190] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 104 bytes
+      <br></br>2014-12-23 16:39:40,615 [HttpClient.java:370] POST http://localhost:2033/RestApplication.svc/PersistAggregateRoot
+      <br></br>2014-12-23 16:39:40,615 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 16:39:40,615 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 16:39:40,615 [HttpClient.java:383] Adding payload: {"RootName":"AggregatePrimaryDate.A1Da","ToDelete":"[{\"URI\":\"9999-12-31\",\"p1Da\":\"9999-12-31\"}]"}
+      <br></br>2014-12-23 16:39:40,629 [HttpClient.java:197] Received response [200, 2 bytes] in 14 ms
+      <br></br>2014-12-23 16:39:40,630 [HttpClient.java:200] Received response body: []
+      <br></br>2014-12-23 16:39:40,630 [HttpClient.java:190] Sending request [POST]: Crud.svc/AggregatePrimaryDate.A1Da, content size: 39 bytes
+      <br></br>2014-12-23 16:39:40,630 [HttpClient.java:370] POST http://localhost:2033/Crud.svc/AggregatePrimaryDate.A1Da
+      <br></br>2014-12-23 16:39:40,630 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 16:39:40,630 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 16:39:40,631 [HttpClient.java:383] Adding payload: {"URI":"948987290","p1Da":"2038-02-13"}
+      <br></br>2014-12-23 16:39:40,645 [HttpClient.java:197] Received response [201, 40 bytes] in 15 ms
+      <br></br>2014-12-23 16:39:40,645 [HttpClient.java:200] Received response body: {"URI":"2038-02-13","p1Da":"2038-02-13"}
+      <br></br>2014-12-23 16:39:40,647 [HttpClient.java:179] Sending request [GET]: Crud.svc/AggregatePrimaryDate.A1Da?uri=2038-02-13
+      <br></br>2014-12-23 16:39:40,647 [HttpClient.java:370] GET http://localhost:2033/Crud.svc/AggregatePrimaryDate.A1Da?uri=2038-02-13
+      <br></br>2014-12-23 16:39:40,647 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 16:39:40,647 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 16:39:40,653 [HttpClient.java:197] Received response [200, 40 bytes] in 6 ms
+      <br></br>2014-12-23 16:39:40,660 [HttpClient.java:200] Received response body: {"URI":"2038-02-13","p1Da":"2038-02-13"}
+      <br></br><a id="testP1DaNonDefault3PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1DaNonDefault3PropertyValueInAggregateAfterActiveRecordPersist</h2>
+      <br></br>2014-12-23 16:39:40,662 [HttpClient.java:179] Sending request [GET]: Domain.svc/search/AggregatePrimaryDate.A1Da?limit=2147483647&offset=0
+      <br></br>2014-12-23 16:39:40,662 [HttpClient.java:370] GET http://localhost:2033/Domain.svc/search/AggregatePrimaryDate.A1Da?limit=2147483647&offset=0
+      <br></br>2014-12-23 16:39:40,663 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 16:39:40,698 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 16:39:40,717 [HttpClient.java:197] Received response [200, 42 bytes] in 55 ms
+      <br></br>2014-12-23 16:39:40,717 [HttpClient.java:200] Received response body: [{"URI":"2038-02-13","p1Da":"2038-02-13"}]
+      <br></br>2014-12-23 16:39:40,748 [HttpClient.java:190] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 104 bytes
+      <br></br>2014-12-23 16:39:40,749 [HttpClient.java:370] POST http://localhost:2033/RestApplication.svc/PersistAggregateRoot
+      <br></br>2014-12-23 16:39:40,749 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 16:39:40,749 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 16:39:40,749 [HttpClient.java:383] Adding payload: {"RootName":"AggregatePrimaryDate.A1Da","ToDelete":"[{\"URI\":\"2038-02-13\",\"p1Da\":\"2038-02-13\"}]"}
+      <br></br>2014-12-23 16:39:40,776 [HttpClient.java:197] Received response [200, 2 bytes] in 28 ms
+      <br></br>2014-12-23 16:39:40,777 [HttpClient.java:200] Received response body: []
+      <br></br>2014-12-23 16:39:40,777 [HttpClient.java:190] Sending request [POST]: Crud.svc/AggregatePrimaryDate.A1Da, content size: 40 bytes
+      <br></br>2014-12-23 16:39:40,777 [HttpClient.java:370] POST http://localhost:2033/Crud.svc/AggregatePrimaryDate.A1Da
+      <br></br>2014-12-23 16:39:40,777 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 16:39:40,777 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 16:39:40,777 [HttpClient.java:383] Adding payload: {"URI":"1615287005","p1Da":"1970-01-01"}
+      <br></br>2014-12-23 16:39:40,785 [HttpClient.java:197] Received response [201, 40 bytes] in 8 ms
+      <br></br>2014-12-23 16:39:40,785 [HttpClient.java:200] Received response body: {"URI":"1970-01-01","p1Da":"1970-01-01"}
+      <br></br>2014-12-23 16:39:40,786 [HttpClient.java:179] Sending request [GET]: Crud.svc/AggregatePrimaryDate.A1Da?uri=1970-01-01
+      <br></br>2014-12-23 16:39:40,786 [HttpClient.java:370] GET http://localhost:2033/Crud.svc/AggregatePrimaryDate.A1Da?uri=1970-01-01
+      <br></br>2014-12-23 16:39:40,786 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 16:39:40,786 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 16:39:40,788 [HttpClient.java:197] Received response [200, 40 bytes] in 2 ms
+      <br></br>2014-12-23 16:39:40,789 [HttpClient.java:200] Received response body: {"URI":"1970-01-01","p1Da":"1970-01-01"}
+      <br></br><a id="testP1DaNonDefault2PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1DaNonDefault2PropertyValueInAggregateAfterActiveRecordPersist</h2>
+      <br></br>2014-12-23 16:39:40,793 [HttpClient.java:179] Sending request [GET]: Domain.svc/search/AggregatePrimaryDate.A1Da?limit=2147483647&offset=0
+      <br></br>2014-12-23 16:39:40,793 [HttpClient.java:370] GET http://localhost:2033/Domain.svc/search/AggregatePrimaryDate.A1Da?limit=2147483647&offset=0
+      <br></br>2014-12-23 16:39:40,793 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 16:39:40,793 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 16:39:40,798 [HttpClient.java:197] Received response [200, 42 bytes] in 5 ms
+      <br></br>2014-12-23 16:39:40,798 [HttpClient.java:200] Received response body: [{"URI":"1970-01-01","p1Da":"1970-01-01"}]
+      <br></br>2014-12-23 16:39:40,799 [HttpClient.java:190] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 104 bytes
+      <br></br>2014-12-23 16:39:40,799 [HttpClient.java:370] POST http://localhost:2033/RestApplication.svc/PersistAggregateRoot
+      <br></br>2014-12-23 16:39:40,799 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 16:39:40,799 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 16:39:40,799 [HttpClient.java:383] Adding payload: {"RootName":"AggregatePrimaryDate.A1Da","ToDelete":"[{\"URI\":\"1970-01-01\",\"p1Da\":\"1970-01-01\"}]"}
+      <br></br>2014-12-23 16:39:40,826 [HttpClient.java:197] Received response [200, 2 bytes] in 26 ms
+      <br></br>2014-12-23 16:39:40,826 [HttpClient.java:200] Received response body: []
+      <br></br>2014-12-23 16:39:40,827 [HttpClient.java:190] Sending request [POST]: Crud.svc/AggregatePrimaryDate.A1Da, content size: 40 bytes
+      <br></br>2014-12-23 16:39:40,827 [HttpClient.java:370] POST http://localhost:2033/Crud.svc/AggregatePrimaryDate.A1Da
+      <br></br>2014-12-23 16:39:40,827 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 16:39:40,827 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 16:39:40,827 [HttpClient.java:383] Adding payload: {"URI":"1834164732","p1Da":"0001-01-01"}
+      <br></br>2014-12-23 16:39:40,834 [HttpClient.java:197] Received response [201, 38 bytes] in 8 ms
+      <br></br>2014-12-23 16:39:40,834 [HttpClient.java:200] Received response body: {"URI":"0001-01-01","p1Da":"0001-1-1"}
+      <br></br>2014-12-23 16:39:40,835 [HttpClient.java:179] Sending request [GET]: Crud.svc/AggregatePrimaryDate.A1Da?uri=0001-01-01
+      <br></br>2014-12-23 16:39:40,835 [HttpClient.java:370] GET http://localhost:2033/Crud.svc/AggregatePrimaryDate.A1Da?uri=0001-01-01
+      <br></br>2014-12-23 16:39:40,835 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 16:39:40,835 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 16:39:40,838 [HttpClient.java:197] Received response [200, 38 bytes] in 3 ms
+      <br></br>2014-12-23 16:39:40,838 [HttpClient.java:200] Received response body: {"URI":"0001-01-01","p1Da":"0001-1-1"}
+      <br></br><a id="testP1DaNonDefault1PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1DaNonDefault1PropertyValueInAggregateAfterActiveRecordPersist</h2>
+      <br></br>2014-12-23 16:39:40,839 [HttpClient.java:179] Sending request [GET]: Domain.svc/search/AggregatePrimaryDate.A1Da?limit=2147483647&offset=0
+      <br></br>2014-12-23 16:39:40,839 [HttpClient.java:370] GET http://localhost:2033/Domain.svc/search/AggregatePrimaryDate.A1Da?limit=2147483647&offset=0
+      <br></br>2014-12-23 16:39:40,839 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 16:39:40,839 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 16:39:40,843 [HttpClient.java:197] Received response [200, 40 bytes] in 4 ms
+      <br></br>2014-12-23 16:39:40,844 [HttpClient.java:200] Received response body: [{"URI":"0001-01-01","p1Da":"0001-1-1"}]
+      <br></br>2014-12-23 16:39:40,844 [HttpClient.java:190] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 104 bytes
+      <br></br>2014-12-23 16:39:40,844 [HttpClient.java:370] POST http://localhost:2033/RestApplication.svc/PersistAggregateRoot
+      <br></br>2014-12-23 16:39:40,844 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 16:39:40,844 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 16:39:40,844 [HttpClient.java:383] Adding payload: {"RootName":"AggregatePrimaryDate.A1Da","ToDelete":"[{\"URI\":\"0001-01-01\",\"p1Da\":\"0001-01-01\"}]"}
+      <br></br>2014-12-23 16:39:40,850 [HttpClient.java:197] Received response [200, 2 bytes] in 6 ms
+      <br></br>2014-12-23 16:39:40,850 [HttpClient.java:200] Received response body: []
+      <br></br>2014-12-23 16:39:40,851 [HttpClient.java:190] Sending request [POST]: Crud.svc/AggregatePrimaryDate.A1Da, content size: 39 bytes
+      <br></br>2014-12-23 16:39:40,851 [HttpClient.java:370] POST http://localhost:2033/Crud.svc/AggregatePrimaryDate.A1Da
+      <br></br>2014-12-23 16:39:40,854 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 16:39:40,854 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 16:39:40,854 [HttpClient.java:383] Adding payload: {"URI":"666578705","p1Da":"0001-02-03"}
+      <br></br>2014-12-23 16:39:40,868 [HttpClient.java:197] Received response [201, 40 bytes] in 17 ms
+      <br></br>2014-12-23 16:39:40,868 [HttpClient.java:200] Received response body: {"URI":"0001-02-03","p1Da":"0001-02-03"}
+      <br></br>2014-12-23 16:39:40,869 [HttpClient.java:179] Sending request [GET]: Crud.svc/AggregatePrimaryDate.A1Da?uri=0001-02-03
+      <br></br>2014-12-23 16:39:40,869 [HttpClient.java:370] GET http://localhost:2033/Crud.svc/AggregatePrimaryDate.A1Da?uri=0001-02-03
+      <br></br>2014-12-23 16:39:40,869 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 16:39:40,869 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 16:39:40,871 [HttpClient.java:197] Received response [200, 40 bytes] in 2 ms
+      <br></br>2014-12-23 16:39:40,916 [HttpClient.java:200] Received response body: {"URI":"0001-02-03","p1Da":"0001-02-03"}
+      <br></br><a id="testP1L0DaNonDefault5PropertyInAggregateJsonSerialization"/><h2>testP1L0DaNonDefault5PropertyInAggregateJsonSerialization</h2>
+      <br></br><a id="testP1L0DaPropertySetterModifiers"/><h2>testP1L0DaPropertySetterModifiers</h2>
+      <br></br><a id="testNonExistenceOfURIPropertySetter"/><h2>testNonExistenceOfURIPropertySetter</h2>
+      <br></br><a id="testP1L0DaPropertyFieldGenericType"/><h2>testP1L0DaPropertyFieldGenericType</h2>
+      <br></br><a id="testP1L0DaPropertyFieldModifiers"/><h2>testP1L0DaPropertyFieldModifiers</h2>
+      <br></br><a id="testP1L0DaPropertySetterPublicVisibility"/><h2>testP1L0DaPropertySetterPublicVisibility</h2>
+      <br></br><a id="testP1L0DaDefaultPropertyInAggregateJsonSerialization"/><h2>testP1L0DaDefaultPropertyInAggregateJsonSerialization</h2>
+      <br></br><a id="testP1L0DaNonDefault5PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1L0DaNonDefault5PropertyValueInAggregateAfterActiveRecordPersist</h2>
+      <br></br>2014-12-23 16:39:40,949 [HttpClient.java:179] Sending request [GET]: Domain.svc/search/AggregatePrimaryDate.A1L0Da?limit=2147483647&offset=0
+      <br></br>2014-12-23 16:39:40,949 [HttpClient.java:370] GET http://localhost:2033/Domain.svc/search/AggregatePrimaryDate.A1L0Da?limit=2147483647&offset=0
+      <br></br>2014-12-23 16:39:40,950 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 16:39:40,950 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 16:39:40,968 [HttpClient.java:197] Received response [200, 26 bytes] in 27 ms
+      <br></br>2014-12-23 16:39:40,968 [HttpClient.java:200] Received response body: [{"URI":"{}","p1L0Da":[]}]
+      <br></br>2014-12-23 16:39:40,973 [HttpClient.java:190] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 74 bytes
+      <br></br>2014-12-23 16:39:40,973 [HttpClient.java:370] POST http://localhost:2033/RestApplication.svc/PersistAggregateRoot
+      <br></br>2014-12-23 16:39:40,973 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 16:39:40,973 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 16:39:40,973 [HttpClient.java:383] Adding payload: {"RootName":"AggregatePrimaryDate.A1L0Da","ToDelete":"[{\"URI\":\"{}\"}]"}
+      <br></br>2014-12-23 16:39:41,017 [HttpClient.java:197] Received response [200, 2 bytes] in 47 ms
+      <br></br>2014-12-23 16:39:41,017 [HttpClient.java:200] Received response body: []
+      <br></br>2014-12-23 16:39:41,020 [HttpClient.java:190] Sending request [POST]: Crud.svc/AggregatePrimaryDate.A1L0Da, content size: 112 bytes
+      <br></br>2014-12-23 16:39:41,021 [HttpClient.java:370] POST http://localhost:2033/Crud.svc/AggregatePrimaryDate.A1L0Da
+      <br></br>2014-12-23 16:39:41,021 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 16:39:41,021 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 16:39:41,021 [HttpClient.java:383] Adding payload: {"URI":"55551138","p1L0Da":[null,"2014-12-23","0001-02-03","0001-01-01","1970-01-01","2038-02-13","9999-12-31"]}
+      <br></br>2014-12-23 16:39:41,090 [HttpClient.java:197] Received response [201, 176 bytes] in 71 ms
+      <br></br>2014-12-23 16:39:41,090 [HttpClient.java:200] Received response body: {"URI":"{NULL,2014-12-23,0001-02-03,0001-01-01,1970-01-01,2038-02-13,9999-12-31}","p1L0Da":[null,"2014-12-23","0001-02-03","0001-01-01","1970-01-01","2038-02-13","9999-12-31"]}
+      <br></br>2014-12-23 16:39:41,092 [HttpClient.java:179] Sending request [GET]: Crud.svc/AggregatePrimaryDate.A1L0Da?uri=%7BNULL%2C2014-12-23%2C0001-02-03%2C0001-01-01%2C1970-01-01%2C2038-02-13%2C9999-12-31%7D
+      <br></br>2014-12-23 16:39:41,092 [HttpClient.java:370] GET http://localhost:2033/Crud.svc/AggregatePrimaryDate.A1L0Da?uri=%7BNULL%2C2014-12-23%2C0001-02-03%2C0001-01-01%2C1970-01-01%2C2038-02-13%2C9999-12-31%7D
+      <br></br>2014-12-23 16:39:41,092 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 16:39:41,092 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 16:39:41,099 [HttpClient.java:197] Received response [200, 176 bytes] in 7 ms
+      <br></br>2014-12-23 16:39:41,099 [HttpClient.java:200] Received response body: {"URI":"{NULL,2014-12-23,0001-02-03,0001-01-01,1970-01-01,2038-02-13,9999-12-31}","p1L0Da":[null,"2014-12-23","0001-02-03","0001-01-01","1970-01-01","2038-02-13","9999-12-31"]}
+      <br></br><a id="testP1L0DaNonDefault4PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1L0DaNonDefault4PropertyValueInAggregateAfterActiveRecordPersist</h2>
+      <br></br>2014-12-23 16:39:41,101 [HttpClient.java:179] Sending request [GET]: Domain.svc/search/AggregatePrimaryDate.A1L0Da?limit=2147483647&offset=0
+      <br></br>2014-12-23 16:39:41,102 [HttpClient.java:370] GET http://localhost:2033/Domain.svc/search/AggregatePrimaryDate.A1L0Da?limit=2147483647&offset=0
+      <br></br>2014-12-23 16:39:41,102 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 16:39:41,102 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 16:39:41,106 [HttpClient.java:197] Received response [200, 178 bytes] in 5 ms
+      <br></br>2014-12-23 16:39:41,107 [HttpClient.java:200] Received response body: [{"URI":"{NULL,2014-12-23,0001-02-03,0001-01-01,1970-01-01,2038-02-13,9999-12-31}","p1L0Da":[null,"2014-12-23","0001-02-03","0001-01-01","1970-01-01","2038-02-13","9999-12-31"]}]
+      <br></br>2014-12-23 16:39:41,107 [HttpClient.java:190] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 252 bytes
+      <br></br>2014-12-23 16:39:41,107 [HttpClient.java:370] POST http://localhost:2033/RestApplication.svc/PersistAggregateRoot
+      <br></br>2014-12-23 16:39:41,108 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 16:39:41,108 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 16:39:41,108 [HttpClient.java:383] Adding payload: {"RootName":"AggregatePrimaryDate.A1L0Da","ToDelete":"[{\"URI\":\"{NULL,2014-12-23,0001-02-03,0001-01-01,1970-01-01,2038-02-13,9999-12-31}\",\"p1L0Da\":[null,\"2014-12-23\",\"0001-02-03\",\"0001-01-01\",\"1970-01-01\",\"2038-02-13\",\"9999-12-31\"]}]"}
+      <br></br>2014-12-23 16:39:41,114 [HttpClient.java:197] Received response [200, 2 bytes] in 7 ms
+      <br></br>2014-12-23 16:39:41,114 [HttpClient.java:200] Received response body: []
+      <br></br>2014-12-23 16:39:41,118 [HttpClient.java:190] Sending request [POST]: Crud.svc/AggregatePrimaryDate.A1L0Da, content size: 108 bytes
+      <br></br>2014-12-23 16:39:41,118 [HttpClient.java:370] POST http://localhost:2033/Crud.svc/AggregatePrimaryDate.A1L0Da
+      <br></br>2014-12-23 16:39:41,118 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 16:39:41,118 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 16:39:41,118 [HttpClient.java:383] Adding payload: {"URI":"703004918","p1L0Da":["2014-12-23","0001-02-03","0001-01-01","1970-01-01","2038-02-13","9999-12-31"]}
+      <br></br>2014-12-23 16:39:41,131 [HttpClient.java:197] Received response [201, 166 bytes] in 14 ms
+      <br></br>2014-12-23 16:39:41,132 [HttpClient.java:200] Received response body: {"URI":"{2014-12-23,0001-02-03,0001-01-01,1970-01-01,2038-02-13,9999-12-31}","p1L0Da":["2014-12-23","0001-02-03","0001-01-01","1970-01-01","2038-02-13","9999-12-31"]}
+      <br></br>2014-12-23 16:39:41,134 [HttpClient.java:179] Sending request [GET]: Crud.svc/AggregatePrimaryDate.A1L0Da?uri=%7B2014-12-23%2C0001-02-03%2C0001-01-01%2C1970-01-01%2C2038-02-13%2C9999-12-31%7D
+      <br></br>2014-12-23 16:39:41,152 [HttpClient.java:370] GET http://localhost:2033/Crud.svc/AggregatePrimaryDate.A1L0Da?uri=%7B2014-12-23%2C0001-02-03%2C0001-01-01%2C1970-01-01%2C2038-02-13%2C9999-12-31%7D
+      <br></br>2014-12-23 16:39:41,152 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 16:39:41,152 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 16:39:41,164 [HttpClient.java:197] Received response [200, 166 bytes] in 30 ms
+      <br></br>2014-12-23 16:39:41,164 [HttpClient.java:200] Received response body: {"URI":"{2014-12-23,0001-02-03,0001-01-01,1970-01-01,2038-02-13,9999-12-31}","p1L0Da":["2014-12-23","0001-02-03","0001-01-01","1970-01-01","2038-02-13","9999-12-31"]}
+      <br></br><a id="testP1L0DaNonDefault3PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1L0DaNonDefault3PropertyValueInAggregateAfterActiveRecordPersist</h2>
+      <br></br>2014-12-23 16:39:41,167 [HttpClient.java:179] Sending request [GET]: Domain.svc/search/AggregatePrimaryDate.A1L0Da?limit=2147483647&offset=0
+      <br></br>2014-12-23 16:39:41,167 [HttpClient.java:370] GET http://localhost:2033/Domain.svc/search/AggregatePrimaryDate.A1L0Da?limit=2147483647&offset=0
+      <br></br>2014-12-23 16:39:41,167 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 16:39:41,167 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 16:39:41,170 [HttpClient.java:197] Received response [200, 168 bytes] in 4 ms
+      <br></br>2014-12-23 16:39:41,170 [HttpClient.java:200] Received response body: [{"URI":"{2014-12-23,0001-02-03,0001-01-01,1970-01-01,2038-02-13,9999-12-31}","p1L0Da":["2014-12-23","0001-02-03","0001-01-01","1970-01-01","2038-02-13","9999-12-31"]}]
+      <br></br>2014-12-23 16:39:41,171 [HttpClient.java:190] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 242 bytes
+      <br></br>2014-12-23 16:39:41,171 [HttpClient.java:370] POST http://localhost:2033/RestApplication.svc/PersistAggregateRoot
+      <br></br>2014-12-23 16:39:41,171 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 16:39:41,171 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 16:39:41,171 [HttpClient.java:383] Adding payload: {"RootName":"AggregatePrimaryDate.A1L0Da","ToDelete":"[{\"URI\":\"{2014-12-23,0001-02-03,0001-01-01,1970-01-01,2038-02-13,9999-12-31}\",\"p1L0Da\":[\"2014-12-23\",\"0001-02-03\",\"0001-01-01\",\"1970-01-01\",\"2038-02-13\",\"9999-12-31\"]}]"}
+      <br></br>2014-12-23 16:39:41,181 [HttpClient.java:197] Received response [200, 2 bytes] in 10 ms
+      <br></br>2014-12-23 16:39:41,182 [HttpClient.java:200] Received response body: []
+      <br></br>2014-12-23 16:39:41,185 [HttpClient.java:190] Sending request [POST]: Crud.svc/AggregatePrimaryDate.A1L0Da, content size: 43 bytes
+      <br></br>2014-12-23 16:39:41,185 [HttpClient.java:370] POST http://localhost:2033/Crud.svc/AggregatePrimaryDate.A1L0Da
+      <br></br>2014-12-23 16:39:41,186 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 16:39:41,186 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 16:39:41,186 [HttpClient.java:383] Adding payload: {"URI":"107435504","p1L0Da":["9999-12-31"]}
+      <br></br>2014-12-23 16:39:41,197 [HttpClient.java:197] Received response [201, 46 bytes] in 14 ms
+      <br></br>2014-12-23 16:39:41,197 [HttpClient.java:200] Received response body: {"URI":"{9999-12-31}","p1L0Da":["9999-12-31"]}
+      <br></br>2014-12-23 16:39:41,198 [HttpClient.java:179] Sending request [GET]: Crud.svc/AggregatePrimaryDate.A1L0Da?uri=%7B9999-12-31%7D
+      <br></br>2014-12-23 16:39:41,198 [HttpClient.java:370] GET http://localhost:2033/Crud.svc/AggregatePrimaryDate.A1L0Da?uri=%7B9999-12-31%7D
+      <br></br>2014-12-23 16:39:41,198 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 16:39:41,198 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 16:39:41,201 [HttpClient.java:197] Received response [200, 46 bytes] in 3 ms
+      <br></br>2014-12-23 16:39:41,201 [HttpClient.java:200] Received response body: {"URI":"{9999-12-31}","p1L0Da":["9999-12-31"]}
+      <br></br><a id="testP1L0DaNonDefault2PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1L0DaNonDefault2PropertyValueInAggregateAfterActiveRecordPersist</h2>
+      <br></br>2014-12-23 16:39:41,203 [HttpClient.java:179] Sending request [GET]: Domain.svc/search/AggregatePrimaryDate.A1L0Da?limit=2147483647&offset=0
+      <br></br>2014-12-23 16:39:41,205 [HttpClient.java:370] GET http://localhost:2033/Domain.svc/search/AggregatePrimaryDate.A1L0Da?limit=2147483647&offset=0
+      <br></br>2014-12-23 16:39:41,205 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 16:39:41,206 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 16:39:41,213 [HttpClient.java:197] Received response [200, 48 bytes] in 11 ms
+      <br></br>2014-12-23 16:39:41,259 [HttpClient.java:200] Received response body: [{"URI":"{9999-12-31}","p1L0Da":["9999-12-31"]}]
+      <br></br>2014-12-23 16:39:41,261 [HttpClient.java:190] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 112 bytes
+      <br></br>2014-12-23 16:39:41,261 [HttpClient.java:370] POST http://localhost:2033/RestApplication.svc/PersistAggregateRoot
+      <br></br>2014-12-23 16:39:41,261 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 16:39:41,261 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 16:39:41,261 [HttpClient.java:383] Adding payload: {"RootName":"AggregatePrimaryDate.A1L0Da","ToDelete":"[{\"URI\":\"{9999-12-31}\",\"p1L0Da\":[\"9999-12-31\"]}]"}
+      <br></br>2014-12-23 16:39:41,288 [HttpClient.java:197] Received response [200, 2 bytes] in 28 ms
+      <br></br>2014-12-23 16:39:41,288 [HttpClient.java:200] Received response body: []
+      <br></br>2014-12-23 16:39:41,293 [HttpClient.java:190] Sending request [POST]: Crud.svc/AggregatePrimaryDate.A1L0Da, content size: 44 bytes
+      <br></br>2014-12-23 16:39:41,294 [HttpClient.java:370] POST http://localhost:2033/Crud.svc/AggregatePrimaryDate.A1L0Da
+      <br></br>2014-12-23 16:39:41,294 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 16:39:41,294 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 16:39:41,294 [HttpClient.java:383] Adding payload: {"URI":"1430361668","p1L0Da":["2014-12-23"]}
+      <br></br>2014-12-23 16:39:41,305 [HttpClient.java:197] Received response [201, 46 bytes] in 15 ms
+      <br></br>2014-12-23 16:39:41,306 [HttpClient.java:200] Received response body: {"URI":"{2014-12-23}","p1L0Da":["2014-12-23"]}
+      <br></br>2014-12-23 16:39:41,307 [HttpClient.java:179] Sending request [GET]: Crud.svc/AggregatePrimaryDate.A1L0Da?uri=%7B2014-12-23%7D
+      <br></br>2014-12-23 16:39:41,307 [HttpClient.java:370] GET http://localhost:2033/Crud.svc/AggregatePrimaryDate.A1L0Da?uri=%7B2014-12-23%7D
+      <br></br>2014-12-23 16:39:41,307 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 16:39:41,307 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 16:39:41,310 [HttpClient.java:197] Received response [200, 46 bytes] in 4 ms
+      <br></br>2014-12-23 16:39:41,310 [HttpClient.java:200] Received response body: {"URI":"{2014-12-23}","p1L0Da":["2014-12-23"]}
+      <br></br><a id="testP1L0DaNonDefault1PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1L0DaNonDefault1PropertyValueInAggregateAfterActiveRecordPersist</h2>
+      <br></br>2014-12-23 16:39:41,312 [HttpClient.java:179] Sending request [GET]: Domain.svc/search/AggregatePrimaryDate.A1L0Da?limit=2147483647&offset=0
+      <br></br>2014-12-23 16:39:41,312 [HttpClient.java:370] GET http://localhost:2033/Domain.svc/search/AggregatePrimaryDate.A1L0Da?limit=2147483647&offset=0
+      <br></br>2014-12-23 16:39:41,312 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 16:39:41,312 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 16:39:41,319 [HttpClient.java:197] Received response [200, 48 bytes] in 7 ms
+      <br></br>2014-12-23 16:39:41,320 [HttpClient.java:200] Received response body: [{"URI":"{2014-12-23}","p1L0Da":["2014-12-23"]}]
+      <br></br>2014-12-23 16:39:41,320 [HttpClient.java:190] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 112 bytes
+      <br></br>2014-12-23 16:39:41,320 [HttpClient.java:370] POST http://localhost:2033/RestApplication.svc/PersistAggregateRoot
+      <br></br>2014-12-23 16:39:41,320 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 16:39:41,320 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 16:39:41,320 [HttpClient.java:383] Adding payload: {"RootName":"AggregatePrimaryDate.A1L0Da","ToDelete":"[{\"URI\":\"{2014-12-23}\",\"p1L0Da\":[\"2014-12-23\"]}]"}
+      <br></br>2014-12-23 16:39:41,329 [HttpClient.java:197] Received response [200, 2 bytes] in 9 ms
+      <br></br>2014-12-23 16:39:41,329 [HttpClient.java:200] Received response body: []
+      <br></br>2014-12-23 16:39:41,366 [HttpClient.java:190] Sending request [POST]: Crud.svc/AggregatePrimaryDate.A1L0Da, content size: 35 bytes
+      <br></br>2014-12-23 16:39:41,366 [HttpClient.java:370] POST http://localhost:2033/Crud.svc/AggregatePrimaryDate.A1L0Da
+      <br></br>2014-12-23 16:39:41,367 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 16:39:41,367 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 16:39:41,367 [HttpClient.java:383] Adding payload: {"URI":"774430642","p1L0Da":[null]}
+      <br></br>2014-12-23 16:39:41,378 [HttpClient.java:197] Received response [201, 32 bytes] in 48 ms
+      <br></br>2014-12-23 16:39:41,379 [HttpClient.java:200] Received response body: {"URI":"{NULL}","p1L0Da":[null]}
+      <br></br>2014-12-23 16:39:41,379 [HttpClient.java:179] Sending request [GET]: Crud.svc/AggregatePrimaryDate.A1L0Da?uri=%7BNULL%7D
+      <br></br>2014-12-23 16:39:41,379 [HttpClient.java:370] GET http://localhost:2033/Crud.svc/AggregatePrimaryDate.A1L0Da?uri=%7BNULL%7D
+      <br></br>2014-12-23 16:39:41,379 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 16:39:41,379 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 16:39:41,382 [HttpClient.java:197] Received response [200, 32 bytes] in 3 ms
+      <br></br>2014-12-23 16:39:41,383 [HttpClient.java:200] Received response body: {"URI":"{NULL}","p1L0Da":[null]}
+      <br></br><a id="testURIPropertyFieldClass"/><h2>testURIPropertyFieldClass</h2>
+      <br></br><a id="testP1L0DaPropertySetterClass"/><h2>testP1L0DaPropertySetterClass</h2>
+      <br></br><a id="testP1L0DaPropertyGetterClass"/><h2>testP1L0DaPropertyGetterClass</h2>
+      <br></br><a id="testURIPropertyFieldPrivateVisibility"/><h2>testURIPropertyFieldPrivateVisibility</h2>
+      <br></br><a id="testP1L0DaPropertyFieldDefaultValue"/><h2>testP1L0DaPropertyFieldDefaultValue</h2>
+      <br></br><a id="testP1L0DaPropertySetterGenericType"/><h2>testP1L0DaPropertySetterGenericType</h2>
+      <br></br><a id="testURIPropertyFieldModifiers"/><h2>testURIPropertyFieldModifiers</h2>
+      <br></br><a id="testURIPropertyGetterPublicVisibility"/><h2>testURIPropertyGetterPublicVisibility</h2>
+      <br></br><a id="testP1L0DaNonDefault1PropertyInAggregateJsonSerialization"/><h2>testP1L0DaNonDefault1PropertyInAggregateJsonSerialization</h2>
+      <br></br><a id="testP1L0DaDefaultPropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1L0DaDefaultPropertyValueInAggregateAfterActiveRecordPersist</h2>
+      <br></br>2014-12-23 16:39:41,397 [HttpClient.java:179] Sending request [GET]: Domain.svc/search/AggregatePrimaryDate.A1L0Da?limit=2147483647&offset=0
+      <br></br>2014-12-23 16:39:41,397 [HttpClient.java:370] GET http://localhost:2033/Domain.svc/search/AggregatePrimaryDate.A1L0Da?limit=2147483647&offset=0
+      <br></br>2014-12-23 16:39:41,398 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 16:39:41,398 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 16:39:41,404 [HttpClient.java:197] Received response [200, 34 bytes] in 7 ms
+      <br></br>2014-12-23 16:39:41,405 [HttpClient.java:200] Received response body: [{"URI":"{NULL}","p1L0Da":[null]}]
+      <br></br>2014-12-23 16:39:41,406 [HttpClient.java:190] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 96 bytes
+      <br></br>2014-12-23 16:39:41,406 [HttpClient.java:370] POST http://localhost:2033/RestApplication.svc/PersistAggregateRoot
+      <br></br>2014-12-23 16:39:41,406 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 16:39:41,406 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 16:39:41,407 [HttpClient.java:383] Adding payload: {"RootName":"AggregatePrimaryDate.A1L0Da","ToDelete":"[{\"URI\":\"{NULL}\",\"p1L0Da\":[null]}]"}
+      <br></br>2014-12-23 16:39:41,420 [HttpClient.java:197] Received response [200, 2 bytes] in 14 ms
+      <br></br>2014-12-23 16:39:41,420 [HttpClient.java:200] Received response body: []
+      <br></br>2014-12-23 16:39:41,421 [HttpClient.java:190] Sending request [POST]: Crud.svc/AggregatePrimaryDate.A1L0Da, content size: 19 bytes
+      <br></br>2014-12-23 16:39:41,421 [HttpClient.java:370] POST http://localhost:2033/Crud.svc/AggregatePrimaryDate.A1L0Da
+      <br></br>2014-12-23 16:39:41,421 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 16:39:41,421 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 16:39:41,421 [HttpClient.java:383] Adding payload: {"URI":"139539189"}
+      <br></br>2014-12-23 16:39:41,429 [HttpClient.java:197] Received response [201, 24 bytes] in 8 ms
+      <br></br>2014-12-23 16:39:41,429 [HttpClient.java:200] Received response body: {"URI":"{}","p1L0Da":[]}
+      <br></br>2014-12-23 16:39:41,429 [HttpClient.java:179] Sending request [GET]: Crud.svc/AggregatePrimaryDate.A1L0Da?uri=%7B%7D
+      <br></br>2014-12-23 16:39:41,430 [HttpClient.java:370] GET http://localhost:2033/Crud.svc/AggregatePrimaryDate.A1L0Da?uri=%7B%7D
+      <br></br>2014-12-23 16:39:41,430 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 16:39:41,430 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 16:39:41,486 [HttpClient.java:197] Received response [200, 24 bytes] in 57 ms
+      <br></br>2014-12-23 16:39:41,486 [HttpClient.java:200] Received response body: {"URI":"{}","p1L0Da":[]}
+      <br></br><a id="testP1L0DaPropertyFieldPrivateVisibility"/><h2>testP1L0DaPropertyFieldPrivateVisibility</h2>
+      <br></br><a id="testP1L0DaNonDefault2PropertyInAggregateJsonSerialization"/><h2>testP1L0DaNonDefault2PropertyInAggregateJsonSerialization</h2>
+      <br></br><a id="testP1L0DaPropertyGetterModifiers"/><h2>testP1L0DaPropertyGetterModifiers</h2>
+      <br></br><a id="testP1L0DaPropertyGetterGenericType"/><h2>testP1L0DaPropertyGetterGenericType</h2>
+      <br></br><a id="testP1L0DaNonDefault3PropertyInAggregateJsonSerialization"/><h2>testP1L0DaNonDefault3PropertyInAggregateJsonSerialization</h2>
+      <br></br><a id="testURIPropertyGetterClass"/><h2>testURIPropertyGetterClass</h2>
+      <br></br><a id="testP1L0DaPropertyGetterPublicVisibility"/><h2>testP1L0DaPropertyGetterPublicVisibility</h2>
+      <br></br><a id="testP1L0DaPropertyFieldClass"/><h2>testP1L0DaPropertyFieldClass</h2>
+      <br></br><a id="testP1L0DaNonDefault4PropertyInAggregateJsonSerialization"/><h2>testP1L0DaNonDefault4PropertyInAggregateJsonSerialization</h2>
+      <br></br><a id="testURIPropertyGetterModifiers"/><h2>testURIPropertyGetterModifiers</h2>
+      <br></br><a id="testP1L1DaPropertySetterClass"/><h2>testP1L1DaPropertySetterClass</h2>
+      <br></br><a id="testP1L1DaPropertySetterModifiers"/><h2>testP1L1DaPropertySetterModifiers</h2>
+      <br></br><a id="testP1L1DaPropertyGetterClass"/><h2>testP1L1DaPropertyGetterClass</h2>
+      <br></br><a id="testNonExistenceOfURIPropertySetter"/><h2>testNonExistenceOfURIPropertySetter</h2>
+      <br></br><a id="testP1L1DaPropertyFieldPrivateVisibility"/><h2>testP1L1DaPropertyFieldPrivateVisibility</h2>
+      <br></br><a id="testP1L1DaDefaultPropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1L1DaDefaultPropertyValueInAggregateAfterActiveRecordPersist</h2>
+      <br></br>2014-12-23 16:39:41,511 [HttpClient.java:179] Sending request [GET]: Domain.svc/search/AggregatePrimaryDate.A1L1Da?limit=2147483647&offset=0
+      <br></br>2014-12-23 16:39:41,511 [HttpClient.java:370] GET http://localhost:2033/Domain.svc/search/AggregatePrimaryDate.A1L1Da?limit=2147483647&offset=0
+      <br></br>2014-12-23 16:39:41,511 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 16:39:41,512 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 16:39:41,537 [HttpClient.java:197] Received response [200, 48 bytes] in 29 ms
+      <br></br>2014-12-23 16:39:41,537 [HttpClient.java:200] Received response body: [{"URI":"{2014-12-23}","p1L1Da":["2014-12-23"]}]
+      <br></br>2014-12-23 16:39:41,554 [HttpClient.java:190] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 112 bytes
+      <br></br>2014-12-23 16:39:41,555 [HttpClient.java:370] POST http://localhost:2033/RestApplication.svc/PersistAggregateRoot
+      <br></br>2014-12-23 16:39:41,555 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 16:39:41,555 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 16:39:41,555 [HttpClient.java:383] Adding payload: {"RootName":"AggregatePrimaryDate.A1L1Da","ToDelete":"[{\"URI\":\"{2014-12-23}\",\"p1L1Da\":[\"2014-12-23\"]}]"}
+      <br></br>2014-12-23 16:39:41,595 [HttpClient.java:197] Received response [200, 2 bytes] in 42 ms
+      <br></br>2014-12-23 16:39:41,595 [HttpClient.java:200] Received response body: []
+      <br></br>2014-12-23 16:39:41,599 [HttpClient.java:190] Sending request [POST]: Crud.svc/AggregatePrimaryDate.A1L1Da, content size: 20 bytes
+      <br></br>2014-12-23 16:39:41,599 [HttpClient.java:370] POST http://localhost:2033/Crud.svc/AggregatePrimaryDate.A1L1Da
+      <br></br>2014-12-23 16:39:41,599 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 16:39:41,600 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 16:39:41,600 [HttpClient.java:383] Adding payload: {"URI":"1218036394"}
+      <br></br>2014-12-23 16:39:41,676 [HttpClient.java:197] Received response [201, 24 bytes] in 78 ms
+      <br></br>2014-12-23 16:39:41,677 [HttpClient.java:200] Received response body: {"URI":"{}","p1L1Da":[]}
+      <br></br>2014-12-23 16:39:41,677 [HttpClient.java:179] Sending request [GET]: Crud.svc/AggregatePrimaryDate.A1L1Da?uri=%7B%7D
+      <br></br>2014-12-23 16:39:41,677 [HttpClient.java:370] GET http://localhost:2033/Crud.svc/AggregatePrimaryDate.A1L1Da?uri=%7B%7D
+      <br></br>2014-12-23 16:39:41,678 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 16:39:41,678 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 16:39:41,691 [HttpClient.java:197] Received response [200, 24 bytes] in 14 ms
+      <br></br>2014-12-23 16:39:41,691 [HttpClient.java:200] Received response body: {"URI":"{}","p1L1Da":[]}
+      <br></br><a id="testP1L1DaPropertyFieldGenericType"/><h2>testP1L1DaPropertyFieldGenericType</h2>
+      <br></br><a id="testURIPropertyFieldClass"/><h2>testURIPropertyFieldClass</h2>
+      <br></br><a id="testP1L1DaPropertyGetterPublicVisibility"/><h2>testP1L1DaPropertyGetterPublicVisibility</h2>
+      <br></br><a id="testURIPropertyFieldPrivateVisibility"/><h2>testURIPropertyFieldPrivateVisibility</h2>
+      <br></br><a id="testP1L1DaPropertyFieldDefaultValue"/><h2>testP1L1DaPropertyFieldDefaultValue</h2>
+      <br></br><a id="testP1L1DaPropertySetterGenericType"/><h2>testP1L1DaPropertySetterGenericType</h2>
+      <br></br><a id="testP1L1DaNonDefault1PropertyInAggregateJsonSerialization"/><h2>testP1L1DaNonDefault1PropertyInAggregateJsonSerialization</h2>
+      <br></br><a id="testURIPropertyFieldModifiers"/><h2>testURIPropertyFieldModifiers</h2>
+      <br></br><a id="testURIPropertyGetterPublicVisibility"/><h2>testURIPropertyGetterPublicVisibility</h2>
+      <br></br><a id="testP1L1DaPropertySetterPublicVisibility"/><h2>testP1L1DaPropertySetterPublicVisibility</h2>
+      <br></br><a id="testP1L1DaPropertyFieldModifiers"/><h2>testP1L1DaPropertyFieldModifiers</h2>
+      <br></br><a id="testP1L1DaNonDefault2PropertyInAggregateJsonSerialization"/><h2>testP1L1DaNonDefault2PropertyInAggregateJsonSerialization</h2>
+      <br></br><a id="testP1L1DaPropertyGetterGenericType"/><h2>testP1L1DaPropertyGetterGenericType</h2>
+      <br></br><a id="testP1L1DaNonDefault3PropertyInAggregateJsonSerialization"/><h2>testP1L1DaNonDefault3PropertyInAggregateJsonSerialization</h2>
+      <br></br><a id="testP1L1DaPropertyGetterModifiers"/><h2>testP1L1DaPropertyGetterModifiers</h2>
+      <br></br><a id="testURIPropertyGetterClass"/><h2>testURIPropertyGetterClass</h2>
+      <br></br><a id="testP1L1DaNonDefault3PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1L1DaNonDefault3PropertyValueInAggregateAfterActiveRecordPersist</h2>
+      <br></br>2014-12-23 16:39:41,715 [HttpClient.java:179] Sending request [GET]: Domain.svc/search/AggregatePrimaryDate.A1L1Da?limit=2147483647&offset=0
+      <br></br>2014-12-23 16:39:41,715 [HttpClient.java:370] GET http://localhost:2033/Domain.svc/search/AggregatePrimaryDate.A1L1Da?limit=2147483647&offset=0
+      <br></br>2014-12-23 16:39:41,715 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 16:39:41,715 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 16:39:41,725 [HttpClient.java:197] Received response [200, 26 bytes] in 10 ms
+      <br></br>2014-12-23 16:39:41,725 [HttpClient.java:200] Received response body: [{"URI":"{}","p1L1Da":[]}]
+      <br></br>2014-12-23 16:39:41,725 [HttpClient.java:190] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 74 bytes
+      <br></br>2014-12-23 16:39:41,725 [HttpClient.java:370] POST http://localhost:2033/RestApplication.svc/PersistAggregateRoot
+      <br></br>2014-12-23 16:39:41,725 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 16:39:41,725 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 16:39:41,725 [HttpClient.java:383] Adding payload: {"RootName":"AggregatePrimaryDate.A1L1Da","ToDelete":"[{\"URI\":\"{}\"}]"}
+      <br></br>2014-12-23 16:39:41,742 [HttpClient.java:197] Received response [200, 2 bytes] in 17 ms
+      <br></br>2014-12-23 16:39:41,742 [HttpClient.java:200] Received response body: []
+      <br></br>2014-12-23 16:39:41,746 [HttpClient.java:190] Sending request [POST]: Crud.svc/AggregatePrimaryDate.A1L1Da, content size: 108 bytes
+      <br></br>2014-12-23 16:39:41,746 [HttpClient.java:370] POST http://localhost:2033/Crud.svc/AggregatePrimaryDate.A1L1Da
+      <br></br>2014-12-23 16:39:41,746 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 16:39:41,747 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 16:39:41,747 [HttpClient.java:383] Adding payload: {"URI":"895148345","p1L1Da":["2014-12-23","0001-02-03","0001-01-01","1970-01-01","2038-02-13","9999-12-31"]}
+      <br></br>2014-12-23 16:39:41,898 [HttpClient.java:197] Received response [201, 166 bytes] in 154 ms
+      <br></br>2014-12-23 16:39:41,898 [HttpClient.java:200] Received response body: {"URI":"{2014-12-23,0001-02-03,0001-01-01,1970-01-01,2038-02-13,9999-12-31}","p1L1Da":["2014-12-23","0001-02-03","0001-01-01","1970-01-01","2038-02-13","9999-12-31"]}
+      <br></br>2014-12-23 16:39:41,904 [HttpClient.java:179] Sending request [GET]: Crud.svc/AggregatePrimaryDate.A1L1Da?uri=%7B2014-12-23%2C0001-02-03%2C0001-01-01%2C1970-01-01%2C2038-02-13%2C9999-12-31%7D
+      <br></br>2014-12-23 16:39:41,904 [HttpClient.java:370] GET http://localhost:2033/Crud.svc/AggregatePrimaryDate.A1L1Da?uri=%7B2014-12-23%2C0001-02-03%2C0001-01-01%2C1970-01-01%2C2038-02-13%2C9999-12-31%7D
+      <br></br>2014-12-23 16:39:41,904 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 16:39:41,904 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 16:39:41,907 [HttpClient.java:197] Received response [200, 166 bytes] in 3 ms
+      <br></br>2014-12-23 16:39:41,908 [HttpClient.java:200] Received response body: {"URI":"{2014-12-23,0001-02-03,0001-01-01,1970-01-01,2038-02-13,9999-12-31}","p1L1Da":["2014-12-23","0001-02-03","0001-01-01","1970-01-01","2038-02-13","9999-12-31"]}
+      <br></br><a id="testP1L1DaNonDefault2PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1L1DaNonDefault2PropertyValueInAggregateAfterActiveRecordPersist</h2>
+      <br></br>2014-12-23 16:39:41,909 [HttpClient.java:179] Sending request [GET]: Domain.svc/search/AggregatePrimaryDate.A1L1Da?limit=2147483647&offset=0
+      <br></br>2014-12-23 16:39:41,909 [HttpClient.java:370] GET http://localhost:2033/Domain.svc/search/AggregatePrimaryDate.A1L1Da?limit=2147483647&offset=0
+      <br></br>2014-12-23 16:39:41,909 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 16:39:41,909 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 16:39:41,912 [HttpClient.java:197] Received response [200, 168 bytes] in 4 ms
+      <br></br>2014-12-23 16:39:41,913 [HttpClient.java:200] Received response body: [{"URI":"{2014-12-23,0001-02-03,0001-01-01,1970-01-01,2038-02-13,9999-12-31}","p1L1Da":["2014-12-23","0001-02-03","0001-01-01","1970-01-01","2038-02-13","9999-12-31"]}]
+      <br></br>2014-12-23 16:39:41,915 [HttpClient.java:190] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 242 bytes
+      <br></br>2014-12-23 16:39:41,915 [HttpClient.java:370] POST http://localhost:2033/RestApplication.svc/PersistAggregateRoot
+      <br></br>2014-12-23 16:39:41,916 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 16:39:41,916 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 16:39:41,916 [HttpClient.java:383] Adding payload: {"RootName":"AggregatePrimaryDate.A1L1Da","ToDelete":"[{\"URI\":\"{2014-12-23,0001-02-03,0001-01-01,1970-01-01,2038-02-13,9999-12-31}\",\"p1L1Da\":[\"2014-12-23\",\"0001-02-03\",\"0001-01-01\",\"1970-01-01\",\"2038-02-13\",\"9999-12-31\"]}]"}
+      <br></br>2014-12-23 16:39:41,939 [HttpClient.java:197] Received response [200, 2 bytes] in 24 ms
+      <br></br>2014-12-23 16:39:41,940 [HttpClient.java:200] Received response body: []
+      <br></br>2014-12-23 16:39:41,943 [HttpClient.java:190] Sending request [POST]: Crud.svc/AggregatePrimaryDate.A1L1Da, content size: 43 bytes
+      <br></br>2014-12-23 16:39:41,944 [HttpClient.java:370] POST http://localhost:2033/Crud.svc/AggregatePrimaryDate.A1L1Da
+      <br></br>2014-12-23 16:39:41,944 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 16:39:41,945 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 16:39:41,945 [HttpClient.java:383] Adding payload: {"URI":"567229249","p1L1Da":["9999-12-31"]}
+      <br></br>2014-12-23 16:39:41,954 [HttpClient.java:197] Received response [201, 46 bytes] in 13 ms
+      <br></br>2014-12-23 16:39:41,955 [HttpClient.java:200] Received response body: {"URI":"{9999-12-31}","p1L1Da":["9999-12-31"]}
+      <br></br>2014-12-23 16:39:41,957 [HttpClient.java:179] Sending request [GET]: Crud.svc/AggregatePrimaryDate.A1L1Da?uri=%7B9999-12-31%7D
+      <br></br>2014-12-23 16:39:41,957 [HttpClient.java:370] GET http://localhost:2033/Crud.svc/AggregatePrimaryDate.A1L1Da?uri=%7B9999-12-31%7D
+      <br></br>2014-12-23 16:39:41,957 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 16:39:41,957 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 16:39:41,960 [HttpClient.java:197] Received response [200, 46 bytes] in 4 ms
+      <br></br>2014-12-23 16:39:41,961 [HttpClient.java:200] Received response body: {"URI":"{9999-12-31}","p1L1Da":["9999-12-31"]}
+      <br></br><a id="testP1L1DaNonDefault1PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1L1DaNonDefault1PropertyValueInAggregateAfterActiveRecordPersist</h2>
+      <br></br>2014-12-23 16:39:41,962 [HttpClient.java:179] Sending request [GET]: Domain.svc/search/AggregatePrimaryDate.A1L1Da?limit=2147483647&offset=0
+      <br></br>2014-12-23 16:39:41,962 [HttpClient.java:370] GET http://localhost:2033/Domain.svc/search/AggregatePrimaryDate.A1L1Da?limit=2147483647&offset=0
+      <br></br>2014-12-23 16:39:41,962 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 16:39:41,962 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 16:39:41,966 [HttpClient.java:197] Received response [200, 48 bytes] in 5 ms
+      <br></br>2014-12-23 16:39:41,966 [HttpClient.java:200] Received response body: [{"URI":"{9999-12-31}","p1L1Da":["9999-12-31"]}]
+      <br></br>2014-12-23 16:39:41,966 [HttpClient.java:190] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 112 bytes
+      <br></br>2014-12-23 16:39:41,966 [HttpClient.java:370] POST http://localhost:2033/RestApplication.svc/PersistAggregateRoot
+      <br></br>2014-12-23 16:39:41,966 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 16:39:41,967 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 16:39:41,967 [HttpClient.java:383] Adding payload: {"RootName":"AggregatePrimaryDate.A1L1Da","ToDelete":"[{\"URI\":\"{9999-12-31}\",\"p1L1Da\":[\"9999-12-31\"]}]"}
+      <br></br>2014-12-23 16:39:41,981 [HttpClient.java:197] Received response [200, 2 bytes] in 15 ms
+      <br></br>2014-12-23 16:39:41,981 [HttpClient.java:200] Received response body: []
+      <br></br>2014-12-23 16:39:41,983 [HttpClient.java:190] Sending request [POST]: Crud.svc/AggregatePrimaryDate.A1L1Da, content size: 44 bytes
+      <br></br>2014-12-23 16:39:41,984 [HttpClient.java:370] POST http://localhost:2033/Crud.svc/AggregatePrimaryDate.A1L1Da
+      <br></br>2014-12-23 16:39:41,984 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 16:39:41,985 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 16:39:41,985 [HttpClient.java:383] Adding payload: {"URI":"2081146697","p1L1Da":["2014-12-23"]}
+      <br></br>2014-12-23 16:39:41,997 [HttpClient.java:197] Received response [201, 46 bytes] in 15 ms
+      <br></br>2014-12-23 16:39:41,997 [HttpClient.java:200] Received response body: {"URI":"{2014-12-23}","p1L1Da":["2014-12-23"]}
+      <br></br>2014-12-23 16:39:41,998 [HttpClient.java:179] Sending request [GET]: Crud.svc/AggregatePrimaryDate.A1L1Da?uri=%7B2014-12-23%7D
+      <br></br>2014-12-23 16:39:41,998 [HttpClient.java:370] GET http://localhost:2033/Crud.svc/AggregatePrimaryDate.A1L1Da?uri=%7B2014-12-23%7D
+      <br></br>2014-12-23 16:39:41,998 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 16:39:41,998 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 16:39:42,046 [HttpClient.java:197] Received response [200, 46 bytes] in 48 ms
+      <br></br>2014-12-23 16:39:42,047 [HttpClient.java:200] Received response body: {"URI":"{2014-12-23}","p1L1Da":["2014-12-23"]}
+      <br></br><a id="testURIPropertyGetterModifiers"/><h2>testURIPropertyGetterModifiers</h2>
+      <br></br><a id="testP1L1DaPropertyFieldClass"/><h2>testP1L1DaPropertyFieldClass</h2>
+      <br></br><a id="testP1L1DaDefaultPropertyInAggregateJsonSerialization"/><h2>testP1L1DaDefaultPropertyInAggregateJsonSerialization</h2>
+      <br></br>
+   </body>
+</html>

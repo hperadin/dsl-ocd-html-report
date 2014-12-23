@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="US-ASCII"?><html xmlns:lxslt="http://xml.apache.org/xslt" xmlns:stringutils="xalan://org.apache.tools.ant.util.StringUtils">
+   <head>
+      <title>Test case summary</title>
+      <link rel="stylesheet" href="../../../../../../css/bootstrap.min.css"></link>
+      <script src="../../../../../../js/jquery.min.js"></script>
+      <script src="../../../../../../js/bootstrap.min.js"></script>
+   </head>
+   <body>
+      <div id="testDetails" class="container">
+         <h1>testP0L1TsNonDefault3PropertyInAggregateJsonSerialization</h1>
+         <h2>
+            <a target="_blank" href="&#xA;      ../../../../../com/dslplatform/ocd/test/SurrogateSingleTimestamp_stacktrace.html#testP0L1TsNonDefault3PropertyInAggregateJsonSerialization">
+               (view stacktrace)
+               
+            </a>
+         </h2>
+         <table class="table table-striped" style="width: 1500px">
+            <tr>
+               <td>Name:</td>
+               <td>Status:</td>
+               <td>Time:</td>
+            </tr>
+            <tr>
+               <td>testP0L1TsNonDefault3PropertyInAggregateJsonSerialization</td>
+               <td>Failed</td>
+               <td>0.001</td>
+            </tr>
+         </table>
+         <h2>Errors:</h2>
+         <table class="table" style="width: 1500px">
+            <tr>
+               <td>Type:</td>
+               <td>java.lang.AssertionError</td>
+            </tr>
+            <tr>
+               <td>Message:</td>
+               <td>
+                  <code>NullableListOfOneTimestamp mismatch: element mismatch occurred at index 2: expected
+                     was: "0001-01-01T00:00:00.000+01:22", but actual was: "0001-01-01T00:00:00.000+01:22"[WARNING
+                     - comparing two instants directly - not using a delta duration]; Different instances.;
+                     Chronologies: ISOChronology[Europe/Belgrade] vs. ISOChronology[+01:22]; Chronology
+                     offsets: 3600000 vs. 4920000
+                  </code>
+               </td>
+            </tr>
+            <tr>
+               <td>Text:</td>
+               <td>
+                  <code>java.lang.AssertionError: NullableListOfOneTimestamp mismatch: element mismatch occurred at index 2: expected was: "0001-01-01T00:00:00.000+01:22", but actual was: "0001-01-01T00:00:00.000+01:22"[WARNING - comparing two instants directly - not using a delta duration]; Different instances.; Chronologies: ISOChronology[Europe/Belgrade] vs. ISOChronology[+01:22]; Chronology offsets: 3600000 vs. 4920000
+                     <br></br>	at com.dslplatform.ocd.javaasserts.TimestampAsserts.assertSingleEqualsZeroDelta(TimestampAsserts.java:60)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.TimestampAsserts.assertSingleEquals(TimestampAsserts.java:65)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.TimestampAsserts.assertOneEquals(TimestampAsserts.java:77)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.TimestampAsserts.assertListOfOneEquals(TimestampAsserts.java:200)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.TimestampAsserts.assertNullableListOfOneEquals(TimestampAsserts.java:229)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.TimestampAsserts.assertNullableListOfOneEquals(TimestampAsserts.java:233)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.TimestampAsserts.assertNullableListOfOneEquals(TimestampAsserts.java:237)
+                     <br></br>	at com.dslplatform.ocd.aggregates.StandardAggregateWithSurrogateKeyAndNullableListOfOneTimestampsPropertyTest.testP0L1TsNonDefault3PropertyInAggregateJsonSerialization(Unknown Source)
+                     <br></br>
+                  </code>
+               </td>
+            </tr>
+         </table>
+      </div>
+   </body>
+</html>
