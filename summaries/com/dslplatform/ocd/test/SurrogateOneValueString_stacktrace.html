@@ -1,0 +1,880 @@
+<?xml version="1.0" encoding="US-ASCII"?><html xmlns:lxslt="http://xml.apache.org/xslt" xmlns:stringutils="xalan://org.apache.tools.ant.util.StringUtils">
+   <head></head>
+   <body><a id="testP0A0StWithinOneV0A0StDefaultPropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP0A0StWithinOneV0A0StDefaultPropertyValueInAggregateAfterActiveRecordPersist</h2>
+      <br></br>2014-12-23 12:17:56,195 [HttpClient.java:190] Sending request [POST]: Crud.svc/AggregateOneValueString.Aggregate0A0St, content size: 38 bytes
+      <br></br>2014-12-23 12:17:56,201 [HttpClient.java:370] POST http://localhost:2080/Crud.svc/AggregateOneValueString.Aggregate0A0St
+      <br></br>2014-12-23 12:17:56,202 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 12:17:56,202 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 12:17:56,202 [HttpClient.java:383] Adding payload: {"URI":"225484497","ID":0,"v0A0St":{}}
+      <br></br>2014-12-23 12:17:56,756 [HttpClient.java:197] Received response [201, 49 bytes] in 650 ms
+      <br></br>2014-12-23 12:17:56,757 [HttpClient.java:200] Received response body: {"URI":"1072","ID":1072,"v0A0St":{"p0A0St":null}}
+      <br></br>2014-12-23 12:17:56,805 [HttpClient.java:179] Sending request [GET]: Crud.svc/AggregateOneValueString.Aggregate0A0St?uri=1072
+      <br></br>2014-12-23 12:17:56,805 [HttpClient.java:370] GET http://localhost:2080/Crud.svc/AggregateOneValueString.Aggregate0A0St?uri=1072
+      <br></br>2014-12-23 12:17:56,805 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 12:17:56,805 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 12:17:56,861 [HttpClient.java:197] Received response [200, 49 bytes] in 56 ms
+      <br></br>2014-12-23 12:17:56,861 [HttpClient.java:200] Received response body: {"URI":"1072","ID":1072,"v0A0St":{"p0A0St":null}}
+      <br></br><a id="testP0A0StWithinOneV0A0StNonDefault1PropertyInAggregateJsonSerialization"/><h2>testP0A0StWithinOneV0A0StNonDefault1PropertyInAggregateJsonSerialization</h2>
+      <br></br><a id="testP0A0StWithinOneV0A0StNonDefault5PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP0A0StWithinOneV0A0StNonDefault5PropertyValueInAggregateAfterActiveRecordPersist</h2>
+      <br></br>2014-12-23 12:17:56,867 [HttpClient.java:190] Sending request [POST]: Crud.svc/AggregateOneValueString.Aggregate0A0St, content size: 655 bytes
+      <br></br>2014-12-23 12:17:56,867 [HttpClient.java:370] POST http://localhost:2080/Crud.svc/AggregateOneValueString.Aggregate0A0St
+      <br></br>2014-12-23 12:17:56,867 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 12:17:56,867 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 12:17:56,867 [HttpClient.java:383] Adding payload: {"URI":"1530098029","ID":0,"v0A0St":{"p0A0St":[null,"","\"","Quote: \", Solidus /, Backslash: \\, Aphos: ', Brackets: [] () {}","\u0001\u0002\u0003\u0004\u0005\u0006\u0007\b\t\n\u000B\f\r\u000E\u000F\u0010\u0011\u0012\u0013\u0014\u0015\u0016\u0017\u0018\u0019\u001A\u001B\u001C\u001D\u001E\u001F !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~????????????????????????????????&#xa0;&#xa1;&#xa2;&#xa3;&#xa4;&#xa5;&#xa6;&#xa7;&#xa8;&#xa9;&#xaa;&#xab;&#xac;&#xad;&#xae;&#xaf;&#xb0;&#xb1;&#xb2;&#xb3;&#xb4;&#xb5;&#xb6;&#xb7;&#xb8;&#xb9;&#xba;&#xbb;&#xbc;&#xbd;&#xbe;&#xbf;&#xc0;&#xc1;&#xc2;&#xc3;&#xc4;&#xc5;&#xc6;&#xc7;&#xc8;&#xc9;&#xca;&#xcb;&#xcc;&#xcd;&#xce;&#xcf;&#xd0;&#xd1;&#xd2;&#xd3;&#xd4;&#xd5;&#xd6;&#xd7;&#xd8;&#xd9;&#xda;&#xdb;&#xdc;&#xdd;&#xde;&#xdf;&#xe0;&#xe1;&#xe2;&#xe3;&#xe4;&#xe5;&#xe6;&#xe7;&#xe8;&#xe9;&#xea;&#xeb;&#xec;&#xed;&#xee;&#xef;&#xf0;&#xf1;&#xf2;&#xf3;&#xf4;&#xf5;&#xf6;&#xf7;&#xf8;&#xf9;&#xfa;&#xfb;&#xfc;&#xfd;&#xfe;&#xff;?"]}}
+      <br></br>2014-12-23 12:17:56,882 [HttpClient.java:197] Received response [400, 99 bytes] in 16 ms
+      <br></br>2014-12-23 12:17:56,882 [HttpClient.java:200] Received response body: Can't deserialize AggregateOneValueString.Aggregate0A0St. Error: Invalid char found: f. Example: 
+      <br></br>
+      <br></br><a id="testP0A0StWithinOneV0A0StNonDefault2PropertyInAggregateJsonSerialization"/><h2>testP0A0StWithinOneV0A0StNonDefault2PropertyInAggregateJsonSerialization</h2>
+      <br></br><a id="testP0A0StWithinOneV0A0StNonDefault4PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP0A0StWithinOneV0A0StNonDefault4PropertyValueInAggregateAfterActiveRecordPersist</h2>
+      <br></br>2014-12-23 12:17:56,888 [HttpClient.java:190] Sending request [POST]: Crud.svc/AggregateOneValueString.Aggregate0A0St, content size: 650 bytes
+      <br></br>2014-12-23 12:17:56,888 [HttpClient.java:370] POST http://localhost:2080/Crud.svc/AggregateOneValueString.Aggregate0A0St
+      <br></br>2014-12-23 12:17:56,889 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 12:17:56,889 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 12:17:56,889 [HttpClient.java:383] Adding payload: {"URI":"1924305208","ID":0,"v0A0St":{"p0A0St":["","\"","Quote: \", Solidus /, Backslash: \\, Aphos: ', Brackets: [] () {}","\u0001\u0002\u0003\u0004\u0005\u0006\u0007\b\t\n\u000B\f\r\u000E\u000F\u0010\u0011\u0012\u0013\u0014\u0015\u0016\u0017\u0018\u0019\u001A\u001B\u001C\u001D\u001E\u001F !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~????????????????????????????????&#xa0;&#xa1;&#xa2;&#xa3;&#xa4;&#xa5;&#xa6;&#xa7;&#xa8;&#xa9;&#xaa;&#xab;&#xac;&#xad;&#xae;&#xaf;&#xb0;&#xb1;&#xb2;&#xb3;&#xb4;&#xb5;&#xb6;&#xb7;&#xb8;&#xb9;&#xba;&#xbb;&#xbc;&#xbd;&#xbe;&#xbf;&#xc0;&#xc1;&#xc2;&#xc3;&#xc4;&#xc5;&#xc6;&#xc7;&#xc8;&#xc9;&#xca;&#xcb;&#xcc;&#xcd;&#xce;&#xcf;&#xd0;&#xd1;&#xd2;&#xd3;&#xd4;&#xd5;&#xd6;&#xd7;&#xd8;&#xd9;&#xda;&#xdb;&#xdc;&#xdd;&#xde;&#xdf;&#xe0;&#xe1;&#xe2;&#xe3;&#xe4;&#xe5;&#xe6;&#xe7;&#xe8;&#xe9;&#xea;&#xeb;&#xec;&#xed;&#xee;&#xef;&#xf0;&#xf1;&#xf2;&#xf3;&#xf4;&#xf5;&#xf6;&#xf7;&#xf8;&#xf9;&#xfa;&#xfb;&#xfc;&#xfd;&#xfe;&#xff;?"]}}
+      <br></br>2014-12-23 12:17:56,891 [HttpClient.java:197] Received response [400, 99 bytes] in 3 ms
+      <br></br>2014-12-23 12:17:56,891 [HttpClient.java:200] Received response body: Can't deserialize AggregateOneValueString.Aggregate0A0St. Error: Invalid char found: f. Example: 
+      <br></br>
+      <br></br><a id="testP0A0StWithinOneV0A0StNonDefault3PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP0A0StWithinOneV0A0StNonDefault3PropertyValueInAggregateAfterActiveRecordPersist</h2>
+      <br></br>2014-12-23 12:17:56,893 [HttpClient.java:190] Sending request [POST]: Crud.svc/AggregateOneValueString.Aggregate0A0St, content size: 574 bytes
+      <br></br>2014-12-23 12:17:56,893 [HttpClient.java:370] POST http://localhost:2080/Crud.svc/AggregateOneValueString.Aggregate0A0St
+      <br></br>2014-12-23 12:17:56,893 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 12:17:56,893 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 12:17:56,893 [HttpClient.java:383] Adding payload: {"URI":"1297100897","ID":0,"v0A0St":{"p0A0St":["\u0001\u0002\u0003\u0004\u0005\u0006\u0007\b\t\n\u000B\f\r\u000E\u000F\u0010\u0011\u0012\u0013\u0014\u0015\u0016\u0017\u0018\u0019\u001A\u001B\u001C\u001D\u001E\u001F !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~????????????????????????????????&#xa0;&#xa1;&#xa2;&#xa3;&#xa4;&#xa5;&#xa6;&#xa7;&#xa8;&#xa9;&#xaa;&#xab;&#xac;&#xad;&#xae;&#xaf;&#xb0;&#xb1;&#xb2;&#xb3;&#xb4;&#xb5;&#xb6;&#xb7;&#xb8;&#xb9;&#xba;&#xbb;&#xbc;&#xbd;&#xbe;&#xbf;&#xc0;&#xc1;&#xc2;&#xc3;&#xc4;&#xc5;&#xc6;&#xc7;&#xc8;&#xc9;&#xca;&#xcb;&#xcc;&#xcd;&#xce;&#xcf;&#xd0;&#xd1;&#xd2;&#xd3;&#xd4;&#xd5;&#xd6;&#xd7;&#xd8;&#xd9;&#xda;&#xdb;&#xdc;&#xdd;&#xde;&#xdf;&#xe0;&#xe1;&#xe2;&#xe3;&#xe4;&#xe5;&#xe6;&#xe7;&#xe8;&#xe9;&#xea;&#xeb;&#xec;&#xed;&#xee;&#xef;&#xf0;&#xf1;&#xf2;&#xf3;&#xf4;&#xf5;&#xf6;&#xf7;&#xf8;&#xf9;&#xfa;&#xfb;&#xfc;&#xfd;&#xfe;&#xff;?"]}}
+      <br></br>2014-12-23 12:17:56,916 [HttpClient.java:197] Received response [400, 99 bytes] in 23 ms
+      <br></br>2014-12-23 12:17:56,916 [HttpClient.java:200] Received response body: Can't deserialize AggregateOneValueString.Aggregate0A0St. Error: Invalid char found: f. Example: 
+      <br></br>
+      <br></br><a id="testP0A0StWithinOneV0A0StNonDefault2PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP0A0StWithinOneV0A0StNonDefault2PropertyValueInAggregateAfterActiveRecordPersist</h2>
+      <br></br>2014-12-23 12:17:56,938 [HttpClient.java:190] Sending request [POST]: Crud.svc/AggregateOneValueString.Aggregate0A0St, content size: 52 bytes
+      <br></br>2014-12-23 12:17:56,938 [HttpClient.java:370] POST http://localhost:2080/Crud.svc/AggregateOneValueString.Aggregate0A0St
+      <br></br>2014-12-23 12:17:56,938 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 12:17:56,938 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 12:17:56,938 [HttpClient.java:383] Adding payload: {"URI":"1158646143","ID":0,"v0A0St":{"p0A0St":[""]}}
+      <br></br>2014-12-23 12:17:56,963 [HttpClient.java:197] Received response [201, 49 bytes] in 26 ms
+      <br></br>2014-12-23 12:17:56,963 [HttpClient.java:200] Received response body: {"URI":"1073","ID":1073,"v0A0St":{"p0A0St":[""]}}
+      <br></br>2014-12-23 12:17:56,964 [HttpClient.java:179] Sending request [GET]: Crud.svc/AggregateOneValueString.Aggregate0A0St?uri=1073
+      <br></br>2014-12-23 12:17:56,964 [HttpClient.java:370] GET http://localhost:2080/Crud.svc/AggregateOneValueString.Aggregate0A0St?uri=1073
+      <br></br>2014-12-23 12:17:56,964 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 12:17:56,964 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 12:17:56,971 [HttpClient.java:197] Received response [200, 49 bytes] in 7 ms
+      <br></br>2014-12-23 12:17:56,972 [HttpClient.java:200] Received response body: {"URI":"1073","ID":1073,"v0A0St":{"p0A0St":[""]}}
+      <br></br><a id="testP0A0StWithinOneV0A0StNonDefault1PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP0A0StWithinOneV0A0StNonDefault1PropertyValueInAggregateAfterActiveRecordPersist</h2>
+      <br></br>2014-12-23 12:17:56,976 [HttpClient.java:190] Sending request [POST]: Crud.svc/AggregateOneValueString.Aggregate0A0St, content size: 54 bytes
+      <br></br>2014-12-23 12:17:56,976 [HttpClient.java:370] POST http://localhost:2080/Crud.svc/AggregateOneValueString.Aggregate0A0St
+      <br></br>2014-12-23 12:17:56,977 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 12:17:56,977 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 12:17:56,977 [HttpClient.java:383] Adding payload: {"URI":"1913044357","ID":0,"v0A0St":{"p0A0St":[null]}}
+      <br></br>2014-12-23 12:17:56,995 [HttpClient.java:197] Received response [201, 51 bytes] in 19 ms
+      <br></br>2014-12-23 12:17:56,996 [HttpClient.java:200] Received response body: {"URI":"1074","ID":1074,"v0A0St":{"p0A0St":[null]}}
+      <br></br>2014-12-23 12:17:56,996 [HttpClient.java:179] Sending request [GET]: Crud.svc/AggregateOneValueString.Aggregate0A0St?uri=1074
+      <br></br>2014-12-23 12:17:56,996 [HttpClient.java:370] GET http://localhost:2080/Crud.svc/AggregateOneValueString.Aggregate0A0St?uri=1074
+      <br></br>2014-12-23 12:17:56,996 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 12:17:56,996 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 12:17:57,000 [HttpClient.java:197] Received response [200, 51 bytes] in 4 ms
+      <br></br>2014-12-23 12:17:57,001 [HttpClient.java:200] Received response body: {"URI":"1074","ID":1074,"v0A0St":{"p0A0St":[null]}}
+      <br></br><a id="testP0A0StWithinOneV0A0StNonDefault3PropertyInAggregateJsonSerialization"/><h2>testP0A0StWithinOneV0A0StNonDefault3PropertyInAggregateJsonSerialization</h2>
+      <br></br><a id="testP0A0StWithinOneV0A0StNonDefault4PropertyInAggregateJsonSerialization"/><h2>testP0A0StWithinOneV0A0StNonDefault4PropertyInAggregateJsonSerialization</h2>
+      <br></br><a id="testP0A0StWithinOneV0A0StNonDefault5PropertyInAggregateJsonSerialization"/><h2>testP0A0StWithinOneV0A0StNonDefault5PropertyInAggregateJsonSerialization</h2>
+      <br></br><a id="testP0A0StWithinOneV0A0StDefaultPropertyInAggregateJsonSerialization"/><h2>testP0A0StWithinOneV0A0StDefaultPropertyInAggregateJsonSerialization</h2>
+      <br></br><a id="testP0A1StWithinOneV0A1StNonDefault3PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP0A1StWithinOneV0A1StNonDefault3PropertyValueInAggregateAfterActiveRecordPersist</h2>
+      <br></br>2014-12-23 12:17:57,030 [HttpClient.java:190] Sending request [POST]: Crud.svc/AggregateOneValueString.Aggregate0A1St, content size: 649 bytes
+      <br></br>2014-12-23 12:17:57,030 [HttpClient.java:370] POST http://localhost:2080/Crud.svc/AggregateOneValueString.Aggregate0A1St
+      <br></br>2014-12-23 12:17:57,031 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 12:17:57,031 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 12:17:57,031 [HttpClient.java:383] Adding payload: {"URI":"913841043","ID":0,"v0A1St":{"p0A1St":["","\"","Quote: \", Solidus /, Backslash: \\, Aphos: ', Brackets: [] () {}","\u0001\u0002\u0003\u0004\u0005\u0006\u0007\b\t\n\u000B\f\r\u000E\u000F\u0010\u0011\u0012\u0013\u0014\u0015\u0016\u0017\u0018\u0019\u001A\u001B\u001C\u001D\u001E\u001F !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~????????????????????????????????&#xa0;&#xa1;&#xa2;&#xa3;&#xa4;&#xa5;&#xa6;&#xa7;&#xa8;&#xa9;&#xaa;&#xab;&#xac;&#xad;&#xae;&#xaf;&#xb0;&#xb1;&#xb2;&#xb3;&#xb4;&#xb5;&#xb6;&#xb7;&#xb8;&#xb9;&#xba;&#xbb;&#xbc;&#xbd;&#xbe;&#xbf;&#xc0;&#xc1;&#xc2;&#xc3;&#xc4;&#xc5;&#xc6;&#xc7;&#xc8;&#xc9;&#xca;&#xcb;&#xcc;&#xcd;&#xce;&#xcf;&#xd0;&#xd1;&#xd2;&#xd3;&#xd4;&#xd5;&#xd6;&#xd7;&#xd8;&#xd9;&#xda;&#xdb;&#xdc;&#xdd;&#xde;&#xdf;&#xe0;&#xe1;&#xe2;&#xe3;&#xe4;&#xe5;&#xe6;&#xe7;&#xe8;&#xe9;&#xea;&#xeb;&#xec;&#xed;&#xee;&#xef;&#xf0;&#xf1;&#xf2;&#xf3;&#xf4;&#xf5;&#xf6;&#xf7;&#xf8;&#xf9;&#xfa;&#xfb;&#xfc;&#xfd;&#xfe;&#xff;?"]}}
+      <br></br>2014-12-23 12:17:57,051 [HttpClient.java:197] Received response [400, 99 bytes] in 27 ms
+      <br></br>2014-12-23 12:17:57,051 [HttpClient.java:200] Received response body: Can't deserialize AggregateOneValueString.Aggregate0A1St. Error: Invalid char found: f. Example: 
+      <br></br>
+      <br></br><a id="testP0A1StWithinOneV0A1StNonDefault2PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP0A1StWithinOneV0A1StNonDefault2PropertyValueInAggregateAfterActiveRecordPersist</h2>
+      <br></br>2014-12-23 12:17:57,052 [HttpClient.java:190] Sending request [POST]: Crud.svc/AggregateOneValueString.Aggregate0A1St, content size: 574 bytes
+      <br></br>2014-12-23 12:17:57,052 [HttpClient.java:370] POST http://localhost:2080/Crud.svc/AggregateOneValueString.Aggregate0A1St
+      <br></br>2014-12-23 12:17:57,052 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 12:17:57,053 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 12:17:57,053 [HttpClient.java:383] Adding payload: {"URI":"1566647188","ID":0,"v0A1St":{"p0A1St":["\u0001\u0002\u0003\u0004\u0005\u0006\u0007\b\t\n\u000B\f\r\u000E\u000F\u0010\u0011\u0012\u0013\u0014\u0015\u0016\u0017\u0018\u0019\u001A\u001B\u001C\u001D\u001E\u001F !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~????????????????????????????????&#xa0;&#xa1;&#xa2;&#xa3;&#xa4;&#xa5;&#xa6;&#xa7;&#xa8;&#xa9;&#xaa;&#xab;&#xac;&#xad;&#xae;&#xaf;&#xb0;&#xb1;&#xb2;&#xb3;&#xb4;&#xb5;&#xb6;&#xb7;&#xb8;&#xb9;&#xba;&#xbb;&#xbc;&#xbd;&#xbe;&#xbf;&#xc0;&#xc1;&#xc2;&#xc3;&#xc4;&#xc5;&#xc6;&#xc7;&#xc8;&#xc9;&#xca;&#xcb;&#xcc;&#xcd;&#xce;&#xcf;&#xd0;&#xd1;&#xd2;&#xd3;&#xd4;&#xd5;&#xd6;&#xd7;&#xd8;&#xd9;&#xda;&#xdb;&#xdc;&#xdd;&#xde;&#xdf;&#xe0;&#xe1;&#xe2;&#xe3;&#xe4;&#xe5;&#xe6;&#xe7;&#xe8;&#xe9;&#xea;&#xeb;&#xec;&#xed;&#xee;&#xef;&#xf0;&#xf1;&#xf2;&#xf3;&#xf4;&#xf5;&#xf6;&#xf7;&#xf8;&#xf9;&#xfa;&#xfb;&#xfc;&#xfd;&#xfe;&#xff;?"]}}
+      <br></br>2014-12-23 12:17:57,054 [HttpClient.java:197] Received response [400, 99 bytes] in 2 ms
+      <br></br>2014-12-23 12:17:57,055 [HttpClient.java:200] Received response body: Can't deserialize AggregateOneValueString.Aggregate0A1St. Error: Invalid char found: f. Example: 
+      <br></br>
+      <br></br><a id="testP0A1StWithinOneV0A1StNonDefault1PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP0A1StWithinOneV0A1StNonDefault1PropertyValueInAggregateAfterActiveRecordPersist</h2>
+      <br></br>2014-12-23 12:17:57,057 [HttpClient.java:190] Sending request [POST]: Crud.svc/AggregateOneValueString.Aggregate0A1St, content size: 51 bytes
+      <br></br>2014-12-23 12:17:57,057 [HttpClient.java:370] POST http://localhost:2080/Crud.svc/AggregateOneValueString.Aggregate0A1St
+      <br></br>2014-12-23 12:17:57,057 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 12:17:57,057 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 12:17:57,058 [HttpClient.java:383] Adding payload: {"URI":"752270622","ID":0,"v0A1St":{"p0A1St":[""]}}
+      <br></br>2014-12-23 12:17:57,095 [HttpClient.java:197] Received response [201, 49 bytes] in 39 ms
+      <br></br>2014-12-23 12:17:57,095 [HttpClient.java:200] Received response body: {"URI":"1049","ID":1049,"v0A1St":{"p0A1St":[""]}}
+      <br></br>2014-12-23 12:17:57,101 [HttpClient.java:179] Sending request [GET]: Crud.svc/AggregateOneValueString.Aggregate0A1St?uri=1049
+      <br></br>2014-12-23 12:17:57,101 [HttpClient.java:370] GET http://localhost:2080/Crud.svc/AggregateOneValueString.Aggregate0A1St?uri=1049
+      <br></br>2014-12-23 12:17:57,101 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 12:17:57,101 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 12:17:57,123 [HttpClient.java:197] Received response [200, 49 bytes] in 22 ms
+      <br></br>2014-12-23 12:17:57,124 [HttpClient.java:200] Received response body: {"URI":"1049","ID":1049,"v0A1St":{"p0A1St":[""]}}
+      <br></br><a id="testP0A1StWithinOneV0A1StDefaultPropertyInAggregateJsonSerialization"/><h2>testP0A1StWithinOneV0A1StDefaultPropertyInAggregateJsonSerialization</h2>
+      <br></br><a id="testP0A1StWithinOneV0A1StDefaultPropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP0A1StWithinOneV0A1StDefaultPropertyValueInAggregateAfterActiveRecordPersist</h2>
+      <br></br>2014-12-23 12:17:57,132 [HttpClient.java:190] Sending request [POST]: Crud.svc/AggregateOneValueString.Aggregate0A1St, content size: 37 bytes
+      <br></br>2014-12-23 12:17:57,132 [HttpClient.java:370] POST http://localhost:2080/Crud.svc/AggregateOneValueString.Aggregate0A1St
+      <br></br>2014-12-23 12:17:57,132 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 12:17:57,132 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 12:17:57,132 [HttpClient.java:383] Adding payload: {"URI":"48179336","ID":0,"v0A1St":{}}
+      <br></br>2014-12-23 12:17:57,153 [HttpClient.java:197] Received response [201, 49 bytes] in 21 ms
+      <br></br>2014-12-23 12:17:57,153 [HttpClient.java:200] Received response body: {"URI":"1050","ID":1050,"v0A1St":{"p0A1St":null}}
+      <br></br>2014-12-23 12:17:57,154 [HttpClient.java:179] Sending request [GET]: Crud.svc/AggregateOneValueString.Aggregate0A1St?uri=1050
+      <br></br>2014-12-23 12:17:57,154 [HttpClient.java:370] GET http://localhost:2080/Crud.svc/AggregateOneValueString.Aggregate0A1St?uri=1050
+      <br></br>2014-12-23 12:17:57,154 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 12:17:57,154 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 12:17:57,155 [HttpClient.java:197] Received response [200, 49 bytes] in 1 ms
+      <br></br>2014-12-23 12:17:57,155 [HttpClient.java:200] Received response body: {"URI":"1050","ID":1050,"v0A1St":{"p0A1St":null}}
+      <br></br><a id="testP0A1StWithinOneV0A1StNonDefault1PropertyInAggregateJsonSerialization"/><h2>testP0A1StWithinOneV0A1StNonDefault1PropertyInAggregateJsonSerialization</h2>
+      <br></br><a id="testP0A1StWithinOneV0A1StNonDefault2PropertyInAggregateJsonSerialization"/><h2>testP0A1StWithinOneV0A1StNonDefault2PropertyInAggregateJsonSerialization</h2>
+      <br></br><a id="testP0A1StWithinOneV0A1StNonDefault3PropertyInAggregateJsonSerialization"/><h2>testP0A1StWithinOneV0A1StNonDefault3PropertyInAggregateJsonSerialization</h2>
+      <br></br><a id="testP0L0StWithinOneV0L0StNonDefault1PropertyInAggregateJsonSerialization"/><h2>testP0L0StWithinOneV0L0StNonDefault1PropertyInAggregateJsonSerialization</h2>
+      <br></br><a id="testP0L0StWithinOneV0L0StNonDefault2PropertyInAggregateJsonSerialization"/><h2>testP0L0StWithinOneV0L0StNonDefault2PropertyInAggregateJsonSerialization</h2>
+      <br></br><a id="testP0L0StWithinOneV0L0StNonDefault5PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP0L0StWithinOneV0L0StNonDefault5PropertyValueInAggregateAfterActiveRecordPersist</h2>
+      <br></br>2014-12-23 12:17:57,190 [HttpClient.java:190] Sending request [POST]: Crud.svc/AggregateOneValueString.Aggregate0L0St, content size: 655 bytes
+      <br></br>2014-12-23 12:17:57,190 [HttpClient.java:370] POST http://localhost:2080/Crud.svc/AggregateOneValueString.Aggregate0L0St
+      <br></br>2014-12-23 12:17:57,190 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 12:17:57,190 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 12:17:57,190 [HttpClient.java:383] Adding payload: {"URI":"1403689550","ID":0,"v0L0St":{"p0L0St":[null,"","\"","Quote: \", Solidus /, Backslash: \\, Aphos: ', Brackets: [] () {}","\u0001\u0002\u0003\u0004\u0005\u0006\u0007\b\t\n\u000B\f\r\u000E\u000F\u0010\u0011\u0012\u0013\u0014\u0015\u0016\u0017\u0018\u0019\u001A\u001B\u001C\u001D\u001E\u001F !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~????????????????????????????????&#xa0;&#xa1;&#xa2;&#xa3;&#xa4;&#xa5;&#xa6;&#xa7;&#xa8;&#xa9;&#xaa;&#xab;&#xac;&#xad;&#xae;&#xaf;&#xb0;&#xb1;&#xb2;&#xb3;&#xb4;&#xb5;&#xb6;&#xb7;&#xb8;&#xb9;&#xba;&#xbb;&#xbc;&#xbd;&#xbe;&#xbf;&#xc0;&#xc1;&#xc2;&#xc3;&#xc4;&#xc5;&#xc6;&#xc7;&#xc8;&#xc9;&#xca;&#xcb;&#xcc;&#xcd;&#xce;&#xcf;&#xd0;&#xd1;&#xd2;&#xd3;&#xd4;&#xd5;&#xd6;&#xd7;&#xd8;&#xd9;&#xda;&#xdb;&#xdc;&#xdd;&#xde;&#xdf;&#xe0;&#xe1;&#xe2;&#xe3;&#xe4;&#xe5;&#xe6;&#xe7;&#xe8;&#xe9;&#xea;&#xeb;&#xec;&#xed;&#xee;&#xef;&#xf0;&#xf1;&#xf2;&#xf3;&#xf4;&#xf5;&#xf6;&#xf7;&#xf8;&#xf9;&#xfa;&#xfb;&#xfc;&#xfd;&#xfe;&#xff;?"]}}
+      <br></br>2014-12-23 12:17:57,206 [HttpClient.java:197] Received response [400, 99 bytes] in 21 ms
+      <br></br>2014-12-23 12:17:57,206 [HttpClient.java:200] Received response body: Can't deserialize AggregateOneValueString.Aggregate0L0St. Error: Invalid char found: f. Example: 
+      <br></br>
+      <br></br><a id="testP0L0StWithinOneV0L0StNonDefault4PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP0L0StWithinOneV0L0StNonDefault4PropertyValueInAggregateAfterActiveRecordPersist</h2>
+      <br></br>2014-12-23 12:17:57,212 [HttpClient.java:190] Sending request [POST]: Crud.svc/AggregateOneValueString.Aggregate0L0St, content size: 649 bytes
+      <br></br>2014-12-23 12:17:57,212 [HttpClient.java:370] POST http://localhost:2080/Crud.svc/AggregateOneValueString.Aggregate0L0St
+      <br></br>2014-12-23 12:17:57,212 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 12:17:57,212 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 12:17:57,212 [HttpClient.java:383] Adding payload: {"URI":"940412764","ID":0,"v0L0St":{"p0L0St":["","\"","Quote: \", Solidus /, Backslash: \\, Aphos: ', Brackets: [] () {}","\u0001\u0002\u0003\u0004\u0005\u0006\u0007\b\t\n\u000B\f\r\u000E\u000F\u0010\u0011\u0012\u0013\u0014\u0015\u0016\u0017\u0018\u0019\u001A\u001B\u001C\u001D\u001E\u001F !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~????????????????????????????????&#xa0;&#xa1;&#xa2;&#xa3;&#xa4;&#xa5;&#xa6;&#xa7;&#xa8;&#xa9;&#xaa;&#xab;&#xac;&#xad;&#xae;&#xaf;&#xb0;&#xb1;&#xb2;&#xb3;&#xb4;&#xb5;&#xb6;&#xb7;&#xb8;&#xb9;&#xba;&#xbb;&#xbc;&#xbd;&#xbe;&#xbf;&#xc0;&#xc1;&#xc2;&#xc3;&#xc4;&#xc5;&#xc6;&#xc7;&#xc8;&#xc9;&#xca;&#xcb;&#xcc;&#xcd;&#xce;&#xcf;&#xd0;&#xd1;&#xd2;&#xd3;&#xd4;&#xd5;&#xd6;&#xd7;&#xd8;&#xd9;&#xda;&#xdb;&#xdc;&#xdd;&#xde;&#xdf;&#xe0;&#xe1;&#xe2;&#xe3;&#xe4;&#xe5;&#xe6;&#xe7;&#xe8;&#xe9;&#xea;&#xeb;&#xec;&#xed;&#xee;&#xef;&#xf0;&#xf1;&#xf2;&#xf3;&#xf4;&#xf5;&#xf6;&#xf7;&#xf8;&#xf9;&#xfa;&#xfb;&#xfc;&#xfd;&#xfe;&#xff;?"]}}
+      <br></br>2014-12-23 12:17:57,290 [HttpClient.java:197] Received response [400, 99 bytes] in 80 ms
+      <br></br>2014-12-23 12:17:57,291 [HttpClient.java:200] Received response body: Can't deserialize AggregateOneValueString.Aggregate0L0St. Error: Invalid char found: f. Example: 
+      <br></br>
+      <br></br><a id="testP0L0StWithinOneV0L0StNonDefault3PropertyInAggregateJsonSerialization"/><h2>testP0L0StWithinOneV0L0StNonDefault3PropertyInAggregateJsonSerialization</h2>
+      <br></br><a id="testP0L0StWithinOneV0L0StNonDefault3PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP0L0StWithinOneV0L0StNonDefault3PropertyValueInAggregateAfterActiveRecordPersist</h2>
+      <br></br>2014-12-23 12:17:57,300 [HttpClient.java:190] Sending request [POST]: Crud.svc/AggregateOneValueString.Aggregate0L0St, content size: 574 bytes
+      <br></br>2014-12-23 12:17:57,301 [HttpClient.java:370] POST http://localhost:2080/Crud.svc/AggregateOneValueString.Aggregate0L0St
+      <br></br>2014-12-23 12:17:57,301 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 12:17:57,301 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 12:17:57,301 [HttpClient.java:383] Adding payload: {"URI":"1988025089","ID":0,"v0L0St":{"p0L0St":["\u0001\u0002\u0003\u0004\u0005\u0006\u0007\b\t\n\u000B\f\r\u000E\u000F\u0010\u0011\u0012\u0013\u0014\u0015\u0016\u0017\u0018\u0019\u001A\u001B\u001C\u001D\u001E\u001F !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~????????????????????????????????&#xa0;&#xa1;&#xa2;&#xa3;&#xa4;&#xa5;&#xa6;&#xa7;&#xa8;&#xa9;&#xaa;&#xab;&#xac;&#xad;&#xae;&#xaf;&#xb0;&#xb1;&#xb2;&#xb3;&#xb4;&#xb5;&#xb6;&#xb7;&#xb8;&#xb9;&#xba;&#xbb;&#xbc;&#xbd;&#xbe;&#xbf;&#xc0;&#xc1;&#xc2;&#xc3;&#xc4;&#xc5;&#xc6;&#xc7;&#xc8;&#xc9;&#xca;&#xcb;&#xcc;&#xcd;&#xce;&#xcf;&#xd0;&#xd1;&#xd2;&#xd3;&#xd4;&#xd5;&#xd6;&#xd7;&#xd8;&#xd9;&#xda;&#xdb;&#xdc;&#xdd;&#xde;&#xdf;&#xe0;&#xe1;&#xe2;&#xe3;&#xe4;&#xe5;&#xe6;&#xe7;&#xe8;&#xe9;&#xea;&#xeb;&#xec;&#xed;&#xee;&#xef;&#xf0;&#xf1;&#xf2;&#xf3;&#xf4;&#xf5;&#xf6;&#xf7;&#xf8;&#xf9;&#xfa;&#xfb;&#xfc;&#xfd;&#xfe;&#xff;?"]}}
+      <br></br>2014-12-23 12:17:57,303 [HttpClient.java:197] Received response [400, 99 bytes] in 4 ms
+      <br></br>2014-12-23 12:17:57,303 [HttpClient.java:200] Received response body: Can't deserialize AggregateOneValueString.Aggregate0L0St. Error: Invalid char found: f. Example: 
+      <br></br>
+      <br></br><a id="testP0L0StWithinOneV0L0StNonDefault2PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP0L0StWithinOneV0L0StNonDefault2PropertyValueInAggregateAfterActiveRecordPersist</h2>
+      <br></br>2014-12-23 12:17:57,306 [HttpClient.java:190] Sending request [POST]: Crud.svc/AggregateOneValueString.Aggregate0L0St, content size: 51 bytes
+      <br></br>2014-12-23 12:17:57,306 [HttpClient.java:370] POST http://localhost:2080/Crud.svc/AggregateOneValueString.Aggregate0L0St
+      <br></br>2014-12-23 12:17:57,306 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 12:17:57,307 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 12:17:57,307 [HttpClient.java:383] Adding payload: {"URI":"367433559","ID":0,"v0L0St":{"p0L0St":[""]}}
+      <br></br>2014-12-23 12:17:57,354 [HttpClient.java:197] Received response [201, 49 bytes] in 50 ms
+      <br></br>2014-12-23 12:17:57,354 [HttpClient.java:200] Received response body: {"URI":"1076","ID":1076,"v0L0St":{"p0L0St":[""]}}
+      <br></br>2014-12-23 12:17:57,355 [HttpClient.java:179] Sending request [GET]: Crud.svc/AggregateOneValueString.Aggregate0L0St?uri=1076
+      <br></br>2014-12-23 12:17:57,355 [HttpClient.java:370] GET http://localhost:2080/Crud.svc/AggregateOneValueString.Aggregate0L0St?uri=1076
+      <br></br>2014-12-23 12:17:57,355 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 12:17:57,355 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 12:17:57,377 [HttpClient.java:197] Received response [200, 49 bytes] in 22 ms
+      <br></br>2014-12-23 12:17:57,377 [HttpClient.java:200] Received response body: {"URI":"1076","ID":1076,"v0L0St":{"p0L0St":[""]}}
+      <br></br><a id="testP0L0StWithinOneV0L0StNonDefault1PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP0L0StWithinOneV0L0StNonDefault1PropertyValueInAggregateAfterActiveRecordPersist</h2>
+      <br></br>2014-12-23 12:17:57,381 [HttpClient.java:190] Sending request [POST]: Crud.svc/AggregateOneValueString.Aggregate0L0St, content size: 53 bytes
+      <br></br>2014-12-23 12:17:57,381 [HttpClient.java:370] POST http://localhost:2080/Crud.svc/AggregateOneValueString.Aggregate0L0St
+      <br></br>2014-12-23 12:17:57,381 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 12:17:57,381 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 12:17:57,381 [HttpClient.java:383] Adding payload: {"URI":"345640256","ID":0,"v0L0St":{"p0L0St":[null]}}
+      <br></br>2014-12-23 12:17:57,436 [HttpClient.java:197] Received response [201, 51 bytes] in 56 ms
+      <br></br>2014-12-23 12:17:57,437 [HttpClient.java:200] Received response body: {"URI":"1077","ID":1077,"v0L0St":{"p0L0St":[null]}}
+      <br></br>2014-12-23 12:17:57,438 [HttpClient.java:179] Sending request [GET]: Crud.svc/AggregateOneValueString.Aggregate0L0St?uri=1077
+      <br></br>2014-12-23 12:17:57,438 [HttpClient.java:370] GET http://localhost:2080/Crud.svc/AggregateOneValueString.Aggregate0L0St?uri=1077
+      <br></br>2014-12-23 12:17:57,439 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 12:17:57,439 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 12:17:57,445 [HttpClient.java:197] Received response [200, 51 bytes] in 7 ms
+      <br></br>2014-12-23 12:17:57,445 [HttpClient.java:200] Received response body: {"URI":"1077","ID":1077,"v0L0St":{"p0L0St":[null]}}
+      <br></br><a id="testP0L0StWithinOneV0L0StNonDefault4PropertyInAggregateJsonSerialization"/><h2>testP0L0StWithinOneV0L0StNonDefault4PropertyInAggregateJsonSerialization</h2>
+      <br></br><a id="testP0L0StWithinOneV0L0StNonDefault5PropertyInAggregateJsonSerialization"/><h2>testP0L0StWithinOneV0L0StNonDefault5PropertyInAggregateJsonSerialization</h2>
+      <br></br><a id="testP0L0StWithinOneV0L0StDefaultPropertyInAggregateJsonSerialization"/><h2>testP0L0StWithinOneV0L0StDefaultPropertyInAggregateJsonSerialization</h2>
+      <br></br><a id="testP0L0StWithinOneV0L0StDefaultPropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP0L0StWithinOneV0L0StDefaultPropertyValueInAggregateAfterActiveRecordPersist</h2>
+      <br></br>2014-12-23 12:17:57,452 [HttpClient.java:190] Sending request [POST]: Crud.svc/AggregateOneValueString.Aggregate0L0St, content size: 38 bytes
+      <br></br>2014-12-23 12:17:57,452 [HttpClient.java:370] POST http://localhost:2080/Crud.svc/AggregateOneValueString.Aggregate0L0St
+      <br></br>2014-12-23 12:17:57,452 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 12:17:57,452 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 12:17:57,452 [HttpClient.java:383] Adding payload: {"URI":"478820701","ID":0,"v0L0St":{}}
+      <br></br>2014-12-23 12:17:57,471 [HttpClient.java:197] Received response [201, 49 bytes] in 19 ms
+      <br></br>2014-12-23 12:17:57,471 [HttpClient.java:200] Received response body: {"URI":"1078","ID":1078,"v0L0St":{"p0L0St":null}}
+      <br></br>2014-12-23 12:17:57,472 [HttpClient.java:179] Sending request [GET]: Crud.svc/AggregateOneValueString.Aggregate0L0St?uri=1078
+      <br></br>2014-12-23 12:17:57,472 [HttpClient.java:370] GET http://localhost:2080/Crud.svc/AggregateOneValueString.Aggregate0L0St?uri=1078
+      <br></br>2014-12-23 12:17:57,472 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 12:17:57,473 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 12:17:57,514 [HttpClient.java:197] Received response [200, 49 bytes] in 42 ms
+      <br></br>2014-12-23 12:17:57,514 [HttpClient.java:200] Received response body: {"URI":"1078","ID":1078,"v0L0St":{"p0L0St":null}}
+      <br></br><a id="testP0L1StWithinOneV0L1StDefaultPropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP0L1StWithinOneV0L1StDefaultPropertyValueInAggregateAfterActiveRecordPersist</h2>
+      <br></br>2014-12-23 12:17:57,541 [HttpClient.java:190] Sending request [POST]: Crud.svc/AggregateOneValueString.Aggregate0L1St, content size: 39 bytes
+      <br></br>2014-12-23 12:17:57,542 [HttpClient.java:370] POST http://localhost:2080/Crud.svc/AggregateOneValueString.Aggregate0L1St
+      <br></br>2014-12-23 12:17:57,542 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 12:17:57,542 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 12:17:57,542 [HttpClient.java:383] Adding payload: {"URI":"1423828273","ID":0,"v0L1St":{}}
+      <br></br>2014-12-23 12:17:57,590 [HttpClient.java:197] Received response [201, 49 bytes] in 53 ms
+      <br></br>2014-12-23 12:17:57,591 [HttpClient.java:200] Received response body: {"URI":"1052","ID":1052,"v0L1St":{"p0L1St":null}}
+      <br></br>2014-12-23 12:17:57,602 [HttpClient.java:179] Sending request [GET]: Crud.svc/AggregateOneValueString.Aggregate0L1St?uri=1052
+      <br></br>2014-12-23 12:17:57,602 [HttpClient.java:370] GET http://localhost:2080/Crud.svc/AggregateOneValueString.Aggregate0L1St?uri=1052
+      <br></br>2014-12-23 12:17:57,602 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 12:17:57,602 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 12:17:57,615 [HttpClient.java:197] Received response [200, 49 bytes] in 13 ms
+      <br></br>2014-12-23 12:17:57,615 [HttpClient.java:200] Received response body: {"URI":"1052","ID":1052,"v0L1St":{"p0L1St":null}}
+      <br></br><a id="testP0L1StWithinOneV0L1StNonDefault1PropertyInAggregateJsonSerialization"/><h2>testP0L1StWithinOneV0L1StNonDefault1PropertyInAggregateJsonSerialization</h2>
+      <br></br><a id="testP0L1StWithinOneV0L1StNonDefault2PropertyInAggregateJsonSerialization"/><h2>testP0L1StWithinOneV0L1StNonDefault2PropertyInAggregateJsonSerialization</h2>
+      <br></br><a id="testP0L1StWithinOneV0L1StNonDefault3PropertyInAggregateJsonSerialization"/><h2>testP0L1StWithinOneV0L1StNonDefault3PropertyInAggregateJsonSerialization</h2>
+      <br></br><a id="testP0L1StWithinOneV0L1StNonDefault3PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP0L1StWithinOneV0L1StNonDefault3PropertyValueInAggregateAfterActiveRecordPersist</h2>
+      <br></br>2014-12-23 12:17:57,629 [HttpClient.java:190] Sending request [POST]: Crud.svc/AggregateOneValueString.Aggregate0L1St, content size: 650 bytes
+      <br></br>2014-12-23 12:17:57,629 [HttpClient.java:370] POST http://localhost:2080/Crud.svc/AggregateOneValueString.Aggregate0L1St
+      <br></br>2014-12-23 12:17:57,629 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 12:17:57,629 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 12:17:57,632 [HttpClient.java:383] Adding payload: {"URI":"2044438336","ID":0,"v0L1St":{"p0L1St":["","\"","Quote: \", Solidus /, Backslash: \\, Aphos: ', Brackets: [] () {}","\u0001\u0002\u0003\u0004\u0005\u0006\u0007\b\t\n\u000B\f\r\u000E\u000F\u0010\u0011\u0012\u0013\u0014\u0015\u0016\u0017\u0018\u0019\u001A\u001B\u001C\u001D\u001E\u001F !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~????????????????????????????????&#xa0;&#xa1;&#xa2;&#xa3;&#xa4;&#xa5;&#xa6;&#xa7;&#xa8;&#xa9;&#xaa;&#xab;&#xac;&#xad;&#xae;&#xaf;&#xb0;&#xb1;&#xb2;&#xb3;&#xb4;&#xb5;&#xb6;&#xb7;&#xb8;&#xb9;&#xba;&#xbb;&#xbc;&#xbd;&#xbe;&#xbf;&#xc0;&#xc1;&#xc2;&#xc3;&#xc4;&#xc5;&#xc6;&#xc7;&#xc8;&#xc9;&#xca;&#xcb;&#xcc;&#xcd;&#xce;&#xcf;&#xd0;&#xd1;&#xd2;&#xd3;&#xd4;&#xd5;&#xd6;&#xd7;&#xd8;&#xd9;&#xda;&#xdb;&#xdc;&#xdd;&#xde;&#xdf;&#xe0;&#xe1;&#xe2;&#xe3;&#xe4;&#xe5;&#xe6;&#xe7;&#xe8;&#xe9;&#xea;&#xeb;&#xec;&#xed;&#xee;&#xef;&#xf0;&#xf1;&#xf2;&#xf3;&#xf4;&#xf5;&#xf6;&#xf7;&#xf8;&#xf9;&#xfa;&#xfb;&#xfc;&#xfd;&#xfe;&#xff;?"]}}
+      <br></br>2014-12-23 12:17:57,639 [HttpClient.java:197] Received response [400, 99 bytes] in 11 ms
+      <br></br>2014-12-23 12:17:57,640 [HttpClient.java:200] Received response body: Can't deserialize AggregateOneValueString.Aggregate0L1St. Error: Invalid char found: f. Example: 
+      <br></br>
+      <br></br><a id="testP0L1StWithinOneV0L1StNonDefault2PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP0L1StWithinOneV0L1StNonDefault2PropertyValueInAggregateAfterActiveRecordPersist</h2>
+      <br></br>2014-12-23 12:17:57,644 [HttpClient.java:190] Sending request [POST]: Crud.svc/AggregateOneValueString.Aggregate0L1St, content size: 573 bytes
+      <br></br>2014-12-23 12:17:57,645 [HttpClient.java:370] POST http://localhost:2080/Crud.svc/AggregateOneValueString.Aggregate0L1St
+      <br></br>2014-12-23 12:17:57,645 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 12:17:57,645 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 12:17:57,645 [HttpClient.java:383] Adding payload: {"URI":"264950364","ID":0,"v0L1St":{"p0L1St":["\u0001\u0002\u0003\u0004\u0005\u0006\u0007\b\t\n\u000B\f\r\u000E\u000F\u0010\u0011\u0012\u0013\u0014\u0015\u0016\u0017\u0018\u0019\u001A\u001B\u001C\u001D\u001E\u001F !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~????????????????????????????????&#xa0;&#xa1;&#xa2;&#xa3;&#xa4;&#xa5;&#xa6;&#xa7;&#xa8;&#xa9;&#xaa;&#xab;&#xac;&#xad;&#xae;&#xaf;&#xb0;&#xb1;&#xb2;&#xb3;&#xb4;&#xb5;&#xb6;&#xb7;&#xb8;&#xb9;&#xba;&#xbb;&#xbc;&#xbd;&#xbe;&#xbf;&#xc0;&#xc1;&#xc2;&#xc3;&#xc4;&#xc5;&#xc6;&#xc7;&#xc8;&#xc9;&#xca;&#xcb;&#xcc;&#xcd;&#xce;&#xcf;&#xd0;&#xd1;&#xd2;&#xd3;&#xd4;&#xd5;&#xd6;&#xd7;&#xd8;&#xd9;&#xda;&#xdb;&#xdc;&#xdd;&#xde;&#xdf;&#xe0;&#xe1;&#xe2;&#xe3;&#xe4;&#xe5;&#xe6;&#xe7;&#xe8;&#xe9;&#xea;&#xeb;&#xec;&#xed;&#xee;&#xef;&#xf0;&#xf1;&#xf2;&#xf3;&#xf4;&#xf5;&#xf6;&#xf7;&#xf8;&#xf9;&#xfa;&#xfb;&#xfc;&#xfd;&#xfe;&#xff;?"]}}
+      <br></br>2014-12-23 12:17:57,647 [HttpClient.java:197] Received response [400, 99 bytes] in 4 ms
+      <br></br>2014-12-23 12:17:57,647 [HttpClient.java:200] Received response body: Can't deserialize AggregateOneValueString.Aggregate0L1St. Error: Invalid char found: f. Example: 
+      <br></br>
+      <br></br><a id="testP0L1StWithinOneV0L1StNonDefault1PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP0L1StWithinOneV0L1StNonDefault1PropertyValueInAggregateAfterActiveRecordPersist</h2>
+      <br></br>2014-12-23 12:17:57,653 [HttpClient.java:190] Sending request [POST]: Crud.svc/AggregateOneValueString.Aggregate0L1St, content size: 52 bytes
+      <br></br>2014-12-23 12:17:57,653 [HttpClient.java:370] POST http://localhost:2080/Crud.svc/AggregateOneValueString.Aggregate0L1St
+      <br></br>2014-12-23 12:17:57,653 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 12:17:57,653 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 12:17:57,654 [HttpClient.java:383] Adding payload: {"URI":"1806072501","ID":0,"v0L1St":{"p0L1St":[""]}}
+      <br></br>2014-12-23 12:17:57,661 [HttpClient.java:197] Received response [201, 49 bytes] in 9 ms
+      <br></br>2014-12-23 12:17:57,662 [HttpClient.java:200] Received response body: {"URI":"1053","ID":1053,"v0L1St":{"p0L1St":[""]}}
+      <br></br>2014-12-23 12:17:57,662 [HttpClient.java:179] Sending request [GET]: Crud.svc/AggregateOneValueString.Aggregate0L1St?uri=1053
+      <br></br>2014-12-23 12:17:57,662 [HttpClient.java:370] GET http://localhost:2080/Crud.svc/AggregateOneValueString.Aggregate0L1St?uri=1053
+      <br></br>2014-12-23 12:17:57,662 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 12:17:57,663 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 12:17:57,665 [HttpClient.java:197] Received response [200, 49 bytes] in 3 ms
+      <br></br>2014-12-23 12:17:57,665 [HttpClient.java:200] Received response body: {"URI":"1053","ID":1053,"v0L1St":{"p0L1St":[""]}}
+      <br></br><a id="testP0L1StWithinOneV0L1StDefaultPropertyInAggregateJsonSerialization"/><h2>testP0L1StWithinOneV0L1StDefaultPropertyInAggregateJsonSerialization</h2>
+      <br></br><a id="testP0S0StWithinOneV0S0StNonDefault4PropertyInAggregateJsonSerialization"/><h2>testP0S0StWithinOneV0S0StNonDefault4PropertyInAggregateJsonSerialization</h2>
+      <br></br><a id="testP0S0StWithinOneV0S0StNonDefault5PropertyInAggregateJsonSerialization"/><h2>testP0S0StWithinOneV0S0StNonDefault5PropertyInAggregateJsonSerialization</h2>
+      <br></br><a id="testP0S0StWithinOneV0S0StDefaultPropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP0S0StWithinOneV0S0StDefaultPropertyValueInAggregateAfterActiveRecordPersist</h2>
+      <br></br>2014-12-23 12:17:57,704 [HttpClient.java:190] Sending request [POST]: Crud.svc/AggregateOneValueString.Aggregate0S0St, content size: 38 bytes
+      <br></br>2014-12-23 12:17:57,706 [HttpClient.java:370] POST http://localhost:2080/Crud.svc/AggregateOneValueString.Aggregate0S0St
+      <br></br>2014-12-23 12:17:57,739 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 12:17:57,739 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 12:17:57,739 [HttpClient.java:383] Adding payload: {"URI":"140234280","ID":0,"v0S0St":{}}
+      <br></br>2014-12-23 12:17:57,803 [HttpClient.java:197] Received response [201, 49 bytes] in 101 ms
+      <br></br>2014-12-23 12:17:57,803 [HttpClient.java:200] Received response body: {"URI":"1079","ID":1079,"v0S0St":{"p0S0St":null}}
+      <br></br>2014-12-23 12:17:57,805 [HttpClient.java:179] Sending request [GET]: Crud.svc/AggregateOneValueString.Aggregate0S0St?uri=1079
+      <br></br>2014-12-23 12:17:57,805 [HttpClient.java:370] GET http://localhost:2080/Crud.svc/AggregateOneValueString.Aggregate0S0St?uri=1079
+      <br></br>2014-12-23 12:17:57,805 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 12:17:57,805 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 12:17:57,828 [HttpClient.java:197] Received response [200, 49 bytes] in 23 ms
+      <br></br>2014-12-23 12:17:57,829 [HttpClient.java:200] Received response body: {"URI":"1079","ID":1079,"v0S0St":{"p0S0St":null}}
+      <br></br><a id="testP0S0StWithinOneV0S0StNonDefault5PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP0S0StWithinOneV0S0StNonDefault5PropertyValueInAggregateAfterActiveRecordPersist</h2>
+      <br></br>2014-12-23 12:17:57,832 [HttpClient.java:190] Sending request [POST]: Crud.svc/AggregateOneValueString.Aggregate0S0St, content size: 655 bytes
+      <br></br>2014-12-23 12:17:57,832 [HttpClient.java:370] POST http://localhost:2080/Crud.svc/AggregateOneValueString.Aggregate0S0St
+      <br></br>2014-12-23 12:17:57,832 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 12:17:57,832 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 12:17:57,832 [HttpClient.java:383] Adding payload: {"URI":"1536083561","ID":0,"v0S0St":{"p0S0St":["\"","",null,"Quote: \", Solidus /, Backslash: \\, Aphos: ', Brackets: [] () {}","\u0001\u0002\u0003\u0004\u0005\u0006\u0007\b\t\n\u000B\f\r\u000E\u000F\u0010\u0011\u0012\u0013\u0014\u0015\u0016\u0017\u0018\u0019\u001A\u001B\u001C\u001D\u001E\u001F !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~????????????????????????????????&#xa0;&#xa1;&#xa2;&#xa3;&#xa4;&#xa5;&#xa6;&#xa7;&#xa8;&#xa9;&#xaa;&#xab;&#xac;&#xad;&#xae;&#xaf;&#xb0;&#xb1;&#xb2;&#xb3;&#xb4;&#xb5;&#xb6;&#xb7;&#xb8;&#xb9;&#xba;&#xbb;&#xbc;&#xbd;&#xbe;&#xbf;&#xc0;&#xc1;&#xc2;&#xc3;&#xc4;&#xc5;&#xc6;&#xc7;&#xc8;&#xc9;&#xca;&#xcb;&#xcc;&#xcd;&#xce;&#xcf;&#xd0;&#xd1;&#xd2;&#xd3;&#xd4;&#xd5;&#xd6;&#xd7;&#xd8;&#xd9;&#xda;&#xdb;&#xdc;&#xdd;&#xde;&#xdf;&#xe0;&#xe1;&#xe2;&#xe3;&#xe4;&#xe5;&#xe6;&#xe7;&#xe8;&#xe9;&#xea;&#xeb;&#xec;&#xed;&#xee;&#xef;&#xf0;&#xf1;&#xf2;&#xf3;&#xf4;&#xf5;&#xf6;&#xf7;&#xf8;&#xf9;&#xfa;&#xfb;&#xfc;&#xfd;&#xfe;&#xff;?"]}}
+      <br></br>2014-12-23 12:17:57,834 [HttpClient.java:197] Received response [400, 99 bytes] in 3 ms
+      <br></br>2014-12-23 12:17:57,834 [HttpClient.java:200] Received response body: Can't deserialize AggregateOneValueString.Aggregate0S0St. Error: Invalid char found: f. Example: 
+      <br></br>
+      <br></br><a id="testP0S0StWithinOneV0S0StNonDefault4PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP0S0StWithinOneV0S0StNonDefault4PropertyValueInAggregateAfterActiveRecordPersist</h2>
+      <br></br>2014-12-23 12:17:57,838 [HttpClient.java:190] Sending request [POST]: Crud.svc/AggregateOneValueString.Aggregate0S0St, content size: 650 bytes
+      <br></br>2014-12-23 12:17:57,838 [HttpClient.java:370] POST http://localhost:2080/Crud.svc/AggregateOneValueString.Aggregate0S0St
+      <br></br>2014-12-23 12:17:57,838 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 12:17:57,838 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 12:17:57,839 [HttpClient.java:383] Adding payload: {"URI":"1555517201","ID":0,"v0S0St":{"p0S0St":["\"","","Quote: \", Solidus /, Backslash: \\, Aphos: ', Brackets: [] () {}","\u0001\u0002\u0003\u0004\u0005\u0006\u0007\b\t\n\u000B\f\r\u000E\u000F\u0010\u0011\u0012\u0013\u0014\u0015\u0016\u0017\u0018\u0019\u001A\u001B\u001C\u001D\u001E\u001F !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~????????????????????????????????&#xa0;&#xa1;&#xa2;&#xa3;&#xa4;&#xa5;&#xa6;&#xa7;&#xa8;&#xa9;&#xaa;&#xab;&#xac;&#xad;&#xae;&#xaf;&#xb0;&#xb1;&#xb2;&#xb3;&#xb4;&#xb5;&#xb6;&#xb7;&#xb8;&#xb9;&#xba;&#xbb;&#xbc;&#xbd;&#xbe;&#xbf;&#xc0;&#xc1;&#xc2;&#xc3;&#xc4;&#xc5;&#xc6;&#xc7;&#xc8;&#xc9;&#xca;&#xcb;&#xcc;&#xcd;&#xce;&#xcf;&#xd0;&#xd1;&#xd2;&#xd3;&#xd4;&#xd5;&#xd6;&#xd7;&#xd8;&#xd9;&#xda;&#xdb;&#xdc;&#xdd;&#xde;&#xdf;&#xe0;&#xe1;&#xe2;&#xe3;&#xe4;&#xe5;&#xe6;&#xe7;&#xe8;&#xe9;&#xea;&#xeb;&#xec;&#xed;&#xee;&#xef;&#xf0;&#xf1;&#xf2;&#xf3;&#xf4;&#xf5;&#xf6;&#xf7;&#xf8;&#xf9;&#xfa;&#xfb;&#xfc;&#xfd;&#xfe;&#xff;?"]}}
+      <br></br>2014-12-23 12:17:57,842 [HttpClient.java:197] Received response [400, 99 bytes] in 4 ms
+      <br></br>2014-12-23 12:17:57,842 [HttpClient.java:200] Received response body: Can't deserialize AggregateOneValueString.Aggregate0S0St. Error: Invalid char found: f. Example: 
+      <br></br>
+      <br></br><a id="testP0S0StWithinOneV0S0StNonDefault3PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP0S0StWithinOneV0S0StNonDefault3PropertyValueInAggregateAfterActiveRecordPersist</h2>
+      <br></br>2014-12-23 12:17:57,844 [HttpClient.java:190] Sending request [POST]: Crud.svc/AggregateOneValueString.Aggregate0S0St, content size: 573 bytes
+      <br></br>2014-12-23 12:17:57,844 [HttpClient.java:370] POST http://localhost:2080/Crud.svc/AggregateOneValueString.Aggregate0S0St
+      <br></br>2014-12-23 12:17:57,846 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 12:17:57,846 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 12:17:57,846 [HttpClient.java:383] Adding payload: {"URI":"516824110","ID":0,"v0S0St":{"p0S0St":["\u0001\u0002\u0003\u0004\u0005\u0006\u0007\b\t\n\u000B\f\r\u000E\u000F\u0010\u0011\u0012\u0013\u0014\u0015\u0016\u0017\u0018\u0019\u001A\u001B\u001C\u001D\u001E\u001F !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~????????????????????????????????&#xa0;&#xa1;&#xa2;&#xa3;&#xa4;&#xa5;&#xa6;&#xa7;&#xa8;&#xa9;&#xaa;&#xab;&#xac;&#xad;&#xae;&#xaf;&#xb0;&#xb1;&#xb2;&#xb3;&#xb4;&#xb5;&#xb6;&#xb7;&#xb8;&#xb9;&#xba;&#xbb;&#xbc;&#xbd;&#xbe;&#xbf;&#xc0;&#xc1;&#xc2;&#xc3;&#xc4;&#xc5;&#xc6;&#xc7;&#xc8;&#xc9;&#xca;&#xcb;&#xcc;&#xcd;&#xce;&#xcf;&#xd0;&#xd1;&#xd2;&#xd3;&#xd4;&#xd5;&#xd6;&#xd7;&#xd8;&#xd9;&#xda;&#xdb;&#xdc;&#xdd;&#xde;&#xdf;&#xe0;&#xe1;&#xe2;&#xe3;&#xe4;&#xe5;&#xe6;&#xe7;&#xe8;&#xe9;&#xea;&#xeb;&#xec;&#xed;&#xee;&#xef;&#xf0;&#xf1;&#xf2;&#xf3;&#xf4;&#xf5;&#xf6;&#xf7;&#xf8;&#xf9;&#xfa;&#xfb;&#xfc;&#xfd;&#xfe;&#xff;?"]}}
+      <br></br>2014-12-23 12:17:57,850 [HttpClient.java:197] Received response [400, 99 bytes] in 7 ms
+      <br></br>2014-12-23 12:17:57,850 [HttpClient.java:200] Received response body: Can't deserialize AggregateOneValueString.Aggregate0S0St. Error: Invalid char found: f. Example: 
+      <br></br>
+      <br></br><a id="testP0S0StWithinOneV0S0StNonDefault2PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP0S0StWithinOneV0S0StNonDefault2PropertyValueInAggregateAfterActiveRecordPersist</h2>
+      <br></br>2014-12-23 12:17:57,854 [HttpClient.java:190] Sending request [POST]: Crud.svc/AggregateOneValueString.Aggregate0S0St, content size: 51 bytes
+      <br></br>2014-12-23 12:17:57,854 [HttpClient.java:370] POST http://localhost:2080/Crud.svc/AggregateOneValueString.Aggregate0S0St
+      <br></br>2014-12-23 12:17:57,854 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 12:17:57,854 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 12:17:57,854 [HttpClient.java:383] Adding payload: {"URI":"227356089","ID":0,"v0S0St":{"p0S0St":[""]}}
+      <br></br>2014-12-23 12:17:57,870 [HttpClient.java:197] Received response [201, 49 bytes] in 17 ms
+      <br></br>2014-12-23 12:17:57,871 [HttpClient.java:200] Received response body: {"URI":"1080","ID":1080,"v0S0St":{"p0S0St":[""]}}
+      <br></br>2014-12-23 12:17:57,872 [HttpClient.java:179] Sending request [GET]: Crud.svc/AggregateOneValueString.Aggregate0S0St?uri=1080
+      <br></br>2014-12-23 12:17:57,872 [HttpClient.java:370] GET http://localhost:2080/Crud.svc/AggregateOneValueString.Aggregate0S0St?uri=1080
+      <br></br>2014-12-23 12:17:57,872 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 12:17:57,872 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 12:17:57,881 [HttpClient.java:197] Received response [200, 49 bytes] in 10 ms
+      <br></br>2014-12-23 12:17:57,881 [HttpClient.java:200] Received response body: {"URI":"1080","ID":1080,"v0S0St":{"p0S0St":[""]}}
+      <br></br><a id="testP0S0StWithinOneV0S0StNonDefault1PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP0S0StWithinOneV0S0StNonDefault1PropertyValueInAggregateAfterActiveRecordPersist</h2>
+      <br></br>2014-12-23 12:17:57,885 [HttpClient.java:190] Sending request [POST]: Crud.svc/AggregateOneValueString.Aggregate0S0St, content size: 53 bytes
+      <br></br>2014-12-23 12:17:57,886 [HttpClient.java:370] POST http://localhost:2080/Crud.svc/AggregateOneValueString.Aggregate0S0St
+      <br></br>2014-12-23 12:17:57,886 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 12:17:57,887 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 12:17:57,887 [HttpClient.java:383] Adding payload: {"URI":"956414645","ID":0,"v0S0St":{"p0S0St":[null]}}
+      <br></br>2014-12-23 12:17:57,918 [HttpClient.java:197] Received response [201, 51 bytes] in 34 ms
+      <br></br>2014-12-23 12:17:57,919 [HttpClient.java:200] Received response body: {"URI":"1081","ID":1081,"v0S0St":{"p0S0St":[null]}}
+      <br></br>2014-12-23 12:17:57,919 [HttpClient.java:179] Sending request [GET]: Crud.svc/AggregateOneValueString.Aggregate0S0St?uri=1081
+      <br></br>2014-12-23 12:17:57,919 [HttpClient.java:370] GET http://localhost:2080/Crud.svc/AggregateOneValueString.Aggregate0S0St?uri=1081
+      <br></br>2014-12-23 12:17:57,919 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 12:17:57,920 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 12:17:57,923 [HttpClient.java:197] Received response [200, 51 bytes] in 4 ms
+      <br></br>2014-12-23 12:17:57,923 [HttpClient.java:200] Received response body: {"URI":"1081","ID":1081,"v0S0St":{"p0S0St":[null]}}
+      <br></br><a id="testP0S0StWithinOneV0S0StDefaultPropertyInAggregateJsonSerialization"/><h2>testP0S0StWithinOneV0S0StDefaultPropertyInAggregateJsonSerialization</h2>
+      <br></br><a id="testP0S0StWithinOneV0S0StNonDefault1PropertyInAggregateJsonSerialization"/><h2>testP0S0StWithinOneV0S0StNonDefault1PropertyInAggregateJsonSerialization</h2>
+      <br></br><a id="testP0S0StWithinOneV0S0StNonDefault2PropertyInAggregateJsonSerialization"/><h2>testP0S0StWithinOneV0S0StNonDefault2PropertyInAggregateJsonSerialization</h2>
+      <br></br><a id="testP0S0StWithinOneV0S0StNonDefault3PropertyInAggregateJsonSerialization"/><h2>testP0S0StWithinOneV0S0StNonDefault3PropertyInAggregateJsonSerialization</h2>
+      <br></br><a id="testP0S1StWithinOneV0S1StNonDefault1PropertyInAggregateJsonSerialization"/><h2>testP0S1StWithinOneV0S1StNonDefault1PropertyInAggregateJsonSerialization</h2>
+      <br></br><a id="testP0S1StWithinOneV0S1StDefaultPropertyInAggregateJsonSerialization"/><h2>testP0S1StWithinOneV0S1StDefaultPropertyInAggregateJsonSerialization</h2>
+      <br></br><a id="testP0S1StWithinOneV0S1StNonDefault2PropertyInAggregateJsonSerialization"/><h2>testP0S1StWithinOneV0S1StNonDefault2PropertyInAggregateJsonSerialization</h2>
+      <br></br><a id="testP0S1StWithinOneV0S1StNonDefault3PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP0S1StWithinOneV0S1StNonDefault3PropertyValueInAggregateAfterActiveRecordPersist</h2>
+      <br></br>2014-12-23 12:17:57,984 [HttpClient.java:190] Sending request [POST]: Crud.svc/AggregateOneValueString.Aggregate0S1St, content size: 649 bytes
+      <br></br>2014-12-23 12:17:57,984 [HttpClient.java:370] POST http://localhost:2080/Crud.svc/AggregateOneValueString.Aggregate0S1St
+      <br></br>2014-12-23 12:17:57,984 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 12:17:57,984 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 12:17:57,984 [HttpClient.java:383] Adding payload: {"URI":"278501873","ID":0,"v0S1St":{"p0S1St":["\"","","Quote: \", Solidus /, Backslash: \\, Aphos: ', Brackets: [] () {}","\u0001\u0002\u0003\u0004\u0005\u0006\u0007\b\t\n\u000B\f\r\u000E\u000F\u0010\u0011\u0012\u0013\u0014\u0015\u0016\u0017\u0018\u0019\u001A\u001B\u001C\u001D\u001E\u001F !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~????????????????????????????????&#xa0;&#xa1;&#xa2;&#xa3;&#xa4;&#xa5;&#xa6;&#xa7;&#xa8;&#xa9;&#xaa;&#xab;&#xac;&#xad;&#xae;&#xaf;&#xb0;&#xb1;&#xb2;&#xb3;&#xb4;&#xb5;&#xb6;&#xb7;&#xb8;&#xb9;&#xba;&#xbb;&#xbc;&#xbd;&#xbe;&#xbf;&#xc0;&#xc1;&#xc2;&#xc3;&#xc4;&#xc5;&#xc6;&#xc7;&#xc8;&#xc9;&#xca;&#xcb;&#xcc;&#xcd;&#xce;&#xcf;&#xd0;&#xd1;&#xd2;&#xd3;&#xd4;&#xd5;&#xd6;&#xd7;&#xd8;&#xd9;&#xda;&#xdb;&#xdc;&#xdd;&#xde;&#xdf;&#xe0;&#xe1;&#xe2;&#xe3;&#xe4;&#xe5;&#xe6;&#xe7;&#xe8;&#xe9;&#xea;&#xeb;&#xec;&#xed;&#xee;&#xef;&#xf0;&#xf1;&#xf2;&#xf3;&#xf4;&#xf5;&#xf6;&#xf7;&#xf8;&#xf9;&#xfa;&#xfb;&#xfc;&#xfd;&#xfe;&#xff;?"]}}
+      <br></br>2014-12-23 12:17:58,003 [HttpClient.java:197] Received response [400, 99 bytes] in 25 ms
+      <br></br>2014-12-23 12:17:58,003 [HttpClient.java:200] Received response body: Can't deserialize AggregateOneValueString.Aggregate0S1St. Error: Invalid char found: f. Example: 
+      <br></br>
+      <br></br><a id="testP0S1StWithinOneV0S1StNonDefault2PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP0S1StWithinOneV0S1StNonDefault2PropertyValueInAggregateAfterActiveRecordPersist</h2>
+      <br></br>2014-12-23 12:17:58,007 [HttpClient.java:190] Sending request [POST]: Crud.svc/AggregateOneValueString.Aggregate0S1St, content size: 573 bytes
+      <br></br>2014-12-23 12:17:58,007 [HttpClient.java:370] POST http://localhost:2080/Crud.svc/AggregateOneValueString.Aggregate0S1St
+      <br></br>2014-12-23 12:17:58,007 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 12:17:58,007 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 12:17:58,007 [HttpClient.java:383] Adding payload: {"URI":"428024823","ID":0,"v0S1St":{"p0S1St":["\u0001\u0002\u0003\u0004\u0005\u0006\u0007\b\t\n\u000B\f\r\u000E\u000F\u0010\u0011\u0012\u0013\u0014\u0015\u0016\u0017\u0018\u0019\u001A\u001B\u001C\u001D\u001E\u001F !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~????????????????????????????????&#xa0;&#xa1;&#xa2;&#xa3;&#xa4;&#xa5;&#xa6;&#xa7;&#xa8;&#xa9;&#xaa;&#xab;&#xac;&#xad;&#xae;&#xaf;&#xb0;&#xb1;&#xb2;&#xb3;&#xb4;&#xb5;&#xb6;&#xb7;&#xb8;&#xb9;&#xba;&#xbb;&#xbc;&#xbd;&#xbe;&#xbf;&#xc0;&#xc1;&#xc2;&#xc3;&#xc4;&#xc5;&#xc6;&#xc7;&#xc8;&#xc9;&#xca;&#xcb;&#xcc;&#xcd;&#xce;&#xcf;&#xd0;&#xd1;&#xd2;&#xd3;&#xd4;&#xd5;&#xd6;&#xd7;&#xd8;&#xd9;&#xda;&#xdb;&#xdc;&#xdd;&#xde;&#xdf;&#xe0;&#xe1;&#xe2;&#xe3;&#xe4;&#xe5;&#xe6;&#xe7;&#xe8;&#xe9;&#xea;&#xeb;&#xec;&#xed;&#xee;&#xef;&#xf0;&#xf1;&#xf2;&#xf3;&#xf4;&#xf5;&#xf6;&#xf7;&#xf8;&#xf9;&#xfa;&#xfb;&#xfc;&#xfd;&#xfe;&#xff;?"]}}
+      <br></br>2014-12-23 12:17:58,010 [HttpClient.java:197] Received response [400, 99 bytes] in 4 ms
+      <br></br>2014-12-23 12:17:58,010 [HttpClient.java:200] Received response body: Can't deserialize AggregateOneValueString.Aggregate0S1St. Error: Invalid char found: f. Example: 
+      <br></br>
+      <br></br><a id="testP0S1StWithinOneV0S1StNonDefault1PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP0S1StWithinOneV0S1StNonDefault1PropertyValueInAggregateAfterActiveRecordPersist</h2>
+      <br></br>2014-12-23 12:17:58,013 [HttpClient.java:190] Sending request [POST]: Crud.svc/AggregateOneValueString.Aggregate0S1St, content size: 51 bytes
+      <br></br>2014-12-23 12:17:58,013 [HttpClient.java:370] POST http://localhost:2080/Crud.svc/AggregateOneValueString.Aggregate0S1St
+      <br></br>2014-12-23 12:17:58,013 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 12:17:58,013 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 12:17:58,013 [HttpClient.java:383] Adding payload: {"URI":"598089944","ID":0,"v0S1St":{"p0S1St":[""]}}
+      <br></br>2014-12-23 12:17:58,108 [HttpClient.java:197] Received response [201, 49 bytes] in 96 ms
+      <br></br>2014-12-23 12:17:58,108 [HttpClient.java:200] Received response body: {"URI":"1053","ID":1053,"v0S1St":{"p0S1St":[""]}}
+      <br></br>2014-12-23 12:17:58,115 [HttpClient.java:179] Sending request [GET]: Crud.svc/AggregateOneValueString.Aggregate0S1St?uri=1053
+      <br></br>2014-12-23 12:17:58,115 [HttpClient.java:370] GET http://localhost:2080/Crud.svc/AggregateOneValueString.Aggregate0S1St?uri=1053
+      <br></br>2014-12-23 12:17:58,115 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 12:17:58,115 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 12:17:58,146 [HttpClient.java:197] Received response [200, 49 bytes] in 31 ms
+      <br></br>2014-12-23 12:17:58,146 [HttpClient.java:200] Received response body: {"URI":"1053","ID":1053,"v0S1St":{"p0S1St":[""]}}
+      <br></br><a id="testP0S1StWithinOneV0S1StNonDefault3PropertyInAggregateJsonSerialization"/><h2>testP0S1StWithinOneV0S1StNonDefault3PropertyInAggregateJsonSerialization</h2>
+      <br></br><a id="testP0S1StWithinOneV0S1StDefaultPropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP0S1StWithinOneV0S1StDefaultPropertyValueInAggregateAfterActiveRecordPersist</h2>
+      <br></br>2014-12-23 12:17:58,156 [HttpClient.java:190] Sending request [POST]: Crud.svc/AggregateOneValueString.Aggregate0S1St, content size: 39 bytes
+      <br></br>2014-12-23 12:17:58,156 [HttpClient.java:370] POST http://localhost:2080/Crud.svc/AggregateOneValueString.Aggregate0S1St
+      <br></br>2014-12-23 12:17:58,156 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 12:17:58,157 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 12:17:58,157 [HttpClient.java:383] Adding payload: {"URI":"1063753312","ID":0,"v0S1St":{}}
+      <br></br>2014-12-23 12:17:58,170 [HttpClient.java:197] Received response [201, 49 bytes] in 14 ms
+      <br></br>2014-12-23 12:17:58,170 [HttpClient.java:200] Received response body: {"URI":"1054","ID":1054,"v0S1St":{"p0S1St":null}}
+      <br></br>2014-12-23 12:17:58,172 [HttpClient.java:179] Sending request [GET]: Crud.svc/AggregateOneValueString.Aggregate0S1St?uri=1054
+      <br></br>2014-12-23 12:17:58,172 [HttpClient.java:370] GET http://localhost:2080/Crud.svc/AggregateOneValueString.Aggregate0S1St?uri=1054
+      <br></br>2014-12-23 12:17:58,172 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 12:17:58,172 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 12:17:58,180 [HttpClient.java:197] Received response [200, 49 bytes] in 8 ms
+      <br></br>2014-12-23 12:17:58,180 [HttpClient.java:200] Received response body: {"URI":"1054","ID":1054,"v0S1St":{"p0S1St":null}}
+      <br></br><a id="testP0StWithinOneV0StNonDefault1PropertyInAggregateJsonSerialization"/><h2>testP0StWithinOneV0StNonDefault1PropertyInAggregateJsonSerialization</h2>
+      <br></br><a id="testP0StWithinOneV0StNonDefault2PropertyInAggregateJsonSerialization"/><h2>testP0StWithinOneV0StNonDefault2PropertyInAggregateJsonSerialization</h2>
+      <br></br><a id="testP0StWithinOneV0StNonDefault3PropertyInAggregateJsonSerialization"/><h2>testP0StWithinOneV0StNonDefault3PropertyInAggregateJsonSerialization</h2>
+      <br></br><a id="testP0StWithinOneV0StDefaultPropertyInAggregateJsonSerialization"/><h2>testP0StWithinOneV0StDefaultPropertyInAggregateJsonSerialization</h2>
+      <br></br><a id="testP0StWithinOneV0StNonDefault4PropertyInAggregateJsonSerialization"/><h2>testP0StWithinOneV0StNonDefault4PropertyInAggregateJsonSerialization</h2>
+      <br></br><a id="testP0StWithinOneV0StNonDefault4PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP0StWithinOneV0StNonDefault4PropertyValueInAggregateAfterActiveRecordPersist</h2>
+      <br></br>2014-12-23 12:17:58,215 [HttpClient.java:190] Sending request [POST]: Crud.svc/AggregateOneValueString.Aggregate0St, content size: 567 bytes
+      <br></br>2014-12-23 12:17:58,215 [HttpClient.java:370] POST http://localhost:2080/Crud.svc/AggregateOneValueString.Aggregate0St
+      <br></br>2014-12-23 12:17:58,216 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 12:17:58,216 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 12:17:58,216 [HttpClient.java:383] Adding payload: {"URI":"774836418","ID":0,"v0St":{"p0St":"\u0001\u0002\u0003\u0004\u0005\u0006\u0007\b\t\n\u000B\f\r\u000E\u000F\u0010\u0011\u0012\u0013\u0014\u0015\u0016\u0017\u0018\u0019\u001A\u001B\u001C\u001D\u001E\u001F !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~????????????????????????????????&#xa0;&#xa1;&#xa2;&#xa3;&#xa4;&#xa5;&#xa6;&#xa7;&#xa8;&#xa9;&#xaa;&#xab;&#xac;&#xad;&#xae;&#xaf;&#xb0;&#xb1;&#xb2;&#xb3;&#xb4;&#xb5;&#xb6;&#xb7;&#xb8;&#xb9;&#xba;&#xbb;&#xbc;&#xbd;&#xbe;&#xbf;&#xc0;&#xc1;&#xc2;&#xc3;&#xc4;&#xc5;&#xc6;&#xc7;&#xc8;&#xc9;&#xca;&#xcb;&#xcc;&#xcd;&#xce;&#xcf;&#xd0;&#xd1;&#xd2;&#xd3;&#xd4;&#xd5;&#xd6;&#xd7;&#xd8;&#xd9;&#xda;&#xdb;&#xdc;&#xdd;&#xde;&#xdf;&#xe0;&#xe1;&#xe2;&#xe3;&#xe4;&#xe5;&#xe6;&#xe7;&#xe8;&#xe9;&#xea;&#xeb;&#xec;&#xed;&#xee;&#xef;&#xf0;&#xf1;&#xf2;&#xf3;&#xf4;&#xf5;&#xf6;&#xf7;&#xf8;&#xf9;&#xfa;&#xfb;&#xfc;&#xfd;&#xfe;&#xff;?"}}
+      <br></br>2014-12-23 12:17:58,232 [HttpClient.java:197] Received response [400, 97 bytes] in 18 ms
+      <br></br>2014-12-23 12:17:58,233 [HttpClient.java:200] Received response body: Can't deserialize AggregateOneValueString.Aggregate0St. Error: Invalid char found: f. Example: 
+      <br></br>
+      <br></br><a id="testP0StWithinOneV0StNonDefault3PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP0StWithinOneV0StNonDefault3PropertyValueInAggregateAfterActiveRecordPersist</h2>
+      <br></br>2014-12-23 12:17:58,240 [HttpClient.java:190] Sending request [POST]: Crud.svc/AggregateOneValueString.Aggregate0St, content size: 111 bytes
+      <br></br>2014-12-23 12:17:58,241 [HttpClient.java:370] POST http://localhost:2080/Crud.svc/AggregateOneValueString.Aggregate0St
+      <br></br>2014-12-23 12:17:58,241 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 12:17:58,241 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 12:17:58,241 [HttpClient.java:383] Adding payload: {"URI":"1962407385","ID":0,"v0St":{"p0St":"Quote: \", Solidus /, Backslash: \\, Aphos: ', Brackets: [] () {}"}}
+      <br></br>2014-12-23 12:17:58,289 [HttpClient.java:197] Received response [201, 108 bytes] in 49 ms
+      <br></br>2014-12-23 12:17:58,289 [HttpClient.java:200] Received response body: {"URI":"1102","ID":1102,"v0St":{"p0St":"Quote: \", Solidus /, Backslash: \\, Aphos: ', Brackets: [] () {}"}}
+      <br></br>2014-12-23 12:17:58,290 [HttpClient.java:179] Sending request [GET]: Crud.svc/AggregateOneValueString.Aggregate0St?uri=1102
+      <br></br>2014-12-23 12:17:58,290 [HttpClient.java:370] GET http://localhost:2080/Crud.svc/AggregateOneValueString.Aggregate0St?uri=1102
+      <br></br>2014-12-23 12:17:58,306 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 12:17:58,306 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 12:17:58,318 [HttpClient.java:197] Received response [200, 108 bytes] in 29 ms
+      <br></br>2014-12-23 12:17:58,318 [HttpClient.java:200] Received response body: {"URI":"1102","ID":1102,"v0St":{"p0St":"Quote: \", Solidus /, Backslash: \\, Aphos: ', Brackets: [] () {}"}}
+      <br></br><a id="testP0StWithinOneV0StNonDefault2PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP0StWithinOneV0StNonDefault2PropertyValueInAggregateAfterActiveRecordPersist</h2>
+      <br></br>2014-12-23 12:17:58,320 [HttpClient.java:190] Sending request [POST]: Crud.svc/AggregateOneValueString.Aggregate0St, content size: 47 bytes
+      <br></br>2014-12-23 12:17:58,320 [HttpClient.java:370] POST http://localhost:2080/Crud.svc/AggregateOneValueString.Aggregate0St
+      <br></br>2014-12-23 12:17:58,320 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 12:17:58,320 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 12:17:58,320 [HttpClient.java:383] Adding payload: {"URI":"903741897","ID":0,"v0St":{"p0St":"\""}}
+      <br></br>2014-12-23 12:17:58,328 [HttpClient.java:197] Received response [201, 45 bytes] in 9 ms
+      <br></br>2014-12-23 12:17:58,329 [HttpClient.java:200] Received response body: {"URI":"1103","ID":1103,"v0St":{"p0St":"\""}}
+      <br></br>2014-12-23 12:17:58,329 [HttpClient.java:179] Sending request [GET]: Crud.svc/AggregateOneValueString.Aggregate0St?uri=1103
+      <br></br>2014-12-23 12:17:58,329 [HttpClient.java:370] GET http://localhost:2080/Crud.svc/AggregateOneValueString.Aggregate0St?uri=1103
+      <br></br>2014-12-23 12:17:58,329 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 12:17:58,329 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 12:17:58,343 [HttpClient.java:197] Received response [200, 45 bytes] in 14 ms
+      <br></br>2014-12-23 12:17:58,344 [HttpClient.java:200] Received response body: {"URI":"1103","ID":1103,"v0St":{"p0St":"\""}}
+      <br></br><a id="testP0StWithinOneV0StNonDefault1PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP0StWithinOneV0StNonDefault1PropertyValueInAggregateAfterActiveRecordPersist</h2>
+      <br></br>2014-12-23 12:17:58,346 [HttpClient.java:190] Sending request [POST]: Crud.svc/AggregateOneValueString.Aggregate0St, content size: 45 bytes
+      <br></br>2014-12-23 12:17:58,346 [HttpClient.java:370] POST http://localhost:2080/Crud.svc/AggregateOneValueString.Aggregate0St
+      <br></br>2014-12-23 12:17:58,346 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 12:17:58,346 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 12:17:58,347 [HttpClient.java:383] Adding payload: {"URI":"394469483","ID":0,"v0St":{"p0St":""}}
+      <br></br>2014-12-23 12:17:58,362 [HttpClient.java:197] Received response [201, 43 bytes] in 16 ms
+      <br></br>2014-12-23 12:17:58,362 [HttpClient.java:200] Received response body: {"URI":"1104","ID":1104,"v0St":{"p0St":""}}
+      <br></br>2014-12-23 12:17:58,362 [HttpClient.java:179] Sending request [GET]: Crud.svc/AggregateOneValueString.Aggregate0St?uri=1104
+      <br></br>2014-12-23 12:17:58,362 [HttpClient.java:370] GET http://localhost:2080/Crud.svc/AggregateOneValueString.Aggregate0St?uri=1104
+      <br></br>2014-12-23 12:17:58,363 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 12:17:58,363 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 12:17:58,366 [HttpClient.java:197] Received response [200, 43 bytes] in 4 ms
+      <br></br>2014-12-23 12:17:58,367 [HttpClient.java:200] Received response body: {"URI":"1104","ID":1104,"v0St":{"p0St":""}}
+      <br></br><a id="testP0StWithinOneV0StDefaultPropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP0StWithinOneV0StDefaultPropertyValueInAggregateAfterActiveRecordPersist</h2>
+      <br></br>2014-12-23 12:17:58,371 [HttpClient.java:190] Sending request [POST]: Crud.svc/AggregateOneValueString.Aggregate0St, content size: 36 bytes
+      <br></br>2014-12-23 12:17:58,371 [HttpClient.java:370] POST http://localhost:2080/Crud.svc/AggregateOneValueString.Aggregate0St
+      <br></br>2014-12-23 12:17:58,371 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 12:17:58,372 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 12:17:58,372 [HttpClient.java:383] Adding payload: {"URI":"609452246","ID":0,"v0St":{}}
+      <br></br>2014-12-23 12:17:58,387 [HttpClient.java:197] Received response [201, 45 bytes] in 17 ms
+      <br></br>2014-12-23 12:17:58,387 [HttpClient.java:200] Received response body: {"URI":"1105","ID":1105,"v0St":{"p0St":null}}
+      <br></br>2014-12-23 12:17:58,388 [HttpClient.java:179] Sending request [GET]: Crud.svc/AggregateOneValueString.Aggregate0St?uri=1105
+      <br></br>2014-12-23 12:17:58,388 [HttpClient.java:370] GET http://localhost:2080/Crud.svc/AggregateOneValueString.Aggregate0St?uri=1105
+      <br></br>2014-12-23 12:17:58,388 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 12:17:58,388 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 12:17:58,390 [HttpClient.java:197] Received response [200, 45 bytes] in 2 ms
+      <br></br>2014-12-23 12:17:58,391 [HttpClient.java:200] Received response body: {"URI":"1105","ID":1105,"v0St":{"p0St":null}}
+      <br></br><a id="testP1A0StWithinOneV1A0StDefaultPropertyInAggregateJsonSerialization"/><h2>testP1A0StWithinOneV1A0StDefaultPropertyInAggregateJsonSerialization</h2>
+      <br></br><a id="testP1A0StWithinOneV1A0StNonDefault5PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1A0StWithinOneV1A0StNonDefault5PropertyValueInAggregateAfterActiveRecordPersist</h2>
+      <br></br>2014-12-23 12:17:58,415 [HttpClient.java:190] Sending request [POST]: Crud.svc/AggregateOneValueString.Aggregate1A0St, content size: 655 bytes
+      <br></br>2014-12-23 12:17:58,416 [HttpClient.java:370] POST http://localhost:2080/Crud.svc/AggregateOneValueString.Aggregate1A0St
+      <br></br>2014-12-23 12:17:58,416 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 12:17:58,416 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 12:17:58,416 [HttpClient.java:383] Adding payload: {"URI":"1321889892","ID":0,"v1A0St":{"p1A0St":[null,"","\"","Quote: \", Solidus /, Backslash: \\, Aphos: ', Brackets: [] () {}","\u0001\u0002\u0003\u0004\u0005\u0006\u0007\b\t\n\u000B\f\r\u000E\u000F\u0010\u0011\u0012\u0013\u0014\u0015\u0016\u0017\u0018\u0019\u001A\u001B\u001C\u001D\u001E\u001F !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~????????????????????????????????&#xa0;&#xa1;&#xa2;&#xa3;&#xa4;&#xa5;&#xa6;&#xa7;&#xa8;&#xa9;&#xaa;&#xab;&#xac;&#xad;&#xae;&#xaf;&#xb0;&#xb1;&#xb2;&#xb3;&#xb4;&#xb5;&#xb6;&#xb7;&#xb8;&#xb9;&#xba;&#xbb;&#xbc;&#xbd;&#xbe;&#xbf;&#xc0;&#xc1;&#xc2;&#xc3;&#xc4;&#xc5;&#xc6;&#xc7;&#xc8;&#xc9;&#xca;&#xcb;&#xcc;&#xcd;&#xce;&#xcf;&#xd0;&#xd1;&#xd2;&#xd3;&#xd4;&#xd5;&#xd6;&#xd7;&#xd8;&#xd9;&#xda;&#xdb;&#xdc;&#xdd;&#xde;&#xdf;&#xe0;&#xe1;&#xe2;&#xe3;&#xe4;&#xe5;&#xe6;&#xe7;&#xe8;&#xe9;&#xea;&#xeb;&#xec;&#xed;&#xee;&#xef;&#xf0;&#xf1;&#xf2;&#xf3;&#xf4;&#xf5;&#xf6;&#xf7;&#xf8;&#xf9;&#xfa;&#xfb;&#xfc;&#xfd;&#xfe;&#xff;?"]}}
+      <br></br>2014-12-23 12:17:58,431 [HttpClient.java:197] Received response [400, 99 bytes] in 17 ms
+      <br></br>2014-12-23 12:17:58,431 [HttpClient.java:200] Received response body: Can't deserialize AggregateOneValueString.Aggregate1A0St. Error: Invalid char found: f. Example: 
+      <br></br>
+      <br></br><a id="testP1A0StWithinOneV1A0StNonDefault4PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1A0StWithinOneV1A0StNonDefault4PropertyValueInAggregateAfterActiveRecordPersist</h2>
+      <br></br>2014-12-23 12:17:58,461 [HttpClient.java:190] Sending request [POST]: Crud.svc/AggregateOneValueString.Aggregate1A0St, content size: 650 bytes
+      <br></br>2014-12-23 12:17:58,461 [HttpClient.java:370] POST http://localhost:2080/Crud.svc/AggregateOneValueString.Aggregate1A0St
+      <br></br>2014-12-23 12:17:58,461 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 12:17:58,461 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 12:17:58,461 [HttpClient.java:383] Adding payload: {"URI":"1389311354","ID":0,"v1A0St":{"p1A0St":["","\"","Quote: \", Solidus /, Backslash: \\, Aphos: ', Brackets: [] () {}","\u0001\u0002\u0003\u0004\u0005\u0006\u0007\b\t\n\u000B\f\r\u000E\u000F\u0010\u0011\u0012\u0013\u0014\u0015\u0016\u0017\u0018\u0019\u001A\u001B\u001C\u001D\u001E\u001F !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~????????????????????????????????&#xa0;&#xa1;&#xa2;&#xa3;&#xa4;&#xa5;&#xa6;&#xa7;&#xa8;&#xa9;&#xaa;&#xab;&#xac;&#xad;&#xae;&#xaf;&#xb0;&#xb1;&#xb2;&#xb3;&#xb4;&#xb5;&#xb6;&#xb7;&#xb8;&#xb9;&#xba;&#xbb;&#xbc;&#xbd;&#xbe;&#xbf;&#xc0;&#xc1;&#xc2;&#xc3;&#xc4;&#xc5;&#xc6;&#xc7;&#xc8;&#xc9;&#xca;&#xcb;&#xcc;&#xcd;&#xce;&#xcf;&#xd0;&#xd1;&#xd2;&#xd3;&#xd4;&#xd5;&#xd6;&#xd7;&#xd8;&#xd9;&#xda;&#xdb;&#xdc;&#xdd;&#xde;&#xdf;&#xe0;&#xe1;&#xe2;&#xe3;&#xe4;&#xe5;&#xe6;&#xe7;&#xe8;&#xe9;&#xea;&#xeb;&#xec;&#xed;&#xee;&#xef;&#xf0;&#xf1;&#xf2;&#xf3;&#xf4;&#xf5;&#xf6;&#xf7;&#xf8;&#xf9;&#xfa;&#xfb;&#xfc;&#xfd;&#xfe;&#xff;?"]}}
+      <br></br>2014-12-23 12:17:58,466 [HttpClient.java:197] Received response [400, 99 bytes] in 5 ms
+      <br></br>2014-12-23 12:17:58,466 [HttpClient.java:200] Received response body: Can't deserialize AggregateOneValueString.Aggregate1A0St. Error: Invalid char found: f. Example: 
+      <br></br>
+      <br></br><a id="testP1A0StWithinOneV1A0StNonDefault3PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1A0StWithinOneV1A0StNonDefault3PropertyValueInAggregateAfterActiveRecordPersist</h2>
+      <br></br>2014-12-23 12:17:58,468 [HttpClient.java:190] Sending request [POST]: Crud.svc/AggregateOneValueString.Aggregate1A0St, content size: 574 bytes
+      <br></br>2014-12-23 12:17:58,468 [HttpClient.java:370] POST http://localhost:2080/Crud.svc/AggregateOneValueString.Aggregate1A0St
+      <br></br>2014-12-23 12:17:58,468 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 12:17:58,468 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 12:17:58,468 [HttpClient.java:383] Adding payload: {"URI":"2095815783","ID":0,"v1A0St":{"p1A0St":["\u0001\u0002\u0003\u0004\u0005\u0006\u0007\b\t\n\u000B\f\r\u000E\u000F\u0010\u0011\u0012\u0013\u0014\u0015\u0016\u0017\u0018\u0019\u001A\u001B\u001C\u001D\u001E\u001F !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~????????????????????????????????&#xa0;&#xa1;&#xa2;&#xa3;&#xa4;&#xa5;&#xa6;&#xa7;&#xa8;&#xa9;&#xaa;&#xab;&#xac;&#xad;&#xae;&#xaf;&#xb0;&#xb1;&#xb2;&#xb3;&#xb4;&#xb5;&#xb6;&#xb7;&#xb8;&#xb9;&#xba;&#xbb;&#xbc;&#xbd;&#xbe;&#xbf;&#xc0;&#xc1;&#xc2;&#xc3;&#xc4;&#xc5;&#xc6;&#xc7;&#xc8;&#xc9;&#xca;&#xcb;&#xcc;&#xcd;&#xce;&#xcf;&#xd0;&#xd1;&#xd2;&#xd3;&#xd4;&#xd5;&#xd6;&#xd7;&#xd8;&#xd9;&#xda;&#xdb;&#xdc;&#xdd;&#xde;&#xdf;&#xe0;&#xe1;&#xe2;&#xe3;&#xe4;&#xe5;&#xe6;&#xe7;&#xe8;&#xe9;&#xea;&#xeb;&#xec;&#xed;&#xee;&#xef;&#xf0;&#xf1;&#xf2;&#xf3;&#xf4;&#xf5;&#xf6;&#xf7;&#xf8;&#xf9;&#xfa;&#xfb;&#xfc;&#xfd;&#xfe;&#xff;?"]}}
+      <br></br>2014-12-23 12:17:58,513 [HttpClient.java:197] Received response [400, 99 bytes] in 45 ms
+      <br></br>2014-12-23 12:17:58,513 [HttpClient.java:200] Received response body: Can't deserialize AggregateOneValueString.Aggregate1A0St. Error: Invalid char found: f. Example: 
+      <br></br>
+      <br></br><a id="testP1A0StWithinOneV1A0StNonDefault2PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1A0StWithinOneV1A0StNonDefault2PropertyValueInAggregateAfterActiveRecordPersist</h2>
+      <br></br>2014-12-23 12:17:58,514 [HttpClient.java:190] Sending request [POST]: Crud.svc/AggregateOneValueString.Aggregate1A0St, content size: 52 bytes
+      <br></br>2014-12-23 12:17:58,514 [HttpClient.java:370] POST http://localhost:2080/Crud.svc/AggregateOneValueString.Aggregate1A0St
+      <br></br>2014-12-23 12:17:58,514 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 12:17:58,514 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 12:17:58,515 [HttpClient.java:383] Adding payload: {"URI":"1790426542","ID":0,"v1A0St":{"p1A0St":[""]}}
+      <br></br>2014-12-23 12:17:58,570 [HttpClient.java:197] Received response [201, 49 bytes] in 56 ms
+      <br></br>2014-12-23 12:17:58,570 [HttpClient.java:200] Received response body: {"URI":"1079","ID":1079,"v1A0St":{"p1A0St":[""]}}
+      <br></br>2014-12-23 12:17:58,571 [HttpClient.java:179] Sending request [GET]: Crud.svc/AggregateOneValueString.Aggregate1A0St?uri=1079
+      <br></br>2014-12-23 12:17:58,571 [HttpClient.java:370] GET http://localhost:2080/Crud.svc/AggregateOneValueString.Aggregate1A0St?uri=1079
+      <br></br>2014-12-23 12:17:58,571 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 12:17:58,571 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 12:17:58,581 [HttpClient.java:197] Received response [200, 49 bytes] in 10 ms
+      <br></br>2014-12-23 12:17:58,581 [HttpClient.java:200] Received response body: {"URI":"1079","ID":1079,"v1A0St":{"p1A0St":[""]}}
+      <br></br><a id="testP1A0StWithinOneV1A0StNonDefault1PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1A0StWithinOneV1A0StNonDefault1PropertyValueInAggregateAfterActiveRecordPersist</h2>
+      <br></br>2014-12-23 12:17:58,582 [HttpClient.java:190] Sending request [POST]: Crud.svc/AggregateOneValueString.Aggregate1A0St, content size: 53 bytes
+      <br></br>2014-12-23 12:17:58,582 [HttpClient.java:370] POST http://localhost:2080/Crud.svc/AggregateOneValueString.Aggregate1A0St
+      <br></br>2014-12-23 12:17:58,582 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 12:17:58,582 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 12:17:58,582 [HttpClient.java:383] Adding payload: {"URI":"359698649","ID":0,"v1A0St":{"p1A0St":[null]}}
+      <br></br>2014-12-23 12:17:58,595 [HttpClient.java:197] Received response [201, 51 bytes] in 13 ms
+      <br></br>2014-12-23 12:17:58,595 [HttpClient.java:200] Received response body: {"URI":"1080","ID":1080,"v1A0St":{"p1A0St":[null]}}
+      <br></br>2014-12-23 12:17:58,595 [HttpClient.java:179] Sending request [GET]: Crud.svc/AggregateOneValueString.Aggregate1A0St?uri=1080
+      <br></br>2014-12-23 12:17:58,595 [HttpClient.java:370] GET http://localhost:2080/Crud.svc/AggregateOneValueString.Aggregate1A0St?uri=1080
+      <br></br>2014-12-23 12:17:58,596 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 12:17:58,597 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 12:17:58,599 [HttpClient.java:197] Received response [200, 51 bytes] in 4 ms
+      <br></br>2014-12-23 12:17:58,600 [HttpClient.java:200] Received response body: {"URI":"1080","ID":1080,"v1A0St":{"p1A0St":[null]}}
+      <br></br><a id="testP1A0StWithinOneV1A0StDefaultPropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1A0StWithinOneV1A0StDefaultPropertyValueInAggregateAfterActiveRecordPersist</h2>
+      <br></br>2014-12-23 12:17:58,602 [HttpClient.java:190] Sending request [POST]: Crud.svc/AggregateOneValueString.Aggregate1A0St, content size: 39 bytes
+      <br></br>2014-12-23 12:17:58,602 [HttpClient.java:370] POST http://localhost:2080/Crud.svc/AggregateOneValueString.Aggregate1A0St
+      <br></br>2014-12-23 12:17:58,602 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 12:17:58,602 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 12:17:58,602 [HttpClient.java:383] Adding payload: {"URI":"1476491893","ID":0,"v1A0St":{}}
+      <br></br>2014-12-23 12:17:58,628 [HttpClient.java:197] Received response [201, 47 bytes] in 27 ms
+      <br></br>2014-12-23 12:17:58,629 [HttpClient.java:200] Received response body: {"URI":"1081","ID":1081,"v1A0St":{"p1A0St":[]}}
+      <br></br>2014-12-23 12:17:58,633 [HttpClient.java:179] Sending request [GET]: Crud.svc/AggregateOneValueString.Aggregate1A0St?uri=1081
+      <br></br>2014-12-23 12:17:58,633 [HttpClient.java:370] GET http://localhost:2080/Crud.svc/AggregateOneValueString.Aggregate1A0St?uri=1081
+      <br></br>2014-12-23 12:17:58,633 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 12:17:58,633 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 12:17:58,635 [HttpClient.java:197] Received response [200, 47 bytes] in 2 ms
+      <br></br>2014-12-23 12:17:58,635 [HttpClient.java:200] Received response body: {"URI":"1081","ID":1081,"v1A0St":{"p1A0St":[]}}
+      <br></br><a id="testP1A0StWithinOneV1A0StNonDefault1PropertyInAggregateJsonSerialization"/><h2>testP1A0StWithinOneV1A0StNonDefault1PropertyInAggregateJsonSerialization</h2>
+      <br></br><a id="testP1A0StWithinOneV1A0StNonDefault2PropertyInAggregateJsonSerialization"/><h2>testP1A0StWithinOneV1A0StNonDefault2PropertyInAggregateJsonSerialization</h2>
+      <br></br><a id="testP1A0StWithinOneV1A0StNonDefault3PropertyInAggregateJsonSerialization"/><h2>testP1A0StWithinOneV1A0StNonDefault3PropertyInAggregateJsonSerialization</h2>
+      <br></br><a id="testP1A0StWithinOneV1A0StNonDefault4PropertyInAggregateJsonSerialization"/><h2>testP1A0StWithinOneV1A0StNonDefault4PropertyInAggregateJsonSerialization</h2>
+      <br></br><a id="testP1A0StWithinOneV1A0StNonDefault5PropertyInAggregateJsonSerialization"/><h2>testP1A0StWithinOneV1A0StNonDefault5PropertyInAggregateJsonSerialization</h2>
+      <br></br><a id="testP1A1StWithinOneV1A1StNonDefault3PropertyInAggregateJsonSerialization"/><h2>testP1A1StWithinOneV1A1StNonDefault3PropertyInAggregateJsonSerialization</h2>
+      <br></br><a id="testP1A1StWithinOneV1A1StDefaultPropertyInAggregateJsonSerialization"/><h2>testP1A1StWithinOneV1A1StDefaultPropertyInAggregateJsonSerialization</h2>
+      <br></br><a id="testP1A1StWithinOneV1A1StDefaultPropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1A1StWithinOneV1A1StDefaultPropertyValueInAggregateAfterActiveRecordPersist</h2>
+      <br></br>2014-12-23 12:17:58,693 [HttpClient.java:190] Sending request [POST]: Crud.svc/AggregateOneValueString.Aggregate1A1St, content size: 37 bytes
+      <br></br>2014-12-23 12:17:58,694 [HttpClient.java:370] POST http://localhost:2080/Crud.svc/AggregateOneValueString.Aggregate1A1St
+      <br></br>2014-12-23 12:17:58,694 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 12:17:58,694 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 12:17:58,694 [HttpClient.java:383] Adding payload: {"URI":"82079505","ID":0,"v1A1St":{}}
+      <br></br>2014-12-23 12:17:58,752 [HttpClient.java:197] Received response [201, 47 bytes] in 65 ms
+      <br></br>2014-12-23 12:17:58,752 [HttpClient.java:200] Received response body: {"URI":"1053","ID":1053,"v1A1St":{"p1A1St":[]}}
+      <br></br>2014-12-23 12:17:58,753 [HttpClient.java:179] Sending request [GET]: Crud.svc/AggregateOneValueString.Aggregate1A1St?uri=1053
+      <br></br>2014-12-23 12:17:58,753 [HttpClient.java:370] GET http://localhost:2080/Crud.svc/AggregateOneValueString.Aggregate1A1St?uri=1053
+      <br></br>2014-12-23 12:17:58,753 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 12:17:58,753 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 12:17:58,768 [HttpClient.java:197] Received response [200, 47 bytes] in 15 ms
+      <br></br>2014-12-23 12:17:58,768 [HttpClient.java:200] Received response body: {"URI":"1053","ID":1053,"v1A1St":{"p1A1St":[]}}
+      <br></br><a id="testP1A1StWithinOneV1A1StNonDefault3PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1A1StWithinOneV1A1StNonDefault3PropertyValueInAggregateAfterActiveRecordPersist</h2>
+      <br></br>2014-12-23 12:17:58,769 [HttpClient.java:190] Sending request [POST]: Crud.svc/AggregateOneValueString.Aggregate1A1St, content size: 650 bytes
+      <br></br>2014-12-23 12:17:58,769 [HttpClient.java:370] POST http://localhost:2080/Crud.svc/AggregateOneValueString.Aggregate1A1St
+      <br></br>2014-12-23 12:17:58,770 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 12:17:58,770 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 12:17:58,770 [HttpClient.java:383] Adding payload: {"URI":"1710387865","ID":0,"v1A1St":{"p1A1St":["","\"","Quote: \", Solidus /, Backslash: \\, Aphos: ', Brackets: [] () {}","\u0001\u0002\u0003\u0004\u0005\u0006\u0007\b\t\n\u000B\f\r\u000E\u000F\u0010\u0011\u0012\u0013\u0014\u0015\u0016\u0017\u0018\u0019\u001A\u001B\u001C\u001D\u001E\u001F !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~????????????????????????????????&#xa0;&#xa1;&#xa2;&#xa3;&#xa4;&#xa5;&#xa6;&#xa7;&#xa8;&#xa9;&#xaa;&#xab;&#xac;&#xad;&#xae;&#xaf;&#xb0;&#xb1;&#xb2;&#xb3;&#xb4;&#xb5;&#xb6;&#xb7;&#xb8;&#xb9;&#xba;&#xbb;&#xbc;&#xbd;&#xbe;&#xbf;&#xc0;&#xc1;&#xc2;&#xc3;&#xc4;&#xc5;&#xc6;&#xc7;&#xc8;&#xc9;&#xca;&#xcb;&#xcc;&#xcd;&#xce;&#xcf;&#xd0;&#xd1;&#xd2;&#xd3;&#xd4;&#xd5;&#xd6;&#xd7;&#xd8;&#xd9;&#xda;&#xdb;&#xdc;&#xdd;&#xde;&#xdf;&#xe0;&#xe1;&#xe2;&#xe3;&#xe4;&#xe5;&#xe6;&#xe7;&#xe8;&#xe9;&#xea;&#xeb;&#xec;&#xed;&#xee;&#xef;&#xf0;&#xf1;&#xf2;&#xf3;&#xf4;&#xf5;&#xf6;&#xf7;&#xf8;&#xf9;&#xfa;&#xfb;&#xfc;&#xfd;&#xfe;&#xff;?"]}}
+      <br></br>2014-12-23 12:17:58,771 [HttpClient.java:197] Received response [400, 99 bytes] in 2 ms
+      <br></br>2014-12-23 12:17:58,771 [HttpClient.java:200] Received response body: Can't deserialize AggregateOneValueString.Aggregate1A1St. Error: Invalid char found: f. Example: 
+      <br></br>
+      <br></br><a id="testP1A1StWithinOneV1A1StNonDefault2PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1A1StWithinOneV1A1StNonDefault2PropertyValueInAggregateAfterActiveRecordPersist</h2>
+      <br></br>2014-12-23 12:17:58,773 [HttpClient.java:190] Sending request [POST]: Crud.svc/AggregateOneValueString.Aggregate1A1St, content size: 574 bytes
+      <br></br>2014-12-23 12:17:58,773 [HttpClient.java:370] POST http://localhost:2080/Crud.svc/AggregateOneValueString.Aggregate1A1St
+      <br></br>2014-12-23 12:17:58,773 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 12:17:58,773 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 12:17:58,774 [HttpClient.java:383] Adding payload: {"URI":"1587738251","ID":0,"v1A1St":{"p1A1St":["\u0001\u0002\u0003\u0004\u0005\u0006\u0007\b\t\n\u000B\f\r\u000E\u000F\u0010\u0011\u0012\u0013\u0014\u0015\u0016\u0017\u0018\u0019\u001A\u001B\u001C\u001D\u001E\u001F !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~????????????????????????????????&#xa0;&#xa1;&#xa2;&#xa3;&#xa4;&#xa5;&#xa6;&#xa7;&#xa8;&#xa9;&#xaa;&#xab;&#xac;&#xad;&#xae;&#xaf;&#xb0;&#xb1;&#xb2;&#xb3;&#xb4;&#xb5;&#xb6;&#xb7;&#xb8;&#xb9;&#xba;&#xbb;&#xbc;&#xbd;&#xbe;&#xbf;&#xc0;&#xc1;&#xc2;&#xc3;&#xc4;&#xc5;&#xc6;&#xc7;&#xc8;&#xc9;&#xca;&#xcb;&#xcc;&#xcd;&#xce;&#xcf;&#xd0;&#xd1;&#xd2;&#xd3;&#xd4;&#xd5;&#xd6;&#xd7;&#xd8;&#xd9;&#xda;&#xdb;&#xdc;&#xdd;&#xde;&#xdf;&#xe0;&#xe1;&#xe2;&#xe3;&#xe4;&#xe5;&#xe6;&#xe7;&#xe8;&#xe9;&#xea;&#xeb;&#xec;&#xed;&#xee;&#xef;&#xf0;&#xf1;&#xf2;&#xf3;&#xf4;&#xf5;&#xf6;&#xf7;&#xf8;&#xf9;&#xfa;&#xfb;&#xfc;&#xfd;&#xfe;&#xff;?"]}}
+      <br></br>2014-12-23 12:17:58,795 [HttpClient.java:197] Received response [400, 99 bytes] in 22 ms
+      <br></br>2014-12-23 12:17:58,795 [HttpClient.java:200] Received response body: Can't deserialize AggregateOneValueString.Aggregate1A1St. Error: Invalid char found: f. Example: 
+      <br></br>
+      <br></br><a id="testP1A1StWithinOneV1A1StNonDefault1PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1A1StWithinOneV1A1StNonDefault1PropertyValueInAggregateAfterActiveRecordPersist</h2>
+      <br></br>2014-12-23 12:17:58,800 [HttpClient.java:190] Sending request [POST]: Crud.svc/AggregateOneValueString.Aggregate1A1St, content size: 52 bytes
+      <br></br>2014-12-23 12:17:58,800 [HttpClient.java:370] POST http://localhost:2080/Crud.svc/AggregateOneValueString.Aggregate1A1St
+      <br></br>2014-12-23 12:17:58,800 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 12:17:58,800 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 12:17:58,800 [HttpClient.java:383] Adding payload: {"URI":"1543824543","ID":0,"v1A1St":{"p1A1St":[""]}}
+      <br></br>2014-12-23 12:17:58,811 [HttpClient.java:197] Received response [201, 49 bytes] in 11 ms
+      <br></br>2014-12-23 12:17:58,812 [HttpClient.java:200] Received response body: {"URI":"1054","ID":1054,"v1A1St":{"p1A1St":[""]}}
+      <br></br>2014-12-23 12:17:58,812 [HttpClient.java:179] Sending request [GET]: Crud.svc/AggregateOneValueString.Aggregate1A1St?uri=1054
+      <br></br>2014-12-23 12:17:58,812 [HttpClient.java:370] GET http://localhost:2080/Crud.svc/AggregateOneValueString.Aggregate1A1St?uri=1054
+      <br></br>2014-12-23 12:17:58,812 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 12:17:58,812 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 12:17:58,814 [HttpClient.java:197] Received response [200, 49 bytes] in 2 ms
+      <br></br>2014-12-23 12:17:58,815 [HttpClient.java:200] Received response body: {"URI":"1054","ID":1054,"v1A1St":{"p1A1St":[""]}}
+      <br></br><a id="testP1A1StWithinOneV1A1StNonDefault1PropertyInAggregateJsonSerialization"/><h2>testP1A1StWithinOneV1A1StNonDefault1PropertyInAggregateJsonSerialization</h2>
+      <br></br><a id="testP1A1StWithinOneV1A1StNonDefault2PropertyInAggregateJsonSerialization"/><h2>testP1A1StWithinOneV1A1StNonDefault2PropertyInAggregateJsonSerialization</h2>
+      <br></br><a id="testP1L0StWithinOneV1L0StNonDefault1PropertyInAggregateJsonSerialization"/><h2>testP1L0StWithinOneV1L0StNonDefault1PropertyInAggregateJsonSerialization</h2>
+      <br></br><a id="testP1L0StWithinOneV1L0StNonDefault2PropertyInAggregateJsonSerialization"/><h2>testP1L0StWithinOneV1L0StNonDefault2PropertyInAggregateJsonSerialization</h2>
+      <br></br><a id="testP1L0StWithinOneV1L0StDefaultPropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1L0StWithinOneV1L0StDefaultPropertyValueInAggregateAfterActiveRecordPersist</h2>
+      <br></br>2014-12-23 12:17:58,860 [HttpClient.java:190] Sending request [POST]: Crud.svc/AggregateOneValueString.Aggregate1L0St, content size: 39 bytes
+      <br></br>2014-12-23 12:17:58,861 [HttpClient.java:370] POST http://localhost:2080/Crud.svc/AggregateOneValueString.Aggregate1L0St
+      <br></br>2014-12-23 12:17:58,861 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 12:17:58,861 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 12:17:58,861 [HttpClient.java:383] Adding payload: {"URI":"1059570200","ID":0,"v1L0St":{}}
+      <br></br>2014-12-23 12:17:58,907 [HttpClient.java:197] Received response [201, 47 bytes] in 56 ms
+      <br></br>2014-12-23 12:17:58,907 [HttpClient.java:200] Received response body: {"URI":"1079","ID":1079,"v1L0St":{"p1L0St":[]}}
+      <br></br>2014-12-23 12:17:58,908 [HttpClient.java:179] Sending request [GET]: Crud.svc/AggregateOneValueString.Aggregate1L0St?uri=1079
+      <br></br>2014-12-23 12:17:58,908 [HttpClient.java:370] GET http://localhost:2080/Crud.svc/AggregateOneValueString.Aggregate1L0St?uri=1079
+      <br></br>2014-12-23 12:17:58,908 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 12:17:58,908 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 12:17:58,924 [HttpClient.java:197] Received response [200, 47 bytes] in 17 ms
+      <br></br>2014-12-23 12:17:58,924 [HttpClient.java:200] Received response body: {"URI":"1079","ID":1079,"v1L0St":{"p1L0St":[]}}
+      <br></br><a id="testP1L0StWithinOneV1L0StNonDefault3PropertyInAggregateJsonSerialization"/><h2>testP1L0StWithinOneV1L0StNonDefault3PropertyInAggregateJsonSerialization</h2>
+      <br></br><a id="testP1L0StWithinOneV1L0StNonDefault4PropertyInAggregateJsonSerialization"/><h2>testP1L0StWithinOneV1L0StNonDefault4PropertyInAggregateJsonSerialization</h2>
+      <br></br><a id="testP1L0StWithinOneV1L0StNonDefault5PropertyInAggregateJsonSerialization"/><h2>testP1L0StWithinOneV1L0StNonDefault5PropertyInAggregateJsonSerialization</h2>
+      <br></br><a id="testP1L0StWithinOneV1L0StDefaultPropertyInAggregateJsonSerialization"/><h2>testP1L0StWithinOneV1L0StDefaultPropertyInAggregateJsonSerialization</h2>
+      <br></br><a id="testP1L0StWithinOneV1L0StNonDefault5PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1L0StWithinOneV1L0StNonDefault5PropertyValueInAggregateAfterActiveRecordPersist</h2>
+      <br></br>2014-12-23 12:17:58,934 [HttpClient.java:190] Sending request [POST]: Crud.svc/AggregateOneValueString.Aggregate1L0St, content size: 654 bytes
+      <br></br>2014-12-23 12:17:58,934 [HttpClient.java:370] POST http://localhost:2080/Crud.svc/AggregateOneValueString.Aggregate1L0St
+      <br></br>2014-12-23 12:17:58,934 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 12:17:58,934 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 12:17:58,934 [HttpClient.java:383] Adding payload: {"URI":"573676747","ID":0,"v1L0St":{"p1L0St":[null,"","\"","Quote: \", Solidus /, Backslash: \\, Aphos: ', Brackets: [] () {}","\u0001\u0002\u0003\u0004\u0005\u0006\u0007\b\t\n\u000B\f\r\u000E\u000F\u0010\u0011\u0012\u0013\u0014\u0015\u0016\u0017\u0018\u0019\u001A\u001B\u001C\u001D\u001E\u001F !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~????????????????????????????????&#xa0;&#xa1;&#xa2;&#xa3;&#xa4;&#xa5;&#xa6;&#xa7;&#xa8;&#xa9;&#xaa;&#xab;&#xac;&#xad;&#xae;&#xaf;&#xb0;&#xb1;&#xb2;&#xb3;&#xb4;&#xb5;&#xb6;&#xb7;&#xb8;&#xb9;&#xba;&#xbb;&#xbc;&#xbd;&#xbe;&#xbf;&#xc0;&#xc1;&#xc2;&#xc3;&#xc4;&#xc5;&#xc6;&#xc7;&#xc8;&#xc9;&#xca;&#xcb;&#xcc;&#xcd;&#xce;&#xcf;&#xd0;&#xd1;&#xd2;&#xd3;&#xd4;&#xd5;&#xd6;&#xd7;&#xd8;&#xd9;&#xda;&#xdb;&#xdc;&#xdd;&#xde;&#xdf;&#xe0;&#xe1;&#xe2;&#xe3;&#xe4;&#xe5;&#xe6;&#xe7;&#xe8;&#xe9;&#xea;&#xeb;&#xec;&#xed;&#xee;&#xef;&#xf0;&#xf1;&#xf2;&#xf3;&#xf4;&#xf5;&#xf6;&#xf7;&#xf8;&#xf9;&#xfa;&#xfb;&#xfc;&#xfd;&#xfe;&#xff;?"]}}
+      <br></br>2014-12-23 12:17:58,936 [HttpClient.java:197] Received response [400, 99 bytes] in 3 ms
+      <br></br>2014-12-23 12:17:58,936 [HttpClient.java:200] Received response body: Can't deserialize AggregateOneValueString.Aggregate1L0St. Error: Invalid char found: f. Example: 
+      <br></br>
+      <br></br><a id="testP1L0StWithinOneV1L0StNonDefault4PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1L0StWithinOneV1L0StNonDefault4PropertyValueInAggregateAfterActiveRecordPersist</h2>
+      <br></br>2014-12-23 12:17:58,939 [HttpClient.java:190] Sending request [POST]: Crud.svc/AggregateOneValueString.Aggregate1L0St, content size: 649 bytes
+      <br></br>2014-12-23 12:17:58,939 [HttpClient.java:370] POST http://localhost:2080/Crud.svc/AggregateOneValueString.Aggregate1L0St
+      <br></br>2014-12-23 12:17:58,939 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 12:17:58,939 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 12:17:58,939 [HttpClient.java:383] Adding payload: {"URI":"915028272","ID":0,"v1L0St":{"p1L0St":["","\"","Quote: \", Solidus /, Backslash: \\, Aphos: ', Brackets: [] () {}","\u0001\u0002\u0003\u0004\u0005\u0006\u0007\b\t\n\u000B\f\r\u000E\u000F\u0010\u0011\u0012\u0013\u0014\u0015\u0016\u0017\u0018\u0019\u001A\u001B\u001C\u001D\u001E\u001F !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~????????????????????????????????&#xa0;&#xa1;&#xa2;&#xa3;&#xa4;&#xa5;&#xa6;&#xa7;&#xa8;&#xa9;&#xaa;&#xab;&#xac;&#xad;&#xae;&#xaf;&#xb0;&#xb1;&#xb2;&#xb3;&#xb4;&#xb5;&#xb6;&#xb7;&#xb8;&#xb9;&#xba;&#xbb;&#xbc;&#xbd;&#xbe;&#xbf;&#xc0;&#xc1;&#xc2;&#xc3;&#xc4;&#xc5;&#xc6;&#xc7;&#xc8;&#xc9;&#xca;&#xcb;&#xcc;&#xcd;&#xce;&#xcf;&#xd0;&#xd1;&#xd2;&#xd3;&#xd4;&#xd5;&#xd6;&#xd7;&#xd8;&#xd9;&#xda;&#xdb;&#xdc;&#xdd;&#xde;&#xdf;&#xe0;&#xe1;&#xe2;&#xe3;&#xe4;&#xe5;&#xe6;&#xe7;&#xe8;&#xe9;&#xea;&#xeb;&#xec;&#xed;&#xee;&#xef;&#xf0;&#xf1;&#xf2;&#xf3;&#xf4;&#xf5;&#xf6;&#xf7;&#xf8;&#xf9;&#xfa;&#xfb;&#xfc;&#xfd;&#xfe;&#xff;?"]}}
+      <br></br>2014-12-23 12:17:58,957 [HttpClient.java:197] Received response [400, 99 bytes] in 19 ms
+      <br></br>2014-12-23 12:17:58,957 [HttpClient.java:200] Received response body: Can't deserialize AggregateOneValueString.Aggregate1L0St. Error: Invalid char found: f. Example: 
+      <br></br>
+      <br></br><a id="testP1L0StWithinOneV1L0StNonDefault3PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1L0StWithinOneV1L0StNonDefault3PropertyValueInAggregateAfterActiveRecordPersist</h2>
+      <br></br>2014-12-23 12:17:58,960 [HttpClient.java:190] Sending request [POST]: Crud.svc/AggregateOneValueString.Aggregate1L0St, content size: 574 bytes
+      <br></br>2014-12-23 12:17:58,960 [HttpClient.java:370] POST http://localhost:2080/Crud.svc/AggregateOneValueString.Aggregate1L0St
+      <br></br>2014-12-23 12:17:59,011 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 12:17:59,011 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 12:17:59,011 [HttpClient.java:383] Adding payload: {"URI":"1713234840","ID":0,"v1L0St":{"p1L0St":["\u0001\u0002\u0003\u0004\u0005\u0006\u0007\b\t\n\u000B\f\r\u000E\u000F\u0010\u0011\u0012\u0013\u0014\u0015\u0016\u0017\u0018\u0019\u001A\u001B\u001C\u001D\u001E\u001F !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~????????????????????????????????&#xa0;&#xa1;&#xa2;&#xa3;&#xa4;&#xa5;&#xa6;&#xa7;&#xa8;&#xa9;&#xaa;&#xab;&#xac;&#xad;&#xae;&#xaf;&#xb0;&#xb1;&#xb2;&#xb3;&#xb4;&#xb5;&#xb6;&#xb7;&#xb8;&#xb9;&#xba;&#xbb;&#xbc;&#xbd;&#xbe;&#xbf;&#xc0;&#xc1;&#xc2;&#xc3;&#xc4;&#xc5;&#xc6;&#xc7;&#xc8;&#xc9;&#xca;&#xcb;&#xcc;&#xcd;&#xce;&#xcf;&#xd0;&#xd1;&#xd2;&#xd3;&#xd4;&#xd5;&#xd6;&#xd7;&#xd8;&#xd9;&#xda;&#xdb;&#xdc;&#xdd;&#xde;&#xdf;&#xe0;&#xe1;&#xe2;&#xe3;&#xe4;&#xe5;&#xe6;&#xe7;&#xe8;&#xe9;&#xea;&#xeb;&#xec;&#xed;&#xee;&#xef;&#xf0;&#xf1;&#xf2;&#xf3;&#xf4;&#xf5;&#xf6;&#xf7;&#xf8;&#xf9;&#xfa;&#xfb;&#xfc;&#xfd;&#xfe;&#xff;?"]}}
+      <br></br>2014-12-23 12:17:59,016 [HttpClient.java:197] Received response [400, 99 bytes] in 57 ms
+      <br></br>2014-12-23 12:17:59,016 [HttpClient.java:200] Received response body: Can't deserialize AggregateOneValueString.Aggregate1L0St. Error: Invalid char found: f. Example: 
+      <br></br>
+      <br></br><a id="testP1L0StWithinOneV1L0StNonDefault2PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1L0StWithinOneV1L0StNonDefault2PropertyValueInAggregateAfterActiveRecordPersist</h2>
+      <br></br>2014-12-23 12:17:59,020 [HttpClient.java:190] Sending request [POST]: Crud.svc/AggregateOneValueString.Aggregate1L0St, content size: 52 bytes
+      <br></br>2014-12-23 12:17:59,021 [HttpClient.java:370] POST http://localhost:2080/Crud.svc/AggregateOneValueString.Aggregate1L0St
+      <br></br>2014-12-23 12:17:59,021 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 12:17:59,021 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 12:17:59,021 [HttpClient.java:383] Adding payload: {"URI":"1257436972","ID":0,"v1L0St":{"p1L0St":[""]}}
+      <br></br>2014-12-23 12:17:59,047 [HttpClient.java:197] Received response [201, 49 bytes] in 28 ms
+      <br></br>2014-12-23 12:17:59,047 [HttpClient.java:200] Received response body: {"URI":"1080","ID":1080,"v1L0St":{"p1L0St":[""]}}
+      <br></br>2014-12-23 12:17:59,048 [HttpClient.java:179] Sending request [GET]: Crud.svc/AggregateOneValueString.Aggregate1L0St?uri=1080
+      <br></br>2014-12-23 12:17:59,048 [HttpClient.java:370] GET http://localhost:2080/Crud.svc/AggregateOneValueString.Aggregate1L0St?uri=1080
+      <br></br>2014-12-23 12:17:59,048 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 12:17:59,048 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 12:17:59,049 [HttpClient.java:197] Received response [200, 49 bytes] in 2 ms
+      <br></br>2014-12-23 12:17:59,049 [HttpClient.java:200] Received response body: {"URI":"1080","ID":1080,"v1L0St":{"p1L0St":[""]}}
+      <br></br><a id="testP1L0StWithinOneV1L0StNonDefault1PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1L0StWithinOneV1L0StNonDefault1PropertyValueInAggregateAfterActiveRecordPersist</h2>
+      <br></br>2014-12-23 12:17:59,052 [HttpClient.java:190] Sending request [POST]: Crud.svc/AggregateOneValueString.Aggregate1L0St, content size: 54 bytes
+      <br></br>2014-12-23 12:17:59,052 [HttpClient.java:370] POST http://localhost:2080/Crud.svc/AggregateOneValueString.Aggregate1L0St
+      <br></br>2014-12-23 12:17:59,052 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 12:17:59,052 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 12:17:59,052 [HttpClient.java:383] Adding payload: {"URI":"1380095588","ID":0,"v1L0St":{"p1L0St":[null]}}
+      <br></br>2014-12-23 12:17:59,061 [HttpClient.java:197] Received response [201, 51 bytes] in 11 ms
+      <br></br>2014-12-23 12:17:59,062 [HttpClient.java:200] Received response body: {"URI":"1081","ID":1081,"v1L0St":{"p1L0St":[null]}}
+      <br></br>2014-12-23 12:17:59,062 [HttpClient.java:179] Sending request [GET]: Crud.svc/AggregateOneValueString.Aggregate1L0St?uri=1081
+      <br></br>2014-12-23 12:17:59,062 [HttpClient.java:370] GET http://localhost:2080/Crud.svc/AggregateOneValueString.Aggregate1L0St?uri=1081
+      <br></br>2014-12-23 12:17:59,062 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 12:17:59,062 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 12:17:59,067 [HttpClient.java:197] Received response [200, 51 bytes] in 5 ms
+      <br></br>2014-12-23 12:17:59,067 [HttpClient.java:200] Received response body: {"URI":"1081","ID":1081,"v1L0St":{"p1L0St":[null]}}
+      <br></br><a id="testP1L1StWithinOneV1L1StNonDefault3PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1L1StWithinOneV1L1StNonDefault3PropertyValueInAggregateAfterActiveRecordPersist</h2>
+      <br></br>2014-12-23 12:17:59,076 [HttpClient.java:190] Sending request [POST]: Crud.svc/AggregateOneValueString.Aggregate1L1St, content size: 649 bytes
+      <br></br>2014-12-23 12:17:59,076 [HttpClient.java:370] POST http://localhost:2080/Crud.svc/AggregateOneValueString.Aggregate1L1St
+      <br></br>2014-12-23 12:17:59,077 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 12:17:59,077 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 12:17:59,077 [HttpClient.java:383] Adding payload: {"URI":"671491475","ID":0,"v1L1St":{"p1L1St":["","\"","Quote: \", Solidus /, Backslash: \\, Aphos: ', Brackets: [] () {}","\u0001\u0002\u0003\u0004\u0005\u0006\u0007\b\t\n\u000B\f\r\u000E\u000F\u0010\u0011\u0012\u0013\u0014\u0015\u0016\u0017\u0018\u0019\u001A\u001B\u001C\u001D\u001E\u001F !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~????????????????????????????????&#xa0;&#xa1;&#xa2;&#xa3;&#xa4;&#xa5;&#xa6;&#xa7;&#xa8;&#xa9;&#xaa;&#xab;&#xac;&#xad;&#xae;&#xaf;&#xb0;&#xb1;&#xb2;&#xb3;&#xb4;&#xb5;&#xb6;&#xb7;&#xb8;&#xb9;&#xba;&#xbb;&#xbc;&#xbd;&#xbe;&#xbf;&#xc0;&#xc1;&#xc2;&#xc3;&#xc4;&#xc5;&#xc6;&#xc7;&#xc8;&#xc9;&#xca;&#xcb;&#xcc;&#xcd;&#xce;&#xcf;&#xd0;&#xd1;&#xd2;&#xd3;&#xd4;&#xd5;&#xd6;&#xd7;&#xd8;&#xd9;&#xda;&#xdb;&#xdc;&#xdd;&#xde;&#xdf;&#xe0;&#xe1;&#xe2;&#xe3;&#xe4;&#xe5;&#xe6;&#xe7;&#xe8;&#xe9;&#xea;&#xeb;&#xec;&#xed;&#xee;&#xef;&#xf0;&#xf1;&#xf2;&#xf3;&#xf4;&#xf5;&#xf6;&#xf7;&#xf8;&#xf9;&#xfa;&#xfb;&#xfc;&#xfd;&#xfe;&#xff;?"]}}
+      <br></br>2014-12-23 12:17:59,138 [HttpClient.java:197] Received response [400, 99 bytes] in 67 ms
+      <br></br>2014-12-23 12:17:59,138 [HttpClient.java:200] Received response body: Can't deserialize AggregateOneValueString.Aggregate1L1St. Error: Invalid char found: f. Example: 
+      <br></br>
+      <br></br><a id="testP1L1StWithinOneV1L1StNonDefault2PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1L1StWithinOneV1L1StNonDefault2PropertyValueInAggregateAfterActiveRecordPersist</h2>
+      <br></br>2014-12-23 12:17:59,143 [HttpClient.java:190] Sending request [POST]: Crud.svc/AggregateOneValueString.Aggregate1L1St, content size: 573 bytes
+      <br></br>2014-12-23 12:17:59,143 [HttpClient.java:370] POST http://localhost:2080/Crud.svc/AggregateOneValueString.Aggregate1L1St
+      <br></br>2014-12-23 12:17:59,143 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 12:17:59,144 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 12:17:59,144 [HttpClient.java:383] Adding payload: {"URI":"888517173","ID":0,"v1L1St":{"p1L1St":["\u0001\u0002\u0003\u0004\u0005\u0006\u0007\b\t\n\u000B\f\r\u000E\u000F\u0010\u0011\u0012\u0013\u0014\u0015\u0016\u0017\u0018\u0019\u001A\u001B\u001C\u001D\u001E\u001F !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~????????????????????????????????&#xa0;&#xa1;&#xa2;&#xa3;&#xa4;&#xa5;&#xa6;&#xa7;&#xa8;&#xa9;&#xaa;&#xab;&#xac;&#xad;&#xae;&#xaf;&#xb0;&#xb1;&#xb2;&#xb3;&#xb4;&#xb5;&#xb6;&#xb7;&#xb8;&#xb9;&#xba;&#xbb;&#xbc;&#xbd;&#xbe;&#xbf;&#xc0;&#xc1;&#xc2;&#xc3;&#xc4;&#xc5;&#xc6;&#xc7;&#xc8;&#xc9;&#xca;&#xcb;&#xcc;&#xcd;&#xce;&#xcf;&#xd0;&#xd1;&#xd2;&#xd3;&#xd4;&#xd5;&#xd6;&#xd7;&#xd8;&#xd9;&#xda;&#xdb;&#xdc;&#xdd;&#xde;&#xdf;&#xe0;&#xe1;&#xe2;&#xe3;&#xe4;&#xe5;&#xe6;&#xe7;&#xe8;&#xe9;&#xea;&#xeb;&#xec;&#xed;&#xee;&#xef;&#xf0;&#xf1;&#xf2;&#xf3;&#xf4;&#xf5;&#xf6;&#xf7;&#xf8;&#xf9;&#xfa;&#xfb;&#xfc;&#xfd;&#xfe;&#xff;?"]}}
+      <br></br>2014-12-23 12:17:59,146 [HttpClient.java:197] Received response [400, 99 bytes] in 4 ms
+      <br></br>2014-12-23 12:17:59,146 [HttpClient.java:200] Received response body: Can't deserialize AggregateOneValueString.Aggregate1L1St. Error: Invalid char found: f. Example: 
+      <br></br>
+      <br></br><a id="testP1L1StWithinOneV1L1StNonDefault1PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1L1StWithinOneV1L1StNonDefault1PropertyValueInAggregateAfterActiveRecordPersist</h2>
+      <br></br>2014-12-23 12:17:59,153 [HttpClient.java:190] Sending request [POST]: Crud.svc/AggregateOneValueString.Aggregate1L1St, content size: 51 bytes
+      <br></br>2014-12-23 12:17:59,153 [HttpClient.java:370] POST http://localhost:2080/Crud.svc/AggregateOneValueString.Aggregate1L1St
+      <br></br>2014-12-23 12:17:59,153 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 12:17:59,153 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 12:17:59,153 [HttpClient.java:383] Adding payload: {"URI":"174556421","ID":0,"v1L1St":{"p1L1St":[""]}}
+      <br></br>2014-12-23 12:17:59,196 [HttpClient.java:197] Received response [201, 49 bytes] in 44 ms
+      <br></br>2014-12-23 12:17:59,196 [HttpClient.java:200] Received response body: {"URI":"1053","ID":1053,"v1L1St":{"p1L1St":[""]}}
+      <br></br>2014-12-23 12:17:59,214 [HttpClient.java:179] Sending request [GET]: Crud.svc/AggregateOneValueString.Aggregate1L1St?uri=1053
+      <br></br>2014-12-23 12:17:59,214 [HttpClient.java:370] GET http://localhost:2080/Crud.svc/AggregateOneValueString.Aggregate1L1St?uri=1053
+      <br></br>2014-12-23 12:17:59,214 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 12:17:59,214 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 12:17:59,225 [HttpClient.java:197] Received response [200, 49 bytes] in 11 ms
+      <br></br>2014-12-23 12:17:59,225 [HttpClient.java:200] Received response body: {"URI":"1053","ID":1053,"v1L1St":{"p1L1St":[""]}}
+      <br></br><a id="testP1L1StWithinOneV1L1StNonDefault1PropertyInAggregateJsonSerialization"/><h2>testP1L1StWithinOneV1L1StNonDefault1PropertyInAggregateJsonSerialization</h2>
+      <br></br><a id="testP1L1StWithinOneV1L1StNonDefault2PropertyInAggregateJsonSerialization"/><h2>testP1L1StWithinOneV1L1StNonDefault2PropertyInAggregateJsonSerialization</h2>
+      <br></br><a id="testP1L1StWithinOneV1L1StNonDefault3PropertyInAggregateJsonSerialization"/><h2>testP1L1StWithinOneV1L1StNonDefault3PropertyInAggregateJsonSerialization</h2>
+      <br></br><a id="testP1L1StWithinOneV1L1StDefaultPropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1L1StWithinOneV1L1StDefaultPropertyValueInAggregateAfterActiveRecordPersist</h2>
+      <br></br>2014-12-23 12:17:59,240 [HttpClient.java:190] Sending request [POST]: Crud.svc/AggregateOneValueString.Aggregate1L1St, content size: 39 bytes
+      <br></br>2014-12-23 12:17:59,240 [HttpClient.java:370] POST http://localhost:2080/Crud.svc/AggregateOneValueString.Aggregate1L1St
+      <br></br>2014-12-23 12:17:59,243 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 12:17:59,243 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 12:17:59,243 [HttpClient.java:383] Adding payload: {"URI":"1789303660","ID":0,"v1L1St":{}}
+      <br></br>2014-12-23 12:17:59,256 [HttpClient.java:197] Received response [201, 47 bytes] in 17 ms
+      <br></br>2014-12-23 12:17:59,256 [HttpClient.java:200] Received response body: {"URI":"1054","ID":1054,"v1L1St":{"p1L1St":[]}}
+      <br></br>2014-12-23 12:17:59,258 [HttpClient.java:179] Sending request [GET]: Crud.svc/AggregateOneValueString.Aggregate1L1St?uri=1054
+      <br></br>2014-12-23 12:17:59,258 [HttpClient.java:370] GET http://localhost:2080/Crud.svc/AggregateOneValueString.Aggregate1L1St?uri=1054
+      <br></br>2014-12-23 12:17:59,258 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 12:17:59,258 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 12:17:59,259 [HttpClient.java:197] Received response [200, 47 bytes] in 1 ms
+      <br></br>2014-12-23 12:17:59,259 [HttpClient.java:200] Received response body: {"URI":"1054","ID":1054,"v1L1St":{"p1L1St":[]}}
+      <br></br><a id="testP1L1StWithinOneV1L1StDefaultPropertyInAggregateJsonSerialization"/><h2>testP1L1StWithinOneV1L1StDefaultPropertyInAggregateJsonSerialization</h2>
+      <br></br><a id="testP1S0StWithinOneV1S0StNonDefault5PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1S0StWithinOneV1S0StNonDefault5PropertyValueInAggregateAfterActiveRecordPersist</h2>
+      <br></br>2014-12-23 12:17:59,276 [HttpClient.java:190] Sending request [POST]: Crud.svc/AggregateOneValueString.Aggregate1S0St, content size: 655 bytes
+      <br></br>2014-12-23 12:17:59,276 [HttpClient.java:370] POST http://localhost:2080/Crud.svc/AggregateOneValueString.Aggregate1S0St
+      <br></br>2014-12-23 12:17:59,276 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 12:17:59,276 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 12:17:59,276 [HttpClient.java:383] Adding payload: {"URI":"2094346990","ID":0,"v1S0St":{"p1S0St":["\"","",null,"Quote: \", Solidus /, Backslash: \\, Aphos: ', Brackets: [] () {}","\u0001\u0002\u0003\u0004\u0005\u0006\u0007\b\t\n\u000B\f\r\u000E\u000F\u0010\u0011\u0012\u0013\u0014\u0015\u0016\u0017\u0018\u0019\u001A\u001B\u001C\u001D\u001E\u001F !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~????????????????????????????????&#xa0;&#xa1;&#xa2;&#xa3;&#xa4;&#xa5;&#xa6;&#xa7;&#xa8;&#xa9;&#xaa;&#xab;&#xac;&#xad;&#xae;&#xaf;&#xb0;&#xb1;&#xb2;&#xb3;&#xb4;&#xb5;&#xb6;&#xb7;&#xb8;&#xb9;&#xba;&#xbb;&#xbc;&#xbd;&#xbe;&#xbf;&#xc0;&#xc1;&#xc2;&#xc3;&#xc4;&#xc5;&#xc6;&#xc7;&#xc8;&#xc9;&#xca;&#xcb;&#xcc;&#xcd;&#xce;&#xcf;&#xd0;&#xd1;&#xd2;&#xd3;&#xd4;&#xd5;&#xd6;&#xd7;&#xd8;&#xd9;&#xda;&#xdb;&#xdc;&#xdd;&#xde;&#xdf;&#xe0;&#xe1;&#xe2;&#xe3;&#xe4;&#xe5;&#xe6;&#xe7;&#xe8;&#xe9;&#xea;&#xeb;&#xec;&#xed;&#xee;&#xef;&#xf0;&#xf1;&#xf2;&#xf3;&#xf4;&#xf5;&#xf6;&#xf7;&#xf8;&#xf9;&#xfa;&#xfb;&#xfc;&#xfd;&#xfe;&#xff;?"]}}
+      <br></br>2014-12-23 12:17:59,295 [HttpClient.java:197] Received response [400, 99 bytes] in 31 ms
+      <br></br>2014-12-23 12:17:59,295 [HttpClient.java:200] Received response body: Can't deserialize AggregateOneValueString.Aggregate1S0St. Error: Invalid char found: f. Example: 
+      <br></br>
+      <br></br><a id="testP1S0StWithinOneV1S0StNonDefault4PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1S0StWithinOneV1S0StNonDefault4PropertyValueInAggregateAfterActiveRecordPersist</h2>
+      <br></br>2014-12-23 12:17:59,298 [HttpClient.java:190] Sending request [POST]: Crud.svc/AggregateOneValueString.Aggregate1S0St, content size: 649 bytes
+      <br></br>2014-12-23 12:17:59,298 [HttpClient.java:370] POST http://localhost:2080/Crud.svc/AggregateOneValueString.Aggregate1S0St
+      <br></br>2014-12-23 12:17:59,298 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 12:17:59,298 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 12:17:59,298 [HttpClient.java:383] Adding payload: {"URI":"166226742","ID":0,"v1S0St":{"p1S0St":["\"","","Quote: \", Solidus /, Backslash: \\, Aphos: ', Brackets: [] () {}","\u0001\u0002\u0003\u0004\u0005\u0006\u0007\b\t\n\u000B\f\r\u000E\u000F\u0010\u0011\u0012\u0013\u0014\u0015\u0016\u0017\u0018\u0019\u001A\u001B\u001C\u001D\u001E\u001F !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~????????????????????????????????&#xa0;&#xa1;&#xa2;&#xa3;&#xa4;&#xa5;&#xa6;&#xa7;&#xa8;&#xa9;&#xaa;&#xab;&#xac;&#xad;&#xae;&#xaf;&#xb0;&#xb1;&#xb2;&#xb3;&#xb4;&#xb5;&#xb6;&#xb7;&#xb8;&#xb9;&#xba;&#xbb;&#xbc;&#xbd;&#xbe;&#xbf;&#xc0;&#xc1;&#xc2;&#xc3;&#xc4;&#xc5;&#xc6;&#xc7;&#xc8;&#xc9;&#xca;&#xcb;&#xcc;&#xcd;&#xce;&#xcf;&#xd0;&#xd1;&#xd2;&#xd3;&#xd4;&#xd5;&#xd6;&#xd7;&#xd8;&#xd9;&#xda;&#xdb;&#xdc;&#xdd;&#xde;&#xdf;&#xe0;&#xe1;&#xe2;&#xe3;&#xe4;&#xe5;&#xe6;&#xe7;&#xe8;&#xe9;&#xea;&#xeb;&#xec;&#xed;&#xee;&#xef;&#xf0;&#xf1;&#xf2;&#xf3;&#xf4;&#xf5;&#xf6;&#xf7;&#xf8;&#xf9;&#xfa;&#xfb;&#xfc;&#xfd;&#xfe;&#xff;?"]}}
+      <br></br>2014-12-23 12:17:59,302 [HttpClient.java:197] Received response [400, 99 bytes] in 5 ms
+      <br></br>2014-12-23 12:17:59,302 [HttpClient.java:200] Received response body: Can't deserialize AggregateOneValueString.Aggregate1S0St. Error: Invalid char found: f. Example: 
+      <br></br>
+      <br></br><a id="testP1S0StWithinOneV1S0StNonDefault4PropertyInAggregateJsonSerialization"/><h2>testP1S0StWithinOneV1S0StNonDefault4PropertyInAggregateJsonSerialization</h2>
+      <br></br><a id="testP1S0StWithinOneV1S0StNonDefault3PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1S0StWithinOneV1S0StNonDefault3PropertyValueInAggregateAfterActiveRecordPersist</h2>
+      <br></br>2014-12-23 12:17:59,348 [HttpClient.java:190] Sending request [POST]: Crud.svc/AggregateOneValueString.Aggregate1S0St, content size: 573 bytes
+      <br></br>2014-12-23 12:17:59,349 [HttpClient.java:370] POST http://localhost:2080/Crud.svc/AggregateOneValueString.Aggregate1S0St
+      <br></br>2014-12-23 12:17:59,349 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 12:17:59,349 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 12:17:59,349 [HttpClient.java:383] Adding payload: {"URI":"637896741","ID":0,"v1S0St":{"p1S0St":["\u0001\u0002\u0003\u0004\u0005\u0006\u0007\b\t\n\u000B\f\r\u000E\u000F\u0010\u0011\u0012\u0013\u0014\u0015\u0016\u0017\u0018\u0019\u001A\u001B\u001C\u001D\u001E\u001F !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~????????????????????????????????&#xa0;&#xa1;&#xa2;&#xa3;&#xa4;&#xa5;&#xa6;&#xa7;&#xa8;&#xa9;&#xaa;&#xab;&#xac;&#xad;&#xae;&#xaf;&#xb0;&#xb1;&#xb2;&#xb3;&#xb4;&#xb5;&#xb6;&#xb7;&#xb8;&#xb9;&#xba;&#xbb;&#xbc;&#xbd;&#xbe;&#xbf;&#xc0;&#xc1;&#xc2;&#xc3;&#xc4;&#xc5;&#xc6;&#xc7;&#xc8;&#xc9;&#xca;&#xcb;&#xcc;&#xcd;&#xce;&#xcf;&#xd0;&#xd1;&#xd2;&#xd3;&#xd4;&#xd5;&#xd6;&#xd7;&#xd8;&#xd9;&#xda;&#xdb;&#xdc;&#xdd;&#xde;&#xdf;&#xe0;&#xe1;&#xe2;&#xe3;&#xe4;&#xe5;&#xe6;&#xe7;&#xe8;&#xe9;&#xea;&#xeb;&#xec;&#xed;&#xee;&#xef;&#xf0;&#xf1;&#xf2;&#xf3;&#xf4;&#xf5;&#xf6;&#xf7;&#xf8;&#xf9;&#xfa;&#xfb;&#xfc;&#xfd;&#xfe;&#xff;?"]}}
+      <br></br>2014-12-23 12:17:59,356 [HttpClient.java:197] Received response [400, 99 bytes] in 9 ms
+      <br></br>2014-12-23 12:17:59,357 [HttpClient.java:200] Received response body: Can't deserialize AggregateOneValueString.Aggregate1S0St. Error: Invalid char found: f. Example: 
+      <br></br>
+      <br></br><a id="testP1S0StWithinOneV1S0StNonDefault2PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1S0StWithinOneV1S0StNonDefault2PropertyValueInAggregateAfterActiveRecordPersist</h2>
+      <br></br>2014-12-23 12:17:59,362 [HttpClient.java:190] Sending request [POST]: Crud.svc/AggregateOneValueString.Aggregate1S0St, content size: 51 bytes
+      <br></br>2014-12-23 12:17:59,363 [HttpClient.java:370] POST http://localhost:2080/Crud.svc/AggregateOneValueString.Aggregate1S0St
+      <br></br>2014-12-23 12:17:59,363 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 12:17:59,363 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 12:17:59,363 [HttpClient.java:383] Adding payload: {"URI":"979656882","ID":0,"v1S0St":{"p1S0St":[""]}}
+      <br></br>2014-12-23 12:17:59,405 [HttpClient.java:197] Received response [201, 49 bytes] in 45 ms
+      <br></br>2014-12-23 12:17:59,406 [HttpClient.java:200] Received response body: {"URI":"1082","ID":1082,"v1S0St":{"p1S0St":[""]}}
+      <br></br>2014-12-23 12:17:59,407 [HttpClient.java:179] Sending request [GET]: Crud.svc/AggregateOneValueString.Aggregate1S0St?uri=1082
+      <br></br>2014-12-23 12:17:59,407 [HttpClient.java:370] GET http://localhost:2080/Crud.svc/AggregateOneValueString.Aggregate1S0St?uri=1082
+      <br></br>2014-12-23 12:17:59,407 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 12:17:59,407 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 12:17:59,428 [HttpClient.java:197] Received response [200, 49 bytes] in 21 ms
+      <br></br>2014-12-23 12:17:59,428 [HttpClient.java:200] Received response body: {"URI":"1082","ID":1082,"v1S0St":{"p1S0St":[""]}}
+      <br></br><a id="testP1S0StWithinOneV1S0StNonDefault1PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1S0StWithinOneV1S0StNonDefault1PropertyValueInAggregateAfterActiveRecordPersist</h2>
+      <br></br>2014-12-23 12:17:59,432 [HttpClient.java:190] Sending request [POST]: Crud.svc/AggregateOneValueString.Aggregate1S0St, content size: 52 bytes
+      <br></br>2014-12-23 12:17:59,432 [HttpClient.java:370] POST http://localhost:2080/Crud.svc/AggregateOneValueString.Aggregate1S0St
+      <br></br>2014-12-23 12:17:59,432 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 12:17:59,432 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 12:17:59,432 [HttpClient.java:383] Adding payload: {"URI":"76386254","ID":0,"v1S0St":{"p1S0St":[null]}}
+      <br></br>2014-12-23 12:17:59,444 [HttpClient.java:197] Received response [201, 51 bytes] in 13 ms
+      <br></br>2014-12-23 12:17:59,446 [HttpClient.java:200] Received response body: {"URI":"1083","ID":1083,"v1S0St":{"p1S0St":[null]}}
+      <br></br>2014-12-23 12:17:59,447 [HttpClient.java:179] Sending request [GET]: Crud.svc/AggregateOneValueString.Aggregate1S0St?uri=1083
+      <br></br>2014-12-23 12:17:59,447 [HttpClient.java:370] GET http://localhost:2080/Crud.svc/AggregateOneValueString.Aggregate1S0St?uri=1083
+      <br></br>2014-12-23 12:17:59,447 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 12:17:59,447 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 12:17:59,449 [HttpClient.java:197] Received response [200, 51 bytes] in 2 ms
+      <br></br>2014-12-23 12:17:59,450 [HttpClient.java:200] Received response body: {"URI":"1083","ID":1083,"v1S0St":{"p1S0St":[null]}}
+      <br></br><a id="testP1S0StWithinOneV1S0StNonDefault5PropertyInAggregateJsonSerialization"/><h2>testP1S0StWithinOneV1S0StNonDefault5PropertyInAggregateJsonSerialization</h2>
+      <br></br><a id="testP1S0StWithinOneV1S0StDefaultPropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1S0StWithinOneV1S0StDefaultPropertyValueInAggregateAfterActiveRecordPersist</h2>
+      <br></br>2014-12-23 12:17:59,457 [HttpClient.java:190] Sending request [POST]: Crud.svc/AggregateOneValueString.Aggregate1S0St, content size: 39 bytes
+      <br></br>2014-12-23 12:17:59,457 [HttpClient.java:370] POST http://localhost:2080/Crud.svc/AggregateOneValueString.Aggregate1S0St
+      <br></br>2014-12-23 12:17:59,457 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 12:17:59,457 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 12:17:59,459 [HttpClient.java:383] Adding payload: {"URI":"1491087008","ID":0,"v1S0St":{}}
+      <br></br>2014-12-23 12:17:59,479 [HttpClient.java:197] Received response [201, 47 bytes] in 24 ms
+      <br></br>2014-12-23 12:17:59,479 [HttpClient.java:200] Received response body: {"URI":"1084","ID":1084,"v1S0St":{"p1S0St":[]}}
+      <br></br>2014-12-23 12:17:59,479 [HttpClient.java:179] Sending request [GET]: Crud.svc/AggregateOneValueString.Aggregate1S0St?uri=1084
+      <br></br>2014-12-23 12:17:59,479 [HttpClient.java:370] GET http://localhost:2080/Crud.svc/AggregateOneValueString.Aggregate1S0St?uri=1084
+      <br></br>2014-12-23 12:17:59,480 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 12:17:59,480 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 12:17:59,498 [HttpClient.java:197] Received response [200, 47 bytes] in 19 ms
+      <br></br>2014-12-23 12:17:59,498 [HttpClient.java:200] Received response body: {"URI":"1084","ID":1084,"v1S0St":{"p1S0St":[]}}
+      <br></br><a id="testP1S0StWithinOneV1S0StDefaultPropertyInAggregateJsonSerialization"/><h2>testP1S0StWithinOneV1S0StDefaultPropertyInAggregateJsonSerialization</h2>
+      <br></br><a id="testP1S0StWithinOneV1S0StNonDefault1PropertyInAggregateJsonSerialization"/><h2>testP1S0StWithinOneV1S0StNonDefault1PropertyInAggregateJsonSerialization</h2>
+      <br></br><a id="testP1S0StWithinOneV1S0StNonDefault2PropertyInAggregateJsonSerialization"/><h2>testP1S0StWithinOneV1S0StNonDefault2PropertyInAggregateJsonSerialization</h2>
+      <br></br><a id="testP1S0StWithinOneV1S0StNonDefault3PropertyInAggregateJsonSerialization"/><h2>testP1S0StWithinOneV1S0StNonDefault3PropertyInAggregateJsonSerialization</h2>
+      <br></br><a id="testP1S1StWithinOneV1S1StNonDefault1PropertyInAggregateJsonSerialization"/><h2>testP1S1StWithinOneV1S1StNonDefault1PropertyInAggregateJsonSerialization</h2>
+      <br></br><a id="testP1S1StWithinOneV1S1StNonDefault2PropertyInAggregateJsonSerialization"/><h2>testP1S1StWithinOneV1S1StNonDefault2PropertyInAggregateJsonSerialization</h2>
+      <br></br><a id="testP1S1StWithinOneV1S1StNonDefault3PropertyInAggregateJsonSerialization"/><h2>testP1S1StWithinOneV1S1StNonDefault3PropertyInAggregateJsonSerialization</h2>
+      <br></br><a id="testP1S1StWithinOneV1S1StDefaultPropertyInAggregateJsonSerialization"/><h2>testP1S1StWithinOneV1S1StDefaultPropertyInAggregateJsonSerialization</h2>
+      <br></br><a id="testP1S1StWithinOneV1S1StNonDefault3PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1S1StWithinOneV1S1StNonDefault3PropertyValueInAggregateAfterActiveRecordPersist</h2>
+      <br></br>2014-12-23 12:17:59,568 [HttpClient.java:190] Sending request [POST]: Crud.svc/AggregateOneValueString.Aggregate1S1St, content size: 650 bytes
+      <br></br>2014-12-23 12:17:59,568 [HttpClient.java:370] POST http://localhost:2080/Crud.svc/AggregateOneValueString.Aggregate1S1St
+      <br></br>2014-12-23 12:17:59,568 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 12:17:59,568 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 12:17:59,568 [HttpClient.java:383] Adding payload: {"URI":"2020914503","ID":0,"v1S1St":{"p1S1St":["\"","","Quote: \", Solidus /, Backslash: \\, Aphos: ', Brackets: [] () {}","\u0001\u0002\u0003\u0004\u0005\u0006\u0007\b\t\n\u000B\f\r\u000E\u000F\u0010\u0011\u0012\u0013\u0014\u0015\u0016\u0017\u0018\u0019\u001A\u001B\u001C\u001D\u001E\u001F !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~????????????????????????????????&#xa0;&#xa1;&#xa2;&#xa3;&#xa4;&#xa5;&#xa6;&#xa7;&#xa8;&#xa9;&#xaa;&#xab;&#xac;&#xad;&#xae;&#xaf;&#xb0;&#xb1;&#xb2;&#xb3;&#xb4;&#xb5;&#xb6;&#xb7;&#xb8;&#xb9;&#xba;&#xbb;&#xbc;&#xbd;&#xbe;&#xbf;&#xc0;&#xc1;&#xc2;&#xc3;&#xc4;&#xc5;&#xc6;&#xc7;&#xc8;&#xc9;&#xca;&#xcb;&#xcc;&#xcd;&#xce;&#xcf;&#xd0;&#xd1;&#xd2;&#xd3;&#xd4;&#xd5;&#xd6;&#xd7;&#xd8;&#xd9;&#xda;&#xdb;&#xdc;&#xdd;&#xde;&#xdf;&#xe0;&#xe1;&#xe2;&#xe3;&#xe4;&#xe5;&#xe6;&#xe7;&#xe8;&#xe9;&#xea;&#xeb;&#xec;&#xed;&#xee;&#xef;&#xf0;&#xf1;&#xf2;&#xf3;&#xf4;&#xf5;&#xf6;&#xf7;&#xf8;&#xf9;&#xfa;&#xfb;&#xfc;&#xfd;&#xfe;&#xff;?"]}}
+      <br></br>2014-12-23 12:17:59,587 [HttpClient.java:197] Received response [400, 99 bytes] in 24 ms
+      <br></br>2014-12-23 12:17:59,587 [HttpClient.java:200] Received response body: Can't deserialize AggregateOneValueString.Aggregate1S1St. Error: Invalid char found: f. Example: 
+      <br></br>
+      <br></br><a id="testP1S1StWithinOneV1S1StNonDefault2PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1S1StWithinOneV1S1StNonDefault2PropertyValueInAggregateAfterActiveRecordPersist</h2>
+      <br></br>2014-12-23 12:17:59,590 [HttpClient.java:190] Sending request [POST]: Crud.svc/AggregateOneValueString.Aggregate1S1St, content size: 573 bytes
+      <br></br>2014-12-23 12:17:59,590 [HttpClient.java:370] POST http://localhost:2080/Crud.svc/AggregateOneValueString.Aggregate1S1St
+      <br></br>2014-12-23 12:17:59,591 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 12:17:59,591 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 12:17:59,591 [HttpClient.java:383] Adding payload: {"URI":"708426550","ID":0,"v1S1St":{"p1S1St":["\u0001\u0002\u0003\u0004\u0005\u0006\u0007\b\t\n\u000B\f\r\u000E\u000F\u0010\u0011\u0012\u0013\u0014\u0015\u0016\u0017\u0018\u0019\u001A\u001B\u001C\u001D\u001E\u001F !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~????????????????????????????????&#xa0;&#xa1;&#xa2;&#xa3;&#xa4;&#xa5;&#xa6;&#xa7;&#xa8;&#xa9;&#xaa;&#xab;&#xac;&#xad;&#xae;&#xaf;&#xb0;&#xb1;&#xb2;&#xb3;&#xb4;&#xb5;&#xb6;&#xb7;&#xb8;&#xb9;&#xba;&#xbb;&#xbc;&#xbd;&#xbe;&#xbf;&#xc0;&#xc1;&#xc2;&#xc3;&#xc4;&#xc5;&#xc6;&#xc7;&#xc8;&#xc9;&#xca;&#xcb;&#xcc;&#xcd;&#xce;&#xcf;&#xd0;&#xd1;&#xd2;&#xd3;&#xd4;&#xd5;&#xd6;&#xd7;&#xd8;&#xd9;&#xda;&#xdb;&#xdc;&#xdd;&#xde;&#xdf;&#xe0;&#xe1;&#xe2;&#xe3;&#xe4;&#xe5;&#xe6;&#xe7;&#xe8;&#xe9;&#xea;&#xeb;&#xec;&#xed;&#xee;&#xef;&#xf0;&#xf1;&#xf2;&#xf3;&#xf4;&#xf5;&#xf6;&#xf7;&#xf8;&#xf9;&#xfa;&#xfb;&#xfc;&#xfd;&#xfe;&#xff;?"]}}
+      <br></br>2014-12-23 12:17:59,594 [HttpClient.java:197] Received response [400, 99 bytes] in 5 ms
+      <br></br>2014-12-23 12:17:59,594 [HttpClient.java:200] Received response body: Can't deserialize AggregateOneValueString.Aggregate1S1St. Error: Invalid char found: f. Example: 
+      <br></br>
+      <br></br><a id="testP1S1StWithinOneV1S1StNonDefault1PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1S1StWithinOneV1S1StNonDefault1PropertyValueInAggregateAfterActiveRecordPersist</h2>
+      <br></br>2014-12-23 12:17:59,599 [HttpClient.java:190] Sending request [POST]: Crud.svc/AggregateOneValueString.Aggregate1S1St, content size: 51 bytes
+      <br></br>2014-12-23 12:17:59,599 [HttpClient.java:370] POST http://localhost:2080/Crud.svc/AggregateOneValueString.Aggregate1S1St
+      <br></br>2014-12-23 12:17:59,599 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 12:17:59,599 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 12:17:59,599 [HttpClient.java:383] Adding payload: {"URI":"460057627","ID":0,"v1S1St":{"p1S1St":[""]}}
+      <br></br>2014-12-23 12:17:59,646 [HttpClient.java:197] Received response [201, 49 bytes] in 48 ms
+      <br></br>2014-12-23 12:17:59,646 [HttpClient.java:200] Received response body: {"URI":"1055","ID":1055,"v1S1St":{"p1S1St":[""]}}
+      <br></br>2014-12-23 12:17:59,647 [HttpClient.java:179] Sending request [GET]: Crud.svc/AggregateOneValueString.Aggregate1S1St?uri=1055
+      <br></br>2014-12-23 12:17:59,647 [HttpClient.java:370] GET http://localhost:2080/Crud.svc/AggregateOneValueString.Aggregate1S1St?uri=1055
+      <br></br>2014-12-23 12:17:59,647 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 12:17:59,647 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 12:17:59,659 [HttpClient.java:197] Received response [200, 49 bytes] in 12 ms
+      <br></br>2014-12-23 12:17:59,659 [HttpClient.java:200] Received response body: {"URI":"1055","ID":1055,"v1S1St":{"p1S1St":[""]}}
+      <br></br><a id="testP1S1StWithinOneV1S1StDefaultPropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1S1StWithinOneV1S1StDefaultPropertyValueInAggregateAfterActiveRecordPersist</h2>
+      <br></br>2014-12-23 12:17:59,663 [HttpClient.java:190] Sending request [POST]: Crud.svc/AggregateOneValueString.Aggregate1S1St, content size: 39 bytes
+      <br></br>2014-12-23 12:17:59,663 [HttpClient.java:370] POST http://localhost:2080/Crud.svc/AggregateOneValueString.Aggregate1S1St
+      <br></br>2014-12-23 12:17:59,663 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 12:17:59,663 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 12:17:59,663 [HttpClient.java:383] Adding payload: {"URI":"1025675594","ID":0,"v1S1St":{}}
+      <br></br>2014-12-23 12:18:00,231 [HttpClient.java:197] Received response [201, 47 bytes] in 568 ms
+      <br></br>2014-12-23 12:18:00,231 [HttpClient.java:200] Received response body: {"URI":"1056","ID":1056,"v1S1St":{"p1S1St":[]}}
+      <br></br>2014-12-23 12:18:00,232 [HttpClient.java:179] Sending request [GET]: Crud.svc/AggregateOneValueString.Aggregate1S1St?uri=1056
+      <br></br>2014-12-23 12:18:00,232 [HttpClient.java:370] GET http://localhost:2080/Crud.svc/AggregateOneValueString.Aggregate1S1St?uri=1056
+      <br></br>2014-12-23 12:18:00,232 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 12:18:00,232 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 12:18:00,235 [HttpClient.java:197] Received response [200, 47 bytes] in 3 ms
+      <br></br>2014-12-23 12:18:00,235 [HttpClient.java:200] Received response body: {"URI":"1056","ID":1056,"v1S1St":{"p1S1St":[]}}
+      <br></br><a id="testP1StWithinOneV1StNonDefault1PropertyInAggregateJsonSerialization"/><h2>testP1StWithinOneV1StNonDefault1PropertyInAggregateJsonSerialization</h2>
+      <br></br><a id="testP1StWithinOneV1StDefaultPropertyInAggregateJsonSerialization"/><h2>testP1StWithinOneV1StDefaultPropertyInAggregateJsonSerialization</h2>
+      <br></br><a id="testP1StWithinOneV1StNonDefault2PropertyInAggregateJsonSerialization"/><h2>testP1StWithinOneV1StNonDefault2PropertyInAggregateJsonSerialization</h2>
+      <br></br><a id="testP1StWithinOneV1StNonDefault3PropertyInAggregateJsonSerialization"/><h2>testP1StWithinOneV1StNonDefault3PropertyInAggregateJsonSerialization</h2>
+      <br></br><a id="testP1StWithinOneV1StDefaultPropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1StWithinOneV1StDefaultPropertyValueInAggregateAfterActiveRecordPersist</h2>
+      <br></br>2014-12-23 12:18:00,255 [HttpClient.java:190] Sending request [POST]: Crud.svc/AggregateOneValueString.Aggregate1St, content size: 37 bytes
+      <br></br>2014-12-23 12:18:00,255 [HttpClient.java:370] POST http://localhost:2080/Crud.svc/AggregateOneValueString.Aggregate1St
+      <br></br>2014-12-23 12:18:00,256 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 12:18:00,256 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 12:18:00,256 [HttpClient.java:383] Adding payload: {"URI":"1459376274","ID":0,"v1St":{}}
+      <br></br>2014-12-23 12:18:00,488 [HttpClient.java:197] Received response [201, 43 bytes] in 238 ms
+      <br></br>2014-12-23 12:18:00,488 [HttpClient.java:200] Received response body: {"URI":"1080","ID":1080,"v1St":{"p1St":""}}
+      <br></br>2014-12-23 12:18:00,490 [HttpClient.java:179] Sending request [GET]: Crud.svc/AggregateOneValueString.Aggregate1St?uri=1080
+      <br></br>2014-12-23 12:18:00,491 [HttpClient.java:370] GET http://localhost:2080/Crud.svc/AggregateOneValueString.Aggregate1St?uri=1080
+      <br></br>2014-12-23 12:18:00,491 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 12:18:00,491 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 12:18:00,518 [HttpClient.java:197] Received response [200, 43 bytes] in 28 ms
+      <br></br>2014-12-23 12:18:00,518 [HttpClient.java:200] Received response body: {"URI":"1080","ID":1080,"v1St":{"p1St":""}}
+      <br></br><a id="testP1StWithinOneV1StNonDefault3PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1StWithinOneV1StNonDefault3PropertyValueInAggregateAfterActiveRecordPersist</h2>
+      <br></br>2014-12-23 12:18:00,551 [HttpClient.java:190] Sending request [POST]: Crud.svc/AggregateOneValueString.Aggregate1St, content size: 568 bytes
+      <br></br>2014-12-23 12:18:00,551 [HttpClient.java:370] POST http://localhost:2080/Crud.svc/AggregateOneValueString.Aggregate1St
+      <br></br>2014-12-23 12:18:00,551 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 12:18:00,551 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 12:18:00,551 [HttpClient.java:383] Adding payload: {"URI":"1280011652","ID":0,"v1St":{"p1St":"\u0001\u0002\u0003\u0004\u0005\u0006\u0007\b\t\n\u000B\f\r\u000E\u000F\u0010\u0011\u0012\u0013\u0014\u0015\u0016\u0017\u0018\u0019\u001A\u001B\u001C\u001D\u001E\u001F !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~????????????????????????????????&#xa0;&#xa1;&#xa2;&#xa3;&#xa4;&#xa5;&#xa6;&#xa7;&#xa8;&#xa9;&#xaa;&#xab;&#xac;&#xad;&#xae;&#xaf;&#xb0;&#xb1;&#xb2;&#xb3;&#xb4;&#xb5;&#xb6;&#xb7;&#xb8;&#xb9;&#xba;&#xbb;&#xbc;&#xbd;&#xbe;&#xbf;&#xc0;&#xc1;&#xc2;&#xc3;&#xc4;&#xc5;&#xc6;&#xc7;&#xc8;&#xc9;&#xca;&#xcb;&#xcc;&#xcd;&#xce;&#xcf;&#xd0;&#xd1;&#xd2;&#xd3;&#xd4;&#xd5;&#xd6;&#xd7;&#xd8;&#xd9;&#xda;&#xdb;&#xdc;&#xdd;&#xde;&#xdf;&#xe0;&#xe1;&#xe2;&#xe3;&#xe4;&#xe5;&#xe6;&#xe7;&#xe8;&#xe9;&#xea;&#xeb;&#xec;&#xed;&#xee;&#xef;&#xf0;&#xf1;&#xf2;&#xf3;&#xf4;&#xf5;&#xf6;&#xf7;&#xf8;&#xf9;&#xfa;&#xfb;&#xfc;&#xfd;&#xfe;&#xff;?"}}
+      <br></br>2014-12-23 12:18:00,555 [HttpClient.java:197] Received response [400, 97 bytes] in 5 ms
+      <br></br>2014-12-23 12:18:00,555 [HttpClient.java:200] Received response body: Can't deserialize AggregateOneValueString.Aggregate1St. Error: Invalid char found: f. Example: 
+      <br></br>
+      <br></br><a id="testP1StWithinOneV1StNonDefault2PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1StWithinOneV1StNonDefault2PropertyValueInAggregateAfterActiveRecordPersist</h2>
+      <br></br>2014-12-23 12:18:00,557 [HttpClient.java:190] Sending request [POST]: Crud.svc/AggregateOneValueString.Aggregate1St, content size: 111 bytes
+      <br></br>2014-12-23 12:18:00,557 [HttpClient.java:370] POST http://localhost:2080/Crud.svc/AggregateOneValueString.Aggregate1St
+      <br></br>2014-12-23 12:18:00,557 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 12:18:00,557 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 12:18:00,557 [HttpClient.java:383] Adding payload: {"URI":"1744604421","ID":0,"v1St":{"p1St":"Quote: \", Solidus /, Backslash: \\, Aphos: ', Brackets: [] () {}"}}
+      <br></br>2014-12-23 12:18:00,760 [HttpClient.java:197] Received response [201, 108 bytes] in 203 ms
+      <br></br>2014-12-23 12:18:00,761 [HttpClient.java:200] Received response body: {"URI":"1081","ID":1081,"v1St":{"p1St":"Quote: \", Solidus /, Backslash: \\, Aphos: ', Brackets: [] () {}"}}
+      <br></br>2014-12-23 12:18:00,762 [HttpClient.java:179] Sending request [GET]: Crud.svc/AggregateOneValueString.Aggregate1St?uri=1081
+      <br></br>2014-12-23 12:18:00,762 [HttpClient.java:370] GET http://localhost:2080/Crud.svc/AggregateOneValueString.Aggregate1St?uri=1081
+      <br></br>2014-12-23 12:18:00,762 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 12:18:00,762 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 12:18:00,764 [HttpClient.java:197] Received response [200, 108 bytes] in 2 ms
+      <br></br>2014-12-23 12:18:00,765 [HttpClient.java:200] Received response body: {"URI":"1081","ID":1081,"v1St":{"p1St":"Quote: \", Solidus /, Backslash: \\, Aphos: ', Brackets: [] () {}"}}
+      <br></br><a id="testP1StWithinOneV1StNonDefault1PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1StWithinOneV1StNonDefault1PropertyValueInAggregateAfterActiveRecordPersist</h2>
+      <br></br>2014-12-23 12:18:00,766 [HttpClient.java:190] Sending request [POST]: Crud.svc/AggregateOneValueString.Aggregate1St, content size: 48 bytes
+      <br></br>2014-12-23 12:18:00,766 [HttpClient.java:370] POST http://localhost:2080/Crud.svc/AggregateOneValueString.Aggregate1St
+      <br></br>2014-12-23 12:18:00,766 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 12:18:00,766 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 12:18:00,767 [HttpClient.java:383] Adding payload: {"URI":"1552908147","ID":0,"v1St":{"p1St":"\""}}
+      <br></br>2014-12-23 12:18:00,804 [HttpClient.java:197] Received response [201, 45 bytes] in 39 ms
+      <br></br>2014-12-23 12:18:00,804 [HttpClient.java:200] Received response body: {"URI":"1082","ID":1082,"v1St":{"p1St":"\""}}
+      <br></br>2014-12-23 12:18:00,807 [HttpClient.java:179] Sending request [GET]: Crud.svc/AggregateOneValueString.Aggregate1St?uri=1082
+      <br></br>2014-12-23 12:18:00,808 [HttpClient.java:370] GET http://localhost:2080/Crud.svc/AggregateOneValueString.Aggregate1St?uri=1082
+      <br></br>2014-12-23 12:18:00,809 [HttpClient.java:377] Accept: [application/json]
+      <br></br>2014-12-23 12:18:00,809 [HttpClient.java:377] Content-Type: [application/json]
+      <br></br>2014-12-23 12:18:00,812 [HttpClient.java:197] Received response [200, 45 bytes] in 5 ms
+      <br></br>2014-12-23 12:18:00,812 [HttpClient.java:200] Received response body: {"URI":"1082","ID":1082,"v1St":{"p1St":"\""}}
+      <br></br>
+   </body>
+</html>

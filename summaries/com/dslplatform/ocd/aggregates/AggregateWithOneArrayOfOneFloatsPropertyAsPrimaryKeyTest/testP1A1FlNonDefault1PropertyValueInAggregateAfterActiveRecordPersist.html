@@ -23,7 +23,7 @@
             <tr>
                <td>testP1A1FlNonDefault1PropertyValueInAggregateAfterActiveRecordPersist</td>
                <td>Failed</td>
-               <td>0.016</td>
+               <td>0.004</td>
             </tr>
          </table>
          <h2>Errors:</h2>
@@ -37,7 +37,7 @@
                <td>
                   <code>java.util.concurrent.ExecutionException: com.fasterxml.jackson.databind.JsonMappingException:
                      Non-standard token 'NaN': enable JsonParser.Feature.ALLOW_NON_NUMERIC_NUMBERS to allow
-                     at [Source: [B@60fa1f2f; line: 1, column: 126] (through reference chain: java.util.ArrayList[0]-&gt;float[][4])
+                     at [Source: [B@4ad1511c; line: 1, column: 126] (through reference chain: java.util.ArrayList[0]-&gt;float[][4])
                   </code>
                </td>
             </tr>
@@ -45,15 +45,15 @@
                <td>Text:</td>
                <td>
                   <code>java.io.IOException: java.util.concurrent.ExecutionException: com.fasterxml.jackson.databind.JsonMappingException: Non-standard token 'NaN': enable JsonParser.Feature.ALLOW_NON_NUMERIC_NUMBERS to allow
-                     <br></br> at [Source: [B@60fa1f2f; line: 1, column: 126] (through reference chain: java.util.ArrayList[0]->float[][4])
+                     <br></br> at [Source: [B@4ad1511c; line: 1, column: 126] (through reference chain: java.util.ArrayList[0]->float[][4])
                      <br></br>	at com.dslplatform.ocd.aggregates.AggregateWithOneArrayOfOneFloatsPropertyAsPrimaryKeyTest.cleanup(Unknown Source)
                      <br></br>	at com.dslplatform.ocd.aggregates.AggregateWithOneArrayOfOneFloatsPropertyAsPrimaryKeyTest.testP1A1FlNonDefault1PropertyValueInAggregateAfterActiveRecordPersist(Unknown Source)
                      <br></br>Caused by: java.util.concurrent.ExecutionException: com.fasterxml.jackson.databind.JsonMappingException: Non-standard token 'NaN': enable JsonParser.Feature.ALLOW_NON_NUMERIC_NUMBERS to allow
-                     <br></br> at [Source: [B@60fa1f2f; line: 1, column: 126] (through reference chain: java.util.ArrayList[0]->float[][4])
+                     <br></br> at [Source: [B@4ad1511c; line: 1, column: 126] (through reference chain: java.util.ArrayList[0]->float[][4])
                      <br></br>	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
                      <br></br>	at java.util.concurrent.FutureTask.get(FutureTask.java:188)
                      <br></br>Caused by: com.fasterxml.jackson.databind.JsonMappingException: Non-standard token 'NaN': enable JsonParser.Feature.ALLOW_NON_NUMERIC_NUMBERS to allow
-                     <br></br> at [Source: [B@60fa1f2f; line: 1, column: 126] (through reference chain: java.util.ArrayList[0]->float[][4])
+                     <br></br> at [Source: [B@4ad1511c; line: 1, column: 126] (through reference chain: java.util.ArrayList[0]->float[][4])
                      <br></br>	at com.fasterxml.jackson.databind.JsonMappingException.wrapWithPath(JsonMappingException.java:210)
                      <br></br>	at com.fasterxml.jackson.databind.JsonMappingException.wrapWithPath(JsonMappingException.java:189)
                      <br></br>	at com.fasterxml.jackson.databind.deser.std.PrimitiveArrayDeserializers$FloatDeser.deserialize(PrimitiveArrayDeserializers.java:470)
@@ -76,7 +76,7 @@
                      <br></br>	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
                      <br></br>	at java.lang.Thread.run(Thread.java:745)
                      <br></br>Caused by: com.fasterxml.jackson.core.JsonParseException: Non-standard token 'NaN': enable JsonParser.Feature.ALLOW_NON_NUMERIC_NUMBERS to allow
-                     <br></br> at [Source: [B@60fa1f2f; line: 1, column: 126]
+                     <br></br> at [Source: [B@4ad1511c; line: 1, column: 126]
                      <br></br>	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:1419)
                      <br></br>	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:508)
                      <br></br>	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._handleUnexpectedValue(UTF8StreamJsonParser.java:2341)

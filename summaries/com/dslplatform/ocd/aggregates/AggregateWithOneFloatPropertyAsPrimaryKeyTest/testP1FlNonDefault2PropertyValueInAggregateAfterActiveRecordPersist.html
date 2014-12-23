@@ -23,7 +23,7 @@
             <tr>
                <td>testP1FlNonDefault2PropertyValueInAggregateAfterActiveRecordPersist</td>
                <td>Failed</td>
-               <td>0.0</td>
+               <td>0.007</td>
             </tr>
          </table>
          <h2>Errors:</h2>
@@ -38,7 +38,7 @@
                   <code>java.util.concurrent.ExecutionException: com.fasterxml.jackson.databind.JsonMappingException:
                      Non-standard token 'Infinity': enable JsonParser.Feature.ALLOW_NON_NUMERIC_NUMBERS
                      to allow
-                     at [Source: [B@747eea52; line: 1, column: 35] (through reference chain: java.util.ArrayList[0])
+                     at [Source: [B@36243322; line: 1, column: 35] (through reference chain: java.util.ArrayList[0])
                   </code>
                </td>
             </tr>
@@ -46,15 +46,15 @@
                <td>Text:</td>
                <td>
                   <code>java.io.IOException: java.util.concurrent.ExecutionException: com.fasterxml.jackson.databind.JsonMappingException: Non-standard token 'Infinity': enable JsonParser.Feature.ALLOW_NON_NUMERIC_NUMBERS to allow
-                     <br></br> at [Source: [B@747eea52; line: 1, column: 35] (through reference chain: java.util.ArrayList[0])
+                     <br></br> at [Source: [B@36243322; line: 1, column: 35] (through reference chain: java.util.ArrayList[0])
                      <br></br>	at com.dslplatform.ocd.aggregates.AggregateWithOneFloatPropertyAsPrimaryKeyTest.cleanup(Unknown Source)
                      <br></br>	at com.dslplatform.ocd.aggregates.AggregateWithOneFloatPropertyAsPrimaryKeyTest.testP1FlNonDefault2PropertyValueInAggregateAfterActiveRecordPersist(Unknown Source)
                      <br></br>Caused by: java.util.concurrent.ExecutionException: com.fasterxml.jackson.databind.JsonMappingException: Non-standard token 'Infinity': enable JsonParser.Feature.ALLOW_NON_NUMERIC_NUMBERS to allow
-                     <br></br> at [Source: [B@747eea52; line: 1, column: 35] (through reference chain: java.util.ArrayList[0])
+                     <br></br> at [Source: [B@36243322; line: 1, column: 35] (through reference chain: java.util.ArrayList[0])
                      <br></br>	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
                      <br></br>	at java.util.concurrent.FutureTask.get(FutureTask.java:188)
                      <br></br>Caused by: com.fasterxml.jackson.databind.JsonMappingException: Non-standard token 'Infinity': enable JsonParser.Feature.ALLOW_NON_NUMERIC_NUMBERS to allow
-                     <br></br> at [Source: [B@747eea52; line: 1, column: 35] (through reference chain: java.util.ArrayList[0])
+                     <br></br> at [Source: [B@36243322; line: 1, column: 35] (through reference chain: java.util.ArrayList[0])
                      <br></br>	at com.fasterxml.jackson.databind.JsonMappingException.wrapWithPath(JsonMappingException.java:210)
                      <br></br>	at com.fasterxml.jackson.databind.JsonMappingException.wrapWithPath(JsonMappingException.java:189)
                      <br></br>	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:249)
@@ -70,7 +70,7 @@
                      <br></br>	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
                      <br></br>	at java.lang.Thread.run(Thread.java:745)
                      <br></br>Caused by: com.fasterxml.jackson.core.JsonParseException: Non-standard token 'Infinity': enable JsonParser.Feature.ALLOW_NON_NUMERIC_NUMBERS to allow
-                     <br></br> at [Source: [B@747eea52; line: 1, column: 35]
+                     <br></br> at [Source: [B@36243322; line: 1, column: 35]
                      <br></br>	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:1419)
                      <br></br>	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:508)
                      <br></br>	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._handleUnexpectedValue(UTF8StreamJsonParser.java:2348)
