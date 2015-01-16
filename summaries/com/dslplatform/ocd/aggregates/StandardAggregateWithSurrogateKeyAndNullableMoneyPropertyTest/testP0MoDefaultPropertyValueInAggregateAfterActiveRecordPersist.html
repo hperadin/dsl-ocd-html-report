@@ -22,8 +22,32 @@
             </tr>
             <tr>
                <td>testP0MoDefaultPropertyValueInAggregateAfterActiveRecordPersist</td>
-               <td>Success</td>
-               <td>0.031</td>
+               <td>Failed</td>
+               <td>0.015</td>
+            </tr>
+         </table>
+         <h2>Errors:</h2>
+         <table class="table" style="width: 1500px">
+            <tr>
+               <td>Type:</td>
+               <td>java.lang.AssertionError</td>
+            </tr>
+            <tr>
+               <td>Message:</td>
+               <td>
+                  <code>NullableMoney mismatch: expected was &lt;null&gt;, but actual was "10000000000000000000.00"</code>
+               </td>
+            </tr>
+            <tr>
+               <td>Text:</td>
+               <td>
+                  <code>java.lang.AssertionError: NullableMoney mismatch: expected was <null>, but actual was "10000000000000000000.00"
+                     <br></br>	at com.dslplatform.ocd.javaasserts.MoneyAsserts.assertNullableEquals(MoneyAsserts.java:38)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.MoneyAsserts.assertNullableEquals(MoneyAsserts.java:44)
+                     <br></br>	at com.dslplatform.ocd.aggregates.StandardAggregateWithSurrogateKeyAndNullableMoneyPropertyTest.testP0MoDefaultPropertyValueInAggregateAfterActiveRecordPersist(Unknown Source)
+                     <br></br>
+                  </code>
+               </td>
             </tr>
          </table>
       </div>

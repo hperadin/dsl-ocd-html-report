@@ -22,8 +22,35 @@
             </tr>
             <tr>
                <td>testP1S0LoNonDefault3PropertyValueInAggregateAfterActiveRecordPersist</td>
-               <td>Success</td>
-               <td>0.016</td>
+               <td>Failed</td>
+               <td>0.031</td>
+            </tr>
+         </table>
+         <h2>Errors:</h2>
+         <table class="table" style="width: 1500px">
+            <tr>
+               <td>Type:</td>
+               <td>java.lang.AssertionError</td>
+            </tr>
+            <tr>
+               <td>Message:</td>
+               <td>
+                  <code>OneSetOfNullableLong mismatch: expecteds was a set of size 1, but actuals was a set
+                     of size 7
+                  </code>
+               </td>
+            </tr>
+            <tr>
+               <td>Text:</td>
+               <td>
+                  <code>java.lang.AssertionError: OneSetOfNullableLong mismatch: expecteds was a set of size 1, but actuals was a set of size 7
+                     <br></br>	at com.dslplatform.ocd.javaasserts.LongAsserts.assertSetOfNullableEquals(LongAsserts.java:225)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.LongAsserts.assertOneSetOfNullableEquals(LongAsserts.java:239)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.LongAsserts.assertOneSetOfNullableEquals(LongAsserts.java:243)
+                     <br></br>	at com.dslplatform.ocd.aggregates.GuidAggregateWithSurrogateKeyAndOneSetOfNullableLongsPropertyTest.testP1S0LoNonDefault3PropertyValueInAggregateAfterActiveRecordPersist(Unknown Source)
+                     <br></br>
+                  </code>
+               </td>
             </tr>
          </table>
       </div>

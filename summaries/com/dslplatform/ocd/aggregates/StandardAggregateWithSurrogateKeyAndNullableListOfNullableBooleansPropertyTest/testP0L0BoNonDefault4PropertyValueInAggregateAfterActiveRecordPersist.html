@@ -22,8 +22,34 @@
             </tr>
             <tr>
                <td>testP0L0BoNonDefault4PropertyValueInAggregateAfterActiveRecordPersist</td>
-               <td>Success</td>
-               <td>0.016</td>
+               <td>Failed</td>
+               <td>0.015</td>
+            </tr>
+         </table>
+         <h2>Errors:</h2>
+         <table class="table" style="width: 1500px">
+            <tr>
+               <td>Type:</td>
+               <td>java.lang.AssertionError</td>
+            </tr>
+            <tr>
+               <td>Message:</td>
+               <td>
+                  <code>NullableListOfNullableBoolean mismatch:  expecteds was a list of size 2, but actuals
+                     was &lt;null&gt;
+                  </code>
+               </td>
+            </tr>
+            <tr>
+               <td>Text:</td>
+               <td>
+                  <code>java.lang.AssertionError: NullableListOfNullableBoolean mismatch:  expecteds was a list of size 2, but actuals was <null>
+                     <br></br>	at com.dslplatform.ocd.javaasserts.BooleanAsserts.assertNullableListOfNullableEquals(BooleanAsserts.java:171)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.BooleanAsserts.assertNullableListOfNullableEquals(BooleanAsserts.java:176)
+                     <br></br>	at com.dslplatform.ocd.aggregates.StandardAggregateWithSurrogateKeyAndNullableListOfNullableBooleansPropertyTest.testP0L0BoNonDefault4PropertyValueInAggregateAfterActiveRecordPersist(Unknown Source)
+                     <br></br>
+                  </code>
+               </td>
             </tr>
          </table>
       </div>

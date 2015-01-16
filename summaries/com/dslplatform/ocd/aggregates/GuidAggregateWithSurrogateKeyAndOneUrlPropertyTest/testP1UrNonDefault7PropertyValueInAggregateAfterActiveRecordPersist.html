@@ -22,8 +22,33 @@
             </tr>
             <tr>
                <td>testP1UrNonDefault7PropertyValueInAggregateAfterActiveRecordPersist</td>
-               <td>Success</td>
-               <td>0.047</td>
+               <td>Failed</td>
+               <td>0.171</td>
+            </tr>
+         </table>
+         <h2>Errors:</h2>
+         <table class="table" style="width: 1500px">
+            <tr>
+               <td>Type:</td>
+               <td>java.lang.AssertionError</td>
+            </tr>
+            <tr>
+               <td>Message:</td>
+               <td>
+                  <code>OneUrl mismatch: expected was "file:///~/opt/somefile.md", but actual was "failover:(tcp://localhost:8181,tcp://localhost:8080/)"</code>
+               </td>
+            </tr>
+            <tr>
+               <td>Text:</td>
+               <td>
+                  <code>java.lang.AssertionError: OneUrl mismatch: expected was "file:///~/opt/somefile.md", but actual was "failover:(tcp://localhost:8181,tcp://localhost:8080/)"
+                     <br></br>	at com.dslplatform.ocd.javaasserts.UrlAsserts.assertSingleEquals(UrlAsserts.java:8)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.UrlAsserts.assertOneEquals(UrlAsserts.java:15)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.UrlAsserts.assertOneEquals(UrlAsserts.java:19)
+                     <br></br>	at com.dslplatform.ocd.aggregates.GuidAggregateWithSurrogateKeyAndOneUrlPropertyTest.testP1UrNonDefault7PropertyValueInAggregateAfterActiveRecordPersist(Unknown Source)
+                     <br></br>
+                  </code>
+               </td>
             </tr>
          </table>
       </div>

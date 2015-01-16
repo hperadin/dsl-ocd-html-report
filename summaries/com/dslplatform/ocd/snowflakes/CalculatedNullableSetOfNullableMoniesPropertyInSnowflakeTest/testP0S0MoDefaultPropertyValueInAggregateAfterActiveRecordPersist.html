@@ -22,8 +22,34 @@
             </tr>
             <tr>
                <td>testP0S0MoDefaultPropertyValueInAggregateAfterActiveRecordPersist</td>
-               <td>Success</td>
+               <td>Failed</td>
                <td>0.015</td>
+            </tr>
+         </table>
+         <h2>Errors:</h2>
+         <table class="table" style="width: 1500px">
+            <tr>
+               <td>Type:</td>
+               <td>java.lang.AssertionError</td>
+            </tr>
+            <tr>
+               <td>Message:</td>
+               <td>
+                  <code>NullableSetOfNullableMoney mismatch: expecteds was &lt;null&gt;, but actuals was a set of
+                     size 6
+                  </code>
+               </td>
+            </tr>
+            <tr>
+               <td>Text:</td>
+               <td>
+                  <code>java.lang.AssertionError: NullableSetOfNullableMoney mismatch: expecteds was <null>, but actuals was a set of size 6
+                     <br></br>	at com.dslplatform.ocd.javaasserts.MoneyAsserts.assertNullableSetOfNullableEquals(MoneyAsserts.java:279)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.MoneyAsserts.assertNullableSetOfNullableEquals(MoneyAsserts.java:285)
+                     <br></br>	at com.dslplatform.ocd.snowflakes.CalculatedNullableSetOfNullableMoniesPropertyInSnowflakeTest.testP0S0MoDefaultPropertyValueInAggregateAfterActiveRecordPersist(Unknown Source)
+                     <br></br>
+                  </code>
+               </td>
             </tr>
          </table>
       </div>

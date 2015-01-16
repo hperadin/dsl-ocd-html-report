@@ -22,8 +22,32 @@
             </tr>
             <tr>
                <td>testP0S1BiNonDefault1PropertyValueInAggregateAfterActiveRecordPersist</td>
-               <td>Success</td>
-               <td>0.016</td>
+               <td>Failed</td>
+               <td>0.422</td>
+            </tr>
+         </table>
+         <h2>Errors:</h2>
+         <table class="table" style="width: 1500px">
+            <tr>
+               <td>Type:</td>
+               <td>java.lang.AssertionError</td>
+            </tr>
+            <tr>
+               <td>Message:</td>
+               <td>
+                  <code>NullableSetOfOneBinary mismatch:  expecteds was a set of size 1, but actuals was &lt;null&gt;</code>
+               </td>
+            </tr>
+            <tr>
+               <td>Text:</td>
+               <td>
+                  <code>java.lang.AssertionError: NullableSetOfOneBinary mismatch:  expecteds was a set of size 1, but actuals was <null>
+                     <br></br>	at com.dslplatform.ocd.javaasserts.BinaryAsserts.assertNullableSetOfOneEquals(BinaryAsserts.java:231)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.BinaryAsserts.assertNullableSetOfOneEquals(BinaryAsserts.java:236)
+                     <br></br>	at com.dslplatform.ocd.aggregates.StandardAggregateWithSurrogateKeyAndNullableSetOfOneBinariesPropertyTest.testP0S1BiNonDefault1PropertyValueInAggregateAfterActiveRecordPersist(Unknown Source)
+                     <br></br>
+                  </code>
+               </td>
             </tr>
          </table>
       </div>

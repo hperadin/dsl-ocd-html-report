@@ -22,8 +22,35 @@
             </tr>
             <tr>
                <td>testP0L0GuWithinOneV0L0GuNonDefault2PropertyValueInAggregateAfterActiveRecordPersist</td>
-               <td>Success</td>
-               <td>0.062</td>
+               <td>Failed</td>
+               <td>0.11</td>
+            </tr>
+         </table>
+         <h2>Errors:</h2>
+         <table class="table" style="width: 1500px">
+            <tr>
+               <td>Type:</td>
+               <td>java.lang.AssertionError</td>
+            </tr>
+            <tr>
+               <td>Message:</td>
+               <td>
+                  <code>NullableListOfNullableGuid mismatch: expecteds was a list of size 1, but actuals was
+                     a list of size 4
+                  </code>
+               </td>
+            </tr>
+            <tr>
+               <td>Text:</td>
+               <td>
+                  <code>java.lang.AssertionError: NullableListOfNullableGuid mismatch: expecteds was a list of size 1, but actuals was a list of size 4
+                     <br></br>	at com.dslplatform.ocd.javaasserts.GuidAsserts.assertListOfNullableEquals(GuidAsserts.java:150)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.GuidAsserts.assertNullableListOfNullableEquals(GuidAsserts.java:177)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.GuidAsserts.assertNullableListOfNullableEquals(GuidAsserts.java:181)
+                     <br></br>	at com.dslplatform.ocd.aggregates.AggregateTypeWithSurrogateKeyAndNullableListOfNullableGuidsPropertyWithinOneValueTest.testP0L0GuWithinOneV0L0GuNonDefault2PropertyValueInAggregateAfterActiveRecordPersist(Unknown Source)
+                     <br></br>
+                  </code>
+               </td>
             </tr>
          </table>
       </div>

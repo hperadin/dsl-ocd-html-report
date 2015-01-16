@@ -22,8 +22,34 @@
             </tr>
             <tr>
                <td>testP0L1MoDefaultPropertyValueInAggregateAfterActiveRecordPersist</td>
-               <td>Success</td>
-               <td>0.062</td>
+               <td>Failed</td>
+               <td>0.016</td>
+            </tr>
+         </table>
+         <h2>Errors:</h2>
+         <table class="table" style="width: 1500px">
+            <tr>
+               <td>Type:</td>
+               <td>java.lang.AssertionError</td>
+            </tr>
+            <tr>
+               <td>Message:</td>
+               <td>
+                  <code>NullableListOfOneMoney mismatch: expecteds was &lt;null&gt;, but actuals was a list of size
+                     5
+                  </code>
+               </td>
+            </tr>
+            <tr>
+               <td>Text:</td>
+               <td>
+                  <code>java.lang.AssertionError: NullableListOfOneMoney mismatch: expecteds was <null>, but actuals was a list of size 5
+                     <br></br>	at com.dslplatform.ocd.javaasserts.MoneyAsserts.assertNullableListOfOneEquals(MoneyAsserts.java:151)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.MoneyAsserts.assertNullableListOfOneEquals(MoneyAsserts.java:157)
+                     <br></br>	at com.dslplatform.ocd.aggregates.GuidAggregateWithSurrogateKeyAndNullableListOfOneMoniesPropertyTest.testP0L1MoDefaultPropertyValueInAggregateAfterActiveRecordPersist(Unknown Source)
+                     <br></br>
+                  </code>
+               </td>
             </tr>
          </table>
       </div>

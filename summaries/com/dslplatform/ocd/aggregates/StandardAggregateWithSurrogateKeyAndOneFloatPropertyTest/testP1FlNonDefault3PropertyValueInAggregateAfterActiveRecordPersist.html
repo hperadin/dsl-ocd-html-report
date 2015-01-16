@@ -22,8 +22,36 @@
             </tr>
             <tr>
                <td>testP1FlNonDefault3PropertyValueInAggregateAfterActiveRecordPersist</td>
-               <td>Success</td>
-               <td>0.078</td>
+               <td>Failed</td>
+               <td>0.032</td>
+            </tr>
+         </table>
+         <h2>Errors:</h2>
+         <table class="table" style="width: 1500px">
+            <tr>
+               <td>Type:</td>
+               <td>java.lang.AssertionError</td>
+            </tr>
+            <tr>
+               <td>Message:</td>
+               <td>
+                  <code>OneFloat mismatch: expected was "-1.0E-5", but actual was "0.0" - WARNING: You are
+                     comparing the bits of float values - not using an epsilon value!
+                  </code>
+               </td>
+            </tr>
+            <tr>
+               <td>Text:</td>
+               <td>
+                  <code>java.lang.AssertionError: OneFloat mismatch: expected was "-1.0E-5", but actual was "0.0" - WARNING: You are comparing the bits of float values - not using an epsilon value!
+                     <br></br>	at com.dslplatform.ocd.javaasserts.FloatAsserts.assertSingleEquals(FloatAsserts.java:10)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.FloatAsserts.assertOneEquals(FloatAsserts.java:19)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.FloatAsserts.assertOneEquals(FloatAsserts.java:23)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.FloatAsserts.assertOneEquals(FloatAsserts.java:27)
+                     <br></br>	at com.dslplatform.ocd.aggregates.StandardAggregateWithSurrogateKeyAndOneFloatPropertyTest.testP1FlNonDefault3PropertyValueInAggregateAfterActiveRecordPersist(Unknown Source)
+                     <br></br>
+                  </code>
+               </td>
             </tr>
          </table>
       </div>

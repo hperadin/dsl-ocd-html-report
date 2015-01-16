@@ -22,8 +22,35 @@
             </tr>
             <tr>
                <td>testP1A1InNonDefault2PropertyValueInAggregateAfterActiveRecordPersist</td>
-               <td>Success</td>
-               <td>0.015</td>
+               <td>Failed</td>
+               <td>0.078</td>
+            </tr>
+         </table>
+         <h2>Errors:</h2>
+         <table class="table" style="width: 1500px">
+            <tr>
+               <td>Type:</td>
+               <td>java.lang.AssertionError</td>
+            </tr>
+            <tr>
+               <td>Message:</td>
+               <td>
+                  <code>OneArrayOfOneInteger mismatch: expecteds was an array of length 1, but actuals was
+                     an array of length 0
+                  </code>
+               </td>
+            </tr>
+            <tr>
+               <td>Text:</td>
+               <td>
+                  <code>java.lang.AssertionError: OneArrayOfOneInteger mismatch: expecteds was an array of length 1, but actuals was an array of length 0
+                     <br></br>	at com.dslplatform.ocd.javaasserts.IntegerAsserts.assertArrayOfOneEquals(IntegerAsserts.java:32)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.IntegerAsserts.assertOneArrayOfOneEquals(IntegerAsserts.java:44)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.IntegerAsserts.assertOneArrayOfOneEquals(IntegerAsserts.java:48)
+                     <br></br>	at com.dslplatform.ocd.aggregates.GuidAggregateWithSurrogateKeyAndOneArrayOfOneIntegersPropertyTest.testP1A1InNonDefault2PropertyValueInAggregateAfterActiveRecordPersist(Unknown Source)
+                     <br></br>
+                  </code>
+               </td>
             </tr>
          </table>
       </div>

@@ -22,8 +22,35 @@
             </tr>
             <tr>
                <td>testP1S1InNonDefault1PropertyValueInSnowflakeAfterActiveRecordPersist</td>
-               <td>Success</td>
-               <td>0.016</td>
+               <td>Failed</td>
+               <td>0.031</td>
+            </tr>
+         </table>
+         <h2>Errors:</h2>
+         <table class="table" style="width: 1500px">
+            <tr>
+               <td>Type:</td>
+               <td>java.lang.AssertionError</td>
+            </tr>
+            <tr>
+               <td>Message:</td>
+               <td>
+                  <code>OneSetOfOneInteger mismatch: expecteds was a set of size 1, but actuals was a set
+                     of size 5
+                  </code>
+               </td>
+            </tr>
+            <tr>
+               <td>Text:</td>
+               <td>
+                  <code>java.lang.AssertionError: OneSetOfOneInteger mismatch: expecteds was a set of size 1, but actuals was a set of size 5
+                     <br></br>	at com.dslplatform.ocd.javaasserts.IntegerAsserts.assertSetOfOneEquals(IntegerAsserts.java:187)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.IntegerAsserts.assertOneSetOfOneEquals(IntegerAsserts.java:203)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.IntegerAsserts.assertOneSetOfOneEquals(IntegerAsserts.java:207)
+                     <br></br>	at com.dslplatform.ocd.snowflakes.CalculatedOneSetOfOneIntegersPropertyInSnowflakeTest.testP1S1InNonDefault1PropertyValueInSnowflakeAfterActiveRecordPersist(Unknown Source)
+                     <br></br>
+                  </code>
+               </td>
             </tr>
          </table>
       </div>

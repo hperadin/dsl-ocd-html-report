@@ -22,8 +22,35 @@
             </tr>
             <tr>
                <td>testP1L0StNonDefault2PropertyValueInAggregateAfterActiveRecordPersist</td>
-               <td>Success</td>
-               <td>0.016</td>
+               <td>Failed</td>
+               <td>0.328</td>
+            </tr>
+         </table>
+         <h2>Errors:</h2>
+         <table class="table" style="width: 1500px">
+            <tr>
+               <td>Type:</td>
+               <td>java.lang.AssertionError</td>
+            </tr>
+            <tr>
+               <td>Message:</td>
+               <td>
+                  <code>OneListOfNullableString mismatch: expecteds was a list of size 1, but actuals was
+                     a list of size 0
+                  </code>
+               </td>
+            </tr>
+            <tr>
+               <td>Text:</td>
+               <td>
+                  <code>java.lang.AssertionError: OneListOfNullableString mismatch: expecteds was a list of size 1, but actuals was a list of size 0
+                     <br></br>	at com.dslplatform.ocd.javaasserts.StringAsserts.assertListOfNullableEquals(StringAsserts.java:150)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.StringAsserts.assertOneListOfNullableEquals(StringAsserts.java:166)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.StringAsserts.assertOneListOfNullableEquals(StringAsserts.java:170)
+                     <br></br>	at com.dslplatform.ocd.aggregates.StandardAggregateWithSurrogateKeyAndOneListOfNullableStringsPropertyTest.testP1L0StNonDefault2PropertyValueInAggregateAfterActiveRecordPersist(Unknown Source)
+                     <br></br>
+                  </code>
+               </td>
             </tr>
          </table>
       </div>

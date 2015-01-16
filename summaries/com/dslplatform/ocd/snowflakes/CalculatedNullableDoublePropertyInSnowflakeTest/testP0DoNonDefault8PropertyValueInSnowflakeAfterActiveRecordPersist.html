@@ -22,8 +22,33 @@
             </tr>
             <tr>
                <td>testP0DoNonDefault8PropertyValueInSnowflakeAfterActiveRecordPersist</td>
-               <td>Success</td>
-               <td>0.062</td>
+               <td>Failed</td>
+               <td>0.056</td>
+            </tr>
+         </table>
+         <h2>Errors:</h2>
+         <table class="table" style="width: 1500px">
+            <tr>
+               <td>Type:</td>
+               <td>java.lang.AssertionError</td>
+            </tr>
+            <tr>
+               <td>Message:</td>
+               <td>
+                  <code>NullableDouble mismatch: expected was "NaN", but actual was &lt;null&gt;</code>
+               </td>
+            </tr>
+            <tr>
+               <td>Text:</td>
+               <td>
+                  <code>java.lang.AssertionError: NullableDouble mismatch: expected was "NaN", but actual was <null>
+                     <br></br>	at com.dslplatform.ocd.javaasserts.DoubleAsserts.assertNullableEquals(DoubleAsserts.java:33)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.DoubleAsserts.assertNullableEquals(DoubleAsserts.java:38)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.DoubleAsserts.assertNullableEquals(DoubleAsserts.java:42)
+                     <br></br>	at com.dslplatform.ocd.snowflakes.CalculatedNullableDoublePropertyInSnowflakeTest.testP0DoNonDefault8PropertyValueInSnowflakeAfterActiveRecordPersist(Unknown Source)
+                     <br></br>
+                  </code>
+               </td>
             </tr>
          </table>
       </div>

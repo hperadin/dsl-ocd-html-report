@@ -22,8 +22,34 @@
             </tr>
             <tr>
                <td>testP0A0LoNonDefault1PropertyValueInAggregateAfterActiveRecordPersist</td>
-               <td>Success</td>
-               <td>0.062</td>
+               <td>Failed</td>
+               <td>0.156</td>
+            </tr>
+         </table>
+         <h2>Errors:</h2>
+         <table class="table" style="width: 1500px">
+            <tr>
+               <td>Type:</td>
+               <td>java.lang.AssertionError</td>
+            </tr>
+            <tr>
+               <td>Message:</td>
+               <td>
+                  <code>NullableArrayOfNullableLong mismatch:  expecteds was an array of length 1, but actuals
+                     was &lt;null&gt;
+                  </code>
+               </td>
+            </tr>
+            <tr>
+               <td>Text:</td>
+               <td>
+                  <code>java.lang.AssertionError: NullableArrayOfNullableLong mismatch:  expecteds was an array of length 1, but actuals was <null>
+                     <br></br>	at com.dslplatform.ocd.javaasserts.LongAsserts.assertNullableArrayOfNullableEquals(LongAsserts.java:86)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.LongAsserts.assertNullableArrayOfNullableEquals(LongAsserts.java:91)
+                     <br></br>	at com.dslplatform.ocd.snowflakes.CalculatedNullableArrayOfNullableLongsPropertyInSnowflakeTest.testP0A0LoNonDefault1PropertyValueInAggregateAfterActiveRecordPersist(Unknown Source)
+                     <br></br>
+                  </code>
+               </td>
             </tr>
          </table>
       </div>

@@ -22,8 +22,34 @@
             </tr>
             <tr>
                <td>testP0L0S9NonDefault3PropertyValueInAggregateAfterActiveRecordPersist</td>
-               <td>Success</td>
-               <td>0.032</td>
+               <td>Failed</td>
+               <td>0.016</td>
+            </tr>
+         </table>
+         <h2>Errors:</h2>
+         <table class="table" style="width: 1500px">
+            <tr>
+               <td>Type:</td>
+               <td>java.lang.AssertionError</td>
+            </tr>
+            <tr>
+               <td>Message:</td>
+               <td>
+                  <code>NullableListOfNullableStringWithMaxLengthOf9 mismatch:  expecteds was a list of size
+                     1, but actuals was &lt;null&gt;
+                  </code>
+               </td>
+            </tr>
+            <tr>
+               <td>Text:</td>
+               <td>
+                  <code>java.lang.AssertionError: NullableListOfNullableStringWithMaxLengthOf9 mismatch:  expecteds was a list of size 1, but actuals was <null>
+                     <br></br>	at com.dslplatform.ocd.javaasserts.StringWithMaxLengthOf9Asserts.assertNullableListOfNullableEquals(StringWithMaxLengthOf9Asserts.java:184)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.StringWithMaxLengthOf9Asserts.assertNullableListOfNullableEquals(StringWithMaxLengthOf9Asserts.java:189)
+                     <br></br>	at com.dslplatform.ocd.aggregates.GuidAggregateWithSurrogateKeyAndNullableListOfNullableStringsWithMaxLengthOf9PropertyTest.testP0L0S9NonDefault3PropertyValueInAggregateAfterActiveRecordPersist(Unknown Source)
+                     <br></br>
+                  </code>
+               </td>
             </tr>
          </table>
       </div>

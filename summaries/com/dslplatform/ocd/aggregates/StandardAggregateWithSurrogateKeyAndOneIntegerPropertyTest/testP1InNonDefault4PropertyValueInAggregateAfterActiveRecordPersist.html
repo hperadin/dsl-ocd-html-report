@@ -22,8 +22,33 @@
             </tr>
             <tr>
                <td>testP1InNonDefault4PropertyValueInAggregateAfterActiveRecordPersist</td>
-               <td>Success</td>
-               <td>0.046</td>
+               <td>Failed</td>
+               <td>0.407</td>
+            </tr>
+         </table>
+         <h2>Errors:</h2>
+         <table class="table" style="width: 1500px">
+            <tr>
+               <td>Type:</td>
+               <td>java.lang.AssertionError</td>
+            </tr>
+            <tr>
+               <td>Message:</td>
+               <td>
+                  <code>OneInteger mismatch: expected was "1000000000", but actual was "0"</code>
+               </td>
+            </tr>
+            <tr>
+               <td>Text:</td>
+               <td>
+                  <code>java.lang.AssertionError: OneInteger mismatch: expected was "1000000000", but actual was "0"
+                     <br></br>	at com.dslplatform.ocd.javaasserts.IntegerAsserts.assertSingleEquals(IntegerAsserts.java:8)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.IntegerAsserts.assertOneEquals(IntegerAsserts.java:12)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.IntegerAsserts.assertOneEquals(IntegerAsserts.java:16)
+                     <br></br>	at com.dslplatform.ocd.aggregates.StandardAggregateWithSurrogateKeyAndOneIntegerPropertyTest.testP1InNonDefault4PropertyValueInAggregateAfterActiveRecordPersist(Unknown Source)
+                     <br></br>
+                  </code>
+               </td>
             </tr>
          </table>
       </div>

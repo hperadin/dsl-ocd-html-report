@@ -22,8 +22,35 @@
             </tr>
             <tr>
                <td>testP1S0UrDefaultPropertyValueInAggregateAfterActiveRecordPersist</td>
-               <td>Success</td>
-               <td>0.015</td>
+               <td>Failed</td>
+               <td>0.016</td>
+            </tr>
+         </table>
+         <h2>Errors:</h2>
+         <table class="table" style="width: 1500px">
+            <tr>
+               <td>Type:</td>
+               <td>java.lang.AssertionError</td>
+            </tr>
+            <tr>
+               <td>Message:</td>
+               <td>
+                  <code>OneSetOfNullableUrl mismatch: expecteds was a set of size 0, but actuals was a set
+                     of size 10
+                  </code>
+               </td>
+            </tr>
+            <tr>
+               <td>Text:</td>
+               <td>
+                  <code>java.lang.AssertionError: OneSetOfNullableUrl mismatch: expecteds was a set of size 0, but actuals was a set of size 10
+                     <br></br>	at com.dslplatform.ocd.javaasserts.UrlAsserts.assertSetOfNullableEquals(UrlAsserts.java:230)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.UrlAsserts.assertOneSetOfNullableEquals(UrlAsserts.java:244)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.UrlAsserts.assertOneSetOfNullableEquals(UrlAsserts.java:248)
+                     <br></br>	at com.dslplatform.ocd.aggregates.StandardAggregateWithSurrogateKeyAndOneSetOfNullableUrlsPropertyTest.testP1S0UrDefaultPropertyValueInAggregateAfterActiveRecordPersist(Unknown Source)
+                     <br></br>
+                  </code>
+               </td>
             </tr>
          </table>
       </div>

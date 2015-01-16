@@ -22,8 +22,35 @@
             </tr>
             <tr>
                <td>testP1L0BiNonDefault2PropertyValueInAggregateAfterActiveRecordPersist</td>
-               <td>Success</td>
-               <td>0.015</td>
+               <td>Failed</td>
+               <td>0.047</td>
+            </tr>
+         </table>
+         <h2>Errors:</h2>
+         <table class="table" style="width: 1500px">
+            <tr>
+               <td>Type:</td>
+               <td>java.lang.AssertionError</td>
+            </tr>
+            <tr>
+               <td>Message:</td>
+               <td>
+                  <code>OneListOfNullableBinary mismatch: expecteds was a list of size 1, but actuals was
+                     a list of size 5
+                  </code>
+               </td>
+            </tr>
+            <tr>
+               <td>Text:</td>
+               <td>
+                  <code>java.lang.AssertionError: OneListOfNullableBinary mismatch: expecteds was a list of size 1, but actuals was a list of size 5
+                     <br></br>	at com.dslplatform.ocd.javaasserts.BinaryAsserts.assertListOfNullableEquals(BinaryAsserts.java:157)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.BinaryAsserts.assertOneListOfNullableEquals(BinaryAsserts.java:173)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.BinaryAsserts.assertOneListOfNullableEquals(BinaryAsserts.java:177)
+                     <br></br>	at com.dslplatform.ocd.snowflakes.CalculatedOneListOfNullableBinariesPropertyInSnowflakeTest.testP1L0BiNonDefault2PropertyValueInAggregateAfterActiveRecordPersist(Unknown Source)
+                     <br></br>
+                  </code>
+               </td>
             </tr>
          </table>
       </div>

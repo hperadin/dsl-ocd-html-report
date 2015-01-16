@@ -22,8 +22,35 @@
             </tr>
             <tr>
                <td>testP1L1S9NonDefault2PropertyValueInAggregateAfterActiveRecordPersist</td>
-               <td>Success</td>
-               <td>0.032</td>
+               <td>Failed</td>
+               <td>0.063</td>
+            </tr>
+         </table>
+         <h2>Errors:</h2>
+         <table class="table" style="width: 1500px">
+            <tr>
+               <td>Type:</td>
+               <td>java.lang.AssertionError</td>
+            </tr>
+            <tr>
+               <td>Message:</td>
+               <td>
+                  <code>OneListOfOneStringWithMaxLengthOf9 mismatch: expecteds was a list of size 1, but actuals
+                     was a list of size 0
+                  </code>
+               </td>
+            </tr>
+            <tr>
+               <td>Text:</td>
+               <td>
+                  <code>java.lang.AssertionError: OneListOfOneStringWithMaxLengthOf9 mismatch: expecteds was a list of size 1, but actuals was a list of size 0
+                     <br></br>	at com.dslplatform.ocd.javaasserts.StringWithMaxLengthOf9Asserts.assertListOfOneEquals(StringWithMaxLengthOf9Asserts.java:114)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.StringWithMaxLengthOf9Asserts.assertOneListOfOneEquals(StringWithMaxLengthOf9Asserts.java:136)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.StringWithMaxLengthOf9Asserts.assertOneListOfOneEquals(StringWithMaxLengthOf9Asserts.java:140)
+                     <br></br>	at com.dslplatform.ocd.aggregates.BigAggregateWithSurrogateKeyAndOneListOfOneStringsWithMaxLengthOf9PropertyTest.testP1L1S9NonDefault2PropertyValueInAggregateAfterActiveRecordPersist(Unknown Source)
+                     <br></br>
+                  </code>
+               </td>
             </tr>
          </table>
       </div>

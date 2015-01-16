@@ -22,8 +22,35 @@
             </tr>
             <tr>
                <td>testP1GuNonDefault1PropertyValueInAggregateAfterActiveRecordPersist</td>
-               <td>Success</td>
-               <td>0.063</td>
+               <td>Failed</td>
+               <td>0.016</td>
+            </tr>
+         </table>
+         <h2>Errors:</h2>
+         <table class="table" style="width: 1500px">
+            <tr>
+               <td>Type:</td>
+               <td>java.lang.AssertionError</td>
+            </tr>
+            <tr>
+               <td>Message:</td>
+               <td>
+                  <code>OneGuid mismatch: expected was "00000001-0002-0003-0004-000000000005", but actual
+                     was "bc29e180-3939-4a8d-bca7-f252090f205b"
+                  </code>
+               </td>
+            </tr>
+            <tr>
+               <td>Text:</td>
+               <td>
+                  <code>java.lang.AssertionError: OneGuid mismatch: expected was "00000001-0002-0003-0004-000000000005", but actual was "bc29e180-3939-4a8d-bca7-f252090f205b"
+                     <br></br>	at com.dslplatform.ocd.javaasserts.GuidAsserts.assertSingleEquals(GuidAsserts.java:8)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.GuidAsserts.assertOneEquals(GuidAsserts.java:15)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.GuidAsserts.assertOneEquals(GuidAsserts.java:19)
+                     <br></br>	at com.dslplatform.ocd.aggregates.BigAggregateWithSurrogateKeyAndOneGuidPropertyTest.testP1GuNonDefault1PropertyValueInAggregateAfterActiveRecordPersist(Unknown Source)
+                     <br></br>
+                  </code>
+               </td>
             </tr>
          </table>
       </div>

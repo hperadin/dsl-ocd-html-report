@@ -22,8 +22,34 @@
             </tr>
             <tr>
                <td>testP0A0InDefaultPropertyValueInAggregateAfterActiveRecordPersist</td>
-               <td>Success</td>
-               <td>0.032</td>
+               <td>Failed</td>
+               <td>0.031</td>
+            </tr>
+         </table>
+         <h2>Errors:</h2>
+         <table class="table" style="width: 1500px">
+            <tr>
+               <td>Type:</td>
+               <td>java.lang.AssertionError</td>
+            </tr>
+            <tr>
+               <td>Message:</td>
+               <td>
+                  <code>NullableArrayOfNullableInteger mismatch: expecteds was &lt;null&gt;, but actuals was an
+                     array of length 6
+                  </code>
+               </td>
+            </tr>
+            <tr>
+               <td>Text:</td>
+               <td>
+                  <code>java.lang.AssertionError: NullableArrayOfNullableInteger mismatch: expecteds was <null>, but actuals was an array of length 6
+                     <br></br>	at com.dslplatform.ocd.javaasserts.IntegerAsserts.assertNullableArrayOfNullableEquals(IntegerAsserts.java:85)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.IntegerAsserts.assertNullableArrayOfNullableEquals(IntegerAsserts.java:91)
+                     <br></br>	at com.dslplatform.ocd.aggregates.GuidAggregateWithSurrogateKeyAndNullableArrayOfNullableIntegersPropertyTest.testP0A0InDefaultPropertyValueInAggregateAfterActiveRecordPersist(Unknown Source)
+                     <br></br>
+                  </code>
+               </td>
             </tr>
          </table>
       </div>

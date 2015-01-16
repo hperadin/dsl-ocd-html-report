@@ -16,122 +16,140 @@
       <br></br><a id="testP1A0D9NonDefault1PropertyInAggregateJsonSerialization"/><h2>testP1A0D9NonDefault1PropertyInAggregateJsonSerialization</h2>
       <br></br><a id="testP1A0D9DefaultPropertyInAggregateJsonSerialization"/><h2>testP1A0D9DefaultPropertyInAggregateJsonSerialization</h2>
       <br></br><a id="testP1A0D9DefaultPropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1A0D9DefaultPropertyValueInAggregateAfterActiveRecordPersist</h2>
-      <br></br>2014-12-31 12:36:36,294 [HttpClient.java:191] Sending request [GET]: Domain.svc/search/AggregatePrimaryDecimal9.A1A0D9?limit=2147483647&offset=0
-      <br></br>2014-12-31 12:36:36,310 [HttpClient.java:389] GET http://localhost:2004/Domain.svc/search/AggregatePrimaryDecimal9.A1A0D9?limit=2147483647&offset=0
-      <br></br>2014-12-31 12:36:36,310 [HttpClient.java:396] Accept: [application/json]
-      <br></br>2014-12-31 12:36:36,310 [HttpClient.java:396] Content-Type: [application/json]
-      <br></br>2014-12-31 12:36:37,200 [HttpClient.java:212] Received response [200, 1024 bytes] in 906 ms
-      <br></br>2014-12-31 12:36:37,200 [HttpClient.java:215] Received response body: [{"URI":"{NULL}","p1A0D9":[null]}]
-      <br></br>2014-12-31 12:36:37,232 [HttpClient.java:205] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 100 bytes
-      <br></br>2014-12-31 12:36:37,232 [HttpClient.java:389] POST http://localhost:2004/RestApplication.svc/PersistAggregateRoot
-      <br></br>2014-12-31 12:36:37,232 [HttpClient.java:396] Accept: [application/json]
-      <br></br>2014-12-31 12:36:37,232 [HttpClient.java:396] Content-Type: [application/json]
-      <br></br>2014-12-31 12:36:37,232 [HttpClient.java:402] Adding payload: {"RootName":"AggregatePrimaryDecimal9.A1A0D9","ToDelete":"[{\"URI\":\"{NULL}\",\"p1A0D9\":[null]}]"}
-      <br></br>2014-12-31 12:36:38,294 [HttpClient.java:212] Received response [200, 1024 bytes] in 1078 ms
-      <br></br>2014-12-31 12:36:38,294 [HttpClient.java:215] Received response body: []
-      <br></br>2014-12-31 12:36:38,310 [HttpClient.java:205] Sending request [POST]: Crud.svc/AggregatePrimaryDecimal9.A1A0D9, content size: 19 bytes
-      <br></br>2014-12-31 12:36:38,310 [HttpClient.java:389] POST http://localhost:2004/Crud.svc/AggregatePrimaryDecimal9.A1A0D9
-      <br></br>2014-12-31 12:36:38,310 [HttpClient.java:396] Accept: [application/json]
-      <br></br>2014-12-31 12:36:38,310 [HttpClient.java:396] Content-Type: [application/json]
-      <br></br>2014-12-31 12:36:38,310 [HttpClient.java:402] Adding payload: {"URI":"274026379"}
-      <br></br>2014-12-31 12:36:38,513 [HttpClient.java:212] Received response [201, 1024 bytes] in 203 ms
-      <br></br>2014-12-31 12:36:38,513 [HttpClient.java:215] Received response body: {"URI":"{}","p1A0D9":[]}
-      <br></br>2014-12-31 12:36:38,513 [HttpClient.java:191] Sending request [GET]: Crud.svc/AggregatePrimaryDecimal9.A1A0D9?uri=%7B%7D
-      <br></br>2014-12-31 12:36:38,513 [HttpClient.java:389] GET http://localhost:2004/Crud.svc/AggregatePrimaryDecimal9.A1A0D9?uri=%7B%7D
-      <br></br>2014-12-31 12:36:38,513 [HttpClient.java:396] Accept: [application/json]
-      <br></br>2014-12-31 12:36:38,513 [HttpClient.java:396] Content-Type: [application/json]
-      <br></br>2014-12-31 12:36:38,544 [HttpClient.java:212] Received response [200, 1024 bytes] in 31 ms
-      <br></br>2014-12-31 12:36:38,544 [HttpClient.java:215] Received response body: {"URI":"{}","p1A0D9":[]}
+      <br></br>2015-01-16 15:28:52,378 [HttpClient.java:191] Sending request [GET]: Domain.svc/search/AggregatePrimaryDecimal9.A1A0D9?limit=2147483647&offset=0
+      <br></br>2015-01-16 15:28:52,393 [HttpClient.java:418] GET http://localhost:2004/Domain.svc/search/AggregatePrimaryDecimal9.A1A0D9?limit=2147483647&offset=0
+      <br></br>2015-01-16 15:28:52,393 [HttpClient.java:425] Accept: [application/json]
+      <br></br>2015-01-16 15:28:52,393 [HttpClient.java:425] Content-Type: [application/json]
+      <br></br>2015-01-16 15:28:53,081 [HttpClient.java:216] Received response [200, 1024 bytes] in 703 ms
+      <br></br>2015-01-16 15:28:53,081 [HttpClient.java:219] Received response body: [{"URI":"{NULL}","p1A0D9":[null]}]
+      <br></br>2015-01-16 15:28:53,112 [HttpClient.java:209] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 100 bytes
+      <br></br>2015-01-16 15:28:53,112 [HttpClient.java:418] POST http://localhost:2004/RestApplication.svc/PersistAggregateRoot
+      <br></br>2015-01-16 15:28:53,112 [HttpClient.java:425] Accept: [application/json]
+      <br></br>2015-01-16 15:28:53,112 [HttpClient.java:425] Content-Type: [application/json]
+      <br></br>2015-01-16 15:28:53,112 [HttpClient.java:431] Adding payload: {"RootName":"AggregatePrimaryDecimal9.A1A0D9","ToDelete":"[{\"p1A0D9\":[null],\"uri\":\"{NULL}\"}]"}
+      <br></br>2015-01-16 15:28:54,221 [HttpClient.java:216] Received response [200, 1024 bytes] in 1140 ms
+      <br></br>2015-01-16 15:28:54,221 [HttpClient.java:219] Received response body: []
+      <br></br>2015-01-16 15:28:54,237 [HttpClient.java:209] Sending request [POST]: Crud.svc/AggregatePrimaryDecimal9.A1A0D9, content size: 19 bytes
+      <br></br>2015-01-16 15:28:54,237 [HttpClient.java:418] POST http://localhost:2004/Crud.svc/AggregatePrimaryDecimal9.A1A0D9
+      <br></br>2015-01-16 15:28:54,237 [HttpClient.java:425] Accept: [application/json]
+      <br></br>2015-01-16 15:28:54,237 [HttpClient.java:425] Content-Type: [application/json]
+      <br></br>2015-01-16 15:28:54,237 [HttpClient.java:431] Adding payload: {"URI":"609359335"}
+      <br></br>2015-01-16 15:28:54,393 [HttpClient.java:216] Received response [201, 1024 bytes] in 156 ms
+      <br></br>2015-01-16 15:28:54,393 [HttpClient.java:219] Received response body: {"URI":"{}","p1A0D9":[]}
+      <br></br>2015-01-16 15:28:54,393 [HttpClient.java:191] Sending request [GET]: Crud.svc/AggregatePrimaryDecimal9.A1A0D9?uri=%7B%7D
+      <br></br>2015-01-16 15:28:54,393 [HttpClient.java:418] GET http://localhost:2004/Crud.svc/AggregatePrimaryDecimal9.A1A0D9?uri=%7B%7D
+      <br></br>2015-01-16 15:28:54,393 [HttpClient.java:425] Accept: [application/json]
+      <br></br>2015-01-16 15:28:54,393 [HttpClient.java:425] Content-Type: [application/json]
+      <br></br>2015-01-16 15:28:54,440 [HttpClient.java:216] Received response [200, 1024 bytes] in 47 ms
+      <br></br>2015-01-16 15:28:54,440 [HttpClient.java:219] Received response body: {"URI":"{}","p1A0D9":[]}
       <br></br><a id="testP1A0D9NonDefault2PropertyInAggregateJsonSerialization"/><h2>testP1A0D9NonDefault2PropertyInAggregateJsonSerialization</h2>
       <br></br><a id="testP1A0D9PropertyFieldPrivateVisibility"/><h2>testP1A0D9PropertyFieldPrivateVisibility</h2>
       <br></br><a id="testURIPropertyGetterClass"/><h2>testURIPropertyGetterClass</h2>
       <br></br><a id="testP1A0D9NonDefault5PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1A0D9NonDefault5PropertyValueInAggregateAfterActiveRecordPersist</h2>
-      <br></br>2014-12-31 12:36:38,544 [HttpClient.java:191] Sending request [GET]: Domain.svc/search/AggregatePrimaryDecimal9.A1A0D9?limit=2147483647&offset=0
-      <br></br>2014-12-31 12:36:38,544 [HttpClient.java:389] GET http://localhost:2004/Domain.svc/search/AggregatePrimaryDecimal9.A1A0D9?limit=2147483647&offset=0
-      <br></br>2014-12-31 12:36:38,544 [HttpClient.java:396] Accept: [application/json]
-      <br></br>2014-12-31 12:36:38,544 [HttpClient.java:396] Content-Type: [application/json]
-      <br></br>2014-12-31 12:36:38,560 [HttpClient.java:212] Received response [200, 1024 bytes] in 16 ms
-      <br></br>2014-12-31 12:36:38,560 [HttpClient.java:215] Received response body: [{"URI":"{}","p1A0D9":[]}]
-      <br></br>2014-12-31 12:36:38,560 [HttpClient.java:205] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 78 bytes
-      <br></br>2014-12-31 12:36:38,560 [HttpClient.java:389] POST http://localhost:2004/RestApplication.svc/PersistAggregateRoot
-      <br></br>2014-12-31 12:36:38,560 [HttpClient.java:396] Accept: [application/json]
-      <br></br>2014-12-31 12:36:38,560 [HttpClient.java:396] Content-Type: [application/json]
-      <br></br>2014-12-31 12:36:38,560 [HttpClient.java:402] Adding payload: {"RootName":"AggregatePrimaryDecimal9.A1A0D9","ToDelete":"[{\"URI\":\"{}\"}]"}
-      <br></br>2014-12-31 12:36:38,622 [HttpClient.java:212] Received response [200, 1024 bytes] in 62 ms
-      <br></br>2014-12-31 12:36:38,622 [HttpClient.java:215] Received response body: []
-      <br></br>2014-12-31 12:36:38,622 [HttpClient.java:205] Sending request [POST]: Crud.svc/AggregatePrimaryDecimal9.A1A0D9, content size: 67 bytes
-      <br></br>2014-12-31 12:36:38,622 [HttpClient.java:389] POST http://localhost:2004/Crud.svc/AggregatePrimaryDecimal9.A1A0D9
-      <br></br>2014-12-31 12:36:38,622 [HttpClient.java:396] Accept: [application/json]
-      <br></br>2014-12-31 12:36:38,622 [HttpClient.java:396] Content-Type: [application/json]
-      <br></br>2014-12-31 12:36:38,622 [HttpClient.java:402] Adding payload: {"URI":"1299279378","p1A0D9":[null,0E-9,1,3.141592654,-1E-9,1E+19]}
-      <br></br>2014-12-31 12:36:38,997 [HttpClient.java:212] Received response [400, 108 bytes] in 375 ms
-      <br></br>2014-12-31 12:36:39,013 [HttpClient.java:215] Received response body: Can't deserialize AggregatePrimaryDecimal9.A1A0D9. Error: Expecting ']' at position -1. Found E. Example: 
-      <br></br>
+      <br></br>2015-01-16 15:28:54,440 [HttpClient.java:191] Sending request [GET]: Domain.svc/search/AggregatePrimaryDecimal9.A1A0D9?limit=2147483647&offset=0
+      <br></br>2015-01-16 15:28:54,440 [HttpClient.java:418] GET http://localhost:2004/Domain.svc/search/AggregatePrimaryDecimal9.A1A0D9?limit=2147483647&offset=0
+      <br></br>2015-01-16 15:28:54,440 [HttpClient.java:425] Accept: [application/json]
+      <br></br>2015-01-16 15:28:54,440 [HttpClient.java:425] Content-Type: [application/json]
+      <br></br>2015-01-16 15:28:54,440 [HttpClient.java:216] Received response [200, 1024 bytes] in 0 ms
+      <br></br>2015-01-16 15:28:54,440 [HttpClient.java:219] Received response body: [{"URI":"{}","p1A0D9":[]}]
+      <br></br>2015-01-16 15:28:54,440 [HttpClient.java:209] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 92 bytes
+      <br></br>2015-01-16 15:28:54,440 [HttpClient.java:418] POST http://localhost:2004/RestApplication.svc/PersistAggregateRoot
+      <br></br>2015-01-16 15:28:54,440 [HttpClient.java:425] Accept: [application/json]
+      <br></br>2015-01-16 15:28:54,440 [HttpClient.java:425] Content-Type: [application/json]
+      <br></br>2015-01-16 15:28:54,440 [HttpClient.java:431] Adding payload: {"RootName":"AggregatePrimaryDecimal9.A1A0D9","ToDelete":"[{\"p1A0D9\":[],\"uri\":\"{}\"}]"}
+      <br></br>2015-01-16 15:28:54,487 [HttpClient.java:216] Received response [200, 1024 bytes] in 47 ms
+      <br></br>2015-01-16 15:28:54,487 [HttpClient.java:219] Received response body: []
+      <br></br>2015-01-16 15:28:54,487 [HttpClient.java:209] Sending request [POST]: Crud.svc/AggregatePrimaryDecimal9.A1A0D9, content size: 84 bytes
+      <br></br>2015-01-16 15:28:54,487 [HttpClient.java:418] POST http://localhost:2004/Crud.svc/AggregatePrimaryDecimal9.A1A0D9
+      <br></br>2015-01-16 15:28:54,487 [HttpClient.java:425] Accept: [application/json]
+      <br></br>2015-01-16 15:28:54,487 [HttpClient.java:425] Content-Type: [application/json]
+      <br></br>2015-01-16 15:28:54,487 [HttpClient.java:431] Adding payload: {"URI":"609359335"}{"URI":"50049566","p1A0D9":[null,0E-9,1,3.141592654,-1E-9,1E+19]}
+      <br></br>2015-01-16 15:28:54,518 [HttpClient.java:216] Received response [201, 1024 bytes] in 31 ms
+      <br></br>2015-01-16 15:28:54,518 [HttpClient.java:219] Received response body: {"URI":"{}","p1A0D9":[]}
       <br></br><a id="testP1A0D9NonDefault4PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1A0D9NonDefault4PropertyValueInAggregateAfterActiveRecordPersist</h2>
-      <br></br>2014-12-31 12:36:39,013 [HttpClient.java:191] Sending request [GET]: Domain.svc/search/AggregatePrimaryDecimal9.A1A0D9?limit=2147483647&offset=0
-      <br></br>2014-12-31 12:36:39,013 [HttpClient.java:389] GET http://localhost:2004/Domain.svc/search/AggregatePrimaryDecimal9.A1A0D9?limit=2147483647&offset=0
-      <br></br>2014-12-31 12:36:39,013 [HttpClient.java:396] Accept: [application/json]
-      <br></br>2014-12-31 12:36:39,013 [HttpClient.java:396] Content-Type: [application/json]
-      <br></br>2014-12-31 12:36:39,028 [HttpClient.java:212] Received response [200, 1024 bytes] in 15 ms
-      <br></br>2014-12-31 12:36:39,028 [HttpClient.java:215] Received response body: []
-      <br></br>2014-12-31 12:36:39,028 [HttpClient.java:205] Sending request [POST]: Crud.svc/AggregatePrimaryDecimal9.A1A0D9, content size: 61 bytes
-      <br></br>2014-12-31 12:36:39,028 [HttpClient.java:389] POST http://localhost:2004/Crud.svc/AggregatePrimaryDecimal9.A1A0D9
-      <br></br>2014-12-31 12:36:39,028 [HttpClient.java:396] Accept: [application/json]
-      <br></br>2014-12-31 12:36:39,028 [HttpClient.java:396] Content-Type: [application/json]
-      <br></br>2014-12-31 12:36:39,028 [HttpClient.java:402] Adding payload: {"URI":"375144053","p1A0D9":[0E-9,1,3.141592654,-1E-9,1E+19]}
-      <br></br>2014-12-31 12:36:39,028 [HttpClient.java:212] Received response [400, 108 bytes] in 0 ms
-      <br></br>2014-12-31 12:36:39,028 [HttpClient.java:215] Received response body: Can't deserialize AggregatePrimaryDecimal9.A1A0D9. Error: Expecting ']' at position -1. Found E. Example: 
-      <br></br>
+      <br></br>2015-01-16 15:28:54,518 [HttpClient.java:191] Sending request [GET]: Domain.svc/search/AggregatePrimaryDecimal9.A1A0D9?limit=2147483647&offset=0
+      <br></br>2015-01-16 15:28:54,518 [HttpClient.java:418] GET http://localhost:2004/Domain.svc/search/AggregatePrimaryDecimal9.A1A0D9?limit=2147483647&offset=0
+      <br></br>2015-01-16 15:28:54,518 [HttpClient.java:425] Accept: [application/json]
+      <br></br>2015-01-16 15:28:54,518 [HttpClient.java:425] Content-Type: [application/json]
+      <br></br>2015-01-16 15:28:54,518 [HttpClient.java:216] Received response [200, 1024 bytes] in 0 ms
+      <br></br>2015-01-16 15:28:54,518 [HttpClient.java:219] Received response body: [{"URI":"{}","p1A0D9":[]}]
+      <br></br>2015-01-16 15:28:54,534 [HttpClient.java:209] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 92 bytes
+      <br></br>2015-01-16 15:28:54,534 [HttpClient.java:418] POST http://localhost:2004/RestApplication.svc/PersistAggregateRoot
+      <br></br>2015-01-16 15:28:54,534 [HttpClient.java:425] Accept: [application/json]
+      <br></br>2015-01-16 15:28:54,534 [HttpClient.java:425] Content-Type: [application/json]
+      <br></br>2015-01-16 15:28:54,534 [HttpClient.java:431] Adding payload: {"RootName":"AggregatePrimaryDecimal9.A1A0D9","ToDelete":"[{\"p1A0D9\":[],\"uri\":\"{}\"}]"}
+      <br></br>2015-01-16 15:28:54,550 [HttpClient.java:216] Received response [200, 1024 bytes] in 32 ms
+      <br></br>2015-01-16 15:28:54,550 [HttpClient.java:219] Received response body: []
+      <br></br>2015-01-16 15:28:54,550 [HttpClient.java:209] Sending request [POST]: Crud.svc/AggregatePrimaryDecimal9.A1A0D9, content size: 146 bytes
+      <br></br>2015-01-16 15:28:54,550 [HttpClient.java:418] POST http://localhost:2004/Crud.svc/AggregatePrimaryDecimal9.A1A0D9
+      <br></br>2015-01-16 15:28:54,550 [HttpClient.java:425] Accept: [application/json]
+      <br></br>2015-01-16 15:28:54,550 [HttpClient.java:425] Content-Type: [application/json]
+      <br></br>2015-01-16 15:28:54,550 [HttpClient.java:431] Adding payload: {"URI":"609359335"}{"URI":"50049566","p1A0D9":[null,0E-9,1,3.141592654,-1E-9,1E+19]}{"URI":"1166337448","p1A0D9":[0E-9,1,3.141592654,-1E-9,1E+19]}
+      <br></br>2015-01-16 15:28:54,581 [HttpClient.java:216] Received response [201, 1024 bytes] in 31 ms
+      <br></br>2015-01-16 15:28:54,581 [HttpClient.java:219] Received response body: {"URI":"{}","p1A0D9":[]}
       <br></br><a id="testP1A0D9NonDefault3PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1A0D9NonDefault3PropertyValueInAggregateAfterActiveRecordPersist</h2>
-      <br></br>2014-12-31 12:36:39,028 [HttpClient.java:191] Sending request [GET]: Domain.svc/search/AggregatePrimaryDecimal9.A1A0D9?limit=2147483647&offset=0
-      <br></br>2014-12-31 12:36:39,028 [HttpClient.java:389] GET http://localhost:2004/Domain.svc/search/AggregatePrimaryDecimal9.A1A0D9?limit=2147483647&offset=0
-      <br></br>2014-12-31 12:36:39,028 [HttpClient.java:396] Accept: [application/json]
-      <br></br>2014-12-31 12:36:39,028 [HttpClient.java:396] Content-Type: [application/json]
-      <br></br>2014-12-31 12:36:39,028 [HttpClient.java:212] Received response [200, 1024 bytes] in 0 ms
-      <br></br>2014-12-31 12:36:39,028 [HttpClient.java:215] Received response body: []
-      <br></br>2014-12-31 12:36:39,028 [HttpClient.java:205] Sending request [POST]: Crud.svc/AggregatePrimaryDecimal9.A1A0D9, content size: 37 bytes
-      <br></br>2014-12-31 12:36:39,028 [HttpClient.java:389] POST http://localhost:2004/Crud.svc/AggregatePrimaryDecimal9.A1A0D9
-      <br></br>2014-12-31 12:36:39,028 [HttpClient.java:396] Accept: [application/json]
-      <br></br>2014-12-31 12:36:39,028 [HttpClient.java:396] Content-Type: [application/json]
-      <br></br>2014-12-31 12:36:39,028 [HttpClient.java:402] Adding payload: {"URI":"1607207670","p1A0D9":[1E+19]}
-      <br></br>2014-12-31 12:36:39,028 [HttpClient.java:212] Received response [400, 108 bytes] in 0 ms
-      <br></br>2014-12-31 12:36:39,028 [HttpClient.java:215] Received response body: Can't deserialize AggregatePrimaryDecimal9.A1A0D9. Error: Expecting ']' at position -1. Found E. Example: 
-      <br></br>
+      <br></br>2015-01-16 15:28:54,596 [HttpClient.java:191] Sending request [GET]: Domain.svc/search/AggregatePrimaryDecimal9.A1A0D9?limit=2147483647&offset=0
+      <br></br>2015-01-16 15:28:54,596 [HttpClient.java:418] GET http://localhost:2004/Domain.svc/search/AggregatePrimaryDecimal9.A1A0D9?limit=2147483647&offset=0
+      <br></br>2015-01-16 15:28:54,596 [HttpClient.java:425] Accept: [application/json]
+      <br></br>2015-01-16 15:28:54,596 [HttpClient.java:425] Content-Type: [application/json]
+      <br></br>2015-01-16 15:28:54,596 [HttpClient.java:216] Received response [200, 1024 bytes] in 0 ms
+      <br></br>2015-01-16 15:28:54,596 [HttpClient.java:219] Received response body: [{"URI":"{}","p1A0D9":[]}]
+      <br></br>2015-01-16 15:28:54,596 [HttpClient.java:209] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 92 bytes
+      <br></br>2015-01-16 15:28:54,596 [HttpClient.java:418] POST http://localhost:2004/RestApplication.svc/PersistAggregateRoot
+      <br></br>2015-01-16 15:28:54,596 [HttpClient.java:425] Accept: [application/json]
+      <br></br>2015-01-16 15:28:54,596 [HttpClient.java:425] Content-Type: [application/json]
+      <br></br>2015-01-16 15:28:54,596 [HttpClient.java:431] Adding payload: {"RootName":"AggregatePrimaryDecimal9.A1A0D9","ToDelete":"[{\"p1A0D9\":[],\"uri\":\"{}\"}]"}
+      <br></br>2015-01-16 15:28:54,643 [HttpClient.java:216] Received response [200, 1024 bytes] in 47 ms
+      <br></br>2015-01-16 15:28:54,643 [HttpClient.java:219] Received response body: []
+      <br></br>2015-01-16 15:28:54,643 [HttpClient.java:209] Sending request [POST]: Crud.svc/AggregatePrimaryDecimal9.A1A0D9, content size: 182 bytes
+      <br></br>2015-01-16 15:28:54,643 [HttpClient.java:418] POST http://localhost:2004/Crud.svc/AggregatePrimaryDecimal9.A1A0D9
+      <br></br>2015-01-16 15:28:54,643 [HttpClient.java:425] Accept: [application/json]
+      <br></br>2015-01-16 15:28:54,643 [HttpClient.java:425] Content-Type: [application/json]
+      <br></br>2015-01-16 15:28:54,643 [HttpClient.java:431] Adding payload: {"URI":"609359335"}{"URI":"50049566","p1A0D9":[null,0E-9,1,3.141592654,-1E-9,1E+19]}{"URI":"1166337448","p1A0D9":[0E-9,1,3.141592654,-1E-9,1E+19]}{"URI":"395508103","p1A0D9":[1E+19]}
+      <br></br>2015-01-16 15:28:54,675 [HttpClient.java:216] Received response [201, 1024 bytes] in 32 ms
+      <br></br>2015-01-16 15:28:54,675 [HttpClient.java:219] Received response body: {"URI":"{}","p1A0D9":[]}
       <br></br><a id="testP1A0D9NonDefault2PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1A0D9NonDefault2PropertyValueInAggregateAfterActiveRecordPersist</h2>
-      <br></br>2014-12-31 12:36:39,060 [HttpClient.java:191] Sending request [GET]: Domain.svc/search/AggregatePrimaryDecimal9.A1A0D9?limit=2147483647&offset=0
-      <br></br>2014-12-31 12:36:39,060 [HttpClient.java:389] GET http://localhost:2004/Domain.svc/search/AggregatePrimaryDecimal9.A1A0D9?limit=2147483647&offset=0
-      <br></br>2014-12-31 12:36:39,060 [HttpClient.java:396] Accept: [application/json]
-      <br></br>2014-12-31 12:36:39,060 [HttpClient.java:396] Content-Type: [application/json]
-      <br></br>2014-12-31 12:36:39,060 [HttpClient.java:212] Received response [200, 1024 bytes] in 0 ms
-      <br></br>2014-12-31 12:36:39,060 [HttpClient.java:215] Received response body: []
-      <br></br>2014-12-31 12:36:39,060 [HttpClient.java:205] Sending request [POST]: Crud.svc/AggregatePrimaryDecimal9.A1A0D9, content size: 35 bytes
-      <br></br>2014-12-31 12:36:39,060 [HttpClient.java:389] POST http://localhost:2004/Crud.svc/AggregatePrimaryDecimal9.A1A0D9
-      <br></br>2014-12-31 12:36:39,060 [HttpClient.java:396] Accept: [application/json]
-      <br></br>2014-12-31 12:36:39,060 [HttpClient.java:396] Content-Type: [application/json]
-      <br></br>2014-12-31 12:36:39,060 [HttpClient.java:402] Adding payload: {"URI":"630392370","p1A0D9":[0E-9]}
-      <br></br>2014-12-31 12:36:39,060 [HttpClient.java:212] Received response [400, 108 bytes] in 0 ms
-      <br></br>2014-12-31 12:36:39,060 [HttpClient.java:215] Received response body: Can't deserialize AggregatePrimaryDecimal9.A1A0D9. Error: Expecting ']' at position -1. Found E. Example: 
-      <br></br>
+      <br></br>2015-01-16 15:28:54,706 [HttpClient.java:191] Sending request [GET]: Domain.svc/search/AggregatePrimaryDecimal9.A1A0D9?limit=2147483647&offset=0
+      <br></br>2015-01-16 15:28:54,706 [HttpClient.java:418] GET http://localhost:2004/Domain.svc/search/AggregatePrimaryDecimal9.A1A0D9?limit=2147483647&offset=0
+      <br></br>2015-01-16 15:28:54,706 [HttpClient.java:425] Accept: [application/json]
+      <br></br>2015-01-16 15:28:54,706 [HttpClient.java:425] Content-Type: [application/json]
+      <br></br>2015-01-16 15:28:54,706 [HttpClient.java:216] Received response [200, 1024 bytes] in 0 ms
+      <br></br>2015-01-16 15:28:54,706 [HttpClient.java:219] Received response body: [{"URI":"{}","p1A0D9":[]}]
+      <br></br>2015-01-16 15:28:54,706 [HttpClient.java:209] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 92 bytes
+      <br></br>2015-01-16 15:28:54,706 [HttpClient.java:418] POST http://localhost:2004/RestApplication.svc/PersistAggregateRoot
+      <br></br>2015-01-16 15:28:54,706 [HttpClient.java:425] Accept: [application/json]
+      <br></br>2015-01-16 15:28:54,706 [HttpClient.java:425] Content-Type: [application/json]
+      <br></br>2015-01-16 15:28:54,706 [HttpClient.java:431] Adding payload: {"RootName":"AggregatePrimaryDecimal9.A1A0D9","ToDelete":"[{\"p1A0D9\":[],\"uri\":\"{}\"}]"}
+      <br></br>2015-01-16 15:28:54,737 [HttpClient.java:216] Received response [200, 1024 bytes] in 31 ms
+      <br></br>2015-01-16 15:28:54,737 [HttpClient.java:219] Received response body: []
+      <br></br>2015-01-16 15:28:54,737 [HttpClient.java:209] Sending request [POST]: Crud.svc/AggregatePrimaryDecimal9.A1A0D9, content size: 218 bytes
+      <br></br>2015-01-16 15:28:54,737 [HttpClient.java:418] POST http://localhost:2004/Crud.svc/AggregatePrimaryDecimal9.A1A0D9
+      <br></br>2015-01-16 15:28:54,737 [HttpClient.java:425] Accept: [application/json]
+      <br></br>2015-01-16 15:28:54,737 [HttpClient.java:425] Content-Type: [application/json]
+      <br></br>2015-01-16 15:28:54,737 [HttpClient.java:431] Adding payload: {"URI":"609359335"}{"URI":"50049566","p1A0D9":[null,0E-9,1,3.141592654,-1E-9,1E+19]}{"URI":"1166337448","p1A0D9":[0E-9,1,3.141592654,-1E-9,1E+19]}{"URI":"395508103","p1A0D9":[1E+19]}{"URI":"1284327050","p1A0D9":[0E-9]}
+      <br></br>2015-01-16 15:28:54,768 [HttpClient.java:216] Received response [201, 1024 bytes] in 31 ms
+      <br></br>2015-01-16 15:28:54,768 [HttpClient.java:219] Received response body: {"URI":"{}","p1A0D9":[]}
       <br></br><a id="testP1A0D9NonDefault1PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1A0D9NonDefault1PropertyValueInAggregateAfterActiveRecordPersist</h2>
-      <br></br>2014-12-31 12:36:39,122 [HttpClient.java:191] Sending request [GET]: Domain.svc/search/AggregatePrimaryDecimal9.A1A0D9?limit=2147483647&offset=0
-      <br></br>2014-12-31 12:36:39,122 [HttpClient.java:389] GET http://localhost:2004/Domain.svc/search/AggregatePrimaryDecimal9.A1A0D9?limit=2147483647&offset=0
-      <br></br>2014-12-31 12:36:39,122 [HttpClient.java:396] Accept: [application/json]
-      <br></br>2014-12-31 12:36:39,122 [HttpClient.java:396] Content-Type: [application/json]
-      <br></br>2014-12-31 12:36:39,138 [HttpClient.java:212] Received response [200, 1024 bytes] in 16 ms
-      <br></br>2014-12-31 12:36:39,138 [HttpClient.java:215] Received response body: []
-      <br></br>2014-12-31 12:36:39,138 [HttpClient.java:205] Sending request [POST]: Crud.svc/AggregatePrimaryDecimal9.A1A0D9, content size: 35 bytes
-      <br></br>2014-12-31 12:36:39,138 [HttpClient.java:389] POST http://localhost:2004/Crud.svc/AggregatePrimaryDecimal9.A1A0D9
-      <br></br>2014-12-31 12:36:39,138 [HttpClient.java:396] Accept: [application/json]
-      <br></br>2014-12-31 12:36:39,138 [HttpClient.java:396] Content-Type: [application/json]
-      <br></br>2014-12-31 12:36:39,138 [HttpClient.java:402] Adding payload: {"URI":"967677653","p1A0D9":[null]}
-      <br></br>2014-12-31 12:36:39,200 [HttpClient.java:212] Received response [201, 1024 bytes] in 62 ms
-      <br></br>2014-12-31 12:36:39,200 [HttpClient.java:215] Received response body: {"URI":"{NULL}","p1A0D9":[null]}
-      <br></br>2014-12-31 12:36:39,200 [HttpClient.java:191] Sending request [GET]: Crud.svc/AggregatePrimaryDecimal9.A1A0D9?uri=%7BNULL%7D
-      <br></br>2014-12-31 12:36:39,200 [HttpClient.java:389] GET http://localhost:2004/Crud.svc/AggregatePrimaryDecimal9.A1A0D9?uri=%7BNULL%7D
-      <br></br>2014-12-31 12:36:39,200 [HttpClient.java:396] Accept: [application/json]
-      <br></br>2014-12-31 12:36:39,200 [HttpClient.java:396] Content-Type: [application/json]
-      <br></br>2014-12-31 12:36:39,200 [HttpClient.java:212] Received response [200, 1024 bytes] in 0 ms
-      <br></br>2014-12-31 12:36:39,200 [HttpClient.java:215] Received response body: {"URI":"{NULL}","p1A0D9":[null]}
+      <br></br>2015-01-16 15:28:54,768 [HttpClient.java:191] Sending request [GET]: Domain.svc/search/AggregatePrimaryDecimal9.A1A0D9?limit=2147483647&offset=0
+      <br></br>2015-01-16 15:28:54,768 [HttpClient.java:418] GET http://localhost:2004/Domain.svc/search/AggregatePrimaryDecimal9.A1A0D9?limit=2147483647&offset=0
+      <br></br>2015-01-16 15:28:54,768 [HttpClient.java:425] Accept: [application/json]
+      <br></br>2015-01-16 15:28:54,768 [HttpClient.java:425] Content-Type: [application/json]
+      <br></br>2015-01-16 15:28:54,768 [HttpClient.java:216] Received response [200, 1024 bytes] in 0 ms
+      <br></br>2015-01-16 15:28:54,768 [HttpClient.java:219] Received response body: [{"URI":"{}","p1A0D9":[]}]
+      <br></br>2015-01-16 15:28:54,768 [HttpClient.java:209] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 92 bytes
+      <br></br>2015-01-16 15:28:54,768 [HttpClient.java:418] POST http://localhost:2004/RestApplication.svc/PersistAggregateRoot
+      <br></br>2015-01-16 15:28:54,768 [HttpClient.java:425] Accept: [application/json]
+      <br></br>2015-01-16 15:28:54,768 [HttpClient.java:425] Content-Type: [application/json]
+      <br></br>2015-01-16 15:28:54,768 [HttpClient.java:431] Adding payload: {"RootName":"AggregatePrimaryDecimal9.A1A0D9","ToDelete":"[{\"p1A0D9\":[],\"uri\":\"{}\"}]"}
+      <br></br>2015-01-16 15:28:54,800 [HttpClient.java:216] Received response [200, 1024 bytes] in 32 ms
+      <br></br>2015-01-16 15:28:54,800 [HttpClient.java:219] Received response body: []
+      <br></br>2015-01-16 15:28:54,800 [HttpClient.java:209] Sending request [POST]: Crud.svc/AggregatePrimaryDecimal9.A1A0D9, content size: 253 bytes
+      <br></br>2015-01-16 15:28:54,800 [HttpClient.java:418] POST http://localhost:2004/Crud.svc/AggregatePrimaryDecimal9.A1A0D9
+      <br></br>2015-01-16 15:28:54,800 [HttpClient.java:425] Accept: [application/json]
+      <br></br>2015-01-16 15:28:54,800 [HttpClient.java:425] Content-Type: [application/json]
+      <br></br>2015-01-16 15:28:54,800 [HttpClient.java:431] Adding payload: {"URI":"609359335"}{"URI":"50049566","p1A0D9":[null,0E-9,1,3.141592654,-1E-9,1E+19]}{"URI":"1166337448","p1A0D9":[0E-9,1,3.141592654,-1E-9,1E+19]}{"URI":"395508103","p1A0D9":[1E+19]}{"URI":"1284327050","p1A0D9":[0E-9]}{"URI":"899895612","p1A0D9":[null]}
+      <br></br>2015-01-16 15:28:54,831 [HttpClient.java:216] Received response [201, 1024 bytes] in 31 ms
+      <br></br>2015-01-16 15:28:54,831 [HttpClient.java:219] Received response body: {"URI":"{}","p1A0D9":[]}
       <br></br><a id="testP1A0D9NonDefault3PropertyInAggregateJsonSerialization"/><h2>testP1A0D9NonDefault3PropertyInAggregateJsonSerialization</h2>
       <br></br><a id="testURIPropertyGetterModifiers"/><h2>testURIPropertyGetterModifiers</h2>
       <br></br><a id="testP1A0D9PropertyGetterModifiers"/><h2>testP1A0D9PropertyGetterModifiers</h2>
@@ -143,78 +161,89 @@
       <br></br><a id="testP1A1D9PropertySetterModifiers"/><h2>testP1A1D9PropertySetterModifiers</h2>
       <br></br><a id="testP1A1D9PropertyFieldPrivateVisibility"/><h2>testP1A1D9PropertyFieldPrivateVisibility</h2>
       <br></br><a id="testP1A1D9DefaultPropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1A1D9DefaultPropertyValueInAggregateAfterActiveRecordPersist</h2>
-      <br></br>2014-12-31 12:36:39,216 [HttpClient.java:191] Sending request [GET]: Domain.svc/search/AggregatePrimaryDecimal9.A1A1D9?limit=2147483647&offset=0
-      <br></br>2014-12-31 12:36:39,216 [HttpClient.java:389] GET http://localhost:2004/Domain.svc/search/AggregatePrimaryDecimal9.A1A1D9?limit=2147483647&offset=0
-      <br></br>2014-12-31 12:36:39,216 [HttpClient.java:396] Accept: [application/json]
-      <br></br>2014-12-31 12:36:39,216 [HttpClient.java:396] Content-Type: [application/json]
-      <br></br>2014-12-31 12:36:39,247 [HttpClient.java:212] Received response [200, 1024 bytes] in 31 ms
-      <br></br>2014-12-31 12:36:39,247 [HttpClient.java:215] Received response body: []
-      <br></br>2014-12-31 12:36:39,247 [HttpClient.java:205] Sending request [POST]: Crud.svc/AggregatePrimaryDecimal9.A1A1D9, content size: 20 bytes
-      <br></br>2014-12-31 12:36:39,247 [HttpClient.java:389] POST http://localhost:2004/Crud.svc/AggregatePrimaryDecimal9.A1A1D9
-      <br></br>2014-12-31 12:36:39,247 [HttpClient.java:396] Accept: [application/json]
-      <br></br>2014-12-31 12:36:39,247 [HttpClient.java:396] Content-Type: [application/json]
-      <br></br>2014-12-31 12:36:39,247 [HttpClient.java:402] Adding payload: {"URI":"1988025089"}
-      <br></br>2014-12-31 12:36:39,294 [HttpClient.java:212] Received response [201, 1024 bytes] in 47 ms
-      <br></br>2014-12-31 12:36:39,294 [HttpClient.java:215] Received response body: {"URI":"{}","p1A1D9":[]}
-      <br></br>2014-12-31 12:36:39,294 [HttpClient.java:191] Sending request [GET]: Crud.svc/AggregatePrimaryDecimal9.A1A1D9?uri=%7B%7D
-      <br></br>2014-12-31 12:36:39,294 [HttpClient.java:389] GET http://localhost:2004/Crud.svc/AggregatePrimaryDecimal9.A1A1D9?uri=%7B%7D
-      <br></br>2014-12-31 12:36:39,294 [HttpClient.java:396] Accept: [application/json]
-      <br></br>2014-12-31 12:36:39,294 [HttpClient.java:396] Content-Type: [application/json]
-      <br></br>2014-12-31 12:36:39,372 [HttpClient.java:212] Received response [200, 1024 bytes] in 78 ms
-      <br></br>2014-12-31 12:36:39,372 [HttpClient.java:215] Received response body: {"URI":"{}","p1A1D9":[]}
+      <br></br>2015-01-16 15:28:54,846 [HttpClient.java:191] Sending request [GET]: Domain.svc/search/AggregatePrimaryDecimal9.A1A1D9?limit=2147483647&offset=0
+      <br></br>2015-01-16 15:28:54,846 [HttpClient.java:418] GET http://localhost:2004/Domain.svc/search/AggregatePrimaryDecimal9.A1A1D9?limit=2147483647&offset=0
+      <br></br>2015-01-16 15:28:54,846 [HttpClient.java:425] Accept: [application/json]
+      <br></br>2015-01-16 15:28:54,846 [HttpClient.java:425] Content-Type: [application/json]
+      <br></br>2015-01-16 15:28:55,003 [HttpClient.java:216] Received response [200, 1024 bytes] in 157 ms
+      <br></br>2015-01-16 15:28:55,003 [HttpClient.java:219] Received response body: []
+      <br></br>2015-01-16 15:28:55,003 [HttpClient.java:209] Sending request [POST]: Crud.svc/AggregatePrimaryDecimal9.A1A1D9, content size: 18 bytes
+      <br></br>2015-01-16 15:28:55,003 [HttpClient.java:418] POST http://localhost:2004/Crud.svc/AggregatePrimaryDecimal9.A1A1D9
+      <br></br>2015-01-16 15:28:55,003 [HttpClient.java:425] Accept: [application/json]
+      <br></br>2015-01-16 15:28:55,003 [HttpClient.java:425] Content-Type: [application/json]
+      <br></br>2015-01-16 15:28:55,003 [HttpClient.java:431] Adding payload: {"URI":"43587827"}
+      <br></br>2015-01-16 15:28:55,284 [HttpClient.java:216] Received response [201, 1024 bytes] in 281 ms
+      <br></br>2015-01-16 15:28:55,284 [HttpClient.java:219] Received response body: {"URI":"{}","p1A1D9":[]}
+      <br></br>2015-01-16 15:28:55,284 [HttpClient.java:191] Sending request [GET]: Crud.svc/AggregatePrimaryDecimal9.A1A1D9?uri=%7B%7D
+      <br></br>2015-01-16 15:28:55,284 [HttpClient.java:418] GET http://localhost:2004/Crud.svc/AggregatePrimaryDecimal9.A1A1D9?uri=%7B%7D
+      <br></br>2015-01-16 15:28:55,284 [HttpClient.java:425] Accept: [application/json]
+      <br></br>2015-01-16 15:28:55,284 [HttpClient.java:425] Content-Type: [application/json]
+      <br></br>2015-01-16 15:28:55,300 [HttpClient.java:216] Received response [200, 1024 bytes] in 16 ms
+      <br></br>2015-01-16 15:28:55,300 [HttpClient.java:219] Received response body: {"URI":"{}","p1A1D9":[]}
       <br></br><a id="testURIPropertyFieldClass"/><h2>testURIPropertyFieldClass</h2>
       <br></br><a id="testP1A1D9NonDefault3PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1A1D9NonDefault3PropertyValueInAggregateAfterActiveRecordPersist</h2>
-      <br></br>2014-12-31 12:36:39,372 [HttpClient.java:191] Sending request [GET]: Domain.svc/search/AggregatePrimaryDecimal9.A1A1D9?limit=2147483647&offset=0
-      <br></br>2014-12-31 12:36:39,372 [HttpClient.java:389] GET http://localhost:2004/Domain.svc/search/AggregatePrimaryDecimal9.A1A1D9?limit=2147483647&offset=0
-      <br></br>2014-12-31 12:36:39,372 [HttpClient.java:396] Accept: [application/json]
-      <br></br>2014-12-31 12:36:39,372 [HttpClient.java:396] Content-Type: [application/json]
-      <br></br>2014-12-31 12:36:39,372 [HttpClient.java:212] Received response [200, 1024 bytes] in 0 ms
-      <br></br>2014-12-31 12:36:39,372 [HttpClient.java:215] Received response body: [{"URI":"{}","p1A1D9":[]}]
-      <br></br>2014-12-31 12:36:39,388 [HttpClient.java:205] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 78 bytes
-      <br></br>2014-12-31 12:36:39,388 [HttpClient.java:389] POST http://localhost:2004/RestApplication.svc/PersistAggregateRoot
-      <br></br>2014-12-31 12:36:39,388 [HttpClient.java:396] Accept: [application/json]
-      <br></br>2014-12-31 12:36:39,388 [HttpClient.java:396] Content-Type: [application/json]
-      <br></br>2014-12-31 12:36:39,388 [HttpClient.java:402] Adding payload: {"RootName":"AggregatePrimaryDecimal9.A1A1D9","ToDelete":"[{\"URI\":\"{}\"}]"}
-      <br></br>2014-12-31 12:36:39,607 [HttpClient.java:212] Received response [200, 1024 bytes] in 235 ms
-      <br></br>2014-12-31 12:36:39,607 [HttpClient.java:215] Received response body: []
-      <br></br>2014-12-31 12:36:39,607 [HttpClient.java:205] Sending request [POST]: Crud.svc/AggregatePrimaryDecimal9.A1A1D9, content size: 62 bytes
-      <br></br>2014-12-31 12:36:39,607 [HttpClient.java:389] POST http://localhost:2004/Crud.svc/AggregatePrimaryDecimal9.A1A1D9
-      <br></br>2014-12-31 12:36:39,607 [HttpClient.java:396] Accept: [application/json]
-      <br></br>2014-12-31 12:36:39,607 [HttpClient.java:396] Content-Type: [application/json]
-      <br></br>2014-12-31 12:36:39,607 [HttpClient.java:402] Adding payload: {"URI":"1575099263","p1A1D9":[0E-9,1,3.141592654,-1E-9,1E+19]}
-      <br></br>2014-12-31 12:36:39,607 [HttpClient.java:212] Received response [400, 108 bytes] in 0 ms
-      <br></br>2014-12-31 12:36:39,607 [HttpClient.java:215] Received response body: Can't deserialize AggregatePrimaryDecimal9.A1A1D9. Error: Expecting ']' at position -1. Found E. Example: 
-      <br></br>
+      <br></br>2015-01-16 15:28:55,300 [HttpClient.java:191] Sending request [GET]: Domain.svc/search/AggregatePrimaryDecimal9.A1A1D9?limit=2147483647&offset=0
+      <br></br>2015-01-16 15:28:55,300 [HttpClient.java:418] GET http://localhost:2004/Domain.svc/search/AggregatePrimaryDecimal9.A1A1D9?limit=2147483647&offset=0
+      <br></br>2015-01-16 15:28:55,300 [HttpClient.java:425] Accept: [application/json]
+      <br></br>2015-01-16 15:28:55,300 [HttpClient.java:425] Content-Type: [application/json]
+      <br></br>2015-01-16 15:28:55,315 [HttpClient.java:216] Received response [200, 1024 bytes] in 15 ms
+      <br></br>2015-01-16 15:28:55,315 [HttpClient.java:219] Received response body: [{"URI":"{}","p1A1D9":[]}]
+      <br></br>2015-01-16 15:28:55,331 [HttpClient.java:209] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 92 bytes
+      <br></br>2015-01-16 15:28:55,331 [HttpClient.java:418] POST http://localhost:2004/RestApplication.svc/PersistAggregateRoot
+      <br></br>2015-01-16 15:28:55,331 [HttpClient.java:425] Accept: [application/json]
+      <br></br>2015-01-16 15:28:55,331 [HttpClient.java:425] Content-Type: [application/json]
+      <br></br>2015-01-16 15:28:55,331 [HttpClient.java:431] Adding payload: {"RootName":"AggregatePrimaryDecimal9.A1A1D9","ToDelete":"[{\"p1A1D9\":[],\"uri\":\"{}\"}]"}
+      <br></br>2015-01-16 15:28:55,378 [HttpClient.java:216] Received response [200, 1024 bytes] in 47 ms
+      <br></br>2015-01-16 15:28:55,378 [HttpClient.java:219] Received response body: []
+      <br></br>2015-01-16 15:28:55,378 [HttpClient.java:209] Sending request [POST]: Crud.svc/AggregatePrimaryDecimal9.A1A1D9, content size: 79 bytes
+      <br></br>2015-01-16 15:28:55,378 [HttpClient.java:418] POST http://localhost:2004/Crud.svc/AggregatePrimaryDecimal9.A1A1D9
+      <br></br>2015-01-16 15:28:55,378 [HttpClient.java:425] Accept: [application/json]
+      <br></br>2015-01-16 15:28:55,378 [HttpClient.java:425] Content-Type: [application/json]
+      <br></br>2015-01-16 15:28:55,378 [HttpClient.java:431] Adding payload: {"URI":"43587827"}{"URI":"529135239","p1A1D9":[0E-9,1,3.141592654,-1E-9,1E+19]}
+      <br></br>2015-01-16 15:28:55,409 [HttpClient.java:216] Received response [201, 1024 bytes] in 31 ms
+      <br></br>2015-01-16 15:28:55,409 [HttpClient.java:219] Received response body: {"URI":"{}","p1A1D9":[]}
       <br></br><a id="testP1A1D9NonDefault2PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1A1D9NonDefault2PropertyValueInAggregateAfterActiveRecordPersist</h2>
-      <br></br>2014-12-31 12:36:39,607 [HttpClient.java:191] Sending request [GET]: Domain.svc/search/AggregatePrimaryDecimal9.A1A1D9?limit=2147483647&offset=0
-      <br></br>2014-12-31 12:36:39,607 [HttpClient.java:389] GET http://localhost:2004/Domain.svc/search/AggregatePrimaryDecimal9.A1A1D9?limit=2147483647&offset=0
-      <br></br>2014-12-31 12:36:39,607 [HttpClient.java:396] Accept: [application/json]
-      <br></br>2014-12-31 12:36:39,607 [HttpClient.java:396] Content-Type: [application/json]
-      <br></br>2014-12-31 12:36:39,622 [HttpClient.java:212] Received response [200, 1024 bytes] in 15 ms
-      <br></br>2014-12-31 12:36:39,622 [HttpClient.java:215] Received response body: []
-      <br></br>2014-12-31 12:36:39,622 [HttpClient.java:205] Sending request [POST]: Crud.svc/AggregatePrimaryDecimal9.A1A1D9, content size: 35 bytes
-      <br></br>2014-12-31 12:36:39,622 [HttpClient.java:389] POST http://localhost:2004/Crud.svc/AggregatePrimaryDecimal9.A1A1D9
-      <br></br>2014-12-31 12:36:39,622 [HttpClient.java:396] Accept: [application/json]
-      <br></br>2014-12-31 12:36:39,622 [HttpClient.java:396] Content-Type: [application/json]
-      <br></br>2014-12-31 12:36:39,622 [HttpClient.java:402] Adding payload: {"URI":"26746445","p1A1D9":[1E+19]}
-      <br></br>2014-12-31 12:36:39,638 [HttpClient.java:212] Received response [400, 108 bytes] in 16 ms
-      <br></br>2014-12-31 12:36:39,638 [HttpClient.java:215] Received response body: Can't deserialize AggregatePrimaryDecimal9.A1A1D9. Error: Expecting ']' at position -1. Found E. Example: 
-      <br></br>
+      <br></br>2015-01-16 15:28:55,409 [HttpClient.java:191] Sending request [GET]: Domain.svc/search/AggregatePrimaryDecimal9.A1A1D9?limit=2147483647&offset=0
+      <br></br>2015-01-16 15:28:55,409 [HttpClient.java:418] GET http://localhost:2004/Domain.svc/search/AggregatePrimaryDecimal9.A1A1D9?limit=2147483647&offset=0
+      <br></br>2015-01-16 15:28:55,409 [HttpClient.java:425] Accept: [application/json]
+      <br></br>2015-01-16 15:28:55,409 [HttpClient.java:425] Content-Type: [application/json]
+      <br></br>2015-01-16 15:28:55,409 [HttpClient.java:216] Received response [200, 1024 bytes] in 0 ms
+      <br></br>2015-01-16 15:28:55,409 [HttpClient.java:219] Received response body: [{"URI":"{}","p1A1D9":[]}]
+      <br></br>2015-01-16 15:28:55,409 [HttpClient.java:209] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 92 bytes
+      <br></br>2015-01-16 15:28:55,409 [HttpClient.java:418] POST http://localhost:2004/RestApplication.svc/PersistAggregateRoot
+      <br></br>2015-01-16 15:28:55,409 [HttpClient.java:425] Accept: [application/json]
+      <br></br>2015-01-16 15:28:55,409 [HttpClient.java:425] Content-Type: [application/json]
+      <br></br>2015-01-16 15:28:55,409 [HttpClient.java:431] Adding payload: {"RootName":"AggregatePrimaryDecimal9.A1A1D9","ToDelete":"[{\"p1A1D9\":[],\"uri\":\"{}\"}]"}
+      <br></br>2015-01-16 15:28:55,471 [HttpClient.java:216] Received response [200, 1024 bytes] in 62 ms
+      <br></br>2015-01-16 15:28:55,471 [HttpClient.java:219] Received response body: []
+      <br></br>2015-01-16 15:28:55,471 [HttpClient.java:209] Sending request [POST]: Crud.svc/AggregatePrimaryDecimal9.A1A1D9, content size: 116 bytes
+      <br></br>2015-01-16 15:28:55,471 [HttpClient.java:418] POST http://localhost:2004/Crud.svc/AggregatePrimaryDecimal9.A1A1D9
+      <br></br>2015-01-16 15:28:55,471 [HttpClient.java:425] Accept: [application/json]
+      <br></br>2015-01-16 15:28:55,471 [HttpClient.java:425] Content-Type: [application/json]
+      <br></br>2015-01-16 15:28:55,471 [HttpClient.java:431] Adding payload: {"URI":"43587827"}{"URI":"529135239","p1A1D9":[0E-9,1,3.141592654,-1E-9,1E+19]}{"URI":"1609197353","p1A1D9":[1E+19]}
+      <br></br>2015-01-16 15:28:55,518 [HttpClient.java:216] Received response [201, 1024 bytes] in 47 ms
+      <br></br>2015-01-16 15:28:55,518 [HttpClient.java:219] Received response body: {"URI":"{}","p1A1D9":[]}
       <br></br><a id="testP1A1D9NonDefault1PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1A1D9NonDefault1PropertyValueInAggregateAfterActiveRecordPersist</h2>
-      <br></br>2014-12-31 12:36:39,638 [HttpClient.java:191] Sending request [GET]: Domain.svc/search/AggregatePrimaryDecimal9.A1A1D9?limit=2147483647&offset=0
-      <br></br>2014-12-31 12:36:39,638 [HttpClient.java:389] GET http://localhost:2004/Domain.svc/search/AggregatePrimaryDecimal9.A1A1D9?limit=2147483647&offset=0
-      <br></br>2014-12-31 12:36:39,638 [HttpClient.java:396] Accept: [application/json]
-      <br></br>2014-12-31 12:36:39,638 [HttpClient.java:396] Content-Type: [application/json]
-      <br></br>2014-12-31 12:36:39,638 [HttpClient.java:212] Received response [200, 1024 bytes] in 0 ms
-      <br></br>2014-12-31 12:36:39,638 [HttpClient.java:215] Received response body: []
-      <br></br>2014-12-31 12:36:39,638 [HttpClient.java:205] Sending request [POST]: Crud.svc/AggregatePrimaryDecimal9.A1A1D9, content size: 36 bytes
-      <br></br>2014-12-31 12:36:39,638 [HttpClient.java:389] POST http://localhost:2004/Crud.svc/AggregatePrimaryDecimal9.A1A1D9
-      <br></br>2014-12-31 12:36:39,638 [HttpClient.java:396] Accept: [application/json]
-      <br></br>2014-12-31 12:36:39,638 [HttpClient.java:396] Content-Type: [application/json]
-      <br></br>2014-12-31 12:36:39,638 [HttpClient.java:402] Adding payload: {"URI":"1744098311","p1A1D9":[0E-9]}
-      <br></br>2014-12-31 12:36:39,638 [HttpClient.java:212] Received response [400, 108 bytes] in 0 ms
-      <br></br>2014-12-31 12:36:39,638 [HttpClient.java:215] Received response body: Can't deserialize AggregatePrimaryDecimal9.A1A1D9. Error: Expecting ']' at position -1. Found E. Example: 
-      <br></br>
+      <br></br>2015-01-16 15:28:55,518 [HttpClient.java:191] Sending request [GET]: Domain.svc/search/AggregatePrimaryDecimal9.A1A1D9?limit=2147483647&offset=0
+      <br></br>2015-01-16 15:28:55,518 [HttpClient.java:418] GET http://localhost:2004/Domain.svc/search/AggregatePrimaryDecimal9.A1A1D9?limit=2147483647&offset=0
+      <br></br>2015-01-16 15:28:55,518 [HttpClient.java:425] Accept: [application/json]
+      <br></br>2015-01-16 15:28:55,518 [HttpClient.java:425] Content-Type: [application/json]
+      <br></br>2015-01-16 15:28:55,518 [HttpClient.java:216] Received response [200, 1024 bytes] in 0 ms
+      <br></br>2015-01-16 15:28:55,518 [HttpClient.java:219] Received response body: [{"URI":"{}","p1A1D9":[]}]
+      <br></br>2015-01-16 15:28:55,518 [HttpClient.java:209] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 92 bytes
+      <br></br>2015-01-16 15:28:55,518 [HttpClient.java:418] POST http://localhost:2004/RestApplication.svc/PersistAggregateRoot
+      <br></br>2015-01-16 15:28:55,518 [HttpClient.java:425] Accept: [application/json]
+      <br></br>2015-01-16 15:28:55,518 [HttpClient.java:425] Content-Type: [application/json]
+      <br></br>2015-01-16 15:28:55,518 [HttpClient.java:431] Adding payload: {"RootName":"AggregatePrimaryDecimal9.A1A1D9","ToDelete":"[{\"p1A1D9\":[],\"uri\":\"{}\"}]"}
+      <br></br>2015-01-16 15:28:55,565 [HttpClient.java:216] Received response [200, 1024 bytes] in 47 ms
+      <br></br>2015-01-16 15:28:55,565 [HttpClient.java:219] Received response body: []
+      <br></br>2015-01-16 15:28:55,565 [HttpClient.java:209] Sending request [POST]: Crud.svc/AggregatePrimaryDecimal9.A1A1D9, content size: 151 bytes
+      <br></br>2015-01-16 15:28:55,565 [HttpClient.java:418] POST http://localhost:2004/Crud.svc/AggregatePrimaryDecimal9.A1A1D9
+      <br></br>2015-01-16 15:28:55,565 [HttpClient.java:425] Accept: [application/json]
+      <br></br>2015-01-16 15:28:55,565 [HttpClient.java:425] Content-Type: [application/json]
+      <br></br>2015-01-16 15:28:55,565 [HttpClient.java:431] Adding payload: {"URI":"43587827"}{"URI":"529135239","p1A1D9":[0E-9,1,3.141592654,-1E-9,1E+19]}{"URI":"1609197353","p1A1D9":[1E+19]}{"URI":"835284421","p1A1D9":[0E-9]}
+      <br></br>2015-01-16 15:28:55,596 [HttpClient.java:216] Received response [201, 1024 bytes] in 31 ms
+      <br></br>2015-01-16 15:28:55,596 [HttpClient.java:219] Received response body: {"URI":"{}","p1A1D9":[]}
       <br></br><a id="testP1A1D9PropertyFieldDefaultValue"/><h2>testP1A1D9PropertyFieldDefaultValue</h2>
       <br></br><a id="testP1A1D9DefaultPropertyInAggregateJsonSerialization"/><h2>testP1A1D9DefaultPropertyInAggregateJsonSerialization</h2>
       <br></br><a id="testP1A1D9PropertyGetterPublicVisibility"/><h2>testP1A1D9PropertyGetterPublicVisibility</h2>
@@ -231,89 +260,65 @@
       <br></br><a id="testURIPropertyGetterModifiers"/><h2>testURIPropertyGetterModifiers</h2>
       <br></br><a id="testP1A1D9PropertyGetterModifiers"/><h2>testP1A1D9PropertyGetterModifiers</h2>
       <br></br><a id="testP1D9NonDefault4PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1D9NonDefault4PropertyValueInAggregateAfterActiveRecordPersist</h2>
-      <br></br>2014-12-31 12:36:39,700 [HttpClient.java:191] Sending request [GET]: Domain.svc/search/AggregatePrimaryDecimal9.A1D9?limit=2147483647&offset=0
-      <br></br>2014-12-31 12:36:39,700 [HttpClient.java:389] GET http://localhost:2004/Domain.svc/search/AggregatePrimaryDecimal9.A1D9?limit=2147483647&offset=0
-      <br></br>2014-12-31 12:36:39,700 [HttpClient.java:396] Accept: [application/json]
-      <br></br>2014-12-31 12:36:39,700 [HttpClient.java:396] Content-Type: [application/json]
-      <br></br>2014-12-31 12:36:39,778 [HttpClient.java:212] Received response [200, 1024 bytes] in 93 ms
-      <br></br>2014-12-31 12:36:39,778 [HttpClient.java:215] Received response body: [{"URI":"0.000000000","p1D9":0}]
-      <br></br>2014-12-31 12:36:39,794 [HttpClient.java:205] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 96 bytes
-      <br></br>2014-12-31 12:36:39,794 [HttpClient.java:389] POST http://localhost:2004/RestApplication.svc/PersistAggregateRoot
-      <br></br>2014-12-31 12:36:39,794 [HttpClient.java:396] Accept: [application/json]
-      <br></br>2014-12-31 12:36:39,794 [HttpClient.java:396] Content-Type: [application/json]
-      <br></br>2014-12-31 12:36:39,794 [HttpClient.java:402] Adding payload: {"RootName":"AggregatePrimaryDecimal9.A1D9","ToDelete":"[{\"URI\":\"0.000000000\",\"p1D9\":0}]"}
-      <br></br>2014-12-31 12:36:39,841 [HttpClient.java:212] Received response [200, 1024 bytes] in 47 ms
-      <br></br>2014-12-31 12:36:39,841 [HttpClient.java:215] Received response body: []
-      <br></br>2014-12-31 12:36:39,841 [HttpClient.java:205] Sending request [POST]: Crud.svc/AggregatePrimaryDecimal9.A1D9, content size: 33 bytes
-      <br></br>2014-12-31 12:36:39,841 [HttpClient.java:389] POST http://localhost:2004/Crud.svc/AggregatePrimaryDecimal9.A1D9
-      <br></br>2014-12-31 12:36:39,841 [HttpClient.java:396] Accept: [application/json]
-      <br></br>2014-12-31 12:36:39,841 [HttpClient.java:396] Content-Type: [application/json]
-      <br></br>2014-12-31 12:36:39,841 [HttpClient.java:402] Adding payload: {"URI":"1287167517","p1D9":1E+19}
-      <br></br>2014-12-31 12:36:39,841 [HttpClient.java:212] Received response [400, 106 bytes] in 0 ms
-      <br></br>2014-12-31 12:36:39,841 [HttpClient.java:215] Received response body: Can't deserialize AggregatePrimaryDecimal9.A1D9. Error: Expecting '}' at position -1. Found E. Example: 
+      <br></br>2015-01-16 15:28:55,628 [HttpClient.java:191] Sending request [GET]: Domain.svc/search/AggregatePrimaryDecimal9.A1D9?limit=2147483647&offset=0
+      <br></br>2015-01-16 15:28:55,628 [HttpClient.java:418] GET http://localhost:2004/Domain.svc/search/AggregatePrimaryDecimal9.A1D9?limit=2147483647&offset=0
+      <br></br>2015-01-16 15:28:55,628 [HttpClient.java:425] Accept: [application/json]
+      <br></br>2015-01-16 15:28:55,628 [HttpClient.java:425] Content-Type: [application/json]
+      <br></br>2015-01-16 15:28:55,659 [HttpClient.java:216] Received response [200, 1024 bytes] in 31 ms
+      <br></br>2015-01-16 15:28:55,659 [HttpClient.java:219] Received response body: []
+      <br></br>2015-01-16 15:28:55,675 [HttpClient.java:209] Sending request [POST]: Crud.svc/AggregatePrimaryDecimal9.A1D9, content size: 33 bytes
+      <br></br>2015-01-16 15:28:55,675 [HttpClient.java:418] POST http://localhost:2004/Crud.svc/AggregatePrimaryDecimal9.A1D9
+      <br></br>2015-01-16 15:28:55,675 [HttpClient.java:425] Accept: [application/json]
+      <br></br>2015-01-16 15:28:55,675 [HttpClient.java:425] Content-Type: [application/json]
+      <br></br>2015-01-16 15:28:55,675 [HttpClient.java:431] Adding payload: {"URI":"1214582637","p1D9":1E+19}
+      <br></br>2015-01-16 15:28:55,690 [HttpClient.java:216] Received response [400, 106 bytes] in 15 ms
+      <br></br>2015-01-16 15:28:55,690 [HttpClient.java:219] Received response body: Can't deserialize AggregatePrimaryDecimal9.A1D9. Error: Expecting '}' at position -1. Found E. Example: 
       <br></br>
       <br></br><a id="testP1D9NonDefault3PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1D9NonDefault3PropertyValueInAggregateAfterActiveRecordPersist</h2>
-      <br></br>2014-12-31 12:36:39,841 [HttpClient.java:191] Sending request [GET]: Domain.svc/search/AggregatePrimaryDecimal9.A1D9?limit=2147483647&offset=0
-      <br></br>2014-12-31 12:36:39,841 [HttpClient.java:389] GET http://localhost:2004/Domain.svc/search/AggregatePrimaryDecimal9.A1D9?limit=2147483647&offset=0
-      <br></br>2014-12-31 12:36:39,841 [HttpClient.java:396] Accept: [application/json]
-      <br></br>2014-12-31 12:36:39,841 [HttpClient.java:396] Content-Type: [application/json]
-      <br></br>2014-12-31 12:36:39,841 [HttpClient.java:212] Received response [200, 1024 bytes] in 0 ms
-      <br></br>2014-12-31 12:36:39,841 [HttpClient.java:215] Received response body: []
-      <br></br>2014-12-31 12:36:39,857 [HttpClient.java:205] Sending request [POST]: Crud.svc/AggregatePrimaryDecimal9.A1D9, content size: 32 bytes
-      <br></br>2014-12-31 12:36:39,857 [HttpClient.java:389] POST http://localhost:2004/Crud.svc/AggregatePrimaryDecimal9.A1D9
-      <br></br>2014-12-31 12:36:39,857 [HttpClient.java:396] Accept: [application/json]
-      <br></br>2014-12-31 12:36:39,857 [HttpClient.java:396] Content-Type: [application/json]
-      <br></br>2014-12-31 12:36:39,857 [HttpClient.java:402] Adding payload: {"URI":"408598280","p1D9":-1E-9}
-      <br></br>2014-12-31 12:36:39,857 [HttpClient.java:212] Received response [400, 106 bytes] in 16 ms
-      <br></br>2014-12-31 12:36:39,857 [HttpClient.java:215] Received response body: Can't deserialize AggregatePrimaryDecimal9.A1D9. Error: Expecting '}' at position -1. Found E. Example: 
+      <br></br>2015-01-16 15:28:55,690 [HttpClient.java:191] Sending request [GET]: Domain.svc/search/AggregatePrimaryDecimal9.A1D9?limit=2147483647&offset=0
+      <br></br>2015-01-16 15:28:55,690 [HttpClient.java:418] GET http://localhost:2004/Domain.svc/search/AggregatePrimaryDecimal9.A1D9?limit=2147483647&offset=0
+      <br></br>2015-01-16 15:28:55,690 [HttpClient.java:425] Accept: [application/json]
+      <br></br>2015-01-16 15:28:55,690 [HttpClient.java:425] Content-Type: [application/json]
+      <br></br>2015-01-16 15:28:55,706 [HttpClient.java:216] Received response [200, 1024 bytes] in 16 ms
+      <br></br>2015-01-16 15:28:55,706 [HttpClient.java:219] Received response body: []
+      <br></br>2015-01-16 15:28:55,706 [HttpClient.java:209] Sending request [POST]: Crud.svc/AggregatePrimaryDecimal9.A1D9, content size: 65 bytes
+      <br></br>2015-01-16 15:28:55,706 [HttpClient.java:418] POST http://localhost:2004/Crud.svc/AggregatePrimaryDecimal9.A1D9
+      <br></br>2015-01-16 15:28:55,706 [HttpClient.java:425] Accept: [application/json]
+      <br></br>2015-01-16 15:28:55,706 [HttpClient.java:425] Content-Type: [application/json]
+      <br></br>2015-01-16 15:28:55,706 [HttpClient.java:431] Adding payload: {"URI":"1214582637","p1D9":1E+19}{"URI":"723217997","p1D9":-1E-9}
+      <br></br>2015-01-16 15:28:55,706 [HttpClient.java:216] Received response [400, 106 bytes] in 0 ms
+      <br></br>2015-01-16 15:28:55,706 [HttpClient.java:219] Received response body: Can't deserialize AggregatePrimaryDecimal9.A1D9. Error: Expecting '}' at position -1. Found E. Example: 
       <br></br>
       <br></br><a id="testP1D9NonDefault2PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1D9NonDefault2PropertyValueInAggregateAfterActiveRecordPersist</h2>
-      <br></br>2014-12-31 12:36:39,857 [HttpClient.java:191] Sending request [GET]: Domain.svc/search/AggregatePrimaryDecimal9.A1D9?limit=2147483647&offset=0
-      <br></br>2014-12-31 12:36:39,857 [HttpClient.java:389] GET http://localhost:2004/Domain.svc/search/AggregatePrimaryDecimal9.A1D9?limit=2147483647&offset=0
-      <br></br>2014-12-31 12:36:39,857 [HttpClient.java:396] Accept: [application/json]
-      <br></br>2014-12-31 12:36:39,857 [HttpClient.java:396] Content-Type: [application/json]
-      <br></br>2014-12-31 12:36:39,857 [HttpClient.java:212] Received response [200, 1024 bytes] in 0 ms
-      <br></br>2014-12-31 12:36:39,857 [HttpClient.java:215] Received response body: []
-      <br></br>2014-12-31 12:36:39,857 [HttpClient.java:205] Sending request [POST]: Crud.svc/AggregatePrimaryDecimal9.A1D9, content size: 39 bytes
-      <br></br>2014-12-31 12:36:39,857 [HttpClient.java:389] POST http://localhost:2004/Crud.svc/AggregatePrimaryDecimal9.A1D9
-      <br></br>2014-12-31 12:36:39,857 [HttpClient.java:396] Accept: [application/json]
-      <br></br>2014-12-31 12:36:39,857 [HttpClient.java:396] Content-Type: [application/json]
-      <br></br>2014-12-31 12:36:39,857 [HttpClient.java:402] Adding payload: {"URI":"1983968298","p1D9":3.141592654}
-      <br></br>2014-12-31 12:36:39,888 [HttpClient.java:212] Received response [201, 1024 bytes] in 31 ms
-      <br></br>2014-12-31 12:36:39,888 [HttpClient.java:215] Received response body: {"URI":"3.141592654","p1D9":3.141592654}
-      <br></br>2014-12-31 12:36:39,888 [HttpClient.java:191] Sending request [GET]: Crud.svc/AggregatePrimaryDecimal9.A1D9?uri=3.141592654
-      <br></br>2014-12-31 12:36:39,888 [HttpClient.java:389] GET http://localhost:2004/Crud.svc/AggregatePrimaryDecimal9.A1D9?uri=3.141592654
-      <br></br>2014-12-31 12:36:39,935 [HttpClient.java:396] Accept: [application/json]
-      <br></br>2014-12-31 12:36:39,935 [HttpClient.java:396] Content-Type: [application/json]
-      <br></br>2014-12-31 12:36:39,950 [HttpClient.java:212] Received response [200, 1024 bytes] in 62 ms
-      <br></br>2014-12-31 12:36:39,950 [HttpClient.java:215] Received response body: {"URI":"3.141592654","p1D9":3.141592654}
+      <br></br>2015-01-16 15:28:55,706 [HttpClient.java:191] Sending request [GET]: Domain.svc/search/AggregatePrimaryDecimal9.A1D9?limit=2147483647&offset=0
+      <br></br>2015-01-16 15:28:55,706 [HttpClient.java:418] GET http://localhost:2004/Domain.svc/search/AggregatePrimaryDecimal9.A1D9?limit=2147483647&offset=0
+      <br></br>2015-01-16 15:28:55,706 [HttpClient.java:425] Accept: [application/json]
+      <br></br>2015-01-16 15:28:55,706 [HttpClient.java:425] Content-Type: [application/json]
+      <br></br>2015-01-16 15:28:55,706 [HttpClient.java:216] Received response [200, 1024 bytes] in 0 ms
+      <br></br>2015-01-16 15:28:55,721 [HttpClient.java:219] Received response body: []
+      <br></br>2015-01-16 15:28:55,721 [HttpClient.java:209] Sending request [POST]: Crud.svc/AggregatePrimaryDecimal9.A1D9, content size: 103 bytes
+      <br></br>2015-01-16 15:28:55,721 [HttpClient.java:418] POST http://localhost:2004/Crud.svc/AggregatePrimaryDecimal9.A1D9
+      <br></br>2015-01-16 15:28:55,721 [HttpClient.java:425] Accept: [application/json]
+      <br></br>2015-01-16 15:28:55,721 [HttpClient.java:425] Content-Type: [application/json]
+      <br></br>2015-01-16 15:28:55,721 [HttpClient.java:431] Adding payload: {"URI":"1214582637","p1D9":1E+19}{"URI":"723217997","p1D9":-1E-9}{"URI":"345640256","p1D9":3.141592654}
+      <br></br>2015-01-16 15:28:55,721 [HttpClient.java:216] Received response [400, 106 bytes] in 0 ms
+      <br></br>2015-01-16 15:28:55,721 [HttpClient.java:219] Received response body: Can't deserialize AggregatePrimaryDecimal9.A1D9. Error: Expecting '}' at position -1. Found E. Example: 
+      <br></br>
       <br></br><a id="testP1D9NonDefault1PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1D9NonDefault1PropertyValueInAggregateAfterActiveRecordPersist</h2>
-      <br></br>2014-12-31 12:36:39,950 [HttpClient.java:191] Sending request [GET]: Domain.svc/search/AggregatePrimaryDecimal9.A1D9?limit=2147483647&offset=0
-      <br></br>2014-12-31 12:36:39,950 [HttpClient.java:389] GET http://localhost:2004/Domain.svc/search/AggregatePrimaryDecimal9.A1D9?limit=2147483647&offset=0
-      <br></br>2014-12-31 12:36:39,950 [HttpClient.java:396] Accept: [application/json]
-      <br></br>2014-12-31 12:36:39,950 [HttpClient.java:396] Content-Type: [application/json]
-      <br></br>2014-12-31 12:36:39,966 [HttpClient.java:212] Received response [200, 1024 bytes] in 16 ms
-      <br></br>2014-12-31 12:36:39,966 [HttpClient.java:215] Received response body: [{"URI":"3.141592654","p1D9":3.141592654}]
-      <br></br>2014-12-31 12:36:39,966 [HttpClient.java:205] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 106 bytes
-      <br></br>2014-12-31 12:36:39,966 [HttpClient.java:389] POST http://localhost:2004/RestApplication.svc/PersistAggregateRoot
-      <br></br>2014-12-31 12:36:39,966 [HttpClient.java:396] Accept: [application/json]
-      <br></br>2014-12-31 12:36:39,966 [HttpClient.java:396] Content-Type: [application/json]
-      <br></br>2014-12-31 12:36:39,966 [HttpClient.java:402] Adding payload: {"RootName":"AggregatePrimaryDecimal9.A1D9","ToDelete":"[{\"URI\":\"3.141592654\",\"p1D9\":3.141592654}]"}
-      <br></br>2014-12-31 12:36:39,982 [HttpClient.java:212] Received response [200, 1024 bytes] in 16 ms
-      <br></br>2014-12-31 12:36:39,982 [HttpClient.java:215] Received response body: []
-      <br></br>2014-12-31 12:36:39,982 [HttpClient.java:205] Sending request [POST]: Crud.svc/AggregatePrimaryDecimal9.A1D9, content size: 29 bytes
-      <br></br>2014-12-31 12:36:39,982 [HttpClient.java:389] POST http://localhost:2004/Crud.svc/AggregatePrimaryDecimal9.A1D9
-      <br></br>2014-12-31 12:36:39,982 [HttpClient.java:396] Accept: [application/json]
-      <br></br>2014-12-31 12:36:39,982 [HttpClient.java:396] Content-Type: [application/json]
-      <br></br>2014-12-31 12:36:39,982 [HttpClient.java:402] Adding payload: {"URI":"1428252955","p1D9":1}
-      <br></br>2014-12-31 12:36:39,997 [HttpClient.java:212] Received response [201, 1024 bytes] in 15 ms
-      <br></br>2014-12-31 12:36:39,997 [HttpClient.java:215] Received response body: {"URI":"1.000000000","p1D9":1}
-      <br></br>2014-12-31 12:36:39,997 [HttpClient.java:191] Sending request [GET]: Crud.svc/AggregatePrimaryDecimal9.A1D9?uri=1.000000000
-      <br></br>2014-12-31 12:36:39,997 [HttpClient.java:389] GET http://localhost:2004/Crud.svc/AggregatePrimaryDecimal9.A1D9?uri=1.000000000
-      <br></br>2014-12-31 12:36:39,997 [HttpClient.java:396] Accept: [application/json]
-      <br></br>2014-12-31 12:36:39,997 [HttpClient.java:396] Content-Type: [application/json]
-      <br></br>2014-12-31 12:36:39,997 [HttpClient.java:212] Received response [200, 1024 bytes] in 0 ms
-      <br></br>2014-12-31 12:36:39,997 [HttpClient.java:215] Received response body: {"URI":"1.000000000","p1D9":1.000000000}
+      <br></br>2015-01-16 15:28:55,721 [HttpClient.java:191] Sending request [GET]: Domain.svc/search/AggregatePrimaryDecimal9.A1D9?limit=2147483647&offset=0
+      <br></br>2015-01-16 15:28:55,721 [HttpClient.java:418] GET http://localhost:2004/Domain.svc/search/AggregatePrimaryDecimal9.A1D9?limit=2147483647&offset=0
+      <br></br>2015-01-16 15:28:55,721 [HttpClient.java:425] Accept: [application/json]
+      <br></br>2015-01-16 15:28:55,721 [HttpClient.java:425] Content-Type: [application/json]
+      <br></br>2015-01-16 15:28:55,815 [HttpClient.java:216] Received response [200, 1024 bytes] in 94 ms
+      <br></br>2015-01-16 15:28:55,815 [HttpClient.java:219] Received response body: []
+      <br></br>2015-01-16 15:28:55,815 [HttpClient.java:209] Sending request [POST]: Crud.svc/AggregatePrimaryDecimal9.A1D9, content size: 131 bytes
+      <br></br>2015-01-16 15:28:55,815 [HttpClient.java:418] POST http://localhost:2004/Crud.svc/AggregatePrimaryDecimal9.A1D9
+      <br></br>2015-01-16 15:28:55,815 [HttpClient.java:425] Accept: [application/json]
+      <br></br>2015-01-16 15:28:55,815 [HttpClient.java:425] Content-Type: [application/json]
+      <br></br>2015-01-16 15:28:55,815 [HttpClient.java:431] Adding payload: {"URI":"1214582637","p1D9":1E+19}{"URI":"723217997","p1D9":-1E-9}{"URI":"345640256","p1D9":3.141592654}{"URI":"463841109","p1D9":1}
+      <br></br>2015-01-16 15:28:55,815 [HttpClient.java:216] Received response [400, 106 bytes] in 0 ms
+      <br></br>2015-01-16 15:28:55,815 [HttpClient.java:219] Received response body: Can't deserialize AggregatePrimaryDecimal9.A1D9. Error: Expecting '}' at position -1. Found E. Example: 
+      <br></br>
       <br></br><a id="testNonExistenceOfURIPropertySetter"/><h2>testNonExistenceOfURIPropertySetter</h2>
       <br></br><a id="testP1D9NonDefault1PropertyInAggregateJsonSerialization"/><h2>testP1D9NonDefault1PropertyInAggregateJsonSerialization</h2>
       <br></br><a id="testP1D9NonDefault2PropertyInAggregateJsonSerialization"/><h2>testP1D9NonDefault2PropertyInAggregateJsonSerialization</h2>
@@ -330,32 +335,20 @@
       <br></br><a id="testP1D9PropertySetterModifiers"/><h2>testP1D9PropertySetterModifiers</h2>
       <br></br><a id="testURIPropertyFieldPrivateVisibility"/><h2>testURIPropertyFieldPrivateVisibility</h2>
       <br></br><a id="testP1D9DefaultPropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1D9DefaultPropertyValueInAggregateAfterActiveRecordPersist</h2>
-      <br></br>2014-12-31 12:36:40,060 [HttpClient.java:191] Sending request [GET]: Domain.svc/search/AggregatePrimaryDecimal9.A1D9?limit=2147483647&offset=0
-      <br></br>2014-12-31 12:36:40,060 [HttpClient.java:389] GET http://localhost:2004/Domain.svc/search/AggregatePrimaryDecimal9.A1D9?limit=2147483647&offset=0
-      <br></br>2014-12-31 12:36:40,060 [HttpClient.java:396] Accept: [application/json]
-      <br></br>2014-12-31 12:36:40,060 [HttpClient.java:396] Content-Type: [application/json]
-      <br></br>2014-12-31 12:36:40,075 [HttpClient.java:212] Received response [200, 1024 bytes] in 15 ms
-      <br></br>2014-12-31 12:36:40,075 [HttpClient.java:215] Received response body: [{"URI":"1.000000000","p1D9":1.000000000}]
-      <br></br>2014-12-31 12:36:40,075 [HttpClient.java:205] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 106 bytes
-      <br></br>2014-12-31 12:36:40,075 [HttpClient.java:389] POST http://localhost:2004/RestApplication.svc/PersistAggregateRoot
-      <br></br>2014-12-31 12:36:40,075 [HttpClient.java:396] Accept: [application/json]
-      <br></br>2014-12-31 12:36:40,075 [HttpClient.java:396] Content-Type: [application/json]
-      <br></br>2014-12-31 12:36:40,075 [HttpClient.java:402] Adding payload: {"RootName":"AggregatePrimaryDecimal9.A1D9","ToDelete":"[{\"URI\":\"1.000000000\",\"p1D9\":1.000000000}]"}
-      <br></br>2014-12-31 12:36:40,091 [HttpClient.java:212] Received response [200, 1024 bytes] in 16 ms
-      <br></br>2014-12-31 12:36:40,091 [HttpClient.java:215] Received response body: []
-      <br></br>2014-12-31 12:36:40,091 [HttpClient.java:205] Sending request [POST]: Crud.svc/AggregatePrimaryDecimal9.A1D9, content size: 20 bytes
-      <br></br>2014-12-31 12:36:40,091 [HttpClient.java:389] POST http://localhost:2004/Crud.svc/AggregatePrimaryDecimal9.A1D9
-      <br></br>2014-12-31 12:36:40,091 [HttpClient.java:396] Accept: [application/json]
-      <br></br>2014-12-31 12:36:40,091 [HttpClient.java:396] Content-Type: [application/json]
-      <br></br>2014-12-31 12:36:40,091 [HttpClient.java:402] Adding payload: {"URI":"1700873233"}
-      <br></br>2014-12-31 12:36:40,122 [HttpClient.java:212] Received response [201, 1024 bytes] in 31 ms
-      <br></br>2014-12-31 12:36:40,122 [HttpClient.java:215] Received response body: {"URI":"0.000000000","p1D9":0}
-      <br></br>2014-12-31 12:36:40,122 [HttpClient.java:191] Sending request [GET]: Crud.svc/AggregatePrimaryDecimal9.A1D9?uri=0.000000000
-      <br></br>2014-12-31 12:36:40,122 [HttpClient.java:389] GET http://localhost:2004/Crud.svc/AggregatePrimaryDecimal9.A1D9?uri=0.000000000
-      <br></br>2014-12-31 12:36:40,122 [HttpClient.java:396] Accept: [application/json]
-      <br></br>2014-12-31 12:36:40,122 [HttpClient.java:396] Content-Type: [application/json]
-      <br></br>2014-12-31 12:36:40,122 [HttpClient.java:212] Received response [200, 1024 bytes] in 0 ms
-      <br></br>2014-12-31 12:36:40,122 [HttpClient.java:215] Received response body: {"URI":"0.000000000","p1D9":0}
+      <br></br>2015-01-16 15:28:55,846 [HttpClient.java:191] Sending request [GET]: Domain.svc/search/AggregatePrimaryDecimal9.A1D9?limit=2147483647&offset=0
+      <br></br>2015-01-16 15:28:55,846 [HttpClient.java:418] GET http://localhost:2004/Domain.svc/search/AggregatePrimaryDecimal9.A1D9?limit=2147483647&offset=0
+      <br></br>2015-01-16 15:28:55,846 [HttpClient.java:425] Accept: [application/json]
+      <br></br>2015-01-16 15:28:55,846 [HttpClient.java:425] Content-Type: [application/json]
+      <br></br>2015-01-16 15:28:55,846 [HttpClient.java:216] Received response [200, 1024 bytes] in 0 ms
+      <br></br>2015-01-16 15:28:55,846 [HttpClient.java:219] Received response body: []
+      <br></br>2015-01-16 15:28:55,846 [HttpClient.java:209] Sending request [POST]: Crud.svc/AggregatePrimaryDecimal9.A1D9, content size: 151 bytes
+      <br></br>2015-01-16 15:28:55,846 [HttpClient.java:418] POST http://localhost:2004/Crud.svc/AggregatePrimaryDecimal9.A1D9
+      <br></br>2015-01-16 15:28:55,846 [HttpClient.java:425] Accept: [application/json]
+      <br></br>2015-01-16 15:28:55,846 [HttpClient.java:425] Content-Type: [application/json]
+      <br></br>2015-01-16 15:28:55,846 [HttpClient.java:431] Adding payload: {"URI":"1214582637","p1D9":1E+19}{"URI":"723217997","p1D9":-1E-9}{"URI":"345640256","p1D9":3.141592654}{"URI":"463841109","p1D9":1}{"URI":"1377736719"}
+      <br></br>2015-01-16 15:28:55,862 [HttpClient.java:216] Received response [400, 106 bytes] in 16 ms
+      <br></br>2015-01-16 15:28:55,862 [HttpClient.java:219] Received response body: Can't deserialize AggregatePrimaryDecimal9.A1D9. Error: Expecting '}' at position -1. Found E. Example: 
+      <br></br>
       <br></br><a id="testP1D9PropertySetterPublicVisibility"/><h2>testP1D9PropertySetterPublicVisibility</h2>
       <br></br><a id="testURIPropertyFieldModifiers"/><h2>testURIPropertyFieldModifiers</h2>
       <br></br><a id="testURIPropertyGetterPublicVisibility"/><h2>testURIPropertyGetterPublicVisibility</h2>
@@ -369,94 +362,94 @@
       <br></br><a id="testP1L0D9PropertyFieldDefaultValue"/><h2>testP1L0D9PropertyFieldDefaultValue</h2>
       <br></br><a id="testP1L0D9PropertySetterGenericType"/><h2>testP1L0D9PropertySetterGenericType</h2>
       <br></br><a id="testP1L0D9NonDefault5PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1L0D9NonDefault5PropertyValueInAggregateAfterActiveRecordPersist</h2>
-      <br></br>2014-12-31 12:36:40,138 [HttpClient.java:191] Sending request [GET]: Domain.svc/search/AggregatePrimaryDecimal9.A1L0D9?limit=2147483647&offset=0
-      <br></br>2014-12-31 12:36:40,138 [HttpClient.java:389] GET http://localhost:2004/Domain.svc/search/AggregatePrimaryDecimal9.A1L0D9?limit=2147483647&offset=0
-      <br></br>2014-12-31 12:36:40,138 [HttpClient.java:396] Accept: [application/json]
-      <br></br>2014-12-31 12:36:40,138 [HttpClient.java:396] Content-Type: [application/json]
-      <br></br>2014-12-31 12:36:40,153 [HttpClient.java:212] Received response [200, 1024 bytes] in 31 ms
-      <br></br>2014-12-31 12:36:40,153 [HttpClient.java:215] Received response body: [{"URI":"{NULL,0.000000000,1.000000000,3.141592654,-0.000000001,10000000000000000000.000000000}","p1L0D9":[null,0.000000000,1.000000000,3.141592654,-0.000000001,10000000000000000000.000000000]}]
-      <br></br>2014-12-31 12:36:40,200 [HttpClient.java:205] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 246 bytes
-      <br></br>2014-12-31 12:36:40,200 [HttpClient.java:389] POST http://localhost:2004/RestApplication.svc/PersistAggregateRoot
-      <br></br>2014-12-31 12:36:40,200 [HttpClient.java:396] Accept: [application/json]
-      <br></br>2014-12-31 12:36:40,200 [HttpClient.java:396] Content-Type: [application/json]
-      <br></br>2014-12-31 12:36:40,200 [HttpClient.java:402] Adding payload: {"RootName":"AggregatePrimaryDecimal9.A1L0D9","ToDelete":"[{\"URI\":\"{NULL,0.000000000,1.000000000,3.141592654,-0.000000001,10000000000000000000.000000000}\",\"p1L0D9\":[null,0E-9,1.000000000,3.141592654,-1E-9,10000000000000000000.000000000]}]"}
-      <br></br>2014-12-31 12:36:40,216 [HttpClient.java:349] At http://localhost:2004/RestApplication.svc/PersistAggregateRoot [500] Expecting ']' at position -1. Found E
-      <br></br>2014-12-31 12:36:40,216 [HttpClient.java:350] Error connecting to http://localhost:2004/RestApplication.svc/PersistAggregateRoot. Trying next server if exists...
+      <br></br>2015-01-16 15:28:55,925 [HttpClient.java:191] Sending request [GET]: Domain.svc/search/AggregatePrimaryDecimal9.A1L0D9?limit=2147483647&offset=0
+      <br></br>2015-01-16 15:28:55,925 [HttpClient.java:418] GET http://localhost:2004/Domain.svc/search/AggregatePrimaryDecimal9.A1L0D9?limit=2147483647&offset=0
+      <br></br>2015-01-16 15:28:55,925 [HttpClient.java:425] Accept: [application/json]
+      <br></br>2015-01-16 15:28:55,925 [HttpClient.java:425] Content-Type: [application/json]
+      <br></br>2015-01-16 15:28:55,987 [HttpClient.java:216] Received response [200, 1024 bytes] in 62 ms
+      <br></br>2015-01-16 15:28:55,987 [HttpClient.java:219] Received response body: [{"URI":"{NULL,0.000000000,1.000000000,3.141592654,-0.000000001,10000000000000000000.000000000}","p1L0D9":[null,0.000000000,1.000000000,3.141592654,-0.000000001,10000000000000000000.000000000]}]
+      <br></br>2015-01-16 15:28:55,987 [HttpClient.java:209] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 246 bytes
+      <br></br>2015-01-16 15:28:55,987 [HttpClient.java:418] POST http://localhost:2004/RestApplication.svc/PersistAggregateRoot
+      <br></br>2015-01-16 15:28:55,987 [HttpClient.java:425] Accept: [application/json]
+      <br></br>2015-01-16 15:28:55,987 [HttpClient.java:425] Content-Type: [application/json]
+      <br></br>2015-01-16 15:28:55,987 [HttpClient.java:431] Adding payload: {"RootName":"AggregatePrimaryDecimal9.A1L0D9","ToDelete":"[{\"p1L0D9\":[null,0E-9,1.000000000,3.141592654,-1E-9,10000000000000000000.000000000],\"uri\":\"{NULL,0.000000000,1.000000000,3.141592654,-0.000000001,10000000000000000000.000000000}\"}]"}
+      <br></br>2015-01-16 15:28:56,081 [HttpClient.java:377] At http://localhost:2004/RestApplication.svc/PersistAggregateRoot [500] Expecting ']' at position -1. Found E
+      <br></br>2015-01-16 15:28:56,081 [HttpClient.java:378] Error connecting to http://localhost:2004/RestApplication.svc/PersistAggregateRoot. Trying next server if exists...
       <br></br><a id="testP1L0D9NonDefault4PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1L0D9NonDefault4PropertyValueInAggregateAfterActiveRecordPersist</h2>
-      <br></br>2014-12-31 12:36:40,216 [HttpClient.java:191] Sending request [GET]: Domain.svc/search/AggregatePrimaryDecimal9.A1L0D9?limit=2147483647&offset=0
-      <br></br>2014-12-31 12:36:40,216 [HttpClient.java:389] GET http://localhost:2004/Domain.svc/search/AggregatePrimaryDecimal9.A1L0D9?limit=2147483647&offset=0
-      <br></br>2014-12-31 12:36:40,216 [HttpClient.java:396] Accept: [application/json]
-      <br></br>2014-12-31 12:36:40,216 [HttpClient.java:396] Content-Type: [application/json]
-      <br></br>2014-12-31 12:36:40,216 [HttpClient.java:212] Received response [200, 1024 bytes] in 0 ms
-      <br></br>2014-12-31 12:36:40,216 [HttpClient.java:215] Received response body: [{"URI":"{NULL,0.000000000,1.000000000,3.141592654,-0.000000001,10000000000000000000.000000000}","p1L0D9":[null,0.000000000,1.000000000,3.141592654,-0.000000001,10000000000000000000.000000000]}]
-      <br></br>2014-12-31 12:36:40,216 [HttpClient.java:205] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 246 bytes
-      <br></br>2014-12-31 12:36:40,232 [HttpClient.java:389] POST http://localhost:2004/RestApplication.svc/PersistAggregateRoot
-      <br></br>2014-12-31 12:36:40,232 [HttpClient.java:396] Accept: [application/json]
-      <br></br>2014-12-31 12:36:40,232 [HttpClient.java:396] Content-Type: [application/json]
-      <br></br>2014-12-31 12:36:40,232 [HttpClient.java:402] Adding payload: {"RootName":"AggregatePrimaryDecimal9.A1L0D9","ToDelete":"[{\"URI\":\"{NULL,0.000000000,1.000000000,3.141592654,-0.000000001,10000000000000000000.000000000}\",\"p1L0D9\":[null,0E-9,1.000000000,3.141592654,-1E-9,10000000000000000000.000000000]}]"}
-      <br></br>2014-12-31 12:36:40,232 [HttpClient.java:349] At http://localhost:2004/RestApplication.svc/PersistAggregateRoot [500] Expecting ']' at position -1. Found E
-      <br></br>2014-12-31 12:36:40,232 [HttpClient.java:350] Error connecting to http://localhost:2004/RestApplication.svc/PersistAggregateRoot. Trying next server if exists...
+      <br></br>2015-01-16 15:28:56,081 [HttpClient.java:191] Sending request [GET]: Domain.svc/search/AggregatePrimaryDecimal9.A1L0D9?limit=2147483647&offset=0
+      <br></br>2015-01-16 15:28:56,081 [HttpClient.java:418] GET http://localhost:2004/Domain.svc/search/AggregatePrimaryDecimal9.A1L0D9?limit=2147483647&offset=0
+      <br></br>2015-01-16 15:28:56,081 [HttpClient.java:425] Accept: [application/json]
+      <br></br>2015-01-16 15:28:56,081 [HttpClient.java:425] Content-Type: [application/json]
+      <br></br>2015-01-16 15:28:56,096 [HttpClient.java:216] Received response [200, 1024 bytes] in 15 ms
+      <br></br>2015-01-16 15:28:56,096 [HttpClient.java:219] Received response body: [{"URI":"{NULL,0.000000000,1.000000000,3.141592654,-0.000000001,10000000000000000000.000000000}","p1L0D9":[null,0.000000000,1.000000000,3.141592654,-0.000000001,10000000000000000000.000000000]}]
+      <br></br>2015-01-16 15:28:56,096 [HttpClient.java:209] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 246 bytes
+      <br></br>2015-01-16 15:28:56,096 [HttpClient.java:418] POST http://localhost:2004/RestApplication.svc/PersistAggregateRoot
+      <br></br>2015-01-16 15:28:56,096 [HttpClient.java:425] Accept: [application/json]
+      <br></br>2015-01-16 15:28:56,096 [HttpClient.java:425] Content-Type: [application/json]
+      <br></br>2015-01-16 15:28:56,096 [HttpClient.java:431] Adding payload: {"RootName":"AggregatePrimaryDecimal9.A1L0D9","ToDelete":"[{\"p1L0D9\":[null,0E-9,1.000000000,3.141592654,-1E-9,10000000000000000000.000000000],\"uri\":\"{NULL,0.000000000,1.000000000,3.141592654,-0.000000001,10000000000000000000.000000000}\"}]"}
+      <br></br>2015-01-16 15:28:56,112 [HttpClient.java:377] At http://localhost:2004/RestApplication.svc/PersistAggregateRoot [500] Expecting ']' at position -1. Found E
+      <br></br>2015-01-16 15:28:56,112 [HttpClient.java:378] Error connecting to http://localhost:2004/RestApplication.svc/PersistAggregateRoot. Trying next server if exists...
       <br></br><a id="testP1L0D9NonDefault3PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1L0D9NonDefault3PropertyValueInAggregateAfterActiveRecordPersist</h2>
-      <br></br>2014-12-31 12:36:40,232 [HttpClient.java:191] Sending request [GET]: Domain.svc/search/AggregatePrimaryDecimal9.A1L0D9?limit=2147483647&offset=0
-      <br></br>2014-12-31 12:36:40,232 [HttpClient.java:389] GET http://localhost:2004/Domain.svc/search/AggregatePrimaryDecimal9.A1L0D9?limit=2147483647&offset=0
-      <br></br>2014-12-31 12:36:40,232 [HttpClient.java:396] Accept: [application/json]
-      <br></br>2014-12-31 12:36:40,232 [HttpClient.java:396] Content-Type: [application/json]
-      <br></br>2014-12-31 12:36:40,232 [HttpClient.java:212] Received response [200, 1024 bytes] in 0 ms
-      <br></br>2014-12-31 12:36:40,232 [HttpClient.java:215] Received response body: [{"URI":"{NULL,0.000000000,1.000000000,3.141592654,-0.000000001,10000000000000000000.000000000}","p1L0D9":[null,0.000000000,1.000000000,3.141592654,-0.000000001,10000000000000000000.000000000]}]
-      <br></br>2014-12-31 12:36:40,247 [HttpClient.java:205] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 246 bytes
-      <br></br>2014-12-31 12:36:40,310 [HttpClient.java:389] POST http://localhost:2004/RestApplication.svc/PersistAggregateRoot
-      <br></br>2014-12-31 12:36:40,310 [HttpClient.java:396] Accept: [application/json]
-      <br></br>2014-12-31 12:36:40,310 [HttpClient.java:396] Content-Type: [application/json]
-      <br></br>2014-12-31 12:36:40,310 [HttpClient.java:402] Adding payload: {"RootName":"AggregatePrimaryDecimal9.A1L0D9","ToDelete":"[{\"URI\":\"{NULL,0.000000000,1.000000000,3.141592654,-0.000000001,10000000000000000000.000000000}\",\"p1L0D9\":[null,0E-9,1.000000000,3.141592654,-1E-9,10000000000000000000.000000000]}]"}
-      <br></br>2014-12-31 12:36:40,325 [HttpClient.java:349] At http://localhost:2004/RestApplication.svc/PersistAggregateRoot [500] Expecting ']' at position -1. Found E
-      <br></br>2014-12-31 12:36:40,325 [HttpClient.java:350] Error connecting to http://localhost:2004/RestApplication.svc/PersistAggregateRoot. Trying next server if exists...
+      <br></br>2015-01-16 15:28:56,112 [HttpClient.java:191] Sending request [GET]: Domain.svc/search/AggregatePrimaryDecimal9.A1L0D9?limit=2147483647&offset=0
+      <br></br>2015-01-16 15:28:56,112 [HttpClient.java:418] GET http://localhost:2004/Domain.svc/search/AggregatePrimaryDecimal9.A1L0D9?limit=2147483647&offset=0
+      <br></br>2015-01-16 15:28:56,112 [HttpClient.java:425] Accept: [application/json]
+      <br></br>2015-01-16 15:28:56,112 [HttpClient.java:425] Content-Type: [application/json]
+      <br></br>2015-01-16 15:28:56,112 [HttpClient.java:216] Received response [200, 1024 bytes] in 0 ms
+      <br></br>2015-01-16 15:28:56,112 [HttpClient.java:219] Received response body: [{"URI":"{NULL,0.000000000,1.000000000,3.141592654,-0.000000001,10000000000000000000.000000000}","p1L0D9":[null,0.000000000,1.000000000,3.141592654,-0.000000001,10000000000000000000.000000000]}]
+      <br></br>2015-01-16 15:28:56,112 [HttpClient.java:209] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 246 bytes
+      <br></br>2015-01-16 15:28:56,112 [HttpClient.java:418] POST http://localhost:2004/RestApplication.svc/PersistAggregateRoot
+      <br></br>2015-01-16 15:28:56,112 [HttpClient.java:425] Accept: [application/json]
+      <br></br>2015-01-16 15:28:56,112 [HttpClient.java:425] Content-Type: [application/json]
+      <br></br>2015-01-16 15:28:56,112 [HttpClient.java:431] Adding payload: {"RootName":"AggregatePrimaryDecimal9.A1L0D9","ToDelete":"[{\"p1L0D9\":[null,0E-9,1.000000000,3.141592654,-1E-9,10000000000000000000.000000000],\"uri\":\"{NULL,0.000000000,1.000000000,3.141592654,-0.000000001,10000000000000000000.000000000}\"}]"}
+      <br></br>2015-01-16 15:28:56,128 [HttpClient.java:377] At http://localhost:2004/RestApplication.svc/PersistAggregateRoot [500] Expecting ']' at position -1. Found E
+      <br></br>2015-01-16 15:28:56,128 [HttpClient.java:378] Error connecting to http://localhost:2004/RestApplication.svc/PersistAggregateRoot. Trying next server if exists...
       <br></br><a id="testP1L0D9NonDefault2PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1L0D9NonDefault2PropertyValueInAggregateAfterActiveRecordPersist</h2>
-      <br></br>2014-12-31 12:36:40,325 [HttpClient.java:191] Sending request [GET]: Domain.svc/search/AggregatePrimaryDecimal9.A1L0D9?limit=2147483647&offset=0
-      <br></br>2014-12-31 12:36:40,325 [HttpClient.java:389] GET http://localhost:2004/Domain.svc/search/AggregatePrimaryDecimal9.A1L0D9?limit=2147483647&offset=0
-      <br></br>2014-12-31 12:36:40,325 [HttpClient.java:396] Accept: [application/json]
-      <br></br>2014-12-31 12:36:40,325 [HttpClient.java:396] Content-Type: [application/json]
-      <br></br>2014-12-31 12:36:40,325 [HttpClient.java:212] Received response [200, 1024 bytes] in 0 ms
-      <br></br>2014-12-31 12:36:40,325 [HttpClient.java:215] Received response body: [{"URI":"{NULL,0.000000000,1.000000000,3.141592654,-0.000000001,10000000000000000000.000000000}","p1L0D9":[null,0.000000000,1.000000000,3.141592654,-0.000000001,10000000000000000000.000000000]}]
-      <br></br>2014-12-31 12:36:40,325 [HttpClient.java:205] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 246 bytes
-      <br></br>2014-12-31 12:36:40,325 [HttpClient.java:389] POST http://localhost:2004/RestApplication.svc/PersistAggregateRoot
-      <br></br>2014-12-31 12:36:40,325 [HttpClient.java:396] Accept: [application/json]
-      <br></br>2014-12-31 12:36:40,325 [HttpClient.java:396] Content-Type: [application/json]
-      <br></br>2014-12-31 12:36:40,325 [HttpClient.java:402] Adding payload: {"RootName":"AggregatePrimaryDecimal9.A1L0D9","ToDelete":"[{\"URI\":\"{NULL,0.000000000,1.000000000,3.141592654,-0.000000001,10000000000000000000.000000000}\",\"p1L0D9\":[null,0E-9,1.000000000,3.141592654,-1E-9,10000000000000000000.000000000]}]"}
-      <br></br>2014-12-31 12:36:40,341 [HttpClient.java:349] At http://localhost:2004/RestApplication.svc/PersistAggregateRoot [500] Expecting ']' at position -1. Found E
-      <br></br>2014-12-31 12:36:40,341 [HttpClient.java:350] Error connecting to http://localhost:2004/RestApplication.svc/PersistAggregateRoot. Trying next server if exists...
+      <br></br>2015-01-16 15:28:56,128 [HttpClient.java:191] Sending request [GET]: Domain.svc/search/AggregatePrimaryDecimal9.A1L0D9?limit=2147483647&offset=0
+      <br></br>2015-01-16 15:28:56,128 [HttpClient.java:418] GET http://localhost:2004/Domain.svc/search/AggregatePrimaryDecimal9.A1L0D9?limit=2147483647&offset=0
+      <br></br>2015-01-16 15:28:56,128 [HttpClient.java:425] Accept: [application/json]
+      <br></br>2015-01-16 15:28:56,128 [HttpClient.java:425] Content-Type: [application/json]
+      <br></br>2015-01-16 15:28:56,128 [HttpClient.java:216] Received response [200, 1024 bytes] in 0 ms
+      <br></br>2015-01-16 15:28:56,128 [HttpClient.java:219] Received response body: [{"URI":"{NULL,0.000000000,1.000000000,3.141592654,-0.000000001,10000000000000000000.000000000}","p1L0D9":[null,0.000000000,1.000000000,3.141592654,-0.000000001,10000000000000000000.000000000]}]
+      <br></br>2015-01-16 15:28:56,206 [HttpClient.java:209] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 246 bytes
+      <br></br>2015-01-16 15:28:56,206 [HttpClient.java:418] POST http://localhost:2004/RestApplication.svc/PersistAggregateRoot
+      <br></br>2015-01-16 15:28:56,206 [HttpClient.java:425] Accept: [application/json]
+      <br></br>2015-01-16 15:28:56,206 [HttpClient.java:425] Content-Type: [application/json]
+      <br></br>2015-01-16 15:28:56,206 [HttpClient.java:431] Adding payload: {"RootName":"AggregatePrimaryDecimal9.A1L0D9","ToDelete":"[{\"p1L0D9\":[null,0E-9,1.000000000,3.141592654,-1E-9,10000000000000000000.000000000],\"uri\":\"{NULL,0.000000000,1.000000000,3.141592654,-0.000000001,10000000000000000000.000000000}\"}]"}
+      <br></br>2015-01-16 15:28:56,206 [HttpClient.java:377] At http://localhost:2004/RestApplication.svc/PersistAggregateRoot [500] Expecting ']' at position -1. Found E
+      <br></br>2015-01-16 15:28:56,206 [HttpClient.java:378] Error connecting to http://localhost:2004/RestApplication.svc/PersistAggregateRoot. Trying next server if exists...
       <br></br><a id="testP1L0D9NonDefault1PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1L0D9NonDefault1PropertyValueInAggregateAfterActiveRecordPersist</h2>
-      <br></br>2014-12-31 12:36:40,341 [HttpClient.java:191] Sending request [GET]: Domain.svc/search/AggregatePrimaryDecimal9.A1L0D9?limit=2147483647&offset=0
-      <br></br>2014-12-31 12:36:40,341 [HttpClient.java:389] GET http://localhost:2004/Domain.svc/search/AggregatePrimaryDecimal9.A1L0D9?limit=2147483647&offset=0
-      <br></br>2014-12-31 12:36:40,341 [HttpClient.java:396] Accept: [application/json]
-      <br></br>2014-12-31 12:36:40,341 [HttpClient.java:396] Content-Type: [application/json]
-      <br></br>2014-12-31 12:36:40,341 [HttpClient.java:212] Received response [200, 1024 bytes] in 0 ms
-      <br></br>2014-12-31 12:36:40,341 [HttpClient.java:215] Received response body: [{"URI":"{NULL,0.000000000,1.000000000,3.141592654,-0.000000001,10000000000000000000.000000000}","p1L0D9":[null,0.000000000,1.000000000,3.141592654,-0.000000001,10000000000000000000.000000000]}]
-      <br></br>2014-12-31 12:36:40,341 [HttpClient.java:205] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 246 bytes
-      <br></br>2014-12-31 12:36:40,341 [HttpClient.java:389] POST http://localhost:2004/RestApplication.svc/PersistAggregateRoot
-      <br></br>2014-12-31 12:36:40,341 [HttpClient.java:396] Accept: [application/json]
-      <br></br>2014-12-31 12:36:40,341 [HttpClient.java:396] Content-Type: [application/json]
-      <br></br>2014-12-31 12:36:40,341 [HttpClient.java:402] Adding payload: {"RootName":"AggregatePrimaryDecimal9.A1L0D9","ToDelete":"[{\"URI\":\"{NULL,0.000000000,1.000000000,3.141592654,-0.000000001,10000000000000000000.000000000}\",\"p1L0D9\":[null,0E-9,1.000000000,3.141592654,-1E-9,10000000000000000000.000000000]}]"}
-      <br></br>2014-12-31 12:36:40,341 [HttpClient.java:349] At http://localhost:2004/RestApplication.svc/PersistAggregateRoot [500] Expecting ']' at position -1. Found E
-      <br></br>2014-12-31 12:36:40,435 [HttpClient.java:350] Error connecting to http://localhost:2004/RestApplication.svc/PersistAggregateRoot. Trying next server if exists...
+      <br></br>2015-01-16 15:28:56,206 [HttpClient.java:191] Sending request [GET]: Domain.svc/search/AggregatePrimaryDecimal9.A1L0D9?limit=2147483647&offset=0
+      <br></br>2015-01-16 15:28:56,206 [HttpClient.java:418] GET http://localhost:2004/Domain.svc/search/AggregatePrimaryDecimal9.A1L0D9?limit=2147483647&offset=0
+      <br></br>2015-01-16 15:28:56,206 [HttpClient.java:425] Accept: [application/json]
+      <br></br>2015-01-16 15:28:56,206 [HttpClient.java:425] Content-Type: [application/json]
+      <br></br>2015-01-16 15:28:56,206 [HttpClient.java:216] Received response [200, 1024 bytes] in 0 ms
+      <br></br>2015-01-16 15:28:56,206 [HttpClient.java:219] Received response body: [{"URI":"{NULL,0.000000000,1.000000000,3.141592654,-0.000000001,10000000000000000000.000000000}","p1L0D9":[null,0.000000000,1.000000000,3.141592654,-0.000000001,10000000000000000000.000000000]}]
+      <br></br>2015-01-16 15:28:56,206 [HttpClient.java:209] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 246 bytes
+      <br></br>2015-01-16 15:28:56,206 [HttpClient.java:418] POST http://localhost:2004/RestApplication.svc/PersistAggregateRoot
+      <br></br>2015-01-16 15:28:56,221 [HttpClient.java:425] Accept: [application/json]
+      <br></br>2015-01-16 15:28:56,221 [HttpClient.java:425] Content-Type: [application/json]
+      <br></br>2015-01-16 15:28:56,221 [HttpClient.java:431] Adding payload: {"RootName":"AggregatePrimaryDecimal9.A1L0D9","ToDelete":"[{\"p1L0D9\":[null,0E-9,1.000000000,3.141592654,-1E-9,10000000000000000000.000000000],\"uri\":\"{NULL,0.000000000,1.000000000,3.141592654,-0.000000001,10000000000000000000.000000000}\"}]"}
+      <br></br>2015-01-16 15:28:56,221 [HttpClient.java:377] At http://localhost:2004/RestApplication.svc/PersistAggregateRoot [500] Expecting ']' at position -1. Found E
+      <br></br>2015-01-16 15:28:56,221 [HttpClient.java:378] Error connecting to http://localhost:2004/RestApplication.svc/PersistAggregateRoot. Trying next server if exists...
       <br></br><a id="testURIPropertyFieldClass"/><h2>testURIPropertyFieldClass</h2>
       <br></br><a id="testP1L0D9PropertyGetterModifiers"/><h2>testP1L0D9PropertyGetterModifiers</h2>
       <br></br><a id="testP1L0D9PropertyFieldPrivateVisibility"/><h2>testP1L0D9PropertyFieldPrivateVisibility</h2>
       <br></br><a id="testP1L0D9PropertyFieldGenericType"/><h2>testP1L0D9PropertyFieldGenericType</h2>
       <br></br><a id="testURIPropertyFieldPrivateVisibility"/><h2>testURIPropertyFieldPrivateVisibility</h2>
       <br></br><a id="testP1L0D9DefaultPropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1L0D9DefaultPropertyValueInAggregateAfterActiveRecordPersist</h2>
-      <br></br>2014-12-31 12:36:40,435 [HttpClient.java:191] Sending request [GET]: Domain.svc/search/AggregatePrimaryDecimal9.A1L0D9?limit=2147483647&offset=0
-      <br></br>2014-12-31 12:36:40,435 [HttpClient.java:389] GET http://localhost:2004/Domain.svc/search/AggregatePrimaryDecimal9.A1L0D9?limit=2147483647&offset=0
-      <br></br>2014-12-31 12:36:40,435 [HttpClient.java:396] Accept: [application/json]
-      <br></br>2014-12-31 12:36:40,435 [HttpClient.java:396] Content-Type: [application/json]
-      <br></br>2014-12-31 12:36:40,450 [HttpClient.java:212] Received response [200, 1024 bytes] in 15 ms
-      <br></br>2014-12-31 12:36:40,450 [HttpClient.java:215] Received response body: [{"URI":"{NULL,0.000000000,1.000000000,3.141592654,-0.000000001,10000000000000000000.000000000}","p1L0D9":[null,0.000000000,1.000000000,3.141592654,-0.000000001,10000000000000000000.000000000]}]
-      <br></br>2014-12-31 12:36:40,450 [HttpClient.java:205] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 246 bytes
-      <br></br>2014-12-31 12:36:40,450 [HttpClient.java:389] POST http://localhost:2004/RestApplication.svc/PersistAggregateRoot
-      <br></br>2014-12-31 12:36:40,450 [HttpClient.java:396] Accept: [application/json]
-      <br></br>2014-12-31 12:36:40,450 [HttpClient.java:396] Content-Type: [application/json]
-      <br></br>2014-12-31 12:36:40,450 [HttpClient.java:402] Adding payload: {"RootName":"AggregatePrimaryDecimal9.A1L0D9","ToDelete":"[{\"URI\":\"{NULL,0.000000000,1.000000000,3.141592654,-0.000000001,10000000000000000000.000000000}\",\"p1L0D9\":[null,0E-9,1.000000000,3.141592654,-1E-9,10000000000000000000.000000000]}]"}
-      <br></br>2014-12-31 12:36:40,450 [HttpClient.java:349] At http://localhost:2004/RestApplication.svc/PersistAggregateRoot [500] Expecting ']' at position -1. Found E
-      <br></br>2014-12-31 12:36:40,450 [HttpClient.java:350] Error connecting to http://localhost:2004/RestApplication.svc/PersistAggregateRoot. Trying next server if exists...
+      <br></br>2015-01-16 15:28:56,221 [HttpClient.java:191] Sending request [GET]: Domain.svc/search/AggregatePrimaryDecimal9.A1L0D9?limit=2147483647&offset=0
+      <br></br>2015-01-16 15:28:56,221 [HttpClient.java:418] GET http://localhost:2004/Domain.svc/search/AggregatePrimaryDecimal9.A1L0D9?limit=2147483647&offset=0
+      <br></br>2015-01-16 15:28:56,221 [HttpClient.java:425] Accept: [application/json]
+      <br></br>2015-01-16 15:28:56,221 [HttpClient.java:425] Content-Type: [application/json]
+      <br></br>2015-01-16 15:28:56,237 [HttpClient.java:216] Received response [200, 1024 bytes] in 16 ms
+      <br></br>2015-01-16 15:28:56,237 [HttpClient.java:219] Received response body: [{"URI":"{NULL,0.000000000,1.000000000,3.141592654,-0.000000001,10000000000000000000.000000000}","p1L0D9":[null,0.000000000,1.000000000,3.141592654,-0.000000001,10000000000000000000.000000000]}]
+      <br></br>2015-01-16 15:28:56,237 [HttpClient.java:209] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 246 bytes
+      <br></br>2015-01-16 15:28:56,237 [HttpClient.java:418] POST http://localhost:2004/RestApplication.svc/PersistAggregateRoot
+      <br></br>2015-01-16 15:28:56,237 [HttpClient.java:425] Accept: [application/json]
+      <br></br>2015-01-16 15:28:56,237 [HttpClient.java:425] Content-Type: [application/json]
+      <br></br>2015-01-16 15:28:56,315 [HttpClient.java:431] Adding payload: {"RootName":"AggregatePrimaryDecimal9.A1L0D9","ToDelete":"[{\"p1L0D9\":[null,0E-9,1.000000000,3.141592654,-1E-9,10000000000000000000.000000000],\"uri\":\"{NULL,0.000000000,1.000000000,3.141592654,-0.000000001,10000000000000000000.000000000}\"}]"}
+      <br></br>2015-01-16 15:28:56,315 [HttpClient.java:377] At http://localhost:2004/RestApplication.svc/PersistAggregateRoot [500] Expecting ']' at position -1. Found E
+      <br></br>2015-01-16 15:28:56,315 [HttpClient.java:378] Error connecting to http://localhost:2004/RestApplication.svc/PersistAggregateRoot. Trying next server if exists...
       <br></br><a id="testP1L0D9PropertyGetterGenericType"/><h2>testP1L0D9PropertyGetterGenericType</h2>
       <br></br><a id="testP1L0D9PropertyFieldModifiers"/><h2>testP1L0D9PropertyFieldModifiers</h2>
       <br></br><a id="testP1L0D9PropertySetterModifiers"/><h2>testP1L0D9PropertySetterModifiers</h2>
@@ -474,25 +467,25 @@
       <br></br><a id="testURIPropertyGetterModifiers"/><h2>testURIPropertyGetterModifiers</h2>
       <br></br><a id="testP1L0D9NonDefault5PropertyInAggregateJsonSerialization"/><h2>testP1L0D9NonDefault5PropertyInAggregateJsonSerialization</h2>
       <br></br><a id="testP1L1D9DefaultPropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1L1D9DefaultPropertyValueInAggregateAfterActiveRecordPersist</h2>
-      <br></br>2014-12-31 12:36:40,497 [HttpClient.java:191] Sending request [GET]: Domain.svc/search/AggregatePrimaryDecimal9.A1L1D9?limit=2147483647&offset=0
-      <br></br>2014-12-31 12:36:40,497 [HttpClient.java:389] GET http://localhost:2004/Domain.svc/search/AggregatePrimaryDecimal9.A1L1D9?limit=2147483647&offset=0
-      <br></br>2014-12-31 12:36:40,497 [HttpClient.java:396] Accept: [application/json]
-      <br></br>2014-12-31 12:36:40,497 [HttpClient.java:396] Content-Type: [application/json]
-      <br></br>2014-12-31 12:36:40,497 [HttpClient.java:212] Received response [200, 1024 bytes] in 0 ms
-      <br></br>2014-12-31 12:36:40,497 [HttpClient.java:215] Received response body: []
-      <br></br>2014-12-31 12:36:40,513 [HttpClient.java:205] Sending request [POST]: Crud.svc/AggregatePrimaryDecimal9.A1L1D9, content size: 20 bytes
-      <br></br>2014-12-31 12:36:40,513 [HttpClient.java:389] POST http://localhost:2004/Crud.svc/AggregatePrimaryDecimal9.A1L1D9
-      <br></br>2014-12-31 12:36:40,513 [HttpClient.java:396] Accept: [application/json]
-      <br></br>2014-12-31 12:36:40,560 [HttpClient.java:396] Content-Type: [application/json]
-      <br></br>2014-12-31 12:36:40,560 [HttpClient.java:402] Adding payload: {"URI":"1354799046"}
-      <br></br>2014-12-31 12:36:40,794 [HttpClient.java:212] Received response [201, 1024 bytes] in 281 ms
-      <br></br>2014-12-31 12:36:40,794 [HttpClient.java:215] Received response body: {"URI":"{}","p1L1D9":[]}
-      <br></br>2014-12-31 12:36:40,794 [HttpClient.java:191] Sending request [GET]: Crud.svc/AggregatePrimaryDecimal9.A1L1D9?uri=%7B%7D
-      <br></br>2014-12-31 12:36:40,794 [HttpClient.java:389] GET http://localhost:2004/Crud.svc/AggregatePrimaryDecimal9.A1L1D9?uri=%7B%7D
-      <br></br>2014-12-31 12:36:40,794 [HttpClient.java:396] Accept: [application/json]
-      <br></br>2014-12-31 12:36:40,794 [HttpClient.java:396] Content-Type: [application/json]
-      <br></br>2014-12-31 12:36:40,810 [HttpClient.java:212] Received response [200, 1024 bytes] in 16 ms
-      <br></br>2014-12-31 12:36:40,810 [HttpClient.java:215] Received response body: {"URI":"{}","p1L1D9":[]}
+      <br></br>2015-01-16 15:28:56,346 [HttpClient.java:191] Sending request [GET]: Domain.svc/search/AggregatePrimaryDecimal9.A1L1D9?limit=2147483647&offset=0
+      <br></br>2015-01-16 15:28:56,346 [HttpClient.java:418] GET http://localhost:2004/Domain.svc/search/AggregatePrimaryDecimal9.A1L1D9?limit=2147483647&offset=0
+      <br></br>2015-01-16 15:28:56,346 [HttpClient.java:425] Accept: [application/json]
+      <br></br>2015-01-16 15:28:56,346 [HttpClient.java:425] Content-Type: [application/json]
+      <br></br>2015-01-16 15:28:56,378 [HttpClient.java:216] Received response [200, 1024 bytes] in 32 ms
+      <br></br>2015-01-16 15:28:56,378 [HttpClient.java:219] Received response body: []
+      <br></br>2015-01-16 15:28:56,393 [HttpClient.java:209] Sending request [POST]: Crud.svc/AggregatePrimaryDecimal9.A1L1D9, content size: 20 bytes
+      <br></br>2015-01-16 15:28:56,393 [HttpClient.java:418] POST http://localhost:2004/Crud.svc/AggregatePrimaryDecimal9.A1L1D9
+      <br></br>2015-01-16 15:28:56,393 [HttpClient.java:425] Accept: [application/json]
+      <br></br>2015-01-16 15:28:56,393 [HttpClient.java:425] Content-Type: [application/json]
+      <br></br>2015-01-16 15:28:56,393 [HttpClient.java:431] Adding payload: {"URI":"1365609574"}
+      <br></br>2015-01-16 15:28:56,659 [HttpClient.java:216] Received response [201, 1024 bytes] in 266 ms
+      <br></br>2015-01-16 15:28:56,659 [HttpClient.java:219] Received response body: {"URI":"{}","p1L1D9":[]}
+      <br></br>2015-01-16 15:28:56,659 [HttpClient.java:191] Sending request [GET]: Crud.svc/AggregatePrimaryDecimal9.A1L1D9?uri=%7B%7D
+      <br></br>2015-01-16 15:28:56,659 [HttpClient.java:418] GET http://localhost:2004/Crud.svc/AggregatePrimaryDecimal9.A1L1D9?uri=%7B%7D
+      <br></br>2015-01-16 15:28:56,659 [HttpClient.java:425] Accept: [application/json]
+      <br></br>2015-01-16 15:28:56,659 [HttpClient.java:425] Content-Type: [application/json]
+      <br></br>2015-01-16 15:28:56,675 [HttpClient.java:216] Received response [200, 1024 bytes] in 16 ms
+      <br></br>2015-01-16 15:28:56,675 [HttpClient.java:219] Received response body: {"URI":"{}","p1L1D9":[]}
       <br></br><a id="testNonExistenceOfURIPropertySetter"/><h2>testNonExistenceOfURIPropertySetter</h2>
       <br></br><a id="testP1L1D9PropertyFieldModifiers"/><h2>testP1L1D9PropertyFieldModifiers</h2>
       <br></br><a id="testP1L1D9PropertyGetterPublicVisibility"/><h2>testP1L1D9PropertyGetterPublicVisibility</h2>
@@ -516,57 +509,68 @@
       <br></br><a id="testP1L1D9PropertyGetterClass"/><h2>testP1L1D9PropertyGetterClass</h2>
       <br></br><a id="testURIPropertyGetterClass"/><h2>testURIPropertyGetterClass</h2>
       <br></br><a id="testP1L1D9NonDefault3PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1L1D9NonDefault3PropertyValueInAggregateAfterActiveRecordPersist</h2>
-      <br></br>2014-12-31 12:36:40,857 [HttpClient.java:191] Sending request [GET]: Domain.svc/search/AggregatePrimaryDecimal9.A1L1D9?limit=2147483647&offset=0
-      <br></br>2014-12-31 12:36:40,857 [HttpClient.java:389] GET http://localhost:2004/Domain.svc/search/AggregatePrimaryDecimal9.A1L1D9?limit=2147483647&offset=0
-      <br></br>2014-12-31 12:36:40,857 [HttpClient.java:396] Accept: [application/json]
-      <br></br>2014-12-31 12:36:40,857 [HttpClient.java:396] Content-Type: [application/json]
-      <br></br>2014-12-31 12:36:40,872 [HttpClient.java:212] Received response [200, 1024 bytes] in 15 ms
-      <br></br>2014-12-31 12:36:40,872 [HttpClient.java:215] Received response body: [{"URI":"{}","p1L1D9":[]}]
-      <br></br>2014-12-31 12:36:40,872 [HttpClient.java:205] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 78 bytes
-      <br></br>2014-12-31 12:36:40,872 [HttpClient.java:389] POST http://localhost:2004/RestApplication.svc/PersistAggregateRoot
-      <br></br>2014-12-31 12:36:40,872 [HttpClient.java:396] Accept: [application/json]
-      <br></br>2014-12-31 12:36:40,872 [HttpClient.java:396] Content-Type: [application/json]
-      <br></br>2014-12-31 12:36:40,872 [HttpClient.java:402] Adding payload: {"RootName":"AggregatePrimaryDecimal9.A1L1D9","ToDelete":"[{\"URI\":\"{}\"}]"}
-      <br></br>2014-12-31 12:36:40,903 [HttpClient.java:212] Received response [200, 1024 bytes] in 31 ms
-      <br></br>2014-12-31 12:36:40,903 [HttpClient.java:215] Received response body: []
-      <br></br>2014-12-31 12:36:40,903 [HttpClient.java:205] Sending request [POST]: Crud.svc/AggregatePrimaryDecimal9.A1L1D9, content size: 62 bytes
-      <br></br>2014-12-31 12:36:40,903 [HttpClient.java:389] POST http://localhost:2004/Crud.svc/AggregatePrimaryDecimal9.A1L1D9
-      <br></br>2014-12-31 12:36:40,903 [HttpClient.java:396] Accept: [application/json]
-      <br></br>2014-12-31 12:36:40,903 [HttpClient.java:396] Content-Type: [application/json]
-      <br></br>2014-12-31 12:36:40,903 [HttpClient.java:402] Adding payload: {"URI":"1225704566","p1L1D9":[0E-9,1,3.141592654,-1E-9,1E+19]}
-      <br></br>2014-12-31 12:36:40,919 [HttpClient.java:212] Received response [400, 108 bytes] in 16 ms
-      <br></br>2014-12-31 12:36:40,919 [HttpClient.java:215] Received response body: Can't deserialize AggregatePrimaryDecimal9.A1L1D9. Error: Expecting ']' at position -1. Found E. Example: 
-      <br></br>
+      <br></br>2015-01-16 15:28:56,690 [HttpClient.java:191] Sending request [GET]: Domain.svc/search/AggregatePrimaryDecimal9.A1L1D9?limit=2147483647&offset=0
+      <br></br>2015-01-16 15:28:56,690 [HttpClient.java:418] GET http://localhost:2004/Domain.svc/search/AggregatePrimaryDecimal9.A1L1D9?limit=2147483647&offset=0
+      <br></br>2015-01-16 15:28:56,690 [HttpClient.java:425] Accept: [application/json]
+      <br></br>2015-01-16 15:28:56,690 [HttpClient.java:425] Content-Type: [application/json]
+      <br></br>2015-01-16 15:28:56,706 [HttpClient.java:216] Received response [200, 1024 bytes] in 16 ms
+      <br></br>2015-01-16 15:28:56,706 [HttpClient.java:219] Received response body: [{"URI":"{}","p1L1D9":[]}]
+      <br></br>2015-01-16 15:28:56,721 [HttpClient.java:209] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 92 bytes
+      <br></br>2015-01-16 15:28:56,721 [HttpClient.java:418] POST http://localhost:2004/RestApplication.svc/PersistAggregateRoot
+      <br></br>2015-01-16 15:28:56,721 [HttpClient.java:425] Accept: [application/json]
+      <br></br>2015-01-16 15:28:56,721 [HttpClient.java:425] Content-Type: [application/json]
+      <br></br>2015-01-16 15:28:56,721 [HttpClient.java:431] Adding payload: {"RootName":"AggregatePrimaryDecimal9.A1L1D9","ToDelete":"[{\"p1L1D9\":[],\"uri\":\"{}\"}]"}
+      <br></br>2015-01-16 15:28:56,846 [HttpClient.java:216] Received response [200, 1024 bytes] in 140 ms
+      <br></br>2015-01-16 15:28:56,846 [HttpClient.java:219] Received response body: []
+      <br></br>2015-01-16 15:28:56,846 [HttpClient.java:209] Sending request [POST]: Crud.svc/AggregatePrimaryDecimal9.A1L1D9, content size: 80 bytes
+      <br></br>2015-01-16 15:28:56,846 [HttpClient.java:418] POST http://localhost:2004/Crud.svc/AggregatePrimaryDecimal9.A1L1D9
+      <br></br>2015-01-16 15:28:56,846 [HttpClient.java:425] Accept: [application/json]
+      <br></br>2015-01-16 15:28:56,846 [HttpClient.java:425] Content-Type: [application/json]
+      <br></br>2015-01-16 15:28:56,846 [HttpClient.java:431] Adding payload: {"URI":"1365609574"}{"URI":"38227648","p1L1D9":[0E-9,1,3.141592654,-1E-9,1E+19]}
+      <br></br>2015-01-16 15:28:56,956 [HttpClient.java:216] Received response [201, 1024 bytes] in 110 ms
+      <br></br>2015-01-16 15:28:56,956 [HttpClient.java:219] Received response body: {"URI":"{}","p1L1D9":[]}
       <br></br><a id="testP1L1D9NonDefault2PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1L1D9NonDefault2PropertyValueInAggregateAfterActiveRecordPersist</h2>
-      <br></br>2014-12-31 12:36:40,919 [HttpClient.java:191] Sending request [GET]: Domain.svc/search/AggregatePrimaryDecimal9.A1L1D9?limit=2147483647&offset=0
-      <br></br>2014-12-31 12:36:40,919 [HttpClient.java:389] GET http://localhost:2004/Domain.svc/search/AggregatePrimaryDecimal9.A1L1D9?limit=2147483647&offset=0
-      <br></br>2014-12-31 12:36:40,919 [HttpClient.java:396] Accept: [application/json]
-      <br></br>2014-12-31 12:36:40,919 [HttpClient.java:396] Content-Type: [application/json]
-      <br></br>2014-12-31 12:36:40,919 [HttpClient.java:212] Received response [200, 1024 bytes] in 0 ms
-      <br></br>2014-12-31 12:36:40,919 [HttpClient.java:215] Received response body: []
-      <br></br>2014-12-31 12:36:40,919 [HttpClient.java:205] Sending request [POST]: Crud.svc/AggregatePrimaryDecimal9.A1L1D9, content size: 36 bytes
-      <br></br>2014-12-31 12:36:40,919 [HttpClient.java:389] POST http://localhost:2004/Crud.svc/AggregatePrimaryDecimal9.A1L1D9
-      <br></br>2014-12-31 12:36:40,919 [HttpClient.java:396] Accept: [application/json]
-      <br></br>2014-12-31 12:36:40,919 [HttpClient.java:396] Content-Type: [application/json]
-      <br></br>2014-12-31 12:36:40,919 [HttpClient.java:402] Adding payload: {"URI":"347453747","p1L1D9":[1E+19]}
-      <br></br>2014-12-31 12:36:40,919 [HttpClient.java:212] Received response [400, 108 bytes] in 0 ms
-      <br></br>2014-12-31 12:36:40,919 [HttpClient.java:215] Received response body: Can't deserialize AggregatePrimaryDecimal9.A1L1D9. Error: Expecting ']' at position -1. Found E. Example: 
-      <br></br>
+      <br></br>2015-01-16 15:28:56,971 [HttpClient.java:191] Sending request [GET]: Domain.svc/search/AggregatePrimaryDecimal9.A1L1D9?limit=2147483647&offset=0
+      <br></br>2015-01-16 15:28:56,971 [HttpClient.java:418] GET http://localhost:2004/Domain.svc/search/AggregatePrimaryDecimal9.A1L1D9?limit=2147483647&offset=0
+      <br></br>2015-01-16 15:28:56,971 [HttpClient.java:425] Accept: [application/json]
+      <br></br>2015-01-16 15:28:56,971 [HttpClient.java:425] Content-Type: [application/json]
+      <br></br>2015-01-16 15:28:56,971 [HttpClient.java:216] Received response [200, 1024 bytes] in 0 ms
+      <br></br>2015-01-16 15:28:56,971 [HttpClient.java:219] Received response body: [{"URI":"{}","p1L1D9":[]}]
+      <br></br>2015-01-16 15:28:56,971 [HttpClient.java:209] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 92 bytes
+      <br></br>2015-01-16 15:28:56,971 [HttpClient.java:418] POST http://localhost:2004/RestApplication.svc/PersistAggregateRoot
+      <br></br>2015-01-16 15:28:56,971 [HttpClient.java:425] Accept: [application/json]
+      <br></br>2015-01-16 15:28:56,971 [HttpClient.java:425] Content-Type: [application/json]
+      <br></br>2015-01-16 15:28:56,971 [HttpClient.java:431] Adding payload: {"RootName":"AggregatePrimaryDecimal9.A1L1D9","ToDelete":"[{\"p1L1D9\":[],\"uri\":\"{}\"}]"}
+      <br></br>2015-01-16 15:28:57,143 [HttpClient.java:216] Received response [200, 1024 bytes] in 172 ms
+      <br></br>2015-01-16 15:28:57,143 [HttpClient.java:219] Received response body: []
+      <br></br>2015-01-16 15:28:57,143 [HttpClient.java:209] Sending request [POST]: Crud.svc/AggregatePrimaryDecimal9.A1L1D9, content size: 116 bytes
+      <br></br>2015-01-16 15:28:57,143 [HttpClient.java:418] POST http://localhost:2004/Crud.svc/AggregatePrimaryDecimal9.A1L1D9
+      <br></br>2015-01-16 15:28:57,143 [HttpClient.java:425] Accept: [application/json]
+      <br></br>2015-01-16 15:28:57,143 [HttpClient.java:425] Content-Type: [application/json]
+      <br></br>2015-01-16 15:28:57,143 [HttpClient.java:431] Adding payload: {"URI":"1365609574"}{"URI":"38227648","p1L1D9":[0E-9,1,3.141592654,-1E-9,1E+19]}{"URI":"897057254","p1L1D9":[1E+19]}
+      <br></br>2015-01-16 15:28:57,175 [HttpClient.java:216] Received response [201, 1024 bytes] in 32 ms
+      <br></br>2015-01-16 15:28:57,175 [HttpClient.java:219] Received response body: {"URI":"{}","p1L1D9":[]}
       <br></br><a id="testP1L1D9NonDefault1PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1L1D9NonDefault1PropertyValueInAggregateAfterActiveRecordPersist</h2>
-      <br></br>2014-12-31 12:36:40,935 [HttpClient.java:191] Sending request [GET]: Domain.svc/search/AggregatePrimaryDecimal9.A1L1D9?limit=2147483647&offset=0
-      <br></br>2014-12-31 12:36:40,935 [HttpClient.java:389] GET http://localhost:2004/Domain.svc/search/AggregatePrimaryDecimal9.A1L1D9?limit=2147483647&offset=0
-      <br></br>2014-12-31 12:36:40,935 [HttpClient.java:396] Accept: [application/json]
-      <br></br>2014-12-31 12:36:40,935 [HttpClient.java:396] Content-Type: [application/json]
-      <br></br>2014-12-31 12:36:40,935 [HttpClient.java:212] Received response [200, 1024 bytes] in 0 ms
-      <br></br>2014-12-31 12:36:40,935 [HttpClient.java:215] Received response body: []
-      <br></br>2014-12-31 12:36:40,935 [HttpClient.java:205] Sending request [POST]: Crud.svc/AggregatePrimaryDecimal9.A1L1D9, content size: 36 bytes
-      <br></br>2014-12-31 12:36:40,935 [HttpClient.java:389] POST http://localhost:2004/Crud.svc/AggregatePrimaryDecimal9.A1L1D9
-      <br></br>2014-12-31 12:36:40,935 [HttpClient.java:396] Accept: [application/json]
-      <br></br>2014-12-31 12:36:40,935 [HttpClient.java:396] Content-Type: [application/json]
-      <br></br>2014-12-31 12:36:40,935 [HttpClient.java:402] Adding payload: {"URI":"1249817283","p1L1D9":[0E-9]}
-      <br></br>2014-12-31 12:36:40,935 [HttpClient.java:212] Received response [400, 108 bytes] in 0 ms
-      <br></br>2014-12-31 12:36:40,935 [HttpClient.java:215] Received response body: Can't deserialize AggregatePrimaryDecimal9.A1L1D9. Error: Expecting ']' at position -1. Found E. Example: 
-      <br></br>
+      <br></br>2015-01-16 15:28:57,175 [HttpClient.java:191] Sending request [GET]: Domain.svc/search/AggregatePrimaryDecimal9.A1L1D9?limit=2147483647&offset=0
+      <br></br>2015-01-16 15:28:57,175 [HttpClient.java:418] GET http://localhost:2004/Domain.svc/search/AggregatePrimaryDecimal9.A1L1D9?limit=2147483647&offset=0
+      <br></br>2015-01-16 15:28:57,175 [HttpClient.java:425] Accept: [application/json]
+      <br></br>2015-01-16 15:28:57,175 [HttpClient.java:425] Content-Type: [application/json]
+      <br></br>2015-01-16 15:28:57,175 [HttpClient.java:216] Received response [200, 1024 bytes] in 0 ms
+      <br></br>2015-01-16 15:28:57,175 [HttpClient.java:219] Received response body: [{"URI":"{}","p1L1D9":[]}]
+      <br></br>2015-01-16 15:28:57,175 [HttpClient.java:209] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 92 bytes
+      <br></br>2015-01-16 15:28:57,175 [HttpClient.java:418] POST http://localhost:2004/RestApplication.svc/PersistAggregateRoot
+      <br></br>2015-01-16 15:28:57,175 [HttpClient.java:425] Accept: [application/json]
+      <br></br>2015-01-16 15:28:57,175 [HttpClient.java:425] Content-Type: [application/json]
+      <br></br>2015-01-16 15:28:57,175 [HttpClient.java:431] Adding payload: {"RootName":"AggregatePrimaryDecimal9.A1L1D9","ToDelete":"[{\"p1L1D9\":[],\"uri\":\"{}\"}]"}
+      <br></br>2015-01-16 15:28:57,206 [HttpClient.java:216] Received response [200, 1024 bytes] in 31 ms
+      <br></br>2015-01-16 15:28:57,206 [HttpClient.java:219] Received response body: []
+      <br></br>2015-01-16 15:28:57,206 [HttpClient.java:209] Sending request [POST]: Crud.svc/AggregatePrimaryDecimal9.A1L1D9, content size: 150 bytes
+      <br></br>2015-01-16 15:28:57,206 [HttpClient.java:418] POST http://localhost:2004/Crud.svc/AggregatePrimaryDecimal9.A1L1D9
+      <br></br>2015-01-16 15:28:57,206 [HttpClient.java:425] Accept: [application/json]
+      <br></br>2015-01-16 15:28:57,206 [HttpClient.java:425] Content-Type: [application/json]
+      <br></br>2015-01-16 15:28:57,206 [HttpClient.java:431] Adding payload: {"URI":"1365609574"}{"URI":"38227648","p1L1D9":[0E-9,1,3.141592654,-1E-9,1E+19]}{"URI":"897057254","p1L1D9":[1E+19]}{"URI":"30336615","p1L1D9":[0E-9]}
+      <br></br>2015-01-16 15:28:57,253 [HttpClient.java:216] Received response [201, 1024 bytes] in 47 ms
+      <br></br>2015-01-16 15:28:57,253 [HttpClient.java:219] Received response body: {"URI":"{}","p1L1D9":[]}
       <br></br><a id="testURIPropertyGetterModifiers"/><h2>testURIPropertyGetterModifiers</h2>
       <br></br><a id="testP1L1D9PropertyFieldPrivateVisibility"/><h2>testP1L1D9PropertyFieldPrivateVisibility</h2>
       <br></br>

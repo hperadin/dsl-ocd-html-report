@@ -22,8 +22,35 @@
             </tr>
             <tr>
                <td>testP1S1S9NonDefault2PropertyValueInSnowflakeAfterActiveRecordPersist</td>
-               <td>Success</td>
-               <td>0.078</td>
+               <td>Failed</td>
+               <td>0.016</td>
+            </tr>
+         </table>
+         <h2>Errors:</h2>
+         <table class="table" style="width: 1500px">
+            <tr>
+               <td>Type:</td>
+               <td>java.lang.AssertionError</td>
+            </tr>
+            <tr>
+               <td>Message:</td>
+               <td>
+                  <code>OneSetOfOneStringWithMaxLengthOf9 mismatch: expecteds was a set of size 1, but actuals
+                     was a set of size 5
+                  </code>
+               </td>
+            </tr>
+            <tr>
+               <td>Text:</td>
+               <td>
+                  <code>java.lang.AssertionError: OneSetOfOneStringWithMaxLengthOf9 mismatch: expecteds was a set of size 1, but actuals was a set of size 5
+                     <br></br>	at com.dslplatform.ocd.javaasserts.StringWithMaxLengthOf9Asserts.assertSetOfOneEquals(StringWithMaxLengthOf9Asserts.java:200)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.StringWithMaxLengthOf9Asserts.assertOneSetOfOneEquals(StringWithMaxLengthOf9Asserts.java:216)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.StringWithMaxLengthOf9Asserts.assertOneSetOfOneEquals(StringWithMaxLengthOf9Asserts.java:220)
+                     <br></br>	at com.dslplatform.ocd.snowflakes.CalculatedOneSetOfOneStringsWithMaxLengthOf9PropertyInSnowflakeTest.testP1S1S9NonDefault2PropertyValueInSnowflakeAfterActiveRecordPersist(Unknown Source)
+                     <br></br>
+                  </code>
+               </td>
             </tr>
          </table>
       </div>

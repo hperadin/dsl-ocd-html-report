@@ -24,8 +24,8 @@
                <td>PrimarySingleText</td>
                <td>139</td>
                <td>0</td>
-               <td>10</td>
-               <td>5.584</td>
+               <td>22</td>
+               <td>5.703</td>
             </tr>
          </table>
       </div>
@@ -46,16 +46,11 @@
                </td>
                <td>Failed</td>
                <td>
-                  <code>java.util.concurrent.ExecutionException: java.io.IOException: ERROR: 22P02: malformed
-                     array literal: "{NULL,"","\""","Quote: \"", Solidus /, Backslash: \\\, Aphos: ', Brackets:
-                     [] () {}","	
-                     &#xD; !\""#$%&amp;'()*+,-./0123456789:;&lt;=&gt;?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\\]^_`abcdefghijklmnopqrstuvwxyz{|}~&#x7f;&#x80;&#x81;&#x82;&#x83;&#x84;&#x85;&#x86;&#x87;&#x88;&#x89;&#x8a;&#x8b;&#x8c;&#x8d;&#x8e;&#x8f;&#x90;&#x91;&#x92;&#x93;&#x94;&#x95;&#x96;&#x97;&#x98;&#x99;&#x9a;&#x9b;&#x9c;&#x9d;&#x9e;&#x9f;&#xa0;&#xa1;&#xa2;&#xa3;&#xa4;&#xa5;&#xa6;&#xa7;&#xa8;&#xa9;&#xaa;&#xab;&#xac;&#xad;&#xae;&#xaf;&#xb0;&#xb1;&#xb2;&#xb3;&#xb4;&#xb5;&#xb6;&#xb7;&#xb8;&#xb9;&#xba;&#xbb;&#xbc;&#xbd;&#xbe;&#xbf;&#xc0;&#xc1;&#xc2;&#xc3;&#xc4;&#xc5;&#xc6;&#xc7;&#xc8;&#xc9;&#xca;&#xcb;&#xcc;&#xcd;&#xce;&#xcf;&#xd0;&#xd1;&#xd2;&#xd3;&#xd4;&#xd5;&#xd6;&#xd7;&#xd8;&#xd9;&#xda;&#xdb;&#xdc;&#xdd;&#xde;&#xdf;&#xe0;&#xe1;&#xe2;&#xe3;&#xe4;&#xe5;&#xe6;&#xe7;&#xe8;&#xe9;&#xea;&#xeb;&#xec;&#xed;&#xee;&#xef;&#xf0;&#xf1;&#xf2;&#xf3;&#xf4;&#xf5;&#xf6;&#xf7;&#xf8;&#xf9;&#xfa;&#xfb;&#xfc;&#xfd;&#xfe;&#xff;&#x100;"}"&#xD;
-                     SQL: SELECT r FROM "AggregatePrimaryText"."A1A0Te_entity" r WHERE r."p1A0Te" IN ('{NULL,"","\""","Quote:
-                     \"", Solidus /, Backslash: \\\, Aphos: '', Brackets: [] () {}","	
-                     &#xD; !\""
+                  <code>OneArrayOfNullableText mismatch: expecteds was an array of length 5, but actuals was
+                     an array of length 0
                   </code>
                </td>
-               <td>0.168</td>
+               <td>0.078</td>
             </tr>
             <tr class="danger">
                <td>
@@ -65,16 +60,11 @@
                </td>
                <td>Failed</td>
                <td>
-                  <code>java.util.concurrent.ExecutionException: java.io.IOException: ERROR: 22P02: malformed
-                     array literal: "{"","\""","Quote: \"", Solidus /, Backslash: \\\, Aphos: ', Brackets:
-                     [] () {}","	
-                     &#xD; !\""#$%&amp;'()*+,-./0123456789:;&lt;=&gt;?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\\]^_`abcdefghijklmnopqrstuvwxyz{|}~&#x7f;&#x80;&#x81;&#x82;&#x83;&#x84;&#x85;&#x86;&#x87;&#x88;&#x89;&#x8a;&#x8b;&#x8c;&#x8d;&#x8e;&#x8f;&#x90;&#x91;&#x92;&#x93;&#x94;&#x95;&#x96;&#x97;&#x98;&#x99;&#x9a;&#x9b;&#x9c;&#x9d;&#x9e;&#x9f;&#xa0;&#xa1;&#xa2;&#xa3;&#xa4;&#xa5;&#xa6;&#xa7;&#xa8;&#xa9;&#xaa;&#xab;&#xac;&#xad;&#xae;&#xaf;&#xb0;&#xb1;&#xb2;&#xb3;&#xb4;&#xb5;&#xb6;&#xb7;&#xb8;&#xb9;&#xba;&#xbb;&#xbc;&#xbd;&#xbe;&#xbf;&#xc0;&#xc1;&#xc2;&#xc3;&#xc4;&#xc5;&#xc6;&#xc7;&#xc8;&#xc9;&#xca;&#xcb;&#xcc;&#xcd;&#xce;&#xcf;&#xd0;&#xd1;&#xd2;&#xd3;&#xd4;&#xd5;&#xd6;&#xd7;&#xd8;&#xd9;&#xda;&#xdb;&#xdc;&#xdd;&#xde;&#xdf;&#xe0;&#xe1;&#xe2;&#xe3;&#xe4;&#xe5;&#xe6;&#xe7;&#xe8;&#xe9;&#xea;&#xeb;&#xec;&#xed;&#xee;&#xef;&#xf0;&#xf1;&#xf2;&#xf3;&#xf4;&#xf5;&#xf6;&#xf7;&#xf8;&#xf9;&#xfa;&#xfb;&#xfc;&#xfd;&#xfe;&#xff;&#x100;"}"&#xD;
-                     SQL: SELECT r FROM "AggregatePrimaryText"."A1A0Te_entity" r WHERE r."p1A0Te" IN ('{"","\""","Quote:
-                     \"", Solidus /, Backslash: \\\, Aphos: '', Brackets: [] () {}","	
-                     &#xD; !\""#$%&amp;'
+                  <code>OneArrayOfNullableText mismatch: expecteds was an array of length 4, but actuals was
+                     an array of length 0
                   </code>
                </td>
-               <td>0.185</td>
+               <td>0.125</td>
             </tr>
             <tr class="danger">
                <td>
@@ -84,14 +74,39 @@
                </td>
                <td>Failed</td>
                <td>
-                  <code>java.util.concurrent.ExecutionException: java.io.IOException: ERROR: 22P02: malformed
-                     array literal: "{"	
-                     &#xD; !\""#$%&amp;'()*+,-./0123456789:;&lt;=&gt;?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\\]^_`abcdefghijklmnopqrstuvwxyz{|}~&#x7f;&#x80;&#x81;&#x82;&#x83;&#x84;&#x85;&#x86;&#x87;&#x88;&#x89;&#x8a;&#x8b;&#x8c;&#x8d;&#x8e;&#x8f;&#x90;&#x91;&#x92;&#x93;&#x94;&#x95;&#x96;&#x97;&#x98;&#x99;&#x9a;&#x9b;&#x9c;&#x9d;&#x9e;&#x9f;&#xa0;&#xa1;&#xa2;&#xa3;&#xa4;&#xa5;&#xa6;&#xa7;&#xa8;&#xa9;&#xaa;&#xab;&#xac;&#xad;&#xae;&#xaf;&#xb0;&#xb1;&#xb2;&#xb3;&#xb4;&#xb5;&#xb6;&#xb7;&#xb8;&#xb9;&#xba;&#xbb;&#xbc;&#xbd;&#xbe;&#xbf;&#xc0;&#xc1;&#xc2;&#xc3;&#xc4;&#xc5;&#xc6;&#xc7;&#xc8;&#xc9;&#xca;&#xcb;&#xcc;&#xcd;&#xce;&#xcf;&#xd0;&#xd1;&#xd2;&#xd3;&#xd4;&#xd5;&#xd6;&#xd7;&#xd8;&#xd9;&#xda;&#xdb;&#xdc;&#xdd;&#xde;&#xdf;&#xe0;&#xe1;&#xe2;&#xe3;&#xe4;&#xe5;&#xe6;&#xe7;&#xe8;&#xe9;&#xea;&#xeb;&#xec;&#xed;&#xee;&#xef;&#xf0;&#xf1;&#xf2;&#xf3;&#xf4;&#xf5;&#xf6;&#xf7;&#xf8;&#xf9;&#xfa;&#xfb;&#xfc;&#xfd;&#xfe;&#xff;&#x100;"}"&#xD;
-                     SQL: SELECT r FROM "AggregatePrimaryText"."A1A0Te_entity" r WHERE r."p1A0Te" IN ('{"	
-                     &#xD; !\""#$%&amp;''()*+,-./0123456789:;&lt;=&gt;?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\\]^_`abcdefghijklmnopqrst
+                  <code>OneArrayOfNullableText mismatch: expecteds was an array of length 1, but actuals was
+                     an array of length 0
                   </code>
                </td>
-               <td>0.423</td>
+               <td>0.063</td>
+            </tr>
+            <tr class="danger">
+               <td>
+                  <a href="&#xA;        ../../../../com/dslplatform/ocd/aggregates/AggregateWithOneArrayOfNullableTextsPropertyAsPrimaryKeyTest/testP1A0TeNonDefault2PropertyValueInAggregateAfterActiveRecordPersist.html&#xA;    ">testP1A0TeNonDefault2PropertyValueInAggregateAfterActiveRecordPersist</a>
+                  <br></br>
+                  <a target="_blank" href="PrimarySingleText_stacktrace.html#testP1A0TeNonDefault2PropertyValueInAggregateAfterActiveRecordPersist">(view stacktrace)</a>
+               </td>
+               <td>Failed</td>
+               <td>
+                  <code>OneArrayOfNullableText mismatch: expecteds was an array of length 1, but actuals was
+                     an array of length 0
+                  </code>
+               </td>
+               <td>0.125</td>
+            </tr>
+            <tr class="danger">
+               <td>
+                  <a href="&#xA;        ../../../../com/dslplatform/ocd/aggregates/AggregateWithOneArrayOfNullableTextsPropertyAsPrimaryKeyTest/testP1A0TeNonDefault1PropertyValueInAggregateAfterActiveRecordPersist.html&#xA;    ">testP1A0TeNonDefault1PropertyValueInAggregateAfterActiveRecordPersist</a>
+                  <br></br>
+                  <a target="_blank" href="PrimarySingleText_stacktrace.html#testP1A0TeNonDefault1PropertyValueInAggregateAfterActiveRecordPersist">(view stacktrace)</a>
+               </td>
+               <td>Failed</td>
+               <td>
+                  <code>OneArrayOfNullableText mismatch: expecteds was an array of length 1, but actuals was
+                     an array of length 0
+                  </code>
+               </td>
+               <td>0.093</td>
             </tr>
             <tr class="danger">
                <td>
@@ -101,16 +116,13 @@
                </td>
                <td>Failed</td>
                <td>
-                  <code>java.util.concurrent.ExecutionException: java.io.IOException: ERROR: 22P02: malformed
-                     array literal: "{"","\""","Quote: \"", Solidus /, Backslash: \\\, Aphos: ', Brackets:
-                     [] () {}","	
-                     &#xD; !\""#$%&amp;'()*+,-./0123456789:;&lt;=&gt;?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\\]^_`abcdefghijklmnopqrstuvwxyz{|}~&#x7f;&#x80;&#x81;&#x82;&#x83;&#x84;&#x85;&#x86;&#x87;&#x88;&#x89;&#x8a;&#x8b;&#x8c;&#x8d;&#x8e;&#x8f;&#x90;&#x91;&#x92;&#x93;&#x94;&#x95;&#x96;&#x97;&#x98;&#x99;&#x9a;&#x9b;&#x9c;&#x9d;&#x9e;&#x9f;&#xa0;&#xa1;&#xa2;&#xa3;&#xa4;&#xa5;&#xa6;&#xa7;&#xa8;&#xa9;&#xaa;&#xab;&#xac;&#xad;&#xae;&#xaf;&#xb0;&#xb1;&#xb2;&#xb3;&#xb4;&#xb5;&#xb6;&#xb7;&#xb8;&#xb9;&#xba;&#xbb;&#xbc;&#xbd;&#xbe;&#xbf;&#xc0;&#xc1;&#xc2;&#xc3;&#xc4;&#xc5;&#xc6;&#xc7;&#xc8;&#xc9;&#xca;&#xcb;&#xcc;&#xcd;&#xce;&#xcf;&#xd0;&#xd1;&#xd2;&#xd3;&#xd4;&#xd5;&#xd6;&#xd7;&#xd8;&#xd9;&#xda;&#xdb;&#xdc;&#xdd;&#xde;&#xdf;&#xe0;&#xe1;&#xe2;&#xe3;&#xe4;&#xe5;&#xe6;&#xe7;&#xe8;&#xe9;&#xea;&#xeb;&#xec;&#xed;&#xee;&#xef;&#xf0;&#xf1;&#xf2;&#xf3;&#xf4;&#xf5;&#xf6;&#xf7;&#xf8;&#xf9;&#xfa;&#xfb;&#xfc;&#xfd;&#xfe;&#xff;&#x100;"}"&#xD;
-                     SQL: SELECT r FROM "AggregatePrimaryText"."A1A1Te_entity" r WHERE r."p1A1Te" IN ('{"","\""","Quote:
-                     \"", Solidus /, Backslash: \\\, Aphos: '', Brackets: [] () {}","	
-                     &#xD; !\""#$%&amp;'
+                  <code>java.util.concurrent.ExecutionException: com.dslplatform.client.exceptions.HttpUnexpectedCodeException:
+                     Can't deserialize AggregatePrimaryText.A1A1Te. Error: Invalid char found: f. Example:
+                     &#xD;
+                     
                   </code>
                </td>
-               <td>0.245</td>
+               <td>0.125</td>
             </tr>
             <tr class="danger">
                <td>
@@ -120,14 +132,45 @@
                </td>
                <td>Failed</td>
                <td>
-                  <code>java.util.concurrent.ExecutionException: java.io.IOException: ERROR: 22P02: malformed
-                     array literal: "{"	
-                     &#xD; !\""#$%&amp;'()*+,-./0123456789:;&lt;=&gt;?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\\]^_`abcdefghijklmnopqrstuvwxyz{|}~&#x7f;&#x80;&#x81;&#x82;&#x83;&#x84;&#x85;&#x86;&#x87;&#x88;&#x89;&#x8a;&#x8b;&#x8c;&#x8d;&#x8e;&#x8f;&#x90;&#x91;&#x92;&#x93;&#x94;&#x95;&#x96;&#x97;&#x98;&#x99;&#x9a;&#x9b;&#x9c;&#x9d;&#x9e;&#x9f;&#xa0;&#xa1;&#xa2;&#xa3;&#xa4;&#xa5;&#xa6;&#xa7;&#xa8;&#xa9;&#xaa;&#xab;&#xac;&#xad;&#xae;&#xaf;&#xb0;&#xb1;&#xb2;&#xb3;&#xb4;&#xb5;&#xb6;&#xb7;&#xb8;&#xb9;&#xba;&#xbb;&#xbc;&#xbd;&#xbe;&#xbf;&#xc0;&#xc1;&#xc2;&#xc3;&#xc4;&#xc5;&#xc6;&#xc7;&#xc8;&#xc9;&#xca;&#xcb;&#xcc;&#xcd;&#xce;&#xcf;&#xd0;&#xd1;&#xd2;&#xd3;&#xd4;&#xd5;&#xd6;&#xd7;&#xd8;&#xd9;&#xda;&#xdb;&#xdc;&#xdd;&#xde;&#xdf;&#xe0;&#xe1;&#xe2;&#xe3;&#xe4;&#xe5;&#xe6;&#xe7;&#xe8;&#xe9;&#xea;&#xeb;&#xec;&#xed;&#xee;&#xef;&#xf0;&#xf1;&#xf2;&#xf3;&#xf4;&#xf5;&#xf6;&#xf7;&#xf8;&#xf9;&#xfa;&#xfb;&#xfc;&#xfd;&#xfe;&#xff;&#x100;"}"&#xD;
-                     SQL: SELECT r FROM "AggregatePrimaryText"."A1A1Te_entity" r WHERE r."p1A1Te" IN ('{"	
-                     &#xD; !\""#$%&amp;''()*+,-./0123456789:;&lt;=&gt;?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\\]^_`abcdefghijklmnopqrst
+                  <code>java.util.concurrent.ExecutionException: com.dslplatform.client.exceptions.HttpUnexpectedCodeException:
+                     Can't deserialize AggregatePrimaryText.A1A1Te. Error: Invalid char found: f. Example:
+                     &#xD;
+                     
                   </code>
                </td>
-               <td>0.113</td>
+               <td>0.0</td>
+            </tr>
+            <tr class="danger">
+               <td>
+                  <a href="&#xA;        ../../../../com/dslplatform/ocd/aggregates/AggregateWithOneArrayOfOneTextsPropertyAsPrimaryKeyTest/testP1A1TeNonDefault1PropertyValueInAggregateAfterActiveRecordPersist.html&#xA;    ">testP1A1TeNonDefault1PropertyValueInAggregateAfterActiveRecordPersist</a>
+                  <br></br>
+                  <a target="_blank" href="PrimarySingleText_stacktrace.html#testP1A1TeNonDefault1PropertyValueInAggregateAfterActiveRecordPersist">(view stacktrace)</a>
+               </td>
+               <td>Failed</td>
+               <td>
+                  <code>java.util.concurrent.ExecutionException: com.dslplatform.client.exceptions.HttpUnexpectedCodeException:
+                     Can't deserialize AggregatePrimaryText.A1A1Te. Error: Invalid char found: f. Example:
+                     &#xD;
+                     
+                  </code>
+               </td>
+               <td>0.125</td>
+            </tr>
+            <tr class="danger">
+               <td>
+                  <a href="&#xA;        ../../../../com/dslplatform/ocd/aggregates/AggregateWithOneArrayOfOneTextsPropertyAsPrimaryKeyTest/testP1A1TeDefaultPropertyValueInAggregateAfterActiveRecordPersist.html&#xA;    ">testP1A1TeDefaultPropertyValueInAggregateAfterActiveRecordPersist</a>
+                  <br></br>
+                  <a target="_blank" href="PrimarySingleText_stacktrace.html#testP1A1TeDefaultPropertyValueInAggregateAfterActiveRecordPersist">(view stacktrace)</a>
+               </td>
+               <td>Failed</td>
+               <td>
+                  <code>java.util.concurrent.ExecutionException: com.dslplatform.client.exceptions.HttpUnexpectedCodeException:
+                     Can't deserialize AggregatePrimaryText.A1A1Te. Error: Invalid char found: f. Example:
+                     &#xD;
+                     
+                  </code>
+               </td>
+               <td>0.125</td>
             </tr>
             <tr class="danger">
                <td>
@@ -137,16 +180,13 @@
                </td>
                <td>Failed</td>
                <td>
-                  <code>java.util.concurrent.ExecutionException: java.io.IOException: ERROR: 22P02: malformed
-                     array literal: "{NULL,"","\""","Quote: \"", Solidus /, Backslash: \\\, Aphos: ', Brackets:
-                     [] () {}","	
-                     &#xD; !\""#$%&amp;'()*+,-./0123456789:;&lt;=&gt;?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\\]^_`abcdefghijklmnopqrstuvwxyz{|}~&#x7f;&#x80;&#x81;&#x82;&#x83;&#x84;&#x85;&#x86;&#x87;&#x88;&#x89;&#x8a;&#x8b;&#x8c;&#x8d;&#x8e;&#x8f;&#x90;&#x91;&#x92;&#x93;&#x94;&#x95;&#x96;&#x97;&#x98;&#x99;&#x9a;&#x9b;&#x9c;&#x9d;&#x9e;&#x9f;&#xa0;&#xa1;&#xa2;&#xa3;&#xa4;&#xa5;&#xa6;&#xa7;&#xa8;&#xa9;&#xaa;&#xab;&#xac;&#xad;&#xae;&#xaf;&#xb0;&#xb1;&#xb2;&#xb3;&#xb4;&#xb5;&#xb6;&#xb7;&#xb8;&#xb9;&#xba;&#xbb;&#xbc;&#xbd;&#xbe;&#xbf;&#xc0;&#xc1;&#xc2;&#xc3;&#xc4;&#xc5;&#xc6;&#xc7;&#xc8;&#xc9;&#xca;&#xcb;&#xcc;&#xcd;&#xce;&#xcf;&#xd0;&#xd1;&#xd2;&#xd3;&#xd4;&#xd5;&#xd6;&#xd7;&#xd8;&#xd9;&#xda;&#xdb;&#xdc;&#xdd;&#xde;&#xdf;&#xe0;&#xe1;&#xe2;&#xe3;&#xe4;&#xe5;&#xe6;&#xe7;&#xe8;&#xe9;&#xea;&#xeb;&#xec;&#xed;&#xee;&#xef;&#xf0;&#xf1;&#xf2;&#xf3;&#xf4;&#xf5;&#xf6;&#xf7;&#xf8;&#xf9;&#xfa;&#xfb;&#xfc;&#xfd;&#xfe;&#xff;&#x100;"}"&#xD;
-                     SQL: SELECT r FROM "AggregatePrimaryText"."A1L0Te_entity" r WHERE r."p1L0Te" IN ('{NULL,"","\""","Quote:
-                     \"", Solidus /, Backslash: \\\, Aphos: '', Brackets: [] () {}","	
-                     &#xD; !\""
+                  <code>java.util.concurrent.ExecutionException: com.dslplatform.client.exceptions.HttpUnexpectedCodeException:
+                     Can't deserialize AggregatePrimaryText.A1L0Te. Error: Invalid char found: f. Example:
+                     &#xD;
+                     
                   </code>
                </td>
-               <td>0.19</td>
+               <td>0.14</td>
             </tr>
             <tr class="danger">
                <td>
@@ -156,16 +196,13 @@
                </td>
                <td>Failed</td>
                <td>
-                  <code>java.util.concurrent.ExecutionException: java.io.IOException: ERROR: 22P02: malformed
-                     array literal: "{"","\""","Quote: \"", Solidus /, Backslash: \\\, Aphos: ', Brackets:
-                     [] () {}","	
-                     &#xD; !\""#$%&amp;'()*+,-./0123456789:;&lt;=&gt;?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\\]^_`abcdefghijklmnopqrstuvwxyz{|}~&#x7f;&#x80;&#x81;&#x82;&#x83;&#x84;&#x85;&#x86;&#x87;&#x88;&#x89;&#x8a;&#x8b;&#x8c;&#x8d;&#x8e;&#x8f;&#x90;&#x91;&#x92;&#x93;&#x94;&#x95;&#x96;&#x97;&#x98;&#x99;&#x9a;&#x9b;&#x9c;&#x9d;&#x9e;&#x9f;&#xa0;&#xa1;&#xa2;&#xa3;&#xa4;&#xa5;&#xa6;&#xa7;&#xa8;&#xa9;&#xaa;&#xab;&#xac;&#xad;&#xae;&#xaf;&#xb0;&#xb1;&#xb2;&#xb3;&#xb4;&#xb5;&#xb6;&#xb7;&#xb8;&#xb9;&#xba;&#xbb;&#xbc;&#xbd;&#xbe;&#xbf;&#xc0;&#xc1;&#xc2;&#xc3;&#xc4;&#xc5;&#xc6;&#xc7;&#xc8;&#xc9;&#xca;&#xcb;&#xcc;&#xcd;&#xce;&#xcf;&#xd0;&#xd1;&#xd2;&#xd3;&#xd4;&#xd5;&#xd6;&#xd7;&#xd8;&#xd9;&#xda;&#xdb;&#xdc;&#xdd;&#xde;&#xdf;&#xe0;&#xe1;&#xe2;&#xe3;&#xe4;&#xe5;&#xe6;&#xe7;&#xe8;&#xe9;&#xea;&#xeb;&#xec;&#xed;&#xee;&#xef;&#xf0;&#xf1;&#xf2;&#xf3;&#xf4;&#xf5;&#xf6;&#xf7;&#xf8;&#xf9;&#xfa;&#xfb;&#xfc;&#xfd;&#xfe;&#xff;&#x100;"}"&#xD;
-                     SQL: SELECT r FROM "AggregatePrimaryText"."A1L0Te_entity" r WHERE r."p1L0Te" IN ('{"","\""","Quote:
-                     \"", Solidus /, Backslash: \\\, Aphos: '', Brackets: [] () {}","	
-                     &#xD; !\""#$%&amp;'
+                  <code>java.util.concurrent.ExecutionException: com.dslplatform.client.exceptions.HttpUnexpectedCodeException:
+                     Can't deserialize AggregatePrimaryText.A1L0Te. Error: Invalid char found: f. Example:
+                     &#xD;
+                     
                   </code>
                </td>
-               <td>0.233</td>
+               <td>0.0</td>
             </tr>
             <tr class="danger">
                <td>
@@ -175,14 +212,61 @@
                </td>
                <td>Failed</td>
                <td>
-                  <code>java.util.concurrent.ExecutionException: java.io.IOException: ERROR: 22P02: malformed
-                     array literal: "{"	
-                     &#xD; !\""#$%&amp;'()*+,-./0123456789:;&lt;=&gt;?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\\]^_`abcdefghijklmnopqrstuvwxyz{|}~&#x7f;&#x80;&#x81;&#x82;&#x83;&#x84;&#x85;&#x86;&#x87;&#x88;&#x89;&#x8a;&#x8b;&#x8c;&#x8d;&#x8e;&#x8f;&#x90;&#x91;&#x92;&#x93;&#x94;&#x95;&#x96;&#x97;&#x98;&#x99;&#x9a;&#x9b;&#x9c;&#x9d;&#x9e;&#x9f;&#xa0;&#xa1;&#xa2;&#xa3;&#xa4;&#xa5;&#xa6;&#xa7;&#xa8;&#xa9;&#xaa;&#xab;&#xac;&#xad;&#xae;&#xaf;&#xb0;&#xb1;&#xb2;&#xb3;&#xb4;&#xb5;&#xb6;&#xb7;&#xb8;&#xb9;&#xba;&#xbb;&#xbc;&#xbd;&#xbe;&#xbf;&#xc0;&#xc1;&#xc2;&#xc3;&#xc4;&#xc5;&#xc6;&#xc7;&#xc8;&#xc9;&#xca;&#xcb;&#xcc;&#xcd;&#xce;&#xcf;&#xd0;&#xd1;&#xd2;&#xd3;&#xd4;&#xd5;&#xd6;&#xd7;&#xd8;&#xd9;&#xda;&#xdb;&#xdc;&#xdd;&#xde;&#xdf;&#xe0;&#xe1;&#xe2;&#xe3;&#xe4;&#xe5;&#xe6;&#xe7;&#xe8;&#xe9;&#xea;&#xeb;&#xec;&#xed;&#xee;&#xef;&#xf0;&#xf1;&#xf2;&#xf3;&#xf4;&#xf5;&#xf6;&#xf7;&#xf8;&#xf9;&#xfa;&#xfb;&#xfc;&#xfd;&#xfe;&#xff;&#x100;"}"&#xD;
-                     SQL: SELECT r FROM "AggregatePrimaryText"."A1L0Te_entity" r WHERE r."p1L0Te" IN ('{"	
-                     &#xD; !\""#$%&amp;''()*+,-./0123456789:;&lt;=&gt;?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\\]^_`abcdefghijklmnopqrst
+                  <code>java.util.concurrent.ExecutionException: com.dslplatform.client.exceptions.HttpUnexpectedCodeException:
+                     Can't deserialize AggregatePrimaryText.A1L0Te. Error: Invalid char found: f. Example:
+                     &#xD;
+                     
                   </code>
                </td>
-               <td>0.23</td>
+               <td>0.125</td>
+            </tr>
+            <tr class="danger">
+               <td>
+                  <a href="&#xA;        ../../../../com/dslplatform/ocd/aggregates/AggregateWithOneListOfNullableTextsPropertyAsPrimaryKeyTest/testP1L0TeNonDefault2PropertyValueInAggregateAfterActiveRecordPersist.html&#xA;    ">testP1L0TeNonDefault2PropertyValueInAggregateAfterActiveRecordPersist</a>
+                  <br></br>
+                  <a target="_blank" href="PrimarySingleText_stacktrace.html#testP1L0TeNonDefault2PropertyValueInAggregateAfterActiveRecordPersist">(view stacktrace)</a>
+               </td>
+               <td>Failed</td>
+               <td>
+                  <code>java.util.concurrent.ExecutionException: com.dslplatform.client.exceptions.HttpUnexpectedCodeException:
+                     Can't deserialize AggregatePrimaryText.A1L0Te. Error: Invalid char found: f. Example:
+                     &#xD;
+                     
+                  </code>
+               </td>
+               <td>0.016</td>
+            </tr>
+            <tr class="danger">
+               <td>
+                  <a href="&#xA;        ../../../../com/dslplatform/ocd/aggregates/AggregateWithOneListOfNullableTextsPropertyAsPrimaryKeyTest/testP1L0TeNonDefault1PropertyValueInAggregateAfterActiveRecordPersist.html&#xA;    ">testP1L0TeNonDefault1PropertyValueInAggregateAfterActiveRecordPersist</a>
+                  <br></br>
+                  <a target="_blank" href="PrimarySingleText_stacktrace.html#testP1L0TeNonDefault1PropertyValueInAggregateAfterActiveRecordPersist">(view stacktrace)</a>
+               </td>
+               <td>Failed</td>
+               <td>
+                  <code>java.util.concurrent.ExecutionException: com.dslplatform.client.exceptions.HttpUnexpectedCodeException:
+                     Can't deserialize AggregatePrimaryText.A1L0Te. Error: Invalid char found: f. Example:
+                     &#xD;
+                     
+                  </code>
+               </td>
+               <td>0.125</td>
+            </tr>
+            <tr class="danger">
+               <td>
+                  <a href="&#xA;        ../../../../com/dslplatform/ocd/aggregates/AggregateWithOneListOfNullableTextsPropertyAsPrimaryKeyTest/testP1L0TeDefaultPropertyValueInAggregateAfterActiveRecordPersist.html&#xA;    ">testP1L0TeDefaultPropertyValueInAggregateAfterActiveRecordPersist</a>
+                  <br></br>
+                  <a target="_blank" href="PrimarySingleText_stacktrace.html#testP1L0TeDefaultPropertyValueInAggregateAfterActiveRecordPersist">(view stacktrace)</a>
+               </td>
+               <td>Failed</td>
+               <td>
+                  <code>java.util.concurrent.ExecutionException: com.dslplatform.client.exceptions.HttpUnexpectedCodeException:
+                     Can't deserialize AggregatePrimaryText.A1L0Te. Error: Invalid char found: f. Example:
+                     &#xD;
+                     
+                  </code>
+               </td>
+               <td>0.14</td>
             </tr>
             <tr class="danger">
                <td>
@@ -192,16 +276,13 @@
                </td>
                <td>Failed</td>
                <td>
-                  <code>java.util.concurrent.ExecutionException: java.io.IOException: ERROR: 22P02: malformed
-                     array literal: "{"","\""","Quote: \"", Solidus /, Backslash: \\\, Aphos: ', Brackets:
-                     [] () {}","	
-                     &#xD; !\""#$%&amp;'()*+,-./0123456789:;&lt;=&gt;?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\\]^_`abcdefghijklmnopqrstuvwxyz{|}~&#x7f;&#x80;&#x81;&#x82;&#x83;&#x84;&#x85;&#x86;&#x87;&#x88;&#x89;&#x8a;&#x8b;&#x8c;&#x8d;&#x8e;&#x8f;&#x90;&#x91;&#x92;&#x93;&#x94;&#x95;&#x96;&#x97;&#x98;&#x99;&#x9a;&#x9b;&#x9c;&#x9d;&#x9e;&#x9f;&#xa0;&#xa1;&#xa2;&#xa3;&#xa4;&#xa5;&#xa6;&#xa7;&#xa8;&#xa9;&#xaa;&#xab;&#xac;&#xad;&#xae;&#xaf;&#xb0;&#xb1;&#xb2;&#xb3;&#xb4;&#xb5;&#xb6;&#xb7;&#xb8;&#xb9;&#xba;&#xbb;&#xbc;&#xbd;&#xbe;&#xbf;&#xc0;&#xc1;&#xc2;&#xc3;&#xc4;&#xc5;&#xc6;&#xc7;&#xc8;&#xc9;&#xca;&#xcb;&#xcc;&#xcd;&#xce;&#xcf;&#xd0;&#xd1;&#xd2;&#xd3;&#xd4;&#xd5;&#xd6;&#xd7;&#xd8;&#xd9;&#xda;&#xdb;&#xdc;&#xdd;&#xde;&#xdf;&#xe0;&#xe1;&#xe2;&#xe3;&#xe4;&#xe5;&#xe6;&#xe7;&#xe8;&#xe9;&#xea;&#xeb;&#xec;&#xed;&#xee;&#xef;&#xf0;&#xf1;&#xf2;&#xf3;&#xf4;&#xf5;&#xf6;&#xf7;&#xf8;&#xf9;&#xfa;&#xfb;&#xfc;&#xfd;&#xfe;&#xff;&#x100;"}"&#xD;
-                     SQL: SELECT r FROM "AggregatePrimaryText"."A1L1Te_entity" r WHERE r."p1L1Te" IN ('{"","\""","Quote:
-                     \"", Solidus /, Backslash: \\\, Aphos: '', Brackets: [] () {}","	
-                     &#xD; !\""#$%&amp;'
+                  <code>java.util.concurrent.ExecutionException: com.dslplatform.client.exceptions.HttpUnexpectedCodeException:
+                     Can't deserialize AggregatePrimaryText.A1L1Te. Error: Invalid char found: f. Example:
+                     &#xD;
+                     
                   </code>
                </td>
-               <td>0.257</td>
+               <td>0.172</td>
             </tr>
             <tr class="danger">
                <td>
@@ -211,14 +292,86 @@
                </td>
                <td>Failed</td>
                <td>
-                  <code>java.util.concurrent.ExecutionException: java.io.IOException: ERROR: 22P02: malformed
-                     array literal: "{"	
-                     &#xD; !\""#$%&amp;'()*+,-./0123456789:;&lt;=&gt;?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\\]^_`abcdefghijklmnopqrstuvwxyz{|}~&#x7f;&#x80;&#x81;&#x82;&#x83;&#x84;&#x85;&#x86;&#x87;&#x88;&#x89;&#x8a;&#x8b;&#x8c;&#x8d;&#x8e;&#x8f;&#x90;&#x91;&#x92;&#x93;&#x94;&#x95;&#x96;&#x97;&#x98;&#x99;&#x9a;&#x9b;&#x9c;&#x9d;&#x9e;&#x9f;&#xa0;&#xa1;&#xa2;&#xa3;&#xa4;&#xa5;&#xa6;&#xa7;&#xa8;&#xa9;&#xaa;&#xab;&#xac;&#xad;&#xae;&#xaf;&#xb0;&#xb1;&#xb2;&#xb3;&#xb4;&#xb5;&#xb6;&#xb7;&#xb8;&#xb9;&#xba;&#xbb;&#xbc;&#xbd;&#xbe;&#xbf;&#xc0;&#xc1;&#xc2;&#xc3;&#xc4;&#xc5;&#xc6;&#xc7;&#xc8;&#xc9;&#xca;&#xcb;&#xcc;&#xcd;&#xce;&#xcf;&#xd0;&#xd1;&#xd2;&#xd3;&#xd4;&#xd5;&#xd6;&#xd7;&#xd8;&#xd9;&#xda;&#xdb;&#xdc;&#xdd;&#xde;&#xdf;&#xe0;&#xe1;&#xe2;&#xe3;&#xe4;&#xe5;&#xe6;&#xe7;&#xe8;&#xe9;&#xea;&#xeb;&#xec;&#xed;&#xee;&#xef;&#xf0;&#xf1;&#xf2;&#xf3;&#xf4;&#xf5;&#xf6;&#xf7;&#xf8;&#xf9;&#xfa;&#xfb;&#xfc;&#xfd;&#xfe;&#xff;&#x100;"}"&#xD;
-                     SQL: SELECT r FROM "AggregatePrimaryText"."A1L1Te_entity" r WHERE r."p1L1Te" IN ('{"	
-                     &#xD; !\""#$%&amp;''()*+,-./0123456789:;&lt;=&gt;?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\\]^_`abcdefghijklmnopqrst
+                  <code>java.util.concurrent.ExecutionException: com.dslplatform.client.exceptions.HttpUnexpectedCodeException:
+                     Can't deserialize AggregatePrimaryText.A1L1Te. Error: Invalid char found: f. Example:
+                     &#xD;
+                     
                   </code>
                </td>
-               <td>0.209</td>
+               <td>0.015</td>
+            </tr>
+            <tr class="danger">
+               <td>
+                  <a href="&#xA;        ../../../../com/dslplatform/ocd/aggregates/AggregateWithOneListOfOneTextsPropertyAsPrimaryKeyTest/testP1L1TeNonDefault1PropertyValueInAggregateAfterActiveRecordPersist.html&#xA;    ">testP1L1TeNonDefault1PropertyValueInAggregateAfterActiveRecordPersist</a>
+                  <br></br>
+                  <a target="_blank" href="PrimarySingleText_stacktrace.html#testP1L1TeNonDefault1PropertyValueInAggregateAfterActiveRecordPersist">(view stacktrace)</a>
+               </td>
+               <td>Failed</td>
+               <td>
+                  <code>java.util.concurrent.ExecutionException: com.dslplatform.client.exceptions.HttpUnexpectedCodeException:
+                     Can't deserialize AggregatePrimaryText.A1L1Te. Error: Invalid char found: f. Example:
+                     &#xD;
+                     
+                  </code>
+               </td>
+               <td>0.079</td>
+            </tr>
+            <tr class="danger">
+               <td>
+                  <a href="&#xA;        ../../../../com/dslplatform/ocd/aggregates/AggregateWithOneListOfOneTextsPropertyAsPrimaryKeyTest/testP1L1TeDefaultPropertyValueInAggregateAfterActiveRecordPersist.html&#xA;    ">testP1L1TeDefaultPropertyValueInAggregateAfterActiveRecordPersist</a>
+                  <br></br>
+                  <a target="_blank" href="PrimarySingleText_stacktrace.html#testP1L1TeDefaultPropertyValueInAggregateAfterActiveRecordPersist">(view stacktrace)</a>
+               </td>
+               <td>Failed</td>
+               <td>
+                  <code>java.util.concurrent.ExecutionException: com.dslplatform.client.exceptions.HttpUnexpectedCodeException:
+                     Can't deserialize AggregatePrimaryText.A1L1Te. Error: Invalid char found: f. Example:
+                     &#xD;
+                     
+                  </code>
+               </td>
+               <td>0.125</td>
+            </tr>
+            <tr class="danger">
+               <td>
+                  <a href="&#xA;        ../../../../com/dslplatform/ocd/aggregates/AggregateWithOneTextPropertyAsPrimaryKeyTest/testP1TeNonDefault3PropertyValueInAggregateAfterActiveRecordPersist.html&#xA;    ">testP1TeNonDefault3PropertyValueInAggregateAfterActiveRecordPersist</a>
+                  <br></br>
+                  <a target="_blank" href="PrimarySingleText_stacktrace.html#testP1TeNonDefault3PropertyValueInAggregateAfterActiveRecordPersist">(view stacktrace)</a>
+               </td>
+               <td>Failed</td>
+               <td>
+                  <code>OneText mismatch: expected was "	
+                     &#xD; !"#$%&amp;'()*+,-./0123456789:;&lt;=&gt;?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~&#x7f;&#x80;&#x81;&#x82;&#x83;&#x84;&#x85;&#x86;&#x87;&#x88;&#x89;&#x8a;&#x8b;&#x8c;&#x8d;&#x8e;&#x8f;&#x90;&#x91;&#x92;&#x93;&#x94;&#x95;&#x96;&#x97;&#x98;&#x99;&#x9a;&#x9b;&#x9c;&#x9d;&#x9e;&#x9f;&#xa0;&#xa1;&#xa2;&#xa3;&#xa4;&#xa5;&#xa6;&#xa7;&#xa8;&#xa9;&#xaa;&#xab;&#xac;&#xad;&#xae;&#xaf;&#xb0;&#xb1;&#xb2;&#xb3;&#xb4;&#xb5;&#xb6;&#xb7;&#xb8;&#xb9;&#xba;&#xbb;&#xbc;&#xbd;&#xbe;&#xbf;&#xc0;&#xc1;&#xc2;&#xc3;&#xc4;&#xc5;&#xc6;&#xc7;&#xc8;&#xc9;&#xca;&#xcb;&#xcc;&#xcd;&#xce;&#xcf;&#xd0;&#xd1;&#xd2;&#xd3;&#xd4;&#xd5;&#xd6;&#xd7;&#xd8;&#xd9;&#xda;&#xdb;&#xdc;&#xdd;&#xde;&#xdf;&#xe0;&#xe1;&#xe2;&#xe3;&#xe4;&#xe5;&#xe6;&#xe7;&#xe8;&#xe9;&#xea;&#xeb;&#xec;&#xed;&#xee;&#xef;&#xf0;&#xf1;&#xf2;&#xf3;&#xf4;&#xf5;&#xf6;&#xf7;&#xf8;&#xf9;&#xfa;&#xfb;&#xfc;&#xfd;&#xfe;&#xff;&#x100;",
+                     but actual was ""
+                  </code>
+               </td>
+               <td>0.094</td>
+            </tr>
+            <tr class="danger">
+               <td>
+                  <a href="&#xA;        ../../../../com/dslplatform/ocd/aggregates/AggregateWithOneTextPropertyAsPrimaryKeyTest/testP1TeNonDefault2PropertyValueInAggregateAfterActiveRecordPersist.html&#xA;    ">testP1TeNonDefault2PropertyValueInAggregateAfterActiveRecordPersist</a>
+                  <br></br>
+                  <a target="_blank" href="PrimarySingleText_stacktrace.html#testP1TeNonDefault2PropertyValueInAggregateAfterActiveRecordPersist">(view stacktrace)</a>
+               </td>
+               <td>Failed</td>
+               <td>
+                  <code>OneText mismatch: expected was "Quote: ", Solidus /, Backslash: \, Aphos: ', Brackets:
+                     [] () {}", but actual was ""
+                  </code>
+               </td>
+               <td>0.031</td>
+            </tr>
+            <tr class="danger">
+               <td>
+                  <a href="&#xA;        ../../../../com/dslplatform/ocd/aggregates/AggregateWithOneTextPropertyAsPrimaryKeyTest/testP1TeNonDefault1PropertyValueInAggregateAfterActiveRecordPersist.html&#xA;    ">testP1TeNonDefault1PropertyValueInAggregateAfterActiveRecordPersist</a>
+                  <br></br>
+                  <a target="_blank" href="PrimarySingleText_stacktrace.html#testP1TeNonDefault1PropertyValueInAggregateAfterActiveRecordPersist">(view stacktrace)</a>
+               </td>
+               <td>Failed</td>
+               <td>
+                  <code>OneText mismatch: expected was """, but actual was ""</code>
+               </td>
+               <td>0.547</td>
             </tr>
          </table>
       </div>
@@ -241,7 +394,7 @@
                <td>
                   <code></code>
                </td>
-               <td>0.016</td>
+               <td>0.0</td>
             </tr>
             <tr class="">
                <td>
@@ -277,7 +430,7 @@
                <td>
                   <code></code>
                </td>
-               <td>1.378</td>
+               <td>2.297</td>
             </tr>
             <tr class="">
                <td>
@@ -341,30 +494,6 @@
             </tr>
             <tr class="">
                <td>
-                  <a href="&#xA;        ../../../../com/dslplatform/ocd/aggregates/AggregateWithOneArrayOfNullableTextsPropertyAsPrimaryKeyTest/testP1A0TeNonDefault2PropertyValueInAggregateAfterActiveRecordPersist.html&#xA;    ">testP1A0TeNonDefault2PropertyValueInAggregateAfterActiveRecordPersist</a>
-                  <br></br>
-                  <a target="_blank" href="PrimarySingleText_stacktrace.html#testP1A0TeNonDefault2PropertyValueInAggregateAfterActiveRecordPersist">(view stacktrace)</a>
-               </td>
-               <td>Success</td>
-               <td>
-                  <code></code>
-               </td>
-               <td>0.046</td>
-            </tr>
-            <tr class="">
-               <td>
-                  <a href="&#xA;        ../../../../com/dslplatform/ocd/aggregates/AggregateWithOneArrayOfNullableTextsPropertyAsPrimaryKeyTest/testP1A0TeNonDefault1PropertyValueInAggregateAfterActiveRecordPersist.html&#xA;    ">testP1A0TeNonDefault1PropertyValueInAggregateAfterActiveRecordPersist</a>
-                  <br></br>
-                  <a target="_blank" href="PrimarySingleText_stacktrace.html#testP1A0TeNonDefault1PropertyValueInAggregateAfterActiveRecordPersist">(view stacktrace)</a>
-               </td>
-               <td>Success</td>
-               <td>
-                  <code></code>
-               </td>
-               <td>0.082</td>
-            </tr>
-            <tr class="">
-               <td>
                   <a href="&#xA;        ../../../../com/dslplatform/ocd/aggregates/AggregateWithOneArrayOfNullableTextsPropertyAsPrimaryKeyTest/testP1A0TeNonDefault1PropertyInAggregateJsonSerialization.html&#xA;    ">testP1A0TeNonDefault1PropertyInAggregateJsonSerialization</a>
                   <br></br>
                   <a target="_blank" href="PrimarySingleText_stacktrace.html#testP1A0TeNonDefault1PropertyInAggregateJsonSerialization">(view stacktrace)</a>
@@ -373,7 +502,7 @@
                <td>
                   <code></code>
                </td>
-               <td>0.023</td>
+               <td>0.032</td>
             </tr>
             <tr class="">
                <td>
@@ -529,7 +658,7 @@
                <td>
                   <code></code>
                </td>
-               <td>0.0</td>
+               <td>0.047</td>
             </tr>
             <tr class="">
                <td>
@@ -553,19 +682,7 @@
                <td>
                   <code></code>
                </td>
-               <td>0.001</td>
-            </tr>
-            <tr class="">
-               <td>
-                  <a href="&#xA;        ../../../../com/dslplatform/ocd/aggregates/AggregateWithOneArrayOfOneTextsPropertyAsPrimaryKeyTest/testP1A1TeNonDefault1PropertyValueInAggregateAfterActiveRecordPersist.html&#xA;    ">testP1A1TeNonDefault1PropertyValueInAggregateAfterActiveRecordPersist</a>
-                  <br></br>
-                  <a target="_blank" href="PrimarySingleText_stacktrace.html#testP1A1TeNonDefault1PropertyValueInAggregateAfterActiveRecordPersist">(view stacktrace)</a>
-               </td>
-               <td>Success</td>
-               <td>
-                  <code></code>
-               </td>
-               <td>0.168</td>
+               <td>0.0</td>
             </tr>
             <tr class="">
                <td>
@@ -673,7 +790,7 @@
                <td>
                   <code></code>
                </td>
-               <td>0.004</td>
+               <td>0.0</td>
             </tr>
             <tr class="">
                <td>
@@ -697,7 +814,7 @@
                <td>
                   <code></code>
                </td>
-               <td>0.001</td>
+               <td>0.0</td>
             </tr>
             <tr class="">
                <td>
@@ -709,7 +826,7 @@
                <td>
                   <code></code>
                </td>
-               <td>0.001</td>
+               <td>0.0</td>
             </tr>
             <tr class="">
                <td>
@@ -785,18 +902,6 @@
             </tr>
             <tr class="">
                <td>
-                  <a href="&#xA;        ../../../../com/dslplatform/ocd/aggregates/AggregateWithOneArrayOfOneTextsPropertyAsPrimaryKeyTest/testP1A1TeDefaultPropertyValueInAggregateAfterActiveRecordPersist.html&#xA;    ">testP1A1TeDefaultPropertyValueInAggregateAfterActiveRecordPersist</a>
-                  <br></br>
-                  <a target="_blank" href="PrimarySingleText_stacktrace.html#testP1A1TeDefaultPropertyValueInAggregateAfterActiveRecordPersist">(view stacktrace)</a>
-               </td>
-               <td>Success</td>
-               <td>
-                  <code></code>
-               </td>
-               <td>0.076</td>
-            </tr>
-            <tr class="">
-               <td>
                   <a href="&#xA;        ../../../../com/dslplatform/ocd/aggregates/AggregateWithOneArrayOfOneTextsPropertyAsPrimaryKeyTest/testP1A1TePropertySetterPublicVisibility.html&#xA;    ">testP1A1TePropertySetterPublicVisibility</a>
                   <br></br>
                   <a target="_blank" href="PrimarySingleText_stacktrace.html#testP1A1TePropertySetterPublicVisibility">(view stacktrace)</a>
@@ -821,30 +926,6 @@
             </tr>
             <tr class="">
                <td>
-                  <a href="&#xA;        ../../../../com/dslplatform/ocd/aggregates/AggregateWithOneListOfNullableTextsPropertyAsPrimaryKeyTest/testP1L0TeNonDefault2PropertyValueInAggregateAfterActiveRecordPersist.html&#xA;    ">testP1L0TeNonDefault2PropertyValueInAggregateAfterActiveRecordPersist</a>
-                  <br></br>
-                  <a target="_blank" href="PrimarySingleText_stacktrace.html#testP1L0TeNonDefault2PropertyValueInAggregateAfterActiveRecordPersist">(view stacktrace)</a>
-               </td>
-               <td>Success</td>
-               <td>
-                  <code></code>
-               </td>
-               <td>0.128</td>
-            </tr>
-            <tr class="">
-               <td>
-                  <a href="&#xA;        ../../../../com/dslplatform/ocd/aggregates/AggregateWithOneListOfNullableTextsPropertyAsPrimaryKeyTest/testP1L0TeNonDefault1PropertyValueInAggregateAfterActiveRecordPersist.html&#xA;    ">testP1L0TeNonDefault1PropertyValueInAggregateAfterActiveRecordPersist</a>
-                  <br></br>
-                  <a target="_blank" href="PrimarySingleText_stacktrace.html#testP1L0TeNonDefault1PropertyValueInAggregateAfterActiveRecordPersist">(view stacktrace)</a>
-               </td>
-               <td>Success</td>
-               <td>
-                  <code></code>
-               </td>
-               <td>0.069</td>
-            </tr>
-            <tr class="">
-               <td>
                   <a href="&#xA;        ../../../../com/dslplatform/ocd/aggregates/AggregateWithOneListOfNullableTextsPropertyAsPrimaryKeyTest/testP1L0TePropertySetterPublicVisibility.html&#xA;    ">testP1L0TePropertySetterPublicVisibility</a>
                   <br></br>
                   <a target="_blank" href="PrimarySingleText_stacktrace.html#testP1L0TePropertySetterPublicVisibility">(view stacktrace)</a>
@@ -854,18 +935,6 @@
                   <code></code>
                </td>
                <td>0.0</td>
-            </tr>
-            <tr class="">
-               <td>
-                  <a href="&#xA;        ../../../../com/dslplatform/ocd/aggregates/AggregateWithOneListOfNullableTextsPropertyAsPrimaryKeyTest/testP1L0TeDefaultPropertyValueInAggregateAfterActiveRecordPersist.html&#xA;    ">testP1L0TeDefaultPropertyValueInAggregateAfterActiveRecordPersist</a>
-                  <br></br>
-                  <a target="_blank" href="PrimarySingleText_stacktrace.html#testP1L0TeDefaultPropertyValueInAggregateAfterActiveRecordPersist">(view stacktrace)</a>
-               </td>
-               <td>Success</td>
-               <td>
-                  <code></code>
-               </td>
-               <td>0.046</td>
             </tr>
             <tr class="">
                <td>
@@ -925,7 +994,7 @@
                <td>
                   <code></code>
                </td>
-               <td>0.002</td>
+               <td>0.0</td>
             </tr>
             <tr class="">
                <td>
@@ -961,7 +1030,7 @@
                <td>
                   <code></code>
                </td>
-               <td>0.002</td>
+               <td>0.0</td>
             </tr>
             <tr class="">
                <td>
@@ -985,7 +1054,7 @@
                <td>
                   <code></code>
                </td>
-               <td>0.007</td>
+               <td>0.0</td>
             </tr>
             <tr class="">
                <td>
@@ -997,7 +1066,7 @@
                <td>
                   <code></code>
                </td>
-               <td>0.001</td>
+               <td>0.0</td>
             </tr>
             <tr class="">
                <td>
@@ -1021,7 +1090,7 @@
                <td>
                   <code></code>
                </td>
-               <td>0.002</td>
+               <td>0.0</td>
             </tr>
             <tr class="">
                <td>
@@ -1045,7 +1114,7 @@
                <td>
                   <code></code>
                </td>
-               <td>0.001</td>
+               <td>0.0</td>
             </tr>
             <tr class="">
                <td>
@@ -1057,7 +1126,7 @@
                <td>
                   <code></code>
                </td>
-               <td>0.002</td>
+               <td>0.0</td>
             </tr>
             <tr class="">
                <td>
@@ -1081,7 +1150,7 @@
                <td>
                   <code></code>
                </td>
-               <td>0.002</td>
+               <td>0.0</td>
             </tr>
             <tr class="">
                <td>
@@ -1105,7 +1174,7 @@
                <td>
                   <code></code>
                </td>
-               <td>0.03</td>
+               <td>0.0</td>
             </tr>
             <tr class="">
                <td>
@@ -1177,7 +1246,7 @@
                <td>
                   <code></code>
                </td>
-               <td>0.001</td>
+               <td>0.0</td>
             </tr>
             <tr class="">
                <td>
@@ -1201,7 +1270,7 @@
                <td>
                   <code></code>
                </td>
-               <td>0.001</td>
+               <td>0.0</td>
             </tr>
             <tr class="">
                <td>
@@ -1213,7 +1282,7 @@
                <td>
                   <code></code>
                </td>
-               <td>0.0</td>
+               <td>0.015</td>
             </tr>
             <tr class="">
                <td>
@@ -1273,7 +1342,7 @@
                <td>
                   <code></code>
                </td>
-               <td>0.002</td>
+               <td>0.0</td>
             </tr>
             <tr class="">
                <td>
@@ -1309,7 +1378,7 @@
                <td>
                   <code></code>
                </td>
-               <td>0.009</td>
+               <td>0.016</td>
             </tr>
             <tr class="">
                <td>
@@ -1321,7 +1390,7 @@
                <td>
                   <code></code>
                </td>
-               <td>0.001</td>
+               <td>0.0</td>
             </tr>
             <tr class="">
                <td>
@@ -1357,7 +1426,7 @@
                <td>
                   <code></code>
                </td>
-               <td>0.005</td>
+               <td>0.078</td>
             </tr>
             <tr class="">
                <td>
@@ -1370,30 +1439,6 @@
                   <code></code>
                </td>
                <td>0.0</td>
-            </tr>
-            <tr class="">
-               <td>
-                  <a href="&#xA;        ../../../../com/dslplatform/ocd/aggregates/AggregateWithOneListOfOneTextsPropertyAsPrimaryKeyTest/testP1L1TeNonDefault1PropertyValueInAggregateAfterActiveRecordPersist.html&#xA;    ">testP1L1TeNonDefault1PropertyValueInAggregateAfterActiveRecordPersist</a>
-                  <br></br>
-                  <a target="_blank" href="PrimarySingleText_stacktrace.html#testP1L1TeNonDefault1PropertyValueInAggregateAfterActiveRecordPersist">(view stacktrace)</a>
-               </td>
-               <td>Success</td>
-               <td>
-                  <code></code>
-               </td>
-               <td>0.055</td>
-            </tr>
-            <tr class="">
-               <td>
-                  <a href="&#xA;        ../../../../com/dslplatform/ocd/aggregates/AggregateWithOneListOfOneTextsPropertyAsPrimaryKeyTest/testP1L1TeDefaultPropertyValueInAggregateAfterActiveRecordPersist.html&#xA;    ">testP1L1TeDefaultPropertyValueInAggregateAfterActiveRecordPersist</a>
-                  <br></br>
-                  <a target="_blank" href="PrimarySingleText_stacktrace.html#testP1L1TeDefaultPropertyValueInAggregateAfterActiveRecordPersist">(view stacktrace)</a>
-               </td>
-               <td>Success</td>
-               <td>
-                  <code></code>
-               </td>
-               <td>0.085</td>
             </tr>
             <tr class="">
                <td>
@@ -1537,7 +1582,7 @@
                <td>
                   <code></code>
                </td>
-               <td>0.139</td>
+               <td>0.156</td>
             </tr>
             <tr class="">
                <td>
@@ -1549,7 +1594,7 @@
                <td>
                   <code></code>
                </td>
-               <td>0.001</td>
+               <td>0.016</td>
             </tr>
             <tr class="">
                <td>
@@ -1621,7 +1666,7 @@
                <td>
                   <code></code>
                </td>
-               <td>0.001</td>
+               <td>0.0</td>
             </tr>
             <tr class="">
                <td>
@@ -1645,7 +1690,7 @@
                <td>
                   <code></code>
                </td>
-               <td>0.001</td>
+               <td>0.0</td>
             </tr>
             <tr class="">
                <td>
@@ -1673,42 +1718,6 @@
             </tr>
             <tr class="">
                <td>
-                  <a href="&#xA;        ../../../../com/dslplatform/ocd/aggregates/AggregateWithOneTextPropertyAsPrimaryKeyTest/testP1TeNonDefault3PropertyValueInAggregateAfterActiveRecordPersist.html&#xA;    ">testP1TeNonDefault3PropertyValueInAggregateAfterActiveRecordPersist</a>
-                  <br></br>
-                  <a target="_blank" href="PrimarySingleText_stacktrace.html#testP1TeNonDefault3PropertyValueInAggregateAfterActiveRecordPersist">(view stacktrace)</a>
-               </td>
-               <td>Success</td>
-               <td>
-                  <code></code>
-               </td>
-               <td>0.135</td>
-            </tr>
-            <tr class="">
-               <td>
-                  <a href="&#xA;        ../../../../com/dslplatform/ocd/aggregates/AggregateWithOneTextPropertyAsPrimaryKeyTest/testP1TeNonDefault2PropertyValueInAggregateAfterActiveRecordPersist.html&#xA;    ">testP1TeNonDefault2PropertyValueInAggregateAfterActiveRecordPersist</a>
-                  <br></br>
-                  <a target="_blank" href="PrimarySingleText_stacktrace.html#testP1TeNonDefault2PropertyValueInAggregateAfterActiveRecordPersist">(view stacktrace)</a>
-               </td>
-               <td>Success</td>
-               <td>
-                  <code></code>
-               </td>
-               <td>0.111</td>
-            </tr>
-            <tr class="">
-               <td>
-                  <a href="&#xA;        ../../../../com/dslplatform/ocd/aggregates/AggregateWithOneTextPropertyAsPrimaryKeyTest/testP1TeNonDefault1PropertyValueInAggregateAfterActiveRecordPersist.html&#xA;    ">testP1TeNonDefault1PropertyValueInAggregateAfterActiveRecordPersist</a>
-                  <br></br>
-                  <a target="_blank" href="PrimarySingleText_stacktrace.html#testP1TeNonDefault1PropertyValueInAggregateAfterActiveRecordPersist">(view stacktrace)</a>
-               </td>
-               <td>Success</td>
-               <td>
-                  <code></code>
-               </td>
-               <td>0.094</td>
-            </tr>
-            <tr class="">
-               <td>
                   <a href="&#xA;        ../../../../com/dslplatform/ocd/aggregates/AggregateWithOneTextPropertyAsPrimaryKeyTest/testP1TePropertySetterPublicVisibility.html&#xA;    ">testP1TePropertySetterPublicVisibility</a>
                   <br></br>
                   <a target="_blank" href="PrimarySingleText_stacktrace.html#testP1TePropertySetterPublicVisibility">(view stacktrace)</a>
@@ -1717,7 +1726,7 @@
                <td>
                   <code></code>
                </td>
-               <td>0.002</td>
+               <td>0.0</td>
             </tr>
             <tr class="">
                <td>
@@ -1741,7 +1750,7 @@
                <td>
                   <code></code>
                </td>
-               <td>0.001</td>
+               <td>0.0</td>
             </tr>
             <tr class="">
                <td>
@@ -1777,7 +1786,7 @@
                <td>
                   <code></code>
                </td>
-               <td>0.001</td>
+               <td>0.0</td>
             </tr>
          </table>
       </div>

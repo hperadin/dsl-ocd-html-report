@@ -22,8 +22,36 @@
             </tr>
             <tr>
                <td>testP1DoNonDefault2PropertyValueInSnowflakeAfterActiveRecordPersist</td>
-               <td>Success</td>
-               <td>0.015</td>
+               <td>Failed</td>
+               <td>0.036</td>
+            </tr>
+         </table>
+         <h2>Errors:</h2>
+         <table class="table" style="width: 1500px">
+            <tr>
+               <td>Type:</td>
+               <td>java.lang.AssertionError</td>
+            </tr>
+            <tr>
+               <td>Message:</td>
+               <td>
+                  <code>OneDouble mismatch: expected was "9.0E307", but actual was "NaN" - WARNING: You are
+                     comparing the bits of double values - not using an epsilon value!
+                  </code>
+               </td>
+            </tr>
+            <tr>
+               <td>Text:</td>
+               <td>
+                  <code>java.lang.AssertionError: OneDouble mismatch: expected was "9.0E307", but actual was "NaN" - WARNING: You are comparing the bits of double values - not using an epsilon value!
+                     <br></br>	at com.dslplatform.ocd.javaasserts.DoubleAsserts.assertSingleEquals(DoubleAsserts.java:10)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.DoubleAsserts.assertOneEquals(DoubleAsserts.java:19)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.DoubleAsserts.assertOneEquals(DoubleAsserts.java:23)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.DoubleAsserts.assertOneEquals(DoubleAsserts.java:27)
+                     <br></br>	at com.dslplatform.ocd.snowflakes.CalculatedOneDoublePropertyInSnowflakeTest.testP1DoNonDefault2PropertyValueInSnowflakeAfterActiveRecordPersist(Unknown Source)
+                     <br></br>
+                  </code>
+               </td>
             </tr>
          </table>
       </div>

@@ -22,8 +22,35 @@
             </tr>
             <tr>
                <td>testP0L0LoNonDefault5PropertyValueInSnowflakeAfterActiveRecordPersist</td>
-               <td>Success</td>
-               <td>0.078</td>
+               <td>Failed</td>
+               <td>0.031</td>
+            </tr>
+         </table>
+         <h2>Errors:</h2>
+         <table class="table" style="width: 1500px">
+            <tr>
+               <td>Type:</td>
+               <td>java.lang.AssertionError</td>
+            </tr>
+            <tr>
+               <td>Message:</td>
+               <td>
+                  <code>NullableListOfNullableLong mismatch: expecteds was a list of size 7, but actuals was
+                     a list of size 1
+                  </code>
+               </td>
+            </tr>
+            <tr>
+               <td>Text:</td>
+               <td>
+                  <code>java.lang.AssertionError: NullableListOfNullableLong mismatch: expecteds was a list of size 7, but actuals was a list of size 1
+                     <br></br>	at com.dslplatform.ocd.javaasserts.LongAsserts.assertListOfNullableEquals(LongAsserts.java:145)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.LongAsserts.assertNullableListOfNullableEquals(LongAsserts.java:172)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.LongAsserts.assertNullableListOfNullableEquals(LongAsserts.java:176)
+                     <br></br>	at com.dslplatform.ocd.snowflakes.CalculatedNullableListOfNullableLongsPropertyInSnowflakeTest.testP0L0LoNonDefault5PropertyValueInSnowflakeAfterActiveRecordPersist(Unknown Source)
+                     <br></br>
+                  </code>
+               </td>
             </tr>
          </table>
       </div>

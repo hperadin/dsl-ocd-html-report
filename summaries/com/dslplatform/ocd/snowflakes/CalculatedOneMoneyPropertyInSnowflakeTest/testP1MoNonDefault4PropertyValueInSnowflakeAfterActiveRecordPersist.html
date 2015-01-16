@@ -22,8 +22,33 @@
             </tr>
             <tr>
                <td>testP1MoNonDefault4PropertyValueInSnowflakeAfterActiveRecordPersist</td>
-               <td>Success</td>
-               <td>0.016</td>
+               <td>Failed</td>
+               <td>0.032</td>
+            </tr>
+         </table>
+         <h2>Errors:</h2>
+         <table class="table" style="width: 1500px">
+            <tr>
+               <td>Type:</td>
+               <td>java.lang.AssertionError</td>
+            </tr>
+            <tr>
+               <td>Message:</td>
+               <td>
+                  <code>OneMoney mismatch: expected was "1E+19", but actual was "0"</code>
+               </td>
+            </tr>
+            <tr>
+               <td>Text:</td>
+               <td>
+                  <code>java.lang.AssertionError: OneMoney mismatch: expected was "1E+19", but actual was "0"
+                     <br></br>	at com.dslplatform.ocd.javaasserts.MoneyAsserts.assertSingleEquals(MoneyAsserts.java:22)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.MoneyAsserts.assertOneEquals(MoneyAsserts.java:29)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.MoneyAsserts.assertOneEquals(MoneyAsserts.java:33)
+                     <br></br>	at com.dslplatform.ocd.snowflakes.CalculatedOneMoneyPropertyInSnowflakeTest.testP1MoNonDefault4PropertyValueInSnowflakeAfterActiveRecordPersist(Unknown Source)
+                     <br></br>
+                  </code>
+               </td>
             </tr>
          </table>
       </div>

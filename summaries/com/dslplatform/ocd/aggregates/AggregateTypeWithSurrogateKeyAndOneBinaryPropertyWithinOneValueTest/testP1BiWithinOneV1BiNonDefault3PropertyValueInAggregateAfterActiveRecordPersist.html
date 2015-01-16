@@ -22,8 +22,35 @@
             </tr>
             <tr>
                <td>testP1BiWithinOneV1BiNonDefault3PropertyValueInAggregateAfterActiveRecordPersist</td>
-               <td>Success</td>
-               <td>0.016</td>
+               <td>Failed</td>
+               <td>0.297</td>
+            </tr>
+         </table>
+         <h2>Errors:</h2>
+         <table class="table" style="width: 1500px">
+            <tr>
+               <td>Type:</td>
+               <td>java.lang.AssertionError</td>
+            </tr>
+            <tr>
+               <td>Message:</td>
+               <td>
+                  <code>OneBinary mismatch: expected was a Binary of 3 bytes, but actual was a Binary of 0
+                     bytes
+                  </code>
+               </td>
+            </tr>
+            <tr>
+               <td>Text:</td>
+               <td>
+                  <code>java.lang.AssertionError: OneBinary mismatch: expected was a Binary of 3 bytes, but actual was a Binary of 0 bytes
+                     <br></br>	at com.dslplatform.ocd.javaasserts.BinaryAsserts.assertSingleEquals(BinaryAsserts.java:8)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.BinaryAsserts.assertOneEquals(BinaryAsserts.java:22)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.BinaryAsserts.assertOneEquals(BinaryAsserts.java:26)
+                     <br></br>	at com.dslplatform.ocd.aggregates.AggregateTypeWithSurrogateKeyAndOneBinaryPropertyWithinOneValueTest.testP1BiWithinOneV1BiNonDefault3PropertyValueInAggregateAfterActiveRecordPersist(Unknown Source)
+                     <br></br>
+                  </code>
+               </td>
             </tr>
          </table>
       </div>

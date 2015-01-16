@@ -22,8 +22,34 @@
             </tr>
             <tr>
                <td>testP0A1UrNonDefault2PropertyValueInAggregateAfterActiveRecordPersist</td>
-               <td>Success</td>
-               <td>0.062</td>
+               <td>Failed</td>
+               <td>0.032</td>
+            </tr>
+         </table>
+         <h2>Errors:</h2>
+         <table class="table" style="width: 1500px">
+            <tr>
+               <td>Type:</td>
+               <td>java.lang.AssertionError</td>
+            </tr>
+            <tr>
+               <td>Message:</td>
+               <td>
+                  <code>NullableArrayOfOneUrl mismatch:  expecteds was an array of length 9, but actuals was
+                     &lt;null&gt;
+                  </code>
+               </td>
+            </tr>
+            <tr>
+               <td>Text:</td>
+               <td>
+                  <code>java.lang.AssertionError: NullableArrayOfOneUrl mismatch:  expecteds was an array of length 9, but actuals was <null>
+                     <br></br>	at com.dslplatform.ocd.javaasserts.UrlAsserts.assertNullableArrayOfOneEquals(UrlAsserts.java:62)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.UrlAsserts.assertNullableArrayOfOneEquals(UrlAsserts.java:67)
+                     <br></br>	at com.dslplatform.ocd.aggregates.BigAggregateWithSurrogateKeyAndNullableArrayOfOneUrlsPropertyTest.testP0A1UrNonDefault2PropertyValueInAggregateAfterActiveRecordPersist(Unknown Source)
+                     <br></br>
+                  </code>
+               </td>
             </tr>
          </table>
       </div>

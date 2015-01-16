@@ -22,8 +22,32 @@
             </tr>
             <tr>
                <td>testP0DeNonDefault2PropertyValueInAggregateAfterActiveRecordPersist</td>
-               <td>Success</td>
-               <td>0.093</td>
+               <td>Failed</td>
+               <td>0.107</td>
+            </tr>
+         </table>
+         <h2>Errors:</h2>
+         <table class="table" style="width: 1500px">
+            <tr>
+               <td>Type:</td>
+               <td>java.lang.AssertionError</td>
+            </tr>
+            <tr>
+               <td>Message:</td>
+               <td>
+                  <code>NullableDecimal mismatch: expected was "1", but actual was &lt;null&gt;</code>
+               </td>
+            </tr>
+            <tr>
+               <td>Text:</td>
+               <td>
+                  <code>java.lang.AssertionError: NullableDecimal mismatch: expected was "1", but actual was <null>
+                     <br></br>	at com.dslplatform.ocd.javaasserts.DecimalAsserts.assertNullableEquals(DecimalAsserts.java:25)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.DecimalAsserts.assertNullableEquals(DecimalAsserts.java:30)
+                     <br></br>	at com.dslplatform.ocd.snowflakes.CalculatedNullableDecimalPropertyInSnowflakeTest.testP0DeNonDefault2PropertyValueInAggregateAfterActiveRecordPersist(Unknown Source)
+                     <br></br>
+                  </code>
+               </td>
             </tr>
          </table>
       </div>

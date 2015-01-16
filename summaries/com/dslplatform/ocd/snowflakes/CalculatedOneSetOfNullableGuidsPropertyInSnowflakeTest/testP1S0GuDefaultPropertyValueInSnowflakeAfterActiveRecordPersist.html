@@ -22,8 +22,35 @@
             </tr>
             <tr>
                <td>testP1S0GuDefaultPropertyValueInSnowflakeAfterActiveRecordPersist</td>
-               <td>Success</td>
-               <td>0.016</td>
+               <td>Failed</td>
+               <td>0.079</td>
+            </tr>
+         </table>
+         <h2>Errors:</h2>
+         <table class="table" style="width: 1500px">
+            <tr>
+               <td>Type:</td>
+               <td>java.lang.AssertionError</td>
+            </tr>
+            <tr>
+               <td>Message:</td>
+               <td>
+                  <code>OneSetOfNullableGuid mismatch: expecteds was a set of size 0, but actuals was a set
+                     of size 4
+                  </code>
+               </td>
+            </tr>
+            <tr>
+               <td>Text:</td>
+               <td>
+                  <code>java.lang.AssertionError: OneSetOfNullableGuid mismatch: expecteds was a set of size 0, but actuals was a set of size 4
+                     <br></br>	at com.dslplatform.ocd.javaasserts.GuidAsserts.assertSetOfNullableEquals(GuidAsserts.java:230)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.GuidAsserts.assertOneSetOfNullableEquals(GuidAsserts.java:244)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.GuidAsserts.assertOneSetOfNullableEquals(GuidAsserts.java:248)
+                     <br></br>	at com.dslplatform.ocd.snowflakes.CalculatedOneSetOfNullableGuidsPropertyInSnowflakeTest.testP1S0GuDefaultPropertyValueInSnowflakeAfterActiveRecordPersist(Unknown Source)
+                     <br></br>
+                  </code>
+               </td>
             </tr>
          </table>
       </div>

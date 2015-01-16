@@ -22,8 +22,35 @@
             </tr>
             <tr>
                <td>testP0A0S9NonDefault4PropertyValueInAggregateAfterActiveRecordPersist</td>
-               <td>Success</td>
-               <td>0.031</td>
+               <td>Failed</td>
+               <td>0.016</td>
+            </tr>
+         </table>
+         <h2>Errors:</h2>
+         <table class="table" style="width: 1500px">
+            <tr>
+               <td>Type:</td>
+               <td>java.lang.AssertionError</td>
+            </tr>
+            <tr>
+               <td>Message:</td>
+               <td>
+                  <code>NullableArrayOfNullableStringWithMaxLengthOf9 mismatch: expecteds was an array of
+                     length 5, but actuals was an array of length 6
+                  </code>
+               </td>
+            </tr>
+            <tr>
+               <td>Text:</td>
+               <td>
+                  <code>java.lang.AssertionError: NullableArrayOfNullableStringWithMaxLengthOf9 mismatch: expecteds was an array of length 5, but actuals was an array of length 6
+                     <br></br>	at com.dslplatform.ocd.javaasserts.StringWithMaxLengthOf9Asserts.assertArrayOfNullableEquals(StringWithMaxLengthOf9Asserts.java:80)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.StringWithMaxLengthOf9Asserts.assertNullableArrayOfNullableEquals(StringWithMaxLengthOf9Asserts.java:103)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.StringWithMaxLengthOf9Asserts.assertNullableArrayOfNullableEquals(StringWithMaxLengthOf9Asserts.java:107)
+                     <br></br>	at com.dslplatform.ocd.aggregates.StandardAggregateWithSurrogateKeyAndNullableArrayOfNullableStringsWithMaxLengthOf9PropertyTest.testP0A0S9NonDefault4PropertyValueInAggregateAfterActiveRecordPersist(Unknown Source)
+                     <br></br>
+                  </code>
+               </td>
             </tr>
          </table>
       </div>

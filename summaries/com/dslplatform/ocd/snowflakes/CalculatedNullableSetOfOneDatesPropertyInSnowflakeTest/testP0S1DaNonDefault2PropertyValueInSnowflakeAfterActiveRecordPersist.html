@@ -22,8 +22,35 @@
             </tr>
             <tr>
                <td>testP0S1DaNonDefault2PropertyValueInSnowflakeAfterActiveRecordPersist</td>
-               <td>Success</td>
-               <td>0.015</td>
+               <td>Failed</td>
+               <td>0.281</td>
+            </tr>
+         </table>
+         <h2>Errors:</h2>
+         <table class="table" style="width: 1500px">
+            <tr>
+               <td>Type:</td>
+               <td>java.lang.AssertionError</td>
+            </tr>
+            <tr>
+               <td>Message:</td>
+               <td>
+                  <code>NullableSetOfOneDate mismatch: expecteds was a set of size 1, but actuals was a set
+                     of size 6
+                  </code>
+               </td>
+            </tr>
+            <tr>
+               <td>Text:</td>
+               <td>
+                  <code>java.lang.AssertionError: NullableSetOfOneDate mismatch: expecteds was a set of size 1, but actuals was a set of size 6
+                     <br></br>	at com.dslplatform.ocd.javaasserts.DateAsserts.assertSetOfOneEquals(DateAsserts.java:192)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.DateAsserts.assertNullableSetOfOneEquals(DateAsserts.java:219)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.DateAsserts.assertNullableSetOfOneEquals(DateAsserts.java:223)
+                     <br></br>	at com.dslplatform.ocd.snowflakes.CalculatedNullableSetOfOneDatesPropertyInSnowflakeTest.testP0S1DaNonDefault2PropertyValueInSnowflakeAfterActiveRecordPersist(Unknown Source)
+                     <br></br>
+                  </code>
+               </td>
             </tr>
          </table>
       </div>

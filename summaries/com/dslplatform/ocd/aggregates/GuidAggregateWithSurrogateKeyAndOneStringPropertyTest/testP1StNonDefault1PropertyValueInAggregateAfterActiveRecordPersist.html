@@ -22,8 +22,33 @@
             </tr>
             <tr>
                <td>testP1StNonDefault1PropertyValueInAggregateAfterActiveRecordPersist</td>
-               <td>Success</td>
-               <td>0.016</td>
+               <td>Failed</td>
+               <td>0.328</td>
+            </tr>
+         </table>
+         <h2>Errors:</h2>
+         <table class="table" style="width: 1500px">
+            <tr>
+               <td>Type:</td>
+               <td>java.lang.AssertionError</td>
+            </tr>
+            <tr>
+               <td>Message:</td>
+               <td>
+                  <code>OneString mismatch: expected was """, but actual was ""</code>
+               </td>
+            </tr>
+            <tr>
+               <td>Text:</td>
+               <td>
+                  <code>java.lang.AssertionError: OneString mismatch: expected was """, but actual was ""
+                     <br></br>	at com.dslplatform.ocd.javaasserts.StringAsserts.assertSingleEquals(StringAsserts.java:8)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.StringAsserts.assertOneEquals(StringAsserts.java:15)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.StringAsserts.assertOneEquals(StringAsserts.java:19)
+                     <br></br>	at com.dslplatform.ocd.aggregates.GuidAggregateWithSurrogateKeyAndOneStringPropertyTest.testP1StNonDefault1PropertyValueInAggregateAfterActiveRecordPersist(Unknown Source)
+                     <br></br>
+                  </code>
+               </td>
             </tr>
          </table>
       </div>

@@ -22,8 +22,32 @@
             </tr>
             <tr>
                <td>testP0UrWithinOneV0UrNonDefault4PropertyValueInAggregateAfterActiveRecordPersist</td>
-               <td>Success</td>
-               <td>0.016</td>
+               <td>Failed</td>
+               <td>0.032</td>
+            </tr>
+         </table>
+         <h2>Errors:</h2>
+         <table class="table" style="width: 1500px">
+            <tr>
+               <td>Type:</td>
+               <td>java.lang.AssertionError</td>
+            </tr>
+            <tr>
+               <td>Message:</td>
+               <td>
+                  <code>NullableUrl mismatch: expected was "ftp://www.pqr.com/", but actual was &lt;null&gt;</code>
+               </td>
+            </tr>
+            <tr>
+               <td>Text:</td>
+               <td>
+                  <code>java.lang.AssertionError: NullableUrl mismatch: expected was "ftp://www.pqr.com/", but actual was <null>
+                     <br></br>	at com.dslplatform.ocd.javaasserts.UrlAsserts.assertNullableEquals(UrlAsserts.java:25)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.UrlAsserts.assertNullableEquals(UrlAsserts.java:30)
+                     <br></br>	at com.dslplatform.ocd.aggregates.AggregateTypeWithSurrogateKeyAndNullableUrlPropertyWithinOneValueTest.testP0UrWithinOneV0UrNonDefault4PropertyValueInAggregateAfterActiveRecordPersist(Unknown Source)
+                     <br></br>
+                  </code>
+               </td>
             </tr>
          </table>
       </div>

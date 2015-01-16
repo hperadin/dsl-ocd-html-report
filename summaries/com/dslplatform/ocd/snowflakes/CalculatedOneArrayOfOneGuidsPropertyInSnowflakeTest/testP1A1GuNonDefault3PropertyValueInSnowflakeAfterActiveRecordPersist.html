@@ -22,8 +22,37 @@
             </tr>
             <tr>
                <td>testP1A1GuNonDefault3PropertyValueInSnowflakeAfterActiveRecordPersist</td>
-               <td>Success</td>
-               <td>0.109</td>
+               <td>Failed</td>
+               <td>0.108</td>
+            </tr>
+         </table>
+         <h2>Errors:</h2>
+         <table class="table" style="width: 1500px">
+            <tr>
+               <td>Type:</td>
+               <td>java.lang.AssertionError</td>
+            </tr>
+            <tr>
+               <td>Message:</td>
+               <td>
+                  <code>OneArrayOfOneGuid mismatch: element mismatch occurred at index 0: expected was "093501ac-7bef-4d56-b1db-7df7953a295a",
+                     but actual was "d3088b5d-a9cd-4f9d-8309-7aa970a25abc"
+                  </code>
+               </td>
+            </tr>
+            <tr>
+               <td>Text:</td>
+               <td>
+                  <code>java.lang.AssertionError: OneArrayOfOneGuid mismatch: element mismatch occurred at index 0: expected was "093501ac-7bef-4d56-b1db-7df7953a295a", but actual was "d3088b5d-a9cd-4f9d-8309-7aa970a25abc"
+                     <br></br>	at com.dslplatform.ocd.javaasserts.GuidAsserts.assertSingleEquals(GuidAsserts.java:8)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.GuidAsserts.assertOneEquals(GuidAsserts.java:15)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.GuidAsserts.assertArrayOfOneEquals(GuidAsserts.java:39)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.GuidAsserts.assertOneArrayOfOneEquals(GuidAsserts.java:52)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.GuidAsserts.assertOneArrayOfOneEquals(GuidAsserts.java:56)
+                     <br></br>	at com.dslplatform.ocd.snowflakes.CalculatedOneArrayOfOneGuidsPropertyInSnowflakeTest.testP1A1GuNonDefault3PropertyValueInSnowflakeAfterActiveRecordPersist(Unknown Source)
+                     <br></br>
+                  </code>
+               </td>
             </tr>
          </table>
       </div>

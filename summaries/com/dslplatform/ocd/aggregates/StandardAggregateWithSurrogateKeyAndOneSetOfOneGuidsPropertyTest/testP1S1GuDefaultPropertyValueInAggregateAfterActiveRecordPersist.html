@@ -22,8 +22,35 @@
             </tr>
             <tr>
                <td>testP1S1GuDefaultPropertyValueInAggregateAfterActiveRecordPersist</td>
-               <td>Success</td>
-               <td>0.016</td>
+               <td>Failed</td>
+               <td>0.031</td>
+            </tr>
+         </table>
+         <h2>Errors:</h2>
+         <table class="table" style="width: 1500px">
+            <tr>
+               <td>Type:</td>
+               <td>java.lang.AssertionError</td>
+            </tr>
+            <tr>
+               <td>Message:</td>
+               <td>
+                  <code>OneSetOfOneGuid mismatch: expecteds was a set of size 0, but actuals was a set of
+                     size 3
+                  </code>
+               </td>
+            </tr>
+            <tr>
+               <td>Text:</td>
+               <td>
+                  <code>java.lang.AssertionError: OneSetOfOneGuid mismatch: expecteds was a set of size 0, but actuals was a set of size 3
+                     <br></br>	at com.dslplatform.ocd.javaasserts.GuidAsserts.assertSetOfOneEquals(GuidAsserts.java:192)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.GuidAsserts.assertOneSetOfOneEquals(GuidAsserts.java:208)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.GuidAsserts.assertOneSetOfOneEquals(GuidAsserts.java:212)
+                     <br></br>	at com.dslplatform.ocd.aggregates.StandardAggregateWithSurrogateKeyAndOneSetOfOneGuidsPropertyTest.testP1S1GuDefaultPropertyValueInAggregateAfterActiveRecordPersist(Unknown Source)
+                     <br></br>
+                  </code>
+               </td>
             </tr>
          </table>
       </div>

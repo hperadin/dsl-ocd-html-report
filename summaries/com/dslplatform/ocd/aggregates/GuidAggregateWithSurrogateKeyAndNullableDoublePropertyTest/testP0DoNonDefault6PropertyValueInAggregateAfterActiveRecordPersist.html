@@ -22,8 +22,33 @@
             </tr>
             <tr>
                <td>testP0DoNonDefault6PropertyValueInAggregateAfterActiveRecordPersist</td>
-               <td>Success</td>
-               <td>0.016</td>
+               <td>Failed</td>
+               <td>0.015</td>
+            </tr>
+         </table>
+         <h2>Errors:</h2>
+         <table class="table" style="width: 1500px">
+            <tr>
+               <td>Type:</td>
+               <td>java.lang.AssertionError</td>
+            </tr>
+            <tr>
+               <td>Message:</td>
+               <td>
+                  <code>NullableDouble mismatch: expected was "-Infinity", but actual was &lt;null&gt;</code>
+               </td>
+            </tr>
+            <tr>
+               <td>Text:</td>
+               <td>
+                  <code>java.lang.AssertionError: NullableDouble mismatch: expected was "-Infinity", but actual was <null>
+                     <br></br>	at com.dslplatform.ocd.javaasserts.DoubleAsserts.assertNullableEquals(DoubleAsserts.java:33)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.DoubleAsserts.assertNullableEquals(DoubleAsserts.java:38)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.DoubleAsserts.assertNullableEquals(DoubleAsserts.java:42)
+                     <br></br>	at com.dslplatform.ocd.aggregates.GuidAggregateWithSurrogateKeyAndNullableDoublePropertyTest.testP0DoNonDefault6PropertyValueInAggregateAfterActiveRecordPersist(Unknown Source)
+                     <br></br>
+                  </code>
+               </td>
             </tr>
          </table>
       </div>

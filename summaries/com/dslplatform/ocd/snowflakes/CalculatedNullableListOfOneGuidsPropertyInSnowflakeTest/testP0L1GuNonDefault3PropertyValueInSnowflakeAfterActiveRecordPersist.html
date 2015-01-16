@@ -22,8 +22,37 @@
             </tr>
             <tr>
                <td>testP0L1GuNonDefault3PropertyValueInSnowflakeAfterActiveRecordPersist</td>
-               <td>Success</td>
-               <td>0.031</td>
+               <td>Failed</td>
+               <td>0.042</td>
+            </tr>
+         </table>
+         <h2>Errors:</h2>
+         <table class="table" style="width: 1500px">
+            <tr>
+               <td>Type:</td>
+               <td>java.lang.AssertionError</td>
+            </tr>
+            <tr>
+               <td>Message:</td>
+               <td>
+                  <code>NullableListOfOneGuid mismatch: element mismatch occurred at index 0: expected was
+                     "ae8fd7f3-a2f4-42be-897d-2047abb40cb0", but actual was "7eee7948-adee-4c5b-8abe-8a8e900c8476"
+                  </code>
+               </td>
+            </tr>
+            <tr>
+               <td>Text:</td>
+               <td>
+                  <code>java.lang.AssertionError: NullableListOfOneGuid mismatch: element mismatch occurred at index 0: expected was "ae8fd7f3-a2f4-42be-897d-2047abb40cb0", but actual was "7eee7948-adee-4c5b-8abe-8a8e900c8476"
+                     <br></br>	at com.dslplatform.ocd.javaasserts.GuidAsserts.assertSingleEquals(GuidAsserts.java:8)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.GuidAsserts.assertOneEquals(GuidAsserts.java:15)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.GuidAsserts.assertListOfOneEquals(GuidAsserts.java:114)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.GuidAsserts.assertNullableListOfOneEquals(GuidAsserts.java:139)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.GuidAsserts.assertNullableListOfOneEquals(GuidAsserts.java:143)
+                     <br></br>	at com.dslplatform.ocd.snowflakes.CalculatedNullableListOfOneGuidsPropertyInSnowflakeTest.testP0L1GuNonDefault3PropertyValueInSnowflakeAfterActiveRecordPersist(Unknown Source)
+                     <br></br>
+                  </code>
+               </td>
             </tr>
          </table>
       </div>

@@ -22,8 +22,32 @@
             </tr>
             <tr>
                <td>testP0D9NonDefault2PropertyValueInSnowflakeAfterActiveRecordPersist</td>
-               <td>Success</td>
-               <td>0.016</td>
+               <td>Failed</td>
+               <td>0.172</td>
+            </tr>
+         </table>
+         <h2>Errors:</h2>
+         <table class="table" style="width: 1500px">
+            <tr>
+               <td>Type:</td>
+               <td>java.lang.AssertionError</td>
+            </tr>
+            <tr>
+               <td>Message:</td>
+               <td>
+                  <code>NullableDecimalWithScaleOf9 mismatch: expected was "1", but actual was &lt;null&gt;</code>
+               </td>
+            </tr>
+            <tr>
+               <td>Text:</td>
+               <td>
+                  <code>java.lang.AssertionError: NullableDecimalWithScaleOf9 mismatch: expected was "1", but actual was <null>
+                     <br></br>	at com.dslplatform.ocd.javaasserts.DecimalWithScaleOf9Asserts.assertNullableEquals(DecimalWithScaleOf9Asserts.java:39)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.DecimalWithScaleOf9Asserts.assertNullableEquals(DecimalWithScaleOf9Asserts.java:44)
+                     <br></br>	at com.dslplatform.ocd.snowflakes.CalculatedNullableDecimalWithScaleOf9PropertyInSnowflakeTest.testP0D9NonDefault2PropertyValueInSnowflakeAfterActiveRecordPersist(Unknown Source)
+                     <br></br>
+                  </code>
+               </td>
             </tr>
          </table>
       </div>

@@ -22,8 +22,36 @@
             </tr>
             <tr>
                <td>testP0A0FlNonDefault2PropertyValueInAggregateAfterActiveRecordPersist</td>
-               <td>Success</td>
-               <td>0.031</td>
+               <td>Failed</td>
+               <td>0.046</td>
+            </tr>
+         </table>
+         <h2>Errors:</h2>
+         <table class="table" style="width: 1500px">
+            <tr>
+               <td>Type:</td>
+               <td>java.lang.AssertionError</td>
+            </tr>
+            <tr>
+               <td>Message:</td>
+               <td>
+                  <code>NullableArrayOfNullableFloat mismatch: expecteds was an array of length 1, but actuals
+                     was an array of length 8
+                  </code>
+               </td>
+            </tr>
+            <tr>
+               <td>Text:</td>
+               <td>
+                  <code>java.lang.AssertionError: NullableArrayOfNullableFloat mismatch: expecteds was an array of length 1, but actuals was an array of length 8
+                     <br></br>	at com.dslplatform.ocd.javaasserts.FloatAsserts.assertArrayOfNullableEquals(FloatAsserts.java:87)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.FloatAsserts.assertNullableArrayOfNullableEquals(FloatAsserts.java:114)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.FloatAsserts.assertNullableArrayOfNullableEquals(FloatAsserts.java:118)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.FloatAsserts.assertNullableArrayOfNullableEquals(FloatAsserts.java:122)
+                     <br></br>	at com.dslplatform.ocd.snowflakes.CalculatedNullableArrayOfNullableFloatsPropertyInSnowflakeTest.testP0A0FlNonDefault2PropertyValueInAggregateAfterActiveRecordPersist(Unknown Source)
+                     <br></br>
+                  </code>
+               </td>
             </tr>
          </table>
       </div>

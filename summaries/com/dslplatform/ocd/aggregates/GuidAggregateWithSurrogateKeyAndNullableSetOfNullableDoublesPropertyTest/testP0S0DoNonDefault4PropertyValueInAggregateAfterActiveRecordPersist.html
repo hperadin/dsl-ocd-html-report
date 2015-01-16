@@ -22,8 +22,35 @@
             </tr>
             <tr>
                <td>testP0S0DoNonDefault4PropertyValueInAggregateAfterActiveRecordPersist</td>
-               <td>Success</td>
-               <td>0.016</td>
+               <td>Failed</td>
+               <td>0.031</td>
+            </tr>
+         </table>
+         <h2>Errors:</h2>
+         <table class="table" style="width: 1500px">
+            <tr>
+               <td>Type:</td>
+               <td>java.lang.AssertionError</td>
+            </tr>
+            <tr>
+               <td>Message:</td>
+               <td>
+                  <code>NullableSetOfNullableDouble mismatch:  expecteds was a set of size 8, but actuals
+                     was &lt;null&gt;
+                  </code>
+               </td>
+            </tr>
+            <tr>
+               <td>Text:</td>
+               <td>
+                  <code>java.lang.AssertionError: NullableSetOfNullableDouble mismatch:  expecteds was a set of size 8, but actuals was <null>
+                     <br></br>	at com.dslplatform.ocd.javaasserts.DoubleAsserts.assertNullableSetOfNullableEquals(DoubleAsserts.java:320)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.DoubleAsserts.assertNullableSetOfNullableEquals(DoubleAsserts.java:325)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.DoubleAsserts.assertNullableSetOfNullableEquals(DoubleAsserts.java:329)
+                     <br></br>	at com.dslplatform.ocd.aggregates.GuidAggregateWithSurrogateKeyAndNullableSetOfNullableDoublesPropertyTest.testP0S0DoNonDefault4PropertyValueInAggregateAfterActiveRecordPersist(Unknown Source)
+                     <br></br>
+                  </code>
+               </td>
             </tr>
          </table>
       </div>

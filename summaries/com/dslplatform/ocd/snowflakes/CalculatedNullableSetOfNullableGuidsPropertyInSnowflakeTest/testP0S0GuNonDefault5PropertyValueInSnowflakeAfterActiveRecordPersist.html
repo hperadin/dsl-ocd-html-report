@@ -22,8 +22,35 @@
             </tr>
             <tr>
                <td>testP0S0GuNonDefault5PropertyValueInSnowflakeAfterActiveRecordPersist</td>
-               <td>Success</td>
-               <td>0.078</td>
+               <td>Failed</td>
+               <td>0.04</td>
+            </tr>
+         </table>
+         <h2>Errors:</h2>
+         <table class="table" style="width: 1500px">
+            <tr>
+               <td>Type:</td>
+               <td>java.lang.AssertionError</td>
+            </tr>
+            <tr>
+               <td>Message:</td>
+               <td>
+                  <code>NullableSetOfNullableGuid mismatch: actuals did not contain the expecteds element
+                     "e264b93d-4981-4227-8ebe-d9fe88280fa4"
+                  </code>
+               </td>
+            </tr>
+            <tr>
+               <td>Text:</td>
+               <td>
+                  <code>java.lang.AssertionError: NullableSetOfNullableGuid mismatch: actuals did not contain the expecteds element "e264b93d-4981-4227-8ebe-d9fe88280fa4"
+                     <br></br>	at com.dslplatform.ocd.javaasserts.GuidAsserts.assertSetOfNullableEquals(GuidAsserts.java:235)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.GuidAsserts.assertNullableSetOfNullableEquals(GuidAsserts.java:255)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.GuidAsserts.assertNullableSetOfNullableEquals(GuidAsserts.java:259)
+                     <br></br>	at com.dslplatform.ocd.snowflakes.CalculatedNullableSetOfNullableGuidsPropertyInSnowflakeTest.testP0S0GuNonDefault5PropertyValueInSnowflakeAfterActiveRecordPersist(Unknown Source)
+                     <br></br>
+                  </code>
+               </td>
             </tr>
          </table>
       </div>

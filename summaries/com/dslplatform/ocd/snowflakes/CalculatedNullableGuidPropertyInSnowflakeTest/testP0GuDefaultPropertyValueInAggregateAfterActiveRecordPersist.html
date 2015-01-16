@@ -22,8 +22,32 @@
             </tr>
             <tr>
                <td>testP0GuDefaultPropertyValueInAggregateAfterActiveRecordPersist</td>
-               <td>Success</td>
-               <td>0.047</td>
+               <td>Failed</td>
+               <td>0.018</td>
+            </tr>
+         </table>
+         <h2>Errors:</h2>
+         <table class="table" style="width: 1500px">
+            <tr>
+               <td>Type:</td>
+               <td>java.lang.AssertionError</td>
+            </tr>
+            <tr>
+               <td>Message:</td>
+               <td>
+                  <code>NullableGuid mismatch: expected was &lt;null&gt;, but actual was "00000000-0000-0000-0000-000000000000"</code>
+               </td>
+            </tr>
+            <tr>
+               <td>Text:</td>
+               <td>
+                  <code>java.lang.AssertionError: NullableGuid mismatch: expected was <null>, but actual was "00000000-0000-0000-0000-000000000000"
+                     <br></br>	at com.dslplatform.ocd.javaasserts.GuidAsserts.assertNullableEquals(GuidAsserts.java:24)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.GuidAsserts.assertNullableEquals(GuidAsserts.java:30)
+                     <br></br>	at com.dslplatform.ocd.snowflakes.CalculatedNullableGuidPropertyInSnowflakeTest.testP0GuDefaultPropertyValueInAggregateAfterActiveRecordPersist(Unknown Source)
+                     <br></br>
+                  </code>
+               </td>
             </tr>
          </table>
       </div>

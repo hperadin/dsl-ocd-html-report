@@ -22,8 +22,37 @@
             </tr>
             <tr>
                <td>testP0L0LoNonDefault3PropertyValueInAggregateAfterActiveRecordPersist</td>
-               <td>Success</td>
-               <td>0.032</td>
+               <td>Failed</td>
+               <td>0.016</td>
+            </tr>
+         </table>
+         <h2>Errors:</h2>
+         <table class="table" style="width: 1500px">
+            <tr>
+               <td>Type:</td>
+               <td>java.lang.AssertionError</td>
+            </tr>
+            <tr>
+               <td>Message:</td>
+               <td>
+                  <code>NullableListOfNullableLong mismatch: element mismatch occurred at index 0: expected
+                     was "9223372036854775807", but actual was "0"
+                  </code>
+               </td>
+            </tr>
+            <tr>
+               <td>Text:</td>
+               <td>
+                  <code>java.lang.AssertionError: NullableListOfNullableLong mismatch: element mismatch occurred at index 0: expected was "9223372036854775807", but actual was "0"
+                     <br></br>	at com.dslplatform.ocd.javaasserts.LongAsserts.assertSingleEquals(LongAsserts.java:8)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.LongAsserts.assertNullableEquals(LongAsserts.java:23)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.LongAsserts.assertListOfNullableEquals(LongAsserts.java:153)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.LongAsserts.assertNullableListOfNullableEquals(LongAsserts.java:172)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.LongAsserts.assertNullableListOfNullableEquals(LongAsserts.java:176)
+                     <br></br>	at com.dslplatform.ocd.snowflakes.CalculatedNullableListOfNullableLongsPropertyInSnowflakeTest.testP0L0LoNonDefault3PropertyValueInAggregateAfterActiveRecordPersist(Unknown Source)
+                     <br></br>
+                  </code>
+               </td>
             </tr>
          </table>
       </div>

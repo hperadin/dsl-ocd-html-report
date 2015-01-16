@@ -22,8 +22,33 @@
             </tr>
             <tr>
                <td>testP1LoNonDefault3PropertyValueInAggregateAfterActiveRecordPersist</td>
-               <td>Success</td>
-               <td>0.031</td>
+               <td>Failed</td>
+               <td>0.016</td>
+            </tr>
+         </table>
+         <h2>Errors:</h2>
+         <table class="table" style="width: 1500px">
+            <tr>
+               <td>Type:</td>
+               <td>java.lang.AssertionError</td>
+            </tr>
+            <tr>
+               <td>Message:</td>
+               <td>
+                  <code>OneLong mismatch: expected was "-1000000000000000000", but actual was "0"</code>
+               </td>
+            </tr>
+            <tr>
+               <td>Text:</td>
+               <td>
+                  <code>java.lang.AssertionError: OneLong mismatch: expected was "-1000000000000000000", but actual was "0"
+                     <br></br>	at com.dslplatform.ocd.javaasserts.LongAsserts.assertSingleEquals(LongAsserts.java:8)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.LongAsserts.assertOneEquals(LongAsserts.java:12)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.LongAsserts.assertOneEquals(LongAsserts.java:16)
+                     <br></br>	at com.dslplatform.ocd.aggregates.BigAggregateWithSurrogateKeyAndOneLongPropertyTest.testP1LoNonDefault3PropertyValueInAggregateAfterActiveRecordPersist(Unknown Source)
+                     <br></br>
+                  </code>
+               </td>
             </tr>
          </table>
       </div>

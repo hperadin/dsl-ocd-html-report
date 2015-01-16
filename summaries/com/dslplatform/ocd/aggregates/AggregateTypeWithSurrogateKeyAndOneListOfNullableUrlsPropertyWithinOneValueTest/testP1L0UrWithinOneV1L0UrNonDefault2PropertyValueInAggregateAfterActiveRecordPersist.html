@@ -22,8 +22,35 @@
             </tr>
             <tr>
                <td>testP1L0UrWithinOneV1L0UrNonDefault2PropertyValueInAggregateAfterActiveRecordPersist</td>
-               <td>Success</td>
+               <td>Failed</td>
                <td>0.031</td>
+            </tr>
+         </table>
+         <h2>Errors:</h2>
+         <table class="table" style="width: 1500px">
+            <tr>
+               <td>Type:</td>
+               <td>java.lang.AssertionError</td>
+            </tr>
+            <tr>
+               <td>Message:</td>
+               <td>
+                  <code>OneListOfNullableUrl mismatch: expecteds was a list of size 1, but actuals was a list
+                     of size 10
+                  </code>
+               </td>
+            </tr>
+            <tr>
+               <td>Text:</td>
+               <td>
+                  <code>java.lang.AssertionError: OneListOfNullableUrl mismatch: expecteds was a list of size 1, but actuals was a list of size 10
+                     <br></br>	at com.dslplatform.ocd.javaasserts.UrlAsserts.assertListOfNullableEquals(UrlAsserts.java:150)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.UrlAsserts.assertOneListOfNullableEquals(UrlAsserts.java:166)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.UrlAsserts.assertOneListOfNullableEquals(UrlAsserts.java:170)
+                     <br></br>	at com.dslplatform.ocd.aggregates.AggregateTypeWithSurrogateKeyAndOneListOfNullableUrlsPropertyWithinOneValueTest.testP1L0UrWithinOneV1L0UrNonDefault2PropertyValueInAggregateAfterActiveRecordPersist(Unknown Source)
+                     <br></br>
+                  </code>
+               </td>
             </tr>
          </table>
       </div>

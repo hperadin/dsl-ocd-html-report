@@ -22,8 +22,34 @@
             </tr>
             <tr>
                <td>testP0A1InNonDefault2PropertyValueInSnowflakeAfterActiveRecordPersist</td>
-               <td>Success</td>
+               <td>Failed</td>
                <td>0.031</td>
+            </tr>
+         </table>
+         <h2>Errors:</h2>
+         <table class="table" style="width: 1500px">
+            <tr>
+               <td>Type:</td>
+               <td>java.lang.AssertionError</td>
+            </tr>
+            <tr>
+               <td>Message:</td>
+               <td>
+                  <code>NullableArrayOfOneInteger mismatch:  expecteds was an array of length 1, but actuals
+                     was &lt;null&gt;
+                  </code>
+               </td>
+            </tr>
+            <tr>
+               <td>Text:</td>
+               <td>
+                  <code>java.lang.AssertionError: NullableArrayOfOneInteger mismatch:  expecteds was an array of length 1, but actuals was <null>
+                     <br></br>	at com.dslplatform.ocd.javaasserts.IntegerAsserts.assertNullableArrayOfOneEquals(IntegerAsserts.java:54)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.IntegerAsserts.assertNullableArrayOfOneEquals(IntegerAsserts.java:59)
+                     <br></br>	at com.dslplatform.ocd.snowflakes.CalculatedNullableArrayOfOneIntegersPropertyInSnowflakeTest.testP0A1InNonDefault2PropertyValueInSnowflakeAfterActiveRecordPersist(Unknown Source)
+                     <br></br>
+                  </code>
+               </td>
             </tr>
          </table>
       </div>

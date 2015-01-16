@@ -22,8 +22,33 @@
             </tr>
             <tr>
                <td>testP0S1FlNonDefault3PropertyValueInAggregateAfterActiveRecordPersist</td>
-               <td>Success</td>
-               <td>0.047</td>
+               <td>Failed</td>
+               <td>0.019</td>
+            </tr>
+         </table>
+         <h2>Errors:</h2>
+         <table class="table" style="width: 1500px">
+            <tr>
+               <td>Type:</td>
+               <td>java.lang.AssertionError</td>
+            </tr>
+            <tr>
+               <td>Message:</td>
+               <td>
+                  <code>NullableSetOfOneFloat mismatch:  expecteds was a set of size 7, but actuals was &lt;null&gt;</code>
+               </td>
+            </tr>
+            <tr>
+               <td>Text:</td>
+               <td>
+                  <code>java.lang.AssertionError: NullableSetOfOneFloat mismatch:  expecteds was a set of size 7, but actuals was <null>
+                     <br></br>	at com.dslplatform.ocd.javaasserts.FloatAsserts.assertNullableSetOfOneEquals(FloatAsserts.java:270)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.FloatAsserts.assertNullableSetOfOneEquals(FloatAsserts.java:275)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.FloatAsserts.assertNullableSetOfOneEquals(FloatAsserts.java:279)
+                     <br></br>	at com.dslplatform.ocd.snowflakes.CalculatedNullableSetOfOneFloatsPropertyInSnowflakeTest.testP0S1FlNonDefault3PropertyValueInAggregateAfterActiveRecordPersist(Unknown Source)
+                     <br></br>
+                  </code>
+               </td>
             </tr>
          </table>
       </div>

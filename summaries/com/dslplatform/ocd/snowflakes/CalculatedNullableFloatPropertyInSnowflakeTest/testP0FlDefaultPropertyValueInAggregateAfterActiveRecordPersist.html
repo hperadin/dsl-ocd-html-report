@@ -22,8 +22,33 @@
             </tr>
             <tr>
                <td>testP0FlDefaultPropertyValueInAggregateAfterActiveRecordPersist</td>
-               <td>Success</td>
-               <td>0.016</td>
+               <td>Failed</td>
+               <td>0.118</td>
+            </tr>
+         </table>
+         <h2>Errors:</h2>
+         <table class="table" style="width: 1500px">
+            <tr>
+               <td>Type:</td>
+               <td>java.lang.AssertionError</td>
+            </tr>
+            <tr>
+               <td>Message:</td>
+               <td>
+                  <code>NullableFloat mismatch: expected was &lt;null&gt;, but actual was "Infinity"</code>
+               </td>
+            </tr>
+            <tr>
+               <td>Text:</td>
+               <td>
+                  <code>java.lang.AssertionError: NullableFloat mismatch: expected was <null>, but actual was "Infinity"
+                     <br></br>	at com.dslplatform.ocd.javaasserts.FloatAsserts.assertNullableEquals(FloatAsserts.java:32)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.FloatAsserts.assertNullableEquals(FloatAsserts.java:38)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.FloatAsserts.assertNullableEquals(FloatAsserts.java:42)
+                     <br></br>	at com.dslplatform.ocd.snowflakes.CalculatedNullableFloatPropertyInSnowflakeTest.testP0FlDefaultPropertyValueInAggregateAfterActiveRecordPersist(Unknown Source)
+                     <br></br>
+                  </code>
+               </td>
             </tr>
          </table>
       </div>

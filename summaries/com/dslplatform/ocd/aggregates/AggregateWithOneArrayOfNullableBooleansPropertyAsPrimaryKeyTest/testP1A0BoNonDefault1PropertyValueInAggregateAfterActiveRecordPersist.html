@@ -22,8 +22,35 @@
             </tr>
             <tr>
                <td>testP1A0BoNonDefault1PropertyValueInAggregateAfterActiveRecordPersist</td>
-               <td>Success</td>
-               <td>0.125</td>
+               <td>Failed</td>
+               <td>0.094</td>
+            </tr>
+         </table>
+         <h2>Errors:</h2>
+         <table class="table" style="width: 1500px">
+            <tr>
+               <td>Type:</td>
+               <td>java.lang.AssertionError</td>
+            </tr>
+            <tr>
+               <td>Message:</td>
+               <td>
+                  <code>OneArrayOfNullableBoolean mismatch: expecteds was an array of length 1, but actuals
+                     was an array of length 3
+                  </code>
+               </td>
+            </tr>
+            <tr>
+               <td>Text:</td>
+               <td>
+                  <code>java.lang.AssertionError: OneArrayOfNullableBoolean mismatch: expecteds was an array of length 1, but actuals was an array of length 3
+                     <br></br>	at com.dslplatform.ocd.javaasserts.BooleanAsserts.assertArrayOfNullableEquals(BooleanAsserts.java:64)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.BooleanAsserts.assertOneArrayOfNullableEquals(BooleanAsserts.java:76)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.BooleanAsserts.assertOneArrayOfNullableEquals(BooleanAsserts.java:80)
+                     <br></br>	at com.dslplatform.ocd.aggregates.AggregateWithOneArrayOfNullableBooleansPropertyAsPrimaryKeyTest.testP1A0BoNonDefault1PropertyValueInAggregateAfterActiveRecordPersist(Unknown Source)
+                     <br></br>
+                  </code>
+               </td>
             </tr>
          </table>
       </div>

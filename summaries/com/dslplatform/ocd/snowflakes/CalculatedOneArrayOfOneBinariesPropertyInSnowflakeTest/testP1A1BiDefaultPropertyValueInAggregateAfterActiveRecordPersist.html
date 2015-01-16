@@ -22,8 +22,35 @@
             </tr>
             <tr>
                <td>testP1A1BiDefaultPropertyValueInAggregateAfterActiveRecordPersist</td>
-               <td>Success</td>
-               <td>0.078</td>
+               <td>Failed</td>
+               <td>0.016</td>
+            </tr>
+         </table>
+         <h2>Errors:</h2>
+         <table class="table" style="width: 1500px">
+            <tr>
+               <td>Type:</td>
+               <td>java.lang.AssertionError</td>
+            </tr>
+            <tr>
+               <td>Message:</td>
+               <td>
+                  <code>OneArrayOfOneBinary mismatch: expecteds was an array of length 0, but actuals was
+                     an array of length 4
+                  </code>
+               </td>
+            </tr>
+            <tr>
+               <td>Text:</td>
+               <td>
+                  <code>java.lang.AssertionError: OneArrayOfOneBinary mismatch: expecteds was an array of length 0, but actuals was an array of length 4
+                     <br></br>	at com.dslplatform.ocd.javaasserts.BinaryAsserts.assertArrayOfOneEquals(BinaryAsserts.java:42)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.BinaryAsserts.assertOneArrayOfOneEquals(BinaryAsserts.java:59)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.BinaryAsserts.assertOneArrayOfOneEquals(BinaryAsserts.java:63)
+                     <br></br>	at com.dslplatform.ocd.snowflakes.CalculatedOneArrayOfOneBinariesPropertyInSnowflakeTest.testP1A1BiDefaultPropertyValueInAggregateAfterActiveRecordPersist(Unknown Source)
+                     <br></br>
+                  </code>
+               </td>
             </tr>
          </table>
       </div>

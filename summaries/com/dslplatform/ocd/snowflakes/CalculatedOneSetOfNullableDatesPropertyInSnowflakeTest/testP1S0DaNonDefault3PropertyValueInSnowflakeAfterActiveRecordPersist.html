@@ -22,8 +22,33 @@
             </tr>
             <tr>
                <td>testP1S0DaNonDefault3PropertyValueInSnowflakeAfterActiveRecordPersist</td>
-               <td>Success</td>
-               <td>0.078</td>
+               <td>Failed</td>
+               <td>0.031</td>
+            </tr>
+         </table>
+         <h2>Errors:</h2>
+         <table class="table" style="width: 1500px">
+            <tr>
+               <td>Type:</td>
+               <td>java.lang.AssertionError</td>
+            </tr>
+            <tr>
+               <td>Message:</td>
+               <td>
+                  <code>OneSetOfNullableDate mismatch: actuals did not contain the expecteds element "9999-12-31"</code>
+               </td>
+            </tr>
+            <tr>
+               <td>Text:</td>
+               <td>
+                  <code>java.lang.AssertionError: OneSetOfNullableDate mismatch: actuals did not contain the expecteds element "9999-12-31"
+                     <br></br>	at com.dslplatform.ocd.javaasserts.DateAsserts.assertSetOfNullableEquals(DateAsserts.java:235)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.DateAsserts.assertOneSetOfNullableEquals(DateAsserts.java:244)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.DateAsserts.assertOneSetOfNullableEquals(DateAsserts.java:248)
+                     <br></br>	at com.dslplatform.ocd.snowflakes.CalculatedOneSetOfNullableDatesPropertyInSnowflakeTest.testP1S0DaNonDefault3PropertyValueInSnowflakeAfterActiveRecordPersist(Unknown Source)
+                     <br></br>
+                  </code>
+               </td>
             </tr>
          </table>
       </div>

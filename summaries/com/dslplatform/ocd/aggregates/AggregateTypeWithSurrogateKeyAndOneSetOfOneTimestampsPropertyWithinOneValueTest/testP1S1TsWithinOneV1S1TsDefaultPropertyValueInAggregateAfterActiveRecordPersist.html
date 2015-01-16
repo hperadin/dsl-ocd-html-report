@@ -22,8 +22,36 @@
             </tr>
             <tr>
                <td>testP1S1TsWithinOneV1S1TsDefaultPropertyValueInAggregateAfterActiveRecordPersist</td>
-               <td>Success</td>
-               <td>0.015</td>
+               <td>Failed</td>
+               <td>0.062</td>
+            </tr>
+         </table>
+         <h2>Errors:</h2>
+         <table class="table" style="width: 1500px">
+            <tr>
+               <td>Type:</td>
+               <td>java.lang.AssertionError</td>
+            </tr>
+            <tr>
+               <td>Message:</td>
+               <td>
+                  <code>OneSetOfOneTimestamp mismatch: expecteds was a set of size 0, but actuals was a set
+                     of size 4
+                  </code>
+               </td>
+            </tr>
+            <tr>
+               <td>Text:</td>
+               <td>
+                  <code>java.lang.AssertionError: OneSetOfOneTimestamp mismatch: expecteds was a set of size 0, but actuals was a set of size 4
+                     <br></br>	at com.dslplatform.ocd.javaasserts.TimestampAsserts.assertSetOfOneEquals(TimestampAsserts.java:294)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.TimestampAsserts.assertOneSetOfOneEquals(TimestampAsserts.java:316)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.TimestampAsserts.assertOneSetOfOneEquals(TimestampAsserts.java:320)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.TimestampAsserts.assertOneSetOfOneEquals(TimestampAsserts.java:324)
+                     <br></br>	at com.dslplatform.ocd.aggregates.AggregateTypeWithSurrogateKeyAndOneSetOfOneTimestampsPropertyWithinOneValueTest.testP1S1TsWithinOneV1S1TsDefaultPropertyValueInAggregateAfterActiveRecordPersist(Unknown Source)
+                     <br></br>
+                  </code>
+               </td>
             </tr>
          </table>
       </div>

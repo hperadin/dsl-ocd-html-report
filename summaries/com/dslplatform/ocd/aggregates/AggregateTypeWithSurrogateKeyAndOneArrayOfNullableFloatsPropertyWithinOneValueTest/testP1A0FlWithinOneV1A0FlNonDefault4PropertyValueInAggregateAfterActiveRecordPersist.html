@@ -22,8 +22,36 @@
             </tr>
             <tr>
                <td>testP1A0FlWithinOneV1A0FlNonDefault4PropertyValueInAggregateAfterActiveRecordPersist</td>
-               <td>Success</td>
-               <td>0.016</td>
+               <td>Failed</td>
+               <td>0.031</td>
+            </tr>
+         </table>
+         <h2>Errors:</h2>
+         <table class="table" style="width: 1500px">
+            <tr>
+               <td>Type:</td>
+               <td>java.lang.AssertionError</td>
+            </tr>
+            <tr>
+               <td>Message:</td>
+               <td>
+                  <code>OneArrayOfNullableFloat mismatch: expecteds was an array of length 7, but actuals
+                     was an array of length 8
+                  </code>
+               </td>
+            </tr>
+            <tr>
+               <td>Text:</td>
+               <td>
+                  <code>java.lang.AssertionError: OneArrayOfNullableFloat mismatch: expecteds was an array of length 7, but actuals was an array of length 8
+                     <br></br>	at com.dslplatform.ocd.javaasserts.FloatAsserts.assertArrayOfNullableEquals(FloatAsserts.java:87)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.FloatAsserts.assertOneArrayOfNullableEquals(FloatAsserts.java:99)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.FloatAsserts.assertOneArrayOfNullableEquals(FloatAsserts.java:103)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.FloatAsserts.assertOneArrayOfNullableEquals(FloatAsserts.java:107)
+                     <br></br>	at com.dslplatform.ocd.aggregates.AggregateTypeWithSurrogateKeyAndOneArrayOfNullableFloatsPropertyWithinOneValueTest.testP1A0FlWithinOneV1A0FlNonDefault4PropertyValueInAggregateAfterActiveRecordPersist(Unknown Source)
+                     <br></br>
+                  </code>
+               </td>
             </tr>
          </table>
       </div>

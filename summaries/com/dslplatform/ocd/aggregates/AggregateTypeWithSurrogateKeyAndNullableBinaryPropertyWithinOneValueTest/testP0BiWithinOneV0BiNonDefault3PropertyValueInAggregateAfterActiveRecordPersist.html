@@ -22,8 +22,32 @@
             </tr>
             <tr>
                <td>testP0BiWithinOneV0BiNonDefault3PropertyValueInAggregateAfterActiveRecordPersist</td>
-               <td>Success</td>
-               <td>0.032</td>
+               <td>Failed</td>
+               <td>0.016</td>
+            </tr>
+         </table>
+         <h2>Errors:</h2>
+         <table class="table" style="width: 1500px">
+            <tr>
+               <td>Type:</td>
+               <td>java.lang.AssertionError</td>
+            </tr>
+            <tr>
+               <td>Message:</td>
+               <td>
+                  <code>NullableBinary mismatch: expected was a Binary of 2 bytes, but actual was &lt;null&gt;</code>
+               </td>
+            </tr>
+            <tr>
+               <td>Text:</td>
+               <td>
+                  <code>java.lang.AssertionError: NullableBinary mismatch: expected was a Binary of 2 bytes, but actual was <null>
+                     <br></br>	at com.dslplatform.ocd.javaasserts.BinaryAsserts.assertNullableEquals(BinaryAsserts.java:32)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.BinaryAsserts.assertNullableEquals(BinaryAsserts.java:37)
+                     <br></br>	at com.dslplatform.ocd.aggregates.AggregateTypeWithSurrogateKeyAndNullableBinaryPropertyWithinOneValueTest.testP0BiWithinOneV0BiNonDefault3PropertyValueInAggregateAfterActiveRecordPersist(Unknown Source)
+                     <br></br>
+                  </code>
+               </td>
             </tr>
          </table>
       </div>

@@ -22,8 +22,35 @@
             </tr>
             <tr>
                <td>testP1A0InWithinOneV1A0InNonDefault5PropertyValueInAggregateAfterActiveRecordPersist</td>
-               <td>Success</td>
-               <td>0.11</td>
+               <td>Failed</td>
+               <td>0.015</td>
+            </tr>
+         </table>
+         <h2>Errors:</h2>
+         <table class="table" style="width: 1500px">
+            <tr>
+               <td>Type:</td>
+               <td>java.lang.AssertionError</td>
+            </tr>
+            <tr>
+               <td>Message:</td>
+               <td>
+                  <code>OneArrayOfNullableInteger mismatch: expecteds was an array of length 6, but actuals
+                     was an array of length 0
+                  </code>
+               </td>
+            </tr>
+            <tr>
+               <td>Text:</td>
+               <td>
+                  <code>java.lang.AssertionError: OneArrayOfNullableInteger mismatch: expecteds was an array of length 6, but actuals was an array of length 0
+                     <br></br>	at com.dslplatform.ocd.javaasserts.IntegerAsserts.assertArrayOfNullableEquals(IntegerAsserts.java:64)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.IntegerAsserts.assertOneArrayOfNullableEquals(IntegerAsserts.java:76)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.IntegerAsserts.assertOneArrayOfNullableEquals(IntegerAsserts.java:80)
+                     <br></br>	at com.dslplatform.ocd.aggregates.AggregateTypeWithSurrogateKeyAndOneArrayOfNullableIntegersPropertyWithinOneValueTest.testP1A0InWithinOneV1A0InNonDefault5PropertyValueInAggregateAfterActiveRecordPersist(Unknown Source)
+                     <br></br>
+                  </code>
+               </td>
             </tr>
          </table>
       </div>

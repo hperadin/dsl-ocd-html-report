@@ -22,8 +22,34 @@
             </tr>
             <tr>
                <td>testP0S1BoWithinOneV0S1BoDefaultPropertyValueInAggregateAfterActiveRecordPersist</td>
-               <td>Success</td>
-               <td>0.027</td>
+               <td>Failed</td>
+               <td>0.015</td>
+            </tr>
+         </table>
+         <h2>Errors:</h2>
+         <table class="table" style="width: 1500px">
+            <tr>
+               <td>Type:</td>
+               <td>java.lang.AssertionError</td>
+            </tr>
+            <tr>
+               <td>Message:</td>
+               <td>
+                  <code>NullableSetOfOneBoolean mismatch: expecteds was &lt;null&gt;, but actuals was a set of size
+                     2
+                  </code>
+               </td>
+            </tr>
+            <tr>
+               <td>Text:</td>
+               <td>
+                  <code>java.lang.AssertionError: NullableSetOfOneBoolean mismatch: expecteds was <null>, but actuals was a set of size 2
+                     <br></br>	at com.dslplatform.ocd.javaasserts.BooleanAsserts.assertNullableSetOfOneEquals(BooleanAsserts.java:212)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.BooleanAsserts.assertNullableSetOfOneEquals(BooleanAsserts.java:218)
+                     <br></br>	at com.dslplatform.ocd.aggregates.AggregateTypeWithSurrogateKeyAndNullableSetOfOneBooleansPropertyWithinOneValueTest.testP0S1BoWithinOneV0S1BoDefaultPropertyValueInAggregateAfterActiveRecordPersist(Unknown Source)
+                     <br></br>
+                  </code>
+               </td>
             </tr>
          </table>
       </div>

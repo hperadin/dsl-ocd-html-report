@@ -22,8 +22,35 @@
             </tr>
             <tr>
                <td>testP1S1InDefaultPropertyValueInAggregateAfterActiveRecordPersist</td>
-               <td>Success</td>
-               <td>0.015</td>
+               <td>Failed</td>
+               <td>0.032</td>
+            </tr>
+         </table>
+         <h2>Errors:</h2>
+         <table class="table" style="width: 1500px">
+            <tr>
+               <td>Type:</td>
+               <td>java.lang.AssertionError</td>
+            </tr>
+            <tr>
+               <td>Message:</td>
+               <td>
+                  <code>OneSetOfOneInteger mismatch: expecteds was a set of size 0, but actuals was a set
+                     of size 5
+                  </code>
+               </td>
+            </tr>
+            <tr>
+               <td>Text:</td>
+               <td>
+                  <code>java.lang.AssertionError: OneSetOfOneInteger mismatch: expecteds was a set of size 0, but actuals was a set of size 5
+                     <br></br>	at com.dslplatform.ocd.javaasserts.IntegerAsserts.assertSetOfOneEquals(IntegerAsserts.java:187)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.IntegerAsserts.assertOneSetOfOneEquals(IntegerAsserts.java:203)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.IntegerAsserts.assertOneSetOfOneEquals(IntegerAsserts.java:207)
+                     <br></br>	at com.dslplatform.ocd.aggregates.GuidAggregateWithSurrogateKeyAndOneSetOfOneIntegersPropertyTest.testP1S1InDefaultPropertyValueInAggregateAfterActiveRecordPersist(Unknown Source)
+                     <br></br>
+                  </code>
+               </td>
             </tr>
          </table>
       </div>

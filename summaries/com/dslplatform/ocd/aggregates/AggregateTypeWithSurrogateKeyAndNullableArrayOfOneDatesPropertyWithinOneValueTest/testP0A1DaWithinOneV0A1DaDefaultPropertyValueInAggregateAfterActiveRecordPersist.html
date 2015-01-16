@@ -22,8 +22,34 @@
             </tr>
             <tr>
                <td>testP0A1DaWithinOneV0A1DaDefaultPropertyValueInAggregateAfterActiveRecordPersist</td>
-               <td>Success</td>
-               <td>0.0</td>
+               <td>Failed</td>
+               <td>0.14</td>
+            </tr>
+         </table>
+         <h2>Errors:</h2>
+         <table class="table" style="width: 1500px">
+            <tr>
+               <td>Type:</td>
+               <td>java.lang.AssertionError</td>
+            </tr>
+            <tr>
+               <td>Message:</td>
+               <td>
+                  <code>NullableArrayOfOneDate mismatch: expecteds was &lt;null&gt;, but actuals was an array of
+                     length 6
+                  </code>
+               </td>
+            </tr>
+            <tr>
+               <td>Text:</td>
+               <td>
+                  <code>java.lang.AssertionError: NullableArrayOfOneDate mismatch: expecteds was <null>, but actuals was an array of length 6
+                     <br></br>	at com.dslplatform.ocd.javaasserts.DateAsserts.assertNullableArrayOfOneEquals(DateAsserts.java:61)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.DateAsserts.assertNullableArrayOfOneEquals(DateAsserts.java:67)
+                     <br></br>	at com.dslplatform.ocd.aggregates.AggregateTypeWithSurrogateKeyAndNullableArrayOfOneDatesPropertyWithinOneValueTest.testP0A1DaWithinOneV0A1DaDefaultPropertyValueInAggregateAfterActiveRecordPersist(Unknown Source)
+                     <br></br>
+                  </code>
+               </td>
             </tr>
          </table>
       </div>

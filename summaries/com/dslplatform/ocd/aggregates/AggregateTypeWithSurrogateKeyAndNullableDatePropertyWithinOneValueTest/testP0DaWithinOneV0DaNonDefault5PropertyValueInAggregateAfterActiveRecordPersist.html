@@ -22,8 +22,33 @@
             </tr>
             <tr>
                <td>testP0DaWithinOneV0DaNonDefault5PropertyValueInAggregateAfterActiveRecordPersist</td>
-               <td>Success</td>
-               <td>0.0</td>
+               <td>Failed</td>
+               <td>0.14</td>
+            </tr>
+         </table>
+         <h2>Errors:</h2>
+         <table class="table" style="width: 1500px">
+            <tr>
+               <td>Type:</td>
+               <td>java.lang.AssertionError</td>
+            </tr>
+            <tr>
+               <td>Message:</td>
+               <td>
+                  <code>NullableDate mismatch: expected was "2038-02-13", but actual was "9999-12-31"</code>
+               </td>
+            </tr>
+            <tr>
+               <td>Text:</td>
+               <td>
+                  <code>java.lang.AssertionError: NullableDate mismatch: expected was "2038-02-13", but actual was "9999-12-31"
+                     <br></br>	at com.dslplatform.ocd.javaasserts.DateAsserts.assertSingleEquals(DateAsserts.java:8)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.DateAsserts.assertNullableEquals(DateAsserts.java:26)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.DateAsserts.assertNullableEquals(DateAsserts.java:30)
+                     <br></br>	at com.dslplatform.ocd.aggregates.AggregateTypeWithSurrogateKeyAndNullableDatePropertyWithinOneValueTest.testP0DaWithinOneV0DaNonDefault5PropertyValueInAggregateAfterActiveRecordPersist(Unknown Source)
+                     <br></br>
+                  </code>
+               </td>
             </tr>
          </table>
       </div>

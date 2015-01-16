@@ -22,8 +22,35 @@
             </tr>
             <tr>
                <td>testP1A0LoNonDefault3PropertyValueInAggregateAfterActiveRecordPersist</td>
-               <td>Success</td>
-               <td>0.078</td>
+               <td>Failed</td>
+               <td>0.157</td>
+            </tr>
+         </table>
+         <h2>Errors:</h2>
+         <table class="table" style="width: 1500px">
+            <tr>
+               <td>Type:</td>
+               <td>java.lang.AssertionError</td>
+            </tr>
+            <tr>
+               <td>Message:</td>
+               <td>
+                  <code>OneArrayOfNullableLong mismatch: expecteds was an array of length 1, but actuals was
+                     an array of length 7
+                  </code>
+               </td>
+            </tr>
+            <tr>
+               <td>Text:</td>
+               <td>
+                  <code>java.lang.AssertionError: OneArrayOfNullableLong mismatch: expecteds was an array of length 1, but actuals was an array of length 7
+                     <br></br>	at com.dslplatform.ocd.javaasserts.LongAsserts.assertArrayOfNullableEquals(LongAsserts.java:64)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.LongAsserts.assertOneArrayOfNullableEquals(LongAsserts.java:76)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.LongAsserts.assertOneArrayOfNullableEquals(LongAsserts.java:80)
+                     <br></br>	at com.dslplatform.ocd.snowflakes.CalculatedOneArrayOfNullableLongsPropertyInSnowflakeTest.testP1A0LoNonDefault3PropertyValueInAggregateAfterActiveRecordPersist(Unknown Source)
+                     <br></br>
+                  </code>
+               </td>
             </tr>
          </table>
       </div>
