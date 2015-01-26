@@ -23,7 +23,7 @@
             <tr>
                <td>testP0A1StDefaultPropertyValueInAggregateAfterActiveRecordPersist</td>
                <td>Failed</td>
-               <td>0.125</td>
+               <td>2.928</td>
             </tr>
          </table>
          <h2>Errors:</h2>
@@ -35,28 +35,46 @@
             <tr>
                <td>Message:</td>
                <td>
-                  <code>java.util.concurrent.ExecutionException: com.dslplatform.client.exceptions.HttpUnexpectedCodeException:
-                     Can't deserialize AggregateSurrogateString.BA0A1St. Error: Invalid char found: f.
-                     Example: &#xD;
-                     
+                  <code>java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused:
+                     connect
                   </code>
                </td>
             </tr>
             <tr>
                <td>Text:</td>
                <td>
-                  <code>java.io.IOException: java.util.concurrent.ExecutionException: com.dslplatform.client.exceptions.HttpUnexpectedCodeException: Can't deserialize AggregateSurrogateString.BA0A1St. Error: Invalid char found: f. Example: 
-                     <br></br>
+                  <code>java.io.IOException: java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: connect
                      <br></br>	at ocd.AggregateSurrogateString.BA0A1St.create(Unknown Source)
                      <br></br>	at ocd.AggregateSurrogateString.BA0A1St.create(Unknown Source)
                      <br></br>	at com.dslplatform.ocd.aggregates.BigAggregateWithSurrogateKeyAndNullableArrayOfOneStringsPropertyTest.testP0A1StDefaultPropertyValueInAggregateAfterActiveRecordPersist(Unknown Source)
-                     <br></br>Caused by: java.util.concurrent.ExecutionException: com.dslplatform.client.exceptions.HttpUnexpectedCodeException: Can't deserialize AggregateSurrogateString.BA0A1St. Error: Invalid char found: f. Example: 
-                     <br></br>
+                     <br></br>Caused by: java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: connect
                      <br></br>	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
                      <br></br>	at java.util.concurrent.FutureTask.get(FutureTask.java:188)
-                     <br></br>Caused by: com.dslplatform.client.exceptions.HttpUnexpectedCodeException: Can't deserialize AggregateSurrogateString.BA0A1St. Error: Invalid char found: f. Example: 
-                     <br></br>
-                     <br></br>	at com.dslplatform.client.HttpClient.doRawRequest(HttpClient.java:228)
+                     <br></br>Caused by: java.net.ConnectException: Connection refused: connect
+                     <br></br>	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+                     <br></br>	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+                     <br></br>	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+                     <br></br>	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+                     <br></br>	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+                     <br></br>	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+                     <br></br>	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+                     <br></br>	at java.net.Socket.connect(Socket.java:579)
+                     <br></br>	at java.net.Socket.connect(Socket.java:528)
+                     <br></br>	at sun.net.NetworkClient.doConnect(NetworkClient.java:180)
+                     <br></br>	at sun.net.www.http.HttpClient.openServer(HttpClient.java:432)
+                     <br></br>	at sun.net.www.http.HttpClient.openServer(HttpClient.java:527)
+                     <br></br>	at sun.net.www.http.HttpClient.<init>(HttpClient.java:211)
+                     <br></br>	at sun.net.www.http.HttpClient.New(HttpClient.java:308)
+                     <br></br>	at sun.net.www.http.HttpClient.New(HttpClient.java:326)
+                     <br></br>	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:996)
+                     <br></br>	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:932)
+                     <br></br>	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:850)
+                     <br></br>	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1091)
+                     <br></br>	at com.dslplatform.client.HttpClient.transmit(HttpClient.java:433)
+                     <br></br>	at com.dslplatform.client.HttpClient.transmit(HttpClient.java:370)
+                     <br></br>	at com.dslplatform.client.HttpClient.transmit(HttpClient.java:382)
+                     <br></br>	at com.dslplatform.client.HttpClient.transmit(HttpClient.java:382)
+                     <br></br>	at com.dslplatform.client.HttpClient.doRawRequest(HttpClient.java:212)
                      <br></br>	at com.dslplatform.client.HttpClient.access$100(HttpClient.java:31)
                      <br></br>	at com.dslplatform.client.HttpClient$2.call(HttpClient.java:300)
                      <br></br>	at java.util.concurrent.FutureTask.run(FutureTask.java:262)

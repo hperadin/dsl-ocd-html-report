@@ -35,28 +35,22 @@
             <tr>
                <td>Message:</td>
                <td>
-                  <code>java.util.concurrent.ExecutionException: java.lang.IllegalArgumentException: Invalid
-                     format: "2014-12-24T10:59:10.&#xffef;&#xffbf;&#xff95;+01:00" is malformed at ".&#xffef;&#xffbf;&#xff95;+01:00"
+                  <code>java.util.concurrent.ExecutionException: java.io.IOException: Expecting '"' at position
+                     2. Found {
                   </code>
                </td>
             </tr>
             <tr>
                <td>Text:</td>
                <td>
-                  <code>java.io.IOException: java.util.concurrent.ExecutionException: java.lang.IllegalArgumentException: Invalid format: "2014-12-24T10:59:10.&#xffef;&#xffbf;&#xff95;+01:00" is malformed at ".&#xffef;&#xffbf;&#xff95;+01:00"
+                  <code>java.io.IOException: java.util.concurrent.ExecutionException: java.io.IOException: Expecting '"' at position 2. Found {
                      <br></br>	at com.dslplatform.ocd.aggregates.AggregateWithOneArrayOfNullableTimestampsPropertyAsPrimaryKeyTest.cleanup(Unknown Source)
                      <br></br>	at com.dslplatform.ocd.aggregates.AggregateWithOneArrayOfNullableTimestampsPropertyAsPrimaryKeyTest.testP1A0TsNonDefault2PropertyValueInAggregateAfterActiveRecordPersist(Unknown Source)
-                     <br></br>Caused by: java.util.concurrent.ExecutionException: java.lang.IllegalArgumentException: Invalid format: "2014-12-24T10:59:10.&#xffef;&#xffbf;&#xff95;+01:00" is malformed at ".&#xffef;&#xffbf;&#xff95;+01:00"
+                     <br></br>Caused by: java.util.concurrent.ExecutionException: java.io.IOException: Expecting '"' at position 2. Found {
                      <br></br>	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
                      <br></br>	at java.util.concurrent.FutureTask.get(FutureTask.java:188)
-                     <br></br>Caused by: java.lang.IllegalArgumentException: Invalid format: "2014-12-24T10:59:10.&#xffef;&#xffbf;&#xff95;+01:00" is malformed at ".&#xffef;&#xffbf;&#xff95;+01:00"
-                     <br></br>	at org.joda.time.format.DateTimeFormatter.parseDateTime(DateTimeFormatter.java:899)
-                     <br></br>	at com.dslplatform.client.json.DateConverter.deserializeDateTime(DateConverter.java:116)
-                     <br></br>	at com.dslplatform.client.json.DateConverter$1.read(DateConverter.java:123)
-                     <br></br>	at com.dslplatform.client.json.DateConverter$1.read(DateConverter.java:120)
-                     <br></br>	at com.dslplatform.client.json.JsonReader.deserializeNullableCollectionWithGet(JsonReader.java:635)
-                     <br></br>	at com.dslplatform.client.json.JsonReader.deserializeNullableCollectionWithGet(JsonReader.java:614)
-                     <br></br>	at com.dslplatform.client.json.DateConverter.deserializeDateTimeNullableCollection(DateConverter.java:136)
+                     <br></br>Caused by: java.io.IOException: Expecting '"' at position 2. Found {
+                     <br></br>	at com.dslplatform.client.json.JsonReader.fillName(JsonReader.java:404)
                      <br></br>	at ocd.AggregatePrimaryTimestamp.A1A0Ts.<init>(Unknown Source)
                      <br></br>	at ocd.AggregatePrimaryTimestamp.A1A0Ts.<init>(Unknown Source)
                      <br></br>	at ocd.AggregatePrimaryTimestamp.A1A0Ts$1.deserialize(Unknown Source)
