@@ -24,8 +24,8 @@
                <td>PrimarySingleString9</td>
                <td>141</td>
                <td>0</td>
-               <td>25</td>
-               <td>2.078</td>
+               <td>6</td>
+               <td>5.328</td>
             </tr>
          </table>
       </div>
@@ -40,31 +40,19 @@
             </tr>
             <tr class="danger">
                <td>
-                  <a href="&#xA;        ../../../../com/dslplatform/ocd/aggregates/AggregateWithOneArrayOfNullableStringsWithMaxLengthOf9PropertyAsPrimaryKeyTest/testP1A0S9DefaultPropertyValueInAggregateAfterActiveRecordPersist.html&#xA;    ">testP1A0S9DefaultPropertyValueInAggregateAfterActiveRecordPersist</a>
-                  <br></br>
-                  <a target="_blank" href="PrimarySingleString9_stacktrace.html#testP1A0S9DefaultPropertyValueInAggregateAfterActiveRecordPersist">(view stacktrace)</a>
-               </td>
-               <td>Failed</td>
-               <td>
-                  <code>java.util.concurrent.ExecutionException: java.io.IOException: Expecting '"' at position
-                     2. Found {
-                  </code>
-               </td>
-               <td>0.609</td>
-            </tr>
-            <tr class="danger">
-               <td>
                   <a href="&#xA;        ../../../../com/dslplatform/ocd/aggregates/AggregateWithOneArrayOfNullableStringsWithMaxLengthOf9PropertyAsPrimaryKeyTest/testP1A0S9NonDefault5PropertyValueInAggregateAfterActiveRecordPersist.html&#xA;    ">testP1A0S9NonDefault5PropertyValueInAggregateAfterActiveRecordPersist</a>
                   <br></br>
                   <a target="_blank" href="PrimarySingleString9_stacktrace.html#testP1A0S9NonDefault5PropertyValueInAggregateAfterActiveRecordPersist">(view stacktrace)</a>
                </td>
                <td>Failed</td>
                <td>
-                  <code>java.util.concurrent.ExecutionException: java.io.IOException: Expecting '"' at position
-                     2. Found {
+                  <code>java.util.concurrent.ExecutionException: java.io.IOException: ERROR: 22P02: malformed
+                     array literal: "{NULL,"","\""","'/\\\[](){}","	",xxxxxxxxx}"&#xD;
+                     SQL: SELECT r FROM "AggregatePrimaryString9"."A1A0S9_entity" r WHERE r."p1A0S9" IN
+                     ('{NULL,"","\""","''/\\\[](){}","	",xxxxxxxxx}')
                   </code>
                </td>
-               <td>0.031</td>
+               <td>0.657</td>
             </tr>
             <tr class="danger">
                <td>
@@ -74,53 +62,13 @@
                </td>
                <td>Failed</td>
                <td>
-                  <code>java.util.concurrent.ExecutionException: java.io.IOException: Expecting '"' at position
-                     2. Found {
+                  <code>java.util.concurrent.ExecutionException: java.io.IOException: ERROR: 22P02: malformed
+                     array literal: "{"","\""","'/\\\[](){}","	",xxxxxxxxx}"&#xD;
+                     SQL: SELECT r FROM "AggregatePrimaryString9"."A1A0S9_entity" r WHERE r."p1A0S9" IN
+                     ('{"","\""","''/\\\[](){}","	",xxxxxxxxx}')
                   </code>
                </td>
-               <td>0.015</td>
-            </tr>
-            <tr class="danger">
-               <td>
-                  <a href="&#xA;        ../../../../com/dslplatform/ocd/aggregates/AggregateWithOneArrayOfNullableStringsWithMaxLengthOf9PropertyAsPrimaryKeyTest/testP1A0S9NonDefault3PropertyValueInAggregateAfterActiveRecordPersist.html&#xA;    ">testP1A0S9NonDefault3PropertyValueInAggregateAfterActiveRecordPersist</a>
-                  <br></br>
-                  <a target="_blank" href="PrimarySingleString9_stacktrace.html#testP1A0S9NonDefault3PropertyValueInAggregateAfterActiveRecordPersist">(view stacktrace)</a>
-               </td>
-               <td>Failed</td>
-               <td>
-                  <code>java.util.concurrent.ExecutionException: java.io.IOException: Expecting '"' at position
-                     2. Found {
-                  </code>
-               </td>
-               <td>0.0</td>
-            </tr>
-            <tr class="danger">
-               <td>
-                  <a href="&#xA;        ../../../../com/dslplatform/ocd/aggregates/AggregateWithOneArrayOfNullableStringsWithMaxLengthOf9PropertyAsPrimaryKeyTest/testP1A0S9NonDefault2PropertyValueInAggregateAfterActiveRecordPersist.html&#xA;    ">testP1A0S9NonDefault2PropertyValueInAggregateAfterActiveRecordPersist</a>
-                  <br></br>
-                  <a target="_blank" href="PrimarySingleString9_stacktrace.html#testP1A0S9NonDefault2PropertyValueInAggregateAfterActiveRecordPersist">(view stacktrace)</a>
-               </td>
-               <td>Failed</td>
-               <td>
-                  <code>java.util.concurrent.ExecutionException: java.io.IOException: Expecting '"' at position
-                     2. Found {
-                  </code>
-               </td>
-               <td>0.0</td>
-            </tr>
-            <tr class="danger">
-               <td>
-                  <a href="&#xA;        ../../../../com/dslplatform/ocd/aggregates/AggregateWithOneArrayOfNullableStringsWithMaxLengthOf9PropertyAsPrimaryKeyTest/testP1A0S9NonDefault1PropertyValueInAggregateAfterActiveRecordPersist.html&#xA;    ">testP1A0S9NonDefault1PropertyValueInAggregateAfterActiveRecordPersist</a>
-                  <br></br>
-                  <a target="_blank" href="PrimarySingleString9_stacktrace.html#testP1A0S9NonDefault1PropertyValueInAggregateAfterActiveRecordPersist">(view stacktrace)</a>
-               </td>
-               <td>Failed</td>
-               <td>
-                  <code>java.util.concurrent.ExecutionException: java.io.IOException: Expecting '"' at position
-                     2. Found {
-                  </code>
-               </td>
-               <td>0.016</td>
+               <td>0.109</td>
             </tr>
             <tr class="danger">
                <td>
@@ -130,53 +78,13 @@
                </td>
                <td>Failed</td>
                <td>
-                  <code>java.util.concurrent.ExecutionException: java.io.IOException: Expecting '"' at position
-                     2. Found {
+                  <code>java.util.concurrent.ExecutionException: java.io.IOException: ERROR: 22P02: malformed
+                     array literal: "{"","\""","'/\\\[](){}","	",xxxxxxxxx}"&#xD;
+                     SQL: SELECT r FROM "AggregatePrimaryString9"."A1A1S9_entity" r WHERE r."p1A1S9" IN
+                     ('{"","\""","''/\\\[](){}","	",xxxxxxxxx}')
                   </code>
                </td>
-               <td>0.078</td>
-            </tr>
-            <tr class="danger">
-               <td>
-                  <a href="&#xA;        ../../../../com/dslplatform/ocd/aggregates/AggregateWithOneArrayOfOneStringsWithMaxLengthOf9PropertyAsPrimaryKeyTest/testP1A1S9NonDefault2PropertyValueInAggregateAfterActiveRecordPersist.html&#xA;    ">testP1A1S9NonDefault2PropertyValueInAggregateAfterActiveRecordPersist</a>
-                  <br></br>
-                  <a target="_blank" href="PrimarySingleString9_stacktrace.html#testP1A1S9NonDefault2PropertyValueInAggregateAfterActiveRecordPersist">(view stacktrace)</a>
-               </td>
-               <td>Failed</td>
-               <td>
-                  <code>java.util.concurrent.ExecutionException: java.io.IOException: Expecting '"' at position
-                     2. Found {
-                  </code>
-               </td>
-               <td>0.0</td>
-            </tr>
-            <tr class="danger">
-               <td>
-                  <a href="&#xA;        ../../../../com/dslplatform/ocd/aggregates/AggregateWithOneArrayOfOneStringsWithMaxLengthOf9PropertyAsPrimaryKeyTest/testP1A1S9NonDefault1PropertyValueInAggregateAfterActiveRecordPersist.html&#xA;    ">testP1A1S9NonDefault1PropertyValueInAggregateAfterActiveRecordPersist</a>
-                  <br></br>
-                  <a target="_blank" href="PrimarySingleString9_stacktrace.html#testP1A1S9NonDefault1PropertyValueInAggregateAfterActiveRecordPersist">(view stacktrace)</a>
-               </td>
-               <td>Failed</td>
-               <td>
-                  <code>java.util.concurrent.ExecutionException: java.io.IOException: Expecting '"' at position
-                     2. Found {
-                  </code>
-               </td>
-               <td>0.0</td>
-            </tr>
-            <tr class="danger">
-               <td>
-                  <a href="&#xA;        ../../../../com/dslplatform/ocd/aggregates/AggregateWithOneArrayOfOneStringsWithMaxLengthOf9PropertyAsPrimaryKeyTest/testP1A1S9DefaultPropertyValueInAggregateAfterActiveRecordPersist.html&#xA;    ">testP1A1S9DefaultPropertyValueInAggregateAfterActiveRecordPersist</a>
-                  <br></br>
-                  <a target="_blank" href="PrimarySingleString9_stacktrace.html#testP1A1S9DefaultPropertyValueInAggregateAfterActiveRecordPersist">(view stacktrace)</a>
-               </td>
-               <td>Failed</td>
-               <td>
-                  <code>java.util.concurrent.ExecutionException: java.io.IOException: Expecting '"' at position
-                     2. Found {
-                  </code>
-               </td>
-               <td>0.016</td>
+               <td>0.125</td>
             </tr>
             <tr class="danger">
                <td>
@@ -186,11 +94,13 @@
                </td>
                <td>Failed</td>
                <td>
-                  <code>java.util.concurrent.ExecutionException: java.io.IOException: Expecting '"' at position
-                     2. Found {
+                  <code>java.util.concurrent.ExecutionException: java.io.IOException: ERROR: 22P02: malformed
+                     array literal: "{NULL,"","\""","'/\\\[](){}","	",xxxxxxxxx}"&#xD;
+                     SQL: SELECT r FROM "AggregatePrimaryString9"."A1L0S9_entity" r WHERE r."p1L0S9" IN
+                     ('{NULL,"","\""","''/\\\[](){}","	",xxxxxxxxx}')
                   </code>
                </td>
-               <td>0.063</td>
+               <td>0.125</td>
             </tr>
             <tr class="danger">
                <td>
@@ -200,81 +110,13 @@
                </td>
                <td>Failed</td>
                <td>
-                  <code>java.util.concurrent.ExecutionException: java.io.IOException: Expecting '"' at position
-                     2. Found {
+                  <code>java.util.concurrent.ExecutionException: java.io.IOException: ERROR: 22P02: malformed
+                     array literal: "{"","\""","'/\\\[](){}","	",xxxxxxxxx}"&#xD;
+                     SQL: SELECT r FROM "AggregatePrimaryString9"."A1L0S9_entity" r WHERE r."p1L0S9" IN
+                     ('{"","\""","''/\\\[](){}","	",xxxxxxxxx}')
                   </code>
                </td>
-               <td>0.016</td>
-            </tr>
-            <tr class="danger">
-               <td>
-                  <a href="&#xA;        ../../../../com/dslplatform/ocd/aggregates/AggregateWithOneListOfNullableStringsWithMaxLengthOf9PropertyAsPrimaryKeyTest/testP1L0S9NonDefault3PropertyValueInAggregateAfterActiveRecordPersist.html&#xA;    ">testP1L0S9NonDefault3PropertyValueInAggregateAfterActiveRecordPersist</a>
-                  <br></br>
-                  <a target="_blank" href="PrimarySingleString9_stacktrace.html#testP1L0S9NonDefault3PropertyValueInAggregateAfterActiveRecordPersist">(view stacktrace)</a>
-               </td>
-               <td>Failed</td>
-               <td>
-                  <code>java.util.concurrent.ExecutionException: java.io.IOException: Expecting '"' at position
-                     2. Found {
-                  </code>
-               </td>
-               <td>0.0</td>
-            </tr>
-            <tr class="danger">
-               <td>
-                  <a href="&#xA;        ../../../../com/dslplatform/ocd/aggregates/AggregateWithOneListOfNullableStringsWithMaxLengthOf9PropertyAsPrimaryKeyTest/testP1L0S9NonDefault2PropertyValueInAggregateAfterActiveRecordPersist.html&#xA;    ">testP1L0S9NonDefault2PropertyValueInAggregateAfterActiveRecordPersist</a>
-                  <br></br>
-                  <a target="_blank" href="PrimarySingleString9_stacktrace.html#testP1L0S9NonDefault2PropertyValueInAggregateAfterActiveRecordPersist">(view stacktrace)</a>
-               </td>
-               <td>Failed</td>
-               <td>
-                  <code>java.util.concurrent.ExecutionException: java.io.IOException: Expecting '"' at position
-                     2. Found {
-                  </code>
-               </td>
-               <td>0.0</td>
-            </tr>
-            <tr class="danger">
-               <td>
-                  <a href="&#xA;        ../../../../com/dslplatform/ocd/aggregates/AggregateWithOneListOfNullableStringsWithMaxLengthOf9PropertyAsPrimaryKeyTest/testP1L0S9NonDefault1PropertyValueInAggregateAfterActiveRecordPersist.html&#xA;    ">testP1L0S9NonDefault1PropertyValueInAggregateAfterActiveRecordPersist</a>
-                  <br></br>
-                  <a target="_blank" href="PrimarySingleString9_stacktrace.html#testP1L0S9NonDefault1PropertyValueInAggregateAfterActiveRecordPersist">(view stacktrace)</a>
-               </td>
-               <td>Failed</td>
-               <td>
-                  <code>java.util.concurrent.ExecutionException: java.io.IOException: Expecting '"' at position
-                     2. Found {
-                  </code>
-               </td>
-               <td>0.109</td>
-            </tr>
-            <tr class="danger">
-               <td>
-                  <a href="&#xA;        ../../../../com/dslplatform/ocd/aggregates/AggregateWithOneListOfNullableStringsWithMaxLengthOf9PropertyAsPrimaryKeyTest/testP1L0S9DefaultPropertyValueInAggregateAfterActiveRecordPersist.html&#xA;    ">testP1L0S9DefaultPropertyValueInAggregateAfterActiveRecordPersist</a>
-                  <br></br>
-                  <a target="_blank" href="PrimarySingleString9_stacktrace.html#testP1L0S9DefaultPropertyValueInAggregateAfterActiveRecordPersist">(view stacktrace)</a>
-               </td>
-               <td>Failed</td>
-               <td>
-                  <code>java.util.concurrent.ExecutionException: java.io.IOException: Expecting '"' at position
-                     2. Found {
-                  </code>
-               </td>
-               <td>0.0</td>
-            </tr>
-            <tr class="danger">
-               <td>
-                  <a href="&#xA;        ../../../../com/dslplatform/ocd/aggregates/AggregateWithOneListOfOneStringsWithMaxLengthOf9PropertyAsPrimaryKeyTest/testP1L1S9DefaultPropertyValueInAggregateAfterActiveRecordPersist.html&#xA;    ">testP1L1S9DefaultPropertyValueInAggregateAfterActiveRecordPersist</a>
-                  <br></br>
-                  <a target="_blank" href="PrimarySingleString9_stacktrace.html#testP1L1S9DefaultPropertyValueInAggregateAfterActiveRecordPersist">(view stacktrace)</a>
-               </td>
-               <td>Failed</td>
-               <td>
-                  <code>java.util.concurrent.ExecutionException: java.io.IOException: Expecting '"' at position
-                     2. Found {
-                  </code>
-               </td>
-               <td>0.109</td>
+               <td>0.547</td>
             </tr>
             <tr class="danger">
                <td>
@@ -284,109 +126,13 @@
                </td>
                <td>Failed</td>
                <td>
-                  <code>java.util.concurrent.ExecutionException: java.io.IOException: Expecting '"' at position
-                     2. Found {
+                  <code>java.util.concurrent.ExecutionException: java.io.IOException: ERROR: 22P02: malformed
+                     array literal: "{"","\""","'/\\\[](){}","	",xxxxxxxxx}"&#xD;
+                     SQL: SELECT r FROM "AggregatePrimaryString9"."A1L1S9_entity" r WHERE r."p1L1S9" IN
+                     ('{"","\""","''/\\\[](){}","	",xxxxxxxxx}')
                   </code>
                </td>
-               <td>0.0</td>
-            </tr>
-            <tr class="danger">
-               <td>
-                  <a href="&#xA;        ../../../../com/dslplatform/ocd/aggregates/AggregateWithOneListOfOneStringsWithMaxLengthOf9PropertyAsPrimaryKeyTest/testP1L1S9NonDefault2PropertyValueInAggregateAfterActiveRecordPersist.html&#xA;    ">testP1L1S9NonDefault2PropertyValueInAggregateAfterActiveRecordPersist</a>
-                  <br></br>
-                  <a target="_blank" href="PrimarySingleString9_stacktrace.html#testP1L1S9NonDefault2PropertyValueInAggregateAfterActiveRecordPersist">(view stacktrace)</a>
-               </td>
-               <td>Failed</td>
-               <td>
-                  <code>java.util.concurrent.ExecutionException: java.io.IOException: Expecting '"' at position
-                     2. Found {
-                  </code>
-               </td>
-               <td>0.0</td>
-            </tr>
-            <tr class="danger">
-               <td>
-                  <a href="&#xA;        ../../../../com/dslplatform/ocd/aggregates/AggregateWithOneListOfOneStringsWithMaxLengthOf9PropertyAsPrimaryKeyTest/testP1L1S9NonDefault1PropertyValueInAggregateAfterActiveRecordPersist.html&#xA;    ">testP1L1S9NonDefault1PropertyValueInAggregateAfterActiveRecordPersist</a>
-                  <br></br>
-                  <a target="_blank" href="PrimarySingleString9_stacktrace.html#testP1L1S9NonDefault1PropertyValueInAggregateAfterActiveRecordPersist">(view stacktrace)</a>
-               </td>
-               <td>Failed</td>
-               <td>
-                  <code>java.util.concurrent.ExecutionException: java.io.IOException: Expecting '"' at position
-                     2. Found {
-                  </code>
-               </td>
-               <td>0.063</td>
-            </tr>
-            <tr class="danger">
-               <td>
-                  <a href="&#xA;        ../../../../com/dslplatform/ocd/aggregates/AggregateWithOneStringWithMaxLengthOf9PropertyAsPrimaryKeyTest/testP1S9DefaultPropertyValueInAggregateAfterActiveRecordPersist.html&#xA;    ">testP1S9DefaultPropertyValueInAggregateAfterActiveRecordPersist</a>
-                  <br></br>
-                  <a target="_blank" href="PrimarySingleString9_stacktrace.html#testP1S9DefaultPropertyValueInAggregateAfterActiveRecordPersist">(view stacktrace)</a>
-               </td>
-               <td>Failed</td>
-               <td>
-                  <code>java.util.concurrent.ExecutionException: java.io.IOException: Expecting '"' at position
-                     2. Found {
-                  </code>
-               </td>
-               <td>0.11</td>
-            </tr>
-            <tr class="danger">
-               <td>
-                  <a href="&#xA;        ../../../../com/dslplatform/ocd/aggregates/AggregateWithOneStringWithMaxLengthOf9PropertyAsPrimaryKeyTest/testP1S9NonDefault4PropertyValueInAggregateAfterActiveRecordPersist.html&#xA;    ">testP1S9NonDefault4PropertyValueInAggregateAfterActiveRecordPersist</a>
-                  <br></br>
-                  <a target="_blank" href="PrimarySingleString9_stacktrace.html#testP1S9NonDefault4PropertyValueInAggregateAfterActiveRecordPersist">(view stacktrace)</a>
-               </td>
-               <td>Failed</td>
-               <td>
-                  <code>java.util.concurrent.ExecutionException: java.io.IOException: Expecting '"' at position
-                     2. Found {
-                  </code>
-               </td>
-               <td>0.0</td>
-            </tr>
-            <tr class="danger">
-               <td>
-                  <a href="&#xA;        ../../../../com/dslplatform/ocd/aggregates/AggregateWithOneStringWithMaxLengthOf9PropertyAsPrimaryKeyTest/testP1S9NonDefault3PropertyValueInAggregateAfterActiveRecordPersist.html&#xA;    ">testP1S9NonDefault3PropertyValueInAggregateAfterActiveRecordPersist</a>
-                  <br></br>
-                  <a target="_blank" href="PrimarySingleString9_stacktrace.html#testP1S9NonDefault3PropertyValueInAggregateAfterActiveRecordPersist">(view stacktrace)</a>
-               </td>
-               <td>Failed</td>
-               <td>
-                  <code>java.util.concurrent.ExecutionException: java.io.IOException: Expecting '"' at position
-                     2. Found {
-                  </code>
-               </td>
-               <td>0.0</td>
-            </tr>
-            <tr class="danger">
-               <td>
-                  <a href="&#xA;        ../../../../com/dslplatform/ocd/aggregates/AggregateWithOneStringWithMaxLengthOf9PropertyAsPrimaryKeyTest/testP1S9NonDefault2PropertyValueInAggregateAfterActiveRecordPersist.html&#xA;    ">testP1S9NonDefault2PropertyValueInAggregateAfterActiveRecordPersist</a>
-                  <br></br>
-                  <a target="_blank" href="PrimarySingleString9_stacktrace.html#testP1S9NonDefault2PropertyValueInAggregateAfterActiveRecordPersist">(view stacktrace)</a>
-               </td>
-               <td>Failed</td>
-               <td>
-                  <code>java.util.concurrent.ExecutionException: java.io.IOException: Expecting '"' at position
-                     2. Found {
-                  </code>
-               </td>
-               <td>0.016</td>
-            </tr>
-            <tr class="danger">
-               <td>
-                  <a href="&#xA;        ../../../../com/dslplatform/ocd/aggregates/AggregateWithOneStringWithMaxLengthOf9PropertyAsPrimaryKeyTest/testP1S9NonDefault1PropertyValueInAggregateAfterActiveRecordPersist.html&#xA;    ">testP1S9NonDefault1PropertyValueInAggregateAfterActiveRecordPersist</a>
-                  <br></br>
-                  <a target="_blank" href="PrimarySingleString9_stacktrace.html#testP1S9NonDefault1PropertyValueInAggregateAfterActiveRecordPersist">(view stacktrace)</a>
-               </td>
-               <td>Failed</td>
-               <td>
-                  <code>java.util.concurrent.ExecutionException: java.io.IOException: Expecting '"' at position
-                     2. Found {
-                  </code>
-               </td>
-               <td>0.0</td>
+               <td>0.047</td>
             </tr>
          </table>
       </div>
@@ -401,6 +147,18 @@
             </tr>
             <tr class="">
                <td>
+                  <a href="&#xA;        ../../../../com/dslplatform/ocd/aggregates/AggregateWithOneArrayOfNullableStringsWithMaxLengthOf9PropertyAsPrimaryKeyTest/testP1A0S9DefaultPropertyValueInAggregateAfterActiveRecordPersist.html&#xA;    ">testP1A0S9DefaultPropertyValueInAggregateAfterActiveRecordPersist</a>
+                  <br></br>
+                  <a target="_blank" href="PrimarySingleString9_stacktrace.html#testP1A0S9DefaultPropertyValueInAggregateAfterActiveRecordPersist">(view stacktrace)</a>
+               </td>
+               <td>Success</td>
+               <td>
+                  <code></code>
+               </td>
+               <td>1.516</td>
+            </tr>
+            <tr class="">
+               <td>
                   <a href="&#xA;        ../../../../com/dslplatform/ocd/aggregates/AggregateWithOneArrayOfNullableStringsWithMaxLengthOf9PropertyAsPrimaryKeyTest/testP1A0S9NonDefault5PropertyInAggregateJsonSerialization.html&#xA;    ">testP1A0S9NonDefault5PropertyInAggregateJsonSerialization</a>
                   <br></br>
                   <a target="_blank" href="PrimarySingleString9_stacktrace.html#testP1A0S9NonDefault5PropertyInAggregateJsonSerialization">(view stacktrace)</a>
@@ -409,7 +167,7 @@
                <td>
                   <code></code>
                </td>
-               <td>0.063</td>
+               <td>0.016</td>
             </tr>
             <tr class="">
                <td>
@@ -445,7 +203,7 @@
                <td>
                   <code></code>
                </td>
-               <td>0.016</td>
+               <td>0.0</td>
             </tr>
             <tr class="">
                <td>
@@ -545,6 +303,30 @@
             </tr>
             <tr class="">
                <td>
+                  <a href="&#xA;        ../../../../com/dslplatform/ocd/aggregates/AggregateWithOneArrayOfNullableStringsWithMaxLengthOf9PropertyAsPrimaryKeyTest/testP1A0S9NonDefault3PropertyValueInAggregateAfterActiveRecordPersist.html&#xA;    ">testP1A0S9NonDefault3PropertyValueInAggregateAfterActiveRecordPersist</a>
+                  <br></br>
+                  <a target="_blank" href="PrimarySingleString9_stacktrace.html#testP1A0S9NonDefault3PropertyValueInAggregateAfterActiveRecordPersist">(view stacktrace)</a>
+               </td>
+               <td>Success</td>
+               <td>
+                  <code></code>
+               </td>
+               <td>0.031</td>
+            </tr>
+            <tr class="">
+               <td>
+                  <a href="&#xA;        ../../../../com/dslplatform/ocd/aggregates/AggregateWithOneArrayOfNullableStringsWithMaxLengthOf9PropertyAsPrimaryKeyTest/testP1A0S9NonDefault2PropertyValueInAggregateAfterActiveRecordPersist.html&#xA;    ">testP1A0S9NonDefault2PropertyValueInAggregateAfterActiveRecordPersist</a>
+                  <br></br>
+                  <a target="_blank" href="PrimarySingleString9_stacktrace.html#testP1A0S9NonDefault2PropertyValueInAggregateAfterActiveRecordPersist">(view stacktrace)</a>
+               </td>
+               <td>Success</td>
+               <td>
+                  <code></code>
+               </td>
+               <td>0.11</td>
+            </tr>
+            <tr class="">
+               <td>
                   <a href="&#xA;        ../../../../com/dslplatform/ocd/aggregates/AggregateWithOneArrayOfNullableStringsWithMaxLengthOf9PropertyAsPrimaryKeyTest/testP1A0S9PropertyFieldPrivateVisibility.html&#xA;    ">testP1A0S9PropertyFieldPrivateVisibility</a>
                   <br></br>
                   <a target="_blank" href="PrimarySingleString9_stacktrace.html#testP1A0S9PropertyFieldPrivateVisibility">(view stacktrace)</a>
@@ -554,6 +336,18 @@
                   <code></code>
                </td>
                <td>0.0</td>
+            </tr>
+            <tr class="">
+               <td>
+                  <a href="&#xA;        ../../../../com/dslplatform/ocd/aggregates/AggregateWithOneArrayOfNullableStringsWithMaxLengthOf9PropertyAsPrimaryKeyTest/testP1A0S9NonDefault1PropertyValueInAggregateAfterActiveRecordPersist.html&#xA;    ">testP1A0S9NonDefault1PropertyValueInAggregateAfterActiveRecordPersist</a>
+                  <br></br>
+                  <a target="_blank" href="PrimarySingleString9_stacktrace.html#testP1A0S9NonDefault1PropertyValueInAggregateAfterActiveRecordPersist">(view stacktrace)</a>
+               </td>
+               <td>Success</td>
+               <td>
+                  <code></code>
+               </td>
+               <td>0.062</td>
             </tr>
             <tr class="">
                <td>
@@ -613,7 +407,7 @@
                <td>
                   <code></code>
                </td>
-               <td>0.0</td>
+               <td>0.016</td>
             </tr>
             <tr class="">
                <td>
@@ -637,7 +431,7 @@
                <td>
                   <code></code>
                </td>
-               <td>0.047</td>
+               <td>0.0</td>
             </tr>
             <tr class="">
                <td>
@@ -685,7 +479,7 @@
                <td>
                   <code></code>
                </td>
-               <td>0.015</td>
+               <td>0.0</td>
             </tr>
             <tr class="">
                <td>
@@ -737,6 +531,30 @@
             </tr>
             <tr class="">
                <td>
+                  <a href="&#xA;        ../../../../com/dslplatform/ocd/aggregates/AggregateWithOneArrayOfOneStringsWithMaxLengthOf9PropertyAsPrimaryKeyTest/testP1A1S9NonDefault2PropertyValueInAggregateAfterActiveRecordPersist.html&#xA;    ">testP1A1S9NonDefault2PropertyValueInAggregateAfterActiveRecordPersist</a>
+                  <br></br>
+                  <a target="_blank" href="PrimarySingleString9_stacktrace.html#testP1A1S9NonDefault2PropertyValueInAggregateAfterActiveRecordPersist">(view stacktrace)</a>
+               </td>
+               <td>Success</td>
+               <td>
+                  <code></code>
+               </td>
+               <td>0.11</td>
+            </tr>
+            <tr class="">
+               <td>
+                  <a href="&#xA;        ../../../../com/dslplatform/ocd/aggregates/AggregateWithOneArrayOfOneStringsWithMaxLengthOf9PropertyAsPrimaryKeyTest/testP1A1S9NonDefault1PropertyValueInAggregateAfterActiveRecordPersist.html&#xA;    ">testP1A1S9NonDefault1PropertyValueInAggregateAfterActiveRecordPersist</a>
+                  <br></br>
+                  <a target="_blank" href="PrimarySingleString9_stacktrace.html#testP1A1S9NonDefault1PropertyValueInAggregateAfterActiveRecordPersist">(view stacktrace)</a>
+               </td>
+               <td>Success</td>
+               <td>
+                  <code></code>
+               </td>
+               <td>0.047</td>
+            </tr>
+            <tr class="">
+               <td>
                   <a href="&#xA;        ../../../../com/dslplatform/ocd/aggregates/AggregateWithOneArrayOfOneStringsWithMaxLengthOf9PropertyAsPrimaryKeyTest/testP1A1S9PropertyGetterPublicVisibility.html&#xA;    ">testP1A1S9PropertyGetterPublicVisibility</a>
                   <br></br>
                   <a target="_blank" href="PrimarySingleString9_stacktrace.html#testP1A1S9PropertyGetterPublicVisibility">(view stacktrace)</a>
@@ -773,6 +591,18 @@
             </tr>
             <tr class="">
                <td>
+                  <a href="&#xA;        ../../../../com/dslplatform/ocd/aggregates/AggregateWithOneArrayOfOneStringsWithMaxLengthOf9PropertyAsPrimaryKeyTest/testP1A1S9DefaultPropertyValueInAggregateAfterActiveRecordPersist.html&#xA;    ">testP1A1S9DefaultPropertyValueInAggregateAfterActiveRecordPersist</a>
+                  <br></br>
+                  <a target="_blank" href="PrimarySingleString9_stacktrace.html#testP1A1S9DefaultPropertyValueInAggregateAfterActiveRecordPersist">(view stacktrace)</a>
+               </td>
+               <td>Success</td>
+               <td>
+                  <code></code>
+               </td>
+               <td>0.125</td>
+            </tr>
+            <tr class="">
+               <td>
                   <a href="&#xA;        ../../../../com/dslplatform/ocd/aggregates/AggregateWithOneArrayOfOneStringsWithMaxLengthOf9PropertyAsPrimaryKeyTest/testP1A1S9PropertyFieldClass.html&#xA;    ">testP1A1S9PropertyFieldClass</a>
                   <br></br>
                   <a target="_blank" href="PrimarySingleString9_stacktrace.html#testP1A1S9PropertyFieldClass">(view stacktrace)</a>
@@ -793,7 +623,7 @@
                <td>
                   <code></code>
                </td>
-               <td>0.0</td>
+               <td>0.015</td>
             </tr>
             <tr class="">
                <td>
@@ -841,7 +671,7 @@
                <td>
                   <code></code>
                </td>
-               <td>0.046</td>
+               <td>0.0</td>
             </tr>
             <tr class="">
                <td>
@@ -974,6 +804,42 @@
                   <code></code>
                </td>
                <td>0.0</td>
+            </tr>
+            <tr class="">
+               <td>
+                  <a href="&#xA;        ../../../../com/dslplatform/ocd/aggregates/AggregateWithOneListOfNullableStringsWithMaxLengthOf9PropertyAsPrimaryKeyTest/testP1L0S9NonDefault3PropertyValueInAggregateAfterActiveRecordPersist.html&#xA;    ">testP1L0S9NonDefault3PropertyValueInAggregateAfterActiveRecordPersist</a>
+                  <br></br>
+                  <a target="_blank" href="PrimarySingleString9_stacktrace.html#testP1L0S9NonDefault3PropertyValueInAggregateAfterActiveRecordPersist">(view stacktrace)</a>
+               </td>
+               <td>Success</td>
+               <td>
+                  <code></code>
+               </td>
+               <td>0.11</td>
+            </tr>
+            <tr class="">
+               <td>
+                  <a href="&#xA;        ../../../../com/dslplatform/ocd/aggregates/AggregateWithOneListOfNullableStringsWithMaxLengthOf9PropertyAsPrimaryKeyTest/testP1L0S9NonDefault2PropertyValueInAggregateAfterActiveRecordPersist.html&#xA;    ">testP1L0S9NonDefault2PropertyValueInAggregateAfterActiveRecordPersist</a>
+                  <br></br>
+                  <a target="_blank" href="PrimarySingleString9_stacktrace.html#testP1L0S9NonDefault2PropertyValueInAggregateAfterActiveRecordPersist">(view stacktrace)</a>
+               </td>
+               <td>Success</td>
+               <td>
+                  <code></code>
+               </td>
+               <td>0.078</td>
+            </tr>
+            <tr class="">
+               <td>
+                  <a href="&#xA;        ../../../../com/dslplatform/ocd/aggregates/AggregateWithOneListOfNullableStringsWithMaxLengthOf9PropertyAsPrimaryKeyTest/testP1L0S9NonDefault1PropertyValueInAggregateAfterActiveRecordPersist.html&#xA;    ">testP1L0S9NonDefault1PropertyValueInAggregateAfterActiveRecordPersist</a>
+                  <br></br>
+                  <a target="_blank" href="PrimarySingleString9_stacktrace.html#testP1L0S9NonDefault1PropertyValueInAggregateAfterActiveRecordPersist">(view stacktrace)</a>
+               </td>
+               <td>Success</td>
+               <td>
+                  <code></code>
+               </td>
+               <td>0.062</td>
             </tr>
             <tr class="">
                <td>
@@ -1117,7 +983,7 @@
                <td>
                   <code></code>
                </td>
-               <td>0.0</td>
+               <td>0.047</td>
             </tr>
             <tr class="">
                <td>
@@ -1141,7 +1007,19 @@
                <td>
                   <code></code>
                </td>
-               <td>0.015</td>
+               <td>0.0</td>
+            </tr>
+            <tr class="">
+               <td>
+                  <a href="&#xA;        ../../../../com/dslplatform/ocd/aggregates/AggregateWithOneListOfNullableStringsWithMaxLengthOf9PropertyAsPrimaryKeyTest/testP1L0S9DefaultPropertyValueInAggregateAfterActiveRecordPersist.html&#xA;    ">testP1L0S9DefaultPropertyValueInAggregateAfterActiveRecordPersist</a>
+                  <br></br>
+                  <a target="_blank" href="PrimarySingleString9_stacktrace.html#testP1L0S9DefaultPropertyValueInAggregateAfterActiveRecordPersist">(view stacktrace)</a>
+               </td>
+               <td>Success</td>
+               <td>
+                  <code></code>
+               </td>
+               <td>0.047</td>
             </tr>
             <tr class="">
                <td>
@@ -1189,7 +1067,7 @@
                <td>
                   <code></code>
                </td>
-               <td>0.016</td>
+               <td>0.0</td>
             </tr>
             <tr class="">
                <td>
@@ -1274,6 +1152,18 @@
                   <code></code>
                </td>
                <td>0.0</td>
+            </tr>
+            <tr class="">
+               <td>
+                  <a href="&#xA;        ../../../../com/dslplatform/ocd/aggregates/AggregateWithOneListOfOneStringsWithMaxLengthOf9PropertyAsPrimaryKeyTest/testP1L1S9DefaultPropertyValueInAggregateAfterActiveRecordPersist.html&#xA;    ">testP1L1S9DefaultPropertyValueInAggregateAfterActiveRecordPersist</a>
+                  <br></br>
+                  <a target="_blank" href="PrimarySingleString9_stacktrace.html#testP1L1S9DefaultPropertyValueInAggregateAfterActiveRecordPersist">(view stacktrace)</a>
+               </td>
+               <td>Success</td>
+               <td>
+                  <code></code>
+               </td>
+               <td>0.14</td>
             </tr>
             <tr class="">
                <td>
@@ -1369,7 +1259,7 @@
                <td>
                   <code></code>
                </td>
-               <td>0.016</td>
+               <td>0.0</td>
             </tr>
             <tr class="">
                <td>
@@ -1453,7 +1343,7 @@
                <td>
                   <code></code>
                </td>
-               <td>0.0</td>
+               <td>0.016</td>
             </tr>
             <tr class="">
                <td>
@@ -1465,7 +1355,7 @@
                <td>
                   <code></code>
                </td>
-               <td>0.015</td>
+               <td>0.0</td>
             </tr>
             <tr class="">
                <td>
@@ -1490,6 +1380,30 @@
                   <code></code>
                </td>
                <td>0.0</td>
+            </tr>
+            <tr class="">
+               <td>
+                  <a href="&#xA;        ../../../../com/dslplatform/ocd/aggregates/AggregateWithOneListOfOneStringsWithMaxLengthOf9PropertyAsPrimaryKeyTest/testP1L1S9NonDefault2PropertyValueInAggregateAfterActiveRecordPersist.html&#xA;    ">testP1L1S9NonDefault2PropertyValueInAggregateAfterActiveRecordPersist</a>
+                  <br></br>
+                  <a target="_blank" href="PrimarySingleString9_stacktrace.html#testP1L1S9NonDefault2PropertyValueInAggregateAfterActiveRecordPersist">(view stacktrace)</a>
+               </td>
+               <td>Success</td>
+               <td>
+                  <code></code>
+               </td>
+               <td>0.125</td>
+            </tr>
+            <tr class="">
+               <td>
+                  <a href="&#xA;        ../../../../com/dslplatform/ocd/aggregates/AggregateWithOneListOfOneStringsWithMaxLengthOf9PropertyAsPrimaryKeyTest/testP1L1S9NonDefault1PropertyValueInAggregateAfterActiveRecordPersist.html&#xA;    ">testP1L1S9NonDefault1PropertyValueInAggregateAfterActiveRecordPersist</a>
+                  <br></br>
+                  <a target="_blank" href="PrimarySingleString9_stacktrace.html#testP1L1S9NonDefault1PropertyValueInAggregateAfterActiveRecordPersist">(view stacktrace)</a>
+               </td>
+               <td>Success</td>
+               <td>
+                  <code></code>
+               </td>
+               <td>0.062</td>
             </tr>
             <tr class="">
                <td>
@@ -1537,7 +1451,7 @@
                <td>
                   <code></code>
                </td>
-               <td>0.016</td>
+               <td>0.0</td>
             </tr>
             <tr class="">
                <td>
@@ -1549,7 +1463,7 @@
                <td>
                   <code></code>
                </td>
-               <td>0.0</td>
+               <td>0.016</td>
             </tr>
             <tr class="">
                <td>
@@ -1757,6 +1671,18 @@
             </tr>
             <tr class="">
                <td>
+                  <a href="&#xA;        ../../../../com/dslplatform/ocd/aggregates/AggregateWithOneStringWithMaxLengthOf9PropertyAsPrimaryKeyTest/testP1S9DefaultPropertyValueInAggregateAfterActiveRecordPersist.html&#xA;    ">testP1S9DefaultPropertyValueInAggregateAfterActiveRecordPersist</a>
+                  <br></br>
+                  <a target="_blank" href="PrimarySingleString9_stacktrace.html#testP1S9DefaultPropertyValueInAggregateAfterActiveRecordPersist">(view stacktrace)</a>
+               </td>
+               <td>Success</td>
+               <td>
+                  <code></code>
+               </td>
+               <td>0.125</td>
+            </tr>
+            <tr class="">
+               <td>
                   <a href="&#xA;        ../../../../com/dslplatform/ocd/aggregates/AggregateWithOneStringWithMaxLengthOf9PropertyAsPrimaryKeyTest/testURIPropertyGetterClass.html&#xA;    ">testURIPropertyGetterClass</a>
                   <br></br>
                   <a target="_blank" href="PrimarySingleString9_stacktrace.html#testURIPropertyGetterClass">(view stacktrace)</a>
@@ -1777,7 +1703,55 @@
                <td>
                   <code></code>
                </td>
-               <td>0.015</td>
+               <td>0.0</td>
+            </tr>
+            <tr class="">
+               <td>
+                  <a href="&#xA;        ../../../../com/dslplatform/ocd/aggregates/AggregateWithOneStringWithMaxLengthOf9PropertyAsPrimaryKeyTest/testP1S9NonDefault4PropertyValueInAggregateAfterActiveRecordPersist.html&#xA;    ">testP1S9NonDefault4PropertyValueInAggregateAfterActiveRecordPersist</a>
+                  <br></br>
+                  <a target="_blank" href="PrimarySingleString9_stacktrace.html#testP1S9NonDefault4PropertyValueInAggregateAfterActiveRecordPersist">(view stacktrace)</a>
+               </td>
+               <td>Success</td>
+               <td>
+                  <code></code>
+               </td>
+               <td>0.062</td>
+            </tr>
+            <tr class="">
+               <td>
+                  <a href="&#xA;        ../../../../com/dslplatform/ocd/aggregates/AggregateWithOneStringWithMaxLengthOf9PropertyAsPrimaryKeyTest/testP1S9NonDefault3PropertyValueInAggregateAfterActiveRecordPersist.html&#xA;    ">testP1S9NonDefault3PropertyValueInAggregateAfterActiveRecordPersist</a>
+                  <br></br>
+                  <a target="_blank" href="PrimarySingleString9_stacktrace.html#testP1S9NonDefault3PropertyValueInAggregateAfterActiveRecordPersist">(view stacktrace)</a>
+               </td>
+               <td>Success</td>
+               <td>
+                  <code></code>
+               </td>
+               <td>0.031</td>
+            </tr>
+            <tr class="">
+               <td>
+                  <a href="&#xA;        ../../../../com/dslplatform/ocd/aggregates/AggregateWithOneStringWithMaxLengthOf9PropertyAsPrimaryKeyTest/testP1S9NonDefault2PropertyValueInAggregateAfterActiveRecordPersist.html&#xA;    ">testP1S9NonDefault2PropertyValueInAggregateAfterActiveRecordPersist</a>
+                  <br></br>
+                  <a target="_blank" href="PrimarySingleString9_stacktrace.html#testP1S9NonDefault2PropertyValueInAggregateAfterActiveRecordPersist">(view stacktrace)</a>
+               </td>
+               <td>Success</td>
+               <td>
+                  <code></code>
+               </td>
+               <td>0.11</td>
+            </tr>
+            <tr class="">
+               <td>
+                  <a href="&#xA;        ../../../../com/dslplatform/ocd/aggregates/AggregateWithOneStringWithMaxLengthOf9PropertyAsPrimaryKeyTest/testP1S9NonDefault1PropertyValueInAggregateAfterActiveRecordPersist.html&#xA;    ">testP1S9NonDefault1PropertyValueInAggregateAfterActiveRecordPersist</a>
+                  <br></br>
+                  <a target="_blank" href="PrimarySingleString9_stacktrace.html#testP1S9NonDefault1PropertyValueInAggregateAfterActiveRecordPersist">(view stacktrace)</a>
+               </td>
+               <td>Success</td>
+               <td>
+                  <code></code>
+               </td>
+               <td>0.078</td>
             </tr>
             <tr class="">
                <td>
