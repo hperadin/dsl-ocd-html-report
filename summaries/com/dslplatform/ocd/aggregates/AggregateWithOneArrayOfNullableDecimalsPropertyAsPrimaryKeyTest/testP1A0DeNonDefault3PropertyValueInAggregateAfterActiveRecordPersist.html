@@ -23,7 +23,7 @@
             <tr>
                <td>testP1A0DeNonDefault3PropertyValueInAggregateAfterActiveRecordPersist</td>
                <td>Failed</td>
-               <td>0.062</td>
+               <td>0.031</td>
             </tr>
          </table>
          <h2>Errors:</h2>
@@ -36,8 +36,8 @@
                <td>Message:</td>
                <td>
                   <code>java.util.concurrent.ExecutionException: com.dslplatform.client.exceptions.HttpUnexpectedCodeException:
-                     Can't deserialize AggregatePrimaryDecimal.A1A0De. Error: Expecting ']' at position
-                     -1. Found E. Example: &#xD;
+                     Can't deserialize AggregatePrimaryDecimal.A1A0De. Error: Input string was not in a
+                     correct format.. Example: &#xD;
                      
                   </code>
                </td>
@@ -45,16 +45,16 @@
             <tr>
                <td>Text:</td>
                <td>
-                  <code>java.io.IOException: java.util.concurrent.ExecutionException: com.dslplatform.client.exceptions.HttpUnexpectedCodeException: Can't deserialize AggregatePrimaryDecimal.A1A0De. Error: Expecting ']' at position -1. Found E. Example: 
+                  <code>java.io.IOException: java.util.concurrent.ExecutionException: com.dslplatform.client.exceptions.HttpUnexpectedCodeException: Can't deserialize AggregatePrimaryDecimal.A1A0De. Error: Input string was not in a correct format.. Example: 
                      <br></br>
                      <br></br>	at ocd.AggregatePrimaryDecimal.A1A0De.create(Unknown Source)
                      <br></br>	at ocd.AggregatePrimaryDecimal.A1A0De.create(Unknown Source)
                      <br></br>	at com.dslplatform.ocd.aggregates.AggregateWithOneArrayOfNullableDecimalsPropertyAsPrimaryKeyTest.testP1A0DeNonDefault3PropertyValueInAggregateAfterActiveRecordPersist(Unknown Source)
-                     <br></br>Caused by: java.util.concurrent.ExecutionException: com.dslplatform.client.exceptions.HttpUnexpectedCodeException: Can't deserialize AggregatePrimaryDecimal.A1A0De. Error: Expecting ']' at position -1. Found E. Example: 
+                     <br></br>Caused by: java.util.concurrent.ExecutionException: com.dslplatform.client.exceptions.HttpUnexpectedCodeException: Can't deserialize AggregatePrimaryDecimal.A1A0De. Error: Input string was not in a correct format.. Example: 
                      <br></br>
                      <br></br>	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
                      <br></br>	at java.util.concurrent.FutureTask.get(FutureTask.java:188)
-                     <br></br>Caused by: com.dslplatform.client.exceptions.HttpUnexpectedCodeException: Can't deserialize AggregatePrimaryDecimal.A1A0De. Error: Expecting ']' at position -1. Found E. Example: 
+                     <br></br>Caused by: com.dslplatform.client.exceptions.HttpUnexpectedCodeException: Can't deserialize AggregatePrimaryDecimal.A1A0De. Error: Input string was not in a correct format.. Example: 
                      <br></br>
                      <br></br>	at com.dslplatform.client.HttpClient.doRawRequest(HttpClient.java:239)
                      <br></br>	at com.dslplatform.client.HttpClient.access$100(HttpClient.java:40)
