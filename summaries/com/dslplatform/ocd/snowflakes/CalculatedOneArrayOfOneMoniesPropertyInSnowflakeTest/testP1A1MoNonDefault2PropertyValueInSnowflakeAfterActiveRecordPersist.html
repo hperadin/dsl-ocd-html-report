@@ -22,8 +22,37 @@
             </tr>
             <tr>
                <td>testP1A1MoNonDefault2PropertyValueInSnowflakeAfterActiveRecordPersist</td>
-               <td>Success</td>
+               <td>Failed</td>
                <td>0.031</td>
+            </tr>
+         </table>
+         <h2>Errors:</h2>
+         <table class="table" style="width: 1500px">
+            <tr>
+               <td>Type:</td>
+               <td>java.lang.AssertionError</td>
+            </tr>
+            <tr>
+               <td>Message:</td>
+               <td>
+                  <code>OneArrayOfOneMoney mismatch: element mismatch occurred at index 0: expected was "1E+19",
+                     but actual was "38758200196842127.36"
+                  </code>
+               </td>
+            </tr>
+            <tr>
+               <td>Text:</td>
+               <td>
+                  <code>java.lang.AssertionError: OneArrayOfOneMoney mismatch: element mismatch occurred at index 0: expected was "1E+19", but actual was "38758200196842127.36"
+                     <br></br>	at com.dslplatform.ocd.javaasserts.MoneyAsserts.assertSingleEquals(MoneyAsserts.java:22)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.MoneyAsserts.assertOneEquals(MoneyAsserts.java:29)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.MoneyAsserts.assertArrayOfOneEquals(MoneyAsserts.java:53)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.MoneyAsserts.assertOneArrayOfOneEquals(MoneyAsserts.java:66)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.MoneyAsserts.assertOneArrayOfOneEquals(MoneyAsserts.java:70)
+                     <br></br>	at com.dslplatform.ocd.snowflakes.CalculatedOneArrayOfOneMoniesPropertyInSnowflakeTest.testP1A1MoNonDefault2PropertyValueInSnowflakeAfterActiveRecordPersist(Unknown Source)
+                     <br></br>
+                  </code>
+               </td>
             </tr>
          </table>
       </div>

@@ -22,8 +22,37 @@
             </tr>
             <tr>
                <td>testP0L0MoNonDefault5PropertyValueInSnowflakeAfterActiveRecordPersist</td>
-               <td>Success</td>
-               <td>0.063</td>
+               <td>Failed</td>
+               <td>0.078</td>
+            </tr>
+         </table>
+         <h2>Errors:</h2>
+         <table class="table" style="width: 1500px">
+            <tr>
+               <td>Type:</td>
+               <td>java.lang.AssertionError</td>
+            </tr>
+            <tr>
+               <td>Message:</td>
+               <td>
+                  <code>NullableListOfNullableMoney mismatch: element mismatch occurred at index 5: expected
+                     was "1E+19", but actual was "38758200196842127.36"
+                  </code>
+               </td>
+            </tr>
+            <tr>
+               <td>Text:</td>
+               <td>
+                  <code>java.lang.AssertionError: NullableListOfNullableMoney mismatch: element mismatch occurred at index 5: expected was "1E+19", but actual was "38758200196842127.36"
+                     <br></br>	at com.dslplatform.ocd.javaasserts.MoneyAsserts.assertSingleEquals(MoneyAsserts.java:22)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.MoneyAsserts.assertNullableEquals(MoneyAsserts.java:40)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.MoneyAsserts.assertListOfNullableEquals(MoneyAsserts.java:172)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.MoneyAsserts.assertNullableListOfNullableEquals(MoneyAsserts.java:191)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.MoneyAsserts.assertNullableListOfNullableEquals(MoneyAsserts.java:195)
+                     <br></br>	at com.dslplatform.ocd.snowflakes.CalculatedNullableListOfNullableMoniesPropertyInSnowflakeTest.testP0L0MoNonDefault5PropertyValueInSnowflakeAfterActiveRecordPersist(Unknown Source)
+                     <br></br>
+                  </code>
+               </td>
             </tr>
          </table>
       </div>

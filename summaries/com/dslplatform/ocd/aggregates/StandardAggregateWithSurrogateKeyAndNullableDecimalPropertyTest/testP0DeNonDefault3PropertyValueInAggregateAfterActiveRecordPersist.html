@@ -22,8 +22,35 @@
             </tr>
             <tr>
                <td>testP0DeNonDefault3PropertyValueInAggregateAfterActiveRecordPersist</td>
-               <td>Success</td>
-               <td>0.015</td>
+               <td>Failed</td>
+               <td>0.016</td>
+            </tr>
+         </table>
+         <h2>Errors:</h2>
+         <table class="table" style="width: 1500px">
+            <tr>
+               <td>Type:</td>
+               <td>java.lang.AssertionError</td>
+            </tr>
+            <tr>
+               <td>Message:</td>
+               <td>
+                  <code>NullableDecimal mismatch: expected was "3.1415926535897932384626433833", but actual
+                     was "7.98325178935697193E-11"
+                  </code>
+               </td>
+            </tr>
+            <tr>
+               <td>Text:</td>
+               <td>
+                  <code>java.lang.AssertionError: NullableDecimal mismatch: expected was "3.1415926535897932384626433833", but actual was "7.98325178935697193E-11"
+                     <br></br>	at com.dslplatform.ocd.javaasserts.DecimalAsserts.assertSingleEquals(DecimalAsserts.java:8)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.DecimalAsserts.assertNullableEquals(DecimalAsserts.java:26)
+                     <br></br>	at com.dslplatform.ocd.javaasserts.DecimalAsserts.assertNullableEquals(DecimalAsserts.java:30)
+                     <br></br>	at com.dslplatform.ocd.aggregates.StandardAggregateWithSurrogateKeyAndNullableDecimalPropertyTest.testP0DeNonDefault3PropertyValueInAggregateAfterActiveRecordPersist(Unknown Source)
+                     <br></br>
+                  </code>
+               </td>
             </tr>
          </table>
       </div>
