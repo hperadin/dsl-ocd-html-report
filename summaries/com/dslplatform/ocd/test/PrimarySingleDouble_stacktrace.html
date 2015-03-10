@@ -2,92 +2,111 @@
    <head></head>
    <body><a id="testP1A0DoNonDefault2PropertyInAggregateJsonSerialization"/><h2>testP1A0DoNonDefault2PropertyInAggregateJsonSerialization</h2>
       <br></br><a id="testP1A0DoDefaultPropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1A0DoDefaultPropertyValueInAggregateAfterActiveRecordPersist</h2>
-      <br></br>2015-02-11 11:38:23,893 [HttpClient.java:203] Sending request [GET]: Domain.svc/search/AggregatePrimaryDouble.A1A0Do?limit=2147483647&offset=0
-      <br></br>2015-02-11 11:38:23,893 [HttpClient.java:430] GET http://localhost:2007/Domain.svc/search/AggregatePrimaryDouble.A1A0Do?limit=2147483647&offset=0
-      <br></br>2015-02-11 11:38:23,893 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-02-11 11:38:23,893 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-02-11 11:38:24,909 [HttpClient.java:227] Received response [200, 1024 bytes] in 1016 ms
-      <br></br>2015-02-11 11:38:24,909 [HttpClient.java:230] Received response body: [{"URI":"{NULL,0,9.99999999999999909e-308,9.0000000000000005e+307,-1.23456789012345006e-10,1.23456789012344996e+20,-Infinity,Infinity,NaN}","p1A0Do":[null,0,1E-307,9E+307,-1.23456789012345E-10,1.23456789012345E+20,-Infinity,Infinity,NaN]}]
-      <br></br>2015-02-11 11:38:24,940 [HttpClient.java:218] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 319 bytes
-      <br></br>2015-02-11 11:38:24,940 [HttpClient.java:430] POST http://localhost:2007/RestApplication.svc/PersistAggregateRoot
-      <br></br>2015-02-11 11:38:24,940 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-02-11 11:38:24,940 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-02-11 11:38:24,940 [HttpClient.java:443] Adding payload: {"RootName":"AggregatePrimaryDouble.A1A0Do","ToDelete":"[{\"p1A0Do\":[null,0.0,1.0E-307,9.0E307,-1.23456789012345E-10,1.23456789012345E20,\"-Infinity\",\"Infinity\",\"NaN\"],\"uri\":\"{NULL,0,9.99999999999999909e-308,9.0000000000000005e+307,-1.23456789012345006e-10,1.23456789012344996e+20,-Infinity,Infinity,NaN}\"}]"}
-      <br></br>2015-02-11 11:38:25,299 [HttpClient.java:389] At http://localhost:2007/RestApplication.svc/PersistAggregateRoot [500] Input string was not in a correct format.
-      <br></br>2015-02-11 11:38:25,299 [HttpClient.java:390] Error connecting to http://localhost:2007/RestApplication.svc/PersistAggregateRoot. Trying next server if exists...
+      <br></br>2015-03-10 13:23:50,651 [HttpClient.java:203] Sending request [GET]: Domain.svc/search/AggregatePrimaryDouble.A1A0Do?limit=2147483647&offset=0
+      <br></br>2015-03-10 13:23:50,656 [HttpClient.java:430] GET http://localhost:2007/Domain.svc/search/AggregatePrimaryDouble.A1A0Do?limit=2147483647&offset=0
+      <br></br>2015-03-10 13:23:50,657 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-10 13:23:50,657 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-10 13:23:51,238 [HttpClient.java:227] Received response [200, 1024 bytes] in 587 ms
+      <br></br>2015-03-10 13:23:51,238 [HttpClient.java:230] Received response body: []
+      <br></br>2015-03-10 13:23:51,241 [HttpClient.java:218] Sending request [POST]: Crud.svc/AggregatePrimaryDouble.A1A0Do, content size: 18 bytes
+      <br></br>2015-03-10 13:23:51,241 [HttpClient.java:430] POST http://localhost:2007/Crud.svc/AggregatePrimaryDouble.A1A0Do
+      <br></br>2015-03-10 13:23:51,242 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-10 13:23:51,242 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-10 13:23:51,242 [HttpClient.java:443] Adding payload: {"URI":"44197733"}
+      <br></br>2015-03-10 13:23:51,342 [HttpClient.java:227] Received response [201, 1024 bytes] in 102 ms
+      <br></br>2015-03-10 13:23:51,342 [HttpClient.java:230] Received response body: {"URI":"{}","p1A0Do":[]}
+      <br></br>2015-03-10 13:23:51,343 [HttpClient.java:203] Sending request [GET]: Crud.svc/AggregatePrimaryDouble.A1A0Do?uri=%7B%7D
+      <br></br>2015-03-10 13:23:51,343 [HttpClient.java:430] GET http://localhost:2007/Crud.svc/AggregatePrimaryDouble.A1A0Do?uri=%7B%7D
+      <br></br>2015-03-10 13:23:51,344 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-10 13:23:51,344 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-10 13:23:51,375 [HttpClient.java:227] Received response [200, 1024 bytes] in 32 ms
+      <br></br>2015-03-10 13:23:51,375 [HttpClient.java:230] Received response body: {"URI":"{}","p1A0Do":[]}
       <br></br><a id="testNonExistenceOfURIPropertySetter"/><h2>testNonExistenceOfURIPropertySetter</h2>
       <br></br><a id="testP1A0DoNonDefault3PropertyInAggregateJsonSerialization"/><h2>testP1A0DoNonDefault3PropertyInAggregateJsonSerialization</h2>
       <br></br><a id="testP1A0DoPropertyGetterModifiers"/><h2>testP1A0DoPropertyGetterModifiers</h2>
       <br></br><a id="testP1A0DoNonDefault5PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1A0DoNonDefault5PropertyValueInAggregateAfterActiveRecordPersist</h2>
-      <br></br>2015-02-11 11:38:25,315 [HttpClient.java:203] Sending request [GET]: Domain.svc/search/AggregatePrimaryDouble.A1A0Do?limit=2147483647&offset=0
-      <br></br>2015-02-11 11:38:25,315 [HttpClient.java:430] GET http://localhost:2007/Domain.svc/search/AggregatePrimaryDouble.A1A0Do?limit=2147483647&offset=0
-      <br></br>2015-02-11 11:38:25,315 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-02-11 11:38:25,315 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-02-11 11:38:25,315 [HttpClient.java:227] Received response [200, 1024 bytes] in 0 ms
-      <br></br>2015-02-11 11:38:25,315 [HttpClient.java:230] Received response body: [{"URI":"{NULL,0,9.99999999999999909e-308,9.0000000000000005e+307,-1.23456789012345006e-10,1.23456789012344996e+20,-Infinity,Infinity,NaN}","p1A0Do":[null,0,1E-307,9E+307,-1.23456789012345E-10,1.23456789012345E+20,-Infinity,Infinity,NaN]}]
-      <br></br>2015-02-11 11:38:25,315 [HttpClient.java:218] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 319 bytes
-      <br></br>2015-02-11 11:38:25,315 [HttpClient.java:430] POST http://localhost:2007/RestApplication.svc/PersistAggregateRoot
-      <br></br>2015-02-11 11:38:25,315 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-02-11 11:38:25,315 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-02-11 11:38:25,315 [HttpClient.java:443] Adding payload: {"RootName":"AggregatePrimaryDouble.A1A0Do","ToDelete":"[{\"p1A0Do\":[null,0.0,1.0E-307,9.0E307,-1.23456789012345E-10,1.23456789012345E20,\"-Infinity\",\"Infinity\",\"NaN\"],\"uri\":\"{NULL,0,9.99999999999999909e-308,9.0000000000000005e+307,-1.23456789012345006e-10,1.23456789012344996e+20,-Infinity,Infinity,NaN}\"}]"}
-      <br></br>2015-02-11 11:38:25,315 [HttpClient.java:389] At http://localhost:2007/RestApplication.svc/PersistAggregateRoot [500] Input string was not in a correct format.
-      <br></br>2015-02-11 11:38:25,315 [HttpClient.java:390] Error connecting to http://localhost:2007/RestApplication.svc/PersistAggregateRoot. Trying next server if exists...
+      <br></br>2015-03-10 13:23:51,379 [HttpClient.java:203] Sending request [GET]: Domain.svc/search/AggregatePrimaryDouble.A1A0Do?limit=2147483647&offset=0
+      <br></br>2015-03-10 13:23:51,379 [HttpClient.java:430] GET http://localhost:2007/Domain.svc/search/AggregatePrimaryDouble.A1A0Do?limit=2147483647&offset=0
+      <br></br>2015-03-10 13:23:51,379 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-10 13:23:51,379 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-10 13:23:51,386 [HttpClient.java:227] Received response [200, 1024 bytes] in 7 ms
+      <br></br>2015-03-10 13:23:51,386 [HttpClient.java:230] Received response body: [{"URI":"{}","p1A0Do":[]}]
+      <br></br>2015-03-10 13:23:51,401 [HttpClient.java:218] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 90 bytes
+      <br></br>2015-03-10 13:23:51,401 [HttpClient.java:430] POST http://localhost:2007/RestApplication.svc/PersistAggregateRoot
+      <br></br>2015-03-10 13:23:51,401 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-10 13:23:51,401 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-10 13:23:51,402 [HttpClient.java:443] Adding payload: {"RootName":"AggregatePrimaryDouble.A1A0Do","ToDelete":"[{\"p1A0Do\":[],\"uri\":\"{}\"}]"}
+      <br></br>2015-03-10 13:23:51,756 [HttpClient.java:227] Received response [200, 1024 bytes] in 366 ms
+      <br></br>2015-03-10 13:23:51,757 [HttpClient.java:230] Received response body: []
+      <br></br>2015-03-10 13:23:51,767 [HttpClient.java:218] Sending request [POST]: Crud.svc/AggregatePrimaryDouble.A1A0Do, content size: 122 bytes
+      <br></br>2015-03-10 13:23:51,767 [HttpClient.java:430] POST http://localhost:2007/Crud.svc/AggregatePrimaryDouble.A1A0Do
+      <br></br>2015-03-10 13:23:51,767 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-10 13:23:51,767 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-10 13:23:51,767 [HttpClient.java:443] Adding payload: {"URI":"1013313546","p1A0Do":[null,0.0,1.0E-307,9.0E307,-1.23456789012345E-10,1.23456789012345E20,-Infinity,Infinity,NaN]}
+      <br></br>2015-03-10 13:23:51,780 [HttpClient.java:227] Received response [201, 1024 bytes] in 16 ms
+      <br></br>2015-03-10 13:23:51,781 [HttpClient.java:230] Received response body: {"URI":"{NULL,0,1E-307,9E+307,-1.23456789012345E-10,1.23456789012345E+20,-Infinity,Infinity,NaN}","p1A0Do":[null,0,1E-307,9E+307,-1.23456789012345E-10,1.23456789012345E+20,-Infinity,Infinity,NaN]}
+      <br></br>2015-03-10 13:23:51,782 [HttpClient.java:203] Sending request [GET]: Crud.svc/AggregatePrimaryDouble.A1A0Do?uri=%7BNULL%2C0%2C1E-307%2C9E%2B307%2C-1.23456789012345E-10%2C1.23456789012345E%2B20%2C-Infinity%2CInfinity%2CNaN%7D
+      <br></br>2015-03-10 13:23:51,782 [HttpClient.java:430] GET http://localhost:2007/Crud.svc/AggregatePrimaryDouble.A1A0Do?uri=%7BNULL%2C0%2C1E-307%2C9E%2B307%2C-1.23456789012345E-10%2C1.23456789012345E%2B20%2C-Infinity%2CInfinity%2CNaN%7D
+      <br></br>2015-03-10 13:23:51,782 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-10 13:23:51,782 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-10 13:23:51,799 [HttpClient.java:227] Received response [200, 1024 bytes] in 17 ms
+      <br></br>2015-03-10 13:23:51,799 [HttpClient.java:230] Received response body: {"URI":"{NULL,0,1E-307,9E+307,-1.23456789012345E-10,1.23456789012345E+20,-Infinity,Infinity,NaN}","p1A0Do":[null,0,1E-307,9E+307,-1.23456789012345E-10,1.23456789012345E+20,-Infinity,Infinity,NaN]}
       <br></br><a id="testP1A0DoNonDefault4PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1A0DoNonDefault4PropertyValueInAggregateAfterActiveRecordPersist</h2>
-      <br></br>2015-02-11 11:38:25,362 [HttpClient.java:203] Sending request [GET]: Domain.svc/search/AggregatePrimaryDouble.A1A0Do?limit=2147483647&offset=0
-      <br></br>2015-02-11 11:38:25,362 [HttpClient.java:430] GET http://localhost:2007/Domain.svc/search/AggregatePrimaryDouble.A1A0Do?limit=2147483647&offset=0
-      <br></br>2015-02-11 11:38:25,362 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-02-11 11:38:25,362 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-02-11 11:38:25,362 [HttpClient.java:227] Received response [200, 1024 bytes] in 0 ms
-      <br></br>2015-02-11 11:38:25,362 [HttpClient.java:230] Received response body: [{"URI":"{NULL,0,9.99999999999999909e-308,9.0000000000000005e+307,-1.23456789012345006e-10,1.23456789012344996e+20,-Infinity,Infinity,NaN}","p1A0Do":[null,0,1E-307,9E+307,-1.23456789012345E-10,1.23456789012345E+20,-Infinity,Infinity,NaN]}]
-      <br></br>2015-02-11 11:38:25,362 [HttpClient.java:218] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 319 bytes
-      <br></br>2015-02-11 11:38:25,362 [HttpClient.java:430] POST http://localhost:2007/RestApplication.svc/PersistAggregateRoot
-      <br></br>2015-02-11 11:38:25,362 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-02-11 11:38:25,362 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-02-11 11:38:25,362 [HttpClient.java:443] Adding payload: {"RootName":"AggregatePrimaryDouble.A1A0Do","ToDelete":"[{\"p1A0Do\":[null,0.0,1.0E-307,9.0E307,-1.23456789012345E-10,1.23456789012345E20,\"-Infinity\",\"Infinity\",\"NaN\"],\"uri\":\"{NULL,0,9.99999999999999909e-308,9.0000000000000005e+307,-1.23456789012345006e-10,1.23456789012344996e+20,-Infinity,Infinity,NaN}\"}]"}
-      <br></br>2015-02-11 11:38:25,362 [HttpClient.java:389] At http://localhost:2007/RestApplication.svc/PersistAggregateRoot [500] Input string was not in a correct format.
-      <br></br>2015-02-11 11:38:25,362 [HttpClient.java:390] Error connecting to http://localhost:2007/RestApplication.svc/PersistAggregateRoot. Trying next server if exists...
+      <br></br>2015-03-10 13:23:51,800 [HttpClient.java:203] Sending request [GET]: Domain.svc/search/AggregatePrimaryDouble.A1A0Do?limit=2147483647&offset=0
+      <br></br>2015-03-10 13:23:51,800 [HttpClient.java:430] GET http://localhost:2007/Domain.svc/search/AggregatePrimaryDouble.A1A0Do?limit=2147483647&offset=0
+      <br></br>2015-03-10 13:23:51,800 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-10 13:23:51,800 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-10 13:23:51,804 [HttpClient.java:227] Received response [200, 1024 bytes] in 4 ms
+      <br></br>2015-03-10 13:23:51,805 [HttpClient.java:230] Received response body: [{"URI":"{NULL,0,1E-307,9E+307,-1.23456789012345E-10,1.23456789012345E+20,-Infinity,Infinity,NaN}","p1A0Do":[null,0,1E-307,9E+307,-1.23456789012345E-10,1.23456789012345E+20,-Infinity,Infinity,NaN]}]
+      <br></br>2015-03-10 13:23:51,805 [HttpClient.java:218] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 278 bytes
+      <br></br>2015-03-10 13:23:51,805 [HttpClient.java:430] POST http://localhost:2007/RestApplication.svc/PersistAggregateRoot
+      <br></br>2015-03-10 13:23:51,806 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-10 13:23:51,806 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-10 13:23:51,806 [HttpClient.java:443] Adding payload: {"RootName":"AggregatePrimaryDouble.A1A0Do","ToDelete":"[{\"p1A0Do\":[null,0.0,1.0E-307,9.0E307,-1.23456789012345E-10,1.23456789012345E20,\"-Infinity\",\"Infinity\",\"NaN\"],\"uri\":\"{NULL,0,1E-307,9E+307,-1.23456789012345E-10,1.23456789012345E+20,-Infinity,Infinity,NaN}\"}]"}
+      <br></br>2015-03-10 13:23:51,822 [HttpClient.java:389] At http://localhost:2007/RestApplication.svc/PersistAggregateRoot [500] Input string was not in a correct format.
+      <br></br>2015-03-10 13:23:51,823 [HttpClient.java:390] Error connecting to http://localhost:2007/RestApplication.svc/PersistAggregateRoot. Trying next server if exists...
       <br></br><a id="testP1A0DoNonDefault3PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1A0DoNonDefault3PropertyValueInAggregateAfterActiveRecordPersist</h2>
-      <br></br>2015-02-11 11:38:25,378 [HttpClient.java:203] Sending request [GET]: Domain.svc/search/AggregatePrimaryDouble.A1A0Do?limit=2147483647&offset=0
-      <br></br>2015-02-11 11:38:25,378 [HttpClient.java:430] GET http://localhost:2007/Domain.svc/search/AggregatePrimaryDouble.A1A0Do?limit=2147483647&offset=0
-      <br></br>2015-02-11 11:38:25,378 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-02-11 11:38:25,378 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-02-11 11:38:25,378 [HttpClient.java:227] Received response [200, 1024 bytes] in 0 ms
-      <br></br>2015-02-11 11:38:25,378 [HttpClient.java:230] Received response body: [{"URI":"{NULL,0,9.99999999999999909e-308,9.0000000000000005e+307,-1.23456789012345006e-10,1.23456789012344996e+20,-Infinity,Infinity,NaN}","p1A0Do":[null,0,1E-307,9E+307,-1.23456789012345E-10,1.23456789012345E+20,-Infinity,Infinity,NaN]}]
-      <br></br>2015-02-11 11:38:25,378 [HttpClient.java:218] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 319 bytes
-      <br></br>2015-02-11 11:38:25,378 [HttpClient.java:430] POST http://localhost:2007/RestApplication.svc/PersistAggregateRoot
-      <br></br>2015-02-11 11:38:25,378 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-02-11 11:38:25,378 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-02-11 11:38:25,378 [HttpClient.java:443] Adding payload: {"RootName":"AggregatePrimaryDouble.A1A0Do","ToDelete":"[{\"p1A0Do\":[null,0.0,1.0E-307,9.0E307,-1.23456789012345E-10,1.23456789012345E20,\"-Infinity\",\"Infinity\",\"NaN\"],\"uri\":\"{NULL,0,9.99999999999999909e-308,9.0000000000000005e+307,-1.23456789012345006e-10,1.23456789012344996e+20,-Infinity,Infinity,NaN}\"}]"}
-      <br></br>2015-02-11 11:38:25,378 [HttpClient.java:389] At http://localhost:2007/RestApplication.svc/PersistAggregateRoot [500] Input string was not in a correct format.
-      <br></br>2015-02-11 11:38:25,378 [HttpClient.java:390] Error connecting to http://localhost:2007/RestApplication.svc/PersistAggregateRoot. Trying next server if exists...
+      <br></br>2015-03-10 13:23:51,828 [HttpClient.java:203] Sending request [GET]: Domain.svc/search/AggregatePrimaryDouble.A1A0Do?limit=2147483647&offset=0
+      <br></br>2015-03-10 13:23:51,829 [HttpClient.java:430] GET http://localhost:2007/Domain.svc/search/AggregatePrimaryDouble.A1A0Do?limit=2147483647&offset=0
+      <br></br>2015-03-10 13:23:51,829 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-10 13:23:51,829 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-10 13:23:51,832 [HttpClient.java:227] Received response [200, 1024 bytes] in 4 ms
+      <br></br>2015-03-10 13:23:51,832 [HttpClient.java:230] Received response body: [{"URI":"{NULL,0,1E-307,9E+307,-1.23456789012345E-10,1.23456789012345E+20,-Infinity,Infinity,NaN}","p1A0Do":[null,0,1E-307,9E+307,-1.23456789012345E-10,1.23456789012345E+20,-Infinity,Infinity,NaN]}]
+      <br></br>2015-03-10 13:23:51,832 [HttpClient.java:218] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 278 bytes
+      <br></br>2015-03-10 13:23:51,833 [HttpClient.java:430] POST http://localhost:2007/RestApplication.svc/PersistAggregateRoot
+      <br></br>2015-03-10 13:23:51,882 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-10 13:23:51,882 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-10 13:23:51,882 [HttpClient.java:443] Adding payload: {"RootName":"AggregatePrimaryDouble.A1A0Do","ToDelete":"[{\"p1A0Do\":[null,0.0,1.0E-307,9.0E307,-1.23456789012345E-10,1.23456789012345E20,\"-Infinity\",\"Infinity\",\"NaN\"],\"uri\":\"{NULL,0,1E-307,9E+307,-1.23456789012345E-10,1.23456789012345E+20,-Infinity,Infinity,NaN}\"}]"}
+      <br></br>2015-03-10 13:23:51,884 [HttpClient.java:389] At http://localhost:2007/RestApplication.svc/PersistAggregateRoot [500] Input string was not in a correct format.
+      <br></br>2015-03-10 13:23:51,884 [HttpClient.java:390] Error connecting to http://localhost:2007/RestApplication.svc/PersistAggregateRoot. Trying next server if exists...
       <br></br><a id="testP1A0DoNonDefault2PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1A0DoNonDefault2PropertyValueInAggregateAfterActiveRecordPersist</h2>
-      <br></br>2015-02-11 11:38:25,471 [HttpClient.java:203] Sending request [GET]: Domain.svc/search/AggregatePrimaryDouble.A1A0Do?limit=2147483647&offset=0
-      <br></br>2015-02-11 11:38:25,471 [HttpClient.java:430] GET http://localhost:2007/Domain.svc/search/AggregatePrimaryDouble.A1A0Do?limit=2147483647&offset=0
-      <br></br>2015-02-11 11:38:25,471 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-02-11 11:38:25,471 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-02-11 11:38:25,503 [HttpClient.java:227] Received response [200, 1024 bytes] in 32 ms
-      <br></br>2015-02-11 11:38:25,503 [HttpClient.java:230] Received response body: [{"URI":"{NULL,0,9.99999999999999909e-308,9.0000000000000005e+307,-1.23456789012345006e-10,1.23456789012344996e+20,-Infinity,Infinity,NaN}","p1A0Do":[null,0,1E-307,9E+307,-1.23456789012345E-10,1.23456789012345E+20,-Infinity,Infinity,NaN]}]
-      <br></br>2015-02-11 11:38:25,503 [HttpClient.java:218] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 319 bytes
-      <br></br>2015-02-11 11:38:25,503 [HttpClient.java:430] POST http://localhost:2007/RestApplication.svc/PersistAggregateRoot
-      <br></br>2015-02-11 11:38:25,503 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-02-11 11:38:25,503 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-02-11 11:38:25,503 [HttpClient.java:443] Adding payload: {"RootName":"AggregatePrimaryDouble.A1A0Do","ToDelete":"[{\"p1A0Do\":[null,0.0,1.0E-307,9.0E307,-1.23456789012345E-10,1.23456789012345E20,\"-Infinity\",\"Infinity\",\"NaN\"],\"uri\":\"{NULL,0,9.99999999999999909e-308,9.0000000000000005e+307,-1.23456789012345006e-10,1.23456789012344996e+20,-Infinity,Infinity,NaN}\"}]"}
-      <br></br>2015-02-11 11:38:25,518 [HttpClient.java:389] At http://localhost:2007/RestApplication.svc/PersistAggregateRoot [500] Input string was not in a correct format.
-      <br></br>2015-02-11 11:38:25,518 [HttpClient.java:390] Error connecting to http://localhost:2007/RestApplication.svc/PersistAggregateRoot. Trying next server if exists...
+      <br></br>2015-03-10 13:23:51,885 [HttpClient.java:203] Sending request [GET]: Domain.svc/search/AggregatePrimaryDouble.A1A0Do?limit=2147483647&offset=0
+      <br></br>2015-03-10 13:23:51,886 [HttpClient.java:430] GET http://localhost:2007/Domain.svc/search/AggregatePrimaryDouble.A1A0Do?limit=2147483647&offset=0
+      <br></br>2015-03-10 13:23:51,886 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-10 13:23:51,886 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-10 13:23:51,888 [HttpClient.java:227] Received response [200, 1024 bytes] in 3 ms
+      <br></br>2015-03-10 13:23:51,888 [HttpClient.java:230] Received response body: [{"URI":"{NULL,0,1E-307,9E+307,-1.23456789012345E-10,1.23456789012345E+20,-Infinity,Infinity,NaN}","p1A0Do":[null,0,1E-307,9E+307,-1.23456789012345E-10,1.23456789012345E+20,-Infinity,Infinity,NaN]}]
+      <br></br>2015-03-10 13:23:51,889 [HttpClient.java:218] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 278 bytes
+      <br></br>2015-03-10 13:23:51,889 [HttpClient.java:430] POST http://localhost:2007/RestApplication.svc/PersistAggregateRoot
+      <br></br>2015-03-10 13:23:51,889 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-10 13:23:51,889 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-10 13:23:51,889 [HttpClient.java:443] Adding payload: {"RootName":"AggregatePrimaryDouble.A1A0Do","ToDelete":"[{\"p1A0Do\":[null,0.0,1.0E-307,9.0E307,-1.23456789012345E-10,1.23456789012345E20,\"-Infinity\",\"Infinity\",\"NaN\"],\"uri\":\"{NULL,0,1E-307,9E+307,-1.23456789012345E-10,1.23456789012345E+20,-Infinity,Infinity,NaN}\"}]"}
+      <br></br>2015-03-10 13:23:51,892 [HttpClient.java:389] At http://localhost:2007/RestApplication.svc/PersistAggregateRoot [500] Input string was not in a correct format.
+      <br></br>2015-03-10 13:23:51,892 [HttpClient.java:390] Error connecting to http://localhost:2007/RestApplication.svc/PersistAggregateRoot. Trying next server if exists...
       <br></br><a id="testP1A0DoNonDefault1PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1A0DoNonDefault1PropertyValueInAggregateAfterActiveRecordPersist</h2>
-      <br></br>2015-02-11 11:38:25,518 [HttpClient.java:203] Sending request [GET]: Domain.svc/search/AggregatePrimaryDouble.A1A0Do?limit=2147483647&offset=0
-      <br></br>2015-02-11 11:38:25,518 [HttpClient.java:430] GET http://localhost:2007/Domain.svc/search/AggregatePrimaryDouble.A1A0Do?limit=2147483647&offset=0
-      <br></br>2015-02-11 11:38:25,518 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-02-11 11:38:25,518 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-02-11 11:38:25,518 [HttpClient.java:227] Received response [200, 1024 bytes] in 0 ms
-      <br></br>2015-02-11 11:38:25,518 [HttpClient.java:230] Received response body: [{"URI":"{NULL,0,9.99999999999999909e-308,9.0000000000000005e+307,-1.23456789012345006e-10,1.23456789012344996e+20,-Infinity,Infinity,NaN}","p1A0Do":[null,0,1E-307,9E+307,-1.23456789012345E-10,1.23456789012345E+20,-Infinity,Infinity,NaN]}]
-      <br></br>2015-02-11 11:38:25,534 [HttpClient.java:218] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 319 bytes
-      <br></br>2015-02-11 11:38:25,534 [HttpClient.java:430] POST http://localhost:2007/RestApplication.svc/PersistAggregateRoot
-      <br></br>2015-02-11 11:38:25,534 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-02-11 11:38:25,534 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-02-11 11:38:25,534 [HttpClient.java:443] Adding payload: {"RootName":"AggregatePrimaryDouble.A1A0Do","ToDelete":"[{\"p1A0Do\":[null,0.0,1.0E-307,9.0E307,-1.23456789012345E-10,1.23456789012345E20,\"-Infinity\",\"Infinity\",\"NaN\"],\"uri\":\"{NULL,0,9.99999999999999909e-308,9.0000000000000005e+307,-1.23456789012345006e-10,1.23456789012344996e+20,-Infinity,Infinity,NaN}\"}]"}
-      <br></br>2015-02-11 11:38:25,534 [HttpClient.java:389] At http://localhost:2007/RestApplication.svc/PersistAggregateRoot [500] Input string was not in a correct format.
-      <br></br>2015-02-11 11:38:25,534 [HttpClient.java:390] Error connecting to http://localhost:2007/RestApplication.svc/PersistAggregateRoot. Trying next server if exists...
+      <br></br>2015-03-10 13:23:51,894 [HttpClient.java:203] Sending request [GET]: Domain.svc/search/AggregatePrimaryDouble.A1A0Do?limit=2147483647&offset=0
+      <br></br>2015-03-10 13:23:51,894 [HttpClient.java:430] GET http://localhost:2007/Domain.svc/search/AggregatePrimaryDouble.A1A0Do?limit=2147483647&offset=0
+      <br></br>2015-03-10 13:23:51,894 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-10 13:23:51,894 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-10 13:23:51,896 [HttpClient.java:227] Received response [200, 1024 bytes] in 2 ms
+      <br></br>2015-03-10 13:23:51,897 [HttpClient.java:230] Received response body: [{"URI":"{NULL,0,1E-307,9E+307,-1.23456789012345E-10,1.23456789012345E+20,-Infinity,Infinity,NaN}","p1A0Do":[null,0,1E-307,9E+307,-1.23456789012345E-10,1.23456789012345E+20,-Infinity,Infinity,NaN]}]
+      <br></br>2015-03-10 13:23:51,897 [HttpClient.java:218] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 278 bytes
+      <br></br>2015-03-10 13:23:51,897 [HttpClient.java:430] POST http://localhost:2007/RestApplication.svc/PersistAggregateRoot
+      <br></br>2015-03-10 13:23:51,898 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-10 13:23:51,898 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-10 13:23:51,898 [HttpClient.java:443] Adding payload: {"RootName":"AggregatePrimaryDouble.A1A0Do","ToDelete":"[{\"p1A0Do\":[null,0.0,1.0E-307,9.0E307,-1.23456789012345E-10,1.23456789012345E20,\"-Infinity\",\"Infinity\",\"NaN\"],\"uri\":\"{NULL,0,1E-307,9E+307,-1.23456789012345E-10,1.23456789012345E+20,-Infinity,Infinity,NaN}\"}]"}
+      <br></br>2015-03-10 13:23:51,900 [HttpClient.java:389] At http://localhost:2007/RestApplication.svc/PersistAggregateRoot [500] Input string was not in a correct format.
+      <br></br>2015-03-10 13:23:51,985 [HttpClient.java:390] Error connecting to http://localhost:2007/RestApplication.svc/PersistAggregateRoot. Trying next server if exists...
       <br></br><a id="testP1A0DoPropertyFieldModifiers"/><h2>testP1A0DoPropertyFieldModifiers</h2>
       <br></br><a id="testP1A0DoNonDefault4PropertyInAggregateJsonSerialization"/><h2>testP1A0DoNonDefault4PropertyInAggregateJsonSerialization</h2>
       <br></br><a id="testP1A0DoPropertyFieldPrivateVisibility"/><h2>testP1A0DoPropertyFieldPrivateVisibility</h2>
@@ -119,65 +138,84 @@
       <br></br><a id="testURIPropertyFieldPrivateVisibility"/><h2>testURIPropertyFieldPrivateVisibility</h2>
       <br></br><a id="testP1A1DoDefaultPropertyInAggregateJsonSerialization"/><h2>testP1A1DoDefaultPropertyInAggregateJsonSerialization</h2>
       <br></br><a id="testP1A1DoDefaultPropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1A1DoDefaultPropertyValueInAggregateAfterActiveRecordPersist</h2>
-      <br></br>2015-02-11 11:38:25,674 [HttpClient.java:203] Sending request [GET]: Domain.svc/search/AggregatePrimaryDouble.A1A1Do?limit=2147483647&offset=0
-      <br></br>2015-02-11 11:38:25,674 [HttpClient.java:430] GET http://localhost:2007/Domain.svc/search/AggregatePrimaryDouble.A1A1Do?limit=2147483647&offset=0
-      <br></br>2015-02-11 11:38:25,674 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-02-11 11:38:25,674 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-02-11 11:38:25,753 [HttpClient.java:227] Received response [200, 1024 bytes] in 79 ms
-      <br></br>2015-02-11 11:38:25,753 [HttpClient.java:230] Received response body: [{"URI":"{0,9.99999999999999909e-308,9.0000000000000005e+307,-1.23456789012345006e-10,1.23456789012344996e+20,-Infinity,Infinity,NaN}","p1A1Do":[0,1E-307,9E+307,-1.23456789012345E-10,1.23456789012345E+20,-Infinity,Infinity,NaN]}]
-      <br></br>2015-02-11 11:38:25,768 [HttpClient.java:218] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 309 bytes
-      <br></br>2015-02-11 11:38:25,768 [HttpClient.java:430] POST http://localhost:2007/RestApplication.svc/PersistAggregateRoot
-      <br></br>2015-02-11 11:38:25,768 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-02-11 11:38:25,768 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-02-11 11:38:25,768 [HttpClient.java:443] Adding payload: {"RootName":"AggregatePrimaryDouble.A1A1Do","ToDelete":"[{\"p1A1Do\":[0.0,1.0E-307,9.0E307,-1.23456789012345E-10,1.23456789012345E20,\"-Infinity\",\"Infinity\",\"NaN\"],\"uri\":\"{0,9.99999999999999909e-308,9.0000000000000005e+307,-1.23456789012345006e-10,1.23456789012344996e+20,-Infinity,Infinity,NaN}\"}]"}
-      <br></br>2015-02-11 11:38:25,784 [HttpClient.java:389] At http://localhost:2007/RestApplication.svc/PersistAggregateRoot [500] Input string was not in a correct format.
-      <br></br>2015-02-11 11:38:25,784 [HttpClient.java:390] Error connecting to http://localhost:2007/RestApplication.svc/PersistAggregateRoot. Trying next server if exists...
+      <br></br>2015-03-10 13:23:52,015 [HttpClient.java:203] Sending request [GET]: Domain.svc/search/AggregatePrimaryDouble.A1A1Do?limit=2147483647&offset=0
+      <br></br>2015-03-10 13:23:52,015 [HttpClient.java:430] GET http://localhost:2007/Domain.svc/search/AggregatePrimaryDouble.A1A1Do?limit=2147483647&offset=0
+      <br></br>2015-03-10 13:23:52,015 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-10 13:23:52,015 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-10 13:23:52,026 [HttpClient.java:227] Received response [200, 1024 bytes] in 12 ms
+      <br></br>2015-03-10 13:23:52,027 [HttpClient.java:230] Received response body: []
+      <br></br>2015-03-10 13:23:52,027 [HttpClient.java:218] Sending request [POST]: Crud.svc/AggregatePrimaryDouble.A1A1Do, content size: 20 bytes
+      <br></br>2015-03-10 13:23:52,027 [HttpClient.java:430] POST http://localhost:2007/Crud.svc/AggregatePrimaryDouble.A1A1Do
+      <br></br>2015-03-10 13:23:52,027 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-10 13:23:52,027 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-10 13:23:52,027 [HttpClient.java:443] Adding payload: {"URI":"1368621362"}
+      <br></br>2015-03-10 13:23:52,062 [HttpClient.java:227] Received response [201, 1024 bytes] in 35 ms
+      <br></br>2015-03-10 13:23:52,062 [HttpClient.java:230] Received response body: {"URI":"{}","p1A1Do":[]}
+      <br></br>2015-03-10 13:23:52,063 [HttpClient.java:203] Sending request [GET]: Crud.svc/AggregatePrimaryDouble.A1A1Do?uri=%7B%7D
+      <br></br>2015-03-10 13:23:52,088 [HttpClient.java:430] GET http://localhost:2007/Crud.svc/AggregatePrimaryDouble.A1A1Do?uri=%7B%7D
+      <br></br>2015-03-10 13:23:52,088 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-10 13:23:52,088 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-10 13:23:52,096 [HttpClient.java:227] Received response [200, 1024 bytes] in 34 ms
+      <br></br>2015-03-10 13:23:52,096 [HttpClient.java:230] Received response body: {"URI":"{}","p1A1Do":[]}
       <br></br><a id="testURIPropertyFieldModifiers"/><h2>testURIPropertyFieldModifiers</h2>
       <br></br><a id="testURIPropertyGetterPublicVisibility"/><h2>testURIPropertyGetterPublicVisibility</h2>
       <br></br><a id="testP1A1DoPropertyFieldModifiers"/><h2>testP1A1DoPropertyFieldModifiers</h2>
       <br></br><a id="testP1A1DoNonDefault3PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1A1DoNonDefault3PropertyValueInAggregateAfterActiveRecordPersist</h2>
-      <br></br>2015-02-11 11:38:25,799 [HttpClient.java:203] Sending request [GET]: Domain.svc/search/AggregatePrimaryDouble.A1A1Do?limit=2147483647&offset=0
-      <br></br>2015-02-11 11:38:25,799 [HttpClient.java:430] GET http://localhost:2007/Domain.svc/search/AggregatePrimaryDouble.A1A1Do?limit=2147483647&offset=0
-      <br></br>2015-02-11 11:38:25,799 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-02-11 11:38:25,799 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-02-11 11:38:25,799 [HttpClient.java:227] Received response [200, 1024 bytes] in 0 ms
-      <br></br>2015-02-11 11:38:25,799 [HttpClient.java:230] Received response body: [{"URI":"{0,9.99999999999999909e-308,9.0000000000000005e+307,-1.23456789012345006e-10,1.23456789012344996e+20,-Infinity,Infinity,NaN}","p1A1Do":[0,1E-307,9E+307,-1.23456789012345E-10,1.23456789012345E+20,-Infinity,Infinity,NaN]}]
-      <br></br>2015-02-11 11:38:25,799 [HttpClient.java:218] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 309 bytes
-      <br></br>2015-02-11 11:38:25,799 [HttpClient.java:430] POST http://localhost:2007/RestApplication.svc/PersistAggregateRoot
-      <br></br>2015-02-11 11:38:25,799 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-02-11 11:38:25,799 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-02-11 11:38:25,799 [HttpClient.java:443] Adding payload: {"RootName":"AggregatePrimaryDouble.A1A1Do","ToDelete":"[{\"p1A1Do\":[0.0,1.0E-307,9.0E307,-1.23456789012345E-10,1.23456789012345E20,\"-Infinity\",\"Infinity\",\"NaN\"],\"uri\":\"{0,9.99999999999999909e-308,9.0000000000000005e+307,-1.23456789012345006e-10,1.23456789012344996e+20,-Infinity,Infinity,NaN}\"}]"}
-      <br></br>2015-02-11 11:38:25,799 [HttpClient.java:389] At http://localhost:2007/RestApplication.svc/PersistAggregateRoot [500] Input string was not in a correct format.
-      <br></br>2015-02-11 11:38:25,799 [HttpClient.java:390] Error connecting to http://localhost:2007/RestApplication.svc/PersistAggregateRoot. Trying next server if exists...
+      <br></br>2015-03-10 13:23:52,099 [HttpClient.java:203] Sending request [GET]: Domain.svc/search/AggregatePrimaryDouble.A1A1Do?limit=2147483647&offset=0
+      <br></br>2015-03-10 13:23:52,100 [HttpClient.java:430] GET http://localhost:2007/Domain.svc/search/AggregatePrimaryDouble.A1A1Do?limit=2147483647&offset=0
+      <br></br>2015-03-10 13:23:52,100 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-10 13:23:52,100 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-10 13:23:52,105 [HttpClient.java:227] Received response [200, 1024 bytes] in 6 ms
+      <br></br>2015-03-10 13:23:52,105 [HttpClient.java:230] Received response body: [{"URI":"{}","p1A1Do":[]}]
+      <br></br>2015-03-10 13:23:52,106 [HttpClient.java:218] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 90 bytes
+      <br></br>2015-03-10 13:23:52,106 [HttpClient.java:430] POST http://localhost:2007/RestApplication.svc/PersistAggregateRoot
+      <br></br>2015-03-10 13:23:52,106 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-10 13:23:52,106 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-10 13:23:52,107 [HttpClient.java:443] Adding payload: {"RootName":"AggregatePrimaryDouble.A1A1Do","ToDelete":"[{\"p1A1Do\":[],\"uri\":\"{}\"}]"}
+      <br></br>2015-03-10 13:23:52,113 [HttpClient.java:227] Received response [200, 1024 bytes] in 7 ms
+      <br></br>2015-03-10 13:23:52,113 [HttpClient.java:230] Received response body: []
+      <br></br>2015-03-10 13:23:52,114 [HttpClient.java:218] Sending request [POST]: Crud.svc/AggregatePrimaryDouble.A1A1Do, content size: 117 bytes
+      <br></br>2015-03-10 13:23:52,114 [HttpClient.java:430] POST http://localhost:2007/Crud.svc/AggregatePrimaryDouble.A1A1Do
+      <br></br>2015-03-10 13:23:52,114 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-10 13:23:52,114 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-10 13:23:52,114 [HttpClient.java:443] Adding payload: {"URI":"2141704388","p1A1Do":[0.0,1.0E-307,9.0E307,-1.23456789012345E-10,1.23456789012345E20,-Infinity,Infinity,NaN]}
+      <br></br>2015-03-10 13:23:52,118 [HttpClient.java:227] Received response [201, 1024 bytes] in 4 ms
+      <br></br>2015-03-10 13:23:52,118 [HttpClient.java:230] Received response body: {"URI":"{0,1E-307,9E+307,-1.23456789012345E-10,1.23456789012345E+20,-Infinity,Infinity,NaN}","p1A1Do":[0,1E-307,9E+307,-1.23456789012345E-10,1.23456789012345E+20,-Infinity,Infinity,NaN]}
+      <br></br>2015-03-10 13:23:52,119 [HttpClient.java:203] Sending request [GET]: Crud.svc/AggregatePrimaryDouble.A1A1Do?uri=%7B0%2C1E-307%2C9E%2B307%2C-1.23456789012345E-10%2C1.23456789012345E%2B20%2C-Infinity%2CInfinity%2CNaN%7D
+      <br></br>2015-03-10 13:23:52,119 [HttpClient.java:430] GET http://localhost:2007/Crud.svc/AggregatePrimaryDouble.A1A1Do?uri=%7B0%2C1E-307%2C9E%2B307%2C-1.23456789012345E-10%2C1.23456789012345E%2B20%2C-Infinity%2CInfinity%2CNaN%7D
+      <br></br>2015-03-10 13:23:52,119 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-10 13:23:52,119 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-10 13:23:52,120 [HttpClient.java:227] Received response [200, 1024 bytes] in 1 ms
+      <br></br>2015-03-10 13:23:52,121 [HttpClient.java:230] Received response body: {"URI":"{0,1E-307,9E+307,-1.23456789012345E-10,1.23456789012345E+20,-Infinity,Infinity,NaN}","p1A1Do":[0,1E-307,9E+307,-1.23456789012345E-10,1.23456789012345E+20,-Infinity,Infinity,NaN]}
       <br></br><a id="testP1A1DoNonDefault2PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1A1DoNonDefault2PropertyValueInAggregateAfterActiveRecordPersist</h2>
-      <br></br>2015-02-11 11:38:25,815 [HttpClient.java:203] Sending request [GET]: Domain.svc/search/AggregatePrimaryDouble.A1A1Do?limit=2147483647&offset=0
-      <br></br>2015-02-11 11:38:25,815 [HttpClient.java:430] GET http://localhost:2007/Domain.svc/search/AggregatePrimaryDouble.A1A1Do?limit=2147483647&offset=0
-      <br></br>2015-02-11 11:38:25,815 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-02-11 11:38:25,815 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-02-11 11:38:25,815 [HttpClient.java:227] Received response [200, 1024 bytes] in 0 ms
-      <br></br>2015-02-11 11:38:25,862 [HttpClient.java:230] Received response body: [{"URI":"{0,9.99999999999999909e-308,9.0000000000000005e+307,-1.23456789012345006e-10,1.23456789012344996e+20,-Infinity,Infinity,NaN}","p1A1Do":[0,1E-307,9E+307,-1.23456789012345E-10,1.23456789012345E+20,-Infinity,Infinity,NaN]}]
-      <br></br>2015-02-11 11:38:25,862 [HttpClient.java:218] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 309 bytes
-      <br></br>2015-02-11 11:38:25,862 [HttpClient.java:430] POST http://localhost:2007/RestApplication.svc/PersistAggregateRoot
-      <br></br>2015-02-11 11:38:25,862 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-02-11 11:38:25,862 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-02-11 11:38:25,862 [HttpClient.java:443] Adding payload: {"RootName":"AggregatePrimaryDouble.A1A1Do","ToDelete":"[{\"p1A1Do\":[0.0,1.0E-307,9.0E307,-1.23456789012345E-10,1.23456789012345E20,\"-Infinity\",\"Infinity\",\"NaN\"],\"uri\":\"{0,9.99999999999999909e-308,9.0000000000000005e+307,-1.23456789012345006e-10,1.23456789012344996e+20,-Infinity,Infinity,NaN}\"}]"}
-      <br></br>2015-02-11 11:38:25,893 [HttpClient.java:389] At http://localhost:2007/RestApplication.svc/PersistAggregateRoot [500] Input string was not in a correct format.
-      <br></br>2015-02-11 11:38:25,893 [HttpClient.java:390] Error connecting to http://localhost:2007/RestApplication.svc/PersistAggregateRoot. Trying next server if exists...
+      <br></br>2015-03-10 13:23:52,122 [HttpClient.java:203] Sending request [GET]: Domain.svc/search/AggregatePrimaryDouble.A1A1Do?limit=2147483647&offset=0
+      <br></br>2015-03-10 13:23:52,191 [HttpClient.java:430] GET http://localhost:2007/Domain.svc/search/AggregatePrimaryDouble.A1A1Do?limit=2147483647&offset=0
+      <br></br>2015-03-10 13:23:52,191 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-10 13:23:52,191 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-10 13:23:52,193 [HttpClient.java:227] Received response [200, 1024 bytes] in 71 ms
+      <br></br>2015-03-10 13:23:52,193 [HttpClient.java:230] Received response body: [{"URI":"{0,1E-307,9E+307,-1.23456789012345E-10,1.23456789012345E+20,-Infinity,Infinity,NaN}","p1A1Do":[0,1E-307,9E+307,-1.23456789012345E-10,1.23456789012345E+20,-Infinity,Infinity,NaN]}]
+      <br></br>2015-03-10 13:23:52,194 [HttpClient.java:218] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 268 bytes
+      <br></br>2015-03-10 13:23:52,194 [HttpClient.java:430] POST http://localhost:2007/RestApplication.svc/PersistAggregateRoot
+      <br></br>2015-03-10 13:23:52,194 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-10 13:23:52,194 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-10 13:23:52,195 [HttpClient.java:443] Adding payload: {"RootName":"AggregatePrimaryDouble.A1A1Do","ToDelete":"[{\"p1A1Do\":[0.0,1.0E-307,9.0E307,-1.23456789012345E-10,1.23456789012345E20,\"-Infinity\",\"Infinity\",\"NaN\"],\"uri\":\"{0,1E-307,9E+307,-1.23456789012345E-10,1.23456789012345E+20,-Infinity,Infinity,NaN}\"}]"}
+      <br></br>2015-03-10 13:23:52,197 [HttpClient.java:389] At http://localhost:2007/RestApplication.svc/PersistAggregateRoot [500] Input string was not in a correct format.
+      <br></br>2015-03-10 13:23:52,197 [HttpClient.java:390] Error connecting to http://localhost:2007/RestApplication.svc/PersistAggregateRoot. Trying next server if exists...
       <br></br><a id="testP1A1DoPropertyFieldPrivateVisibility"/><h2>testP1A1DoPropertyFieldPrivateVisibility</h2>
       <br></br><a id="testP1A1DoNonDefault1PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1A1DoNonDefault1PropertyValueInAggregateAfterActiveRecordPersist</h2>
-      <br></br>2015-02-11 11:38:25,909 [HttpClient.java:203] Sending request [GET]: Domain.svc/search/AggregatePrimaryDouble.A1A1Do?limit=2147483647&offset=0
-      <br></br>2015-02-11 11:38:25,909 [HttpClient.java:430] GET http://localhost:2007/Domain.svc/search/AggregatePrimaryDouble.A1A1Do?limit=2147483647&offset=0
-      <br></br>2015-02-11 11:38:25,909 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-02-11 11:38:25,909 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-02-11 11:38:25,909 [HttpClient.java:227] Received response [200, 1024 bytes] in 0 ms
-      <br></br>2015-02-11 11:38:25,909 [HttpClient.java:230] Received response body: [{"URI":"{0,9.99999999999999909e-308,9.0000000000000005e+307,-1.23456789012345006e-10,1.23456789012344996e+20,-Infinity,Infinity,NaN}","p1A1Do":[0,1E-307,9E+307,-1.23456789012345E-10,1.23456789012345E+20,-Infinity,Infinity,NaN]}]
-      <br></br>2015-02-11 11:38:25,909 [HttpClient.java:218] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 309 bytes
-      <br></br>2015-02-11 11:38:25,909 [HttpClient.java:430] POST http://localhost:2007/RestApplication.svc/PersistAggregateRoot
-      <br></br>2015-02-11 11:38:25,909 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-02-11 11:38:25,909 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-02-11 11:38:25,909 [HttpClient.java:443] Adding payload: {"RootName":"AggregatePrimaryDouble.A1A1Do","ToDelete":"[{\"p1A1Do\":[0.0,1.0E-307,9.0E307,-1.23456789012345E-10,1.23456789012345E20,\"-Infinity\",\"Infinity\",\"NaN\"],\"uri\":\"{0,9.99999999999999909e-308,9.0000000000000005e+307,-1.23456789012345006e-10,1.23456789012344996e+20,-Infinity,Infinity,NaN}\"}]"}
-      <br></br>2015-02-11 11:38:25,909 [HttpClient.java:389] At http://localhost:2007/RestApplication.svc/PersistAggregateRoot [500] Input string was not in a correct format.
-      <br></br>2015-02-11 11:38:25,909 [HttpClient.java:390] Error connecting to http://localhost:2007/RestApplication.svc/PersistAggregateRoot. Trying next server if exists...
+      <br></br>2015-03-10 13:23:52,199 [HttpClient.java:203] Sending request [GET]: Domain.svc/search/AggregatePrimaryDouble.A1A1Do?limit=2147483647&offset=0
+      <br></br>2015-03-10 13:23:52,200 [HttpClient.java:430] GET http://localhost:2007/Domain.svc/search/AggregatePrimaryDouble.A1A1Do?limit=2147483647&offset=0
+      <br></br>2015-03-10 13:23:52,200 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-10 13:23:52,200 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-10 13:23:52,202 [HttpClient.java:227] Received response [200, 1024 bytes] in 3 ms
+      <br></br>2015-03-10 13:23:52,202 [HttpClient.java:230] Received response body: [{"URI":"{0,1E-307,9E+307,-1.23456789012345E-10,1.23456789012345E+20,-Infinity,Infinity,NaN}","p1A1Do":[0,1E-307,9E+307,-1.23456789012345E-10,1.23456789012345E+20,-Infinity,Infinity,NaN]}]
+      <br></br>2015-03-10 13:23:52,203 [HttpClient.java:218] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 268 bytes
+      <br></br>2015-03-10 13:23:52,203 [HttpClient.java:430] POST http://localhost:2007/RestApplication.svc/PersistAggregateRoot
+      <br></br>2015-03-10 13:23:52,203 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-10 13:23:52,203 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-10 13:23:52,203 [HttpClient.java:443] Adding payload: {"RootName":"AggregatePrimaryDouble.A1A1Do","ToDelete":"[{\"p1A1Do\":[0.0,1.0E-307,9.0E307,-1.23456789012345E-10,1.23456789012345E20,\"-Infinity\",\"Infinity\",\"NaN\"],\"uri\":\"{0,1E-307,9E+307,-1.23456789012345E-10,1.23456789012345E+20,-Infinity,Infinity,NaN}\"}]"}
+      <br></br>2015-03-10 13:23:52,206 [HttpClient.java:389] At http://localhost:2007/RestApplication.svc/PersistAggregateRoot [500] Input string was not in a correct format.
+      <br></br>2015-03-10 13:23:52,206 [HttpClient.java:390] Error connecting to http://localhost:2007/RestApplication.svc/PersistAggregateRoot. Trying next server if exists...
       <br></br><a id="testURIPropertyGetterClass"/><h2>testURIPropertyGetterClass</h2>
       <br></br><a id="testP1A1DoPropertyFieldDefaultValue"/><h2>testP1A1DoPropertyFieldDefaultValue</h2>
       <br></br><a id="testP1A1DoNonDefault1PropertyInAggregateJsonSerialization"/><h2>testP1A1DoNonDefault1PropertyInAggregateJsonSerialization</h2>
@@ -190,104 +228,110 @@
       <br></br><a id="testP1DoPropertySetterClass"/><h2>testP1DoPropertySetterClass</h2>
       <br></br><a id="testP1DoPropertyGetterClass"/><h2>testP1DoPropertyGetterClass</h2>
       <br></br><a id="testP1DoNonDefault7PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1DoNonDefault7PropertyValueInAggregateAfterActiveRecordPersist</h2>
-      <br></br>2015-02-11 11:38:25,924 [HttpClient.java:203] Sending request [GET]: Domain.svc/search/AggregatePrimaryDouble.A1Do?limit=2147483647&offset=0
-      <br></br>2015-02-11 11:38:25,924 [HttpClient.java:430] GET http://localhost:2007/Domain.svc/search/AggregatePrimaryDouble.A1Do?limit=2147483647&offset=0
-      <br></br>2015-02-11 11:38:25,924 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-02-11 11:38:25,924 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-02-11 11:38:26,081 [HttpClient.java:227] Received response [200, 1024 bytes] in 157 ms
-      <br></br>2015-02-11 11:38:26,081 [HttpClient.java:230] Received response body: [{"URI":"NaN","p1Do":NaN}]
-      <br></br>2015-02-11 11:38:26,081 [HttpClient.java:218] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 92 bytes
-      <br></br>2015-02-11 11:38:26,081 [HttpClient.java:430] POST http://localhost:2007/RestApplication.svc/PersistAggregateRoot
-      <br></br>2015-02-11 11:38:26,081 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-02-11 11:38:26,081 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-02-11 11:38:26,081 [HttpClient.java:443] Adding payload: {"RootName":"AggregatePrimaryDouble.A1Do","ToDelete":"[{\"p1Do\":\"NaN\",\"uri\":\"NaN\"}]"}
-      <br></br>2015-02-11 11:38:26,096 [HttpClient.java:389] At http://localhost:2007/RestApplication.svc/PersistAggregateRoot [500] Input string was not in a correct format.
-      <br></br>2015-02-11 11:38:26,096 [HttpClient.java:390] Error connecting to http://localhost:2007/RestApplication.svc/PersistAggregateRoot. Trying next server if exists...
+      <br></br>2015-03-10 13:23:52,296 [HttpClient.java:203] Sending request [GET]: Domain.svc/search/AggregatePrimaryDouble.A1Do?limit=2147483647&offset=0
+      <br></br>2015-03-10 13:23:52,296 [HttpClient.java:430] GET http://localhost:2007/Domain.svc/search/AggregatePrimaryDouble.A1Do?limit=2147483647&offset=0
+      <br></br>2015-03-10 13:23:52,296 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-10 13:23:52,296 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-10 13:23:52,333 [HttpClient.java:227] Received response [200, 1024 bytes] in 37 ms
+      <br></br>2015-03-10 13:23:52,333 [HttpClient.java:230] Received response body: []
+      <br></br>2015-03-10 13:23:52,333 [HttpClient.java:218] Sending request [POST]: Crud.svc/AggregatePrimaryDouble.A1Do, content size: 31 bytes
+      <br></br>2015-03-10 13:23:52,334 [HttpClient.java:430] POST http://localhost:2007/Crud.svc/AggregatePrimaryDouble.A1Do
+      <br></br>2015-03-10 13:23:52,334 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-10 13:23:52,334 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-10 13:23:52,334 [HttpClient.java:443] Adding payload: {"URI":"2064443950","p1Do":NaN}
+      <br></br>2015-03-10 13:23:52,365 [HttpClient.java:227] Received response [201, 1024 bytes] in 32 ms
+      <br></br>2015-03-10 13:23:52,365 [HttpClient.java:230] Received response body: {"URI":"NaN","p1Do":NaN}
+      <br></br>2015-03-10 13:23:52,366 [HttpClient.java:203] Sending request [GET]: Crud.svc/AggregatePrimaryDouble.A1Do?uri=NaN
+      <br></br>2015-03-10 13:23:52,366 [HttpClient.java:430] GET http://localhost:2007/Crud.svc/AggregatePrimaryDouble.A1Do?uri=NaN
+      <br></br>2015-03-10 13:23:52,366 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-10 13:23:52,366 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-10 13:23:52,377 [HttpClient.java:227] Received response [200, 1024 bytes] in 11 ms
+      <br></br>2015-03-10 13:23:52,377 [HttpClient.java:230] Received response body: {"URI":"NaN","p1Do":NaN}
       <br></br><a id="testP1DoNonDefault6PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1DoNonDefault6PropertyValueInAggregateAfterActiveRecordPersist</h2>
-      <br></br>2015-02-11 11:38:26,112 [HttpClient.java:203] Sending request [GET]: Domain.svc/search/AggregatePrimaryDouble.A1Do?limit=2147483647&offset=0
-      <br></br>2015-02-11 11:38:26,112 [HttpClient.java:430] GET http://localhost:2007/Domain.svc/search/AggregatePrimaryDouble.A1Do?limit=2147483647&offset=0
-      <br></br>2015-02-11 11:38:26,112 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-02-11 11:38:26,112 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-02-11 11:38:26,143 [HttpClient.java:227] Received response [200, 1024 bytes] in 31 ms
-      <br></br>2015-02-11 11:38:26,143 [HttpClient.java:230] Received response body: [{"URI":"NaN","p1Do":NaN}]
-      <br></br>2015-02-11 11:38:26,143 [HttpClient.java:218] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 92 bytes
-      <br></br>2015-02-11 11:38:26,143 [HttpClient.java:430] POST http://localhost:2007/RestApplication.svc/PersistAggregateRoot
-      <br></br>2015-02-11 11:38:26,143 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-02-11 11:38:26,143 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-02-11 11:38:26,143 [HttpClient.java:443] Adding payload: {"RootName":"AggregatePrimaryDouble.A1Do","ToDelete":"[{\"p1Do\":\"NaN\",\"uri\":\"NaN\"}]"}
-      <br></br>2015-02-11 11:38:26,143 [HttpClient.java:389] At http://localhost:2007/RestApplication.svc/PersistAggregateRoot [500] Input string was not in a correct format.
-      <br></br>2015-02-11 11:38:26,143 [HttpClient.java:390] Error connecting to http://localhost:2007/RestApplication.svc/PersistAggregateRoot. Trying next server if exists...
+      <br></br>2015-03-10 13:23:52,378 [HttpClient.java:203] Sending request [GET]: Domain.svc/search/AggregatePrimaryDouble.A1Do?limit=2147483647&offset=0
+      <br></br>2015-03-10 13:23:52,378 [HttpClient.java:430] GET http://localhost:2007/Domain.svc/search/AggregatePrimaryDouble.A1Do?limit=2147483647&offset=0
+      <br></br>2015-03-10 13:23:52,378 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-10 13:23:52,378 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-10 13:23:52,382 [HttpClient.java:227] Received response [200, 1024 bytes] in 4 ms
+      <br></br>2015-03-10 13:23:52,382 [HttpClient.java:230] Received response body: [{"URI":"NaN","p1Do":NaN}]
+      <br></br>2015-03-10 13:23:52,384 [HttpClient.java:218] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 92 bytes
+      <br></br>2015-03-10 13:23:52,384 [HttpClient.java:430] POST http://localhost:2007/RestApplication.svc/PersistAggregateRoot
+      <br></br>2015-03-10 13:23:52,384 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-10 13:23:52,384 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-10 13:23:52,384 [HttpClient.java:443] Adding payload: {"RootName":"AggregatePrimaryDouble.A1Do","ToDelete":"[{\"p1Do\":\"NaN\",\"uri\":\"NaN\"}]"}
+      <br></br>2015-03-10 13:23:52,387 [HttpClient.java:389] At http://localhost:2007/RestApplication.svc/PersistAggregateRoot [500] Input string was not in a correct format.
+      <br></br>2015-03-10 13:23:52,387 [HttpClient.java:390] Error connecting to http://localhost:2007/RestApplication.svc/PersistAggregateRoot. Trying next server if exists...
       <br></br><a id="testP1DoNonDefault1PropertyInAggregateJsonSerialization"/><h2>testP1DoNonDefault1PropertyInAggregateJsonSerialization</h2>
       <br></br><a id="testP1DoNonDefault5PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1DoNonDefault5PropertyValueInAggregateAfterActiveRecordPersist</h2>
-      <br></br>2015-02-11 11:38:26,143 [HttpClient.java:203] Sending request [GET]: Domain.svc/search/AggregatePrimaryDouble.A1Do?limit=2147483647&offset=0
-      <br></br>2015-02-11 11:38:26,159 [HttpClient.java:430] GET http://localhost:2007/Domain.svc/search/AggregatePrimaryDouble.A1Do?limit=2147483647&offset=0
-      <br></br>2015-02-11 11:38:26,159 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-02-11 11:38:26,159 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-02-11 11:38:26,174 [HttpClient.java:227] Received response [200, 1024 bytes] in 31 ms
-      <br></br>2015-02-11 11:38:26,174 [HttpClient.java:230] Received response body: [{"URI":"NaN","p1Do":NaN}]
-      <br></br>2015-02-11 11:38:26,174 [HttpClient.java:218] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 92 bytes
-      <br></br>2015-02-11 11:38:26,174 [HttpClient.java:430] POST http://localhost:2007/RestApplication.svc/PersistAggregateRoot
-      <br></br>2015-02-11 11:38:26,174 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-02-11 11:38:26,174 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-02-11 11:38:26,174 [HttpClient.java:443] Adding payload: {"RootName":"AggregatePrimaryDouble.A1Do","ToDelete":"[{\"p1Do\":\"NaN\",\"uri\":\"NaN\"}]"}
-      <br></br>2015-02-11 11:38:26,174 [HttpClient.java:389] At http://localhost:2007/RestApplication.svc/PersistAggregateRoot [500] Input string was not in a correct format.
-      <br></br>2015-02-11 11:38:26,174 [HttpClient.java:390] Error connecting to http://localhost:2007/RestApplication.svc/PersistAggregateRoot. Trying next server if exists...
+      <br></br>2015-03-10 13:23:52,392 [HttpClient.java:203] Sending request [GET]: Domain.svc/search/AggregatePrimaryDouble.A1Do?limit=2147483647&offset=0
+      <br></br>2015-03-10 13:23:52,392 [HttpClient.java:430] GET http://localhost:2007/Domain.svc/search/AggregatePrimaryDouble.A1Do?limit=2147483647&offset=0
+      <br></br>2015-03-10 13:23:52,392 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-10 13:23:52,392 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-10 13:23:52,404 [HttpClient.java:227] Received response [200, 1024 bytes] in 12 ms
+      <br></br>2015-03-10 13:23:52,404 [HttpClient.java:230] Received response body: [{"URI":"NaN","p1Do":NaN}]
+      <br></br>2015-03-10 13:23:52,405 [HttpClient.java:218] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 92 bytes
+      <br></br>2015-03-10 13:23:52,405 [HttpClient.java:430] POST http://localhost:2007/RestApplication.svc/PersistAggregateRoot
+      <br></br>2015-03-10 13:23:52,405 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-10 13:23:52,405 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-10 13:23:52,405 [HttpClient.java:443] Adding payload: {"RootName":"AggregatePrimaryDouble.A1Do","ToDelete":"[{\"p1Do\":\"NaN\",\"uri\":\"NaN\"}]"}
+      <br></br>2015-03-10 13:23:52,411 [HttpClient.java:389] At http://localhost:2007/RestApplication.svc/PersistAggregateRoot [500] Input string was not in a correct format.
+      <br></br>2015-03-10 13:23:52,411 [HttpClient.java:390] Error connecting to http://localhost:2007/RestApplication.svc/PersistAggregateRoot. Trying next server if exists...
       <br></br><a id="testP1DoNonDefault4PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1DoNonDefault4PropertyValueInAggregateAfterActiveRecordPersist</h2>
-      <br></br>2015-02-11 11:38:26,174 [HttpClient.java:203] Sending request [GET]: Domain.svc/search/AggregatePrimaryDouble.A1Do?limit=2147483647&offset=0
-      <br></br>2015-02-11 11:38:26,174 [HttpClient.java:430] GET http://localhost:2007/Domain.svc/search/AggregatePrimaryDouble.A1Do?limit=2147483647&offset=0
-      <br></br>2015-02-11 11:38:26,174 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-02-11 11:38:26,174 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-02-11 11:38:26,174 [HttpClient.java:227] Received response [200, 1024 bytes] in 0 ms
-      <br></br>2015-02-11 11:38:26,174 [HttpClient.java:230] Received response body: [{"URI":"NaN","p1Do":NaN}]
-      <br></br>2015-02-11 11:38:26,174 [HttpClient.java:218] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 92 bytes
-      <br></br>2015-02-11 11:38:26,174 [HttpClient.java:430] POST http://localhost:2007/RestApplication.svc/PersistAggregateRoot
-      <br></br>2015-02-11 11:38:26,174 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-02-11 11:38:26,174 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-02-11 11:38:26,174 [HttpClient.java:443] Adding payload: {"RootName":"AggregatePrimaryDouble.A1Do","ToDelete":"[{\"p1Do\":\"NaN\",\"uri\":\"NaN\"}]"}
-      <br></br>2015-02-11 11:38:26,268 [HttpClient.java:389] At http://localhost:2007/RestApplication.svc/PersistAggregateRoot [500] Input string was not in a correct format.
-      <br></br>2015-02-11 11:38:26,268 [HttpClient.java:390] Error connecting to http://localhost:2007/RestApplication.svc/PersistAggregateRoot. Trying next server if exists...
+      <br></br>2015-03-10 13:23:52,413 [HttpClient.java:203] Sending request [GET]: Domain.svc/search/AggregatePrimaryDouble.A1Do?limit=2147483647&offset=0
+      <br></br>2015-03-10 13:23:52,413 [HttpClient.java:430] GET http://localhost:2007/Domain.svc/search/AggregatePrimaryDouble.A1Do?limit=2147483647&offset=0
+      <br></br>2015-03-10 13:23:52,413 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-10 13:23:52,413 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-10 13:23:52,415 [HttpClient.java:227] Received response [200, 1024 bytes] in 2 ms
+      <br></br>2015-03-10 13:23:52,416 [HttpClient.java:230] Received response body: [{"URI":"NaN","p1Do":NaN}]
+      <br></br>2015-03-10 13:23:52,416 [HttpClient.java:218] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 92 bytes
+      <br></br>2015-03-10 13:23:52,416 [HttpClient.java:430] POST http://localhost:2007/RestApplication.svc/PersistAggregateRoot
+      <br></br>2015-03-10 13:23:52,416 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-10 13:23:52,416 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-10 13:23:52,416 [HttpClient.java:443] Adding payload: {"RootName":"AggregatePrimaryDouble.A1Do","ToDelete":"[{\"p1Do\":\"NaN\",\"uri\":\"NaN\"}]"}
+      <br></br>2015-03-10 13:23:52,418 [HttpClient.java:389] At http://localhost:2007/RestApplication.svc/PersistAggregateRoot [500] Input string was not in a correct format.
+      <br></br>2015-03-10 13:23:52,418 [HttpClient.java:390] Error connecting to http://localhost:2007/RestApplication.svc/PersistAggregateRoot. Trying next server if exists...
       <br></br><a id="testP1DoNonDefault3PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1DoNonDefault3PropertyValueInAggregateAfterActiveRecordPersist</h2>
-      <br></br>2015-02-11 11:38:26,268 [HttpClient.java:203] Sending request [GET]: Domain.svc/search/AggregatePrimaryDouble.A1Do?limit=2147483647&offset=0
-      <br></br>2015-02-11 11:38:26,268 [HttpClient.java:430] GET http://localhost:2007/Domain.svc/search/AggregatePrimaryDouble.A1Do?limit=2147483647&offset=0
-      <br></br>2015-02-11 11:38:26,268 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-02-11 11:38:26,268 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-02-11 11:38:26,268 [HttpClient.java:227] Received response [200, 1024 bytes] in 0 ms
-      <br></br>2015-02-11 11:38:26,268 [HttpClient.java:230] Received response body: [{"URI":"NaN","p1Do":NaN}]
-      <br></br>2015-02-11 11:38:26,268 [HttpClient.java:218] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 92 bytes
-      <br></br>2015-02-11 11:38:26,268 [HttpClient.java:430] POST http://localhost:2007/RestApplication.svc/PersistAggregateRoot
-      <br></br>2015-02-11 11:38:26,268 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-02-11 11:38:26,268 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-02-11 11:38:26,268 [HttpClient.java:443] Adding payload: {"RootName":"AggregatePrimaryDouble.A1Do","ToDelete":"[{\"p1Do\":\"NaN\",\"uri\":\"NaN\"}]"}
-      <br></br>2015-02-11 11:38:26,268 [HttpClient.java:389] At http://localhost:2007/RestApplication.svc/PersistAggregateRoot [500] Input string was not in a correct format.
-      <br></br>2015-02-11 11:38:26,268 [HttpClient.java:390] Error connecting to http://localhost:2007/RestApplication.svc/PersistAggregateRoot. Trying next server if exists...
+      <br></br>2015-03-10 13:23:52,420 [HttpClient.java:203] Sending request [GET]: Domain.svc/search/AggregatePrimaryDouble.A1Do?limit=2147483647&offset=0
+      <br></br>2015-03-10 13:23:52,420 [HttpClient.java:430] GET http://localhost:2007/Domain.svc/search/AggregatePrimaryDouble.A1Do?limit=2147483647&offset=0
+      <br></br>2015-03-10 13:23:52,420 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-10 13:23:52,420 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-10 13:23:52,423 [HttpClient.java:227] Received response [200, 1024 bytes] in 3 ms
+      <br></br>2015-03-10 13:23:52,423 [HttpClient.java:230] Received response body: [{"URI":"NaN","p1Do":NaN}]
+      <br></br>2015-03-10 13:23:52,423 [HttpClient.java:218] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 92 bytes
+      <br></br>2015-03-10 13:23:52,423 [HttpClient.java:430] POST http://localhost:2007/RestApplication.svc/PersistAggregateRoot
+      <br></br>2015-03-10 13:23:52,423 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-10 13:23:52,424 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-10 13:23:52,424 [HttpClient.java:443] Adding payload: {"RootName":"AggregatePrimaryDouble.A1Do","ToDelete":"[{\"p1Do\":\"NaN\",\"uri\":\"NaN\"}]"}
+      <br></br>2015-03-10 13:23:52,425 [HttpClient.java:389] At http://localhost:2007/RestApplication.svc/PersistAggregateRoot [500] Input string was not in a correct format.
+      <br></br>2015-03-10 13:23:52,501 [HttpClient.java:390] Error connecting to http://localhost:2007/RestApplication.svc/PersistAggregateRoot. Trying next server if exists...
       <br></br><a id="testP1DoNonDefault2PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1DoNonDefault2PropertyValueInAggregateAfterActiveRecordPersist</h2>
-      <br></br>2015-02-11 11:38:26,284 [HttpClient.java:203] Sending request [GET]: Domain.svc/search/AggregatePrimaryDouble.A1Do?limit=2147483647&offset=0
-      <br></br>2015-02-11 11:38:26,284 [HttpClient.java:430] GET http://localhost:2007/Domain.svc/search/AggregatePrimaryDouble.A1Do?limit=2147483647&offset=0
-      <br></br>2015-02-11 11:38:26,284 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-02-11 11:38:26,284 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-02-11 11:38:26,299 [HttpClient.java:227] Received response [200, 1024 bytes] in 15 ms
-      <br></br>2015-02-11 11:38:26,299 [HttpClient.java:230] Received response body: [{"URI":"NaN","p1Do":NaN}]
-      <br></br>2015-02-11 11:38:26,299 [HttpClient.java:218] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 92 bytes
-      <br></br>2015-02-11 11:38:26,299 [HttpClient.java:430] POST http://localhost:2007/RestApplication.svc/PersistAggregateRoot
-      <br></br>2015-02-11 11:38:26,299 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-02-11 11:38:26,299 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-02-11 11:38:26,299 [HttpClient.java:443] Adding payload: {"RootName":"AggregatePrimaryDouble.A1Do","ToDelete":"[{\"p1Do\":\"NaN\",\"uri\":\"NaN\"}]"}
-      <br></br>2015-02-11 11:38:26,299 [HttpClient.java:389] At http://localhost:2007/RestApplication.svc/PersistAggregateRoot [500] Input string was not in a correct format.
-      <br></br>2015-02-11 11:38:26,299 [HttpClient.java:390] Error connecting to http://localhost:2007/RestApplication.svc/PersistAggregateRoot. Trying next server if exists...
+      <br></br>2015-03-10 13:23:52,502 [HttpClient.java:203] Sending request [GET]: Domain.svc/search/AggregatePrimaryDouble.A1Do?limit=2147483647&offset=0
+      <br></br>2015-03-10 13:23:52,502 [HttpClient.java:430] GET http://localhost:2007/Domain.svc/search/AggregatePrimaryDouble.A1Do?limit=2147483647&offset=0
+      <br></br>2015-03-10 13:23:52,502 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-10 13:23:52,503 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-10 13:23:52,505 [HttpClient.java:227] Received response [200, 1024 bytes] in 3 ms
+      <br></br>2015-03-10 13:23:52,505 [HttpClient.java:230] Received response body: [{"URI":"NaN","p1Do":NaN}]
+      <br></br>2015-03-10 13:23:52,505 [HttpClient.java:218] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 92 bytes
+      <br></br>2015-03-10 13:23:52,505 [HttpClient.java:430] POST http://localhost:2007/RestApplication.svc/PersistAggregateRoot
+      <br></br>2015-03-10 13:23:52,505 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-10 13:23:52,505 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-10 13:23:52,506 [HttpClient.java:443] Adding payload: {"RootName":"AggregatePrimaryDouble.A1Do","ToDelete":"[{\"p1Do\":\"NaN\",\"uri\":\"NaN\"}]"}
+      <br></br>2015-03-10 13:23:52,509 [HttpClient.java:389] At http://localhost:2007/RestApplication.svc/PersistAggregateRoot [500] Input string was not in a correct format.
+      <br></br>2015-03-10 13:23:52,509 [HttpClient.java:390] Error connecting to http://localhost:2007/RestApplication.svc/PersistAggregateRoot. Trying next server if exists...
       <br></br><a id="testP1DoNonDefault1PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1DoNonDefault1PropertyValueInAggregateAfterActiveRecordPersist</h2>
-      <br></br>2015-02-11 11:38:26,299 [HttpClient.java:203] Sending request [GET]: Domain.svc/search/AggregatePrimaryDouble.A1Do?limit=2147483647&offset=0
-      <br></br>2015-02-11 11:38:26,299 [HttpClient.java:430] GET http://localhost:2007/Domain.svc/search/AggregatePrimaryDouble.A1Do?limit=2147483647&offset=0
-      <br></br>2015-02-11 11:38:26,299 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-02-11 11:38:26,362 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-02-11 11:38:26,393 [HttpClient.java:227] Received response [200, 1024 bytes] in 94 ms
-      <br></br>2015-02-11 11:38:26,393 [HttpClient.java:230] Received response body: [{"URI":"NaN","p1Do":NaN}]
-      <br></br>2015-02-11 11:38:26,393 [HttpClient.java:218] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 92 bytes
-      <br></br>2015-02-11 11:38:26,393 [HttpClient.java:430] POST http://localhost:2007/RestApplication.svc/PersistAggregateRoot
-      <br></br>2015-02-11 11:38:26,393 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-02-11 11:38:26,393 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-02-11 11:38:26,393 [HttpClient.java:443] Adding payload: {"RootName":"AggregatePrimaryDouble.A1Do","ToDelete":"[{\"p1Do\":\"NaN\",\"uri\":\"NaN\"}]"}
-      <br></br>2015-02-11 11:38:26,393 [HttpClient.java:389] At http://localhost:2007/RestApplication.svc/PersistAggregateRoot [500] Input string was not in a correct format.
-      <br></br>2015-02-11 11:38:26,393 [HttpClient.java:390] Error connecting to http://localhost:2007/RestApplication.svc/PersistAggregateRoot. Trying next server if exists...
+      <br></br>2015-03-10 13:23:52,509 [HttpClient.java:203] Sending request [GET]: Domain.svc/search/AggregatePrimaryDouble.A1Do?limit=2147483647&offset=0
+      <br></br>2015-03-10 13:23:52,510 [HttpClient.java:430] GET http://localhost:2007/Domain.svc/search/AggregatePrimaryDouble.A1Do?limit=2147483647&offset=0
+      <br></br>2015-03-10 13:23:52,510 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-10 13:23:52,510 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-10 13:23:52,512 [HttpClient.java:227] Received response [200, 1024 bytes] in 3 ms
+      <br></br>2015-03-10 13:23:52,512 [HttpClient.java:230] Received response body: [{"URI":"NaN","p1Do":NaN}]
+      <br></br>2015-03-10 13:23:52,512 [HttpClient.java:218] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 92 bytes
+      <br></br>2015-03-10 13:23:52,512 [HttpClient.java:430] POST http://localhost:2007/RestApplication.svc/PersistAggregateRoot
+      <br></br>2015-03-10 13:23:52,513 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-10 13:23:52,513 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-10 13:23:52,513 [HttpClient.java:443] Adding payload: {"RootName":"AggregatePrimaryDouble.A1Do","ToDelete":"[{\"p1Do\":\"NaN\",\"uri\":\"NaN\"}]"}
+      <br></br>2015-03-10 13:23:52,515 [HttpClient.java:389] At http://localhost:2007/RestApplication.svc/PersistAggregateRoot [500] Input string was not in a correct format.
+      <br></br>2015-03-10 13:23:52,515 [HttpClient.java:390] Error connecting to http://localhost:2007/RestApplication.svc/PersistAggregateRoot. Trying next server if exists...
       <br></br><a id="testP1DoPropertyFieldModifiers"/><h2>testP1DoPropertyFieldModifiers</h2>
       <br></br><a id="testP1DoNonDefault2PropertyInAggregateJsonSerialization"/><h2>testP1DoNonDefault2PropertyInAggregateJsonSerialization</h2>
       <br></br><a id="testURIPropertyFieldClass"/><h2>testURIPropertyFieldClass</h2>
@@ -306,19 +350,19 @@
       <br></br><a id="testP1DoNonDefault7PropertyInAggregateJsonSerialization"/><h2>testP1DoNonDefault7PropertyInAggregateJsonSerialization</h2>
       <br></br><a id="testP1DoPropertyGetterPublicVisibility"/><h2>testP1DoPropertyGetterPublicVisibility</h2>
       <br></br><a id="testP1DoDefaultPropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1DoDefaultPropertyValueInAggregateAfterActiveRecordPersist</h2>
-      <br></br>2015-02-11 11:38:26,409 [HttpClient.java:203] Sending request [GET]: Domain.svc/search/AggregatePrimaryDouble.A1Do?limit=2147483647&offset=0
-      <br></br>2015-02-11 11:38:26,409 [HttpClient.java:430] GET http://localhost:2007/Domain.svc/search/AggregatePrimaryDouble.A1Do?limit=2147483647&offset=0
-      <br></br>2015-02-11 11:38:26,409 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-02-11 11:38:26,409 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-02-11 11:38:26,409 [HttpClient.java:227] Received response [200, 1024 bytes] in 0 ms
-      <br></br>2015-02-11 11:38:26,409 [HttpClient.java:230] Received response body: [{"URI":"NaN","p1Do":NaN}]
-      <br></br>2015-02-11 11:38:26,409 [HttpClient.java:218] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 92 bytes
-      <br></br>2015-02-11 11:38:26,409 [HttpClient.java:430] POST http://localhost:2007/RestApplication.svc/PersistAggregateRoot
-      <br></br>2015-02-11 11:38:26,409 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-02-11 11:38:26,409 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-02-11 11:38:26,409 [HttpClient.java:443] Adding payload: {"RootName":"AggregatePrimaryDouble.A1Do","ToDelete":"[{\"p1Do\":\"NaN\",\"uri\":\"NaN\"}]"}
-      <br></br>2015-02-11 11:38:26,503 [HttpClient.java:389] At http://localhost:2007/RestApplication.svc/PersistAggregateRoot [500] Input string was not in a correct format.
-      <br></br>2015-02-11 11:38:26,503 [HttpClient.java:390] Error connecting to http://localhost:2007/RestApplication.svc/PersistAggregateRoot. Trying next server if exists...
+      <br></br>2015-03-10 13:23:52,606 [HttpClient.java:203] Sending request [GET]: Domain.svc/search/AggregatePrimaryDouble.A1Do?limit=2147483647&offset=0
+      <br></br>2015-03-10 13:23:52,606 [HttpClient.java:430] GET http://localhost:2007/Domain.svc/search/AggregatePrimaryDouble.A1Do?limit=2147483647&offset=0
+      <br></br>2015-03-10 13:23:52,606 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-10 13:23:52,606 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-10 13:23:52,609 [HttpClient.java:227] Received response [200, 1024 bytes] in 3 ms
+      <br></br>2015-03-10 13:23:52,610 [HttpClient.java:230] Received response body: [{"URI":"NaN","p1Do":NaN}]
+      <br></br>2015-03-10 13:23:52,610 [HttpClient.java:218] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 92 bytes
+      <br></br>2015-03-10 13:23:52,610 [HttpClient.java:430] POST http://localhost:2007/RestApplication.svc/PersistAggregateRoot
+      <br></br>2015-03-10 13:23:52,610 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-10 13:23:52,610 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-10 13:23:52,610 [HttpClient.java:443] Adding payload: {"RootName":"AggregatePrimaryDouble.A1Do","ToDelete":"[{\"p1Do\":\"NaN\",\"uri\":\"NaN\"}]"}
+      <br></br>2015-03-10 13:23:52,613 [HttpClient.java:389] At http://localhost:2007/RestApplication.svc/PersistAggregateRoot [500] Input string was not in a correct format.
+      <br></br>2015-03-10 13:23:52,614 [HttpClient.java:390] Error connecting to http://localhost:2007/RestApplication.svc/PersistAggregateRoot. Trying next server if exists...
       <br></br><a id="testURIPropertyGetterClass"/><h2>testURIPropertyGetterClass</h2>
       <br></br><a id="testURIPropertyGetterModifiers"/><h2>testURIPropertyGetterModifiers</h2>
       <br></br><a id="testP1L0DoNonDefault3PropertyInAggregateJsonSerialization"/><h2>testP1L0DoNonDefault3PropertyInAggregateJsonSerialization</h2>
@@ -336,93 +380,99 @@
       <br></br><a id="testURIPropertyFieldPrivateVisibility"/><h2>testURIPropertyFieldPrivateVisibility</h2>
       <br></br><a id="testP1L0DoPropertyGetterModifiers"/><h2>testP1L0DoPropertyGetterModifiers</h2>
       <br></br><a id="testP1L0DoNonDefault5PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1L0DoNonDefault5PropertyValueInAggregateAfterActiveRecordPersist</h2>
-      <br></br>2015-02-11 11:38:26,549 [HttpClient.java:203] Sending request [GET]: Domain.svc/search/AggregatePrimaryDouble.A1L0Do?limit=2147483647&offset=0
-      <br></br>2015-02-11 11:38:26,549 [HttpClient.java:430] GET http://localhost:2007/Domain.svc/search/AggregatePrimaryDouble.A1L0Do?limit=2147483647&offset=0
-      <br></br>2015-02-11 11:38:26,549 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-02-11 11:38:26,549 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-02-11 11:38:26,565 [HttpClient.java:227] Received response [200, 1024 bytes] in 16 ms
-      <br></br>2015-02-11 11:38:26,565 [HttpClient.java:230] Received response body: [{"URI":"{NULL,0,9.99999999999999909e-308,9.0000000000000005e+307,-1.23456789012345006e-10,1.23456789012344996e+20,-Infinity,Infinity,NaN}","p1L0Do":[null,0,1E-307,9E+307,-1.23456789012345E-10,1.23456789012345E+20,-Infinity,Infinity,NaN]}]
-      <br></br>2015-02-11 11:38:26,565 [HttpClient.java:218] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 319 bytes
-      <br></br>2015-02-11 11:38:26,565 [HttpClient.java:430] POST http://localhost:2007/RestApplication.svc/PersistAggregateRoot
-      <br></br>2015-02-11 11:38:26,565 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-02-11 11:38:26,565 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-02-11 11:38:26,565 [HttpClient.java:443] Adding payload: {"RootName":"AggregatePrimaryDouble.A1L0Do","ToDelete":"[{\"p1L0Do\":[null,0.0,1.0E-307,9.0E307,-1.23456789012345E-10,1.23456789012345E20,\"-Infinity\",\"Infinity\",\"NaN\"],\"uri\":\"{NULL,0,9.99999999999999909e-308,9.0000000000000005e+307,-1.23456789012345006e-10,1.23456789012344996e+20,-Infinity,Infinity,NaN}\"}]"}
-      <br></br>2015-02-11 11:38:26,581 [HttpClient.java:389] At http://localhost:2007/RestApplication.svc/PersistAggregateRoot [500] Input string was not in a correct format.
-      <br></br>2015-02-11 11:38:26,581 [HttpClient.java:390] Error connecting to http://localhost:2007/RestApplication.svc/PersistAggregateRoot. Trying next server if exists...
+      <br></br>2015-03-10 13:23:52,635 [HttpClient.java:203] Sending request [GET]: Domain.svc/search/AggregatePrimaryDouble.A1L0Do?limit=2147483647&offset=0
+      <br></br>2015-03-10 13:23:52,635 [HttpClient.java:430] GET http://localhost:2007/Domain.svc/search/AggregatePrimaryDouble.A1L0Do?limit=2147483647&offset=0
+      <br></br>2015-03-10 13:23:52,635 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-10 13:23:52,635 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-10 13:23:52,646 [HttpClient.java:227] Received response [200, 1024 bytes] in 11 ms
+      <br></br>2015-03-10 13:23:52,646 [HttpClient.java:230] Received response body: []
+      <br></br>2015-03-10 13:23:52,647 [HttpClient.java:218] Sending request [POST]: Crud.svc/AggregatePrimaryDouble.A1L0Do, content size: 122 bytes
+      <br></br>2015-03-10 13:23:52,648 [HttpClient.java:430] POST http://localhost:2007/Crud.svc/AggregatePrimaryDouble.A1L0Do
+      <br></br>2015-03-10 13:23:52,648 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-10 13:23:52,648 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-10 13:23:52,648 [HttpClient.java:443] Adding payload: {"URI":"1498189926","p1L0Do":[null,0.0,1.0E-307,9.0E307,-1.23456789012345E-10,1.23456789012345E20,-Infinity,Infinity,NaN]}
+      <br></br>2015-03-10 13:23:52,688 [HttpClient.java:227] Received response [201, 1024 bytes] in 41 ms
+      <br></br>2015-03-10 13:23:52,688 [HttpClient.java:230] Received response body: {"URI":"{NULL,0,1E-307,9E+307,-1.23456789012345E-10,1.23456789012345E+20,-Infinity,Infinity,NaN}","p1L0Do":[null,0,1E-307,9E+307,-1.23456789012345E-10,1.23456789012345E+20,-Infinity,Infinity,NaN]}
+      <br></br>2015-03-10 13:23:52,709 [HttpClient.java:203] Sending request [GET]: Crud.svc/AggregatePrimaryDouble.A1L0Do?uri=%7BNULL%2C0%2C1E-307%2C9E%2B307%2C-1.23456789012345E-10%2C1.23456789012345E%2B20%2C-Infinity%2CInfinity%2CNaN%7D
+      <br></br>2015-03-10 13:23:52,709 [HttpClient.java:430] GET http://localhost:2007/Crud.svc/AggregatePrimaryDouble.A1L0Do?uri=%7BNULL%2C0%2C1E-307%2C9E%2B307%2C-1.23456789012345E-10%2C1.23456789012345E%2B20%2C-Infinity%2CInfinity%2CNaN%7D
+      <br></br>2015-03-10 13:23:52,709 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-10 13:23:52,709 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-10 13:23:52,717 [HttpClient.java:227] Received response [200, 1024 bytes] in 8 ms
+      <br></br>2015-03-10 13:23:52,717 [HttpClient.java:230] Received response body: {"URI":"{NULL,0,1E-307,9E+307,-1.23456789012345E-10,1.23456789012345E+20,-Infinity,Infinity,NaN}","p1L0Do":[null,0,1E-307,9E+307,-1.23456789012345E-10,1.23456789012345E+20,-Infinity,Infinity,NaN]}
       <br></br><a id="testP1L0DoNonDefault4PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1L0DoNonDefault4PropertyValueInAggregateAfterActiveRecordPersist</h2>
-      <br></br>2015-02-11 11:38:26,581 [HttpClient.java:203] Sending request [GET]: Domain.svc/search/AggregatePrimaryDouble.A1L0Do?limit=2147483647&offset=0
-      <br></br>2015-02-11 11:38:26,612 [HttpClient.java:430] GET http://localhost:2007/Domain.svc/search/AggregatePrimaryDouble.A1L0Do?limit=2147483647&offset=0
-      <br></br>2015-02-11 11:38:26,612 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-02-11 11:38:26,612 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-02-11 11:38:26,643 [HttpClient.java:227] Received response [200, 1024 bytes] in 62 ms
-      <br></br>2015-02-11 11:38:26,643 [HttpClient.java:230] Received response body: [{"URI":"{NULL,0,9.99999999999999909e-308,9.0000000000000005e+307,-1.23456789012345006e-10,1.23456789012344996e+20,-Infinity,Infinity,NaN}","p1L0Do":[null,0,1E-307,9E+307,-1.23456789012345E-10,1.23456789012345E+20,-Infinity,Infinity,NaN]}]
-      <br></br>2015-02-11 11:38:26,643 [HttpClient.java:218] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 319 bytes
-      <br></br>2015-02-11 11:38:26,643 [HttpClient.java:430] POST http://localhost:2007/RestApplication.svc/PersistAggregateRoot
-      <br></br>2015-02-11 11:38:26,643 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-02-11 11:38:26,643 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-02-11 11:38:26,643 [HttpClient.java:443] Adding payload: {"RootName":"AggregatePrimaryDouble.A1L0Do","ToDelete":"[{\"p1L0Do\":[null,0.0,1.0E-307,9.0E307,-1.23456789012345E-10,1.23456789012345E20,\"-Infinity\",\"Infinity\",\"NaN\"],\"uri\":\"{NULL,0,9.99999999999999909e-308,9.0000000000000005e+307,-1.23456789012345006e-10,1.23456789012344996e+20,-Infinity,Infinity,NaN}\"}]"}
-      <br></br>2015-02-11 11:38:26,643 [HttpClient.java:389] At http://localhost:2007/RestApplication.svc/PersistAggregateRoot [500] Input string was not in a correct format.
-      <br></br>2015-02-11 11:38:26,643 [HttpClient.java:390] Error connecting to http://localhost:2007/RestApplication.svc/PersistAggregateRoot. Trying next server if exists...
+      <br></br>2015-03-10 13:23:52,718 [HttpClient.java:203] Sending request [GET]: Domain.svc/search/AggregatePrimaryDouble.A1L0Do?limit=2147483647&offset=0
+      <br></br>2015-03-10 13:23:52,718 [HttpClient.java:430] GET http://localhost:2007/Domain.svc/search/AggregatePrimaryDouble.A1L0Do?limit=2147483647&offset=0
+      <br></br>2015-03-10 13:23:52,719 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-10 13:23:52,719 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-10 13:23:52,723 [HttpClient.java:227] Received response [200, 1024 bytes] in 5 ms
+      <br></br>2015-03-10 13:23:52,723 [HttpClient.java:230] Received response body: [{"URI":"{NULL,0,1E-307,9E+307,-1.23456789012345E-10,1.23456789012345E+20,-Infinity,Infinity,NaN}","p1L0Do":[null,0,1E-307,9E+307,-1.23456789012345E-10,1.23456789012345E+20,-Infinity,Infinity,NaN]}]
+      <br></br>2015-03-10 13:23:52,724 [HttpClient.java:218] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 278 bytes
+      <br></br>2015-03-10 13:23:52,724 [HttpClient.java:430] POST http://localhost:2007/RestApplication.svc/PersistAggregateRoot
+      <br></br>2015-03-10 13:23:52,724 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-10 13:23:52,724 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-10 13:23:52,725 [HttpClient.java:443] Adding payload: {"RootName":"AggregatePrimaryDouble.A1L0Do","ToDelete":"[{\"p1L0Do\":[null,0.0,1.0E-307,9.0E307,-1.23456789012345E-10,1.23456789012345E20,\"-Infinity\",\"Infinity\",\"NaN\"],\"uri\":\"{NULL,0,1E-307,9E+307,-1.23456789012345E-10,1.23456789012345E+20,-Infinity,Infinity,NaN}\"}]"}
+      <br></br>2015-03-10 13:23:52,727 [HttpClient.java:389] At http://localhost:2007/RestApplication.svc/PersistAggregateRoot [500] Input string was not in a correct format.
+      <br></br>2015-03-10 13:23:52,728 [HttpClient.java:390] Error connecting to http://localhost:2007/RestApplication.svc/PersistAggregateRoot. Trying next server if exists...
       <br></br><a id="testP1L0DoNonDefault3PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1L0DoNonDefault3PropertyValueInAggregateAfterActiveRecordPersist</h2>
-      <br></br>2015-02-11 11:38:26,643 [HttpClient.java:203] Sending request [GET]: Domain.svc/search/AggregatePrimaryDouble.A1L0Do?limit=2147483647&offset=0
-      <br></br>2015-02-11 11:38:26,643 [HttpClient.java:430] GET http://localhost:2007/Domain.svc/search/AggregatePrimaryDouble.A1L0Do?limit=2147483647&offset=0
-      <br></br>2015-02-11 11:38:26,643 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-02-11 11:38:26,643 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-02-11 11:38:26,643 [HttpClient.java:227] Received response [200, 1024 bytes] in 0 ms
-      <br></br>2015-02-11 11:38:26,659 [HttpClient.java:230] Received response body: [{"URI":"{NULL,0,9.99999999999999909e-308,9.0000000000000005e+307,-1.23456789012345006e-10,1.23456789012344996e+20,-Infinity,Infinity,NaN}","p1L0Do":[null,0,1E-307,9E+307,-1.23456789012345E-10,1.23456789012345E+20,-Infinity,Infinity,NaN]}]
-      <br></br>2015-02-11 11:38:26,659 [HttpClient.java:218] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 319 bytes
-      <br></br>2015-02-11 11:38:26,659 [HttpClient.java:430] POST http://localhost:2007/RestApplication.svc/PersistAggregateRoot
-      <br></br>2015-02-11 11:38:26,659 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-02-11 11:38:26,659 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-02-11 11:38:26,659 [HttpClient.java:443] Adding payload: {"RootName":"AggregatePrimaryDouble.A1L0Do","ToDelete":"[{\"p1L0Do\":[null,0.0,1.0E-307,9.0E307,-1.23456789012345E-10,1.23456789012345E20,\"-Infinity\",\"Infinity\",\"NaN\"],\"uri\":\"{NULL,0,9.99999999999999909e-308,9.0000000000000005e+307,-1.23456789012345006e-10,1.23456789012344996e+20,-Infinity,Infinity,NaN}\"}]"}
-      <br></br>2015-02-11 11:38:26,659 [HttpClient.java:389] At http://localhost:2007/RestApplication.svc/PersistAggregateRoot [500] Input string was not in a correct format.
-      <br></br>2015-02-11 11:38:26,659 [HttpClient.java:390] Error connecting to http://localhost:2007/RestApplication.svc/PersistAggregateRoot. Trying next server if exists...
+      <br></br>2015-03-10 13:23:52,729 [HttpClient.java:203] Sending request [GET]: Domain.svc/search/AggregatePrimaryDouble.A1L0Do?limit=2147483647&offset=0
+      <br></br>2015-03-10 13:23:52,729 [HttpClient.java:430] GET http://localhost:2007/Domain.svc/search/AggregatePrimaryDouble.A1L0Do?limit=2147483647&offset=0
+      <br></br>2015-03-10 13:23:52,729 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-10 13:23:52,729 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-10 13:23:52,731 [HttpClient.java:227] Received response [200, 1024 bytes] in 2 ms
+      <br></br>2015-03-10 13:23:52,732 [HttpClient.java:230] Received response body: [{"URI":"{NULL,0,1E-307,9E+307,-1.23456789012345E-10,1.23456789012345E+20,-Infinity,Infinity,NaN}","p1L0Do":[null,0,1E-307,9E+307,-1.23456789012345E-10,1.23456789012345E+20,-Infinity,Infinity,NaN]}]
+      <br></br>2015-03-10 13:23:52,732 [HttpClient.java:218] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 278 bytes
+      <br></br>2015-03-10 13:23:52,732 [HttpClient.java:430] POST http://localhost:2007/RestApplication.svc/PersistAggregateRoot
+      <br></br>2015-03-10 13:23:52,733 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-10 13:23:52,733 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-10 13:23:52,733 [HttpClient.java:443] Adding payload: {"RootName":"AggregatePrimaryDouble.A1L0Do","ToDelete":"[{\"p1L0Do\":[null,0.0,1.0E-307,9.0E307,-1.23456789012345E-10,1.23456789012345E20,\"-Infinity\",\"Infinity\",\"NaN\"],\"uri\":\"{NULL,0,1E-307,9E+307,-1.23456789012345E-10,1.23456789012345E+20,-Infinity,Infinity,NaN}\"}]"}
+      <br></br>2015-03-10 13:23:52,735 [HttpClient.java:389] At http://localhost:2007/RestApplication.svc/PersistAggregateRoot [500] Input string was not in a correct format.
+      <br></br>2015-03-10 13:23:52,811 [HttpClient.java:390] Error connecting to http://localhost:2007/RestApplication.svc/PersistAggregateRoot. Trying next server if exists...
       <br></br><a id="testP1L0DoNonDefault2PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1L0DoNonDefault2PropertyValueInAggregateAfterActiveRecordPersist</h2>
-      <br></br>2015-02-11 11:38:26,659 [HttpClient.java:203] Sending request [GET]: Domain.svc/search/AggregatePrimaryDouble.A1L0Do?limit=2147483647&offset=0
-      <br></br>2015-02-11 11:38:26,659 [HttpClient.java:430] GET http://localhost:2007/Domain.svc/search/AggregatePrimaryDouble.A1L0Do?limit=2147483647&offset=0
-      <br></br>2015-02-11 11:38:26,659 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-02-11 11:38:26,753 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-02-11 11:38:26,784 [HttpClient.java:227] Received response [200, 1024 bytes] in 125 ms
-      <br></br>2015-02-11 11:38:26,784 [HttpClient.java:230] Received response body: [{"URI":"{NULL,0,9.99999999999999909e-308,9.0000000000000005e+307,-1.23456789012345006e-10,1.23456789012344996e+20,-Infinity,Infinity,NaN}","p1L0Do":[null,0,1E-307,9E+307,-1.23456789012345E-10,1.23456789012345E+20,-Infinity,Infinity,NaN]}]
-      <br></br>2015-02-11 11:38:26,784 [HttpClient.java:218] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 319 bytes
-      <br></br>2015-02-11 11:38:26,784 [HttpClient.java:430] POST http://localhost:2007/RestApplication.svc/PersistAggregateRoot
-      <br></br>2015-02-11 11:38:26,784 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-02-11 11:38:26,784 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-02-11 11:38:26,784 [HttpClient.java:443] Adding payload: {"RootName":"AggregatePrimaryDouble.A1L0Do","ToDelete":"[{\"p1L0Do\":[null,0.0,1.0E-307,9.0E307,-1.23456789012345E-10,1.23456789012345E20,\"-Infinity\",\"Infinity\",\"NaN\"],\"uri\":\"{NULL,0,9.99999999999999909e-308,9.0000000000000005e+307,-1.23456789012345006e-10,1.23456789012344996e+20,-Infinity,Infinity,NaN}\"}]"}
-      <br></br>2015-02-11 11:38:26,784 [HttpClient.java:389] At http://localhost:2007/RestApplication.svc/PersistAggregateRoot [500] Input string was not in a correct format.
-      <br></br>2015-02-11 11:38:26,784 [HttpClient.java:390] Error connecting to http://localhost:2007/RestApplication.svc/PersistAggregateRoot. Trying next server if exists...
+      <br></br>2015-03-10 13:23:52,812 [HttpClient.java:203] Sending request [GET]: Domain.svc/search/AggregatePrimaryDouble.A1L0Do?limit=2147483647&offset=0
+      <br></br>2015-03-10 13:23:52,812 [HttpClient.java:430] GET http://localhost:2007/Domain.svc/search/AggregatePrimaryDouble.A1L0Do?limit=2147483647&offset=0
+      <br></br>2015-03-10 13:23:52,813 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-10 13:23:52,813 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-10 13:23:52,815 [HttpClient.java:227] Received response [200, 1024 bytes] in 3 ms
+      <br></br>2015-03-10 13:23:52,815 [HttpClient.java:230] Received response body: [{"URI":"{NULL,0,1E-307,9E+307,-1.23456789012345E-10,1.23456789012345E+20,-Infinity,Infinity,NaN}","p1L0Do":[null,0,1E-307,9E+307,-1.23456789012345E-10,1.23456789012345E+20,-Infinity,Infinity,NaN]}]
+      <br></br>2015-03-10 13:23:52,816 [HttpClient.java:218] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 278 bytes
+      <br></br>2015-03-10 13:23:52,816 [HttpClient.java:430] POST http://localhost:2007/RestApplication.svc/PersistAggregateRoot
+      <br></br>2015-03-10 13:23:52,816 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-10 13:23:52,816 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-10 13:23:52,816 [HttpClient.java:443] Adding payload: {"RootName":"AggregatePrimaryDouble.A1L0Do","ToDelete":"[{\"p1L0Do\":[null,0.0,1.0E-307,9.0E307,-1.23456789012345E-10,1.23456789012345E20,\"-Infinity\",\"Infinity\",\"NaN\"],\"uri\":\"{NULL,0,1E-307,9E+307,-1.23456789012345E-10,1.23456789012345E+20,-Infinity,Infinity,NaN}\"}]"}
+      <br></br>2015-03-10 13:23:52,819 [HttpClient.java:389] At http://localhost:2007/RestApplication.svc/PersistAggregateRoot [500] Input string was not in a correct format.
+      <br></br>2015-03-10 13:23:52,819 [HttpClient.java:390] Error connecting to http://localhost:2007/RestApplication.svc/PersistAggregateRoot. Trying next server if exists...
       <br></br><a id="testP1L0DoNonDefault1PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1L0DoNonDefault1PropertyValueInAggregateAfterActiveRecordPersist</h2>
-      <br></br>2015-02-11 11:38:26,784 [HttpClient.java:203] Sending request [GET]: Domain.svc/search/AggregatePrimaryDouble.A1L0Do?limit=2147483647&offset=0
-      <br></br>2015-02-11 11:38:26,784 [HttpClient.java:430] GET http://localhost:2007/Domain.svc/search/AggregatePrimaryDouble.A1L0Do?limit=2147483647&offset=0
-      <br></br>2015-02-11 11:38:26,784 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-02-11 11:38:26,784 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-02-11 11:38:26,784 [HttpClient.java:227] Received response [200, 1024 bytes] in 0 ms
-      <br></br>2015-02-11 11:38:26,784 [HttpClient.java:230] Received response body: [{"URI":"{NULL,0,9.99999999999999909e-308,9.0000000000000005e+307,-1.23456789012345006e-10,1.23456789012344996e+20,-Infinity,Infinity,NaN}","p1L0Do":[null,0,1E-307,9E+307,-1.23456789012345E-10,1.23456789012345E+20,-Infinity,Infinity,NaN]}]
-      <br></br>2015-02-11 11:38:26,784 [HttpClient.java:218] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 319 bytes
-      <br></br>2015-02-11 11:38:26,784 [HttpClient.java:430] POST http://localhost:2007/RestApplication.svc/PersistAggregateRoot
-      <br></br>2015-02-11 11:38:26,784 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-02-11 11:38:26,784 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-02-11 11:38:26,784 [HttpClient.java:443] Adding payload: {"RootName":"AggregatePrimaryDouble.A1L0Do","ToDelete":"[{\"p1L0Do\":[null,0.0,1.0E-307,9.0E307,-1.23456789012345E-10,1.23456789012345E20,\"-Infinity\",\"Infinity\",\"NaN\"],\"uri\":\"{NULL,0,9.99999999999999909e-308,9.0000000000000005e+307,-1.23456789012345006e-10,1.23456789012344996e+20,-Infinity,Infinity,NaN}\"}]"}
-      <br></br>2015-02-11 11:38:26,799 [HttpClient.java:389] At http://localhost:2007/RestApplication.svc/PersistAggregateRoot [500] Input string was not in a correct format.
-      <br></br>2015-02-11 11:38:26,799 [HttpClient.java:390] Error connecting to http://localhost:2007/RestApplication.svc/PersistAggregateRoot. Trying next server if exists...
+      <br></br>2015-03-10 13:23:52,821 [HttpClient.java:203] Sending request [GET]: Domain.svc/search/AggregatePrimaryDouble.A1L0Do?limit=2147483647&offset=0
+      <br></br>2015-03-10 13:23:52,821 [HttpClient.java:430] GET http://localhost:2007/Domain.svc/search/AggregatePrimaryDouble.A1L0Do?limit=2147483647&offset=0
+      <br></br>2015-03-10 13:23:52,821 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-10 13:23:52,821 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-10 13:23:52,823 [HttpClient.java:227] Received response [200, 1024 bytes] in 2 ms
+      <br></br>2015-03-10 13:23:52,823 [HttpClient.java:230] Received response body: [{"URI":"{NULL,0,1E-307,9E+307,-1.23456789012345E-10,1.23456789012345E+20,-Infinity,Infinity,NaN}","p1L0Do":[null,0,1E-307,9E+307,-1.23456789012345E-10,1.23456789012345E+20,-Infinity,Infinity,NaN]}]
+      <br></br>2015-03-10 13:23:52,825 [HttpClient.java:218] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 278 bytes
+      <br></br>2015-03-10 13:23:52,825 [HttpClient.java:430] POST http://localhost:2007/RestApplication.svc/PersistAggregateRoot
+      <br></br>2015-03-10 13:23:52,825 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-10 13:23:52,825 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-10 13:23:52,825 [HttpClient.java:443] Adding payload: {"RootName":"AggregatePrimaryDouble.A1L0Do","ToDelete":"[{\"p1L0Do\":[null,0.0,1.0E-307,9.0E307,-1.23456789012345E-10,1.23456789012345E20,\"-Infinity\",\"Infinity\",\"NaN\"],\"uri\":\"{NULL,0,1E-307,9E+307,-1.23456789012345E-10,1.23456789012345E+20,-Infinity,Infinity,NaN}\"}]"}
+      <br></br>2015-03-10 13:23:52,828 [HttpClient.java:389] At http://localhost:2007/RestApplication.svc/PersistAggregateRoot [500] Input string was not in a correct format.
+      <br></br>2015-03-10 13:23:52,828 [HttpClient.java:390] Error connecting to http://localhost:2007/RestApplication.svc/PersistAggregateRoot. Trying next server if exists...
       <br></br><a id="testURIPropertyFieldModifiers"/><h2>testURIPropertyFieldModifiers</h2>
       <br></br><a id="testURIPropertyGetterPublicVisibility"/><h2>testURIPropertyGetterPublicVisibility</h2>
       <br></br><a id="testP1L0DoPropertyFieldDefaultValue"/><h2>testP1L0DoPropertyFieldDefaultValue</h2>
       <br></br><a id="testP1L0DoPropertySetterGenericType"/><h2>testP1L0DoPropertySetterGenericType</h2>
       <br></br><a id="testP1L0DoDefaultPropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1L0DoDefaultPropertyValueInAggregateAfterActiveRecordPersist</h2>
-      <br></br>2015-02-11 11:38:26,878 [HttpClient.java:203] Sending request [GET]: Domain.svc/search/AggregatePrimaryDouble.A1L0Do?limit=2147483647&offset=0
-      <br></br>2015-02-11 11:38:26,878 [HttpClient.java:430] GET http://localhost:2007/Domain.svc/search/AggregatePrimaryDouble.A1L0Do?limit=2147483647&offset=0
-      <br></br>2015-02-11 11:38:26,878 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-02-11 11:38:26,878 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-02-11 11:38:26,909 [HttpClient.java:227] Received response [200, 1024 bytes] in 31 ms
-      <br></br>2015-02-11 11:38:26,909 [HttpClient.java:230] Received response body: [{"URI":"{NULL,0,9.99999999999999909e-308,9.0000000000000005e+307,-1.23456789012345006e-10,1.23456789012344996e+20,-Infinity,Infinity,NaN}","p1L0Do":[null,0,1E-307,9E+307,-1.23456789012345E-10,1.23456789012345E+20,-Infinity,Infinity,NaN]}]
-      <br></br>2015-02-11 11:38:26,909 [HttpClient.java:218] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 319 bytes
-      <br></br>2015-02-11 11:38:26,909 [HttpClient.java:430] POST http://localhost:2007/RestApplication.svc/PersistAggregateRoot
-      <br></br>2015-02-11 11:38:26,909 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-02-11 11:38:26,909 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-02-11 11:38:26,909 [HttpClient.java:443] Adding payload: {"RootName":"AggregatePrimaryDouble.A1L0Do","ToDelete":"[{\"p1L0Do\":[null,0.0,1.0E-307,9.0E307,-1.23456789012345E-10,1.23456789012345E20,\"-Infinity\",\"Infinity\",\"NaN\"],\"uri\":\"{NULL,0,9.99999999999999909e-308,9.0000000000000005e+307,-1.23456789012345006e-10,1.23456789012344996e+20,-Infinity,Infinity,NaN}\"}]"}
-      <br></br>2015-02-11 11:38:26,909 [HttpClient.java:389] At http://localhost:2007/RestApplication.svc/PersistAggregateRoot [500] Input string was not in a correct format.
-      <br></br>2015-02-11 11:38:26,909 [HttpClient.java:390] Error connecting to http://localhost:2007/RestApplication.svc/PersistAggregateRoot. Trying next server if exists...
+      <br></br>2015-03-10 13:23:52,832 [HttpClient.java:203] Sending request [GET]: Domain.svc/search/AggregatePrimaryDouble.A1L0Do?limit=2147483647&offset=0
+      <br></br>2015-03-10 13:23:52,915 [HttpClient.java:430] GET http://localhost:2007/Domain.svc/search/AggregatePrimaryDouble.A1L0Do?limit=2147483647&offset=0
+      <br></br>2015-03-10 13:23:52,915 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-10 13:23:52,915 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-10 13:23:52,917 [HttpClient.java:227] Received response [200, 1024 bytes] in 85 ms
+      <br></br>2015-03-10 13:23:52,917 [HttpClient.java:230] Received response body: [{"URI":"{NULL,0,1E-307,9E+307,-1.23456789012345E-10,1.23456789012345E+20,-Infinity,Infinity,NaN}","p1L0Do":[null,0,1E-307,9E+307,-1.23456789012345E-10,1.23456789012345E+20,-Infinity,Infinity,NaN]}]
+      <br></br>2015-03-10 13:23:52,918 [HttpClient.java:218] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 278 bytes
+      <br></br>2015-03-10 13:23:52,918 [HttpClient.java:430] POST http://localhost:2007/RestApplication.svc/PersistAggregateRoot
+      <br></br>2015-03-10 13:23:52,918 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-10 13:23:52,918 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-10 13:23:52,918 [HttpClient.java:443] Adding payload: {"RootName":"AggregatePrimaryDouble.A1L0Do","ToDelete":"[{\"p1L0Do\":[null,0.0,1.0E-307,9.0E307,-1.23456789012345E-10,1.23456789012345E20,\"-Infinity\",\"Infinity\",\"NaN\"],\"uri\":\"{NULL,0,1E-307,9E+307,-1.23456789012345E-10,1.23456789012345E+20,-Infinity,Infinity,NaN}\"}]"}
+      <br></br>2015-03-10 13:23:52,920 [HttpClient.java:389] At http://localhost:2007/RestApplication.svc/PersistAggregateRoot [500] Input string was not in a correct format.
+      <br></br>2015-03-10 13:23:52,921 [HttpClient.java:390] Error connecting to http://localhost:2007/RestApplication.svc/PersistAggregateRoot. Trying next server if exists...
       <br></br><a id="testP1L0DoPropertySetterModifiers"/><h2>testP1L0DoPropertySetterModifiers</h2>
       <br></br><a id="testURIPropertyGetterClass"/><h2>testURIPropertyGetterClass</h2>
       <br></br><a id="testP1L0DoNonDefault1PropertyInAggregateJsonSerialization"/><h2>testP1L0DoNonDefault1PropertyInAggregateJsonSerialization</h2>
@@ -433,62 +483,68 @@
       <br></br><a id="testURIPropertyGetterModifiers"/><h2>testURIPropertyGetterModifiers</h2>
       <br></br><a id="testNonExistenceOfURIPropertySetter"/><h2>testNonExistenceOfURIPropertySetter</h2>
       <br></br><a id="testP1L1DoNonDefault3PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1L1DoNonDefault3PropertyValueInAggregateAfterActiveRecordPersist</h2>
-      <br></br>2015-02-11 11:38:26,924 [HttpClient.java:203] Sending request [GET]: Domain.svc/search/AggregatePrimaryDouble.A1L1Do?limit=2147483647&offset=0
-      <br></br>2015-02-11 11:38:26,924 [HttpClient.java:430] GET http://localhost:2007/Domain.svc/search/AggregatePrimaryDouble.A1L1Do?limit=2147483647&offset=0
-      <br></br>2015-02-11 11:38:26,924 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-02-11 11:38:26,924 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-02-11 11:38:26,971 [HttpClient.java:227] Received response [200, 1024 bytes] in 47 ms
-      <br></br>2015-02-11 11:38:26,971 [HttpClient.java:230] Received response body: [{"URI":"{0,9.99999999999999909e-308,9.0000000000000005e+307,-1.23456789012345006e-10,1.23456789012344996e+20,-Infinity,Infinity,NaN}","p1L1Do":[0,1E-307,9E+307,-1.23456789012345E-10,1.23456789012345E+20,-Infinity,Infinity,NaN]}]
-      <br></br>2015-02-11 11:38:26,987 [HttpClient.java:218] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 309 bytes
-      <br></br>2015-02-11 11:38:26,987 [HttpClient.java:430] POST http://localhost:2007/RestApplication.svc/PersistAggregateRoot
-      <br></br>2015-02-11 11:38:26,987 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-02-11 11:38:26,987 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-02-11 11:38:26,987 [HttpClient.java:443] Adding payload: {"RootName":"AggregatePrimaryDouble.A1L1Do","ToDelete":"[{\"p1L1Do\":[0.0,1.0E-307,9.0E307,-1.23456789012345E-10,1.23456789012345E20,\"-Infinity\",\"Infinity\",\"NaN\"],\"uri\":\"{0,9.99999999999999909e-308,9.0000000000000005e+307,-1.23456789012345006e-10,1.23456789012344996e+20,-Infinity,Infinity,NaN}\"}]"}
-      <br></br>2015-02-11 11:38:27,049 [HttpClient.java:389] At http://localhost:2007/RestApplication.svc/PersistAggregateRoot [500] Input string was not in a correct format.
-      <br></br>2015-02-11 11:38:27,049 [HttpClient.java:390] Error connecting to http://localhost:2007/RestApplication.svc/PersistAggregateRoot. Trying next server if exists...
+      <br></br>2015-03-10 13:23:52,931 [HttpClient.java:203] Sending request [GET]: Domain.svc/search/AggregatePrimaryDouble.A1L1Do?limit=2147483647&offset=0
+      <br></br>2015-03-10 13:23:52,931 [HttpClient.java:430] GET http://localhost:2007/Domain.svc/search/AggregatePrimaryDouble.A1L1Do?limit=2147483647&offset=0
+      <br></br>2015-03-10 13:23:52,932 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-10 13:23:52,932 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-10 13:23:52,942 [HttpClient.java:227] Received response [200, 1024 bytes] in 11 ms
+      <br></br>2015-03-10 13:23:52,942 [HttpClient.java:230] Received response body: []
+      <br></br>2015-03-10 13:23:52,945 [HttpClient.java:218] Sending request [POST]: Crud.svc/AggregatePrimaryDouble.A1L1Do, content size: 117 bytes
+      <br></br>2015-03-10 13:23:52,945 [HttpClient.java:430] POST http://localhost:2007/Crud.svc/AggregatePrimaryDouble.A1L1Do
+      <br></br>2015-03-10 13:23:52,945 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-10 13:23:52,945 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-10 13:23:52,945 [HttpClient.java:443] Adding payload: {"URI":"1421382980","p1L1Do":[0.0,1.0E-307,9.0E307,-1.23456789012345E-10,1.23456789012345E20,-Infinity,Infinity,NaN]}
+      <br></br>2015-03-10 13:23:52,993 [HttpClient.java:227] Received response [201, 1024 bytes] in 49 ms
+      <br></br>2015-03-10 13:23:52,993 [HttpClient.java:230] Received response body: {"URI":"{0,1E-307,9E+307,-1.23456789012345E-10,1.23456789012345E+20,-Infinity,Infinity,NaN}","p1L1Do":[0,1E-307,9E+307,-1.23456789012345E-10,1.23456789012345E+20,-Infinity,Infinity,NaN]}
+      <br></br>2015-03-10 13:23:52,994 [HttpClient.java:203] Sending request [GET]: Crud.svc/AggregatePrimaryDouble.A1L1Do?uri=%7B0%2C1E-307%2C9E%2B307%2C-1.23456789012345E-10%2C1.23456789012345E%2B20%2C-Infinity%2CInfinity%2CNaN%7D
+      <br></br>2015-03-10 13:23:52,994 [HttpClient.java:430] GET http://localhost:2007/Crud.svc/AggregatePrimaryDouble.A1L1Do?uri=%7B0%2C1E-307%2C9E%2B307%2C-1.23456789012345E-10%2C1.23456789012345E%2B20%2C-Infinity%2CInfinity%2CNaN%7D
+      <br></br>2015-03-10 13:23:53,017 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-10 13:23:53,017 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-10 13:23:53,025 [HttpClient.java:227] Received response [200, 1024 bytes] in 31 ms
+      <br></br>2015-03-10 13:23:53,025 [HttpClient.java:230] Received response body: {"URI":"{0,1E-307,9E+307,-1.23456789012345E-10,1.23456789012345E+20,-Infinity,Infinity,NaN}","p1L1Do":[0,1E-307,9E+307,-1.23456789012345E-10,1.23456789012345E+20,-Infinity,Infinity,NaN]}
       <br></br><a id="testP1L1DoNonDefault2PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1L1DoNonDefault2PropertyValueInAggregateAfterActiveRecordPersist</h2>
-      <br></br>2015-02-11 11:38:27,049 [HttpClient.java:203] Sending request [GET]: Domain.svc/search/AggregatePrimaryDouble.A1L1Do?limit=2147483647&offset=0
-      <br></br>2015-02-11 11:38:27,049 [HttpClient.java:430] GET http://localhost:2007/Domain.svc/search/AggregatePrimaryDouble.A1L1Do?limit=2147483647&offset=0
-      <br></br>2015-02-11 11:38:27,049 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-02-11 11:38:27,049 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-02-11 11:38:27,049 [HttpClient.java:227] Received response [200, 1024 bytes] in 0 ms
-      <br></br>2015-02-11 11:38:27,049 [HttpClient.java:230] Received response body: [{"URI":"{0,9.99999999999999909e-308,9.0000000000000005e+307,-1.23456789012345006e-10,1.23456789012344996e+20,-Infinity,Infinity,NaN}","p1L1Do":[0,1E-307,9E+307,-1.23456789012345E-10,1.23456789012345E+20,-Infinity,Infinity,NaN]}]
-      <br></br>2015-02-11 11:38:27,049 [HttpClient.java:218] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 309 bytes
-      <br></br>2015-02-11 11:38:27,049 [HttpClient.java:430] POST http://localhost:2007/RestApplication.svc/PersistAggregateRoot
-      <br></br>2015-02-11 11:38:27,049 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-02-11 11:38:27,049 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-02-11 11:38:27,049 [HttpClient.java:443] Adding payload: {"RootName":"AggregatePrimaryDouble.A1L1Do","ToDelete":"[{\"p1L1Do\":[0.0,1.0E-307,9.0E307,-1.23456789012345E-10,1.23456789012345E20,\"-Infinity\",\"Infinity\",\"NaN\"],\"uri\":\"{0,9.99999999999999909e-308,9.0000000000000005e+307,-1.23456789012345006e-10,1.23456789012344996e+20,-Infinity,Infinity,NaN}\"}]"}
-      <br></br>2015-02-11 11:38:27,065 [HttpClient.java:389] At http://localhost:2007/RestApplication.svc/PersistAggregateRoot [500] Input string was not in a correct format.
-      <br></br>2015-02-11 11:38:27,065 [HttpClient.java:390] Error connecting to http://localhost:2007/RestApplication.svc/PersistAggregateRoot. Trying next server if exists...
+      <br></br>2015-03-10 13:23:53,026 [HttpClient.java:203] Sending request [GET]: Domain.svc/search/AggregatePrimaryDouble.A1L1Do?limit=2147483647&offset=0
+      <br></br>2015-03-10 13:23:53,026 [HttpClient.java:430] GET http://localhost:2007/Domain.svc/search/AggregatePrimaryDouble.A1L1Do?limit=2147483647&offset=0
+      <br></br>2015-03-10 13:23:53,026 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-10 13:23:53,026 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-10 13:23:53,030 [HttpClient.java:227] Received response [200, 1024 bytes] in 4 ms
+      <br></br>2015-03-10 13:23:53,030 [HttpClient.java:230] Received response body: [{"URI":"{0,1E-307,9E+307,-1.23456789012345E-10,1.23456789012345E+20,-Infinity,Infinity,NaN}","p1L1Do":[0,1E-307,9E+307,-1.23456789012345E-10,1.23456789012345E+20,-Infinity,Infinity,NaN]}]
+      <br></br>2015-03-10 13:23:53,033 [HttpClient.java:218] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 268 bytes
+      <br></br>2015-03-10 13:23:53,033 [HttpClient.java:430] POST http://localhost:2007/RestApplication.svc/PersistAggregateRoot
+      <br></br>2015-03-10 13:23:53,033 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-10 13:23:53,033 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-10 13:23:53,034 [HttpClient.java:443] Adding payload: {"RootName":"AggregatePrimaryDouble.A1L1Do","ToDelete":"[{\"p1L1Do\":[0.0,1.0E-307,9.0E307,-1.23456789012345E-10,1.23456789012345E20,\"-Infinity\",\"Infinity\",\"NaN\"],\"uri\":\"{0,1E-307,9E+307,-1.23456789012345E-10,1.23456789012345E+20,-Infinity,Infinity,NaN}\"}]"}
+      <br></br>2015-03-10 13:23:53,036 [HttpClient.java:389] At http://localhost:2007/RestApplication.svc/PersistAggregateRoot [500] Input string was not in a correct format.
+      <br></br>2015-03-10 13:23:53,037 [HttpClient.java:390] Error connecting to http://localhost:2007/RestApplication.svc/PersistAggregateRoot. Trying next server if exists...
       <br></br><a id="testP1L1DoPropertyFieldClass"/><h2>testP1L1DoPropertyFieldClass</h2>
       <br></br><a id="testP1L1DoNonDefault1PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1L1DoNonDefault1PropertyValueInAggregateAfterActiveRecordPersist</h2>
-      <br></br>2015-02-11 11:38:27,065 [HttpClient.java:203] Sending request [GET]: Domain.svc/search/AggregatePrimaryDouble.A1L1Do?limit=2147483647&offset=0
-      <br></br>2015-02-11 11:38:27,065 [HttpClient.java:430] GET http://localhost:2007/Domain.svc/search/AggregatePrimaryDouble.A1L1Do?limit=2147483647&offset=0
-      <br></br>2015-02-11 11:38:27,065 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-02-11 11:38:27,065 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-02-11 11:38:27,065 [HttpClient.java:227] Received response [200, 1024 bytes] in 0 ms
-      <br></br>2015-02-11 11:38:27,065 [HttpClient.java:230] Received response body: [{"URI":"{0,9.99999999999999909e-308,9.0000000000000005e+307,-1.23456789012345006e-10,1.23456789012344996e+20,-Infinity,Infinity,NaN}","p1L1Do":[0,1E-307,9E+307,-1.23456789012345E-10,1.23456789012345E+20,-Infinity,Infinity,NaN]}]
-      <br></br>2015-02-11 11:38:27,065 [HttpClient.java:218] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 309 bytes
-      <br></br>2015-02-11 11:38:27,065 [HttpClient.java:430] POST http://localhost:2007/RestApplication.svc/PersistAggregateRoot
-      <br></br>2015-02-11 11:38:27,065 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-02-11 11:38:27,065 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-02-11 11:38:27,065 [HttpClient.java:443] Adding payload: {"RootName":"AggregatePrimaryDouble.A1L1Do","ToDelete":"[{\"p1L1Do\":[0.0,1.0E-307,9.0E307,-1.23456789012345E-10,1.23456789012345E20,\"-Infinity\",\"Infinity\",\"NaN\"],\"uri\":\"{0,9.99999999999999909e-308,9.0000000000000005e+307,-1.23456789012345006e-10,1.23456789012344996e+20,-Infinity,Infinity,NaN}\"}]"}
-      <br></br>2015-02-11 11:38:27,159 [HttpClient.java:389] At http://localhost:2007/RestApplication.svc/PersistAggregateRoot [500] Input string was not in a correct format.
-      <br></br>2015-02-11 11:38:27,159 [HttpClient.java:390] Error connecting to http://localhost:2007/RestApplication.svc/PersistAggregateRoot. Trying next server if exists...
+      <br></br>2015-03-10 13:23:53,039 [HttpClient.java:203] Sending request [GET]: Domain.svc/search/AggregatePrimaryDouble.A1L1Do?limit=2147483647&offset=0
+      <br></br>2015-03-10 13:23:53,039 [HttpClient.java:430] GET http://localhost:2007/Domain.svc/search/AggregatePrimaryDouble.A1L1Do?limit=2147483647&offset=0
+      <br></br>2015-03-10 13:23:53,039 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-10 13:23:53,039 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-10 13:23:53,041 [HttpClient.java:227] Received response [200, 1024 bytes] in 2 ms
+      <br></br>2015-03-10 13:23:53,041 [HttpClient.java:230] Received response body: [{"URI":"{0,1E-307,9E+307,-1.23456789012345E-10,1.23456789012345E+20,-Infinity,Infinity,NaN}","p1L1Do":[0,1E-307,9E+307,-1.23456789012345E-10,1.23456789012345E+20,-Infinity,Infinity,NaN]}]
+      <br></br>2015-03-10 13:23:53,042 [HttpClient.java:218] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 268 bytes
+      <br></br>2015-03-10 13:23:53,042 [HttpClient.java:430] POST http://localhost:2007/RestApplication.svc/PersistAggregateRoot
+      <br></br>2015-03-10 13:23:53,042 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-10 13:23:53,042 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-10 13:23:53,042 [HttpClient.java:443] Adding payload: {"RootName":"AggregatePrimaryDouble.A1L1Do","ToDelete":"[{\"p1L1Do\":[0.0,1.0E-307,9.0E307,-1.23456789012345E-10,1.23456789012345E20,\"-Infinity\",\"Infinity\",\"NaN\"],\"uri\":\"{0,1E-307,9E+307,-1.23456789012345E-10,1.23456789012345E+20,-Infinity,Infinity,NaN}\"}]"}
+      <br></br>2015-03-10 13:23:53,124 [HttpClient.java:389] At http://localhost:2007/RestApplication.svc/PersistAggregateRoot [500] Input string was not in a correct format.
+      <br></br>2015-03-10 13:23:53,124 [HttpClient.java:390] Error connecting to http://localhost:2007/RestApplication.svc/PersistAggregateRoot. Trying next server if exists...
       <br></br><a id="testP1L1DoDefaultPropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1L1DoDefaultPropertyValueInAggregateAfterActiveRecordPersist</h2>
-      <br></br>2015-02-11 11:38:27,174 [HttpClient.java:203] Sending request [GET]: Domain.svc/search/AggregatePrimaryDouble.A1L1Do?limit=2147483647&offset=0
-      <br></br>2015-02-11 11:38:27,174 [HttpClient.java:430] GET http://localhost:2007/Domain.svc/search/AggregatePrimaryDouble.A1L1Do?limit=2147483647&offset=0
-      <br></br>2015-02-11 11:38:27,174 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-02-11 11:38:27,174 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-02-11 11:38:27,174 [HttpClient.java:227] Received response [200, 1024 bytes] in 0 ms
-      <br></br>2015-02-11 11:38:27,174 [HttpClient.java:230] Received response body: [{"URI":"{0,9.99999999999999909e-308,9.0000000000000005e+307,-1.23456789012345006e-10,1.23456789012344996e+20,-Infinity,Infinity,NaN}","p1L1Do":[0,1E-307,9E+307,-1.23456789012345E-10,1.23456789012345E+20,-Infinity,Infinity,NaN]}]
-      <br></br>2015-02-11 11:38:27,174 [HttpClient.java:218] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 309 bytes
-      <br></br>2015-02-11 11:38:27,174 [HttpClient.java:430] POST http://localhost:2007/RestApplication.svc/PersistAggregateRoot
-      <br></br>2015-02-11 11:38:27,174 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-02-11 11:38:27,174 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-02-11 11:38:27,174 [HttpClient.java:443] Adding payload: {"RootName":"AggregatePrimaryDouble.A1L1Do","ToDelete":"[{\"p1L1Do\":[0.0,1.0E-307,9.0E307,-1.23456789012345E-10,1.23456789012345E20,\"-Infinity\",\"Infinity\",\"NaN\"],\"uri\":\"{0,9.99999999999999909e-308,9.0000000000000005e+307,-1.23456789012345006e-10,1.23456789012344996e+20,-Infinity,Infinity,NaN}\"}]"}
-      <br></br>2015-02-11 11:38:27,190 [HttpClient.java:389] At http://localhost:2007/RestApplication.svc/PersistAggregateRoot [500] Input string was not in a correct format.
-      <br></br>2015-02-11 11:38:27,190 [HttpClient.java:390] Error connecting to http://localhost:2007/RestApplication.svc/PersistAggregateRoot. Trying next server if exists...
+      <br></br>2015-03-10 13:23:53,125 [HttpClient.java:203] Sending request [GET]: Domain.svc/search/AggregatePrimaryDouble.A1L1Do?limit=2147483647&offset=0
+      <br></br>2015-03-10 13:23:53,126 [HttpClient.java:430] GET http://localhost:2007/Domain.svc/search/AggregatePrimaryDouble.A1L1Do?limit=2147483647&offset=0
+      <br></br>2015-03-10 13:23:53,126 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-10 13:23:53,126 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-10 13:23:53,128 [HttpClient.java:227] Received response [200, 1024 bytes] in 3 ms
+      <br></br>2015-03-10 13:23:53,128 [HttpClient.java:230] Received response body: [{"URI":"{0,1E-307,9E+307,-1.23456789012345E-10,1.23456789012345E+20,-Infinity,Infinity,NaN}","p1L1Do":[0,1E-307,9E+307,-1.23456789012345E-10,1.23456789012345E+20,-Infinity,Infinity,NaN]}]
+      <br></br>2015-03-10 13:23:53,129 [HttpClient.java:218] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 268 bytes
+      <br></br>2015-03-10 13:23:53,129 [HttpClient.java:430] POST http://localhost:2007/RestApplication.svc/PersistAggregateRoot
+      <br></br>2015-03-10 13:23:53,129 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-10 13:23:53,129 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-10 13:23:53,129 [HttpClient.java:443] Adding payload: {"RootName":"AggregatePrimaryDouble.A1L1Do","ToDelete":"[{\"p1L1Do\":[0.0,1.0E-307,9.0E307,-1.23456789012345E-10,1.23456789012345E20,\"-Infinity\",\"Infinity\",\"NaN\"],\"uri\":\"{0,1E-307,9E+307,-1.23456789012345E-10,1.23456789012345E+20,-Infinity,Infinity,NaN}\"}]"}
+      <br></br>2015-03-10 13:23:53,131 [HttpClient.java:389] At http://localhost:2007/RestApplication.svc/PersistAggregateRoot [500] Input string was not in a correct format.
+      <br></br>2015-03-10 13:23:53,132 [HttpClient.java:390] Error connecting to http://localhost:2007/RestApplication.svc/PersistAggregateRoot. Trying next server if exists...
       <br></br><a id="testP1L1DoPropertyFieldPrivateVisibility"/><h2>testP1L1DoPropertyFieldPrivateVisibility</h2>
       <br></br><a id="testURIPropertyFieldClass"/><h2>testURIPropertyFieldClass</h2>
       <br></br><a id="testURIPropertyFieldPrivateVisibility"/><h2>testURIPropertyFieldPrivateVisibility</h2>
