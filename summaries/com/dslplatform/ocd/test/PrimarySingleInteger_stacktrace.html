@@ -16,160 +16,167 @@
       <br></br><a id="testP1A0InPropertyGetterModifiers"/><h2>testP1A0InPropertyGetterModifiers</h2>
       <br></br><a id="testP1A0InNonDefault1PropertyInAggregateJsonSerialization"/><h2>testP1A0InNonDefault1PropertyInAggregateJsonSerialization</h2>
       <br></br><a id="testP1A0InNonDefault5PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1A0InNonDefault5PropertyValueInAggregateAfterActiveRecordPersist</h2>
-      <br></br>2015-03-11 16:33:01,134 [HttpClient.java:203] Sending request [GET]: Domain.svc/search/AggregatePrimaryInteger.A1A0In?limit=2147483647&offset=0
-      <br></br>2015-03-11 16:33:01,140 [HttpClient.java:430] GET http://localhost:2008/Domain.svc/search/AggregatePrimaryInteger.A1A0In?limit=2147483647&offset=0
-      <br></br>2015-03-11 16:33:01,140 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-03-11 16:33:01,140 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-03-11 16:33:01,730 [HttpClient.java:227] Received response [200, 1024 bytes] in 597 ms
-      <br></br>2015-03-11 16:33:01,730 [HttpClient.java:230] Received response body: []
-      <br></br>2015-03-11 16:33:01,735 [HttpClient.java:218] Sending request [POST]: Crud.svc/AggregatePrimaryInteger.A1A0In, content size: 84 bytes
-      <br></br>2015-03-11 16:33:01,736 [HttpClient.java:430] POST http://localhost:2008/Crud.svc/AggregatePrimaryInteger.A1A0In
-      <br></br>2015-03-11 16:33:01,736 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-03-11 16:33:01,736 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-03-11 16:33:01,736 [HttpClient.java:443] Adding payload: {"URI":"1340398290","p1A0In":[null,0,-2147483648,2147483647,-1000000000,1000000000]}
-      <br></br>2015-03-11 16:33:01,858 [HttpClient.java:227] Received response [201, 1024 bytes] in 126 ms
-      <br></br>2015-03-11 16:33:01,859 [HttpClient.java:230] Received response body: {"URI":"{NULL,0,-2147483648,2147483647,-1000000000,1000000000}","p1A0In":[null,0,-2147483648,2147483647,-1000000000,1000000000]}
-      <br></br>2015-03-11 16:33:01,860 [HttpClient.java:203] Sending request [GET]: Crud.svc/AggregatePrimaryInteger.A1A0In?uri=%7BNULL%2C0%2C-2147483648%2C2147483647%2C-1000000000%2C1000000000%7D
-      <br></br>2015-03-11 16:33:01,860 [HttpClient.java:430] GET http://localhost:2008/Crud.svc/AggregatePrimaryInteger.A1A0In?uri=%7BNULL%2C0%2C-2147483648%2C2147483647%2C-1000000000%2C1000000000%7D
-      <br></br>2015-03-11 16:33:01,861 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-03-11 16:33:01,861 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-03-11 16:33:01,906 [HttpClient.java:227] Received response [200, 1024 bytes] in 46 ms
-      <br></br>2015-03-11 16:33:01,906 [HttpClient.java:230] Received response body: {"URI":"{NULL,0,-2147483648,2147483647,-1000000000,1000000000}","p1A0In":[null,0,-2147483648,2147483647,-1000000000,1000000000]}
+      <br></br>2015-03-12 13:04:07,031 [HttpClient.java:203] Sending request [GET]: Domain.svc/search/AggregatePrimaryInteger.A1A0In?limit=2147483647&offset=0
+      <br></br>2015-03-12 13:04:07,036 [HttpClient.java:430] GET http://localhost:2008/Domain.svc/search/AggregatePrimaryInteger.A1A0In?limit=2147483647&offset=0
+      <br></br>2015-03-12 13:04:07,037 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-12 13:04:07,037 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-12 13:04:07,642 [HttpClient.java:227] Received response [200, 1024 bytes] in 612 ms
+      <br></br>2015-03-12 13:04:07,643 [HttpClient.java:230] Received response body: [{"URI":"{}","p1A0In":[]}]
+      <br></br>2015-03-12 13:04:07,659 [HttpClient.java:218] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 91 bytes
+      <br></br>2015-03-12 13:04:07,659 [HttpClient.java:430] POST http://localhost:2008/RestApplication.svc/PersistAggregateRoot
+      <br></br>2015-03-12 13:04:07,659 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-12 13:04:07,659 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-12 13:04:07,659 [HttpClient.java:443] Adding payload: {"RootName":"AggregatePrimaryInteger.A1A0In","ToDelete":"[{\"p1A0In\":[],\"uri\":\"{}\"}]"}
+      <br></br>2015-03-12 13:04:08,110 [HttpClient.java:227] Received response [200, 1024 bytes] in 463 ms
+      <br></br>2015-03-12 13:04:08,111 [HttpClient.java:230] Received response body: []
+      <br></br>2015-03-12 13:04:08,123 [HttpClient.java:218] Sending request [POST]: Crud.svc/AggregatePrimaryInteger.A1A0In, content size: 82 bytes
+      <br></br>2015-03-12 13:04:08,123 [HttpClient.java:430] POST http://localhost:2008/Crud.svc/AggregatePrimaryInteger.A1A0In
+      <br></br>2015-03-12 13:04:08,124 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-12 13:04:08,124 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-12 13:04:08,124 [HttpClient.java:443] Adding payload: {"URI":"30336615","p1A0In":[null,0,-2147483648,2147483647,-1000000000,1000000000]}
+      <br></br>2015-03-12 13:04:08,165 [HttpClient.java:227] Received response [201, 1024 bytes] in 46 ms
+      <br></br>2015-03-12 13:04:08,165 [HttpClient.java:230] Received response body: {"URI":"{NULL,0,-2147483648,2147483647,-1000000000,1000000000}","p1A0In":[null,0,-2147483648,2147483647,-1000000000,1000000000]}
+      <br></br>2015-03-12 13:04:08,166 [HttpClient.java:203] Sending request [GET]: Crud.svc/AggregatePrimaryInteger.A1A0In?uri=%7BNULL%2C0%2C-2147483648%2C2147483647%2C-1000000000%2C1000000000%7D
+      <br></br>2015-03-12 13:04:08,166 [HttpClient.java:430] GET http://localhost:2008/Crud.svc/AggregatePrimaryInteger.A1A0In?uri=%7BNULL%2C0%2C-2147483648%2C2147483647%2C-1000000000%2C1000000000%7D
+      <br></br>2015-03-12 13:04:08,166 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-12 13:04:08,166 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-12 13:04:08,211 [HttpClient.java:227] Received response [200, 1024 bytes] in 45 ms
+      <br></br>2015-03-12 13:04:08,211 [HttpClient.java:230] Received response body: {"URI":"{NULL,0,-2147483648,2147483647,-1000000000,1000000000}","p1A0In":[null,0,-2147483648,2147483647,-1000000000,1000000000]}
       <br></br><a id="testP1A0InNonDefault4PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1A0InNonDefault4PropertyValueInAggregateAfterActiveRecordPersist</h2>
-      <br></br>2015-03-11 16:33:01,908 [HttpClient.java:203] Sending request [GET]: Domain.svc/search/AggregatePrimaryInteger.A1A0In?limit=2147483647&offset=0
-      <br></br>2015-03-11 16:33:01,908 [HttpClient.java:430] GET http://localhost:2008/Domain.svc/search/AggregatePrimaryInteger.A1A0In?limit=2147483647&offset=0
-      <br></br>2015-03-11 16:33:01,908 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-03-11 16:33:01,908 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-03-11 16:33:01,916 [HttpClient.java:227] Received response [200, 1024 bytes] in 9 ms
-      <br></br>2015-03-11 16:33:01,916 [HttpClient.java:230] Received response body: [{"URI":"{NULL,0,-2147483648,2147483647,-1000000000,1000000000}","p1A0In":[null,0,-2147483648,2147483647,-1000000000,1000000000]}]
-      <br></br>2015-03-11 16:33:01,930 [HttpClient.java:218] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 195 bytes
-      <br></br>2015-03-11 16:33:01,931 [HttpClient.java:430] POST http://localhost:2008/RestApplication.svc/PersistAggregateRoot
-      <br></br>2015-03-11 16:33:01,931 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-03-11 16:33:01,931 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-03-11 16:33:01,931 [HttpClient.java:443] Adding payload: {"RootName":"AggregatePrimaryInteger.A1A0In","ToDelete":"[{\"p1A0In\":[null,0,-2147483648,2147483647,-1000000000,1000000000],\"uri\":\"{NULL,0,-2147483648,2147483647,-1000000000,1000000000}\"}]"}
-      <br></br>2015-03-11 16:33:02,274 [HttpClient.java:227] Received response [200, 1024 bytes] in 355 ms
-      <br></br>2015-03-11 16:33:02,274 [HttpClient.java:230] Received response body: []
-      <br></br>2015-03-11 16:33:02,282 [HttpClient.java:218] Sending request [POST]: Crud.svc/AggregatePrimaryInteger.A1A0In, content size: 79 bytes
-      <br></br>2015-03-11 16:33:02,283 [HttpClient.java:430] POST http://localhost:2008/Crud.svc/AggregatePrimaryInteger.A1A0In
-      <br></br>2015-03-11 16:33:02,283 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-03-11 16:33:02,283 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-03-11 16:33:02,283 [HttpClient.java:443] Adding payload: {"URI":"1158752013","p1A0In":[0,-2147483648,2147483647,-1000000000,1000000000]}
-      <br></br>2015-03-11 16:33:02,286 [HttpClient.java:227] Received response [201, 1024 bytes] in 4 ms
-      <br></br>2015-03-11 16:33:02,286 [HttpClient.java:230] Received response body: {"URI":"{0,-2147483648,2147483647,-1000000000,1000000000}","p1A0In":[0,-2147483648,2147483647,-1000000000,1000000000]}
-      <br></br>2015-03-11 16:33:02,287 [HttpClient.java:203] Sending request [GET]: Crud.svc/AggregatePrimaryInteger.A1A0In?uri=%7B0%2C-2147483648%2C2147483647%2C-1000000000%2C1000000000%7D
-      <br></br>2015-03-11 16:33:02,287 [HttpClient.java:430] GET http://localhost:2008/Crud.svc/AggregatePrimaryInteger.A1A0In?uri=%7B0%2C-2147483648%2C2147483647%2C-1000000000%2C1000000000%7D
-      <br></br>2015-03-11 16:33:02,287 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-03-11 16:33:02,287 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-03-11 16:33:02,288 [HttpClient.java:227] Received response [200, 1024 bytes] in 2 ms
-      <br></br>2015-03-11 16:33:02,288 [HttpClient.java:230] Received response body: {"URI":"{0,-2147483648,2147483647,-1000000000,1000000000}","p1A0In":[0,-2147483648,2147483647,-1000000000,1000000000]}
+      <br></br>2015-03-12 13:04:08,212 [HttpClient.java:203] Sending request [GET]: Domain.svc/search/AggregatePrimaryInteger.A1A0In?limit=2147483647&offset=0
+      <br></br>2015-03-12 13:04:08,212 [HttpClient.java:430] GET http://localhost:2008/Domain.svc/search/AggregatePrimaryInteger.A1A0In?limit=2147483647&offset=0
+      <br></br>2015-03-12 13:04:08,213 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-12 13:04:08,213 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-12 13:04:08,216 [HttpClient.java:227] Received response [200, 1024 bytes] in 4 ms
+      <br></br>2015-03-12 13:04:08,216 [HttpClient.java:230] Received response body: [{"URI":"{NULL,0,-2147483648,2147483647,-1000000000,1000000000}","p1A0In":[null,0,-2147483648,2147483647,-1000000000,1000000000]}]
+      <br></br>2015-03-12 13:04:08,217 [HttpClient.java:218] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 195 bytes
+      <br></br>2015-03-12 13:04:08,217 [HttpClient.java:430] POST http://localhost:2008/RestApplication.svc/PersistAggregateRoot
+      <br></br>2015-03-12 13:04:08,217 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-12 13:04:08,217 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-12 13:04:08,217 [HttpClient.java:443] Adding payload: {"RootName":"AggregatePrimaryInteger.A1A0In","ToDelete":"[{\"p1A0In\":[null,0,-2147483648,2147483647,-1000000000,1000000000],\"uri\":\"{NULL,0,-2147483648,2147483647,-1000000000,1000000000}\"}]"}
+      <br></br>2015-03-12 13:04:08,221 [HttpClient.java:227] Received response [200, 1024 bytes] in 4 ms
+      <br></br>2015-03-12 13:04:08,221 [HttpClient.java:230] Received response body: []
+      <br></br>2015-03-12 13:04:08,222 [HttpClient.java:218] Sending request [POST]: Crud.svc/AggregatePrimaryInteger.A1A0In, content size: 79 bytes
+      <br></br>2015-03-12 13:04:08,222 [HttpClient.java:430] POST http://localhost:2008/Crud.svc/AggregatePrimaryInteger.A1A0In
+      <br></br>2015-03-12 13:04:08,222 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-12 13:04:08,222 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-12 13:04:08,222 [HttpClient.java:443] Adding payload: {"URI":"1158752013","p1A0In":[0,-2147483648,2147483647,-1000000000,1000000000]}
+      <br></br>2015-03-12 13:04:08,225 [HttpClient.java:227] Received response [201, 1024 bytes] in 3 ms
+      <br></br>2015-03-12 13:04:08,225 [HttpClient.java:230] Received response body: {"URI":"{0,-2147483648,2147483647,-1000000000,1000000000}","p1A0In":[0,-2147483648,2147483647,-1000000000,1000000000]}
+      <br></br>2015-03-12 13:04:08,225 [HttpClient.java:203] Sending request [GET]: Crud.svc/AggregatePrimaryInteger.A1A0In?uri=%7B0%2C-2147483648%2C2147483647%2C-1000000000%2C1000000000%7D
+      <br></br>2015-03-12 13:04:08,226 [HttpClient.java:430] GET http://localhost:2008/Crud.svc/AggregatePrimaryInteger.A1A0In?uri=%7B0%2C-2147483648%2C2147483647%2C-1000000000%2C1000000000%7D
+      <br></br>2015-03-12 13:04:08,226 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-12 13:04:08,226 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-12 13:04:08,240 [HttpClient.java:227] Received response [200, 1024 bytes] in 15 ms
+      <br></br>2015-03-12 13:04:08,240 [HttpClient.java:230] Received response body: {"URI":"{0,-2147483648,2147483647,-1000000000,1000000000}","p1A0In":[0,-2147483648,2147483647,-1000000000,1000000000]}
       <br></br><a id="testP1A0InNonDefault3PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1A0InNonDefault3PropertyValueInAggregateAfterActiveRecordPersist</h2>
-      <br></br>2015-03-11 16:33:02,289 [HttpClient.java:203] Sending request [GET]: Domain.svc/search/AggregatePrimaryInteger.A1A0In?limit=2147483647&offset=0
-      <br></br>2015-03-11 16:33:02,289 [HttpClient.java:430] GET http://localhost:2008/Domain.svc/search/AggregatePrimaryInteger.A1A0In?limit=2147483647&offset=0
-      <br></br>2015-03-11 16:33:02,289 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-03-11 16:33:02,290 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-03-11 16:33:02,291 [HttpClient.java:227] Received response [200, 1024 bytes] in 2 ms
-      <br></br>2015-03-11 16:33:02,291 [HttpClient.java:230] Received response body: [{"URI":"{0,-2147483648,2147483647,-1000000000,1000000000}","p1A0In":[0,-2147483648,2147483647,-1000000000,1000000000]}]
-      <br></br>2015-03-11 16:33:02,291 [HttpClient.java:218] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 185 bytes
-      <br></br>2015-03-11 16:33:02,292 [HttpClient.java:430] POST http://localhost:2008/RestApplication.svc/PersistAggregateRoot
-      <br></br>2015-03-11 16:33:02,292 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-03-11 16:33:02,292 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-03-11 16:33:02,292 [HttpClient.java:443] Adding payload: {"RootName":"AggregatePrimaryInteger.A1A0In","ToDelete":"[{\"p1A0In\":[0,-2147483648,2147483647,-1000000000,1000000000],\"uri\":\"{0,-2147483648,2147483647,-1000000000,1000000000}\"}]"}
-      <br></br>2015-03-11 16:33:02,297 [HttpClient.java:227] Received response [200, 1024 bytes] in 6 ms
-      <br></br>2015-03-11 16:33:02,297 [HttpClient.java:230] Received response body: []
-      <br></br>2015-03-11 16:33:02,298 [HttpClient.java:218] Sending request [POST]: Crud.svc/AggregatePrimaryInteger.A1A0In, content size: 42 bytes
-      <br></br>2015-03-11 16:33:02,298 [HttpClient.java:430] POST http://localhost:2008/Crud.svc/AggregatePrimaryInteger.A1A0In
-      <br></br>2015-03-11 16:33:02,298 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-03-11 16:33:02,298 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-03-11 16:33:02,298 [HttpClient.java:443] Adding payload: {"URI":"1710387865","p1A0In":[1000000000]}
-      <br></br>2015-03-11 16:33:02,301 [HttpClient.java:227] Received response [201, 1024 bytes] in 3 ms
-      <br></br>2015-03-11 16:33:02,301 [HttpClient.java:230] Received response body: {"URI":"{1000000000}","p1A0In":[1000000000]}
-      <br></br>2015-03-11 16:33:02,361 [HttpClient.java:203] Sending request [GET]: Crud.svc/AggregatePrimaryInteger.A1A0In?uri=%7B1000000000%7D
-      <br></br>2015-03-11 16:33:02,361 [HttpClient.java:430] GET http://localhost:2008/Crud.svc/AggregatePrimaryInteger.A1A0In?uri=%7B1000000000%7D
-      <br></br>2015-03-11 16:33:02,361 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-03-11 16:33:02,361 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-03-11 16:33:02,362 [HttpClient.java:227] Received response [200, 1024 bytes] in 1 ms
-      <br></br>2015-03-11 16:33:02,362 [HttpClient.java:230] Received response body: {"URI":"{1000000000}","p1A0In":[1000000000]}
+      <br></br>2015-03-12 13:04:08,242 [HttpClient.java:203] Sending request [GET]: Domain.svc/search/AggregatePrimaryInteger.A1A0In?limit=2147483647&offset=0
+      <br></br>2015-03-12 13:04:08,242 [HttpClient.java:430] GET http://localhost:2008/Domain.svc/search/AggregatePrimaryInteger.A1A0In?limit=2147483647&offset=0
+      <br></br>2015-03-12 13:04:08,242 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-12 13:04:08,242 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-12 13:04:08,245 [HttpClient.java:227] Received response [200, 1024 bytes] in 4 ms
+      <br></br>2015-03-12 13:04:08,245 [HttpClient.java:230] Received response body: [{"URI":"{0,-2147483648,2147483647,-1000000000,1000000000}","p1A0In":[0,-2147483648,2147483647,-1000000000,1000000000]}]
+      <br></br>2015-03-12 13:04:08,245 [HttpClient.java:218] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 185 bytes
+      <br></br>2015-03-12 13:04:08,245 [HttpClient.java:430] POST http://localhost:2008/RestApplication.svc/PersistAggregateRoot
+      <br></br>2015-03-12 13:04:08,246 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-12 13:04:08,246 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-12 13:04:08,246 [HttpClient.java:443] Adding payload: {"RootName":"AggregatePrimaryInteger.A1A0In","ToDelete":"[{\"p1A0In\":[0,-2147483648,2147483647,-1000000000,1000000000],\"uri\":\"{0,-2147483648,2147483647,-1000000000,1000000000}\"}]"}
+      <br></br>2015-03-12 13:04:08,249 [HttpClient.java:227] Received response [200, 1024 bytes] in 4 ms
+      <br></br>2015-03-12 13:04:08,250 [HttpClient.java:230] Received response body: []
+      <br></br>2015-03-12 13:04:08,250 [HttpClient.java:218] Sending request [POST]: Crud.svc/AggregatePrimaryInteger.A1A0In, content size: 42 bytes
+      <br></br>2015-03-12 13:04:08,250 [HttpClient.java:430] POST http://localhost:2008/Crud.svc/AggregatePrimaryInteger.A1A0In
+      <br></br>2015-03-12 13:04:08,250 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-12 13:04:08,250 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-12 13:04:08,250 [HttpClient.java:443] Adding payload: {"URI":"1710387865","p1A0In":[1000000000]}
+      <br></br>2015-03-12 13:04:08,252 [HttpClient.java:227] Received response [201, 1024 bytes] in 2 ms
+      <br></br>2015-03-12 13:04:08,252 [HttpClient.java:230] Received response body: {"URI":"{1000000000}","p1A0In":[1000000000]}
+      <br></br>2015-03-12 13:04:08,253 [HttpClient.java:203] Sending request [GET]: Crud.svc/AggregatePrimaryInteger.A1A0In?uri=%7B1000000000%7D
+      <br></br>2015-03-12 13:04:08,253 [HttpClient.java:430] GET http://localhost:2008/Crud.svc/AggregatePrimaryInteger.A1A0In?uri=%7B1000000000%7D
+      <br></br>2015-03-12 13:04:08,253 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-12 13:04:08,253 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-12 13:04:08,254 [HttpClient.java:227] Received response [200, 1024 bytes] in 1 ms
+      <br></br>2015-03-12 13:04:08,255 [HttpClient.java:230] Received response body: {"URI":"{1000000000}","p1A0In":[1000000000]}
       <br></br><a id="testP1A0InNonDefault2PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1A0InNonDefault2PropertyValueInAggregateAfterActiveRecordPersist</h2>
-      <br></br>2015-03-11 16:33:02,363 [HttpClient.java:203] Sending request [GET]: Domain.svc/search/AggregatePrimaryInteger.A1A0In?limit=2147483647&offset=0
-      <br></br>2015-03-11 16:33:02,364 [HttpClient.java:430] GET http://localhost:2008/Domain.svc/search/AggregatePrimaryInteger.A1A0In?limit=2147483647&offset=0
-      <br></br>2015-03-11 16:33:02,364 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-03-11 16:33:02,364 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-03-11 16:33:02,366 [HttpClient.java:227] Received response [200, 1024 bytes] in 3 ms
-      <br></br>2015-03-11 16:33:02,366 [HttpClient.java:230] Received response body: [{"URI":"{1000000000}","p1A0In":[1000000000]}]
-      <br></br>2015-03-11 16:33:02,367 [HttpClient.java:218] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 111 bytes
-      <br></br>2015-03-11 16:33:02,367 [HttpClient.java:430] POST http://localhost:2008/RestApplication.svc/PersistAggregateRoot
-      <br></br>2015-03-11 16:33:02,367 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-03-11 16:33:02,367 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-03-11 16:33:02,367 [HttpClient.java:443] Adding payload: {"RootName":"AggregatePrimaryInteger.A1A0In","ToDelete":"[{\"p1A0In\":[1000000000],\"uri\":\"{1000000000}\"}]"}
-      <br></br>2015-03-11 16:33:02,370 [HttpClient.java:227] Received response [200, 1024 bytes] in 3 ms
-      <br></br>2015-03-11 16:33:02,371 [HttpClient.java:230] Received response body: []
-      <br></br>2015-03-11 16:33:02,371 [HttpClient.java:218] Sending request [POST]: Crud.svc/AggregatePrimaryInteger.A1A0In, content size: 33 bytes
-      <br></br>2015-03-11 16:33:02,371 [HttpClient.java:430] POST http://localhost:2008/Crud.svc/AggregatePrimaryInteger.A1A0In
-      <br></br>2015-03-11 16:33:02,371 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-03-11 16:33:02,371 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-03-11 16:33:02,372 [HttpClient.java:443] Adding payload: {"URI":"1350793893","p1A0In":[0]}
-      <br></br>2015-03-11 16:33:02,374 [HttpClient.java:227] Received response [201, 1024 bytes] in 3 ms
-      <br></br>2015-03-11 16:33:02,374 [HttpClient.java:230] Received response body: {"URI":"{0}","p1A0In":[0]}
-      <br></br>2015-03-11 16:33:02,374 [HttpClient.java:203] Sending request [GET]: Crud.svc/AggregatePrimaryInteger.A1A0In?uri=%7B0%7D
-      <br></br>2015-03-11 16:33:02,375 [HttpClient.java:430] GET http://localhost:2008/Crud.svc/AggregatePrimaryInteger.A1A0In?uri=%7B0%7D
-      <br></br>2015-03-11 16:33:02,375 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-03-11 16:33:02,375 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-03-11 16:33:02,375 [HttpClient.java:227] Received response [200, 1024 bytes] in 1 ms
-      <br></br>2015-03-11 16:33:02,375 [HttpClient.java:230] Received response body: {"URI":"{0}","p1A0In":[0]}
+      <br></br>2015-03-12 13:04:08,256 [HttpClient.java:203] Sending request [GET]: Domain.svc/search/AggregatePrimaryInteger.A1A0In?limit=2147483647&offset=0
+      <br></br>2015-03-12 13:04:08,256 [HttpClient.java:430] GET http://localhost:2008/Domain.svc/search/AggregatePrimaryInteger.A1A0In?limit=2147483647&offset=0
+      <br></br>2015-03-12 13:04:08,256 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-12 13:04:08,256 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-12 13:04:08,258 [HttpClient.java:227] Received response [200, 1024 bytes] in 2 ms
+      <br></br>2015-03-12 13:04:08,258 [HttpClient.java:230] Received response body: [{"URI":"{1000000000}","p1A0In":[1000000000]}]
+      <br></br>2015-03-12 13:04:08,259 [HttpClient.java:218] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 111 bytes
+      <br></br>2015-03-12 13:04:08,259 [HttpClient.java:430] POST http://localhost:2008/RestApplication.svc/PersistAggregateRoot
+      <br></br>2015-03-12 13:04:08,259 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-12 13:04:08,259 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-12 13:04:08,259 [HttpClient.java:443] Adding payload: {"RootName":"AggregatePrimaryInteger.A1A0In","ToDelete":"[{\"p1A0In\":[1000000000],\"uri\":\"{1000000000}\"}]"}
+      <br></br>2015-03-12 13:04:08,263 [HttpClient.java:227] Received response [200, 1024 bytes] in 4 ms
+      <br></br>2015-03-12 13:04:08,263 [HttpClient.java:230] Received response body: []
+      <br></br>2015-03-12 13:04:08,263 [HttpClient.java:218] Sending request [POST]: Crud.svc/AggregatePrimaryInteger.A1A0In, content size: 33 bytes
+      <br></br>2015-03-12 13:04:08,263 [HttpClient.java:430] POST http://localhost:2008/Crud.svc/AggregatePrimaryInteger.A1A0In
+      <br></br>2015-03-12 13:04:08,264 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-12 13:04:08,264 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-12 13:04:08,264 [HttpClient.java:443] Adding payload: {"URI":"1350793893","p1A0In":[0]}
+      <br></br>2015-03-12 13:04:08,266 [HttpClient.java:227] Received response [201, 1024 bytes] in 3 ms
+      <br></br>2015-03-12 13:04:08,266 [HttpClient.java:230] Received response body: {"URI":"{0}","p1A0In":[0]}
+      <br></br>2015-03-12 13:04:08,267 [HttpClient.java:203] Sending request [GET]: Crud.svc/AggregatePrimaryInteger.A1A0In?uri=%7B0%7D
+      <br></br>2015-03-12 13:04:08,267 [HttpClient.java:430] GET http://localhost:2008/Crud.svc/AggregatePrimaryInteger.A1A0In?uri=%7B0%7D
+      <br></br>2015-03-12 13:04:08,267 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-12 13:04:08,267 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-12 13:04:08,268 [HttpClient.java:227] Received response [200, 1024 bytes] in 1 ms
+      <br></br>2015-03-12 13:04:08,268 [HttpClient.java:230] Received response body: {"URI":"{0}","p1A0In":[0]}
       <br></br><a id="testP1A0InNonDefault1PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1A0InNonDefault1PropertyValueInAggregateAfterActiveRecordPersist</h2>
-      <br></br>2015-03-11 16:33:02,376 [HttpClient.java:203] Sending request [GET]: Domain.svc/search/AggregatePrimaryInteger.A1A0In?limit=2147483647&offset=0
-      <br></br>2015-03-11 16:33:02,376 [HttpClient.java:430] GET http://localhost:2008/Domain.svc/search/AggregatePrimaryInteger.A1A0In?limit=2147483647&offset=0
-      <br></br>2015-03-11 16:33:02,376 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-03-11 16:33:02,376 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-03-11 16:33:02,378 [HttpClient.java:227] Received response [200, 1024 bytes] in 2 ms
-      <br></br>2015-03-11 16:33:02,379 [HttpClient.java:230] Received response body: [{"URI":"{0}","p1A0In":[0]}]
-      <br></br>2015-03-11 16:33:02,380 [HttpClient.java:218] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 93 bytes
-      <br></br>2015-03-11 16:33:02,380 [HttpClient.java:430] POST http://localhost:2008/RestApplication.svc/PersistAggregateRoot
-      <br></br>2015-03-11 16:33:02,380 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-03-11 16:33:02,380 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-03-11 16:33:02,380 [HttpClient.java:443] Adding payload: {"RootName":"AggregatePrimaryInteger.A1A0In","ToDelete":"[{\"p1A0In\":[0],\"uri\":\"{0}\"}]"}
-      <br></br>2015-03-11 16:33:02,383 [HttpClient.java:227] Received response [200, 1024 bytes] in 3 ms
-      <br></br>2015-03-11 16:33:02,384 [HttpClient.java:230] Received response body: []
-      <br></br>2015-03-11 16:33:02,384 [HttpClient.java:218] Sending request [POST]: Crud.svc/AggregatePrimaryInteger.A1A0In, content size: 36 bytes
-      <br></br>2015-03-11 16:33:02,384 [HttpClient.java:430] POST http://localhost:2008/Crud.svc/AggregatePrimaryInteger.A1A0In
-      <br></br>2015-03-11 16:33:02,384 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-03-11 16:33:02,384 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-03-11 16:33:02,384 [HttpClient.java:443] Adding payload: {"URI":"1981089677","p1A0In":[null]}
-      <br></br>2015-03-11 16:33:02,387 [HttpClient.java:227] Received response [201, 1024 bytes] in 3 ms
-      <br></br>2015-03-11 16:33:02,387 [HttpClient.java:230] Received response body: {"URI":"{NULL}","p1A0In":[null]}
-      <br></br>2015-03-11 16:33:02,387 [HttpClient.java:203] Sending request [GET]: Crud.svc/AggregatePrimaryInteger.A1A0In?uri=%7BNULL%7D
-      <br></br>2015-03-11 16:33:02,387 [HttpClient.java:430] GET http://localhost:2008/Crud.svc/AggregatePrimaryInteger.A1A0In?uri=%7BNULL%7D
-      <br></br>2015-03-11 16:33:02,387 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-03-11 16:33:02,387 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-03-11 16:33:02,388 [HttpClient.java:227] Received response [200, 1024 bytes] in 1 ms
-      <br></br>2015-03-11 16:33:02,389 [HttpClient.java:230] Received response body: {"URI":"{NULL}","p1A0In":[null]}
+      <br></br>2015-03-12 13:04:08,269 [HttpClient.java:203] Sending request [GET]: Domain.svc/search/AggregatePrimaryInteger.A1A0In?limit=2147483647&offset=0
+      <br></br>2015-03-12 13:04:08,270 [HttpClient.java:430] GET http://localhost:2008/Domain.svc/search/AggregatePrimaryInteger.A1A0In?limit=2147483647&offset=0
+      <br></br>2015-03-12 13:04:08,270 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-12 13:04:08,270 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-12 13:04:08,272 [HttpClient.java:227] Received response [200, 1024 bytes] in 3 ms
+      <br></br>2015-03-12 13:04:08,272 [HttpClient.java:230] Received response body: [{"URI":"{0}","p1A0In":[0]}]
+      <br></br>2015-03-12 13:04:08,273 [HttpClient.java:218] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 93 bytes
+      <br></br>2015-03-12 13:04:08,273 [HttpClient.java:430] POST http://localhost:2008/RestApplication.svc/PersistAggregateRoot
+      <br></br>2015-03-12 13:04:08,273 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-12 13:04:08,273 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-12 13:04:08,273 [HttpClient.java:443] Adding payload: {"RootName":"AggregatePrimaryInteger.A1A0In","ToDelete":"[{\"p1A0In\":[0],\"uri\":\"{0}\"}]"}
+      <br></br>2015-03-12 13:04:08,277 [HttpClient.java:227] Received response [200, 1024 bytes] in 4 ms
+      <br></br>2015-03-12 13:04:08,277 [HttpClient.java:230] Received response body: []
+      <br></br>2015-03-12 13:04:08,277 [HttpClient.java:218] Sending request [POST]: Crud.svc/AggregatePrimaryInteger.A1A0In, content size: 36 bytes
+      <br></br>2015-03-12 13:04:08,277 [HttpClient.java:430] POST http://localhost:2008/Crud.svc/AggregatePrimaryInteger.A1A0In
+      <br></br>2015-03-12 13:04:08,277 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-12 13:04:08,278 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-12 13:04:08,278 [HttpClient.java:443] Adding payload: {"URI":"1981089677","p1A0In":[null]}
+      <br></br>2015-03-12 13:04:08,280 [HttpClient.java:227] Received response [201, 1024 bytes] in 3 ms
+      <br></br>2015-03-12 13:04:08,280 [HttpClient.java:230] Received response body: {"URI":"{NULL}","p1A0In":[null]}
+      <br></br>2015-03-12 13:04:08,280 [HttpClient.java:203] Sending request [GET]: Crud.svc/AggregatePrimaryInteger.A1A0In?uri=%7BNULL%7D
+      <br></br>2015-03-12 13:04:08,280 [HttpClient.java:430] GET http://localhost:2008/Crud.svc/AggregatePrimaryInteger.A1A0In?uri=%7BNULL%7D
+      <br></br>2015-03-12 13:04:08,281 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-12 13:04:08,281 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-12 13:04:08,282 [HttpClient.java:227] Received response [200, 1024 bytes] in 2 ms
+      <br></br>2015-03-12 13:04:08,282 [HttpClient.java:230] Received response body: {"URI":"{NULL}","p1A0In":[null]}
       <br></br><a id="testP1A0InDefaultPropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1A0InDefaultPropertyValueInAggregateAfterActiveRecordPersist</h2>
-      <br></br>2015-03-11 16:33:02,390 [HttpClient.java:203] Sending request [GET]: Domain.svc/search/AggregatePrimaryInteger.A1A0In?limit=2147483647&offset=0
-      <br></br>2015-03-11 16:33:02,390 [HttpClient.java:430] GET http://localhost:2008/Domain.svc/search/AggregatePrimaryInteger.A1A0In?limit=2147483647&offset=0
-      <br></br>2015-03-11 16:33:02,390 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-03-11 16:33:02,390 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-03-11 16:33:02,392 [HttpClient.java:227] Received response [200, 1024 bytes] in 3 ms
-      <br></br>2015-03-11 16:33:02,392 [HttpClient.java:230] Received response body: [{"URI":"{NULL}","p1A0In":[null]}]
-      <br></br>2015-03-11 16:33:02,393 [HttpClient.java:218] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 99 bytes
-      <br></br>2015-03-11 16:33:02,393 [HttpClient.java:430] POST http://localhost:2008/RestApplication.svc/PersistAggregateRoot
-      <br></br>2015-03-11 16:33:02,393 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-03-11 16:33:02,393 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-03-11 16:33:02,393 [HttpClient.java:443] Adding payload: {"RootName":"AggregatePrimaryInteger.A1A0In","ToDelete":"[{\"p1A0In\":[null],\"uri\":\"{NULL}\"}]"}
-      <br></br>2015-03-11 16:33:02,396 [HttpClient.java:227] Received response [200, 1024 bytes] in 3 ms
-      <br></br>2015-03-11 16:33:02,397 [HttpClient.java:230] Received response body: []
-      <br></br>2015-03-11 16:33:02,397 [HttpClient.java:218] Sending request [POST]: Crud.svc/AggregatePrimaryInteger.A1A0In, content size: 19 bytes
-      <br></br>2015-03-11 16:33:02,397 [HttpClient.java:430] POST http://localhost:2008/Crud.svc/AggregatePrimaryInteger.A1A0In
-      <br></br>2015-03-11 16:33:02,397 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-03-11 16:33:02,397 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-03-11 16:33:02,397 [HttpClient.java:443] Adding payload: {"URI":"484986935"}
-      <br></br>2015-03-11 16:33:02,403 [HttpClient.java:227] Received response [201, 1024 bytes] in 5 ms
-      <br></br>2015-03-11 16:33:02,403 [HttpClient.java:230] Received response body: {"URI":"{}","p1A0In":[]}
-      <br></br>2015-03-11 16:33:02,403 [HttpClient.java:203] Sending request [GET]: Crud.svc/AggregatePrimaryInteger.A1A0In?uri=%7B%7D
-      <br></br>2015-03-11 16:33:02,403 [HttpClient.java:430] GET http://localhost:2008/Crud.svc/AggregatePrimaryInteger.A1A0In?uri=%7B%7D
-      <br></br>2015-03-11 16:33:02,403 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-03-11 16:33:02,403 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-03-11 16:33:02,408 [HttpClient.java:227] Received response [200, 1024 bytes] in 5 ms
-      <br></br>2015-03-11 16:33:02,408 [HttpClient.java:230] Received response body: {"URI":"{}","p1A0In":[]}
+      <br></br>2015-03-12 13:04:08,283 [HttpClient.java:203] Sending request [GET]: Domain.svc/search/AggregatePrimaryInteger.A1A0In?limit=2147483647&offset=0
+      <br></br>2015-03-12 13:04:08,283 [HttpClient.java:430] GET http://localhost:2008/Domain.svc/search/AggregatePrimaryInteger.A1A0In?limit=2147483647&offset=0
+      <br></br>2015-03-12 13:04:08,283 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-12 13:04:08,283 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-12 13:04:08,286 [HttpClient.java:227] Received response [200, 1024 bytes] in 3 ms
+      <br></br>2015-03-12 13:04:08,286 [HttpClient.java:230] Received response body: [{"URI":"{NULL}","p1A0In":[null]}]
+      <br></br>2015-03-12 13:04:08,286 [HttpClient.java:218] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 99 bytes
+      <br></br>2015-03-12 13:04:08,287 [HttpClient.java:430] POST http://localhost:2008/RestApplication.svc/PersistAggregateRoot
+      <br></br>2015-03-12 13:04:08,287 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-12 13:04:08,287 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-12 13:04:08,287 [HttpClient.java:443] Adding payload: {"RootName":"AggregatePrimaryInteger.A1A0In","ToDelete":"[{\"p1A0In\":[null],\"uri\":\"{NULL}\"}]"}
+      <br></br>2015-03-12 13:04:08,291 [HttpClient.java:227] Received response [200, 1024 bytes] in 5 ms
+      <br></br>2015-03-12 13:04:08,291 [HttpClient.java:230] Received response body: []
+      <br></br>2015-03-12 13:04:08,291 [HttpClient.java:218] Sending request [POST]: Crud.svc/AggregatePrimaryInteger.A1A0In, content size: 19 bytes
+      <br></br>2015-03-12 13:04:08,291 [HttpClient.java:430] POST http://localhost:2008/Crud.svc/AggregatePrimaryInteger.A1A0In
+      <br></br>2015-03-12 13:04:08,291 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-12 13:04:08,291 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-12 13:04:08,291 [HttpClient.java:443] Adding payload: {"URI":"484986935"}
+      <br></br>2015-03-12 13:04:08,294 [HttpClient.java:227] Received response [201, 1024 bytes] in 3 ms
+      <br></br>2015-03-12 13:04:08,294 [HttpClient.java:230] Received response body: {"URI":"{}","p1A0In":[]}
+      <br></br>2015-03-12 13:04:08,294 [HttpClient.java:203] Sending request [GET]: Crud.svc/AggregatePrimaryInteger.A1A0In?uri=%7B%7D
+      <br></br>2015-03-12 13:04:08,295 [HttpClient.java:430] GET http://localhost:2008/Crud.svc/AggregatePrimaryInteger.A1A0In?uri=%7B%7D
+      <br></br>2015-03-12 13:04:08,295 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-12 13:04:08,295 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-12 13:04:08,297 [HttpClient.java:227] Received response [200, 1024 bytes] in 3 ms
+      <br></br>2015-03-12 13:04:08,297 [HttpClient.java:230] Received response body: {"URI":"{}","p1A0In":[]}
       <br></br><a id="testP1A0InNonDefault2PropertyInAggregateJsonSerialization"/><h2>testP1A0InNonDefault2PropertyInAggregateJsonSerialization</h2>
       <br></br><a id="testP1A0InPropertyFieldModifiers"/><h2>testP1A0InPropertyFieldModifiers</h2>
       <br></br><a id="testP1A0InPropertyFieldPrivateVisibility"/><h2>testP1A0InPropertyFieldPrivateVisibility</h2>
@@ -183,106 +190,113 @@
       <br></br><a id="testP1A1InPropertyFieldPrivateVisibility"/><h2>testP1A1InPropertyFieldPrivateVisibility</h2>
       <br></br><a id="testP1A1InPropertyFieldModifiers"/><h2>testP1A1InPropertyFieldModifiers</h2>
       <br></br><a id="testP1A1InDefaultPropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1A1InDefaultPropertyValueInAggregateAfterActiveRecordPersist</h2>
-      <br></br>2015-03-11 16:33:02,420 [HttpClient.java:203] Sending request [GET]: Domain.svc/search/AggregatePrimaryInteger.A1A1In?limit=2147483647&offset=0
-      <br></br>2015-03-11 16:33:02,420 [HttpClient.java:430] GET http://localhost:2008/Domain.svc/search/AggregatePrimaryInteger.A1A1In?limit=2147483647&offset=0
-      <br></br>2015-03-11 16:33:02,420 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-03-11 16:33:02,420 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-03-11 16:33:02,432 [HttpClient.java:227] Received response [200, 1024 bytes] in 13 ms
-      <br></br>2015-03-11 16:33:02,432 [HttpClient.java:230] Received response body: []
-      <br></br>2015-03-11 16:33:02,433 [HttpClient.java:218] Sending request [POST]: Crud.svc/AggregatePrimaryInteger.A1A1In, content size: 20 bytes
-      <br></br>2015-03-11 16:33:02,433 [HttpClient.java:430] POST http://localhost:2008/Crud.svc/AggregatePrimaryInteger.A1A1In
-      <br></br>2015-03-11 16:33:02,433 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-03-11 16:33:02,433 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-03-11 16:33:02,433 [HttpClient.java:443] Adding payload: {"URI":"1059570200"}
-      <br></br>2015-03-11 16:33:02,467 [HttpClient.java:227] Received response [201, 1024 bytes] in 34 ms
-      <br></br>2015-03-11 16:33:02,468 [HttpClient.java:230] Received response body: {"URI":"{}","p1A1In":[]}
-      <br></br>2015-03-11 16:33:02,469 [HttpClient.java:203] Sending request [GET]: Crud.svc/AggregatePrimaryInteger.A1A1In?uri=%7B%7D
-      <br></br>2015-03-11 16:33:02,469 [HttpClient.java:430] GET http://localhost:2008/Crud.svc/AggregatePrimaryInteger.A1A1In?uri=%7B%7D
-      <br></br>2015-03-11 16:33:02,469 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-03-11 16:33:02,469 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-03-11 16:33:02,478 [HttpClient.java:227] Received response [200, 1024 bytes] in 9 ms
-      <br></br>2015-03-11 16:33:02,478 [HttpClient.java:230] Received response body: {"URI":"{}","p1A1In":[]}
+      <br></br>2015-03-12 13:04:08,310 [HttpClient.java:203] Sending request [GET]: Domain.svc/search/AggregatePrimaryInteger.A1A1In?limit=2147483647&offset=0
+      <br></br>2015-03-12 13:04:08,310 [HttpClient.java:430] GET http://localhost:2008/Domain.svc/search/AggregatePrimaryInteger.A1A1In?limit=2147483647&offset=0
+      <br></br>2015-03-12 13:04:08,310 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-12 13:04:08,310 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-12 13:04:08,328 [HttpClient.java:227] Received response [200, 1024 bytes] in 18 ms
+      <br></br>2015-03-12 13:04:08,328 [HttpClient.java:230] Received response body: [{"URI":"{0}","p1A1In":[0]}]
+      <br></br>2015-03-12 13:04:08,332 [HttpClient.java:218] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 93 bytes
+      <br></br>2015-03-12 13:04:08,332 [HttpClient.java:430] POST http://localhost:2008/RestApplication.svc/PersistAggregateRoot
+      <br></br>2015-03-12 13:04:08,332 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-12 13:04:08,332 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-12 13:04:08,333 [HttpClient.java:443] Adding payload: {"RootName":"AggregatePrimaryInteger.A1A1In","ToDelete":"[{\"p1A1In\":[0],\"uri\":\"{0}\"}]"}
+      <br></br>2015-03-12 13:04:08,369 [HttpClient.java:227] Received response [200, 1024 bytes] in 37 ms
+      <br></br>2015-03-12 13:04:08,369 [HttpClient.java:230] Received response body: []
+      <br></br>2015-03-12 13:04:08,370 [HttpClient.java:218] Sending request [POST]: Crud.svc/AggregatePrimaryInteger.A1A1In, content size: 20 bytes
+      <br></br>2015-03-12 13:04:08,370 [HttpClient.java:430] POST http://localhost:2008/Crud.svc/AggregatePrimaryInteger.A1A1In
+      <br></br>2015-03-12 13:04:08,370 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-12 13:04:08,370 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-12 13:04:08,370 [HttpClient.java:443] Adding payload: {"URI":"1771906119"}
+      <br></br>2015-03-12 13:04:08,375 [HttpClient.java:227] Received response [201, 1024 bytes] in 5 ms
+      <br></br>2015-03-12 13:04:08,375 [HttpClient.java:230] Received response body: {"URI":"{}","p1A1In":[]}
+      <br></br>2015-03-12 13:04:08,375 [HttpClient.java:203] Sending request [GET]: Crud.svc/AggregatePrimaryInteger.A1A1In?uri=%7B%7D
+      <br></br>2015-03-12 13:04:08,375 [HttpClient.java:430] GET http://localhost:2008/Crud.svc/AggregatePrimaryInteger.A1A1In?uri=%7B%7D
+      <br></br>2015-03-12 13:04:08,375 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-12 13:04:08,376 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-12 13:04:08,382 [HttpClient.java:227] Received response [200, 1024 bytes] in 7 ms
+      <br></br>2015-03-12 13:04:08,382 [HttpClient.java:230] Received response body: {"URI":"{}","p1A1In":[]}
       <br></br><a id="testP1A1InNonDefault3PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1A1InNonDefault3PropertyValueInAggregateAfterActiveRecordPersist</h2>
-      <br></br>2015-03-11 16:33:02,479 [HttpClient.java:203] Sending request [GET]: Domain.svc/search/AggregatePrimaryInteger.A1A1In?limit=2147483647&offset=0
-      <br></br>2015-03-11 16:33:02,479 [HttpClient.java:430] GET http://localhost:2008/Domain.svc/search/AggregatePrimaryInteger.A1A1In?limit=2147483647&offset=0
-      <br></br>2015-03-11 16:33:02,479 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-03-11 16:33:02,479 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-03-11 16:33:02,483 [HttpClient.java:227] Received response [200, 1024 bytes] in 4 ms
-      <br></br>2015-03-11 16:33:02,483 [HttpClient.java:230] Received response body: [{"URI":"{}","p1A1In":[]}]
-      <br></br>2015-03-11 16:33:02,487 [HttpClient.java:218] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 91 bytes
-      <br></br>2015-03-11 16:33:02,487 [HttpClient.java:430] POST http://localhost:2008/RestApplication.svc/PersistAggregateRoot
-      <br></br>2015-03-11 16:33:02,487 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-03-11 16:33:02,487 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-03-11 16:33:02,487 [HttpClient.java:443] Adding payload: {"RootName":"AggregatePrimaryInteger.A1A1In","ToDelete":"[{\"p1A1In\":[],\"uri\":\"{}\"}]"}
-      <br></br>2015-03-11 16:33:02,494 [HttpClient.java:227] Received response [200, 1024 bytes] in 8 ms
-      <br></br>2015-03-11 16:33:02,495 [HttpClient.java:230] Received response body: []
-      <br></br>2015-03-11 16:33:02,496 [HttpClient.java:218] Sending request [POST]: Crud.svc/AggregatePrimaryInteger.A1A1In, content size: 78 bytes
-      <br></br>2015-03-11 16:33:02,496 [HttpClient.java:430] POST http://localhost:2008/Crud.svc/AggregatePrimaryInteger.A1A1In
-      <br></br>2015-03-11 16:33:02,496 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-03-11 16:33:02,496 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-03-11 16:33:02,496 [HttpClient.java:443] Adding payload: {"URI":"505339477","p1A1In":[0,-2147483648,2147483647,-1000000000,1000000000]}
-      <br></br>2015-03-11 16:33:02,500 [HttpClient.java:227] Received response [201, 1024 bytes] in 5 ms
-      <br></br>2015-03-11 16:33:02,500 [HttpClient.java:230] Received response body: {"URI":"{0,-2147483648,2147483647,-1000000000,1000000000}","p1A1In":[0,-2147483648,2147483647,-1000000000,1000000000]}
-      <br></br>2015-03-11 16:33:02,500 [HttpClient.java:203] Sending request [GET]: Crud.svc/AggregatePrimaryInteger.A1A1In?uri=%7B0%2C-2147483648%2C2147483647%2C-1000000000%2C1000000000%7D
-      <br></br>2015-03-11 16:33:02,500 [HttpClient.java:430] GET http://localhost:2008/Crud.svc/AggregatePrimaryInteger.A1A1In?uri=%7B0%2C-2147483648%2C2147483647%2C-1000000000%2C1000000000%7D
-      <br></br>2015-03-11 16:33:02,500 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-03-11 16:33:02,500 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-03-11 16:33:02,501 [HttpClient.java:227] Received response [200, 1024 bytes] in 1 ms
-      <br></br>2015-03-11 16:33:02,501 [HttpClient.java:230] Received response body: {"URI":"{0,-2147483648,2147483647,-1000000000,1000000000}","p1A1In":[0,-2147483648,2147483647,-1000000000,1000000000]}
+      <br></br>2015-03-12 13:04:08,383 [HttpClient.java:203] Sending request [GET]: Domain.svc/search/AggregatePrimaryInteger.A1A1In?limit=2147483647&offset=0
+      <br></br>2015-03-12 13:04:08,384 [HttpClient.java:430] GET http://localhost:2008/Domain.svc/search/AggregatePrimaryInteger.A1A1In?limit=2147483647&offset=0
+      <br></br>2015-03-12 13:04:08,384 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-12 13:04:08,384 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-12 13:04:08,386 [HttpClient.java:227] Received response [200, 1024 bytes] in 3 ms
+      <br></br>2015-03-12 13:04:08,386 [HttpClient.java:230] Received response body: [{"URI":"{}","p1A1In":[]}]
+      <br></br>2015-03-12 13:04:08,386 [HttpClient.java:218] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 91 bytes
+      <br></br>2015-03-12 13:04:08,387 [HttpClient.java:430] POST http://localhost:2008/RestApplication.svc/PersistAggregateRoot
+      <br></br>2015-03-12 13:04:08,387 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-12 13:04:08,387 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-12 13:04:08,387 [HttpClient.java:443] Adding payload: {"RootName":"AggregatePrimaryInteger.A1A1In","ToDelete":"[{\"p1A1In\":[],\"uri\":\"{}\"}]"}
+      <br></br>2015-03-12 13:04:08,390 [HttpClient.java:227] Received response [200, 1024 bytes] in 4 ms
+      <br></br>2015-03-12 13:04:08,390 [HttpClient.java:230] Received response body: []
+      <br></br>2015-03-12 13:04:08,390 [HttpClient.java:218] Sending request [POST]: Crud.svc/AggregatePrimaryInteger.A1A1In, content size: 78 bytes
+      <br></br>2015-03-12 13:04:08,391 [HttpClient.java:430] POST http://localhost:2008/Crud.svc/AggregatePrimaryInteger.A1A1In
+      <br></br>2015-03-12 13:04:08,391 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-12 13:04:08,391 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-12 13:04:08,391 [HttpClient.java:443] Adding payload: {"URI":"505339477","p1A1In":[0,-2147483648,2147483647,-1000000000,1000000000]}
+      <br></br>2015-03-12 13:04:08,427 [HttpClient.java:227] Received response [201, 1024 bytes] in 37 ms
+      <br></br>2015-03-12 13:04:08,427 [HttpClient.java:230] Received response body: {"URI":"{0,-2147483648,2147483647,-1000000000,1000000000}","p1A1In":[0,-2147483648,2147483647,-1000000000,1000000000]}
+      <br></br>2015-03-12 13:04:08,428 [HttpClient.java:203] Sending request [GET]: Crud.svc/AggregatePrimaryInteger.A1A1In?uri=%7B0%2C-2147483648%2C2147483647%2C-1000000000%2C1000000000%7D
+      <br></br>2015-03-12 13:04:08,428 [HttpClient.java:430] GET http://localhost:2008/Crud.svc/AggregatePrimaryInteger.A1A1In?uri=%7B0%2C-2147483648%2C2147483647%2C-1000000000%2C1000000000%7D
+      <br></br>2015-03-12 13:04:08,428 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-12 13:04:08,428 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-12 13:04:08,429 [HttpClient.java:227] Received response [200, 1024 bytes] in 1 ms
+      <br></br>2015-03-12 13:04:08,430 [HttpClient.java:230] Received response body: {"URI":"{0,-2147483648,2147483647,-1000000000,1000000000}","p1A1In":[0,-2147483648,2147483647,-1000000000,1000000000]}
       <br></br><a id="testP1A1InNonDefault2PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1A1InNonDefault2PropertyValueInAggregateAfterActiveRecordPersist</h2>
-      <br></br>2015-03-11 16:33:02,502 [HttpClient.java:203] Sending request [GET]: Domain.svc/search/AggregatePrimaryInteger.A1A1In?limit=2147483647&offset=0
-      <br></br>2015-03-11 16:33:02,537 [HttpClient.java:430] GET http://localhost:2008/Domain.svc/search/AggregatePrimaryInteger.A1A1In?limit=2147483647&offset=0
-      <br></br>2015-03-11 16:33:02,537 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-03-11 16:33:02,537 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-03-11 16:33:02,539 [HttpClient.java:227] Received response [200, 1024 bytes] in 37 ms
-      <br></br>2015-03-11 16:33:02,539 [HttpClient.java:230] Received response body: [{"URI":"{0,-2147483648,2147483647,-1000000000,1000000000}","p1A1In":[0,-2147483648,2147483647,-1000000000,1000000000]}]
-      <br></br>2015-03-11 16:33:02,540 [HttpClient.java:218] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 185 bytes
-      <br></br>2015-03-11 16:33:02,540 [HttpClient.java:430] POST http://localhost:2008/RestApplication.svc/PersistAggregateRoot
-      <br></br>2015-03-11 16:33:02,540 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-03-11 16:33:02,540 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-03-11 16:33:02,540 [HttpClient.java:443] Adding payload: {"RootName":"AggregatePrimaryInteger.A1A1In","ToDelete":"[{\"p1A1In\":[0,-2147483648,2147483647,-1000000000,1000000000],\"uri\":\"{0,-2147483648,2147483647,-1000000000,1000000000}\"}]"}
-      <br></br>2015-03-11 16:33:02,543 [HttpClient.java:227] Received response [200, 1024 bytes] in 3 ms
-      <br></br>2015-03-11 16:33:02,543 [HttpClient.java:230] Received response body: []
-      <br></br>2015-03-11 16:33:02,543 [HttpClient.java:218] Sending request [POST]: Crud.svc/AggregatePrimaryInteger.A1A1In, content size: 41 bytes
-      <br></br>2015-03-11 16:33:02,543 [HttpClient.java:430] POST http://localhost:2008/Crud.svc/AggregatePrimaryInteger.A1A1In
-      <br></br>2015-03-11 16:33:02,544 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-03-11 16:33:02,544 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-03-11 16:33:02,544 [HttpClient.java:443] Adding payload: {"URI":"141743434","p1A1In":[1000000000]}
-      <br></br>2015-03-11 16:33:02,546 [HttpClient.java:227] Received response [201, 1024 bytes] in 3 ms
-      <br></br>2015-03-11 16:33:02,546 [HttpClient.java:230] Received response body: {"URI":"{1000000000}","p1A1In":[1000000000]}
-      <br></br>2015-03-11 16:33:02,547 [HttpClient.java:203] Sending request [GET]: Crud.svc/AggregatePrimaryInteger.A1A1In?uri=%7B1000000000%7D
-      <br></br>2015-03-11 16:33:02,547 [HttpClient.java:430] GET http://localhost:2008/Crud.svc/AggregatePrimaryInteger.A1A1In?uri=%7B1000000000%7D
-      <br></br>2015-03-11 16:33:02,547 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-03-11 16:33:02,547 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-03-11 16:33:02,548 [HttpClient.java:227] Received response [200, 1024 bytes] in 1 ms
-      <br></br>2015-03-11 16:33:02,548 [HttpClient.java:230] Received response body: {"URI":"{1000000000}","p1A1In":[1000000000]}
+      <br></br>2015-03-12 13:04:08,431 [HttpClient.java:203] Sending request [GET]: Domain.svc/search/AggregatePrimaryInteger.A1A1In?limit=2147483647&offset=0
+      <br></br>2015-03-12 13:04:08,431 [HttpClient.java:430] GET http://localhost:2008/Domain.svc/search/AggregatePrimaryInteger.A1A1In?limit=2147483647&offset=0
+      <br></br>2015-03-12 13:04:08,431 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-12 13:04:08,431 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-12 13:04:08,433 [HttpClient.java:227] Received response [200, 1024 bytes] in 2 ms
+      <br></br>2015-03-12 13:04:08,433 [HttpClient.java:230] Received response body: [{"URI":"{0,-2147483648,2147483647,-1000000000,1000000000}","p1A1In":[0,-2147483648,2147483647,-1000000000,1000000000]}]
+      <br></br>2015-03-12 13:04:08,434 [HttpClient.java:218] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 185 bytes
+      <br></br>2015-03-12 13:04:08,434 [HttpClient.java:430] POST http://localhost:2008/RestApplication.svc/PersistAggregateRoot
+      <br></br>2015-03-12 13:04:08,434 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-12 13:04:08,434 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-12 13:04:08,434 [HttpClient.java:443] Adding payload: {"RootName":"AggregatePrimaryInteger.A1A1In","ToDelete":"[{\"p1A1In\":[0,-2147483648,2147483647,-1000000000,1000000000],\"uri\":\"{0,-2147483648,2147483647,-1000000000,1000000000}\"}]"}
+      <br></br>2015-03-12 13:04:08,438 [HttpClient.java:227] Received response [200, 1024 bytes] in 4 ms
+      <br></br>2015-03-12 13:04:08,438 [HttpClient.java:230] Received response body: []
+      <br></br>2015-03-12 13:04:08,438 [HttpClient.java:218] Sending request [POST]: Crud.svc/AggregatePrimaryInteger.A1A1In, content size: 41 bytes
+      <br></br>2015-03-12 13:04:08,438 [HttpClient.java:430] POST http://localhost:2008/Crud.svc/AggregatePrimaryInteger.A1A1In
+      <br></br>2015-03-12 13:04:08,438 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-12 13:04:08,438 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-12 13:04:08,439 [HttpClient.java:443] Adding payload: {"URI":"141743434","p1A1In":[1000000000]}
+      <br></br>2015-03-12 13:04:08,441 [HttpClient.java:227] Received response [201, 1024 bytes] in 3 ms
+      <br></br>2015-03-12 13:04:08,441 [HttpClient.java:230] Received response body: {"URI":"{1000000000}","p1A1In":[1000000000]}
+      <br></br>2015-03-12 13:04:08,441 [HttpClient.java:203] Sending request [GET]: Crud.svc/AggregatePrimaryInteger.A1A1In?uri=%7B1000000000%7D
+      <br></br>2015-03-12 13:04:08,441 [HttpClient.java:430] GET http://localhost:2008/Crud.svc/AggregatePrimaryInteger.A1A1In?uri=%7B1000000000%7D
+      <br></br>2015-03-12 13:04:08,442 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-12 13:04:08,442 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-12 13:04:08,443 [HttpClient.java:227] Received response [200, 1024 bytes] in 2 ms
+      <br></br>2015-03-12 13:04:08,443 [HttpClient.java:230] Received response body: {"URI":"{1000000000}","p1A1In":[1000000000]}
       <br></br><a id="testP1A1InNonDefault1PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1A1InNonDefault1PropertyValueInAggregateAfterActiveRecordPersist</h2>
-      <br></br>2015-03-11 16:33:02,549 [HttpClient.java:203] Sending request [GET]: Domain.svc/search/AggregatePrimaryInteger.A1A1In?limit=2147483647&offset=0
-      <br></br>2015-03-11 16:33:02,549 [HttpClient.java:430] GET http://localhost:2008/Domain.svc/search/AggregatePrimaryInteger.A1A1In?limit=2147483647&offset=0
-      <br></br>2015-03-11 16:33:02,549 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-03-11 16:33:02,550 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-03-11 16:33:02,552 [HttpClient.java:227] Received response [200, 1024 bytes] in 3 ms
-      <br></br>2015-03-11 16:33:02,552 [HttpClient.java:230] Received response body: [{"URI":"{1000000000}","p1A1In":[1000000000]}]
-      <br></br>2015-03-11 16:33:02,553 [HttpClient.java:218] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 111 bytes
-      <br></br>2015-03-11 16:33:02,553 [HttpClient.java:430] POST http://localhost:2008/RestApplication.svc/PersistAggregateRoot
-      <br></br>2015-03-11 16:33:02,553 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-03-11 16:33:02,553 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-03-11 16:33:02,553 [HttpClient.java:443] Adding payload: {"RootName":"AggregatePrimaryInteger.A1A1In","ToDelete":"[{\"p1A1In\":[1000000000],\"uri\":\"{1000000000}\"}]"}
-      <br></br>2015-03-11 16:33:02,559 [HttpClient.java:227] Received response [200, 1024 bytes] in 7 ms
-      <br></br>2015-03-11 16:33:02,559 [HttpClient.java:230] Received response body: []
-      <br></br>2015-03-11 16:33:02,559 [HttpClient.java:218] Sending request [POST]: Crud.svc/AggregatePrimaryInteger.A1A1In, content size: 33 bytes
-      <br></br>2015-03-11 16:33:02,559 [HttpClient.java:430] POST http://localhost:2008/Crud.svc/AggregatePrimaryInteger.A1A1In
-      <br></br>2015-03-11 16:33:02,560 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-03-11 16:33:02,560 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-03-11 16:33:02,560 [HttpClient.java:443] Adding payload: {"URI":"1701186867","p1A1In":[0]}
-      <br></br>2015-03-11 16:33:02,562 [HttpClient.java:227] Received response [201, 1024 bytes] in 3 ms
-      <br></br>2015-03-11 16:33:02,562 [HttpClient.java:230] Received response body: {"URI":"{0}","p1A1In":[0]}
-      <br></br>2015-03-11 16:33:02,563 [HttpClient.java:203] Sending request [GET]: Crud.svc/AggregatePrimaryInteger.A1A1In?uri=%7B0%7D
-      <br></br>2015-03-11 16:33:02,563 [HttpClient.java:430] GET http://localhost:2008/Crud.svc/AggregatePrimaryInteger.A1A1In?uri=%7B0%7D
-      <br></br>2015-03-11 16:33:02,563 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-03-11 16:33:02,563 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-03-11 16:33:02,564 [HttpClient.java:227] Received response [200, 1024 bytes] in 1 ms
-      <br></br>2015-03-11 16:33:02,564 [HttpClient.java:230] Received response body: {"URI":"{0}","p1A1In":[0]}
+      <br></br>2015-03-12 13:04:08,448 [HttpClient.java:203] Sending request [GET]: Domain.svc/search/AggregatePrimaryInteger.A1A1In?limit=2147483647&offset=0
+      <br></br>2015-03-12 13:04:08,448 [HttpClient.java:430] GET http://localhost:2008/Domain.svc/search/AggregatePrimaryInteger.A1A1In?limit=2147483647&offset=0
+      <br></br>2015-03-12 13:04:08,448 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-12 13:04:08,448 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-12 13:04:08,451 [HttpClient.java:227] Received response [200, 1024 bytes] in 3 ms
+      <br></br>2015-03-12 13:04:08,451 [HttpClient.java:230] Received response body: [{"URI":"{1000000000}","p1A1In":[1000000000]}]
+      <br></br>2015-03-12 13:04:08,451 [HttpClient.java:218] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 111 bytes
+      <br></br>2015-03-12 13:04:08,451 [HttpClient.java:430] POST http://localhost:2008/RestApplication.svc/PersistAggregateRoot
+      <br></br>2015-03-12 13:04:08,451 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-12 13:04:08,452 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-12 13:04:08,452 [HttpClient.java:443] Adding payload: {"RootName":"AggregatePrimaryInteger.A1A1In","ToDelete":"[{\"p1A1In\":[1000000000],\"uri\":\"{1000000000}\"}]"}
+      <br></br>2015-03-12 13:04:08,458 [HttpClient.java:227] Received response [200, 1024 bytes] in 7 ms
+      <br></br>2015-03-12 13:04:08,458 [HttpClient.java:230] Received response body: []
+      <br></br>2015-03-12 13:04:08,458 [HttpClient.java:218] Sending request [POST]: Crud.svc/AggregatePrimaryInteger.A1A1In, content size: 33 bytes
+      <br></br>2015-03-12 13:04:08,458 [HttpClient.java:430] POST http://localhost:2008/Crud.svc/AggregatePrimaryInteger.A1A1In
+      <br></br>2015-03-12 13:04:08,458 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-12 13:04:08,458 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-12 13:04:08,458 [HttpClient.java:443] Adding payload: {"URI":"1701186867","p1A1In":[0]}
+      <br></br>2015-03-12 13:04:08,461 [HttpClient.java:227] Received response [201, 1024 bytes] in 3 ms
+      <br></br>2015-03-12 13:04:08,461 [HttpClient.java:230] Received response body: {"URI":"{0}","p1A1In":[0]}
+      <br></br>2015-03-12 13:04:08,461 [HttpClient.java:203] Sending request [GET]: Crud.svc/AggregatePrimaryInteger.A1A1In?uri=%7B0%7D
+      <br></br>2015-03-12 13:04:08,461 [HttpClient.java:430] GET http://localhost:2008/Crud.svc/AggregatePrimaryInteger.A1A1In?uri=%7B0%7D
+      <br></br>2015-03-12 13:04:08,462 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-12 13:04:08,462 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-12 13:04:08,463 [HttpClient.java:227] Received response [200, 1024 bytes] in 2 ms
+      <br></br>2015-03-12 13:04:08,463 [HttpClient.java:230] Received response body: {"URI":"{0}","p1A1In":[0]}
       <br></br><a id="testURIPropertyFieldClass"/><h2>testURIPropertyFieldClass</h2>
       <br></br><a id="testP1A1InPropertyGetterPublicVisibility"/><h2>testP1A1InPropertyGetterPublicVisibility</h2>
       <br></br><a id="testURIPropertyFieldPrivateVisibility"/><h2>testURIPropertyFieldPrivateVisibility</h2>
@@ -314,25 +328,32 @@
       <br></br><a id="testP1InPropertyFieldClass"/><h2>testP1InPropertyFieldClass</h2>
       <br></br><a id="testURIPropertyFieldPrivateVisibility"/><h2>testURIPropertyFieldPrivateVisibility</h2>
       <br></br><a id="testP1InDefaultPropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1InDefaultPropertyValueInAggregateAfterActiveRecordPersist</h2>
-      <br></br>2015-03-11 16:33:02,596 [HttpClient.java:203] Sending request [GET]: Domain.svc/search/AggregatePrimaryInteger.A1In?limit=2147483647&offset=0
-      <br></br>2015-03-11 16:33:02,596 [HttpClient.java:430] GET http://localhost:2008/Domain.svc/search/AggregatePrimaryInteger.A1In?limit=2147483647&offset=0
-      <br></br>2015-03-11 16:33:02,597 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-03-11 16:33:02,597 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-03-11 16:33:02,634 [HttpClient.java:227] Received response [200, 1024 bytes] in 38 ms
-      <br></br>2015-03-11 16:33:02,634 [HttpClient.java:230] Received response body: []
-      <br></br>2015-03-11 16:33:02,635 [HttpClient.java:218] Sending request [POST]: Crud.svc/AggregatePrimaryInteger.A1In, content size: 19 bytes
-      <br></br>2015-03-11 16:33:02,635 [HttpClient.java:430] POST http://localhost:2008/Crud.svc/AggregatePrimaryInteger.A1In
-      <br></br>2015-03-11 16:33:02,635 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-03-11 16:33:02,635 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-03-11 16:33:02,635 [HttpClient.java:443] Adding payload: {"URI":"283515975"}
-      <br></br>2015-03-11 16:33:02,670 [HttpClient.java:227] Received response [201, 1024 bytes] in 35 ms
-      <br></br>2015-03-11 16:33:02,670 [HttpClient.java:230] Received response body: {"URI":"0","p1In":0}
-      <br></br>2015-03-11 16:33:02,671 [HttpClient.java:203] Sending request [GET]: Crud.svc/AggregatePrimaryInteger.A1In?uri=0
-      <br></br>2015-03-11 16:33:02,671 [HttpClient.java:430] GET http://localhost:2008/Crud.svc/AggregatePrimaryInteger.A1In?uri=0
-      <br></br>2015-03-11 16:33:02,671 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-03-11 16:33:02,671 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-03-11 16:33:02,679 [HttpClient.java:227] Received response [200, 1024 bytes] in 8 ms
-      <br></br>2015-03-11 16:33:02,679 [HttpClient.java:230] Received response body: {"URI":"0","p1In":0}
+      <br></br>2015-03-12 13:04:08,492 [HttpClient.java:203] Sending request [GET]: Domain.svc/search/AggregatePrimaryInteger.A1In?limit=2147483647&offset=0
+      <br></br>2015-03-12 13:04:08,493 [HttpClient.java:430] GET http://localhost:2008/Domain.svc/search/AggregatePrimaryInteger.A1In?limit=2147483647&offset=0
+      <br></br>2015-03-12 13:04:08,493 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-12 13:04:08,493 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-12 13:04:08,535 [HttpClient.java:227] Received response [200, 1024 bytes] in 43 ms
+      <br></br>2015-03-12 13:04:08,535 [HttpClient.java:230] Received response body: [{"URI":"-2147483648","p1In":-2147483648}]
+      <br></br>2015-03-12 13:04:08,536 [HttpClient.java:218] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 105 bytes
+      <br></br>2015-03-12 13:04:08,537 [HttpClient.java:430] POST http://localhost:2008/RestApplication.svc/PersistAggregateRoot
+      <br></br>2015-03-12 13:04:08,537 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-12 13:04:08,537 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-12 13:04:08,537 [HttpClient.java:443] Adding payload: {"RootName":"AggregatePrimaryInteger.A1In","ToDelete":"[{\"p1In\":-2147483648,\"uri\":\"-2147483648\"}]"}
+      <br></br>2015-03-12 13:04:08,569 [HttpClient.java:227] Received response [200, 1024 bytes] in 33 ms
+      <br></br>2015-03-12 13:04:08,570 [HttpClient.java:230] Received response body: []
+      <br></br>2015-03-12 13:04:08,570 [HttpClient.java:218] Sending request [POST]: Crud.svc/AggregatePrimaryInteger.A1In, content size: 19 bytes
+      <br></br>2015-03-12 13:04:08,571 [HttpClient.java:430] POST http://localhost:2008/Crud.svc/AggregatePrimaryInteger.A1In
+      <br></br>2015-03-12 13:04:08,571 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-12 13:04:08,571 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-12 13:04:08,571 [HttpClient.java:443] Adding payload: {"URI":"721888117"}
+      <br></br>2015-03-12 13:04:08,577 [HttpClient.java:227] Received response [201, 1024 bytes] in 7 ms
+      <br></br>2015-03-12 13:04:08,577 [HttpClient.java:230] Received response body: {"URI":"0","p1In":0}
+      <br></br>2015-03-12 13:04:08,577 [HttpClient.java:203] Sending request [GET]: Crud.svc/AggregatePrimaryInteger.A1In?uri=0
+      <br></br>2015-03-12 13:04:08,577 [HttpClient.java:430] GET http://localhost:2008/Crud.svc/AggregatePrimaryInteger.A1In?uri=0
+      <br></br>2015-03-12 13:04:08,577 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-12 13:04:08,578 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-12 13:04:08,583 [HttpClient.java:227] Received response [200, 1024 bytes] in 6 ms
+      <br></br>2015-03-12 13:04:08,583 [HttpClient.java:230] Received response body: {"URI":"0","p1In":0}
       <br></br><a id="testP1InPropertySetterClass"/><h2>testP1InPropertySetterClass</h2>
       <br></br><a id="testP1InPropertyGetterClass"/><h2>testP1InPropertyGetterClass</h2>
       <br></br><a id="testP1InPropertySetterPublicVisibility"/><h2>testP1InPropertySetterPublicVisibility</h2>
@@ -341,113 +362,113 @@
       <br></br><a id="testP1InDefaultPropertyInAggregateJsonSerialization"/><h2>testP1InDefaultPropertyInAggregateJsonSerialization</h2>
       <br></br><a id="testURIPropertyGetterClass"/><h2>testURIPropertyGetterClass</h2>
       <br></br><a id="testP1InNonDefault4PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1InNonDefault4PropertyValueInAggregateAfterActiveRecordPersist</h2>
-      <br></br>2015-03-11 16:33:02,685 [HttpClient.java:203] Sending request [GET]: Domain.svc/search/AggregatePrimaryInteger.A1In?limit=2147483647&offset=0
-      <br></br>2015-03-11 16:33:02,685 [HttpClient.java:430] GET http://localhost:2008/Domain.svc/search/AggregatePrimaryInteger.A1In?limit=2147483647&offset=0
-      <br></br>2015-03-11 16:33:02,685 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-03-11 16:33:02,685 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-03-11 16:33:02,690 [HttpClient.java:227] Received response [200, 1024 bytes] in 5 ms
-      <br></br>2015-03-11 16:33:02,690 [HttpClient.java:230] Received response body: [{"URI":"0","p1In":0}]
-      <br></br>2015-03-11 16:33:02,691 [HttpClient.java:218] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 85 bytes
-      <br></br>2015-03-11 16:33:02,692 [HttpClient.java:430] POST http://localhost:2008/RestApplication.svc/PersistAggregateRoot
-      <br></br>2015-03-11 16:33:02,692 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-03-11 16:33:02,692 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-03-11 16:33:02,692 [HttpClient.java:443] Adding payload: {"RootName":"AggregatePrimaryInteger.A1In","ToDelete":"[{\"p1In\":0,\"uri\":\"0\"}]"}
-      <br></br>2015-03-11 16:33:02,700 [HttpClient.java:227] Received response [200, 1024 bytes] in 9 ms
-      <br></br>2015-03-11 16:33:02,700 [HttpClient.java:230] Received response body: []
-      <br></br>2015-03-11 16:33:02,701 [HttpClient.java:218] Sending request [POST]: Crud.svc/AggregatePrimaryInteger.A1In, content size: 38 bytes
-      <br></br>2015-03-11 16:33:02,701 [HttpClient.java:430] POST http://localhost:2008/Crud.svc/AggregatePrimaryInteger.A1In
-      <br></br>2015-03-11 16:33:02,701 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-03-11 16:33:02,702 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-03-11 16:33:02,702 [HttpClient.java:443] Adding payload: {"URI":"2141704388","p1In":1000000000}
-      <br></br>2015-03-11 16:33:02,706 [HttpClient.java:227] Received response [201, 1024 bytes] in 5 ms
-      <br></br>2015-03-11 16:33:02,706 [HttpClient.java:230] Received response body: {"URI":"1000000000","p1In":1000000000}
-      <br></br>2015-03-11 16:33:02,708 [HttpClient.java:203] Sending request [GET]: Crud.svc/AggregatePrimaryInteger.A1In?uri=1000000000
-      <br></br>2015-03-11 16:33:02,708 [HttpClient.java:430] GET http://localhost:2008/Crud.svc/AggregatePrimaryInteger.A1In?uri=1000000000
-      <br></br>2015-03-11 16:33:02,708 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-03-11 16:33:02,708 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-03-11 16:33:02,709 [HttpClient.java:227] Received response [200, 1024 bytes] in 1 ms
-      <br></br>2015-03-11 16:33:02,710 [HttpClient.java:230] Received response body: {"URI":"1000000000","p1In":1000000000}
+      <br></br>2015-03-12 13:04:08,589 [HttpClient.java:203] Sending request [GET]: Domain.svc/search/AggregatePrimaryInteger.A1In?limit=2147483647&offset=0
+      <br></br>2015-03-12 13:04:08,589 [HttpClient.java:430] GET http://localhost:2008/Domain.svc/search/AggregatePrimaryInteger.A1In?limit=2147483647&offset=0
+      <br></br>2015-03-12 13:04:08,589 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-12 13:04:08,589 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-12 13:04:08,591 [HttpClient.java:227] Received response [200, 1024 bytes] in 2 ms
+      <br></br>2015-03-12 13:04:08,592 [HttpClient.java:230] Received response body: [{"URI":"0","p1In":0}]
+      <br></br>2015-03-12 13:04:08,592 [HttpClient.java:218] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 85 bytes
+      <br></br>2015-03-12 13:04:08,592 [HttpClient.java:430] POST http://localhost:2008/RestApplication.svc/PersistAggregateRoot
+      <br></br>2015-03-12 13:04:08,592 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-12 13:04:08,592 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-12 13:04:08,592 [HttpClient.java:443] Adding payload: {"RootName":"AggregatePrimaryInteger.A1In","ToDelete":"[{\"p1In\":0,\"uri\":\"0\"}]"}
+      <br></br>2015-03-12 13:04:08,604 [HttpClient.java:227] Received response [200, 1024 bytes] in 12 ms
+      <br></br>2015-03-12 13:04:08,604 [HttpClient.java:230] Received response body: []
+      <br></br>2015-03-12 13:04:08,604 [HttpClient.java:218] Sending request [POST]: Crud.svc/AggregatePrimaryInteger.A1In, content size: 38 bytes
+      <br></br>2015-03-12 13:04:08,604 [HttpClient.java:430] POST http://localhost:2008/Crud.svc/AggregatePrimaryInteger.A1In
+      <br></br>2015-03-12 13:04:08,604 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-12 13:04:08,605 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-12 13:04:08,605 [HttpClient.java:443] Adding payload: {"URI":"2141704388","p1In":1000000000}
+      <br></br>2015-03-12 13:04:08,607 [HttpClient.java:227] Received response [201, 1024 bytes] in 3 ms
+      <br></br>2015-03-12 13:04:08,607 [HttpClient.java:230] Received response body: {"URI":"1000000000","p1In":1000000000}
+      <br></br>2015-03-12 13:04:08,607 [HttpClient.java:203] Sending request [GET]: Crud.svc/AggregatePrimaryInteger.A1In?uri=1000000000
+      <br></br>2015-03-12 13:04:08,607 [HttpClient.java:430] GET http://localhost:2008/Crud.svc/AggregatePrimaryInteger.A1In?uri=1000000000
+      <br></br>2015-03-12 13:04:08,608 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-12 13:04:08,608 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-12 13:04:08,609 [HttpClient.java:227] Received response [200, 1024 bytes] in 2 ms
+      <br></br>2015-03-12 13:04:08,609 [HttpClient.java:230] Received response body: {"URI":"1000000000","p1In":1000000000}
       <br></br><a id="testP1InNonDefault3PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1InNonDefault3PropertyValueInAggregateAfterActiveRecordPersist</h2>
-      <br></br>2015-03-11 16:33:02,710 [HttpClient.java:203] Sending request [GET]: Domain.svc/search/AggregatePrimaryInteger.A1In?limit=2147483647&offset=0
-      <br></br>2015-03-11 16:33:02,711 [HttpClient.java:430] GET http://localhost:2008/Domain.svc/search/AggregatePrimaryInteger.A1In?limit=2147483647&offset=0
-      <br></br>2015-03-11 16:33:02,711 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-03-11 16:33:02,711 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-03-11 16:33:02,714 [HttpClient.java:227] Received response [200, 1024 bytes] in 4 ms
-      <br></br>2015-03-11 16:33:02,714 [HttpClient.java:230] Received response body: [{"URI":"1000000000","p1In":1000000000}]
-      <br></br>2015-03-11 16:33:02,714 [HttpClient.java:218] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 103 bytes
-      <br></br>2015-03-11 16:33:02,715 [HttpClient.java:430] POST http://localhost:2008/RestApplication.svc/PersistAggregateRoot
-      <br></br>2015-03-11 16:33:02,715 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-03-11 16:33:02,715 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-03-11 16:33:02,715 [HttpClient.java:443] Adding payload: {"RootName":"AggregatePrimaryInteger.A1In","ToDelete":"[{\"p1In\":1000000000,\"uri\":\"1000000000\"}]"}
-      <br></br>2015-03-11 16:33:02,720 [HttpClient.java:227] Received response [200, 1024 bytes] in 6 ms
-      <br></br>2015-03-11 16:33:02,721 [HttpClient.java:230] Received response body: []
-      <br></br>2015-03-11 16:33:02,721 [HttpClient.java:218] Sending request [POST]: Crud.svc/AggregatePrimaryInteger.A1In, content size: 38 bytes
-      <br></br>2015-03-11 16:33:02,721 [HttpClient.java:430] POST http://localhost:2008/Crud.svc/AggregatePrimaryInteger.A1In
-      <br></br>2015-03-11 16:33:02,721 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-03-11 16:33:02,722 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-03-11 16:33:02,722 [HttpClient.java:443] Adding payload: {"URI":"116036086","p1In":-1000000000}
-      <br></br>2015-03-11 16:33:02,725 [HttpClient.java:227] Received response [201, 1024 bytes] in 4 ms
-      <br></br>2015-03-11 16:33:02,725 [HttpClient.java:230] Received response body: {"URI":"-1000000000","p1In":-1000000000}
-      <br></br>2015-03-11 16:33:02,725 [HttpClient.java:203] Sending request [GET]: Crud.svc/AggregatePrimaryInteger.A1In?uri=-1000000000
-      <br></br>2015-03-11 16:33:02,726 [HttpClient.java:430] GET http://localhost:2008/Crud.svc/AggregatePrimaryInteger.A1In?uri=-1000000000
-      <br></br>2015-03-11 16:33:02,726 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-03-11 16:33:02,726 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-03-11 16:33:02,728 [HttpClient.java:227] Received response [200, 1024 bytes] in 3 ms
-      <br></br>2015-03-11 16:33:02,728 [HttpClient.java:230] Received response body: {"URI":"-1000000000","p1In":-1000000000}
+      <br></br>2015-03-12 13:04:08,610 [HttpClient.java:203] Sending request [GET]: Domain.svc/search/AggregatePrimaryInteger.A1In?limit=2147483647&offset=0
+      <br></br>2015-03-12 13:04:08,610 [HttpClient.java:430] GET http://localhost:2008/Domain.svc/search/AggregatePrimaryInteger.A1In?limit=2147483647&offset=0
+      <br></br>2015-03-12 13:04:08,610 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-12 13:04:08,610 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-12 13:04:08,612 [HttpClient.java:227] Received response [200, 1024 bytes] in 2 ms
+      <br></br>2015-03-12 13:04:08,613 [HttpClient.java:230] Received response body: [{"URI":"1000000000","p1In":1000000000}]
+      <br></br>2015-03-12 13:04:08,613 [HttpClient.java:218] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 103 bytes
+      <br></br>2015-03-12 13:04:08,613 [HttpClient.java:430] POST http://localhost:2008/RestApplication.svc/PersistAggregateRoot
+      <br></br>2015-03-12 13:04:08,613 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-12 13:04:08,613 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-12 13:04:08,613 [HttpClient.java:443] Adding payload: {"RootName":"AggregatePrimaryInteger.A1In","ToDelete":"[{\"p1In\":1000000000,\"uri\":\"1000000000\"}]"}
+      <br></br>2015-03-12 13:04:08,616 [HttpClient.java:227] Received response [200, 1024 bytes] in 3 ms
+      <br></br>2015-03-12 13:04:08,616 [HttpClient.java:230] Received response body: []
+      <br></br>2015-03-12 13:04:08,617 [HttpClient.java:218] Sending request [POST]: Crud.svc/AggregatePrimaryInteger.A1In, content size: 38 bytes
+      <br></br>2015-03-12 13:04:08,617 [HttpClient.java:430] POST http://localhost:2008/Crud.svc/AggregatePrimaryInteger.A1In
+      <br></br>2015-03-12 13:04:08,617 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-12 13:04:08,617 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-12 13:04:08,617 [HttpClient.java:443] Adding payload: {"URI":"116036086","p1In":-1000000000}
+      <br></br>2015-03-12 13:04:08,620 [HttpClient.java:227] Received response [201, 1024 bytes] in 3 ms
+      <br></br>2015-03-12 13:04:08,620 [HttpClient.java:230] Received response body: {"URI":"-1000000000","p1In":-1000000000}
+      <br></br>2015-03-12 13:04:08,621 [HttpClient.java:203] Sending request [GET]: Crud.svc/AggregatePrimaryInteger.A1In?uri=-1000000000
+      <br></br>2015-03-12 13:04:08,621 [HttpClient.java:430] GET http://localhost:2008/Crud.svc/AggregatePrimaryInteger.A1In?uri=-1000000000
+      <br></br>2015-03-12 13:04:08,621 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-12 13:04:08,621 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-12 13:04:08,622 [HttpClient.java:227] Received response [200, 1024 bytes] in 2 ms
+      <br></br>2015-03-12 13:04:08,622 [HttpClient.java:230] Received response body: {"URI":"-1000000000","p1In":-1000000000}
       <br></br><a id="testP1InNonDefault2PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1InNonDefault2PropertyValueInAggregateAfterActiveRecordPersist</h2>
-      <br></br>2015-03-11 16:33:02,729 [HttpClient.java:203] Sending request [GET]: Domain.svc/search/AggregatePrimaryInteger.A1In?limit=2147483647&offset=0
-      <br></br>2015-03-11 16:33:02,730 [HttpClient.java:430] GET http://localhost:2008/Domain.svc/search/AggregatePrimaryInteger.A1In?limit=2147483647&offset=0
-      <br></br>2015-03-11 16:33:02,730 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-03-11 16:33:02,730 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-03-11 16:33:02,732 [HttpClient.java:227] Received response [200, 1024 bytes] in 3 ms
-      <br></br>2015-03-11 16:33:02,733 [HttpClient.java:230] Received response body: [{"URI":"-1000000000","p1In":-1000000000}]
-      <br></br>2015-03-11 16:33:02,734 [HttpClient.java:218] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 105 bytes
-      <br></br>2015-03-11 16:33:02,734 [HttpClient.java:430] POST http://localhost:2008/RestApplication.svc/PersistAggregateRoot
-      <br></br>2015-03-11 16:33:02,734 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-03-11 16:33:02,734 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-03-11 16:33:02,734 [HttpClient.java:443] Adding payload: {"RootName":"AggregatePrimaryInteger.A1In","ToDelete":"[{\"p1In\":-1000000000,\"uri\":\"-1000000000\"}]"}
-      <br></br>2015-03-11 16:33:02,737 [HttpClient.java:227] Received response [200, 1024 bytes] in 4 ms
-      <br></br>2015-03-11 16:33:02,737 [HttpClient.java:230] Received response body: []
-      <br></br>2015-03-11 16:33:02,738 [HttpClient.java:218] Sending request [POST]: Crud.svc/AggregatePrimaryInteger.A1In, content size: 37 bytes
-      <br></br>2015-03-11 16:33:02,738 [HttpClient.java:430] POST http://localhost:2008/Crud.svc/AggregatePrimaryInteger.A1In
-      <br></br>2015-03-11 16:33:02,738 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-03-11 16:33:02,738 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-03-11 16:33:02,738 [HttpClient.java:443] Adding payload: {"URI":"318430130","p1In":2147483647}
-      <br></br>2015-03-11 16:33:02,741 [HttpClient.java:227] Received response [201, 1024 bytes] in 3 ms
-      <br></br>2015-03-11 16:33:02,741 [HttpClient.java:230] Received response body: {"URI":"2147483647","p1In":2147483647}
-      <br></br>2015-03-11 16:33:02,741 [HttpClient.java:203] Sending request [GET]: Crud.svc/AggregatePrimaryInteger.A1In?uri=2147483647
-      <br></br>2015-03-11 16:33:02,742 [HttpClient.java:430] GET http://localhost:2008/Crud.svc/AggregatePrimaryInteger.A1In?uri=2147483647
-      <br></br>2015-03-11 16:33:02,742 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-03-11 16:33:02,742 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-03-11 16:33:02,743 [HttpClient.java:227] Received response [200, 1024 bytes] in 2 ms
-      <br></br>2015-03-11 16:33:02,743 [HttpClient.java:230] Received response body: {"URI":"2147483647","p1In":2147483647}
+      <br></br>2015-03-12 13:04:08,623 [HttpClient.java:203] Sending request [GET]: Domain.svc/search/AggregatePrimaryInteger.A1In?limit=2147483647&offset=0
+      <br></br>2015-03-12 13:04:08,623 [HttpClient.java:430] GET http://localhost:2008/Domain.svc/search/AggregatePrimaryInteger.A1In?limit=2147483647&offset=0
+      <br></br>2015-03-12 13:04:08,623 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-12 13:04:08,624 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-12 13:04:08,625 [HttpClient.java:227] Received response [200, 1024 bytes] in 2 ms
+      <br></br>2015-03-12 13:04:08,625 [HttpClient.java:230] Received response body: [{"URI":"-1000000000","p1In":-1000000000}]
+      <br></br>2015-03-12 13:04:08,625 [HttpClient.java:218] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 105 bytes
+      <br></br>2015-03-12 13:04:08,625 [HttpClient.java:430] POST http://localhost:2008/RestApplication.svc/PersistAggregateRoot
+      <br></br>2015-03-12 13:04:08,626 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-12 13:04:08,626 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-12 13:04:08,626 [HttpClient.java:443] Adding payload: {"RootName":"AggregatePrimaryInteger.A1In","ToDelete":"[{\"p1In\":-1000000000,\"uri\":\"-1000000000\"}]"}
+      <br></br>2015-03-12 13:04:08,629 [HttpClient.java:227] Received response [200, 1024 bytes] in 4 ms
+      <br></br>2015-03-12 13:04:08,629 [HttpClient.java:230] Received response body: []
+      <br></br>2015-03-12 13:04:08,630 [HttpClient.java:218] Sending request [POST]: Crud.svc/AggregatePrimaryInteger.A1In, content size: 37 bytes
+      <br></br>2015-03-12 13:04:08,630 [HttpClient.java:430] POST http://localhost:2008/Crud.svc/AggregatePrimaryInteger.A1In
+      <br></br>2015-03-12 13:04:08,630 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-12 13:04:08,630 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-12 13:04:08,630 [HttpClient.java:443] Adding payload: {"URI":"208800304","p1In":2147483647}
+      <br></br>2015-03-12 13:04:08,633 [HttpClient.java:227] Received response [201, 1024 bytes] in 3 ms
+      <br></br>2015-03-12 13:04:08,633 [HttpClient.java:230] Received response body: {"URI":"2147483647","p1In":2147483647}
+      <br></br>2015-03-12 13:04:08,633 [HttpClient.java:203] Sending request [GET]: Crud.svc/AggregatePrimaryInteger.A1In?uri=2147483647
+      <br></br>2015-03-12 13:04:08,633 [HttpClient.java:430] GET http://localhost:2008/Crud.svc/AggregatePrimaryInteger.A1In?uri=2147483647
+      <br></br>2015-03-12 13:04:08,633 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-12 13:04:08,633 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-12 13:04:08,634 [HttpClient.java:227] Received response [200, 1024 bytes] in 1 ms
+      <br></br>2015-03-12 13:04:08,634 [HttpClient.java:230] Received response body: {"URI":"2147483647","p1In":2147483647}
       <br></br><a id="testP1InNonDefault1PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1InNonDefault1PropertyValueInAggregateAfterActiveRecordPersist</h2>
-      <br></br>2015-03-11 16:33:02,744 [HttpClient.java:203] Sending request [GET]: Domain.svc/search/AggregatePrimaryInteger.A1In?limit=2147483647&offset=0
-      <br></br>2015-03-11 16:33:02,744 [HttpClient.java:430] GET http://localhost:2008/Domain.svc/search/AggregatePrimaryInteger.A1In?limit=2147483647&offset=0
-      <br></br>2015-03-11 16:33:02,744 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-03-11 16:33:02,744 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-03-11 16:33:02,747 [HttpClient.java:227] Received response [200, 1024 bytes] in 3 ms
-      <br></br>2015-03-11 16:33:02,747 [HttpClient.java:230] Received response body: [{"URI":"2147483647","p1In":2147483647}]
-      <br></br>2015-03-11 16:33:02,747 [HttpClient.java:218] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 103 bytes
-      <br></br>2015-03-11 16:33:02,747 [HttpClient.java:430] POST http://localhost:2008/RestApplication.svc/PersistAggregateRoot
-      <br></br>2015-03-11 16:33:02,747 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-03-11 16:33:02,748 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-03-11 16:33:02,748 [HttpClient.java:443] Adding payload: {"RootName":"AggregatePrimaryInteger.A1In","ToDelete":"[{\"p1In\":2147483647,\"uri\":\"2147483647\"}]"}
-      <br></br>2015-03-11 16:33:02,750 [HttpClient.java:227] Received response [200, 1024 bytes] in 3 ms
-      <br></br>2015-03-11 16:33:02,750 [HttpClient.java:230] Received response body: []
-      <br></br>2015-03-11 16:33:02,750 [HttpClient.java:218] Sending request [POST]: Crud.svc/AggregatePrimaryInteger.A1In, content size: 39 bytes
-      <br></br>2015-03-11 16:33:02,751 [HttpClient.java:430] POST http://localhost:2008/Crud.svc/AggregatePrimaryInteger.A1In
-      <br></br>2015-03-11 16:33:02,751 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-03-11 16:33:02,751 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-03-11 16:33:02,751 [HttpClient.java:443] Adding payload: {"URI":"2100971052","p1In":-2147483648}
-      <br></br>2015-03-11 16:33:02,756 [HttpClient.java:227] Received response [201, 1024 bytes] in 5 ms
-      <br></br>2015-03-11 16:33:02,756 [HttpClient.java:230] Received response body: {"URI":"-2147483648","p1In":-2147483648}
-      <br></br>2015-03-11 16:33:02,756 [HttpClient.java:203] Sending request [GET]: Crud.svc/AggregatePrimaryInteger.A1In?uri=-2147483648
-      <br></br>2015-03-11 16:33:02,756 [HttpClient.java:430] GET http://localhost:2008/Crud.svc/AggregatePrimaryInteger.A1In?uri=-2147483648
-      <br></br>2015-03-11 16:33:02,756 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-03-11 16:33:02,756 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-03-11 16:33:02,757 [HttpClient.java:227] Received response [200, 1024 bytes] in 1 ms
-      <br></br>2015-03-11 16:33:02,757 [HttpClient.java:230] Received response body: {"URI":"-2147483648","p1In":-2147483648}
+      <br></br>2015-03-12 13:04:08,635 [HttpClient.java:203] Sending request [GET]: Domain.svc/search/AggregatePrimaryInteger.A1In?limit=2147483647&offset=0
+      <br></br>2015-03-12 13:04:08,636 [HttpClient.java:430] GET http://localhost:2008/Domain.svc/search/AggregatePrimaryInteger.A1In?limit=2147483647&offset=0
+      <br></br>2015-03-12 13:04:08,636 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-12 13:04:08,636 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-12 13:04:08,638 [HttpClient.java:227] Received response [200, 1024 bytes] in 3 ms
+      <br></br>2015-03-12 13:04:08,638 [HttpClient.java:230] Received response body: [{"URI":"2147483647","p1In":2147483647}]
+      <br></br>2015-03-12 13:04:08,640 [HttpClient.java:218] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 103 bytes
+      <br></br>2015-03-12 13:04:08,640 [HttpClient.java:430] POST http://localhost:2008/RestApplication.svc/PersistAggregateRoot
+      <br></br>2015-03-12 13:04:08,640 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-12 13:04:08,640 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-12 13:04:08,640 [HttpClient.java:443] Adding payload: {"RootName":"AggregatePrimaryInteger.A1In","ToDelete":"[{\"p1In\":2147483647,\"uri\":\"2147483647\"}]"}
+      <br></br>2015-03-12 13:04:08,644 [HttpClient.java:227] Received response [200, 1024 bytes] in 4 ms
+      <br></br>2015-03-12 13:04:08,645 [HttpClient.java:230] Received response body: []
+      <br></br>2015-03-12 13:04:08,645 [HttpClient.java:218] Sending request [POST]: Crud.svc/AggregatePrimaryInteger.A1In, content size: 39 bytes
+      <br></br>2015-03-12 13:04:08,645 [HttpClient.java:430] POST http://localhost:2008/Crud.svc/AggregatePrimaryInteger.A1In
+      <br></br>2015-03-12 13:04:08,645 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-12 13:04:08,645 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-12 13:04:08,645 [HttpClient.java:443] Adding payload: {"URI":"2100971052","p1In":-2147483648}
+      <br></br>2015-03-12 13:04:08,648 [HttpClient.java:227] Received response [201, 1024 bytes] in 3 ms
+      <br></br>2015-03-12 13:04:08,648 [HttpClient.java:230] Received response body: {"URI":"-2147483648","p1In":-2147483648}
+      <br></br>2015-03-12 13:04:08,648 [HttpClient.java:203] Sending request [GET]: Crud.svc/AggregatePrimaryInteger.A1In?uri=-2147483648
+      <br></br>2015-03-12 13:04:08,648 [HttpClient.java:430] GET http://localhost:2008/Crud.svc/AggregatePrimaryInteger.A1In?uri=-2147483648
+      <br></br>2015-03-12 13:04:08,649 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-12 13:04:08,649 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-12 13:04:08,650 [HttpClient.java:227] Received response [200, 1024 bytes] in 2 ms
+      <br></br>2015-03-12 13:04:08,650 [HttpClient.java:230] Received response body: {"URI":"-2147483648","p1In":-2147483648}
       <br></br><a id="testURIPropertyGetterModifiers"/><h2>testURIPropertyGetterModifiers</h2>
       <br></br><a id="testP1InPropertyFieldModifiers"/><h2>testP1InPropertyFieldModifiers</h2>
       <br></br><a id="testP1L0InPropertyGetterGenericType"/><h2>testP1L0InPropertyGetterGenericType</h2>
@@ -455,164 +476,171 @@
       <br></br><a id="testP1L0InPropertyGetterModifiers"/><h2>testP1L0InPropertyGetterModifiers</h2>
       <br></br><a id="testP1L0InDefaultPropertyInAggregateJsonSerialization"/><h2>testP1L0InDefaultPropertyInAggregateJsonSerialization</h2>
       <br></br><a id="testP1L0InNonDefault5PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1L0InNonDefault5PropertyValueInAggregateAfterActiveRecordPersist</h2>
-      <br></br>2015-03-11 16:33:02,771 [HttpClient.java:203] Sending request [GET]: Domain.svc/search/AggregatePrimaryInteger.A1L0In?limit=2147483647&offset=0
-      <br></br>2015-03-11 16:33:02,771 [HttpClient.java:430] GET http://localhost:2008/Domain.svc/search/AggregatePrimaryInteger.A1L0In?limit=2147483647&offset=0
-      <br></br>2015-03-11 16:33:02,771 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-03-11 16:33:02,771 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-03-11 16:33:02,783 [HttpClient.java:227] Received response [200, 1024 bytes] in 13 ms
-      <br></br>2015-03-11 16:33:02,783 [HttpClient.java:230] Received response body: []
-      <br></br>2015-03-11 16:33:02,784 [HttpClient.java:218] Sending request [POST]: Crud.svc/AggregatePrimaryInteger.A1L0In, content size: 84 bytes
-      <br></br>2015-03-11 16:33:02,784 [HttpClient.java:430] POST http://localhost:2008/Crud.svc/AggregatePrimaryInteger.A1L0In
-      <br></br>2015-03-11 16:33:02,784 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-03-11 16:33:02,784 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-03-11 16:33:02,784 [HttpClient.java:443] Adding payload: {"URI":"1491087008","p1L0In":[null,0,-2147483648,2147483647,-1000000000,1000000000]}
-      <br></br>2015-03-11 16:33:02,824 [HttpClient.java:227] Received response [201, 1024 bytes] in 40 ms
-      <br></br>2015-03-11 16:33:02,824 [HttpClient.java:230] Received response body: {"URI":"{NULL,0,-2147483648,2147483647,-1000000000,1000000000}","p1L0In":[null,0,-2147483648,2147483647,-1000000000,1000000000]}
-      <br></br>2015-03-11 16:33:02,824 [HttpClient.java:203] Sending request [GET]: Crud.svc/AggregatePrimaryInteger.A1L0In?uri=%7BNULL%2C0%2C-2147483648%2C2147483647%2C-1000000000%2C1000000000%7D
-      <br></br>2015-03-11 16:33:02,825 [HttpClient.java:430] GET http://localhost:2008/Crud.svc/AggregatePrimaryInteger.A1L0In?uri=%7BNULL%2C0%2C-2147483648%2C2147483647%2C-1000000000%2C1000000000%7D
-      <br></br>2015-03-11 16:33:02,825 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-03-11 16:33:02,825 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-03-11 16:33:02,833 [HttpClient.java:227] Received response [200, 1024 bytes] in 9 ms
-      <br></br>2015-03-11 16:33:02,833 [HttpClient.java:230] Received response body: {"URI":"{NULL,0,-2147483648,2147483647,-1000000000,1000000000}","p1L0In":[null,0,-2147483648,2147483647,-1000000000,1000000000]}
+      <br></br>2015-03-12 13:04:08,664 [HttpClient.java:203] Sending request [GET]: Domain.svc/search/AggregatePrimaryInteger.A1L0In?limit=2147483647&offset=0
+      <br></br>2015-03-12 13:04:08,664 [HttpClient.java:430] GET http://localhost:2008/Domain.svc/search/AggregatePrimaryInteger.A1L0In?limit=2147483647&offset=0
+      <br></br>2015-03-12 13:04:08,664 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-12 13:04:08,664 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-12 13:04:08,683 [HttpClient.java:227] Received response [200, 1024 bytes] in 20 ms
+      <br></br>2015-03-12 13:04:08,684 [HttpClient.java:230] Received response body: [{"URI":"{}","p1L0In":[]}]
+      <br></br>2015-03-12 13:04:08,685 [HttpClient.java:218] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 91 bytes
+      <br></br>2015-03-12 13:04:08,685 [HttpClient.java:430] POST http://localhost:2008/RestApplication.svc/PersistAggregateRoot
+      <br></br>2015-03-12 13:04:08,685 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-12 13:04:08,685 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-12 13:04:08,685 [HttpClient.java:443] Adding payload: {"RootName":"AggregatePrimaryInteger.A1L0In","ToDelete":"[{\"p1L0In\":[],\"uri\":\"{}\"}]"}
+      <br></br>2015-03-12 13:04:08,719 [HttpClient.java:227] Received response [200, 1024 bytes] in 35 ms
+      <br></br>2015-03-12 13:04:08,720 [HttpClient.java:230] Received response body: []
+      <br></br>2015-03-12 13:04:08,721 [HttpClient.java:218] Sending request [POST]: Crud.svc/AggregatePrimaryInteger.A1L0In, content size: 84 bytes
+      <br></br>2015-03-12 13:04:08,722 [HttpClient.java:430] POST http://localhost:2008/Crud.svc/AggregatePrimaryInteger.A1L0In
+      <br></br>2015-03-12 13:04:08,722 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-12 13:04:08,722 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-12 13:04:08,722 [HttpClient.java:443] Adding payload: {"URI":"1994027220","p1L0In":[null,0,-2147483648,2147483647,-1000000000,1000000000]}
+      <br></br>2015-03-12 13:04:08,728 [HttpClient.java:227] Received response [201, 1024 bytes] in 7 ms
+      <br></br>2015-03-12 13:04:08,728 [HttpClient.java:230] Received response body: {"URI":"{NULL,0,-2147483648,2147483647,-1000000000,1000000000}","p1L0In":[null,0,-2147483648,2147483647,-1000000000,1000000000]}
+      <br></br>2015-03-12 13:04:08,729 [HttpClient.java:203] Sending request [GET]: Crud.svc/AggregatePrimaryInteger.A1L0In?uri=%7BNULL%2C0%2C-2147483648%2C2147483647%2C-1000000000%2C1000000000%7D
+      <br></br>2015-03-12 13:04:08,729 [HttpClient.java:430] GET http://localhost:2008/Crud.svc/AggregatePrimaryInteger.A1L0In?uri=%7BNULL%2C0%2C-2147483648%2C2147483647%2C-1000000000%2C1000000000%7D
+      <br></br>2015-03-12 13:04:08,729 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-12 13:04:08,729 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-12 13:04:08,736 [HttpClient.java:227] Received response [200, 1024 bytes] in 7 ms
+      <br></br>2015-03-12 13:04:08,736 [HttpClient.java:230] Received response body: {"URI":"{NULL,0,-2147483648,2147483647,-1000000000,1000000000}","p1L0In":[null,0,-2147483648,2147483647,-1000000000,1000000000]}
       <br></br><a id="testP1L0InNonDefault4PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1L0InNonDefault4PropertyValueInAggregateAfterActiveRecordPersist</h2>
-      <br></br>2015-03-11 16:33:02,833 [HttpClient.java:203] Sending request [GET]: Domain.svc/search/AggregatePrimaryInteger.A1L0In?limit=2147483647&offset=0
-      <br></br>2015-03-11 16:33:02,833 [HttpClient.java:430] GET http://localhost:2008/Domain.svc/search/AggregatePrimaryInteger.A1L0In?limit=2147483647&offset=0
-      <br></br>2015-03-11 16:33:02,833 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-03-11 16:33:02,833 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-03-11 16:33:02,838 [HttpClient.java:227] Received response [200, 1024 bytes] in 5 ms
-      <br></br>2015-03-11 16:33:02,838 [HttpClient.java:230] Received response body: [{"URI":"{NULL,0,-2147483648,2147483647,-1000000000,1000000000}","p1L0In":[null,0,-2147483648,2147483647,-1000000000,1000000000]}]
-      <br></br>2015-03-11 16:33:02,839 [HttpClient.java:218] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 195 bytes
-      <br></br>2015-03-11 16:33:02,839 [HttpClient.java:430] POST http://localhost:2008/RestApplication.svc/PersistAggregateRoot
-      <br></br>2015-03-11 16:33:02,840 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-03-11 16:33:02,840 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-03-11 16:33:02,840 [HttpClient.java:443] Adding payload: {"RootName":"AggregatePrimaryInteger.A1L0In","ToDelete":"[{\"p1L0In\":[null,0,-2147483648,2147483647,-1000000000,1000000000],\"uri\":\"{NULL,0,-2147483648,2147483647,-1000000000,1000000000}\"}]"}
-      <br></br>2015-03-11 16:33:02,845 [HttpClient.java:227] Received response [200, 1024 bytes] in 6 ms
-      <br></br>2015-03-11 16:33:02,845 [HttpClient.java:230] Received response body: []
-      <br></br>2015-03-11 16:33:02,847 [HttpClient.java:218] Sending request [POST]: Crud.svc/AggregatePrimaryInteger.A1L0In, content size: 77 bytes
-      <br></br>2015-03-11 16:33:02,847 [HttpClient.java:430] POST http://localhost:2008/Crud.svc/AggregatePrimaryInteger.A1L0In
-      <br></br>2015-03-11 16:33:02,847 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-03-11 16:33:02,847 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-03-11 16:33:02,847 [HttpClient.java:443] Adding payload: {"URI":"34503070","p1L0In":[0,-2147483648,2147483647,-1000000000,1000000000]}
-      <br></br>2015-03-11 16:33:02,850 [HttpClient.java:227] Received response [201, 1024 bytes] in 3 ms
-      <br></br>2015-03-11 16:33:02,881 [HttpClient.java:230] Received response body: {"URI":"{0,-2147483648,2147483647,-1000000000,1000000000}","p1L0In":[0,-2147483648,2147483647,-1000000000,1000000000]}
-      <br></br>2015-03-11 16:33:02,881 [HttpClient.java:203] Sending request [GET]: Crud.svc/AggregatePrimaryInteger.A1L0In?uri=%7B0%2C-2147483648%2C2147483647%2C-1000000000%2C1000000000%7D
-      <br></br>2015-03-11 16:33:02,881 [HttpClient.java:430] GET http://localhost:2008/Crud.svc/AggregatePrimaryInteger.A1L0In?uri=%7B0%2C-2147483648%2C2147483647%2C-1000000000%2C1000000000%7D
-      <br></br>2015-03-11 16:33:02,881 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-03-11 16:33:02,881 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-03-11 16:33:02,882 [HttpClient.java:227] Received response [200, 1024 bytes] in 1 ms
-      <br></br>2015-03-11 16:33:02,883 [HttpClient.java:230] Received response body: {"URI":"{0,-2147483648,2147483647,-1000000000,1000000000}","p1L0In":[0,-2147483648,2147483647,-1000000000,1000000000]}
+      <br></br>2015-03-12 13:04:08,737 [HttpClient.java:203] Sending request [GET]: Domain.svc/search/AggregatePrimaryInteger.A1L0In?limit=2147483647&offset=0
+      <br></br>2015-03-12 13:04:08,737 [HttpClient.java:430] GET http://localhost:2008/Domain.svc/search/AggregatePrimaryInteger.A1L0In?limit=2147483647&offset=0
+      <br></br>2015-03-12 13:04:08,737 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-12 13:04:08,737 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-12 13:04:08,739 [HttpClient.java:227] Received response [200, 1024 bytes] in 2 ms
+      <br></br>2015-03-12 13:04:08,740 [HttpClient.java:230] Received response body: [{"URI":"{NULL,0,-2147483648,2147483647,-1000000000,1000000000}","p1L0In":[null,0,-2147483648,2147483647,-1000000000,1000000000]}]
+      <br></br>2015-03-12 13:04:08,740 [HttpClient.java:218] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 195 bytes
+      <br></br>2015-03-12 13:04:08,740 [HttpClient.java:430] POST http://localhost:2008/RestApplication.svc/PersistAggregateRoot
+      <br></br>2015-03-12 13:04:08,740 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-12 13:04:08,740 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-12 13:04:08,741 [HttpClient.java:443] Adding payload: {"RootName":"AggregatePrimaryInteger.A1L0In","ToDelete":"[{\"p1L0In\":[null,0,-2147483648,2147483647,-1000000000,1000000000],\"uri\":\"{NULL,0,-2147483648,2147483647,-1000000000,1000000000}\"}]"}
+      <br></br>2015-03-12 13:04:08,777 [HttpClient.java:227] Received response [200, 1024 bytes] in 37 ms
+      <br></br>2015-03-12 13:04:08,777 [HttpClient.java:230] Received response body: []
+      <br></br>2015-03-12 13:04:08,778 [HttpClient.java:218] Sending request [POST]: Crud.svc/AggregatePrimaryInteger.A1L0In, content size: 79 bytes
+      <br></br>2015-03-12 13:04:08,778 [HttpClient.java:430] POST http://localhost:2008/Crud.svc/AggregatePrimaryInteger.A1L0In
+      <br></br>2015-03-12 13:04:08,778 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-12 13:04:08,778 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-12 13:04:08,778 [HttpClient.java:443] Adding payload: {"URI":"1099401751","p1L0In":[0,-2147483648,2147483647,-1000000000,1000000000]}
+      <br></br>2015-03-12 13:04:08,781 [HttpClient.java:227] Received response [201, 1024 bytes] in 3 ms
+      <br></br>2015-03-12 13:04:08,781 [HttpClient.java:230] Received response body: {"URI":"{0,-2147483648,2147483647,-1000000000,1000000000}","p1L0In":[0,-2147483648,2147483647,-1000000000,1000000000]}
+      <br></br>2015-03-12 13:04:08,781 [HttpClient.java:203] Sending request [GET]: Crud.svc/AggregatePrimaryInteger.A1L0In?uri=%7B0%2C-2147483648%2C2147483647%2C-1000000000%2C1000000000%7D
+      <br></br>2015-03-12 13:04:08,781 [HttpClient.java:430] GET http://localhost:2008/Crud.svc/AggregatePrimaryInteger.A1L0In?uri=%7B0%2C-2147483648%2C2147483647%2C-1000000000%2C1000000000%7D
+      <br></br>2015-03-12 13:04:08,782 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-12 13:04:08,782 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-12 13:04:08,783 [HttpClient.java:227] Received response [200, 1024 bytes] in 2 ms
+      <br></br>2015-03-12 13:04:08,783 [HttpClient.java:230] Received response body: {"URI":"{0,-2147483648,2147483647,-1000000000,1000000000}","p1L0In":[0,-2147483648,2147483647,-1000000000,1000000000]}
       <br></br><a id="testP1L0InNonDefault3PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1L0InNonDefault3PropertyValueInAggregateAfterActiveRecordPersist</h2>
-      <br></br>2015-03-11 16:33:02,884 [HttpClient.java:203] Sending request [GET]: Domain.svc/search/AggregatePrimaryInteger.A1L0In?limit=2147483647&offset=0
-      <br></br>2015-03-11 16:33:02,884 [HttpClient.java:430] GET http://localhost:2008/Domain.svc/search/AggregatePrimaryInteger.A1L0In?limit=2147483647&offset=0
-      <br></br>2015-03-11 16:33:02,884 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-03-11 16:33:02,884 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-03-11 16:33:02,886 [HttpClient.java:227] Received response [200, 1024 bytes] in 2 ms
-      <br></br>2015-03-11 16:33:02,886 [HttpClient.java:230] Received response body: [{"URI":"{0,-2147483648,2147483647,-1000000000,1000000000}","p1L0In":[0,-2147483648,2147483647,-1000000000,1000000000]}]
-      <br></br>2015-03-11 16:33:02,887 [HttpClient.java:218] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 185 bytes
-      <br></br>2015-03-11 16:33:02,887 [HttpClient.java:430] POST http://localhost:2008/RestApplication.svc/PersistAggregateRoot
-      <br></br>2015-03-11 16:33:02,887 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-03-11 16:33:02,887 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-03-11 16:33:02,887 [HttpClient.java:443] Adding payload: {"RootName":"AggregatePrimaryInteger.A1L0In","ToDelete":"[{\"p1L0In\":[0,-2147483648,2147483647,-1000000000,1000000000],\"uri\":\"{0,-2147483648,2147483647,-1000000000,1000000000}\"}]"}
-      <br></br>2015-03-11 16:33:02,890 [HttpClient.java:227] Received response [200, 1024 bytes] in 4 ms
-      <br></br>2015-03-11 16:33:02,890 [HttpClient.java:230] Received response body: []
-      <br></br>2015-03-11 16:33:02,891 [HttpClient.java:218] Sending request [POST]: Crud.svc/AggregatePrimaryInteger.A1L0In, content size: 42 bytes
-      <br></br>2015-03-11 16:33:02,891 [HttpClient.java:430] POST http://localhost:2008/Crud.svc/AggregatePrimaryInteger.A1L0In
-      <br></br>2015-03-11 16:33:02,891 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-03-11 16:33:02,891 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-03-11 16:33:02,892 [HttpClient.java:443] Adding payload: {"URI":"1304089521","p1L0In":[1000000000]}
-      <br></br>2015-03-11 16:33:02,894 [HttpClient.java:227] Received response [201, 1024 bytes] in 3 ms
-      <br></br>2015-03-11 16:33:02,894 [HttpClient.java:230] Received response body: {"URI":"{1000000000}","p1L0In":[1000000000]}
-      <br></br>2015-03-11 16:33:02,895 [HttpClient.java:203] Sending request [GET]: Crud.svc/AggregatePrimaryInteger.A1L0In?uri=%7B1000000000%7D
-      <br></br>2015-03-11 16:33:02,895 [HttpClient.java:430] GET http://localhost:2008/Crud.svc/AggregatePrimaryInteger.A1L0In?uri=%7B1000000000%7D
-      <br></br>2015-03-11 16:33:02,895 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-03-11 16:33:02,895 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-03-11 16:33:02,896 [HttpClient.java:227] Received response [200, 1024 bytes] in 1 ms
-      <br></br>2015-03-11 16:33:02,896 [HttpClient.java:230] Received response body: {"URI":"{1000000000}","p1L0In":[1000000000]}
+      <br></br>2015-03-12 13:04:08,784 [HttpClient.java:203] Sending request [GET]: Domain.svc/search/AggregatePrimaryInteger.A1L0In?limit=2147483647&offset=0
+      <br></br>2015-03-12 13:04:08,784 [HttpClient.java:430] GET http://localhost:2008/Domain.svc/search/AggregatePrimaryInteger.A1L0In?limit=2147483647&offset=0
+      <br></br>2015-03-12 13:04:08,784 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-12 13:04:08,784 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-12 13:04:08,792 [HttpClient.java:227] Received response [200, 1024 bytes] in 8 ms
+      <br></br>2015-03-12 13:04:08,792 [HttpClient.java:230] Received response body: [{"URI":"{0,-2147483648,2147483647,-1000000000,1000000000}","p1L0In":[0,-2147483648,2147483647,-1000000000,1000000000]}]
+      <br></br>2015-03-12 13:04:08,792 [HttpClient.java:218] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 185 bytes
+      <br></br>2015-03-12 13:04:08,793 [HttpClient.java:430] POST http://localhost:2008/RestApplication.svc/PersistAggregateRoot
+      <br></br>2015-03-12 13:04:08,793 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-12 13:04:08,793 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-12 13:04:08,793 [HttpClient.java:443] Adding payload: {"RootName":"AggregatePrimaryInteger.A1L0In","ToDelete":"[{\"p1L0In\":[0,-2147483648,2147483647,-1000000000,1000000000],\"uri\":\"{0,-2147483648,2147483647,-1000000000,1000000000}\"}]"}
+      <br></br>2015-03-12 13:04:08,797 [HttpClient.java:227] Received response [200, 1024 bytes] in 5 ms
+      <br></br>2015-03-12 13:04:08,797 [HttpClient.java:230] Received response body: []
+      <br></br>2015-03-12 13:04:08,798 [HttpClient.java:218] Sending request [POST]: Crud.svc/AggregatePrimaryInteger.A1L0In, content size: 41 bytes
+      <br></br>2015-03-12 13:04:08,798 [HttpClient.java:430] POST http://localhost:2008/Crud.svc/AggregatePrimaryInteger.A1L0In
+      <br></br>2015-03-12 13:04:08,798 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-12 13:04:08,798 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-12 13:04:08,798 [HttpClient.java:443] Adding payload: {"URI":"285660732","p1L0In":[1000000000]}
+      <br></br>2015-03-12 13:04:08,802 [HttpClient.java:227] Received response [201, 1024 bytes] in 4 ms
+      <br></br>2015-03-12 13:04:08,802 [HttpClient.java:230] Received response body: {"URI":"{1000000000}","p1L0In":[1000000000]}
+      <br></br>2015-03-12 13:04:08,802 [HttpClient.java:203] Sending request [GET]: Crud.svc/AggregatePrimaryInteger.A1L0In?uri=%7B1000000000%7D
+      <br></br>2015-03-12 13:04:08,803 [HttpClient.java:430] GET http://localhost:2008/Crud.svc/AggregatePrimaryInteger.A1L0In?uri=%7B1000000000%7D
+      <br></br>2015-03-12 13:04:08,803 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-12 13:04:08,803 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-12 13:04:08,805 [HttpClient.java:227] Received response [200, 1024 bytes] in 3 ms
+      <br></br>2015-03-12 13:04:08,805 [HttpClient.java:230] Received response body: {"URI":"{1000000000}","p1L0In":[1000000000]}
       <br></br><a id="testP1L0InNonDefault2PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1L0InNonDefault2PropertyValueInAggregateAfterActiveRecordPersist</h2>
-      <br></br>2015-03-11 16:33:02,899 [HttpClient.java:203] Sending request [GET]: Domain.svc/search/AggregatePrimaryInteger.A1L0In?limit=2147483647&offset=0
-      <br></br>2015-03-11 16:33:02,899 [HttpClient.java:430] GET http://localhost:2008/Domain.svc/search/AggregatePrimaryInteger.A1L0In?limit=2147483647&offset=0
-      <br></br>2015-03-11 16:33:02,899 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-03-11 16:33:02,899 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-03-11 16:33:02,902 [HttpClient.java:227] Received response [200, 1024 bytes] in 3 ms
-      <br></br>2015-03-11 16:33:02,902 [HttpClient.java:230] Received response body: [{"URI":"{1000000000}","p1L0In":[1000000000]}]
-      <br></br>2015-03-11 16:33:02,902 [HttpClient.java:218] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 111 bytes
-      <br></br>2015-03-11 16:33:02,902 [HttpClient.java:430] POST http://localhost:2008/RestApplication.svc/PersistAggregateRoot
-      <br></br>2015-03-11 16:33:02,902 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-03-11 16:33:02,903 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-03-11 16:33:02,903 [HttpClient.java:443] Adding payload: {"RootName":"AggregatePrimaryInteger.A1L0In","ToDelete":"[{\"p1L0In\":[1000000000],\"uri\":\"{1000000000}\"}]"}
-      <br></br>2015-03-11 16:33:02,906 [HttpClient.java:227] Received response [200, 1024 bytes] in 4 ms
-      <br></br>2015-03-11 16:33:02,906 [HttpClient.java:230] Received response body: []
-      <br></br>2015-03-11 16:33:02,908 [HttpClient.java:218] Sending request [POST]: Crud.svc/AggregatePrimaryInteger.A1L0In, content size: 32 bytes
-      <br></br>2015-03-11 16:33:02,908 [HttpClient.java:430] POST http://localhost:2008/Crud.svc/AggregatePrimaryInteger.A1L0In
-      <br></br>2015-03-11 16:33:02,908 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-03-11 16:33:02,908 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-03-11 16:33:02,908 [HttpClient.java:443] Adding payload: {"URI":"895820852","p1L0In":[0]}
-      <br></br>2015-03-11 16:33:02,911 [HttpClient.java:227] Received response [201, 1024 bytes] in 3 ms
-      <br></br>2015-03-11 16:33:02,911 [HttpClient.java:230] Received response body: {"URI":"{0}","p1L0In":[0]}
-      <br></br>2015-03-11 16:33:02,912 [HttpClient.java:203] Sending request [GET]: Crud.svc/AggregatePrimaryInteger.A1L0In?uri=%7B0%7D
-      <br></br>2015-03-11 16:33:02,912 [HttpClient.java:430] GET http://localhost:2008/Crud.svc/AggregatePrimaryInteger.A1L0In?uri=%7B0%7D
-      <br></br>2015-03-11 16:33:02,912 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-03-11 16:33:02,912 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-03-11 16:33:02,913 [HttpClient.java:227] Received response [200, 1024 bytes] in 1 ms
-      <br></br>2015-03-11 16:33:02,913 [HttpClient.java:230] Received response body: {"URI":"{0}","p1L0In":[0]}
+      <br></br>2015-03-12 13:04:08,806 [HttpClient.java:203] Sending request [GET]: Domain.svc/search/AggregatePrimaryInteger.A1L0In?limit=2147483647&offset=0
+      <br></br>2015-03-12 13:04:08,806 [HttpClient.java:430] GET http://localhost:2008/Domain.svc/search/AggregatePrimaryInteger.A1L0In?limit=2147483647&offset=0
+      <br></br>2015-03-12 13:04:08,806 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-12 13:04:08,806 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-12 13:04:08,809 [HttpClient.java:227] Received response [200, 1024 bytes] in 3 ms
+      <br></br>2015-03-12 13:04:08,809 [HttpClient.java:230] Received response body: [{"URI":"{1000000000}","p1L0In":[1000000000]}]
+      <br></br>2015-03-12 13:04:08,810 [HttpClient.java:218] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 111 bytes
+      <br></br>2015-03-12 13:04:08,810 [HttpClient.java:430] POST http://localhost:2008/RestApplication.svc/PersistAggregateRoot
+      <br></br>2015-03-12 13:04:08,810 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-12 13:04:08,810 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-12 13:04:08,810 [HttpClient.java:443] Adding payload: {"RootName":"AggregatePrimaryInteger.A1L0In","ToDelete":"[{\"p1L0In\":[1000000000],\"uri\":\"{1000000000}\"}]"}
+      <br></br>2015-03-12 13:04:08,814 [HttpClient.java:227] Received response [200, 1024 bytes] in 4 ms
+      <br></br>2015-03-12 13:04:08,814 [HttpClient.java:230] Received response body: []
+      <br></br>2015-03-12 13:04:08,815 [HttpClient.java:218] Sending request [POST]: Crud.svc/AggregatePrimaryInteger.A1L0In, content size: 32 bytes
+      <br></br>2015-03-12 13:04:08,815 [HttpClient.java:430] POST http://localhost:2008/Crud.svc/AggregatePrimaryInteger.A1L0In
+      <br></br>2015-03-12 13:04:08,816 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-12 13:04:08,816 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-12 13:04:08,816 [HttpClient.java:443] Adding payload: {"URI":"895820852","p1L0In":[0]}
+      <br></br>2015-03-12 13:04:08,818 [HttpClient.java:227] Received response [201, 1024 bytes] in 3 ms
+      <br></br>2015-03-12 13:04:08,818 [HttpClient.java:230] Received response body: {"URI":"{0}","p1L0In":[0]}
+      <br></br>2015-03-12 13:04:08,818 [HttpClient.java:203] Sending request [GET]: Crud.svc/AggregatePrimaryInteger.A1L0In?uri=%7B0%7D
+      <br></br>2015-03-12 13:04:08,819 [HttpClient.java:430] GET http://localhost:2008/Crud.svc/AggregatePrimaryInteger.A1L0In?uri=%7B0%7D
+      <br></br>2015-03-12 13:04:08,819 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-12 13:04:08,819 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-12 13:04:08,820 [HttpClient.java:227] Received response [200, 1024 bytes] in 2 ms
+      <br></br>2015-03-12 13:04:08,820 [HttpClient.java:230] Received response body: {"URI":"{0}","p1L0In":[0]}
       <br></br><a id="testP1L0InNonDefault1PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1L0InNonDefault1PropertyValueInAggregateAfterActiveRecordPersist</h2>
-      <br></br>2015-03-11 16:33:02,914 [HttpClient.java:203] Sending request [GET]: Domain.svc/search/AggregatePrimaryInteger.A1L0In?limit=2147483647&offset=0
-      <br></br>2015-03-11 16:33:02,914 [HttpClient.java:430] GET http://localhost:2008/Domain.svc/search/AggregatePrimaryInteger.A1L0In?limit=2147483647&offset=0
-      <br></br>2015-03-11 16:33:02,914 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-03-11 16:33:02,915 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-03-11 16:33:02,916 [HttpClient.java:227] Received response [200, 1024 bytes] in 2 ms
-      <br></br>2015-03-11 16:33:02,916 [HttpClient.java:230] Received response body: [{"URI":"{0}","p1L0In":[0]}]
-      <br></br>2015-03-11 16:33:02,916 [HttpClient.java:218] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 93 bytes
-      <br></br>2015-03-11 16:33:02,916 [HttpClient.java:430] POST http://localhost:2008/RestApplication.svc/PersistAggregateRoot
-      <br></br>2015-03-11 16:33:02,916 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-03-11 16:33:02,916 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-03-11 16:33:02,917 [HttpClient.java:443] Adding payload: {"RootName":"AggregatePrimaryInteger.A1L0In","ToDelete":"[{\"p1L0In\":[0],\"uri\":\"{0}\"}]"}
-      <br></br>2015-03-11 16:33:02,920 [HttpClient.java:227] Received response [200, 1024 bytes] in 4 ms
-      <br></br>2015-03-11 16:33:02,920 [HttpClient.java:230] Received response body: []
-      <br></br>2015-03-11 16:33:02,921 [HttpClient.java:218] Sending request [POST]: Crud.svc/AggregatePrimaryInteger.A1L0In, content size: 36 bytes
-      <br></br>2015-03-11 16:33:02,921 [HttpClient.java:430] POST http://localhost:2008/Crud.svc/AggregatePrimaryInteger.A1L0In
-      <br></br>2015-03-11 16:33:02,921 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-03-11 16:33:02,921 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-03-11 16:33:02,921 [HttpClient.java:443] Adding payload: {"URI":"2039200519","p1L0In":[null]}
-      <br></br>2015-03-11 16:33:02,924 [HttpClient.java:227] Received response [201, 1024 bytes] in 3 ms
-      <br></br>2015-03-11 16:33:02,924 [HttpClient.java:230] Received response body: {"URI":"{NULL}","p1L0In":[null]}
-      <br></br>2015-03-11 16:33:02,924 [HttpClient.java:203] Sending request [GET]: Crud.svc/AggregatePrimaryInteger.A1L0In?uri=%7BNULL%7D
-      <br></br>2015-03-11 16:33:02,924 [HttpClient.java:430] GET http://localhost:2008/Crud.svc/AggregatePrimaryInteger.A1L0In?uri=%7BNULL%7D
-      <br></br>2015-03-11 16:33:02,924 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-03-11 16:33:02,924 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-03-11 16:33:02,926 [HttpClient.java:227] Received response [200, 1024 bytes] in 2 ms
-      <br></br>2015-03-11 16:33:02,926 [HttpClient.java:230] Received response body: {"URI":"{NULL}","p1L0In":[null]}
+      <br></br>2015-03-12 13:04:08,821 [HttpClient.java:203] Sending request [GET]: Domain.svc/search/AggregatePrimaryInteger.A1L0In?limit=2147483647&offset=0
+      <br></br>2015-03-12 13:04:08,821 [HttpClient.java:430] GET http://localhost:2008/Domain.svc/search/AggregatePrimaryInteger.A1L0In?limit=2147483647&offset=0
+      <br></br>2015-03-12 13:04:08,821 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-12 13:04:08,821 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-12 13:04:08,824 [HttpClient.java:227] Received response [200, 1024 bytes] in 3 ms
+      <br></br>2015-03-12 13:04:08,824 [HttpClient.java:230] Received response body: [{"URI":"{0}","p1L0In":[0]}]
+      <br></br>2015-03-12 13:04:08,825 [HttpClient.java:218] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 93 bytes
+      <br></br>2015-03-12 13:04:08,825 [HttpClient.java:430] POST http://localhost:2008/RestApplication.svc/PersistAggregateRoot
+      <br></br>2015-03-12 13:04:08,825 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-12 13:04:08,825 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-12 13:04:08,825 [HttpClient.java:443] Adding payload: {"RootName":"AggregatePrimaryInteger.A1L0In","ToDelete":"[{\"p1L0In\":[0],\"uri\":\"{0}\"}]"}
+      <br></br>2015-03-12 13:04:08,830 [HttpClient.java:227] Received response [200, 1024 bytes] in 5 ms
+      <br></br>2015-03-12 13:04:08,831 [HttpClient.java:230] Received response body: []
+      <br></br>2015-03-12 13:04:08,832 [HttpClient.java:218] Sending request [POST]: Crud.svc/AggregatePrimaryInteger.A1L0In, content size: 36 bytes
+      <br></br>2015-03-12 13:04:08,832 [HttpClient.java:430] POST http://localhost:2008/Crud.svc/AggregatePrimaryInteger.A1L0In
+      <br></br>2015-03-12 13:04:08,832 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-12 13:04:08,832 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-12 13:04:08,832 [HttpClient.java:443] Adding payload: {"URI":"2039200519","p1L0In":[null]}
+      <br></br>2015-03-12 13:04:08,838 [HttpClient.java:227] Received response [201, 1024 bytes] in 7 ms
+      <br></br>2015-03-12 13:04:08,838 [HttpClient.java:230] Received response body: {"URI":"{NULL}","p1L0In":[null]}
+      <br></br>2015-03-12 13:04:08,839 [HttpClient.java:203] Sending request [GET]: Crud.svc/AggregatePrimaryInteger.A1L0In?uri=%7BNULL%7D
+      <br></br>2015-03-12 13:04:08,839 [HttpClient.java:430] GET http://localhost:2008/Crud.svc/AggregatePrimaryInteger.A1L0In?uri=%7BNULL%7D
+      <br></br>2015-03-12 13:04:08,839 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-12 13:04:08,839 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-12 13:04:08,840 [HttpClient.java:227] Received response [200, 1024 bytes] in 1 ms
+      <br></br>2015-03-12 13:04:08,840 [HttpClient.java:230] Received response body: {"URI":"{NULL}","p1L0In":[null]}
       <br></br><a id="testURIPropertyFieldClass"/><h2>testURIPropertyFieldClass</h2>
       <br></br><a id="testP1L0InPropertySetterModifiers"/><h2>testP1L0InPropertySetterModifiers</h2>
       <br></br><a id="testP1L0InPropertyFieldPrivateVisibility"/><h2>testP1L0InPropertyFieldPrivateVisibility</h2>
       <br></br><a id="testP1L0InPropertySetterClass"/><h2>testP1L0InPropertySetterClass</h2>
       <br></br><a id="testP1L0InDefaultPropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1L0InDefaultPropertyValueInAggregateAfterActiveRecordPersist</h2>
-      <br></br>2015-03-11 16:33:02,929 [HttpClient.java:203] Sending request [GET]: Domain.svc/search/AggregatePrimaryInteger.A1L0In?limit=2147483647&offset=0
-      <br></br>2015-03-11 16:33:02,929 [HttpClient.java:430] GET http://localhost:2008/Domain.svc/search/AggregatePrimaryInteger.A1L0In?limit=2147483647&offset=0
-      <br></br>2015-03-11 16:33:02,929 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-03-11 16:33:02,929 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-03-11 16:33:02,931 [HttpClient.java:227] Received response [200, 1024 bytes] in 2 ms
-      <br></br>2015-03-11 16:33:02,931 [HttpClient.java:230] Received response body: [{"URI":"{NULL}","p1L0In":[null]}]
-      <br></br>2015-03-11 16:33:02,932 [HttpClient.java:218] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 99 bytes
-      <br></br>2015-03-11 16:33:02,932 [HttpClient.java:430] POST http://localhost:2008/RestApplication.svc/PersistAggregateRoot
-      <br></br>2015-03-11 16:33:02,932 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-03-11 16:33:02,932 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-03-11 16:33:02,932 [HttpClient.java:443] Adding payload: {"RootName":"AggregatePrimaryInteger.A1L0In","ToDelete":"[{\"p1L0In\":[null],\"uri\":\"{NULL}\"}]"}
-      <br></br>2015-03-11 16:33:02,935 [HttpClient.java:227] Received response [200, 1024 bytes] in 4 ms
-      <br></br>2015-03-11 16:33:02,936 [HttpClient.java:230] Received response body: []
-      <br></br>2015-03-11 16:33:02,936 [HttpClient.java:218] Sending request [POST]: Crud.svc/AggregatePrimaryInteger.A1L0In, content size: 19 bytes
-      <br></br>2015-03-11 16:33:02,936 [HttpClient.java:430] POST http://localhost:2008/Crud.svc/AggregatePrimaryInteger.A1L0In
-      <br></br>2015-03-11 16:33:02,936 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-03-11 16:33:02,936 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-03-11 16:33:02,936 [HttpClient.java:443] Adding payload: {"URI":"859121326"}
-      <br></br>2015-03-11 16:33:02,939 [HttpClient.java:227] Received response [201, 1024 bytes] in 3 ms
-      <br></br>2015-03-11 16:33:02,939 [HttpClient.java:230] Received response body: {"URI":"{}","p1L0In":[]}
-      <br></br>2015-03-11 16:33:02,939 [HttpClient.java:203] Sending request [GET]: Crud.svc/AggregatePrimaryInteger.A1L0In?uri=%7B%7D
-      <br></br>2015-03-11 16:33:02,940 [HttpClient.java:430] GET http://localhost:2008/Crud.svc/AggregatePrimaryInteger.A1L0In?uri=%7B%7D
-      <br></br>2015-03-11 16:33:02,940 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-03-11 16:33:02,941 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-03-11 16:33:02,942 [HttpClient.java:227] Received response [200, 1024 bytes] in 3 ms
-      <br></br>2015-03-11 16:33:02,942 [HttpClient.java:230] Received response body: {"URI":"{}","p1L0In":[]}
+      <br></br>2015-03-12 13:04:08,843 [HttpClient.java:203] Sending request [GET]: Domain.svc/search/AggregatePrimaryInteger.A1L0In?limit=2147483647&offset=0
+      <br></br>2015-03-12 13:04:08,843 [HttpClient.java:430] GET http://localhost:2008/Domain.svc/search/AggregatePrimaryInteger.A1L0In?limit=2147483647&offset=0
+      <br></br>2015-03-12 13:04:08,843 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-12 13:04:08,844 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-12 13:04:08,846 [HttpClient.java:227] Received response [200, 1024 bytes] in 3 ms
+      <br></br>2015-03-12 13:04:08,846 [HttpClient.java:230] Received response body: [{"URI":"{NULL}","p1L0In":[null]}]
+      <br></br>2015-03-12 13:04:08,847 [HttpClient.java:218] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 99 bytes
+      <br></br>2015-03-12 13:04:08,847 [HttpClient.java:430] POST http://localhost:2008/RestApplication.svc/PersistAggregateRoot
+      <br></br>2015-03-12 13:04:08,847 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-12 13:04:08,847 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-12 13:04:08,847 [HttpClient.java:443] Adding payload: {"RootName":"AggregatePrimaryInteger.A1L0In","ToDelete":"[{\"p1L0In\":[null],\"uri\":\"{NULL}\"}]"}
+      <br></br>2015-03-12 13:04:08,850 [HttpClient.java:227] Received response [200, 1024 bytes] in 4 ms
+      <br></br>2015-03-12 13:04:08,850 [HttpClient.java:230] Received response body: []
+      <br></br>2015-03-12 13:04:08,851 [HttpClient.java:218] Sending request [POST]: Crud.svc/AggregatePrimaryInteger.A1L0In, content size: 19 bytes
+      <br></br>2015-03-12 13:04:08,851 [HttpClient.java:430] POST http://localhost:2008/Crud.svc/AggregatePrimaryInteger.A1L0In
+      <br></br>2015-03-12 13:04:08,851 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-12 13:04:08,851 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-12 13:04:08,851 [HttpClient.java:443] Adding payload: {"URI":"859121326"}
+      <br></br>2015-03-12 13:04:08,853 [HttpClient.java:227] Received response [201, 1024 bytes] in 2 ms
+      <br></br>2015-03-12 13:04:08,853 [HttpClient.java:230] Received response body: {"URI":"{}","p1L0In":[]}
+      <br></br>2015-03-12 13:04:08,854 [HttpClient.java:203] Sending request [GET]: Crud.svc/AggregatePrimaryInteger.A1L0In?uri=%7B%7D
+      <br></br>2015-03-12 13:04:08,854 [HttpClient.java:430] GET http://localhost:2008/Crud.svc/AggregatePrimaryInteger.A1L0In?uri=%7B%7D
+      <br></br>2015-03-12 13:04:08,854 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-12 13:04:08,854 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-12 13:04:08,855 [HttpClient.java:227] Received response [200, 1024 bytes] in 1 ms
+      <br></br>2015-03-12 13:04:08,855 [HttpClient.java:230] Received response body: {"URI":"{}","p1L0In":[]}
       <br></br><a id="testP1L0InPropertyGetterClass"/><h2>testP1L0InPropertyGetterClass</h2>
       <br></br><a id="testURIPropertyFieldPrivateVisibility"/><h2>testURIPropertyFieldPrivateVisibility</h2>
       <br></br><a id="testP1L0InNonDefault1PropertyInAggregateJsonSerialization"/><h2>testP1L0InNonDefault1PropertyInAggregateJsonSerialization</h2>
@@ -634,25 +662,32 @@
       <br></br><a id="testP1L1InPropertySetterClass"/><h2>testP1L1InPropertySetterClass</h2>
       <br></br><a id="testP1L1InPropertyGetterClass"/><h2>testP1L1InPropertyGetterClass</h2>
       <br></br><a id="testP1L1InDefaultPropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1L1InDefaultPropertyValueInAggregateAfterActiveRecordPersist</h2>
-      <br></br>2015-03-11 16:33:02,964 [HttpClient.java:203] Sending request [GET]: Domain.svc/search/AggregatePrimaryInteger.A1L1In?limit=2147483647&offset=0
-      <br></br>2015-03-11 16:33:02,964 [HttpClient.java:430] GET http://localhost:2008/Domain.svc/search/AggregatePrimaryInteger.A1L1In?limit=2147483647&offset=0
-      <br></br>2015-03-11 16:33:02,964 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-03-11 16:33:02,964 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-03-11 16:33:02,975 [HttpClient.java:227] Received response [200, 1024 bytes] in 12 ms
-      <br></br>2015-03-11 16:33:02,975 [HttpClient.java:230] Received response body: []
-      <br></br>2015-03-11 16:33:02,976 [HttpClient.java:218] Sending request [POST]: Crud.svc/AggregatePrimaryInteger.A1L1In, content size: 20 bytes
-      <br></br>2015-03-11 16:33:02,976 [HttpClient.java:430] POST http://localhost:2008/Crud.svc/AggregatePrimaryInteger.A1L1In
-      <br></br>2015-03-11 16:33:02,976 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-03-11 16:33:02,976 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-03-11 16:33:02,976 [HttpClient.java:443] Adding payload: {"URI":"1166198492"}
-      <br></br>2015-03-11 16:33:03,012 [HttpClient.java:227] Received response [201, 1024 bytes] in 36 ms
-      <br></br>2015-03-11 16:33:03,012 [HttpClient.java:230] Received response body: {"URI":"{}","p1L1In":[]}
-      <br></br>2015-03-11 16:33:03,012 [HttpClient.java:203] Sending request [GET]: Crud.svc/AggregatePrimaryInteger.A1L1In?uri=%7B%7D
-      <br></br>2015-03-11 16:33:03,012 [HttpClient.java:430] GET http://localhost:2008/Crud.svc/AggregatePrimaryInteger.A1L1In?uri=%7B%7D
-      <br></br>2015-03-11 16:33:03,013 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-03-11 16:33:03,013 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-03-11 16:33:03,020 [HttpClient.java:227] Received response [200, 1024 bytes] in 8 ms
-      <br></br>2015-03-11 16:33:03,021 [HttpClient.java:230] Received response body: {"URI":"{}","p1L1In":[]}
+      <br></br>2015-03-12 13:04:08,886 [HttpClient.java:203] Sending request [GET]: Domain.svc/search/AggregatePrimaryInteger.A1L1In?limit=2147483647&offset=0
+      <br></br>2015-03-12 13:04:08,886 [HttpClient.java:430] GET http://localhost:2008/Domain.svc/search/AggregatePrimaryInteger.A1L1In?limit=2147483647&offset=0
+      <br></br>2015-03-12 13:04:08,886 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-12 13:04:08,886 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-12 13:04:08,904 [HttpClient.java:227] Received response [200, 1024 bytes] in 19 ms
+      <br></br>2015-03-12 13:04:08,904 [HttpClient.java:230] Received response body: [{"URI":"{0}","p1L1In":[0]}]
+      <br></br>2015-03-12 13:04:08,907 [HttpClient.java:218] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 93 bytes
+      <br></br>2015-03-12 13:04:08,908 [HttpClient.java:430] POST http://localhost:2008/RestApplication.svc/PersistAggregateRoot
+      <br></br>2015-03-12 13:04:08,908 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-12 13:04:08,908 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-12 13:04:08,908 [HttpClient.java:443] Adding payload: {"RootName":"AggregatePrimaryInteger.A1L1In","ToDelete":"[{\"p1L1In\":[0],\"uri\":\"{0}\"}]"}
+      <br></br>2015-03-12 13:04:08,942 [HttpClient.java:227] Received response [200, 1024 bytes] in 35 ms
+      <br></br>2015-03-12 13:04:08,942 [HttpClient.java:230] Received response body: []
+      <br></br>2015-03-12 13:04:08,943 [HttpClient.java:218] Sending request [POST]: Crud.svc/AggregatePrimaryInteger.A1L1In, content size: 19 bytes
+      <br></br>2015-03-12 13:04:08,943 [HttpClient.java:430] POST http://localhost:2008/Crud.svc/AggregatePrimaryInteger.A1L1In
+      <br></br>2015-03-12 13:04:08,944 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-12 13:04:08,944 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-12 13:04:08,944 [HttpClient.java:443] Adding payload: {"URI":"372751518"}
+      <br></br>2015-03-12 13:04:08,948 [HttpClient.java:227] Received response [201, 1024 bytes] in 5 ms
+      <br></br>2015-03-12 13:04:08,948 [HttpClient.java:230] Received response body: {"URI":"{}","p1L1In":[]}
+      <br></br>2015-03-12 13:04:08,949 [HttpClient.java:203] Sending request [GET]: Crud.svc/AggregatePrimaryInteger.A1L1In?uri=%7B%7D
+      <br></br>2015-03-12 13:04:08,949 [HttpClient.java:430] GET http://localhost:2008/Crud.svc/AggregatePrimaryInteger.A1L1In?uri=%7B%7D
+      <br></br>2015-03-12 13:04:08,949 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-12 13:04:08,949 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-12 13:04:08,956 [HttpClient.java:227] Received response [200, 1024 bytes] in 7 ms
+      <br></br>2015-03-12 13:04:08,956 [HttpClient.java:230] Received response body: {"URI":"{}","p1L1In":[]}
       <br></br><a id="testNonExistenceOfURIPropertySetter"/><h2>testNonExistenceOfURIPropertySetter</h2>
       <br></br><a id="testP1L1InPropertyGetterPublicVisibility"/><h2>testP1L1InPropertyGetterPublicVisibility</h2>
       <br></br><a id="testP1L1InPropertyFieldGenericType"/><h2>testP1L1InPropertyFieldGenericType</h2>
@@ -670,86 +705,86 @@
       <br></br><a id="testP1L1InPropertyFieldDefaultValue"/><h2>testP1L1InPropertyFieldDefaultValue</h2>
       <br></br><a id="testP1L1InPropertySetterGenericType"/><h2>testP1L1InPropertySetterGenericType</h2>
       <br></br><a id="testP1L1InNonDefault3PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1L1InNonDefault3PropertyValueInAggregateAfterActiveRecordPersist</h2>
-      <br></br>2015-03-11 16:33:03,040 [HttpClient.java:203] Sending request [GET]: Domain.svc/search/AggregatePrimaryInteger.A1L1In?limit=2147483647&offset=0
-      <br></br>2015-03-11 16:33:03,040 [HttpClient.java:430] GET http://localhost:2008/Domain.svc/search/AggregatePrimaryInteger.A1L1In?limit=2147483647&offset=0
-      <br></br>2015-03-11 16:33:03,040 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-03-11 16:33:03,040 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-03-11 16:33:03,043 [HttpClient.java:227] Received response [200, 1024 bytes] in 3 ms
-      <br></br>2015-03-11 16:33:03,044 [HttpClient.java:230] Received response body: [{"URI":"{}","p1L1In":[]}]
-      <br></br>2015-03-11 16:33:03,044 [HttpClient.java:218] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 91 bytes
-      <br></br>2015-03-11 16:33:03,044 [HttpClient.java:430] POST http://localhost:2008/RestApplication.svc/PersistAggregateRoot
-      <br></br>2015-03-11 16:33:03,045 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-03-11 16:33:03,045 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-03-11 16:33:03,045 [HttpClient.java:443] Adding payload: {"RootName":"AggregatePrimaryInteger.A1L1In","ToDelete":"[{\"p1L1In\":[],\"uri\":\"{}\"}]"}
-      <br></br>2015-03-11 16:33:03,082 [HttpClient.java:227] Received response [200, 1024 bytes] in 38 ms
-      <br></br>2015-03-11 16:33:03,083 [HttpClient.java:230] Received response body: []
-      <br></br>2015-03-11 16:33:03,083 [HttpClient.java:218] Sending request [POST]: Crud.svc/AggregatePrimaryInteger.A1L1In, content size: 79 bytes
-      <br></br>2015-03-11 16:33:03,083 [HttpClient.java:430] POST http://localhost:2008/Crud.svc/AggregatePrimaryInteger.A1L1In
-      <br></br>2015-03-11 16:33:03,083 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-03-11 16:33:03,083 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-03-11 16:33:03,083 [HttpClient.java:443] Adding payload: {"URI":"1430714202","p1L1In":[0,-2147483648,2147483647,-1000000000,1000000000]}
-      <br></br>2015-03-11 16:33:03,086 [HttpClient.java:227] Received response [201, 1024 bytes] in 3 ms
-      <br></br>2015-03-11 16:33:03,086 [HttpClient.java:230] Received response body: {"URI":"{0,-2147483648,2147483647,-1000000000,1000000000}","p1L1In":[0,-2147483648,2147483647,-1000000000,1000000000]}
-      <br></br>2015-03-11 16:33:03,086 [HttpClient.java:203] Sending request [GET]: Crud.svc/AggregatePrimaryInteger.A1L1In?uri=%7B0%2C-2147483648%2C2147483647%2C-1000000000%2C1000000000%7D
-      <br></br>2015-03-11 16:33:03,086 [HttpClient.java:430] GET http://localhost:2008/Crud.svc/AggregatePrimaryInteger.A1L1In?uri=%7B0%2C-2147483648%2C2147483647%2C-1000000000%2C1000000000%7D
-      <br></br>2015-03-11 16:33:03,086 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-03-11 16:33:03,087 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-03-11 16:33:03,088 [HttpClient.java:227] Received response [200, 1024 bytes] in 2 ms
-      <br></br>2015-03-11 16:33:03,088 [HttpClient.java:230] Received response body: {"URI":"{0,-2147483648,2147483647,-1000000000,1000000000}","p1L1In":[0,-2147483648,2147483647,-1000000000,1000000000]}
+      <br></br>2015-03-12 13:04:08,975 [HttpClient.java:203] Sending request [GET]: Domain.svc/search/AggregatePrimaryInteger.A1L1In?limit=2147483647&offset=0
+      <br></br>2015-03-12 13:04:08,975 [HttpClient.java:430] GET http://localhost:2008/Domain.svc/search/AggregatePrimaryInteger.A1L1In?limit=2147483647&offset=0
+      <br></br>2015-03-12 13:04:08,991 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-12 13:04:08,991 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-12 13:04:08,993 [HttpClient.java:227] Received response [200, 1024 bytes] in 18 ms
+      <br></br>2015-03-12 13:04:08,993 [HttpClient.java:230] Received response body: [{"URI":"{}","p1L1In":[]}]
+      <br></br>2015-03-12 13:04:08,994 [HttpClient.java:218] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 91 bytes
+      <br></br>2015-03-12 13:04:08,994 [HttpClient.java:430] POST http://localhost:2008/RestApplication.svc/PersistAggregateRoot
+      <br></br>2015-03-12 13:04:08,994 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-12 13:04:08,994 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-12 13:04:08,994 [HttpClient.java:443] Adding payload: {"RootName":"AggregatePrimaryInteger.A1L1In","ToDelete":"[{\"p1L1In\":[],\"uri\":\"{}\"}]"}
+      <br></br>2015-03-12 13:04:08,998 [HttpClient.java:227] Received response [200, 1024 bytes] in 4 ms
+      <br></br>2015-03-12 13:04:08,998 [HttpClient.java:230] Received response body: []
+      <br></br>2015-03-12 13:04:08,999 [HttpClient.java:218] Sending request [POST]: Crud.svc/AggregatePrimaryInteger.A1L1In, content size: 79 bytes
+      <br></br>2015-03-12 13:04:08,999 [HttpClient.java:430] POST http://localhost:2008/Crud.svc/AggregatePrimaryInteger.A1L1In
+      <br></br>2015-03-12 13:04:08,999 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-12 13:04:08,999 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-12 13:04:08,999 [HttpClient.java:443] Adding payload: {"URI":"1430714202","p1L1In":[0,-2147483648,2147483647,-1000000000,1000000000]}
+      <br></br>2015-03-12 13:04:09,001 [HttpClient.java:227] Received response [201, 1024 bytes] in 2 ms
+      <br></br>2015-03-12 13:04:09,001 [HttpClient.java:230] Received response body: {"URI":"{0,-2147483648,2147483647,-1000000000,1000000000}","p1L1In":[0,-2147483648,2147483647,-1000000000,1000000000]}
+      <br></br>2015-03-12 13:04:09,001 [HttpClient.java:203] Sending request [GET]: Crud.svc/AggregatePrimaryInteger.A1L1In?uri=%7B0%2C-2147483648%2C2147483647%2C-1000000000%2C1000000000%7D
+      <br></br>2015-03-12 13:04:09,002 [HttpClient.java:430] GET http://localhost:2008/Crud.svc/AggregatePrimaryInteger.A1L1In?uri=%7B0%2C-2147483648%2C2147483647%2C-1000000000%2C1000000000%7D
+      <br></br>2015-03-12 13:04:09,002 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-12 13:04:09,002 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-12 13:04:09,003 [HttpClient.java:227] Received response [200, 1024 bytes] in 2 ms
+      <br></br>2015-03-12 13:04:09,003 [HttpClient.java:230] Received response body: {"URI":"{0,-2147483648,2147483647,-1000000000,1000000000}","p1L1In":[0,-2147483648,2147483647,-1000000000,1000000000]}
       <br></br><a id="testP1L1InNonDefault2PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1L1InNonDefault2PropertyValueInAggregateAfterActiveRecordPersist</h2>
-      <br></br>2015-03-11 16:33:03,089 [HttpClient.java:203] Sending request [GET]: Domain.svc/search/AggregatePrimaryInteger.A1L1In?limit=2147483647&offset=0
-      <br></br>2015-03-11 16:33:03,089 [HttpClient.java:430] GET http://localhost:2008/Domain.svc/search/AggregatePrimaryInteger.A1L1In?limit=2147483647&offset=0
-      <br></br>2015-03-11 16:33:03,089 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-03-11 16:33:03,089 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-03-11 16:33:03,091 [HttpClient.java:227] Received response [200, 1024 bytes] in 2 ms
-      <br></br>2015-03-11 16:33:03,091 [HttpClient.java:230] Received response body: [{"URI":"{0,-2147483648,2147483647,-1000000000,1000000000}","p1L1In":[0,-2147483648,2147483647,-1000000000,1000000000]}]
-      <br></br>2015-03-11 16:33:03,092 [HttpClient.java:218] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 185 bytes
-      <br></br>2015-03-11 16:33:03,092 [HttpClient.java:430] POST http://localhost:2008/RestApplication.svc/PersistAggregateRoot
-      <br></br>2015-03-11 16:33:03,092 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-03-11 16:33:03,092 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-03-11 16:33:03,092 [HttpClient.java:443] Adding payload: {"RootName":"AggregatePrimaryInteger.A1L1In","ToDelete":"[{\"p1L1In\":[0,-2147483648,2147483647,-1000000000,1000000000],\"uri\":\"{0,-2147483648,2147483647,-1000000000,1000000000}\"}]"}
-      <br></br>2015-03-11 16:33:03,095 [HttpClient.java:227] Received response [200, 1024 bytes] in 3 ms
-      <br></br>2015-03-11 16:33:03,095 [HttpClient.java:230] Received response body: []
-      <br></br>2015-03-11 16:33:03,096 [HttpClient.java:218] Sending request [POST]: Crud.svc/AggregatePrimaryInteger.A1L1In, content size: 42 bytes
-      <br></br>2015-03-11 16:33:03,096 [HttpClient.java:430] POST http://localhost:2008/Crud.svc/AggregatePrimaryInteger.A1L1In
-      <br></br>2015-03-11 16:33:03,096 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-03-11 16:33:03,096 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-03-11 16:33:03,097 [HttpClient.java:443] Adding payload: {"URI":"1056674637","p1L1In":[1000000000]}
-      <br></br>2015-03-11 16:33:03,099 [HttpClient.java:227] Received response [201, 1024 bytes] in 3 ms
-      <br></br>2015-03-11 16:33:03,099 [HttpClient.java:230] Received response body: {"URI":"{1000000000}","p1L1In":[1000000000]}
-      <br></br>2015-03-11 16:33:03,099 [HttpClient.java:203] Sending request [GET]: Crud.svc/AggregatePrimaryInteger.A1L1In?uri=%7B1000000000%7D
-      <br></br>2015-03-11 16:33:03,099 [HttpClient.java:430] GET http://localhost:2008/Crud.svc/AggregatePrimaryInteger.A1L1In?uri=%7B1000000000%7D
-      <br></br>2015-03-11 16:33:03,099 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-03-11 16:33:03,100 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-03-11 16:33:03,101 [HttpClient.java:227] Received response [200, 1024 bytes] in 2 ms
-      <br></br>2015-03-11 16:33:03,101 [HttpClient.java:230] Received response body: {"URI":"{1000000000}","p1L1In":[1000000000]}
+      <br></br>2015-03-12 13:04:09,004 [HttpClient.java:203] Sending request [GET]: Domain.svc/search/AggregatePrimaryInteger.A1L1In?limit=2147483647&offset=0
+      <br></br>2015-03-12 13:04:09,004 [HttpClient.java:430] GET http://localhost:2008/Domain.svc/search/AggregatePrimaryInteger.A1L1In?limit=2147483647&offset=0
+      <br></br>2015-03-12 13:04:09,004 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-12 13:04:09,004 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-12 13:04:09,006 [HttpClient.java:227] Received response [200, 1024 bytes] in 2 ms
+      <br></br>2015-03-12 13:04:09,006 [HttpClient.java:230] Received response body: [{"URI":"{0,-2147483648,2147483647,-1000000000,1000000000}","p1L1In":[0,-2147483648,2147483647,-1000000000,1000000000]}]
+      <br></br>2015-03-12 13:04:09,007 [HttpClient.java:218] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 185 bytes
+      <br></br>2015-03-12 13:04:09,007 [HttpClient.java:430] POST http://localhost:2008/RestApplication.svc/PersistAggregateRoot
+      <br></br>2015-03-12 13:04:09,007 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-12 13:04:09,007 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-12 13:04:09,007 [HttpClient.java:443] Adding payload: {"RootName":"AggregatePrimaryInteger.A1L1In","ToDelete":"[{\"p1L1In\":[0,-2147483648,2147483647,-1000000000,1000000000],\"uri\":\"{0,-2147483648,2147483647,-1000000000,1000000000}\"}]"}
+      <br></br>2015-03-12 13:04:09,014 [HttpClient.java:227] Received response [200, 1024 bytes] in 7 ms
+      <br></br>2015-03-12 13:04:09,014 [HttpClient.java:230] Received response body: []
+      <br></br>2015-03-12 13:04:09,015 [HttpClient.java:218] Sending request [POST]: Crud.svc/AggregatePrimaryInteger.A1L1In, content size: 42 bytes
+      <br></br>2015-03-12 13:04:09,015 [HttpClient.java:430] POST http://localhost:2008/Crud.svc/AggregatePrimaryInteger.A1L1In
+      <br></br>2015-03-12 13:04:09,015 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-12 13:04:09,015 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-12 13:04:09,015 [HttpClient.java:443] Adding payload: {"URI":"1056674637","p1L1In":[1000000000]}
+      <br></br>2015-03-12 13:04:09,017 [HttpClient.java:227] Received response [201, 1024 bytes] in 2 ms
+      <br></br>2015-03-12 13:04:09,017 [HttpClient.java:230] Received response body: {"URI":"{1000000000}","p1L1In":[1000000000]}
+      <br></br>2015-03-12 13:04:09,018 [HttpClient.java:203] Sending request [GET]: Crud.svc/AggregatePrimaryInteger.A1L1In?uri=%7B1000000000%7D
+      <br></br>2015-03-12 13:04:09,018 [HttpClient.java:430] GET http://localhost:2008/Crud.svc/AggregatePrimaryInteger.A1L1In?uri=%7B1000000000%7D
+      <br></br>2015-03-12 13:04:09,018 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-12 13:04:09,018 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-12 13:04:09,019 [HttpClient.java:227] Received response [200, 1024 bytes] in 1 ms
+      <br></br>2015-03-12 13:04:09,019 [HttpClient.java:230] Received response body: {"URI":"{1000000000}","p1L1In":[1000000000]}
       <br></br><a id="testP1L1InNonDefault1PropertyValueInAggregateAfterActiveRecordPersist"/><h2>testP1L1InNonDefault1PropertyValueInAggregateAfterActiveRecordPersist</h2>
-      <br></br>2015-03-11 16:33:03,102 [HttpClient.java:203] Sending request [GET]: Domain.svc/search/AggregatePrimaryInteger.A1L1In?limit=2147483647&offset=0
-      <br></br>2015-03-11 16:33:03,102 [HttpClient.java:430] GET http://localhost:2008/Domain.svc/search/AggregatePrimaryInteger.A1L1In?limit=2147483647&offset=0
-      <br></br>2015-03-11 16:33:03,102 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-03-11 16:33:03,102 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-03-11 16:33:03,104 [HttpClient.java:227] Received response [200, 1024 bytes] in 3 ms
-      <br></br>2015-03-11 16:33:03,104 [HttpClient.java:230] Received response body: [{"URI":"{1000000000}","p1L1In":[1000000000]}]
-      <br></br>2015-03-11 16:33:03,104 [HttpClient.java:218] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 111 bytes
-      <br></br>2015-03-11 16:33:03,104 [HttpClient.java:430] POST http://localhost:2008/RestApplication.svc/PersistAggregateRoot
-      <br></br>2015-03-11 16:33:03,105 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-03-11 16:33:03,105 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-03-11 16:33:03,105 [HttpClient.java:443] Adding payload: {"RootName":"AggregatePrimaryInteger.A1L1In","ToDelete":"[{\"p1L1In\":[1000000000],\"uri\":\"{1000000000}\"}]"}
-      <br></br>2015-03-11 16:33:03,108 [HttpClient.java:227] Received response [200, 1024 bytes] in 4 ms
-      <br></br>2015-03-11 16:33:03,108 [HttpClient.java:230] Received response body: []
-      <br></br>2015-03-11 16:33:03,109 [HttpClient.java:218] Sending request [POST]: Crud.svc/AggregatePrimaryInteger.A1L1In, content size: 33 bytes
-      <br></br>2015-03-11 16:33:03,109 [HttpClient.java:430] POST http://localhost:2008/Crud.svc/AggregatePrimaryInteger.A1L1In
-      <br></br>2015-03-11 16:33:03,109 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-03-11 16:33:03,109 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-03-11 16:33:03,109 [HttpClient.java:443] Adding payload: {"URI":"1417796379","p1L1In":[0]}
-      <br></br>2015-03-11 16:33:03,112 [HttpClient.java:227] Received response [201, 1024 bytes] in 4 ms
-      <br></br>2015-03-11 16:33:03,112 [HttpClient.java:230] Received response body: {"URI":"{0}","p1L1In":[0]}
-      <br></br>2015-03-11 16:33:03,112 [HttpClient.java:203] Sending request [GET]: Crud.svc/AggregatePrimaryInteger.A1L1In?uri=%7B0%7D
-      <br></br>2015-03-11 16:33:03,113 [HttpClient.java:430] GET http://localhost:2008/Crud.svc/AggregatePrimaryInteger.A1L1In?uri=%7B0%7D
-      <br></br>2015-03-11 16:33:03,113 [HttpClient.java:437] Accept: [application/json]
-      <br></br>2015-03-11 16:33:03,113 [HttpClient.java:437] Content-Type: [application/json]
-      <br></br>2015-03-11 16:33:03,114 [HttpClient.java:227] Received response [200, 1024 bytes] in 2 ms
-      <br></br>2015-03-11 16:33:03,114 [HttpClient.java:230] Received response body: {"URI":"{0}","p1L1In":[0]}
+      <br></br>2015-03-12 13:04:09,020 [HttpClient.java:203] Sending request [GET]: Domain.svc/search/AggregatePrimaryInteger.A1L1In?limit=2147483647&offset=0
+      <br></br>2015-03-12 13:04:09,020 [HttpClient.java:430] GET http://localhost:2008/Domain.svc/search/AggregatePrimaryInteger.A1L1In?limit=2147483647&offset=0
+      <br></br>2015-03-12 13:04:09,020 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-12 13:04:09,020 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-12 13:04:09,023 [HttpClient.java:227] Received response [200, 1024 bytes] in 3 ms
+      <br></br>2015-03-12 13:04:09,023 [HttpClient.java:230] Received response body: [{"URI":"{1000000000}","p1L1In":[1000000000]}]
+      <br></br>2015-03-12 13:04:09,023 [HttpClient.java:218] Sending request [POST]: RestApplication.svc/PersistAggregateRoot, content size: 111 bytes
+      <br></br>2015-03-12 13:04:09,024 [HttpClient.java:430] POST http://localhost:2008/RestApplication.svc/PersistAggregateRoot
+      <br></br>2015-03-12 13:04:09,024 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-12 13:04:09,024 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-12 13:04:09,024 [HttpClient.java:443] Adding payload: {"RootName":"AggregatePrimaryInteger.A1L1In","ToDelete":"[{\"p1L1In\":[1000000000],\"uri\":\"{1000000000}\"}]"}
+      <br></br>2015-03-12 13:04:09,027 [HttpClient.java:227] Received response [200, 1024 bytes] in 4 ms
+      <br></br>2015-03-12 13:04:09,027 [HttpClient.java:230] Received response body: []
+      <br></br>2015-03-12 13:04:09,028 [HttpClient.java:218] Sending request [POST]: Crud.svc/AggregatePrimaryInteger.A1L1In, content size: 33 bytes
+      <br></br>2015-03-12 13:04:09,028 [HttpClient.java:430] POST http://localhost:2008/Crud.svc/AggregatePrimaryInteger.A1L1In
+      <br></br>2015-03-12 13:04:09,028 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-12 13:04:09,028 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-12 13:04:09,028 [HttpClient.java:443] Adding payload: {"URI":"1417796379","p1L1In":[0]}
+      <br></br>2015-03-12 13:04:09,031 [HttpClient.java:227] Received response [201, 1024 bytes] in 3 ms
+      <br></br>2015-03-12 13:04:09,032 [HttpClient.java:230] Received response body: {"URI":"{0}","p1L1In":[0]}
+      <br></br>2015-03-12 13:04:09,032 [HttpClient.java:203] Sending request [GET]: Crud.svc/AggregatePrimaryInteger.A1L1In?uri=%7B0%7D
+      <br></br>2015-03-12 13:04:09,032 [HttpClient.java:430] GET http://localhost:2008/Crud.svc/AggregatePrimaryInteger.A1L1In?uri=%7B0%7D
+      <br></br>2015-03-12 13:04:09,032 [HttpClient.java:437] Accept: [application/json]
+      <br></br>2015-03-12 13:04:09,032 [HttpClient.java:437] Content-Type: [application/json]
+      <br></br>2015-03-12 13:04:09,033 [HttpClient.java:227] Received response [200, 1024 bytes] in 1 ms
+      <br></br>2015-03-12 13:04:09,034 [HttpClient.java:230] Received response body: {"URI":"{0}","p1L1In":[0]}
       <br></br><a id="testURIPropertyGetterClass"/><h2>testURIPropertyGetterClass</h2>
       <br></br><a id="testP1L1InDefaultPropertyInAggregateJsonSerialization"/><h2>testP1L1InDefaultPropertyInAggregateJsonSerialization</h2>
       <br></br><a id="testP1L1InPropertyFieldClass"/><h2>testP1L1InPropertyFieldClass</h2>
