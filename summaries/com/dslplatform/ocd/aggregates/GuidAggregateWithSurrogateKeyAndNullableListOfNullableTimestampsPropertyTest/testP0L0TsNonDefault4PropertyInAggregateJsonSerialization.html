@@ -23,7 +23,7 @@
             <tr>
                <td>testP0L0TsNonDefault4PropertyInAggregateJsonSerialization</td>
                <td>Failed</td>
-               <td>0.003</td>
+               <td>0.0</td>
             </tr>
          </table>
          <h2>Errors:</h2>
@@ -37,7 +37,7 @@
                <td>
                   <code>NullableListOfNullableTimestamp mismatch: element mismatch occurred at index 2: expected
                      was: "0001-01-01T00:00:00.000+01:22", but actual was: "0001-01-01T00:00:00.000+01:22"[WARNING
-                     - comparing two instants directly - not using a delta duration]; Different instances.;
+                     - not using a delta duration, comparing two instants directly]; Different instances.;
                      Chronologies: ISOChronology[Europe/Belgrade] vs. ISOChronology[+01:22]; Chronology
                      offsets: 3600000 vs. 4920000
                   </code>
@@ -46,7 +46,7 @@
             <tr>
                <td>Text:</td>
                <td>
-                  <code>java.lang.AssertionError: NullableListOfNullableTimestamp mismatch: element mismatch occurred at index 2: expected was: "0001-01-01T00:00:00.000+01:22", but actual was: "0001-01-01T00:00:00.000+01:22"[WARNING - comparing two instants directly - not using a delta duration]; Different instances.; Chronologies: ISOChronology[Europe/Belgrade] vs. ISOChronology[+01:22]; Chronology offsets: 3600000 vs. 4920000
+                  <code>java.lang.AssertionError: NullableListOfNullableTimestamp mismatch: element mismatch occurred at index 2: expected was: "0001-01-01T00:00:00.000+01:22", but actual was: "0001-01-01T00:00:00.000+01:22"[WARNING - not using a delta duration, comparing two instants directly]; Different instances.; Chronologies: ISOChronology[Europe/Belgrade] vs. ISOChronology[+01:22]; Chronology offsets: 3600000 vs. 4920000
                      <br></br>	at com.dslplatform.ocd.javaasserts.TimestampAsserts.assertSingleEqualsZeroDelta(TimestampAsserts.java:60)
                      <br></br>	at com.dslplatform.ocd.javaasserts.TimestampAsserts.assertSingleEquals(TimestampAsserts.java:65)
                      <br></br>	at com.dslplatform.ocd.javaasserts.TimestampAsserts.assertNullableEquals(TimestampAsserts.java:92)
