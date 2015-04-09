@@ -1,0 +1,37 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Testcase summary</title>
+<link href="../../css/bootstrap.min.css" rel="stylesheet">
+<script src="../../js/jquery.min.js"></script><script src="../../js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container" id="testDetails">
+<h1>testP1A1TsNonDefault3PropertyValueInSnowflakeAfterActiveRecordPersist</h1>
+<h2>
+<a href="../../testsuites/1118720448_stacktrace.html" target="_blank">(stack trace)</a>
+</h2>
+<table class="table table-striped" style="width: 1500px">
+<tr>
+<td>Name</td><td>Status</td><td>Time</td>
+</tr>
+<tr>
+<td>testP1A1TsNonDefault3PropertyValueInSnowflakeAfterActiveRecordPersist</td><td>Failed</td><td>0.094</td>
+</tr>
+</table>
+<div>
+<table class="table" style="width: 1500px">
+<tr>
+<td>Type:</td><td>java.lang.AssertionError</td>
+</tr>
+<tr>
+<td>Message:</td><td>OneArrayOfOneTimestamp mismatch: element mismatch occurred at index 0: expected was: "2015-04-08T16:11:51.149+02:00", but actual was: "2015-04-08T16:11:51.149+02:00"[WARNING - not using a delta duration, comparing two instants directly]; Different instances.; Chronologies: ISOChronology[Europe/Belgrade] vs. ISOChronology[+02:00]; Chronology offsets: 3600000 vs. 7200000</td>
+</tr>
+<tr>
+<td>Text:</td><td><code>java.lang.AssertionError: OneArrayOfOneTimestamp mismatch: element mismatch occurred at index 0: expected was: "2015-04-08T16:11:51.149+02:00", but actual was: "2015-04-08T16:11:51.149+02:00"[WARNING - not using a delta duration, comparing two instants directly]; Different instances.; Chronologies: ISOChronology[Europe/Belgrade] vs. ISOChronology[+02:00]; Chronology offsets: 3600000 vs. 7200000<br/>	at com.dslplatform.ocd.javaasserts.TimestampAsserts.assertSingleEqualsZeroDelta(TimestampAsserts.java:60)<br/>	at com.dslplatform.ocd.javaasserts.TimestampAsserts.assertSingleEquals(TimestampAsserts.java:65)<br/>	at com.dslplatform.ocd.javaasserts.TimestampAsserts.assertOneEquals(TimestampAsserts.java:77)<br/>	at com.dslplatform.ocd.javaasserts.TimestampAsserts.assertArrayOfOneEquals(TimestampAsserts.java:109)<br/>	at com.dslplatform.ocd.javaasserts.TimestampAsserts.assertOneArrayOfOneEquals(TimestampAsserts.java:122)<br/>	at com.dslplatform.ocd.javaasserts.TimestampAsserts.assertOneArrayOfOneEquals(TimestampAsserts.java:126)<br/>	at com.dslplatform.ocd.javaasserts.TimestampAsserts.assertOneArrayOfOneEquals(TimestampAsserts.java:130)<br/>	at com.dslplatform.ocd.snowflakes.CalculatedOneArrayOfOneTimestampsPropertyInSnowflakeTest.testP1A1TsNonDefault3PropertyValueInSnowflakeAfterActiveRecordPersist(Unknown Source)<br/></code></td>
+</tr>
+</table>
+</div>
+</div>
+</body>
+</html>

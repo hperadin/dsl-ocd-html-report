@@ -1,857 +1,277 @@
-<?xml version="1.0" encoding="US-ASCII"?><html xmlns:lxslt="http://xml.apache.org/xslt" xmlns:stringutils="xalan://org.apache.tools.ant.util.StringUtils">
-   <head>
-      <title>OCD summary</title>
-      <link rel="stylesheet" href="css/bootstrap.min.css"></link>
-      <script src="js/jquery.min.js"></script>
-      <script src="js/bootstrap.min.js"></script>
-   </head>
-   <body>
-      <div class="container">
-         <h1>Test suites summary</h1>
-         <table class="table table-striped">
-            <thead>
-               <tr>
-                  <th>Success rate</th>
-                  <th>Test suites</th>
-                  <th>Tests</th>
-                  <th>Failures</th>
-                  <th>Errors</th>
-                  <th>Time</th>
-               </tr>
-            </thead>
-            <tbody>
-               <tr>
-                  <td>99.72%</td>
-                  <td>80</td>
-                  <td>47178</td>
-                  <td>0</td>
-                  <td>132</td>
-                  <td>414.4320000000001</td>
-               </tr>
-            </tbody>
-         </table>
-         <table class="table table-striped">
-            <caption>Failed tests</caption>
-            <tr>
-               <th>Name</th>
-               <th>Succ. rate</th>
-               <th>Tests</th>
-               <th>Failures</th>
-               <th>Errors</th>
-               <th>Time</th>
-            </tr>
-            <tr class="danger">
-               <td>
-                  <a href="./summaries/com/dslplatform/ocd/test/PrimarySingleTimestamp.html">PrimarySingleTimestamp</a>
-               </td>
-               <td>80.58%</td>
-               <td>139</td>
-               <td>0</td>
-               <td>27</td>
-               <td>2.5</td>
-            </tr>
-            <tr class="danger">
-               <td>
-                  <a href="./summaries/com/dslplatform/ocd/test/SurrogateOneValueTimestamp.html">SurrogateOneValueTimestamp</a>
-               </td>
-               <td>89.86%</td>
-               <td>138</td>
-               <td>0</td>
-               <td>14</td>
-               <td>3.938</td>
-            </tr>
-            <tr class="danger">
-               <td>
-                  <a href="./summaries/com/dslplatform/ocd/test/SurrogateSingleDecimal9.html">SurrogateSingleDecimal9</a>
-               </td>
-               <td>99.81%</td>
-               <td>1590</td>
-               <td>0</td>
-               <td>3</td>
-               <td>7.594</td>
-            </tr>
-            <tr class="danger">
-               <td>
-                  <a href="./summaries/com/dslplatform/ocd/test/SurrogateSingleMoney.html">SurrogateSingleMoney</a>
-               </td>
-               <td>99.87%</td>
-               <td>1590</td>
-               <td>0</td>
-               <td>2</td>
-               <td>7.39</td>
-            </tr>
-            <tr class="danger">
-               <td>
-                  <a href="./summaries/com/dslplatform/ocd/test/SurrogateSingleTimestamp.html">SurrogateSingleTimestamp</a>
-               </td>
-               <td>97.34%</td>
-               <td>1578</td>
-               <td>0</td>
-               <td>42</td>
-               <td>13.86</td>
-            </tr>
-            <tr class="danger">
-               <td>
-                  <a href="./summaries/com/dslplatform/ocd/test/ValueSingleTimestamp.html">ValueSingleTimestamp</a>
-               </td>
-               <td>79.91%</td>
-               <td>219</td>
-               <td>0</td>
-               <td>44</td>
-               <td>1.032</td>
-            </tr>
-         </table>
-         <table class="table table-striped">
-            <caption>Succesful tests</caption>
-            <tr>
-               <th>Name</th>
-               <th>Succ. rate</th>
-               <th>Tests</th>
-               <th>Failures</th>
-               <th>Errors</th>
-               <th>Time</th>
-            </tr>
-            <tr>
-               <td>
-                  <a href="./summaries/com/dslplatform/ocd/test/PrimarySingleBinary.html">PrimarySingleBinary</a>
-               </td>
-               <td>100.00%</td>
-               <td>139</td>
-               <td>0</td>
-               <td>0</td>
-               <td>2.468</td>
-            </tr>
-            <tr>
-               <td>
-                  <a href="./summaries/com/dslplatform/ocd/test/PrimarySingleBoolean.html">PrimarySingleBoolean</a>
-               </td>
-               <td>100.00%</td>
-               <td>135</td>
-               <td>0</td>
-               <td>0</td>
-               <td>2.312</td>
-            </tr>
-            <tr>
-               <td>
-                  <a href="./summaries/com/dslplatform/ocd/test/PrimarySingleDate.html">PrimarySingleDate</a>
-               </td>
-               <td>100.00%</td>
-               <td>143</td>
-               <td>0</td>
-               <td>0</td>
-               <td>2.625</td>
-            </tr>
-            <tr>
-               <td>
-                  <a href="./summaries/com/dslplatform/ocd/test/PrimarySingleDecimal9.html">PrimarySingleDecimal9</a>
-               </td>
-               <td>100.00%</td>
-               <td>141</td>
-               <td>0</td>
-               <td>0</td>
-               <td>3.094</td>
-            </tr>
-            <tr>
-               <td>
-                  <a href="./summaries/com/dslplatform/ocd/test/PrimarySingleDecimal.html">PrimarySingleDecimal</a>
-               </td>
-               <td>100.00%</td>
-               <td>141</td>
-               <td>0</td>
-               <td>0</td>
-               <td>3.156</td>
-            </tr>
-            <tr>
-               <td>
-                  <a href="./summaries/com/dslplatform/ocd/test/PrimarySingleDouble.html">PrimarySingleDouble</a>
-               </td>
-               <td>100.00%</td>
-               <td>147</td>
-               <td>0</td>
-               <td>0</td>
-               <td>4.203</td>
-            </tr>
-            <tr>
-               <td>
-                  <a href="./summaries/com/dslplatform/ocd/test/PrimarySingleFloat.html">PrimarySingleFloat</a>
-               </td>
-               <td>100.00%</td>
-               <td>145</td>
-               <td>0</td>
-               <td>0</td>
-               <td>2.984</td>
-            </tr>
-            <tr>
-               <td>
-                  <a href="./summaries/com/dslplatform/ocd/test/PrimarySingleGuid.html">PrimarySingleGuid</a>
-               </td>
-               <td>100.00%</td>
-               <td>137</td>
-               <td>0</td>
-               <td>0</td>
-               <td>2.484</td>
-            </tr>
-            <tr>
-               <td>
-                  <a href="./summaries/com/dslplatform/ocd/test/PrimarySingleInteger.html">PrimarySingleInteger</a>
-               </td>
-               <td>100.00%</td>
-               <td>141</td>
-               <td>0</td>
-               <td>0</td>
-               <td>2.469</td>
-            </tr>
-            <tr>
-               <td>
-                  <a href="./summaries/com/dslplatform/ocd/test/PrimarySingleLong.html">PrimarySingleLong</a>
-               </td>
-               <td>100.00%</td>
-               <td>143</td>
-               <td>0</td>
-               <td>0</td>
-               <td>2.484</td>
-            </tr>
-            <tr>
-               <td>
-                  <a href="./summaries/com/dslplatform/ocd/test/PrimarySingleMoney.html">PrimarySingleMoney</a>
-               </td>
-               <td>100.00%</td>
-               <td>141</td>
-               <td>0</td>
-               <td>0</td>
-               <td>2.406</td>
-            </tr>
-            <tr>
-               <td>
-                  <a href="./summaries/com/dslplatform/ocd/test/PrimarySingleString9.html">PrimarySingleString9</a>
-               </td>
-               <td>100.00%</td>
-               <td>141</td>
-               <td>0</td>
-               <td>0</td>
-               <td>2.782</td>
-            </tr>
-            <tr>
-               <td>
-                  <a href="./summaries/com/dslplatform/ocd/test/PrimarySingleString.html">PrimarySingleString</a>
-               </td>
-               <td>100.00%</td>
-               <td>139</td>
-               <td>0</td>
-               <td>0</td>
-               <td>2.687</td>
-            </tr>
-            <tr>
-               <td>
-                  <a href="./summaries/com/dslplatform/ocd/test/PrimarySingleText.html">PrimarySingleText</a>
-               </td>
-               <td>100.00%</td>
-               <td>139</td>
-               <td>0</td>
-               <td>0</td>
-               <td>2.688</td>
-            </tr>
-            <tr>
-               <td>
-                  <a href="./summaries/com/dslplatform/ocd/test/PrimarySingleUrl.html">PrimarySingleUrl</a>
-               </td>
-               <td>100.00%</td>
-               <td>142</td>
-               <td>0</td>
-               <td>0</td>
-               <td>2.562</td>
-            </tr>
-            <tr>
-               <td>
-                  <a href="./summaries/com/dslplatform/ocd/test/SurrogateOneValueBinary.html">SurrogateOneValueBinary</a>
-               </td>
-               <td>100.00%</td>
-               <td>138</td>
-               <td>0</td>
-               <td>0</td>
-               <td>2.844</td>
-            </tr>
-            <tr>
-               <td>
-                  <a href="./summaries/com/dslplatform/ocd/test/SurrogateOneValueBoolean.html">SurrogateOneValueBoolean</a>
-               </td>
-               <td>100.00%</td>
-               <td>130</td>
-               <td>0</td>
-               <td>0</td>
-               <td>2.797</td>
-            </tr>
-            <tr>
-               <td>
-                  <a href="./summaries/com/dslplatform/ocd/test/SurrogateOneValueDate.html">SurrogateOneValueDate</a>
-               </td>
-               <td>100.00%</td>
-               <td>146</td>
-               <td>0</td>
-               <td>0</td>
-               <td>3.574</td>
-            </tr>
-            <tr>
-               <td>
-                  <a href="./summaries/com/dslplatform/ocd/test/SurrogateOneValueDecimal9.html">SurrogateOneValueDecimal9</a>
-               </td>
-               <td>100.00%</td>
-               <td>142</td>
-               <td>0</td>
-               <td>0</td>
-               <td>4.771</td>
-            </tr>
-            <tr>
-               <td>
-                  <a href="./summaries/com/dslplatform/ocd/test/SurrogateOneValueDecimal.html">SurrogateOneValueDecimal</a>
-               </td>
-               <td>100.00%</td>
-               <td>142</td>
-               <td>0</td>
-               <td>0</td>
-               <td>2.952</td>
-            </tr>
-            <tr>
-               <td>
-                  <a href="./summaries/com/dslplatform/ocd/test/SurrogateOneValueDouble.html">SurrogateOneValueDouble</a>
-               </td>
-               <td>100.00%</td>
-               <td>154</td>
-               <td>0</td>
-               <td>0</td>
-               <td>2.696</td>
-            </tr>
-            <tr>
-               <td>
-                  <a href="./summaries/com/dslplatform/ocd/test/SurrogateOneValueFloat.html">SurrogateOneValueFloat</a>
-               </td>
-               <td>100.00%</td>
-               <td>150</td>
-               <td>0</td>
-               <td>0</td>
-               <td>2.895</td>
-            </tr>
-            <tr>
-               <td>
-                  <a href="./summaries/com/dslplatform/ocd/test/SurrogateOneValueGuid.html">SurrogateOneValueGuid</a>
-               </td>
-               <td>100.00%</td>
-               <td>134</td>
-               <td>0</td>
-               <td>0</td>
-               <td>2.919</td>
-            </tr>
-            <tr>
-               <td>
-                  <a href="./summaries/com/dslplatform/ocd/test/SurrogateOneValueInteger.html">SurrogateOneValueInteger</a>
-               </td>
-               <td>100.00%</td>
-               <td>142</td>
-               <td>0</td>
-               <td>0</td>
-               <td>2.751</td>
-            </tr>
-            <tr>
-               <td>
-                  <a href="./summaries/com/dslplatform/ocd/test/SurrogateOneValueLong.html">SurrogateOneValueLong</a>
-               </td>
-               <td>100.00%</td>
-               <td>146</td>
-               <td>0</td>
-               <td>0</td>
-               <td>2.682</td>
-            </tr>
-            <tr>
-               <td>
-                  <a href="./summaries/com/dslplatform/ocd/test/SurrogateOneValueMoney.html">SurrogateOneValueMoney</a>
-               </td>
-               <td>100.00%</td>
-               <td>142</td>
-               <td>0</td>
-               <td>0</td>
-               <td>2.641</td>
-            </tr>
-            <tr>
-               <td>
-                  <a href="./summaries/com/dslplatform/ocd/test/SurrogateOneValueString9.html">SurrogateOneValueString9</a>
-               </td>
-               <td>100.00%</td>
-               <td>142</td>
-               <td>0</td>
-               <td>0</td>
-               <td>2.64</td>
-            </tr>
-            <tr>
-               <td>
-                  <a href="./summaries/com/dslplatform/ocd/test/SurrogateOneValueString.html">SurrogateOneValueString</a>
-               </td>
-               <td>100.00%</td>
-               <td>138</td>
-               <td>0</td>
-               <td>0</td>
-               <td>4.593</td>
-            </tr>
-            <tr>
-               <td>
-                  <a href="./summaries/com/dslplatform/ocd/test/SurrogateOneValueText.html">SurrogateOneValueText</a>
-               </td>
-               <td>100.00%</td>
-               <td>138</td>
-               <td>0</td>
-               <td>0</td>
-               <td>4.265</td>
-            </tr>
-            <tr>
-               <td>
-                  <a href="./summaries/com/dslplatform/ocd/test/SurrogateOneValueUrl.html">SurrogateOneValueUrl</a>
-               </td>
-               <td>100.00%</td>
-               <td>135</td>
-               <td>0</td>
-               <td>0</td>
-               <td>3.64</td>
-            </tr>
-            <tr>
-               <td>
-                  <a href="./summaries/com/dslplatform/ocd/test/SurrogateSingleBinary.html">SurrogateSingleBinary</a>
-               </td>
-               <td>100.00%</td>
-               <td>1578</td>
-               <td>0</td>
-               <td>0</td>
-               <td>11.781</td>
-            </tr>
-            <tr>
-               <td>
-                  <a href="./summaries/com/dslplatform/ocd/test/SurrogateSingleBoolean.html">SurrogateSingleBoolean</a>
-               </td>
-               <td>100.00%</td>
-               <td>1554</td>
-               <td>0</td>
-               <td>0</td>
-               <td>10.812</td>
-            </tr>
-            <tr>
-               <td>
-                  <a href="./summaries/com/dslplatform/ocd/test/SurrogateSingleDate.html">SurrogateSingleDate</a>
-               </td>
-               <td>100.00%</td>
-               <td>1602</td>
-               <td>0</td>
-               <td>0</td>
-               <td>11.906</td>
-            </tr>
-            <tr>
-               <td>
-                  <a href="./summaries/com/dslplatform/ocd/test/SurrogateSingleDecimal.html">SurrogateSingleDecimal</a>
-               </td>
-               <td>100.00%</td>
-               <td>1590</td>
-               <td>0</td>
-               <td>0</td>
-               <td>11.672</td>
-            </tr>
-            <tr>
-               <td>
-                  <a href="./summaries/com/dslplatform/ocd/test/SurrogateSingleDouble.html">SurrogateSingleDouble</a>
-               </td>
-               <td>100.00%</td>
-               <td>1626</td>
-               <td>0</td>
-               <td>0</td>
-               <td>10.437</td>
-            </tr>
-            <tr>
-               <td>
-                  <a href="./summaries/com/dslplatform/ocd/test/SurrogateSingleFloat.html">SurrogateSingleFloat</a>
-               </td>
-               <td>100.00%</td>
-               <td>1614</td>
-               <td>0</td>
-               <td>0</td>
-               <td>7.266</td>
-            </tr>
-            <tr>
-               <td>
-                  <a href="./summaries/com/dslplatform/ocd/test/SurrogateSingleGuid.html">SurrogateSingleGuid</a>
-               </td>
-               <td>100.00%</td>
-               <td>1566</td>
-               <td>0</td>
-               <td>0</td>
-               <td>11.563</td>
-            </tr>
-            <tr>
-               <td>
-                  <a href="./summaries/com/dslplatform/ocd/test/SurrogateSingleInteger.html">SurrogateSingleInteger</a>
-               </td>
-               <td>100.00%</td>
-               <td>1590</td>
-               <td>0</td>
-               <td>0</td>
-               <td>13.328</td>
-            </tr>
-            <tr>
-               <td>
-                  <a href="./summaries/com/dslplatform/ocd/test/SurrogateSingleLong.html">SurrogateSingleLong</a>
-               </td>
-               <td>100.00%</td>
-               <td>1602</td>
-               <td>0</td>
-               <td>0</td>
-               <td>11.89</td>
-            </tr>
-            <tr>
-               <td>
-                  <a href="./summaries/com/dslplatform/ocd/test/SurrogateSingleString9.html">SurrogateSingleString9</a>
-               </td>
-               <td>100.00%</td>
-               <td>1590</td>
-               <td>0</td>
-               <td>0</td>
-               <td>7.453</td>
-            </tr>
-            <tr>
-               <td>
-                  <a href="./summaries/com/dslplatform/ocd/test/SurrogateSingleString.html">SurrogateSingleString</a>
-               </td>
-               <td>100.00%</td>
-               <td>1578</td>
-               <td>0</td>
-               <td>0</td>
-               <td>13.625</td>
-            </tr>
-            <tr>
-               <td>
-                  <a href="./summaries/com/dslplatform/ocd/test/SurrogateSingleText.html">SurrogateSingleText</a>
-               </td>
-               <td>100.00%</td>
-               <td>1578</td>
-               <td>0</td>
-               <td>0</td>
-               <td>13.515</td>
-            </tr>
-            <tr>
-               <td>
-                  <a href="./summaries/com/dslplatform/ocd/test/SurrogateSingleUrl.html">SurrogateSingleUrl</a>
-               </td>
-               <td>100.00%</td>
-               <td>1569</td>
-               <td>0</td>
-               <td>0</td>
-               <td>14.187</td>
-            </tr>
-            <tr>
-               <td>
-                  <a href="./summaries/com/dslplatform/ocd/test/CalculatedSingleBinary.html">CalculatedSingleBinary</a>
-               </td>
-               <td>100.00%</td>
-               <td>856</td>
-               <td>0</td>
-               <td>0</td>
-               <td>7.703</td>
-            </tr>
-            <tr>
-               <td>
-                  <a href="./summaries/com/dslplatform/ocd/test/CalculatedSingleBoolean.html">CalculatedSingleBoolean</a>
-               </td>
-               <td>100.00%</td>
-               <td>848</td>
-               <td>0</td>
-               <td>0</td>
-               <td>7.047</td>
-            </tr>
-            <tr>
-               <td>
-                  <a href="./summaries/com/dslplatform/ocd/test/CalculatedSingleDate.html">CalculatedSingleDate</a>
-               </td>
-               <td>100.00%</td>
-               <td>864</td>
-               <td>0</td>
-               <td>0</td>
-               <td>4.549</td>
-            </tr>
-            <tr>
-               <td>
-                  <a href="./summaries/com/dslplatform/ocd/test/CalculatedSingleDecimal9.html">CalculatedSingleDecimal9</a>
-               </td>
-               <td>100.00%</td>
-               <td>860</td>
-               <td>0</td>
-               <td>0</td>
-               <td>7.511</td>
-            </tr>
-            <tr>
-               <td>
-                  <a href="./summaries/com/dslplatform/ocd/test/CalculatedSingleDecimal.html">CalculatedSingleDecimal</a>
-               </td>
-               <td>100.00%</td>
-               <td>860</td>
-               <td>0</td>
-               <td>0</td>
-               <td>7.601</td>
-            </tr>
-            <tr>
-               <td>
-                  <a href="./summaries/com/dslplatform/ocd/test/CalculatedSingleDouble.html">CalculatedSingleDouble</a>
-               </td>
-               <td>100.00%</td>
-               <td>872</td>
-               <td>0</td>
-               <td>0</td>
-               <td>7.725</td>
-            </tr>
-            <tr>
-               <td>
-                  <a href="./summaries/com/dslplatform/ocd/test/CalculatedSingleFloat.html">CalculatedSingleFloat</a>
-               </td>
-               <td>100.00%</td>
-               <td>868</td>
-               <td>0</td>
-               <td>0</td>
-               <td>7.425</td>
-            </tr>
-            <tr>
-               <td>
-                  <a href="./summaries/com/dslplatform/ocd/test/CalculatedSingleGuid.html">CalculatedSingleGuid</a>
-               </td>
-               <td>100.00%</td>
-               <td>852</td>
-               <td>0</td>
-               <td>0</td>
-               <td>7.498</td>
-            </tr>
-            <tr>
-               <td>
-                  <a href="./summaries/com/dslplatform/ocd/test/CalculatedSingleInteger.html">CalculatedSingleInteger</a>
-               </td>
-               <td>100.00%</td>
-               <td>860</td>
-               <td>0</td>
-               <td>0</td>
-               <td>7.216</td>
-            </tr>
-            <tr>
-               <td>
-                  <a href="./summaries/com/dslplatform/ocd/test/CalculatedSingleLong.html">CalculatedSingleLong</a>
-               </td>
-               <td>100.00%</td>
-               <td>864</td>
-               <td>0</td>
-               <td>0</td>
-               <td>7.922</td>
-            </tr>
-            <tr>
-               <td>
-                  <a href="./summaries/com/dslplatform/ocd/test/CalculatedSingleMoney.html">CalculatedSingleMoney</a>
-               </td>
-               <td>100.00%</td>
-               <td>860</td>
-               <td>0</td>
-               <td>0</td>
-               <td>7.093</td>
-            </tr>
-            <tr>
-               <td>
-                  <a href="./summaries/com/dslplatform/ocd/test/CalculatedSingleString9.html">CalculatedSingleString9</a>
-               </td>
-               <td>100.00%</td>
-               <td>860</td>
-               <td>0</td>
-               <td>0</td>
-               <td>7.813</td>
-            </tr>
-            <tr>
-               <td>
-                  <a href="./summaries/com/dslplatform/ocd/test/CalculatedSingleString.html">CalculatedSingleString</a>
-               </td>
-               <td>100.00%</td>
-               <td>856</td>
-               <td>0</td>
-               <td>0</td>
-               <td>10.11</td>
-            </tr>
-            <tr>
-               <td>
-                  <a href="./summaries/com/dslplatform/ocd/test/CalculatedSingleText.html">CalculatedSingleText</a>
-               </td>
-               <td>100.00%</td>
-               <td>856</td>
-               <td>0</td>
-               <td>0</td>
-               <td>10.312</td>
-            </tr>
-            <tr>
-               <td>
-                  <a href="./summaries/com/dslplatform/ocd/test/CalculatedSingleTimestamp.html">CalculatedSingleTimestamp</a>
-               </td>
-               <td>100.00%</td>
-               <td>856</td>
-               <td>0</td>
-               <td>0</td>
-               <td>9.343</td>
-            </tr>
-            <tr>
-               <td>
-                  <a href="./summaries/com/dslplatform/ocd/test/CalculatedSingleUrl.html">CalculatedSingleUrl</a>
-               </td>
-               <td>100.00%</td>
-               <td>852</td>
-               <td>0</td>
-               <td>0</td>
-               <td>7.906</td>
-            </tr>
-            <tr>
-               <td>
-                  <a href="./summaries/com/dslplatform/ocd/test/ValueSingleBinary.html">ValueSingleBinary</a>
-               </td>
-               <td>100.00%</td>
-               <td>219</td>
-               <td>0</td>
-               <td>0</td>
-               <td>0.912</td>
-            </tr>
-            <tr>
-               <td>
-                  <a href="./summaries/com/dslplatform/ocd/test/ValueSingleBoolean.html">ValueSingleBoolean</a>
-               </td>
-               <td>100.00%</td>
-               <td>215</td>
-               <td>0</td>
-               <td>0</td>
-               <td>0.853</td>
-            </tr>
-            <tr>
-               <td>
-                  <a href="./summaries/com/dslplatform/ocd/test/ValueSingleDate.html">ValueSingleDate</a>
-               </td>
-               <td>100.00%</td>
-               <td>223</td>
-               <td>0</td>
-               <td>0</td>
-               <td>0.957</td>
-            </tr>
-            <tr>
-               <td>
-                  <a href="./summaries/com/dslplatform/ocd/test/ValueSingleDecimal9.html">ValueSingleDecimal9</a>
-               </td>
-               <td>100.00%</td>
-               <td>221</td>
-               <td>0</td>
-               <td>0</td>
-               <td>0.86</td>
-            </tr>
-            <tr>
-               <td>
-                  <a href="./summaries/com/dslplatform/ocd/test/ValueSingleDecimal.html">ValueSingleDecimal</a>
-               </td>
-               <td>100.00%</td>
-               <td>221</td>
-               <td>0</td>
-               <td>0</td>
-               <td>0.942</td>
-            </tr>
-            <tr>
-               <td>
-                  <a href="./summaries/com/dslplatform/ocd/test/ValueSingleDouble.html">ValueSingleDouble</a>
-               </td>
-               <td>100.00%</td>
-               <td>227</td>
-               <td>0</td>
-               <td>0</td>
-               <td>0.988</td>
-            </tr>
-            <tr>
-               <td>
-                  <a href="./summaries/com/dslplatform/ocd/test/ValueSingleFloat.html">ValueSingleFloat</a>
-               </td>
-               <td>100.00%</td>
-               <td>225</td>
-               <td>0</td>
-               <td>0</td>
-               <td>0.933</td>
-            </tr>
-            <tr>
-               <td>
-                  <a href="./summaries/com/dslplatform/ocd/test/ValueSingleGuid.html">ValueSingleGuid</a>
-               </td>
-               <td>100.00%</td>
-               <td>217</td>
-               <td>0</td>
-               <td>0</td>
-               <td>0.925</td>
-            </tr>
-            <tr>
-               <td>
-                  <a href="./summaries/com/dslplatform/ocd/test/ValueSingleInteger.html">ValueSingleInteger</a>
-               </td>
-               <td>100.00%</td>
-               <td>221</td>
-               <td>0</td>
-               <td>0</td>
-               <td>0.937</td>
-            </tr>
-            <tr>
-               <td>
-                  <a href="./summaries/com/dslplatform/ocd/test/ValueSingleLong.html">ValueSingleLong</a>
-               </td>
-               <td>100.00%</td>
-               <td>223</td>
-               <td>0</td>
-               <td>0</td>
-               <td>0.991</td>
-            </tr>
-            <tr>
-               <td>
-                  <a href="./summaries/com/dslplatform/ocd/test/ValueSingleMoney.html">ValueSingleMoney</a>
-               </td>
-               <td>100.00%</td>
-               <td>221</td>
-               <td>0</td>
-               <td>0</td>
-               <td>0.921</td>
-            </tr>
-            <tr>
-               <td>
-                  <a href="./summaries/com/dslplatform/ocd/test/ValueSingleString9.html">ValueSingleString9</a>
-               </td>
-               <td>100.00%</td>
-               <td>221</td>
-               <td>0</td>
-               <td>0</td>
-               <td>0.906</td>
-            </tr>
-            <tr>
-               <td>
-                  <a href="./summaries/com/dslplatform/ocd/test/ValueSingleString.html">ValueSingleString</a>
-               </td>
-               <td>100.00%</td>
-               <td>219</td>
-               <td>0</td>
-               <td>0</td>
-               <td>0.907</td>
-            </tr>
-            <tr>
-               <td>
-                  <a href="./summaries/com/dslplatform/ocd/test/ValueSingleText.html">ValueSingleText</a>
-               </td>
-               <td>100.00%</td>
-               <td>219</td>
-               <td>0</td>
-               <td>0</td>
-               <td>0.906</td>
-            </tr>
-            <tr>
-               <td>
-                  <a href="./summaries/com/dslplatform/ocd/test/ValueSingleUrl.html">ValueSingleUrl</a>
-               </td>
-               <td>100.00%</td>
-               <td>218</td>
-               <td>0</td>
-               <td>0</td>
-               <td>0.907</td>
-            </tr>
-         </table>
-      </div>
-   </body>
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Testusites summary</title>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<script src="js/jquery.min.js"></script><script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+<h1>Testsuites summary</h1>
+<table class="table table-striped">
+<thead>
+<tr>
+<th>Success rate</th><th>Test suites</th><th>Tests</th><th>Failures</th><th>Errors</th><th>Time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>99.27</td><td>80</td><td>47178</td><td>0</td><td>346</td><td>558.2440000000001</td>
+</tr>
+</tbody>
+</table>
+<table class="table table-striped">
+<caption>Failed tests</caption>
+<tr>
+<th>Name</th><th>Succ. rate</th><th>Tests</th><th>Failures</th><th>Errors</th><th>Time</th>
+</tr>
+<tr class="danger">
+<td><a href="testsuites/173277777.html">PrimarySingleTimestamp</a></td><td>76.98</td><td>139</td><td>0</td><td>32</td><td>2.844</td>
+</tr>
+<tr class="danger">
+<td><a href="testsuites/291772707.html">SurrogateOneValueTimestamp</a></td><td>60.87</td><td>138</td><td>0</td><td>54</td><td>4.469</td>
+</tr>
+<tr class="danger">
+<td><a href="testsuites/1118720448.html">SurrogateSingleTimestamp</a></td><td>89.73</td><td>1578</td><td>0</td><td>162</td><td>15.671</td>
+</tr>
+<tr class="danger">
+<td><a href="testsuites/1115240051.html">CalculatedSingleTimestamp</a></td><td>93.93</td><td>856</td><td>0</td><td>52</td><td>10.969</td>
+</tr>
+<tr class="danger">
+<td><a href="testsuites/602266141.html">ValueSingleTimestamp</a></td><td>79.00</td><td>219</td><td>0</td><td>46</td><td>1.016</td>
+</tr>
+</table>
+<table class="table table-striped">
+<caption>Successful tests</caption>
+<tr>
+<th>Name</th><th>Succ. rate</th><th>Tests</th><th>Failures</th><th>Errors</th><th>Time</th>
+</tr>
+<tr class="">
+<td>PrimarySingleBinary</td><td>100.00</td><td>139</td><td>0</td><td>0</td><td>2.75</td>
+</tr>
+<tr class="">
+<td>PrimarySingleBoolean</td><td>100.00</td><td>135</td><td>0</td><td>0</td><td>3.515</td>
+</tr>
+<tr class="">
+<td>PrimarySingleDate</td><td>100.00</td><td>143</td><td>0</td><td>0</td><td>2.922</td>
+</tr>
+<tr class="">
+<td>PrimarySingleDecimal9</td><td>100.00</td><td>141</td><td>0</td><td>0</td><td>2.907</td>
+</tr>
+<tr class="">
+<td>PrimarySingleDecimal</td><td>100.00</td><td>141</td><td>0</td><td>0</td><td>2.906</td>
+</tr>
+<tr class="">
+<td>PrimarySingleDouble</td><td>100.00</td><td>147</td><td>0</td><td>0</td><td>2.859</td>
+</tr>
+<tr class="">
+<td>PrimarySingleFloat</td><td>100.00</td><td>145</td><td>0</td><td>0</td><td>3.031</td>
+</tr>
+<tr class="">
+<td>PrimarySingleGuid</td><td>100.00</td><td>137</td><td>0</td><td>0</td><td>2.86</td>
+</tr>
+<tr class="">
+<td>PrimarySingleInteger</td><td>100.00</td><td>141</td><td>0</td><td>0</td><td>2.891</td>
+</tr>
+<tr class="">
+<td>PrimarySingleLong</td><td>100.00</td><td>143</td><td>0</td><td>0</td><td>3.938</td>
+</tr>
+<tr class="">
+<td>PrimarySingleMoney</td><td>100.00</td><td>141</td><td>0</td><td>0</td><td>2.781</td>
+</tr>
+<tr class="">
+<td>PrimarySingleString9</td><td>100.00</td><td>141</td><td>0</td><td>0</td><td>4.172</td>
+</tr>
+<tr class="">
+<td>PrimarySingleString</td><td>100.00</td><td>139</td><td>0</td><td>0</td><td>5.141</td>
+</tr>
+<tr class="">
+<td>PrimarySingleText</td><td>100.00</td><td>139</td><td>0</td><td>0</td><td>3.063</td>
+</tr>
+<tr class="">
+<td>PrimarySingleUrl</td><td>100.00</td><td>142</td><td>0</td><td>0</td><td>2.922</td>
+</tr>
+<tr class="">
+<td>SurrogateOneValueBinary</td><td>100.00</td><td>138</td><td>0</td><td>0</td><td>4.172</td>
+</tr>
+<tr class="">
+<td>SurrogateOneValueBoolean</td><td>100.00</td><td>130</td><td>0</td><td>0</td><td>3.016</td>
+</tr>
+<tr class="">
+<td>SurrogateOneValueDate</td><td>100.00</td><td>146</td><td>0</td><td>0</td><td>3.266</td>
+</tr>
+<tr class="">
+<td>SurrogateOneValueDecimal9</td><td>100.00</td><td>142</td><td>0</td><td>0</td><td>3.312</td>
+</tr>
+<tr class="">
+<td>SurrogateOneValueDecimal</td><td>100.00</td><td>142</td><td>0</td><td>0</td><td>3.172</td>
+</tr>
+<tr class="">
+<td>SurrogateOneValueDouble</td><td>100.00</td><td>154</td><td>0</td><td>0</td><td>4.688</td>
+</tr>
+<tr class="">
+<td>SurrogateOneValueFloat</td><td>100.00</td><td>150</td><td>0</td><td>0</td><td>4.375</td>
+</tr>
+<tr class="">
+<td>SurrogateOneValueGuid</td><td>100.00</td><td>134</td><td>0</td><td>0</td><td>4.265</td>
+</tr>
+<tr class="">
+<td>SurrogateOneValueInteger</td><td>100.00</td><td>142</td><td>0</td><td>0</td><td>4.266</td>
+</tr>
+<tr class="">
+<td>SurrogateOneValueLong</td><td>100.00</td><td>146</td><td>0</td><td>0</td><td>4.468</td>
+</tr>
+<tr class="">
+<td>SurrogateOneValueMoney</td><td>100.00</td><td>142</td><td>0</td><td>0</td><td>4.469</td>
+</tr>
+<tr class="">
+<td>SurrogateOneValueString9</td><td>100.00</td><td>142</td><td>0</td><td>0</td><td>4.375</td>
+</tr>
+<tr class="">
+<td>SurrogateOneValueString</td><td>100.00</td><td>138</td><td>0</td><td>0</td><td>5.234</td>
+</tr>
+<tr class="">
+<td>SurrogateOneValueText</td><td>100.00</td><td>138</td><td>0</td><td>0</td><td>5.016</td>
+</tr>
+<tr class="">
+<td>SurrogateOneValueUrl</td><td>100.00</td><td>135</td><td>0</td><td>0</td><td>4.578</td>
+</tr>
+<tr class="">
+<td>SurrogateSingleBinary</td><td>100.00</td><td>1578</td><td>0</td><td>0</td><td>17.438</td>
+</tr>
+<tr class="">
+<td>SurrogateSingleBoolean</td><td>100.00</td><td>1554</td><td>0</td><td>0</td><td>17.016</td>
+</tr>
+<tr class="">
+<td>SurrogateSingleDate</td><td>100.00</td><td>1602</td><td>0</td><td>0</td><td>18.546</td>
+</tr>
+<tr class="">
+<td>SurrogateSingleDecimal9</td><td>100.00</td><td>1590</td><td>0</td><td>0</td><td>18.641</td>
+</tr>
+<tr class="">
+<td>SurrogateSingleDecimal</td><td>100.00</td><td>1590</td><td>0</td><td>0</td><td>18.531</td>
+</tr>
+<tr class="">
+<td>SurrogateSingleDouble</td><td>100.00</td><td>1626</td><td>0</td><td>0</td><td>18.985</td>
+</tr>
+<tr class="">
+<td>SurrogateSingleFloat</td><td>100.00</td><td>1614</td><td>0</td><td>0</td><td>18.422</td>
+</tr>
+<tr class="">
+<td>SurrogateSingleGuid</td><td>100.00</td><td>1566</td><td>0</td><td>0</td><td>17.875</td>
+</tr>
+<tr class="">
+<td>SurrogateSingleInteger</td><td>100.00</td><td>1590</td><td>0</td><td>0</td><td>15.36</td>
+</tr>
+<tr class="">
+<td>SurrogateSingleLong</td><td>100.00</td><td>1602</td><td>0</td><td>0</td><td>12.688</td>
+</tr>
+<tr class="">
+<td>SurrogateSingleMoney</td><td>100.00</td><td>1590</td><td>0</td><td>0</td><td>17.907</td>
+</tr>
+<tr class="">
+<td>SurrogateSingleString9</td><td>100.00</td><td>1590</td><td>0</td><td>0</td><td>19.406</td>
+</tr>
+<tr class="">
+<td>SurrogateSingleString</td><td>100.00</td><td>1578</td><td>0</td><td>0</td><td>20.406</td>
+</tr>
+<tr class="">
+<td>SurrogateSingleText</td><td>100.00</td><td>1578</td><td>0</td><td>0</td><td>13.531</td>
+</tr>
+<tr class="">
+<td>SurrogateSingleUrl</td><td>100.00</td><td>1569</td><td>0</td><td>0</td><td>18.203</td>
+</tr>
+<tr class="">
+<td>CalculatedSingleBinary</td><td>100.00</td><td>856</td><td>0</td><td>0</td><td>10.172</td>
+</tr>
+<tr class="">
+<td>CalculatedSingleBoolean</td><td>100.00</td><td>848</td><td>0</td><td>0</td><td>9.969</td>
+</tr>
+<tr class="">
+<td>CalculatedSingleDate</td><td>100.00</td><td>864</td><td>0</td><td>0</td><td>10.953</td>
+</tr>
+<tr class="">
+<td>CalculatedSingleDecimal9</td><td>100.00</td><td>860</td><td>0</td><td>0</td><td>5.11</td>
+</tr>
+<tr class="">
+<td>CalculatedSingleDecimal</td><td>100.00</td><td>860</td><td>0</td><td>0</td><td>10.266</td>
+</tr>
+<tr class="">
+<td>CalculatedSingleDouble</td><td>100.00</td><td>872</td><td>0</td><td>0</td><td>5.5</td>
+</tr>
+<tr class="">
+<td>CalculatedSingleFloat</td><td>100.00</td><td>868</td><td>0</td><td>0</td><td>10.333</td>
+</tr>
+<tr class="">
+<td>CalculatedSingleGuid</td><td>100.00</td><td>852</td><td>0</td><td>0</td><td>10.421</td>
+</tr>
+<tr class="">
+<td>CalculatedSingleInteger</td><td>100.00</td><td>860</td><td>0</td><td>0</td><td>5.092</td>
+</tr>
+<tr class="">
+<td>CalculatedSingleLong</td><td>100.00</td><td>864</td><td>0</td><td>0</td><td>10.427</td>
+</tr>
+<tr class="">
+<td>CalculatedSingleMoney</td><td>100.00</td><td>860</td><td>0</td><td>0</td><td>10.127</td>
+</tr>
+<tr class="">
+<td>CalculatedSingleString9</td><td>100.00</td><td>860</td><td>0</td><td>0</td><td>5.683</td>
+</tr>
+<tr class="">
+<td>CalculatedSingleString</td><td>100.00</td><td>856</td><td>0</td><td>0</td><td>5.547</td>
+</tr>
+<tr class="">
+<td>CalculatedSingleText</td><td>100.00</td><td>856</td><td>0</td><td>0</td><td>5.437</td>
+</tr>
+<tr class="">
+<td>CalculatedSingleUrl</td><td>100.00</td><td>852</td><td>0</td><td>0</td><td>11.281</td>
+</tr>
+<tr class="">
+<td>ValueSingleBinary</td><td>100.00</td><td>219</td><td>0</td><td>0</td><td>1.625</td>
+</tr>
+<tr class="">
+<td>ValueSingleBoolean</td><td>100.00</td><td>215</td><td>0</td><td>0</td><td>1.516</td>
+</tr>
+<tr class="">
+<td>ValueSingleDate</td><td>100.00</td><td>223</td><td>0</td><td>0</td><td>1.734</td>
+</tr>
+<tr class="">
+<td>ValueSingleDecimal9</td><td>100.00</td><td>221</td><td>0</td><td>0</td><td>1.735</td>
+</tr>
+<tr class="">
+<td>ValueSingleDecimal</td><td>100.00</td><td>221</td><td>0</td><td>0</td><td>1.625</td>
+</tr>
+<tr class="">
+<td>ValueSingleDouble</td><td>100.00</td><td>227</td><td>0</td><td>0</td><td>1.625</td>
+</tr>
+<tr class="">
+<td>ValueSingleFloat</td><td>100.00</td><td>225</td><td>0</td><td>0</td><td>1.609</td>
+</tr>
+<tr class="">
+<td>ValueSingleGuid</td><td>100.00</td><td>217</td><td>0</td><td>0</td><td>1.64</td>
+</tr>
+<tr class="">
+<td>ValueSingleInteger</td><td>100.00</td><td>221</td><td>0</td><td>0</td><td>1.625</td>
+</tr>
+<tr class="">
+<td>ValueSingleLong</td><td>100.00</td><td>223</td><td>0</td><td>0</td><td>1.61</td>
+</tr>
+<tr class="">
+<td>ValueSingleMoney</td><td>100.00</td><td>221</td><td>0</td><td>0</td><td>1.625</td>
+</tr>
+<tr class="">
+<td>ValueSingleString9</td><td>100.00</td><td>221</td><td>0</td><td>0</td><td>1.719</td>
+</tr>
+<tr class="">
+<td>ValueSingleString</td><td>100.00</td><td>219</td><td>0</td><td>0</td><td>1.5</td>
+</tr>
+<tr class="">
+<td>ValueSingleText</td><td>100.00</td><td>219</td><td>0</td><td>0</td><td>0.75</td>
+</tr>
+<tr class="">
+<td>ValueSingleUrl</td><td>100.00</td><td>218</td><td>0</td><td>0</td><td>0.734</td>
+</tr>
+</table>
+</div>
+</body>
 </html>

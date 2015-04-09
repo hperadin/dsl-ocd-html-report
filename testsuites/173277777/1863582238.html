@@ -1,0 +1,37 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Testcase summary</title>
+<link href="../../css/bootstrap.min.css" rel="stylesheet">
+<script src="../../js/jquery.min.js"></script><script src="../../js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+<h1>testP1A0TsNonDefault1PropertyValueInAggregateAfterActiveRecordPersist</h1>
+<h2>
+<a href="../../testsuites/173277777_stacktrace.html" target="_blank">(stack trace)</a>
+</h2>
+<table class="table table-striped" style="width: 1500px">
+<tr>
+<th>Name</th><th>Status</th><th>Time</th>
+</tr>
+<tr>
+<td>testP1A0TsNonDefault1PropertyValueInAggregateAfterActiveRecordPersist</td><td>Failed</td><td>0.016</td>
+</tr>
+</table>
+<div>
+<table class="table" style="width: 1500px">
+<tr>
+<td><th>Type:</th></td><td>java.io.IOException</td>
+</tr>
+<tr>
+<td><th>Message:</th></td><td>java.util.concurrent.ExecutionException: java.util.concurrent.ExecutionException: com.dslplatform.client.exceptions.HttpUnexpectedCodeException: Error persisting: Deleted 0 row(s). Expected to delete 1 row(s)..</td>
+</tr>
+<tr>
+<td><th>Text:</th></td><td><code>java.io.IOException: java.util.concurrent.ExecutionException: java.util.concurrent.ExecutionException: com.dslplatform.client.exceptions.HttpUnexpectedCodeException: Error persisting: Deleted 0 row(s). Expected to delete 1 row(s)..<br/>	at com.dslplatform.ocd.aggregates.AggregateWithOneArrayOfNullableTimestampsPropertyAsPrimaryKeyTest.cleanup(Unknown Source)<br/>	at com.dslplatform.ocd.aggregates.AggregateWithOneArrayOfNullableTimestampsPropertyAsPrimaryKeyTest.testP1A0TsNonDefault1PropertyValueInAggregateAfterActiveRecordPersist(Unknown Source)<br/>Caused by: java.util.concurrent.ExecutionException: java.util.concurrent.ExecutionException: com.dslplatform.client.exceptions.HttpUnexpectedCodeException: Error persisting: Deleted 0 row(s). Expected to delete 1 row(s)..<br/>	at java.util.concurrent.FutureTask.report(FutureTask.java:122)<br/>	at java.util.concurrent.FutureTask.get(FutureTask.java:188)<br/>Caused by: java.util.concurrent.ExecutionException: com.dslplatform.client.exceptions.HttpUnexpectedCodeException: Error persisting: Deleted 0 row(s). Expected to delete 1 row(s)..<br/>	at java.util.concurrent.FutureTask.report(FutureTask.java:122)<br/>	at java.util.concurrent.FutureTask.get(FutureTask.java:188)<br/>	at com.dslplatform.client.HttpStandardProxy$1.call(HttpStandardProxy.java:181)<br/>	at com.dslplatform.client.HttpStandardProxy$1.call(HttpStandardProxy.java:140)<br/>	at java.util.concurrent.FutureTask.run(FutureTask.java:262)<br/>	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)<br/>	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)<br/>	at java.lang.Thread.run(Thread.java:745)<br/>Caused by: com.dslplatform.client.exceptions.HttpUnexpectedCodeException: Error persisting: Deleted 0 row(s). Expected to delete 1 row(s)..<br/>	at com.dslplatform.client.HttpClient.doRawRequest(HttpClient.java:239)<br/>	at com.dslplatform.client.HttpClient.access$100(HttpClient.java:40)<br/>	at com.dslplatform.client.HttpClient$3.call(HttpClient.java:351)<br/>	at com.dslplatform.client.HttpClient$3.call(HttpClient.java:345)<br/></code></td>
+</tr>
+</table>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Testcase summary</title>
+<link href="../../css/bootstrap.min.css" rel="stylesheet">
+<script src="../../js/jquery.min.js"></script><script src="../../js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+<h1>testP1A0TsWithinOneV1A0TsNonDefault2PropertyValueInAggregateAfterActiveRecordPersist</h1>
+<h2>
+<a href="../../testsuites/830791453_stacktrace.html" target="_blank">(stack trace)</a>
+</h2>
+<table class="table table-striped" style="width: 1500px">
+<tr>
+<th>Name</th><th>Status</th><th>Time</th>
+</tr>
+<tr>testP1A0TsWithinOneV1A0TsNonDefault2PropertyValueInAggregateAfterActiveRecordPersistFailed0.094</tr>
+</table>
+<div>
+<table class="table" style="width: 1500px">
+<tr>
+<th>Type:</th><th>java.lang.AssertionError</th>
+</tr>
+<tr>
+<th>Message:</th><th>OneArrayOfNullableTimestamp mismatch: element mismatch occurred at index 0: expected was: "2015-04-08T15:43:06.656+02:00", but actual was: "2015-04-08T15:43:06.656+02:00"[WARNING - not using a delta duration, comparing two instants directly]; Different instances.; Chronologies: ISOChronology[Europe/Belgrade] vs. ISOChronology[+02:00]; Chronology offsets: 3600000 vs. 7200000</th>
+</tr>
+<tr>
+<th>Text:</th><th><code>java.lang.AssertionError: OneArrayOfNullableTimestamp mismatch: element mismatch occurred at index 0: expected was: "2015-04-08T15:43:06.656+02:00", but actual was: "2015-04-08T15:43:06.656+02:00"[WARNING - not using a delta duration, comparing two instants directly]; Different instances.; Chronologies: ISOChronology[Europe/Belgrade] vs. ISOChronology[+02:00]; Chronology offsets: 3600000 vs. 7200000<br/>	at com.dslplatform.ocd.javaasserts.TimestampAsserts.assertSingleEqualsZeroDelta(TimestampAsserts.java:60)<br/>	at com.dslplatform.ocd.javaasserts.TimestampAsserts.assertSingleEquals(TimestampAsserts.java:65)<br/>	at com.dslplatform.ocd.javaasserts.TimestampAsserts.assertNullableEquals(TimestampAsserts.java:92)<br/>	at com.dslplatform.ocd.javaasserts.TimestampAsserts.assertArrayOfNullableEquals(TimestampAsserts.java:154)<br/>	at com.dslplatform.ocd.javaasserts.TimestampAsserts.assertOneArrayOfNullableEquals(TimestampAsserts.java:162)<br/>	at com.dslplatform.ocd.javaasserts.TimestampAsserts.assertOneArrayOfNullableEquals(TimestampAsserts.java:166)<br/>	at com.dslplatform.ocd.javaasserts.TimestampAsserts.assertOneArrayOfNullableEquals(TimestampAsserts.java:170)<br/>	at com.dslplatform.ocd.aggregates.AggregateTypeWithSurrogateKeyAndOneArrayOfNullableTimestampsPropertyWithinOneValueTest.testP1A0TsWithinOneV1A0TsNonDefault2PropertyValueInAggregateAfterActiveRecordPersist(Unknown Source)<br/></code></th>
+</tr>
+</table>
+</div>
+</div>
+</body>
+</html>
