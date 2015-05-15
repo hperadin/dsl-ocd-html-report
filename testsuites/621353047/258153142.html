@@ -7,7 +7,7 @@
 </head>
 <body>
 <div class="container">
-<h1>testP0S1TsWithinOneV0S1TsNonDefault1PropertyValueInAggregateAfterActiveRecordPersist</h1>
+<h1>testP0S0TsNonDefault2PropertyInAggregateJsonSerialization</h1>
 <h2>
 <a href="../../testsuites/621353047_stacktrace.html" target="_blank">(stack trace)</a>
 </h2>
@@ -16,7 +16,7 @@
 <th>Name</th><th>Status</th><th>Time</th>
 </tr>
 <tr>
-<td>testP0S1TsWithinOneV0S1TsNonDefault1PropertyValueInAggregateAfterActiveRecordPersist</td><td>Failed</td><td>0.094</td>
+<td>testP0S0TsNonDefault2PropertyInAggregateJsonSerialization</td><td>Failed</td><td>0.109</td>
 </tr>
 </table>
 <div>
@@ -25,10 +25,10 @@
 <td>Type:</td><td>java.lang.AssertionError</td>
 </tr>
 <tr>
-<td>Message:</td><td>NullableSetOfOneTimestamp mismatch: actuals did not contain the expecteds element "2015-04-08T15:43:06.218+02:00"</td>
+<td>Message:</td><td>NullableSetOfNullableTimestamp mismatch: actuals did not contain the expecteds element "2015-05-15T14:44:21.977+02:00"</td>
 </tr>
 <tr>
-<td>Text:</td><td><code>java.lang.AssertionError: NullableSetOfOneTimestamp mismatch: actuals did not contain the expecteds element "2015-04-08T15:43:06.218+02:00"<br/>	at com.dslplatform.ocd.javaasserts.TimestampAsserts.assertSetOfOneEquals(TimestampAsserts.java:306)<br/>	at com.dslplatform.ocd.javaasserts.TimestampAsserts.assertNullableSetOfOneEquals(TimestampAsserts.java:331)<br/>	at com.dslplatform.ocd.javaasserts.TimestampAsserts.assertNullableSetOfOneEquals(TimestampAsserts.java:335)<br/>	at com.dslplatform.ocd.javaasserts.TimestampAsserts.assertNullableSetOfOneEquals(TimestampAsserts.java:339)<br/>	at com.dslplatform.ocd.aggregates.AggregateTypeWithSurrogateKeyAndNullableSetOfOneTimestampsPropertyWithinOneValueTest.testP0S1TsWithinOneV0S1TsNonDefault1PropertyValueInAggregateAfterActiveRecordPersist(Unknown Source)<br/></code></td>
+<td>Text:</td><td><code>java.lang.AssertionError: NullableSetOfNullableTimestamp mismatch: actuals did not contain the expecteds element "2015-05-15T14:44:21.977+02:00"<br/>	at com.dslplatform.ocd.javaasserts.TimestampAsserts.assertSetOfNullableEquals(TimestampAsserts.java:358)<br/>	at com.dslplatform.ocd.javaasserts.TimestampAsserts.assertNullableSetOfNullableEquals(TimestampAsserts.java:381)<br/>	at com.dslplatform.ocd.javaasserts.TimestampAsserts.assertNullableSetOfNullableEquals(TimestampAsserts.java:385)<br/>	at com.dslplatform.ocd.javaasserts.TimestampAsserts.assertNullableSetOfNullableEquals(TimestampAsserts.java:389)<br/>	at com.dslplatform.ocd.aggregates.BigAggregateWithSurrogateKeyAndNullableSetOfNullableTimestampsPropertyTest.testP0S0TsNonDefault2PropertyInAggregateJsonSerialization(Unknown Source)<br/></code></td>
 </tr>
 </table>
 </div>

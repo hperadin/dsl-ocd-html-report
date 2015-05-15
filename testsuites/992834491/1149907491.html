@@ -7,7 +7,7 @@
 </head>
 <body>
 <div class="container">
-<h1>testP1L0TsNonDefault2PropertyValueInAggregateAfterActiveRecordPersist</h1>
+<h1>testP1L0TsNonDefault5PropertyValueInAggregateAfterActiveRecordPersist</h1>
 <h2>
 <a href="../../testsuites/992834491_stacktrace.html" target="_blank">(stack trace)</a>
 </h2>
@@ -16,19 +16,19 @@
 <th>Name</th><th>Status</th><th>Time</th>
 </tr>
 <tr>
-<td>testP1L0TsNonDefault2PropertyValueInAggregateAfterActiveRecordPersist</td><td>Failed</td><td>0.016</td>
+<td>testP1L0TsNonDefault5PropertyValueInAggregateAfterActiveRecordPersist</td><td>Failed</td><td>0.062</td>
 </tr>
 </table>
 <div>
 <table class="table" style="width: 1500px">
 <tr>
-<td>Type:</td><td>java.io.IOException</td>
+<td>Type:</td><td>java.lang.AssertionError</td>
 </tr>
 <tr>
-<td>Message:</td><td>java.util.concurrent.ExecutionException: java.util.concurrent.ExecutionException: com.dslplatform.client.exceptions.HttpUnexpectedCodeException: Error persisting: Deleted 0 row(s). Expected to delete 1 row(s)..</td>
+<td>Message:</td><td>OneListOfNullableTimestamp mismatch: element mismatch occurred at index 1: expected was: "2015-05-15T14:19:28.664+02:00", but actual was: "2015-05-15T14:19:28.664+02:00"[WARNING - not using a delta duration, comparing two instants directly]; Different instances.; Chronologies: ISOChronology[Europe/Belgrade] vs. ISOChronology[+02:00]; Chronology offsets: 3600000 vs. 7200000</td>
 </tr>
 <tr>
-<td>Text:</td><td><code>java.io.IOException: java.util.concurrent.ExecutionException: java.util.concurrent.ExecutionException: com.dslplatform.client.exceptions.HttpUnexpectedCodeException: Error persisting: Deleted 0 row(s). Expected to delete 1 row(s)..<br/>	at com.dslplatform.ocd.aggregates.AggregateWithOneListOfNullableTimestampsPropertyAsPrimaryKeyTest.cleanup(Unknown Source)<br/>	at com.dslplatform.ocd.aggregates.AggregateWithOneListOfNullableTimestampsPropertyAsPrimaryKeyTest.testP1L0TsNonDefault2PropertyValueInAggregateAfterActiveRecordPersist(Unknown Source)<br/>Caused by: java.util.concurrent.ExecutionException: java.util.concurrent.ExecutionException: com.dslplatform.client.exceptions.HttpUnexpectedCodeException: Error persisting: Deleted 0 row(s). Expected to delete 1 row(s)..<br/>	at java.util.concurrent.FutureTask.report(FutureTask.java:122)<br/>	at java.util.concurrent.FutureTask.get(FutureTask.java:188)<br/>Caused by: java.util.concurrent.ExecutionException: com.dslplatform.client.exceptions.HttpUnexpectedCodeException: Error persisting: Deleted 0 row(s). Expected to delete 1 row(s)..<br/>	at java.util.concurrent.FutureTask.report(FutureTask.java:122)<br/>	at java.util.concurrent.FutureTask.get(FutureTask.java:188)<br/>	at com.dslplatform.client.HttpStandardProxy$1.call(HttpStandardProxy.java:181)<br/>	at com.dslplatform.client.HttpStandardProxy$1.call(HttpStandardProxy.java:140)<br/>	at java.util.concurrent.FutureTask.run(FutureTask.java:262)<br/>	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)<br/>	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)<br/>	at java.lang.Thread.run(Thread.java:745)<br/>Caused by: com.dslplatform.client.exceptions.HttpUnexpectedCodeException: Error persisting: Deleted 0 row(s). Expected to delete 1 row(s)..<br/>	at com.dslplatform.client.HttpClient.doRawRequest(HttpClient.java:239)<br/>	at com.dslplatform.client.HttpClient.access$100(HttpClient.java:40)<br/>	at com.dslplatform.client.HttpClient$3.call(HttpClient.java:351)<br/>	at com.dslplatform.client.HttpClient$3.call(HttpClient.java:345)<br/></code></td>
+<td>Text:</td><td><code>java.lang.AssertionError: OneListOfNullableTimestamp mismatch: element mismatch occurred at index 1: expected was: "2015-05-15T14:19:28.664+02:00", but actual was: "2015-05-15T14:19:28.664+02:00"[WARNING - not using a delta duration, comparing two instants directly]; Different instances.; Chronologies: ISOChronology[Europe/Belgrade] vs. ISOChronology[+02:00]; Chronology offsets: 3600000 vs. 7200000<br/>	at com.dslplatform.ocd.javaasserts.TimestampAsserts.assertSingleEqualsZeroDelta(TimestampAsserts.java:60)<br/>	at com.dslplatform.ocd.javaasserts.TimestampAsserts.assertSingleEquals(TimestampAsserts.java:65)<br/>	at com.dslplatform.ocd.javaasserts.TimestampAsserts.assertNullableEquals(TimestampAsserts.java:92)<br/>	at com.dslplatform.ocd.javaasserts.TimestampAsserts.assertListOfNullableEquals(TimestampAsserts.java:252)<br/>	at com.dslplatform.ocd.javaasserts.TimestampAsserts.assertOneListOfNullableEquals(TimestampAsserts.java:260)<br/>	at com.dslplatform.ocd.javaasserts.TimestampAsserts.assertOneListOfNullableEquals(TimestampAsserts.java:264)<br/>	at com.dslplatform.ocd.javaasserts.TimestampAsserts.assertOneListOfNullableEquals(TimestampAsserts.java:268)<br/>	at com.dslplatform.ocd.aggregates.AggregateWithOneListOfNullableTimestampsPropertyAsPrimaryKeyTest.testP1L0TsNonDefault5PropertyValueInAggregateAfterActiveRecordPersist(Unknown Source)<br/></code></td>
 </tr>
 </table>
 </div>

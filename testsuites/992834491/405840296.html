@@ -7,7 +7,7 @@
 </head>
 <body>
 <div class="container">
-<h1>testP1TsNonDefault2PropertyInAggregateJsonSerialization</h1>
+<h1>testP1TsNonDefault2PropertyValueInAggregateAfterActiveRecordPersist</h1>
 <h2>
 <a href="../../testsuites/992834491_stacktrace.html" target="_blank">(stack trace)</a>
 </h2>
@@ -16,7 +16,7 @@
 <th>Name</th><th>Status</th><th>Time</th>
 </tr>
 <tr>
-<td>testP1TsNonDefault2PropertyInAggregateJsonSerialization</td><td>Failed</td><td>0.0</td>
+<td>testP1TsNonDefault2PropertyValueInAggregateAfterActiveRecordPersist</td><td>Failed</td><td>0.031</td>
 </tr>
 </table>
 <div>
@@ -25,10 +25,10 @@
 <td>Type:</td><td>java.lang.AssertionError</td>
 </tr>
 <tr>
-<td>Message:</td><td>OneTimestamp mismatch: expected was: "0001-01-01T00:00:00.000+01:22", but actual was: "0001-01-01T00:00:00.000+01:22"[WARNING - not using a delta duration, comparing two instants directly]; Different instances.; Chronologies: ISOChronology[Europe/Belgrade] vs. ISOChronology[+01:22]; Chronology offsets: 3600000 vs. 4920000</td>
+<td>Message:</td><td>expected:<A1Ts(0001-01-01 23:38:00+01)> but was:<A1Ts(0001-01-02 23:00:00+01)></td>
 </tr>
 <tr>
-<td>Text:</td><td><code>java.lang.AssertionError: OneTimestamp mismatch: expected was: "0001-01-01T00:00:00.000+01:22", but actual was: "0001-01-01T00:00:00.000+01:22"[WARNING - not using a delta duration, comparing two instants directly]; Different instances.; Chronologies: ISOChronology[Europe/Belgrade] vs. ISOChronology[+01:22]; Chronology offsets: 3600000 vs. 4920000<br/>	at com.dslplatform.ocd.javaasserts.TimestampAsserts.assertSingleEqualsZeroDelta(TimestampAsserts.java:60)<br/>	at com.dslplatform.ocd.javaasserts.TimestampAsserts.assertSingleEquals(TimestampAsserts.java:65)<br/>	at com.dslplatform.ocd.javaasserts.TimestampAsserts.assertOneEquals(TimestampAsserts.java:77)<br/>	at com.dslplatform.ocd.javaasserts.TimestampAsserts.assertOneEquals(TimestampAsserts.java:81)<br/>	at com.dslplatform.ocd.javaasserts.TimestampAsserts.assertOneEquals(TimestampAsserts.java:85)<br/>	at com.dslplatform.ocd.aggregates.AggregateWithOneTimestampPropertyAsPrimaryKeyTest.testP1TsNonDefault2PropertyInAggregateJsonSerialization(Unknown Source)<br/></code></td>
+<td>Text:</td><td><code>java.lang.AssertionError: expected:<A1Ts(0001-01-01 23:38:00+01)> but was:<A1Ts(0001-01-02 23:00:00+01)><br/>	at com.dslplatform.ocd.aggregates.AggregateWithOneTimestampPropertyAsPrimaryKeyTest.testP1TsNonDefault2PropertyValueInAggregateAfterActiveRecordPersist(Unknown Source)<br/></code></td>
 </tr>
 </table>
 </div>

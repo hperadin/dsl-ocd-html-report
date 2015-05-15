@@ -7,7 +7,7 @@
 </head>
 <body>
 <div class="container">
-<h1>testP1TsWithinOneV1TsDefaultPropertyInAggregateJsonSerialization</h1>
+<h1>testP1S0TsNonDefault2PropertyInAggregateJsonSerialization</h1>
 <h2>
 <a href="../../testsuites/621353047_stacktrace.html" target="_blank">(stack trace)</a>
 </h2>
@@ -16,7 +16,7 @@
 <th>Name</th><th>Status</th><th>Time</th>
 </tr>
 <tr>
-<td>testP1TsWithinOneV1TsDefaultPropertyInAggregateJsonSerialization</td><td>Failed</td><td>0.016</td>
+<td>testP1S0TsNonDefault2PropertyInAggregateJsonSerialization</td><td>Failed</td><td>0.0</td>
 </tr>
 </table>
 <div>
@@ -25,10 +25,10 @@
 <td>Type:</td><td>java.lang.AssertionError</td>
 </tr>
 <tr>
-<td>Message:</td><td>OneTimestamp mismatch: expected was: "2015-04-08T15:43:08.062+02:00", but actual was: "2015-04-08T15:43:08.062+02:00"[WARNING - not using a delta duration, comparing two instants directly]; Different instances.; Chronologies: ISOChronology[Europe/Belgrade] vs. ISOChronology[+02:00]; Chronology offsets: 3600000 vs. 7200000</td>
+<td>Message:</td><td>OneSetOfNullableTimestamp mismatch: actuals did not contain the expecteds element "2015-05-15T14:44:25.039+02:00"</td>
 </tr>
 <tr>
-<td>Text:</td><td><code>java.lang.AssertionError: OneTimestamp mismatch: expected was: "2015-04-08T15:43:08.062+02:00", but actual was: "2015-04-08T15:43:08.062+02:00"[WARNING - not using a delta duration, comparing two instants directly]; Different instances.; Chronologies: ISOChronology[Europe/Belgrade] vs. ISOChronology[+02:00]; Chronology offsets: 3600000 vs. 7200000<br/>	at com.dslplatform.ocd.javaasserts.TimestampAsserts.assertSingleEqualsZeroDelta(TimestampAsserts.java:60)<br/>	at com.dslplatform.ocd.javaasserts.TimestampAsserts.assertSingleEquals(TimestampAsserts.java:65)<br/>	at com.dslplatform.ocd.javaasserts.TimestampAsserts.assertOneEquals(TimestampAsserts.java:77)<br/>	at com.dslplatform.ocd.javaasserts.TimestampAsserts.assertOneEquals(TimestampAsserts.java:81)<br/>	at com.dslplatform.ocd.javaasserts.TimestampAsserts.assertOneEquals(TimestampAsserts.java:85)<br/>	at com.dslplatform.ocd.aggregates.AggregateTypeWithSurrogateKeyAndOneTimestampPropertyWithinOneValueTest.testP1TsWithinOneV1TsDefaultPropertyInAggregateJsonSerialization(Unknown Source)<br/></code></td>
+<td>Text:</td><td><code>java.lang.AssertionError: OneSetOfNullableTimestamp mismatch: actuals did not contain the expecteds element "2015-05-15T14:44:25.039+02:00"<br/>	at com.dslplatform.ocd.javaasserts.TimestampAsserts.assertSetOfNullableEquals(TimestampAsserts.java:358)<br/>	at com.dslplatform.ocd.javaasserts.TimestampAsserts.assertOneSetOfNullableEquals(TimestampAsserts.java:366)<br/>	at com.dslplatform.ocd.javaasserts.TimestampAsserts.assertOneSetOfNullableEquals(TimestampAsserts.java:370)<br/>	at com.dslplatform.ocd.javaasserts.TimestampAsserts.assertOneSetOfNullableEquals(TimestampAsserts.java:374)<br/>	at com.dslplatform.ocd.aggregates.BigAggregateWithSurrogateKeyAndOneSetOfNullableTimestampsPropertyTest.testP1S0TsNonDefault2PropertyInAggregateJsonSerialization(Unknown Source)<br/></code></td>
 </tr>
 </table>
 </div>
