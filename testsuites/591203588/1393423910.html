@@ -1,0 +1,37 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Testcase summary</title>
+<link href="../../css/bootstrap.min.css" rel="stylesheet">
+<script src="../../js/jquery.min.js"></script><script src="../../js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+<h1>testP1L1TsNonDefault3PropertyValueJsonSerialization</h1>
+<h2>
+<a href="../../testsuites/591203588_stacktrace.html" target="_blank">(stack trace)</a>
+</h2>
+<table class="table table-striped" style="width: 1500px">
+<tr>
+<th>Name</th><th>Status</th><th>Time</th>
+</tr>
+<tr>
+<td>testP1L1TsNonDefault3PropertyValueJsonSerialization</td><td>Failed</td><td>0.0</td>
+</tr>
+</table>
+<div>
+<table class="table" style="width: 1500px">
+<tr>
+<td>Type:</td><td>java.lang.AssertionError</td>
+</tr>
+<tr>
+<td>Message:</td><td>OneListOfOneTimestamp mismatch: element mismatch occurred at index 0: expected was: "2015-04-08T16:20:13.758+02:00", but actual was: "2015-04-08T16:20:13.758+02:00"[WARNING - not using a delta duration, comparing two instants directly]; Different instances.; Chronologies: ISOChronology[Europe/Belgrade] vs. ISOChronology[+02:00]; Chronology offsets: 3600000 vs. 7200000</td>
+</tr>
+<tr>
+<td>Text:</td><td><code>java.lang.AssertionError: OneListOfOneTimestamp mismatch: element mismatch occurred at index 0: expected was: "2015-04-08T16:20:13.758+02:00", but actual was: "2015-04-08T16:20:13.758+02:00"[WARNING - not using a delta duration, comparing two instants directly]; Different instances.; Chronologies: ISOChronology[Europe/Belgrade] vs. ISOChronology[+02:00]; Chronology offsets: 3600000 vs. 7200000<br/>	at com.dslplatform.ocd.javaasserts.TimestampAsserts.assertSingleEqualsZeroDelta(TimestampAsserts.java:60)<br/>	at com.dslplatform.ocd.javaasserts.TimestampAsserts.assertSingleEquals(TimestampAsserts.java:65)<br/>	at com.dslplatform.ocd.javaasserts.TimestampAsserts.assertOneEquals(TimestampAsserts.java:77)<br/>	at com.dslplatform.ocd.javaasserts.TimestampAsserts.assertListOfOneEquals(TimestampAsserts.java:200)<br/>	at com.dslplatform.ocd.javaasserts.TimestampAsserts.assertOneListOfOneEquals(TimestampAsserts.java:214)<br/>	at com.dslplatform.ocd.javaasserts.TimestampAsserts.assertOneListOfOneEquals(TimestampAsserts.java:218)<br/>	at com.dslplatform.ocd.javaasserts.TimestampAsserts.assertOneListOfOneEquals(TimestampAsserts.java:222)<br/>	at com.dslplatform.ocd.values.ValueWithOneListOfOneTimestampsProperty.testP1L1TsNonDefault3PropertyValueJsonSerialization(Unknown Source)<br/></code></td>
+</tr>
+</table>
+</div>
+</div>
+</body>
+</html>

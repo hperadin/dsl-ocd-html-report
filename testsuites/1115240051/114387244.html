@@ -7,7 +7,7 @@
 </head>
 <body>
 <div class="container">
-<h1>testP1TsDefaultPropertyInAggregateJsonSerialization</h1>
+<h1>testP0A0TsNonDefault5PropertyValueInAggregateAfterActiveRecordPersist</h1>
 <h2>
 <a href="../../testsuites/1115240051_stacktrace.html" target="_blank">(stack trace)</a>
 </h2>
@@ -16,19 +16,19 @@
 <th>Name</th><th>Status</th><th>Time</th>
 </tr>
 <tr>
-<td>testP1TsDefaultPropertyInAggregateJsonSerialization</td><td>Failed</td><td>0.0</td>
+<td>testP0A0TsNonDefault5PropertyValueInAggregateAfterActiveRecordPersist</td><td>Failed</td><td>0.031</td>
 </tr>
 </table>
 <div>
 <table class="table" style="width: 1500px">
 <tr>
-<th>Type:</th><th>java.lang.AssertionError</th>
+<td>Type:</td><td>java.lang.AssertionError</td>
 </tr>
 <tr>
-<th>Message:</th><th>OneTimestamp mismatch: expected was: "2015-04-08T15:59:06.609+02:00", but actual was: "2015-04-08T15:59:06.609+02:00"[WARNING - not using a delta duration, comparing two instants directly]; Different instances.; Chronologies: ISOChronology[Europe/Belgrade] vs. ISOChronology[+02:00]; Chronology offsets: 3600000 vs. 7200000</th>
+<td>Message:</td><td>NullableArrayOfNullableTimestamp mismatch: element mismatch occurred at index 1: expected was: "2015-04-08T15:59:06.906+02:00", but actual was: "2015-04-08T15:59:06.906+02:00"[WARNING - not using a delta duration, comparing two instants directly]; Different instances.; Chronologies: ISOChronology[Europe/Belgrade] vs. ISOChronology[+02:00]; Chronology offsets: 3600000 vs. 7200000</td>
 </tr>
 <tr>
-<th>Text:</th><th><code>java.lang.AssertionError: OneTimestamp mismatch: expected was: "2015-04-08T15:59:06.609+02:00", but actual was: "2015-04-08T15:59:06.609+02:00"[WARNING - not using a delta duration, comparing two instants directly]; Different instances.; Chronologies: ISOChronology[Europe/Belgrade] vs. ISOChronology[+02:00]; Chronology offsets: 3600000 vs. 7200000<br/>	at com.dslplatform.ocd.javaasserts.TimestampAsserts.assertSingleEqualsZeroDelta(TimestampAsserts.java:60)<br/>	at com.dslplatform.ocd.javaasserts.TimestampAsserts.assertSingleEquals(TimestampAsserts.java:65)<br/>	at com.dslplatform.ocd.javaasserts.TimestampAsserts.assertOneEquals(TimestampAsserts.java:77)<br/>	at com.dslplatform.ocd.javaasserts.TimestampAsserts.assertOneEquals(TimestampAsserts.java:81)<br/>	at com.dslplatform.ocd.javaasserts.TimestampAsserts.assertOneEquals(TimestampAsserts.java:85)<br/>	at com.dslplatform.ocd.aggregates.GuidAggregateWithSurrogateKeyAndOneTimestampPropertyTest.testP1TsDefaultPropertyInAggregateJsonSerialization(Unknown Source)<br/></code></th>
+<td>Text:</td><td><code>java.lang.AssertionError: NullableArrayOfNullableTimestamp mismatch: element mismatch occurred at index 1: expected was: "2015-04-08T15:59:06.906+02:00", but actual was: "2015-04-08T15:59:06.906+02:00"[WARNING - not using a delta duration, comparing two instants directly]; Different instances.; Chronologies: ISOChronology[Europe/Belgrade] vs. ISOChronology[+02:00]; Chronology offsets: 3600000 vs. 7200000<br/>	at com.dslplatform.ocd.javaasserts.TimestampAsserts.assertSingleEqualsZeroDelta(TimestampAsserts.java:60)<br/>	at com.dslplatform.ocd.javaasserts.TimestampAsserts.assertSingleEquals(TimestampAsserts.java:65)<br/>	at com.dslplatform.ocd.javaasserts.TimestampAsserts.assertNullableEquals(TimestampAsserts.java:92)<br/>	at com.dslplatform.ocd.javaasserts.TimestampAsserts.assertArrayOfNullableEquals(TimestampAsserts.java:154)<br/>	at com.dslplatform.ocd.javaasserts.TimestampAsserts.assertNullableArrayOfNullableEquals(TimestampAsserts.java:177)<br/>	at com.dslplatform.ocd.javaasserts.TimestampAsserts.assertNullableArrayOfNullableEquals(TimestampAsserts.java:181)<br/>	at com.dslplatform.ocd.javaasserts.TimestampAsserts.assertNullableArrayOfNullableEquals(TimestampAsserts.java:185)<br/>	at com.dslplatform.ocd.aggregates.StandardAggregateWithSurrogateKeyAndNullableArrayOfNullableTimestampsPropertyTest.testP0A0TsNonDefault5PropertyValueInAggregateAfterActiveRecordPersist(Unknown Source)<br/></code></td>
 </tr>
 </table>
 </div>

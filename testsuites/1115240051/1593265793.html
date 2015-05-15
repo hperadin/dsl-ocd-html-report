@@ -7,7 +7,7 @@
 </head>
 <body>
 <div class="container">
-<h1>testP1S1TsNonDefault1PropertyValueInAggregateAfterActiveRecordPersist</h1>
+<h1>testP1TsDefaultPropertyValueInAggregateAfterActiveRecordPersist</h1>
 <h2>
 <a href="../../testsuites/1115240051_stacktrace.html" target="_blank">(stack trace)</a>
 </h2>
@@ -16,19 +16,19 @@
 <th>Name</th><th>Status</th><th>Time</th>
 </tr>
 <tr>
-<td>testP1S1TsNonDefault1PropertyValueInAggregateAfterActiveRecordPersist</td><td>Failed</td><td>0.016</td>
+<td>testP1TsDefaultPropertyValueInAggregateAfterActiveRecordPersist</td><td>Failed</td><td>0.0</td>
 </tr>
 </table>
 <div>
 <table class="table" style="width: 1500px">
 <tr>
-<th>Type:</th><th>java.lang.AssertionError</th>
+<td>Type:</td><td>java.lang.AssertionError</td>
 </tr>
 <tr>
-<th>Message:</th><th>OneSetOfOneTimestamp mismatch: actuals did not contain the expecteds element "2015-04-08T15:59:02.609+02:00"</th>
+<td>Message:</td><td>OneTimestamp mismatch: expected was: "2015-04-08T15:59:02.921+02:00", but actual was: "2015-04-08T15:59:02.921+02:00"[WARNING - not using a delta duration, comparing two instants directly]; Different instances.; Chronologies: ISOChronology[Europe/Belgrade] vs. ISOChronology[+02:00]; Chronology offsets: 3600000 vs. 7200000</td>
 </tr>
 <tr>
-<th>Text:</th><th><code>java.lang.AssertionError: OneSetOfOneTimestamp mismatch: actuals did not contain the expecteds element "2015-04-08T15:59:02.609+02:00"<br/>	at com.dslplatform.ocd.javaasserts.TimestampAsserts.assertSetOfOneEquals(TimestampAsserts.java:306)<br/>	at com.dslplatform.ocd.javaasserts.TimestampAsserts.assertOneSetOfOneEquals(TimestampAsserts.java:316)<br/>	at com.dslplatform.ocd.javaasserts.TimestampAsserts.assertOneSetOfOneEquals(TimestampAsserts.java:320)<br/>	at com.dslplatform.ocd.javaasserts.TimestampAsserts.assertOneSetOfOneEquals(TimestampAsserts.java:324)<br/>	at com.dslplatform.ocd.aggregates.BigAggregateWithSurrogateKeyAndOneSetOfOneTimestampsPropertyTest.testP1S1TsNonDefault1PropertyValueInAggregateAfterActiveRecordPersist(Unknown Source)<br/></code></th>
+<td>Text:</td><td><code>java.lang.AssertionError: OneTimestamp mismatch: expected was: "2015-04-08T15:59:02.921+02:00", but actual was: "2015-04-08T15:59:02.921+02:00"[WARNING - not using a delta duration, comparing two instants directly]; Different instances.; Chronologies: ISOChronology[Europe/Belgrade] vs. ISOChronology[+02:00]; Chronology offsets: 3600000 vs. 7200000<br/>	at com.dslplatform.ocd.javaasserts.TimestampAsserts.assertSingleEqualsZeroDelta(TimestampAsserts.java:60)<br/>	at com.dslplatform.ocd.javaasserts.TimestampAsserts.assertSingleEquals(TimestampAsserts.java:65)<br/>	at com.dslplatform.ocd.javaasserts.TimestampAsserts.assertOneEquals(TimestampAsserts.java:77)<br/>	at com.dslplatform.ocd.javaasserts.TimestampAsserts.assertOneEquals(TimestampAsserts.java:81)<br/>	at com.dslplatform.ocd.javaasserts.TimestampAsserts.assertOneEquals(TimestampAsserts.java:85)<br/>	at com.dslplatform.ocd.aggregates.BigAggregateWithSurrogateKeyAndOneTimestampPropertyTest.testP1TsDefaultPropertyValueInAggregateAfterActiveRecordPersist(Unknown Source)<br/></code></td>
 </tr>
 </table>
 </div>

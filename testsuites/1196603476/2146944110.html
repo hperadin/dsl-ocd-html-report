@@ -7,7 +7,7 @@
 </head>
 <body>
 <div class="container">
-<h1>testP1S0TsNonDefault5PropertyValueJsonSerialization</h1>
+<h1>testP1S0TsNonDefault2PropertyValueJsonSerialization</h1>
 <h2>
 <a href="../../testsuites/1196603476_stacktrace.html" target="_blank">(stack trace)</a>
 </h2>
@@ -16,19 +16,19 @@
 <th>Name</th><th>Status</th><th>Time</th>
 </tr>
 <tr>
-<td>testP1S0TsNonDefault5PropertyValueJsonSerialization</td><td>Failed</td><td>0.016</td>
+<td>testP1S0TsNonDefault2PropertyValueJsonSerialization</td><td>Failed</td><td>0.016</td>
 </tr>
 </table>
 <div>
 <table class="table" style="width: 1500px">
 <tr>
-<th>Type:</th><th>java.lang.AssertionError</th>
+<td>Type:</td><td>java.lang.AssertionError</td>
 </tr>
 <tr>
-<th>Message:</th><th>expected:<V1S0Ts([null, 1970-01-01T01:00:00.000+01:00, 2038-02-13T00:45:30.647+01:00, 2015-04-08T16:20:13.758+02:00, 0001-01-01T00:00:00.000+01:22])> but was:<V1S0Ts([2038-02-13T00:45:30.647+01:00, null, 2015-04-08T16:20:13.758+02:00, 1970-01-01T01:00:00.000+01:00, 0001-01-01T00:00:00.000+01:22])></th>
+<td>Message:</td><td>OneSetOfNullableTimestamp mismatch: actuals did not contain the expecteds element "2015-04-08T16:20:13.774+02:00"</td>
 </tr>
 <tr>
-<th>Text:</th><th><code>java.lang.AssertionError: expected:<V1S0Ts([null, 1970-01-01T01:00:00.000+01:00, 2038-02-13T00:45:30.647+01:00, 2015-04-08T16:20:13.758+02:00, 0001-01-01T00:00:00.000+01:22])> but was:<V1S0Ts([2038-02-13T00:45:30.647+01:00, null, 2015-04-08T16:20:13.758+02:00, 1970-01-01T01:00:00.000+01:00, 0001-01-01T00:00:00.000+01:22])><br/>	at com.dslplatform.ocd.values.ValueWithOneSetOfNullableTimestampsProperty.testP1S0TsNonDefault5PropertyValueJsonSerialization(Unknown Source)<br/></code></th>
+<td>Text:</td><td><code>java.lang.AssertionError: OneSetOfNullableTimestamp mismatch: actuals did not contain the expecteds element "2015-04-08T16:20:13.774+02:00"<br/>	at com.dslplatform.ocd.javaasserts.TimestampAsserts.assertSetOfNullableEquals(TimestampAsserts.java:358)<br/>	at com.dslplatform.ocd.javaasserts.TimestampAsserts.assertOneSetOfNullableEquals(TimestampAsserts.java:366)<br/>	at com.dslplatform.ocd.javaasserts.TimestampAsserts.assertOneSetOfNullableEquals(TimestampAsserts.java:370)<br/>	at com.dslplatform.ocd.javaasserts.TimestampAsserts.assertOneSetOfNullableEquals(TimestampAsserts.java:374)<br/>	at com.dslplatform.ocd.values.ValueWithOneSetOfNullableTimestampsProperty.testP1S0TsNonDefault2PropertyValueJsonSerialization(Unknown Source)<br/></code></td>
 </tr>
 </table>
 </div>
